@@ -108,7 +108,8 @@ export default function Dashboard() {
   const handleVerifyParent = (e: React.FormEvent) => {
     e.preventDefault();
     const cleanAnswer = parentAnswer.trim();
-    if (cleanAnswer === "2912") {
+    const correctCode = profile.parentCode || "2912";
+    if (cleanAnswer === correctCode) {
       playSound("correct");
       setShowParentsGate(false);
       setShowParentsSpace(true);

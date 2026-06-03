@@ -25,11 +25,12 @@ export interface UserProfile {
   maxTimeLimit: number; // en minutes (limite parents)
   soundEnabled: boolean;
   readAloudEnabled: boolean;
+  parentCode?: string;
 }
 
 interface AppContextType {
   profile: UserProfile | null;
-  onboardUser: (nickname: string, ageGroup: "3-5" | "6-8" | "9-12", avatar: AvatarConfig) => void;
+  onboardUser: (nickname: string, ageGroup: "3-5" | "6-8" | "9-12", avatar: AvatarConfig, parentCode: string) => void;
   addXp: (amount: number) => { leveledUp: boolean; currentLevel: number; newLevel: number };
   addCoins: (amount: number) => void;
   completeLesson: (lessonId: string) => void;
@@ -89,6 +90,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
             unlockedAccessories: parsed.unlockedAccessories || DEFAULT_ACCESSORIES,
             timeSpentToday: parsed.lastActiveDate === todayStr ? (parsed.timeSpentToday || 0) : 0,
             maxTimeLimit: parsed.maxTimeLimit || 20,
+            parentCode: parsed.parentCode || "2912",
           });
         } catch (e) {
           console.error("Erreur de lecture du profil sauvegardé", e);
@@ -106,7 +108,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
   }, [profile, isLoaded]);
 
   // Initialisation de l'utilisateur
-  const onboardUser = (nickname: string, ageGroup: "3-5" | "6-8" | "9-12", avatar: AvatarConfig) => {
+  const onboardUser = (nickname: string, ageGroup: "3-5" | "6-8" | "9-12", avatar: AvatarConfig, parentCode: string) => {
     const todayStr = new Date().toISOString().split("T")[0];
     const newProfile: UserProfile = {
       nickname,
@@ -124,6 +126,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
       maxTimeLimit: 20,
       soundEnabled: true,
       readAloudEnabled: ageGroup === "3-5", // Activer par défaut pour les petits
+      parentCode,
     };
     setProfile(newProfile);
   };

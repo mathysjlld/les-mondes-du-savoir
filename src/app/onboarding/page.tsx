@@ -52,7 +52,7 @@ export default function Onboarding() {
 
   const handleFinish = (e?: React.FormEvent) => {
     if (e) e.preventDefault();
-    if (parentCode.trim() !== "2912") {
+    if (parentCode.trim().length < 4) {
       playSound("incorrect");
       setParentCodeError(true);
       return;
@@ -62,7 +62,7 @@ export default function Onboarding() {
       type: avatarType,
       color: avatarColor,
       accessory: "none",
-    });
+    }, parentCode.trim());
     
     // Jouer un son joyeux
     playSound("levelup");
@@ -284,16 +284,16 @@ export default function Onboarding() {
           >
             <div className="text-center">
               <span className="text-4xl">🔒</span>
-              <h2 className="text-2xl font-bold text-slate-800 mt-2">Validation Parentale</h2>
+              <h2 className="text-2xl font-bold text-slate-800 mt-2">Création du Code Parental</h2>
               <p className="text-sm font-semibold text-slate-500 mt-1 leading-relaxed">
-                Un adulte doit valider la création du compte en saisissant le code secret de sécurité.
+                Crée un code secret à 4 chiffres. Ce code te permettra d'accéder à l'Espace Parents.
               </p>
             </div>
 
             <form onSubmit={handleFinish} className="flex flex-col gap-4 max-w-sm mx-auto w-full">
               <div className="flex flex-col gap-2">
                 <label className="text-xs font-bold text-slate-600 text-center">
-                  Saisis le code secret parent de sécurité
+                  Crée ton code secret parent (4 chiffres minimum)
                 </label>
                 <input
                   type="password"
@@ -302,7 +302,7 @@ export default function Onboarding() {
                     setParentCode(e.target.value);
                     setParentCodeError(false);
                   }}
-                  placeholder="Code secret..."
+                  placeholder="Nouveau code secret parent..."
                   className={`w-full px-4 py-3 rounded-xl border-4 text-center text-xl font-bold text-slate-700 outline-none transition-all ${
                     parentCodeError
                       ? "border-rose-400 bg-rose-50 focus:border-rose-500"
@@ -315,7 +315,7 @@ export default function Onboarding() {
 
               {parentCodeError && (
                 <p className="text-xs font-bold text-rose-500 text-center">
-                  Oups, code incorrect ! Demande à un parent. 🧐
+                  Oups, le code doit contenir au moins 4 chiffres ! 🧐
                 </p>
               )}
 
