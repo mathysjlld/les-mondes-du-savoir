@@ -1283,13 +1283,11 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               question: "Quel type de molécule biologique accélère la décomposition chimique de notre nourriture ?",
               options: ["Les vitamines 💊", "Les hormones 🧪", "Les enzymes 🧬"],
-              correctAnswer: "Les enzymes 🧬",
-              mediaUrl: "https://www.w3schools.com/html/mov_bbb.mp4",
-              mediaType: "video"
+              correctAnswer: "Les enzymes 🧬"
             },
             {
               question: "Quelle enzyme salivaire commence la digestion de l'amidon dans la bouche ?",
-              options: ["La pepsine 🧪", "L'amylase 🧬", "La lipase 🔬"],
+              options: ["La pepsine 🧬", "L'amylase 🧬", "La lipase 🧬"],
               correctAnswer: "L'amylase 🧬"
             },
             {
@@ -1373,9 +1371,7 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               question: "Quelles parties forment le Système Nerveux Central ?",
               options: ["Le cœur et les artères 🩸", "L'encéphale et la moelle épinière 🧠", "Les nerfs et les récepteurs sensoriels ⚡"],
-              correctAnswer: "L'encéphale et la moelle épinière 🧠",
-              mediaUrl: "https://www.w3schools.com/html/movie.mp4",
-              mediaType: "video"
+              correctAnswer: "L'encéphale et la moelle épinière 🧠"
             },
             {
               question: "Quel prolongement ramifié du neurone reçoit les messages des autres cellules ?",
@@ -1399,8 +1395,8 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               question: "Quel lobe du cortex cérébral est dédié au traitement de la vision ?",
-              options: ["Le lobe frontal 🧠", "Le lobe temporal 👂", "Le lobe occipital 👀"],
-              correctAnswer: "Le lobe occipital 👀"
+              options: ["Le lobe frontal 🧠", "Le lobe temporal 🧠", "Le lobe occipital 🧠"],
+              correctAnswer: "Le lobe occipital 🧠"
             },
             {
               question: "Quelle zone du cerveau gère le raisonnement, la motricité et le contrôle des émotions ?",

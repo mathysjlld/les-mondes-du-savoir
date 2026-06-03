@@ -403,7 +403,7 @@ export default function PlayUniverse() {
                     )}
                   </div>
                 ) : (
-                  <span className="text-3xl sm:text-4xl animate-bounce">🤔</span>
+                  <span className="text-3xl sm:text-4xl animate-bounce">{lesson.emoji || "🤔"}</span>
                 )}
                 <h3 className="text-lg sm:text-2xl font-bold text-slate-800 leading-snug px-2 sm:px-4">
                   {formatFrenchPunctuation(currentQuestion.question)}
