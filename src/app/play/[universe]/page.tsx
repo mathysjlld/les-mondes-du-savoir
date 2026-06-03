@@ -291,6 +291,7 @@ export default function PlayUniverse() {
                 {currentCard.mediaUrl ? (
                   currentCard.mediaType === "video" ? (
                     <video
+                      key={currentCard.mediaUrl}
                       src={currentCard.mediaUrl}
                       className="w-full h-full object-cover rounded-xl"
                       autoPlay
@@ -385,6 +386,7 @@ export default function PlayUniverse() {
                   <div className="w-full max-w-[260px] aspect-video rounded-2xl border-4 border-purple-100 bg-black/5 overflow-hidden mb-2 shadow-inner">
                     {currentQuestion.mediaType === "video" ? (
                       <video
+                        key={currentQuestion.mediaUrl}
                         src={currentQuestion.mediaUrl}
                         className="w-full h-full object-cover"
                         autoPlay

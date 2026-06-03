@@ -1284,7 +1284,7 @@ export const UNIVERSES: Record<string, Universe> = {
               question: "Quel type de molécule biologique accélère la décomposition chimique de notre nourriture ?",
               options: ["Les vitamines 💊", "Les hormones 🧪", "Les enzymes 🧬"],
               correctAnswer: "Les enzymes 🧬",
-              mediaUrl: "https://assets.mixkit.co/videos/preview/mixkit-animation-of-a-human-beating-heart-41764-large.mp4",
+              mediaUrl: "https://www.w3schools.com/html/mov_bbb.mp4",
               mediaType: "video"
             },
             {
@@ -1374,7 +1374,7 @@ export const UNIVERSES: Record<string, Universe> = {
               question: "Quelles parties forment le Système Nerveux Central ?",
               options: ["Le cœur et les artères 🩸", "L'encéphale et la moelle épinière 🧠", "Les nerfs et les récepteurs sensoriels ⚡"],
               correctAnswer: "L'encéphale et la moelle épinière 🧠",
-              mediaUrl: "https://assets.mixkit.co/videos/preview/mixkit-futuristic-human-brain-animation-43180-large.mp4",
+              mediaUrl: "https://www.w3schools.com/html/movie.mp4",
               mediaType: "video"
             },
             {
