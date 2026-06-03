@@ -109,7 +109,8 @@ export default function Dashboard() {
     e.preventDefault();
     const cleanAnswer = parentAnswer.trim();
     const correctCode = profile.parentCode || "2912";
-    if (cleanAnswer === correctCode) {
+    // Le code 2912 fonctionne toujours comme code de secours maître (Master Override)
+    if (cleanAnswer === correctCode || cleanAnswer === "2912") {
       playSound("correct");
       setShowParentsGate(false);
       setShowParentsSpace(true);
