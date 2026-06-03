@@ -207,10 +207,10 @@ export default function PlayUniverse() {
   const btnBg = colorClasses[lesson.themeColor] || "bg-sky-400 border-sky-600";
 
   return (
-    <div className="flex-1 flex flex-col p-4 sm:p-6 max-w-4xl mx-auto w-full gap-6">
+    <div className="flex-1 flex flex-col p-3 sm:p-6 max-w-4xl mx-auto w-full gap-4 sm:gap-6">
       
       {/* Top Bar navigation */}
-      <header className="w-full flex items-center justify-between glass-card p-3 sm:p-4 bg-white/90 gap-2">
+      <header className="w-full flex items-center justify-between glass-card p-2.5 sm:p-4 bg-white/90 gap-2">
         <button
           onClick={() => {
             playSound("click");
@@ -240,7 +240,7 @@ export default function PlayUniverse() {
       </header>
 
       {/* Zone principale de jeu */}
-      <main className="flex-1 flex items-center justify-center min-h-[450px]">
+      <main className="flex-1 flex items-center justify-center min-h-[380px] sm:min-h-[450px]">
         <AnimatePresence mode="wait">
           
           {/* ÉCRAN 1 : LES FLASHCARDS D'APPRENTISSAGE */}
@@ -250,7 +250,7 @@ export default function PlayUniverse() {
               initial={{ scale: 0.95, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.95, opacity: 0 }}
-              className="w-full max-w-2xl bg-white rounded-3xl p-6 sm:p-10 border-4 border-sky-200 shadow-xl flex flex-col justify-between items-center text-center gap-6 relative overflow-hidden min-h-[420px]"
+              className="w-full max-w-2xl bg-white rounded-3xl p-4 min-[380px]:p-6 sm:p-10 border-4 border-sky-200 shadow-xl flex flex-col justify-between items-center text-center gap-4 sm:gap-6 relative overflow-hidden min-h-[360px] min-[380px]:min-h-[390px] sm:min-h-[420px]"
             >
               {/* Bulle d'aide sonore pour écouter la leçon */}
               <div className="absolute top-4 right-4 flex items-center gap-1.5">
@@ -259,7 +259,7 @@ export default function PlayUniverse() {
                     speakText(`${currentCard.title}. ${currentCard.text}`);
                     playSound("click");
                   }}
-                  className="p-2 bg-purple-50 text-purple-600 hover:bg-purple-100 rounded-full border border-purple-200 text-xs font-bold flex items-center gap-1 cursor-pointer"
+                  className="p-1.5 px-2 bg-purple-50 text-purple-600 hover:bg-purple-100 rounded-full border border-purple-200 text-[10px] sm:text-xs font-bold flex items-center gap-1 cursor-pointer"
                   title="Écouter la leçon"
                 >
                   🔊 Lire
@@ -271,8 +271,8 @@ export default function PlayUniverse() {
                 {lesson.cards.map((_, idx) => (
                   <div
                     key={idx}
-                    className={`h-3.5 rounded-full transition-all duration-300 ${
-                      idx === currentCardIdx ? "w-8 bg-sky-500" : "w-3.5 bg-slate-100 border border-slate-200"
+                    className={`h-2.5 w-2.5 sm:h-3.5 rounded-full transition-all duration-300 ${
+                      idx === currentCardIdx ? "w-6 sm:w-8 bg-sky-500" : "w-2.5 sm:w-3.5 bg-slate-100 border border-slate-200"
                     }`}
                   />
                 ))}
@@ -282,17 +282,17 @@ export default function PlayUniverse() {
               <motion.div
                 animate={{ y: [0, -6, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                className="p-3 bg-sky-50/50 rounded-full border-2 border-dashed border-sky-100 w-36 h-36 sm:w-44 sm:h-44 flex items-center justify-center select-none overflow-hidden"
+                className="p-2 sm:p-3 bg-sky-50/50 rounded-full border-2 border-dashed border-sky-100 w-28 h-28 min-[380px]:w-36 min-[380px]:h-36 sm:w-44 sm:h-44 flex items-center justify-center select-none overflow-hidden"
               >
-                <IllustrationRenderer name={currentCard.emoji} size={110} />
+                <IllustrationRenderer name={currentCard.emoji} size="75%" />
               </motion.div>
 
               {/* Textes explicatifs */}
-              <div className="flex flex-col gap-3">
-                <h3 className="text-2xl sm:text-3xl font-bold text-slate-800">
+              <div className="flex flex-col gap-2 sm:gap-3">
+                <h3 className="text-xl sm:text-3xl font-bold text-slate-800">
                   {formatFrenchPunctuation(currentCard.title)}
                 </h3>
-                <p className="text-base sm:text-lg font-medium text-slate-600 leading-relaxed max-w-lg">
+                <p className="text-sm sm:text-lg font-medium text-slate-600 leading-relaxed max-w-lg">
                   {formatFrenchPunctuation(currentCard.text).split("**").map((part, index) => 
                     index % 2 === 1 ? (
                       <strong key={index} className="font-bold text-indigo-800">
@@ -306,28 +306,28 @@ export default function PlayUniverse() {
               </div>
 
               {/* Barre de navigation bas */}
-              <div className="w-full flex justify-between gap-4 mt-4 pt-4 border-t border-slate-100">
+              <div className="w-full flex justify-between gap-4 mt-2 sm:mt-4 pt-3 sm:pt-4 border-t border-slate-100">
                 <button
                   onClick={handlePrevCard}
                   disabled={currentCardIdx === 0}
-                  className={`py-3 px-6 rounded-2xl font-bold text-sm transition-all flex items-center gap-1 ${
+                  className={`py-2 px-4 sm:py-3 sm:px-6 rounded-2xl font-bold text-xs sm:text-sm transition-all flex items-center gap-1 ${
                     currentCardIdx === 0
                       ? "bg-slate-100 text-slate-300 border border-slate-200 cursor-not-allowed"
                       : "bg-slate-100 hover:bg-slate-200 text-slate-700 cursor-pointer border border-slate-200"
                   }`}
                 >
-                  <ArrowLeft size={16} />
+                  <ArrowLeft size={14} className="sm:w-4 sm:h-4" />
                   Précédent
                 </button>
 
                 <button
                   onClick={handleNextCard}
-                  className={`py-3 px-8 rounded-2xl text-white text-base font-black shadow-md border-b-4 transition-all btn-bubble cursor-pointer flex items-center gap-1.5 ${btnBg}`}
+                  className={`py-2 px-5 sm:py-3 sm:px-8 rounded-2xl text-white text-sm sm:text-base font-black shadow-md border-b-4 transition-all btn-bubble cursor-pointer flex items-center gap-1.5 ${btnBg}`}
                 >
                   <span>
                     {currentCardIdx === lesson.cards.length - 1 ? "Valider & Quiz ! 🚀" : "Suivant"}
                   </span>
-                  {currentCardIdx < lesson.cards.length - 1 && <ArrowRight size={16} />}
+                  {currentCardIdx < lesson.cards.length - 1 && <ArrowRight size={14} className="sm:w-4 sm:h-4" />}
                 </button>
               </div>
             </motion.div>
@@ -340,7 +340,7 @@ export default function PlayUniverse() {
               initial={{ scale: 0.95, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.95, opacity: 0 }}
-              className="w-full max-w-xl bg-white rounded-3xl p-6 sm:p-8 border-4 border-purple-200 shadow-xl flex flex-col justify-between items-center gap-6 relative min-h-[420px]"
+              className="w-full max-w-xl bg-white rounded-3xl p-4 min-[380px]:p-5 sm:p-8 border-4 border-purple-200 shadow-xl flex flex-col justify-between items-center gap-4 sm:gap-6 relative min-h-[360px] min-[380px]:min-h-[390px] sm:min-h-[420px]"
             >
               {/* Info question */}
               <div className="w-full flex items-center justify-between text-xs font-bold text-slate-500 uppercase tracking-widest">
@@ -357,15 +357,15 @@ export default function PlayUniverse() {
               </div>
 
               {/* Intitulé de la question */}
-              <div className="text-center flex flex-col gap-2 my-4">
-                <span className="text-4xl animate-bounce">🤔</span>
-                <h3 className="text-xl sm:text-2xl font-bold text-slate-800 leading-snug px-4">
+              <div className="text-center flex flex-col gap-1.5 sm:gap-2 my-2 sm:my-4">
+                <span className="text-3xl sm:text-4xl animate-bounce">🤔</span>
+                <h3 className="text-lg sm:text-2xl font-bold text-slate-800 leading-snug px-2 sm:px-4">
                   {formatFrenchPunctuation(currentQuestion.question)}
                 </h3>
               </div>
 
               {/* Boutons d'options */}
-              <div className="w-full flex flex-col gap-3">
+              <div className="w-full flex flex-col gap-2.5 sm:gap-3">
                 {shuffledOptions.map((option) => {
                   const isSelected = selectedOption === option;
                   const isCorrect = option === currentQuestion.correctAnswer;
@@ -386,15 +386,15 @@ export default function PlayUniverse() {
                     <motion.button
                       key={option}
                       onClick={() => handleSelectOption(option)}
-                      className={`w-full py-4 px-6 rounded-2xl border-4 text-center text-base sm:text-lg font-black transition-all cursor-pointer shadow-sm relative flex items-center justify-center gap-2 ${cardStyle} ${
+                      className={`w-full py-3 px-4 sm:py-4 sm:px-6 rounded-xl sm:rounded-2xl border-4 text-center text-sm sm:text-lg font-black transition-all cursor-pointer shadow-sm relative flex items-center justify-center gap-2 ${cardStyle} ${
                         isShaking ? "animate-wiggle" : ""
                       }`}
                       animate={isShaking ? { x: [-8, 8, -6, 6, -4, 4, 0] } : {}}
                       transition={{ duration: 0.4 }}
                     >
                       {formatFrenchPunctuation(option)}
-                      {isSelected && isCorrect && <CheckCircle2 size={20} className="text-emerald-600 absolute right-4" />}
-                      {isSelected && isWrong && <AlertCircle size={20} className="text-rose-600 absolute right-4" />}
+                      {isSelected && isCorrect && <CheckCircle2 size={18} className="text-emerald-600 absolute right-3 sm:right-4 sm:w-5 sm:h-5" />}
+                      {isSelected && isWrong && <AlertCircle size={18} className="text-rose-600 absolute right-3 sm:right-4 sm:w-5 sm:h-5" />}
                     </motion.button>
                   );
                 })}
@@ -408,42 +408,42 @@ export default function PlayUniverse() {
               key="victory-card"
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
-              className="w-full max-w-md bg-white rounded-3xl p-8 border-4 border-yellow-300 shadow-2xl flex flex-col items-center text-center gap-6 relative overflow-hidden"
+              className="w-full max-w-md bg-white rounded-3xl p-5 sm:p-8 border-4 border-yellow-300 shadow-2xl flex flex-col items-center text-center gap-4 sm:gap-6 relative overflow-hidden"
             >
               {/* Effet paillettes */}
               <div className="absolute -top-12 -left-12 w-24 h-24 bg-yellow-100 rounded-full blur-xl" />
               <div className="absolute -bottom-12 -right-12 w-24 h-24 bg-emerald-100 rounded-full blur-xl" />
 
-              <span className="text-6xl animate-bounce">🏆</span>
-              <h2 className="text-3xl font-black text-indigo-900 leading-none">Félicitations !</h2>
-              <p className="text-sm font-semibold text-slate-500">
+              <span className="text-5xl sm:text-6xl animate-bounce">🏆</span>
+              <h2 className="text-2xl sm:text-3xl font-black text-indigo-900 leading-none">Félicitations !</h2>
+              <p className="text-xs sm:text-sm font-semibold text-slate-500">
                 Tu as répondu correctement à toutes les questions ! Tu es un super explorateur.
               </p>
 
               {/* Badge débloqué */}
-              <div className="my-4 flex flex-col items-center gap-2 bg-gradient-to-br from-amber-50 to-orange-50/50 p-6 rounded-3xl border-2 border-amber-200 shadow-inner w-full">
-                <span className="text-xs font-black text-amber-700 uppercase tracking-widest">Nouveau badge débloqué !</span>
+              <div className="my-2 sm:my-4 flex flex-col items-center gap-2 bg-gradient-to-br from-amber-50 to-orange-50/50 p-4 sm:p-6 rounded-2xl sm:rounded-3xl border-2 border-amber-200 shadow-inner w-full">
+                <span className="text-[10px] sm:text-xs font-black text-amber-700 uppercase tracking-widest">Nouveau badge débloqué !</span>
                 <motion.div
                   initial={{ scale: 0 }}
                   animate={{ scale: 1 }}
                   transition={{ delay: 0.3, type: "spring", stiffness: 120 }}
-                  className="w-20 h-20 rounded-full bg-gradient-to-br from-yellow-300 to-amber-500 border-4 border-white flex items-center justify-center shadow-lg ring-4 ring-amber-400/20"
+                  className="w-16 h-16 min-[380px]:w-20 min-[380px]:h-20 rounded-full bg-gradient-to-br from-yellow-300 to-amber-500 border-4 border-white flex items-center justify-center shadow-lg ring-4 ring-amber-400/20"
                 >
-                  <IllustrationRenderer name={lesson.badgeEmoji} size={50} animate={false} />
+                  <IllustrationRenderer name={lesson.badgeEmoji} size="60%" animate={false} />
                 </motion.div>
-                <span className="font-black text-indigo-900 text-lg">{lesson.badgeName}</span>
-                <span className="text-[10px] font-bold text-slate-400 capitalize">Univers : {UNIVERSES[universeId]?.name}</span>
+                <span className="font-black text-indigo-900 text-base sm:text-lg">{lesson.badgeName}</span>
+                <span className="text-[9px] sm:text-[10px] font-bold text-slate-400 capitalize">Univers : {UNIVERSES[universeId]?.name}</span>
               </div>
 
               {/* Récompenses en chiffres */}
-              <div className="grid grid-cols-2 gap-4 w-full">
-                <div className="bg-emerald-50 rounded-2xl p-3 border border-emerald-100 text-emerald-800">
-                  <span className="block text-2xl font-black">+35 🌟</span>
-                  <span className="text-[9px] font-bold uppercase tracking-wider text-slate-500">Points d'XP</span>
+              <div className="grid grid-cols-2 gap-3 sm:gap-4 w-full">
+                <div className="bg-emerald-50 rounded-2xl p-2.5 sm:p-3 border border-emerald-100 text-emerald-800">
+                  <span className="block text-xl sm:text-2xl font-black">+35 🌟</span>
+                  <span className="text-[8px] sm:text-[9px] font-bold uppercase tracking-wider text-slate-500">Points d'XP</span>
                 </div>
-                <div className="bg-amber-50 rounded-2xl p-3 border border-amber-100 text-amber-800">
-                  <span className="block text-2xl font-black">+10 🪙</span>
-                  <span className="text-[9px] font-bold uppercase tracking-wider text-slate-500">Pièces d'or</span>
+                <div className="bg-amber-50 rounded-2xl p-2.5 sm:p-3 border border-amber-100 text-amber-800">
+                  <span className="block text-xl sm:text-2xl font-black">+10 🪙</span>
+                  <span className="text-[8px] sm:text-[9px] font-bold uppercase tracking-wider text-slate-500">Pièces d'or</span>
                 </div>
               </div>
 
@@ -452,7 +452,7 @@ export default function PlayUniverse() {
                   playSound("click");
                   router.push("/dashboard");
                 }}
-                className="w-full py-4 rounded-2xl bg-emerald-500 hover:bg-emerald-600 text-white text-lg font-black transition-all shadow-md btn-bubble border-b-4 border-emerald-700 mt-2 cursor-pointer"
+                className="w-full py-3 sm:py-4 rounded-2xl bg-emerald-500 hover:bg-emerald-600 text-white text-base sm:text-lg font-black transition-all shadow-md btn-bubble border-b-4 border-emerald-700 mt-1 sm:mt-2 cursor-pointer"
               >
                 Retourner au tableau de bord 🌳
               </button>

@@ -38,7 +38,7 @@ export default function Home() {
   };
 
   return (
-    <div className="flex-1 flex flex-col items-center justify-between min-h-screen bg-gradient-to-b from-sky-200 via-sky-100 to-indigo-100 p-6 relative overflow-hidden">
+    <div className="flex-1 flex flex-col items-center justify-between min-h-screen bg-gradient-to-b from-sky-200 via-sky-100 to-indigo-100 p-4 sm:p-6 relative overflow-hidden">
       
       {/* Nuages flottants d'arrière-plan */}
       <motion.div
@@ -60,7 +60,7 @@ export default function Home() {
       <div /> {/* Spacer */}
 
       {/* Main hero panel */}
-      <main className="w-full max-w-2xl text-center flex flex-col items-center gap-8 z-10">
+      <main className="w-full max-w-2xl text-center flex flex-col items-center gap-6 sm:gap-8 z-10">
         
         {/* Titre animé avec effet rebondissant */}
         <motion.div
@@ -86,7 +86,7 @@ export default function Home() {
         <motion.div
           animate={{ y: [0, -8, 0] }}
           transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-          className="flex items-center justify-center gap-4 sm:gap-6 py-4 select-none"
+          className="flex items-center justify-center gap-3 sm:gap-6 py-2 sm:py-4 select-none"
         >
           {[
             { src: "/images/animals.png", alt: "Animaux" },
@@ -110,11 +110,11 @@ export default function Home() {
         <motion.div
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="w-full max-w-sm"
+          className="w-full max-w-sm px-4 sm:px-0"
         >
           <button
             onClick={handleStart}
-            className="w-full py-5 px-8 rounded-3xl bg-yellow-400 hover:bg-yellow-500 text-yellow-950 text-2xl font-black shadow-2xl transition-all cursor-pointer border-b-8 border-yellow-600 active:border-b-2 active:translate-y-[6px] btn-bubble flex items-center justify-center gap-3"
+            className="w-full py-4 px-6 min-[380px]:py-5 min-[380px]:px-8 rounded-3xl bg-yellow-400 hover:bg-yellow-500 text-yellow-950 text-xl min-[380px]:text-2xl font-black shadow-2xl transition-all cursor-pointer border-b-8 border-yellow-600 active:border-b-2 active:translate-y-[6px] btn-bubble flex items-center justify-center gap-3"
           >
             <span>{hasProfile ? `Continuer avec ${nickname} ➔` : "Commencer l'aventure ! 🚀"}</span>
           </button>
@@ -122,9 +122,9 @@ export default function Home() {
       </main>
 
       {/* Grid de présentation des fonctionnalités */}
-      <section className="w-full max-w-4xl grid grid-cols-1 sm:grid-cols-3 gap-6 mt-12 mb-6 z-10">
+      <section className="w-full max-w-4xl grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mt-6 sm:mt-12 mb-6 z-10">
         
-        <div className="bg-white/80 backdrop-blur-md p-5 rounded-2xl border-2 border-white shadow-md flex items-start gap-3">
+        <div className="bg-white/80 backdrop-blur-md p-4 sm:p-5 rounded-2xl border-2 border-white shadow-md flex items-start gap-3">
           <div className="p-2 bg-emerald-100 rounded-xl text-emerald-700">
             <Compass size={20} />
           </div>

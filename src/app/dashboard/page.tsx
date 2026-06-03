@@ -136,87 +136,87 @@ export default function Dashboard() {
   };
 
   return (
-    <div className="flex-1 flex flex-col p-4 sm:p-6 max-w-6xl mx-auto w-full gap-6">
+    <div className="flex-1 flex flex-col p-3 sm:p-6 max-w-6xl mx-auto w-full gap-4 sm:gap-6">
       
       {/* 1. Header & Barre de Profil */}
-      <header className="w-full flex flex-col md:flex-row md:items-center justify-between gap-4 glass-card p-6 bg-white/90">
+      <header className="w-full flex flex-col md:flex-row md:items-center justify-between gap-3 sm:gap-4 glass-card p-4 sm:p-6 bg-white/90">
         
         {/* Infos profil gauche */}
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-3 sm:gap-4">
           <div
             onClick={() => {
               playSound("click");
               setShowShop(true);
             }}
-            className="cursor-pointer bg-sky-100 hover:bg-sky-200 transition-all p-1 rounded-2xl border-2 border-sky-300 relative group"
+            className="cursor-pointer bg-sky-100 hover:bg-sky-200 transition-all p-1 rounded-xl sm:rounded-2xl border-2 border-sky-300 relative group shrink-0"
             title="Personnaliser mon avatar"
           >
-            <AvatarRenderer config={profile.avatar} size={60} interactive={true} />
-            <div className="absolute -bottom-1 -right-1 bg-yellow-400 text-yellow-950 p-1 rounded-lg text-xs font-bold shadow border border-white group-hover:scale-110 transition-transform">
+            <AvatarRenderer config={profile.avatar} size={50} interactive={true} />
+            <div className="absolute -bottom-1 -right-1 bg-yellow-400 text-yellow-950 p-1 rounded-lg text-[10px] font-bold shadow border border-white group-hover:scale-110 transition-transform">
               👕
             </div>
           </div>
 
-          <div className="flex flex-col flex-1 min-w-[150px]">
-            <div className="flex items-center gap-2">
-              <h2 className="text-xl font-bold text-slate-800 capitalize truncate max-w-[180px]">
+          <div className="flex flex-col flex-1 min-w-0">
+            <div className="flex items-center gap-1.5 sm:gap-2">
+              <h2 className="text-lg sm:text-xl font-bold text-slate-800 capitalize truncate max-w-[120px] min-[380px]:max-w-[150px] sm:max-w-[180px]">
                 {profile.nickname}
               </h2>
-              <span className="bg-indigo-100 text-indigo-700 text-xs font-black px-2.5 py-0.5 rounded-full border border-indigo-200">
+              <span className="bg-indigo-100 text-indigo-700 text-[10px] sm:text-xs font-black px-2 py-0.5 sm:px-2.5 sm:py-0.5 rounded-full border border-indigo-200 shrink-0">
                 Niv. {currentLevel}
               </span>
             </div>
 
             {/* Barre d'XP */}
-            <div className="w-full bg-slate-100 rounded-full h-4 mt-2 overflow-hidden border border-slate-200 relative">
+            <div className="w-full bg-slate-100 rounded-full h-3 sm:h-4 mt-1 sm:mt-2 overflow-hidden border border-slate-200 relative">
               <motion.div
                 initial={{ width: 0 }}
                 animate={{ width: `${xpPercent}%` }}
                 transition={{ duration: 0.5 }}
                 className="bg-gradient-to-r from-emerald-400 to-emerald-500 h-full rounded-full"
               />
-              <span className="absolute inset-0 flex items-center justify-center text-[10px] font-black text-slate-600">
-                {xpPercent.toFixed(0)}% d'XP
+              <span className="absolute inset-0 flex items-center justify-center text-[9px] sm:text-[10px] font-black text-slate-600">
+                {xpPercent.toFixed(0)}% XP
               </span>
             </div>
           </div>
         </div>
 
         {/* Stats centre (Monnaies, Streak) */}
-        <div className="flex items-center justify-around md:justify-end gap-6 border-t md:border-t-0 pt-4 md:pt-0 border-slate-100">
-          <div className="flex items-center gap-2 bg-amber-50 border-2 border-amber-200 px-4 py-2 rounded-2xl">
-            <Coins className="text-amber-500 w-6 h-6 animate-bounce" />
+        <div className="flex items-center justify-around md:justify-end gap-3 sm:gap-6 border-t md:border-t-0 pt-3 md:pt-0 border-slate-100">
+          <div className="flex items-center gap-2 bg-amber-50 border-2 border-amber-200 px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl sm:rounded-2xl">
+            <Coins className="text-amber-500 w-5 h-5 sm:w-6 sm:h-6 animate-bounce" />
             <div className="flex flex-col">
-              <span className="text-xs text-amber-700 font-bold leading-tight">Pièces</span>
-              <span className="text-lg font-black text-amber-900 leading-none">{profile.coins}</span>
+              <span className="text-[10px] sm:text-xs text-amber-700 font-bold leading-tight">Pièces</span>
+              <span className="text-base sm:text-lg font-black text-amber-900 leading-none">{profile.coins}</span>
             </div>
           </div>
 
-          <div className="flex items-center gap-2 bg-orange-50 border-2 border-orange-200 px-4 py-2 rounded-2xl">
-            <Flame className="text-orange-500 w-6 h-6" />
+          <div className="flex items-center gap-2 bg-orange-50 border-2 border-orange-200 px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl sm:rounded-2xl">
+            <Flame className="text-orange-500 w-5 h-5 sm:w-6 sm:h-6" />
             <div className="flex flex-col">
-              <span className="text-xs text-orange-700 font-bold leading-tight">Série</span>
-              <span className="text-lg font-black text-orange-900 leading-none">{profile.streak} jour{profile.streak > 1 ? "s" : ""}</span>
+              <span className="text-[10px] sm:text-xs text-orange-700 font-bold leading-tight">Série</span>
+              <span className="text-base sm:text-lg font-black text-orange-900 leading-none">{profile.streak} j</span>
             </div>
           </div>
         </div>
 
         {/* Contrôles et options droites */}
-        <div className="flex items-center justify-center sm:justify-end gap-2 w-full sm:w-auto">
+        <div className="flex items-center justify-center sm:justify-end gap-1.5 sm:gap-2 w-full sm:w-auto">
           {/* Bouton son */}
           <button
             onClick={() => {
               setSoundEnabled(!profile.soundEnabled);
               playSound("click");
             }}
-            className={`p-3 rounded-xl border-2 transition-all cursor-pointer ${
+            className={`p-2.5 sm:p-3 rounded-xl border-2 transition-all cursor-pointer ${
               profile.soundEnabled
                 ? "border-sky-300 bg-sky-50 text-sky-700 hover:bg-sky-100"
                 : "border-slate-200 bg-slate-50 text-slate-400 hover:bg-slate-100"
             }`}
             title={profile.soundEnabled ? "Couper les bruitages" : "Activer les bruitages"}
           >
-            {profile.soundEnabled ? <Volume2 size={20} /> : <VolumeX size={20} />}
+            {profile.soundEnabled ? <Volume2 size={16} className="sm:w-5 sm:h-5" /> : <VolumeX size={16} className="sm:w-5 sm:h-5" />}
           </button>
 
           {/* Bouton lecture vocale automatique */}
@@ -225,7 +225,7 @@ export default function Dashboard() {
               setReadAloudEnabled(!profile.readAloudEnabled);
               playSound("click");
             }}
-            className={`p-3 rounded-xl border-2 text-sm font-bold transition-all cursor-pointer flex items-center gap-1.5 ${
+            className={`p-2.5 sm:p-3 rounded-xl border-2 text-xs sm:text-sm font-bold transition-all cursor-pointer flex items-center gap-1.5 ${
               profile.readAloudEnabled
                 ? "border-purple-300 bg-purple-50 text-purple-700 hover:bg-purple-100"
                 : "border-slate-200 bg-slate-50 text-slate-400 hover:bg-slate-100"
@@ -241,25 +241,25 @@ export default function Dashboard() {
           {/* Espace parents */}
           <button
             onClick={openParentsGate}
-            className="p-3 rounded-xl border-2 border-indigo-200 bg-indigo-50 text-indigo-700 hover:bg-indigo-100 font-bold text-sm flex items-center gap-1.5 cursor-pointer transition-all"
+            className="p-2.5 sm:p-3 rounded-xl border-2 border-indigo-200 bg-indigo-50 text-indigo-700 hover:bg-indigo-100 font-bold text-xs sm:text-sm flex items-center gap-1.5 cursor-pointer transition-all"
           >
-            <Lock size={16} />
-            <span className="hidden sm:inline">Parents</span>
+            <Lock size={14} className="sm:w-4 sm:h-4" />
+            <span>Parents</span>
           </button>
         </div>
       </header>
 
       {/* 2. Main Content Grid (Arbre à gauche, Univers à droite) */}
-      <main className="grid grid-cols-1 lg:grid-cols-12 gap-6 w-full items-start">
+      <main className="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6 w-full items-start">
         
         {/* Section de l'arbre (Gauche) */}
         <section className="lg:col-span-5 flex flex-col gap-4 items-center">
-          <div className="w-full glass-card p-6 bg-white/90 text-center flex flex-col gap-4">
+          <div className="w-full glass-card p-4 sm:p-6 bg-white/90 text-center flex flex-col gap-3 sm:gap-4">
             <div className="flex items-center justify-between">
-              <h3 className="font-bold text-xl text-indigo-950 flex items-center gap-2">
+              <h3 className="font-bold text-lg sm:text-xl text-indigo-950 flex items-center gap-1.5 sm:gap-2">
                 🌳 Mon Arbre du Savoir
               </h3>
-              <span className="text-xs bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded-full">
+              <span className="text-[10px] sm:text-xs bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded-full">
                 Grandit avec ton XP
               </span>
             </div>
@@ -270,20 +270,20 @@ export default function Dashboard() {
               unlockedBadges={profile.unlockedBadges}
             />
 
-            <p className="text-sm font-medium text-slate-600 px-2 leading-relaxed">
+            <p className="text-xs sm:text-sm font-medium text-slate-600 px-2 leading-relaxed">
               Fais les leçons et les quiz pour gagner de l'XP ! Ton arbre grandira et tes badges gagnés s'y suspendront comme des fruits ! 🍎
             </p>
 
-            <div className="grid grid-cols-2 gap-3 mt-2">
+            <div className="grid grid-cols-2 gap-2 sm:gap-3 mt-1 sm:mt-2">
               <button
                 onClick={() => {
                   playSound("click");
                   setShowBadges(true);
                 }}
-                className="py-3 px-4 rounded-2xl bg-indigo-500 hover:bg-indigo-600 text-white font-bold text-sm transition-all shadow-md btn-bubble border-b-4 border-indigo-700 flex items-center justify-center gap-2 cursor-pointer"
+                className="py-2.5 px-2 min-[380px]:py-3 min-[380px]:px-4 rounded-2xl bg-indigo-500 hover:bg-indigo-600 text-white font-bold text-xs sm:text-sm transition-all shadow-md btn-bubble border-b-4 border-indigo-700 flex items-center justify-center gap-1.5 sm:gap-2 cursor-pointer"
               >
-                <Award size={16} />
-                Mes Badges ({profile.unlockedBadges.length})
+                <Award size={14} className="sm:w-4 sm:h-4" />
+                <span>Mes Badges ({profile.unlockedBadges.length})</span>
               </button>
               
               <button
@@ -291,10 +291,10 @@ export default function Dashboard() {
                   playSound("click");
                   setShowShop(true);
                 }}
-                className="py-3 px-4 rounded-2xl bg-amber-400 hover:bg-amber-500 text-amber-950 font-bold text-sm transition-all shadow-md btn-bubble border-b-4 border-amber-600 flex items-center justify-center gap-2 cursor-pointer"
+                className="py-2.5 px-2 min-[380px]:py-3 min-[380px]:px-4 rounded-2xl bg-amber-400 hover:bg-amber-500 text-amber-950 font-bold text-xs sm:text-sm transition-all shadow-md btn-bubble border-b-4 border-amber-600 flex items-center justify-center gap-1.5 sm:gap-2 cursor-pointer"
               >
-                <ShoppingBag size={16} />
-                Boutique Avatar
+                <ShoppingBag size={14} className="sm:w-4 sm:h-4" />
+                <span>Boutique Avatar</span>
               </button>
             </div>
           </div>
@@ -302,12 +302,12 @@ export default function Dashboard() {
 
         {/* Section Univers Pédagogiques (Droite) */}
         <section className="lg:col-span-7 flex flex-col gap-4">
-          <div className="glass-card p-6 bg-white/90">
-            <h3 className="font-bold text-xl text-indigo-950 mb-6 flex items-center gap-2">
+          <div className="glass-card p-4 sm:p-6 bg-white/90">
+            <h3 className="font-bold text-lg sm:text-xl text-indigo-950 mb-4 sm:mb-6 flex items-center gap-2">
               🧭 Choisis ton univers d'apprentissage
             </h3>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
               {activeUniverses.map((univ) => {
                 const { completed, total } = getUniverseProgress(univ.id);
                 const isFinished = total > 0 && completed === total;
@@ -345,41 +345,41 @@ export default function Dashboard() {
                       playSound("click");
                       router.push(`/play/${univ.id}`);
                     }}
-                    className={`p-5 rounded-3xl border-4 bg-gradient-to-br flex flex-col justify-between items-start text-left cursor-pointer transition-all duration-300 relative group overflow-hidden ${currentStyle}`}
+                    className={`p-4 sm:p-5 rounded-3xl border-4 bg-gradient-to-br flex flex-col justify-between items-start text-left cursor-pointer transition-all duration-300 relative group overflow-hidden ${currentStyle}`}
                   >
                     {/* Fond d'illustration géant flottant */}
                     <img
                       src={`/images/${univ.id}.png`}
                       alt=""
-                      className="absolute right-2 -bottom-2 w-28 h-28 opacity-10 select-none group-hover:scale-110 transition-transform duration-300 pointer-events-none object-contain"
+                      className="absolute right-2 -bottom-2 w-24 h-24 sm:w-28 sm:h-28 opacity-10 select-none group-hover:scale-110 transition-transform duration-300 pointer-events-none object-contain"
                     />
 
-                    <div className="flex items-center gap-3">
-                      <div className="w-16 h-16 bg-white rounded-2xl shadow-sm border border-slate-100 group-hover:rotate-6 transition-transform flex items-center justify-center overflow-hidden p-1.5 shrink-0 select-none">
+                    <div className="flex items-center gap-2.5 sm:gap-3">
+                      <div className="w-12 h-12 sm:w-16 sm:h-16 bg-white rounded-2xl shadow-sm border border-slate-100 group-hover:rotate-6 transition-transform flex items-center justify-center overflow-hidden p-1.5 shrink-0 select-none">
                         <img src={`/images/${univ.id}.png`} alt={univ.name} className="w-full h-full object-contain" />
                       </div>
                       <div className="flex flex-col">
-                        <h4 className="font-bold text-lg text-slate-800 leading-tight">
+                        <h4 className="font-bold text-base sm:text-lg text-slate-800 leading-tight">
                           {univ.name}
                         </h4>
-                        <span className="text-[11px] font-bold text-slate-500">
+                        <span className="text-[10px] sm:text-[11px] font-bold text-slate-500">
                           Niveau : {profile.ageGroup === "3-5" ? "Facile" : profile.ageGroup === "6-8" ? "Moyen" : "Difficile"}
                         </span>
                       </div>
                     </div>
 
-                    <p className="text-xs font-semibold text-slate-600 mt-3 mb-4 leading-relaxed max-w-[240px]">
+                    <p className="text-xs font-semibold text-slate-600 mt-2 mb-3 sm:mt-3 sm:mb-4 leading-relaxed max-w-[240px]">
                       {univ.description}
                     </p>
 
                     <div className="w-full flex items-center justify-between pt-2 border-t border-slate-200/50">
                       {/* Avancement */}
-                      <span className="text-xs font-bold text-slate-700">
+                      <span className="text-[10px] sm:text-xs font-bold text-slate-700">
                         {completed === total ? "✅ Fini !" : `Progression : ${completed}/${total}`}
                       </span>
 
                       {/* Pill de quiz */}
-                      <span className={`text-[10px] font-black uppercase px-2.5 py-1 rounded-full ${badgeColor}`}>
+                      <span className={`text-[9px] sm:text-[10px] font-black uppercase px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full ${badgeColor}`}>
                         {isFinished ? "Badge Acquis" : "Jouer !"}
                       </span>
                     </div>
@@ -400,7 +400,7 @@ export default function Dashboard() {
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
-              className="w-full max-w-lg bg-white rounded-3xl p-6 border-4 border-amber-300 shadow-2xl relative max-h-[85vh] overflow-y-auto"
+              className="w-full max-w-lg bg-white rounded-3xl p-4 min-[380px]:p-5 sm:p-6 border-4 border-amber-300 shadow-2xl relative max-h-[85vh] overflow-y-auto"
             >
               <button
                 onClick={() => {
@@ -412,30 +412,30 @@ export default function Dashboard() {
                 ✕
               </button>
 
-              <div className="text-center mb-6">
-                <ShoppingBag className="text-amber-500 w-10 h-10 mx-auto" />
-                <h3 className="font-bold text-2xl text-amber-950 mt-1">Boutique de l'Aventurier</h3>
+              <div className="text-center mb-4 sm:mb-6">
+                <ShoppingBag className="text-amber-500 w-8 h-8 sm:w-10 sm:h-10 mx-auto" />
+                <h3 className="font-bold text-xl sm:text-2xl text-amber-950 mt-1">Boutique de l'Aventurier</h3>
                 <p className="text-xs font-bold text-slate-500">
                   Achète des chapeaux et déguisements avec tes pièces d'or !
                 </p>
-                <div className="inline-flex items-center gap-1.5 bg-amber-50 border-2 border-amber-200 px-3 py-1 rounded-full mt-3">
-                  <Coins className="text-amber-500 w-4 h-4" />
-                  <span className="text-sm font-black text-amber-900">{profile.coins} pièces</span>
+                <div className="inline-flex items-center gap-1.5 bg-amber-50 border-2 border-amber-200 px-3 py-0.5 sm:py-1 rounded-full mt-2 sm:mt-3">
+                  <Coins className="text-amber-500 w-3.5 h-3.5 sm:w-4 sm:h-4" />
+                  <span className="text-xs sm:text-sm font-black text-amber-900">{profile.coins} pièces</span>
                 </div>
               </div>
 
               {/* Preview Avatar en haut */}
-              <div className="bg-sky-50 rounded-2xl p-4 border-2 border-sky-100 flex items-center justify-center gap-6 mb-6">
-                <AvatarRenderer config={profile.avatar} size={90} interactive={false} />
+              <div className="bg-sky-50 rounded-2xl p-3 sm:p-4 border-2 border-sky-100 flex items-center justify-center gap-4 sm:gap-6 mb-4 sm:mb-6">
+                <AvatarRenderer config={profile.avatar} size={70} interactive={false} />
                 <div className="flex flex-col">
-                  <span className="text-xs font-bold text-sky-600">Aperçu en direct</span>
-                  <span className="font-bold text-slate-700 capitalize">{profile.nickname}</span>
+                  <span className="text-[10px] sm:text-xs font-bold text-sky-600">Aperçu en direct</span>
+                  <span className="font-bold text-base sm:text-slate-700 capitalize">{profile.nickname}</span>
                   <button
                     onClick={() => {
                       equipAccessory("none");
                       playSound("click");
                     }}
-                    className="text-[10px] font-bold text-slate-500 hover:text-slate-800 text-left mt-2 underline"
+                    className="text-[9px] sm:text-[10px] font-bold text-slate-500 hover:text-slate-800 text-left mt-1.5 sm:mt-2 underline"
                   >
                     Retirer l'accessoire
                   </button>
@@ -443,7 +443,7 @@ export default function Dashboard() {
               </div>
 
               {/* Grille d'objets */}
-              <div className="flex flex-col gap-3">
+              <div className="flex flex-col gap-2 sm:gap-3">
                 {SHOP_ITEMS.map((item) => {
                   const isUnlocked = profile.unlockedAccessories.includes(item.id);
                   const isEquipped = profile.avatar.accessory === item.id;
@@ -452,7 +452,7 @@ export default function Dashboard() {
                   return (
                     <div
                       key={item.id}
-                      className={`flex items-center justify-between p-3 rounded-2xl border-2 transition-all ${
+                      className={`flex items-center justify-between p-2.5 sm:p-3 rounded-xl sm:rounded-2xl border-2 transition-all ${
                         isEquipped
                           ? "border-emerald-400 bg-emerald-50/50"
                           : isUnlocked
@@ -460,19 +460,19 @@ export default function Dashboard() {
                           : "border-slate-100 bg-slate-50"
                       }`}
                     >
-                      <div className="flex items-center gap-3">
-                        <span className="text-3xl p-1.5 bg-white rounded-xl shadow-sm border border-slate-100">
+                      <div className="flex items-center gap-2.5 sm:gap-3">
+                        <span className="text-2xl sm:text-3xl p-1 sm:p-1.5 bg-white rounded-xl shadow-sm border border-slate-100">
                           {item.emoji}
                         </span>
                         <div className="flex flex-col">
-                          <span className="font-bold text-sm text-slate-700">{item.name}</span>
-                          <span className="text-[10px] text-slate-500 leading-tight">{item.desc}</span>
+                          <span className="font-bold text-xs sm:text-sm text-slate-700">{item.name}</span>
+                          <span className="text-[9px] sm:text-[10px] text-slate-500 leading-tight">{item.desc}</span>
                         </div>
                       </div>
 
                       {/* Bouton d'action */}
                       {isEquipped ? (
-                        <span className="text-xs font-bold text-emerald-600 px-3 py-1 bg-emerald-100 rounded-full">
+                        <span className="text-[10px] sm:text-xs font-bold text-emerald-600 px-2 py-0.5 sm:px-3 sm:py-1 bg-emerald-100 rounded-full">
                           Équipé !
                         </span>
                       ) : isUnlocked ? (
@@ -481,7 +481,7 @@ export default function Dashboard() {
                             equipAccessory(item.id);
                             playSound("click");
                           }}
-                          className="px-3 py-1.5 text-xs font-bold bg-indigo-500 hover:bg-indigo-600 text-white rounded-xl shadow cursor-pointer transition-colors"
+                          className="px-2 py-1 sm:px-3 sm:py-1.5 text-[10px] sm:text-xs font-bold bg-indigo-500 hover:bg-indigo-600 text-white rounded-lg sm:rounded-xl shadow cursor-pointer transition-colors"
                         >
                           Porter
                         </button>
@@ -497,14 +497,14 @@ export default function Dashboard() {
                             }
                           }}
                           disabled={!canBuy}
-                          className={`px-3 py-1.5 rounded-xl text-xs font-bold shadow transition-all flex items-center gap-1 cursor-pointer ${
+                          className={`px-2 py-1 sm:px-3 sm:py-1.5 rounded-lg sm:rounded-xl text-[10px] sm:text-xs font-bold shadow transition-all flex items-center gap-1 cursor-pointer ${
                             canBuy
                               ? "bg-amber-400 hover:bg-amber-500 text-amber-950"
                               : "bg-slate-200 text-slate-400 cursor-not-allowed shadow-none"
                           }`}
                         >
                           <span>Acheter {item.price}</span>
-                          <Coins size={12} className="text-amber-600" />
+                          <Coins size={10} className="text-amber-600" />
                         </button>
                       )}
                     </div>
@@ -525,7 +525,7 @@ export default function Dashboard() {
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
-              className="w-full max-w-lg bg-white rounded-3xl p-6 border-4 border-indigo-400 shadow-2xl relative max-h-[85vh] overflow-y-auto"
+              className="w-full max-w-lg bg-white rounded-3xl p-4 min-[380px]:p-5 sm:p-6 border-4 border-indigo-400 shadow-2xl relative max-h-[85vh] overflow-y-auto"
             >
               <button
                 onClick={() => {
@@ -537,22 +537,22 @@ export default function Dashboard() {
                 ✕
               </button>
 
-              <div className="text-center mb-6">
-                <Award className="text-indigo-500 w-10 h-10 mx-auto" />
-                <h3 className="font-bold text-2xl text-indigo-950 mt-1">Mes Badges et Trophées</h3>
+              <div className="text-center mb-4 sm:mb-6">
+                <Award className="text-indigo-500 w-8 h-8 sm:w-10 sm:h-10 mx-auto" />
+                <h3 className="font-bold text-xl sm:text-2xl text-indigo-950 mt-1">Mes Badges et Trophées</h3>
                 <p className="text-xs font-bold text-slate-500">
                   Débloqués en faisant un sans-faute aux quiz d'apprentissage !
                 </p>
-                <div className="inline-flex items-center gap-1.5 bg-indigo-50 border-2 border-indigo-200 px-3 py-1 rounded-full mt-3">
-                  <Award className="text-indigo-500 w-4 h-4" />
-                  <span className="text-sm font-black text-indigo-900">{profile.unlockedBadges.length} débloqués</span>
+                <div className="inline-flex items-center gap-1.5 bg-indigo-50 border-2 border-indigo-200 px-3 py-0.5 sm:py-1 rounded-full mt-2 sm:mt-3">
+                  <Award className="text-indigo-500 w-3.5 h-3.5" />
+                  <span className="text-xs sm:text-sm font-black text-indigo-900">{profile.unlockedBadges.length} débloqués</span>
                 </div>
               </div>
 
               {/* Étagère en bois 3D style cartoon */}
-              <div className="bg-orange-50 border-4 border-orange-200 rounded-3xl p-6 relative shadow-inner">
+              <div className="bg-orange-50 border-4 border-orange-200 rounded-3xl p-3.5 min-[380px]:p-4.5 sm:p-6 relative shadow-inner">
                 {/* L'étagère de bois en fond */}
-                <div className="grid grid-cols-3 sm:grid-cols-4 gap-6 text-center">
+                <div className="grid grid-cols-3 sm:grid-cols-4 gap-3.5 min-[380px]:gap-4.5 sm:gap-6 text-center">
                   {activeUniverses.flatMap(univ => {
                     const lessons = univ.lessons[profile.ageGroup] || [];
                     return lessons.map(lesson => {
@@ -562,18 +562,18 @@ export default function Dashboard() {
                         <div key={lesson.badgeId} className="flex flex-col items-center gap-1.5">
                           <motion.div
                             whileHover={isUnlocked ? { scale: 1.1, y: -4 } : {}}
-                            className={`w-14 h-14 rounded-full border-2 flex items-center justify-center shadow-md transition-all ${
+                            className={`w-11 h-11 min-[380px]:w-12 min-[380px]:h-12 sm:w-14 sm:h-14 rounded-full border-2 flex items-center justify-center shadow-md transition-all ${
                               isUnlocked
                                 ? "bg-gradient-to-br from-yellow-300 to-amber-500 border-white ring-4 ring-amber-400/30 scale-100"
                                 : "bg-slate-200 border-slate-300 opacity-40 grayscale"
                             }`}
                           >
-                            <IllustrationRenderer name={lesson.badgeEmoji} size={38} animate={false} />
+                            <IllustrationRenderer name={lesson.badgeEmoji} size={26} animate={false} />
                           </motion.div>
-                          <span className="text-[10px] font-bold text-slate-700 leading-tight max-w-[80px] break-words">
+                          <span className="text-[9px] sm:text-[10px] font-bold text-slate-700 leading-tight max-w-[80px] break-words">
                             {lesson.badgeName}
                           </span>
-                          <span className="text-[8px] font-bold text-slate-400 capitalize">
+                          <span className="text-[7px] sm:text-[8px] font-bold text-slate-400 capitalize">
                             {univ.name}
                           </span>
                         </div>
@@ -596,7 +596,7 @@ export default function Dashboard() {
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
-              className="w-full max-w-sm bg-white rounded-3xl p-6 border-4 border-indigo-400 shadow-2xl relative text-center"
+              className="w-full max-w-sm bg-white rounded-3xl p-4 sm:p-6 border-4 border-indigo-400 shadow-2xl relative text-center"
             >
               <button
                 onClick={() => {
@@ -608,19 +608,19 @@ export default function Dashboard() {
                 ✕
               </button>
 
-              <Lock className="text-indigo-500 w-10 h-10 mx-auto" />
-              <h3 className="font-bold text-2xl text-indigo-950 mt-1">Espace réservé aux adultes</h3>
+              <Lock className="text-indigo-500 w-8 h-8 sm:w-10 sm:h-10 mx-auto" />
+              <h3 className="font-bold text-xl sm:text-2xl text-indigo-950 mt-1">Espace réservé aux adultes</h3>
               <p className="text-xs font-bold text-slate-500 mt-1 leading-relaxed">
                 Saisis le code secret parent pour accéder aux réglages :
               </p>
 
-              <form onSubmit={handleVerifyParent} className="flex flex-col gap-4 mt-6">
+              <form onSubmit={handleVerifyParent} className="flex flex-col gap-3 sm:gap-4 mt-4 sm:mt-6">
                 <input
                   type="password"
                   value={parentAnswer}
                   onChange={(e) => setParentAnswer(e.target.value)}
                   placeholder="Code parent..."
-                  className="w-full px-4 py-3 rounded-xl border-2 border-slate-200 focus:border-indigo-400 bg-white text-center text-xl font-bold text-slate-700 outline-none"
+                  className="w-full px-4 py-2.5 sm:py-3 rounded-xl border-2 border-slate-200 focus:border-indigo-400 bg-white text-center text-lg sm:text-xl font-bold text-slate-700 outline-none"
                   autoFocus
                   required
                 />
@@ -633,7 +633,7 @@ export default function Dashboard() {
 
                 <button
                   type="submit"
-                  className="w-full py-3 bg-indigo-500 hover:bg-indigo-600 text-white rounded-xl font-bold text-sm shadow-md transition-colors cursor-pointer"
+                  className="w-full py-2.5 sm:py-3 bg-indigo-500 hover:bg-indigo-600 text-white rounded-xl font-bold text-xs sm:text-sm shadow-md transition-colors cursor-pointer"
                 >
                   Entrer dans l'Espace Parents
                 </button>
@@ -652,7 +652,7 @@ export default function Dashboard() {
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
-              className="w-full max-w-lg bg-white rounded-3xl p-6 border-4 border-indigo-500 shadow-2xl relative max-h-[85vh] overflow-y-auto"
+              className="w-full max-w-lg bg-white rounded-3xl p-4 min-[380px]:p-5 sm:p-6 border-4 border-indigo-500 shadow-2xl relative max-h-[85vh] overflow-y-auto"
             >
               <button
                 onClick={() => {
@@ -664,19 +664,19 @@ export default function Dashboard() {
                 ✕
               </button>
 
-              <div className="text-center mb-6">
-                <Lock className="text-indigo-600 w-10 h-10 mx-auto" />
-                <h3 className="font-bold text-2xl text-indigo-950 mt-1">Tableau de Bord des Parents</h3>
+              <div className="text-center mb-4 sm:mb-6">
+                <Lock className="text-indigo-600 w-8 h-8 sm:w-10 sm:h-10 mx-auto" />
+                <h3 className="font-bold text-xl sm:text-2xl text-indigo-950 mt-1">Tableau de Bord des Parents</h3>
                 <p className="text-xs font-bold text-slate-500">
                   Suivi pédagogique, limites d'écran et réglages du compte.
                 </p>
               </div>
 
               {/* Stats Temps d'écran */}
-              <div className="bg-slate-50 rounded-2xl p-4 border border-slate-100 flex flex-col gap-4 mb-6">
+              <div className="bg-slate-50 rounded-2xl p-3 min-[380px]:p-4 border border-slate-100 flex flex-col gap-3 mb-4 sm:mb-6">
                 <div className="flex items-center gap-2">
-                  <Clock className="text-slate-500 w-5 h-5" />
-                  <span className="font-bold text-slate-700 text-sm">Gestion du temps de jeu</span>
+                  <Clock className="text-slate-500 w-4.5 h-4.5 sm:w-5 sm:h-5" />
+                  <span className="font-bold text-slate-700 text-xs sm:text-sm">Gestion du temps de jeu</span>
                 </div>
                 
                 <div className="flex items-center justify-between text-xs font-bold text-slate-600">
@@ -686,7 +686,7 @@ export default function Dashboard() {
                   </span>
                 </div>
 
-                <div className="flex flex-col gap-1.5 mt-2">
+                <div className="flex flex-col gap-1.5 mt-1 sm:mt-2">
                   <div className="flex justify-between text-xs font-bold text-slate-500">
                     <span>Limite quotidienne :</span>
                     <span className="font-bold text-indigo-700">{profile.maxTimeLimit} min</span>
@@ -700,9 +700,9 @@ export default function Dashboard() {
                     onChange={(e) => updateMaxTimeLimit(parseInt(e.target.value))}
                     className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-indigo-600"
                   />
-                  <div className="flex justify-between text-[9px] font-bold text-slate-400">
+                  <div className="flex justify-between text-[8px] sm:text-[9px] font-bold text-slate-400">
                     <span>5 min</span>
-                    <span>30 min</span>
+                    <span>30 m</span>
                     <span>1h (60m)</span>
                     <span>1h30 (90m)</span>
                     <span>2h (120m)</span>
@@ -712,10 +712,10 @@ export default function Dashboard() {
               </div>
 
               {/* Ajuster la tranche d'âge / difficulté */}
-               <div className="bg-slate-50 rounded-2xl p-4 border border-slate-100 flex flex-col gap-3 mb-6">
+               <div className="bg-slate-50 rounded-2xl p-3 min-[380px]:p-4 border border-slate-100 flex flex-col gap-2.5 sm:gap-3 mb-4 sm:mb-6">
                 <div className="flex items-center gap-2">
-                  <Gamepad2 className="text-slate-500 w-5 h-5" />
-                  <span className="font-bold text-slate-700 text-sm">Difficulté / Tranche d'âge</span>
+                  <Gamepad2 className="text-slate-500 w-4.5 h-4.5 sm:w-5 sm:h-5" />
+                  <span className="font-bold text-slate-700 text-xs sm:text-sm">Difficulté / Tranche d'âge</span>
                 </div>
                 <div className="grid grid-cols-3 gap-2">
                   {[
@@ -729,7 +729,7 @@ export default function Dashboard() {
                         changeAgeGroup(levelItem.id as any);
                         playSound("click");
                       }}
-                      className={`py-2.5 px-3 rounded-xl border-2 text-xs font-bold transition-all cursor-pointer ${
+                      className={`py-2 px-2.5 sm:py-2.5 sm:px-3 rounded-xl border-2 text-[10px] sm:text-xs font-bold transition-all cursor-pointer ${
                         profile.ageGroup === levelItem.id
                           ? "border-indigo-500 bg-indigo-50 text-indigo-700"
                           : "border-slate-200 bg-white hover:border-slate-300 text-slate-600"
@@ -739,35 +739,35 @@ export default function Dashboard() {
                     </button>
                   ))}
                 </div>
-                <p className="text-[10px] text-slate-400 font-semibold leading-relaxed">
+                <p className="text-[9px] sm:text-[10px] text-slate-400 font-semibold leading-relaxed">
                   Modifier le niveau de difficulté adapte instantanément le niveau et le contenu des leçons et des quiz (le mode Difficile contenant 5 fiches de cours détaillées et des quiz plus complexes), tout en conservant l'avatar, les pièces et l'XP de l'enfant.
                 </p>
               </div>
 
               {/* Synthèse des progrès de l'enfant */}
-              <div className="flex flex-col gap-3 mb-6">
-                <h4 className="font-bold text-sm text-slate-700">Progression globale</h4>
+              <div className="flex flex-col gap-2 sm:gap-3 mb-4 sm:mb-6">
+                <h4 className="font-bold text-xs sm:text-sm text-slate-700">Progression globale</h4>
                 
-                <div className="grid grid-cols-2 gap-4 text-center">
-                  <div className="bg-sky-50 rounded-2xl p-3 border border-sky-100">
-                    <span className="block text-2xl font-black text-sky-700">
+                <div className="grid grid-cols-2 gap-3 sm:gap-4 text-center">
+                  <div className="bg-sky-50 rounded-2xl p-2.5 sm:p-3 border border-sky-100">
+                    <span className="block text-xl sm:text-2xl font-black text-sky-700">
                       {profile.completedLessons.length}
                     </span>
-                    <span className="text-[10px] font-bold text-slate-500 uppercase">Leçons lues</span>
+                    <span className="text-[9px] sm:text-[10px] font-bold text-slate-500 uppercase">Leçons lues</span>
                   </div>
 
-                  <div className="bg-emerald-50 rounded-2xl p-3 border border-emerald-100">
-                    <span className="block text-2xl font-black text-emerald-700">
+                  <div className="bg-emerald-50 rounded-2xl p-2.5 sm:p-3 border border-emerald-100">
+                    <span className="block text-xl sm:text-2xl font-black text-emerald-700">
                       {profile.completedQuizzes.length}
                     </span>
-                    <span className="text-[10px] font-bold text-slate-500 uppercase">Quiz réussis</span>
+                    <span className="text-[9px] sm:text-[10px] font-bold text-slate-500 uppercase">Quiz réussis</span>
                   </div>
                 </div>
               </div>
 
               {/* Recommandations pédagogiques */}
-              <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-4 mb-6 text-xs leading-relaxed text-indigo-900 font-semibold flex flex-col gap-2">
-                <span className="font-bold uppercase text-[10px] text-indigo-500 tracking-wider">★ Conseil pédagogique</span>
+              <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-3 sm:p-4 mb-4 sm:mb-6 text-[11px] sm:text-xs leading-relaxed text-indigo-900 font-semibold flex flex-col gap-1.5 sm:gap-2">
+                <span className="font-bold uppercase text-[9px] sm:text-[10px] text-indigo-500 tracking-wider">★ Conseil pédagogique</span>
                 <p>
                   {profile.completedQuizzes.length === 0
                     ? `Faites démarrer ${profile.nickname} avec l'univers "Animaux". Le niveau de difficulté '${profile.ageGroup} ans' convient idéalement à son développement actuel.`
@@ -777,7 +777,7 @@ export default function Dashboard() {
               </div>
 
               {/* Actions dangereuses */}
-              <div className="flex flex-col gap-3 pt-4 border-t border-slate-100">
+              <div className="flex flex-col gap-2 sm:gap-3 pt-3 sm:pt-4 border-t border-slate-100">
                 <button
                   onClick={() => {
                     if (confirm(`Êtes-vous sûr de vouloir réinitialiser toute la progression de ${profile.nickname} ?`)) {
@@ -787,9 +787,9 @@ export default function Dashboard() {
                       router.push("/");
                     }
                   }}
-                  className="w-full py-3 rounded-xl border border-rose-200 bg-rose-50 hover:bg-rose-100 text-rose-700 font-bold text-xs flex items-center justify-center gap-2 cursor-pointer transition-colors"
+                  className="w-full py-2.5 sm:py-3 rounded-xl border border-rose-200 bg-rose-50 hover:bg-rose-100 text-rose-700 font-bold text-[10px] sm:text-xs flex items-center justify-center gap-1.5 sm:gap-2 cursor-pointer transition-colors"
                 >
-                  <RefreshCw size={14} />
+                  <RefreshCw size={12} className="sm:w-3.5 sm:h-3.5" />
                   Réinitialiser le profil de {profile.nickname} (XP = 0)
                 </button>
 
@@ -800,9 +800,9 @@ export default function Dashboard() {
                     setShowParentsSpace(false);
                     router.push("/");
                   }}
-                  className="w-full py-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs flex items-center justify-center gap-2 cursor-pointer transition-colors"
+                  className="w-full py-2.5 sm:py-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-[10px] sm:text-xs flex items-center justify-center gap-1.5 sm:gap-2 cursor-pointer transition-colors"
                 >
-                  <LogOut size={14} />
+                  <LogOut size={12} className="sm:w-3.5 sm:h-3.5" />
                   Se déconnecter (Changer d'utilisateur)
                 </button>
               </div>
@@ -819,17 +819,17 @@ export default function Dashboard() {
             <motion.div
               initial={{ scale: 0.9 }}
               animate={{ scale: 1 }}
-              className="w-full max-w-sm bg-white rounded-3xl p-8 border-4 border-rose-400 shadow-2xl text-center flex flex-col gap-4"
+              className="w-full max-w-sm bg-white rounded-3xl p-6 sm:p-8 border-4 border-rose-400 shadow-2xl text-center flex flex-col gap-3 sm:gap-4"
             >
-              <span className="text-6xl animate-bounce">⏳</span>
-              <h3 className="font-bold text-3xl text-rose-950">Temps d'Écran Terminé !</h3>
-              <p className="text-sm font-semibold text-slate-600 leading-relaxed">
+              <span className="text-5xl sm:text-6xl animate-bounce">⏳</span>
+              <h3 className="font-bold text-2xl sm:text-3xl text-rose-950">Temps d'Écran Terminé !</h3>
+              <p className="text-xs sm:text-sm font-semibold text-slate-600 leading-relaxed">
                 C'est l'heure de faire une pause ! Va faire une petite promenade, dessine ou lis un livre. À bientôt ! ☀️
               </p>
               
               <button
                 onClick={openParentsGate}
-                className="mt-4 py-3 bg-indigo-100 hover:bg-indigo-200 text-indigo-700 rounded-xl font-bold text-xs transition-colors cursor-pointer"
+                className="mt-3 sm:mt-4 py-2.5 sm:py-3 bg-indigo-100 hover:bg-indigo-200 text-indigo-700 rounded-xl font-bold text-[10px] sm:text-xs transition-colors cursor-pointer"
               >
                 Ajuster la limite (Adultes uniquement)
               </button>
