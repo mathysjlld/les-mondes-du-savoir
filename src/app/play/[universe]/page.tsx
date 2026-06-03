@@ -280,11 +280,34 @@ export default function PlayUniverse() {
 
               {/* Illustration de la carte */}
               <motion.div
-                animate={{ y: [0, -6, 0] }}
-                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                className="p-2 sm:p-3 bg-sky-50/50 rounded-full border-2 border-dashed border-sky-100 w-28 h-28 min-[380px]:w-36 min-[380px]:h-36 sm:w-44 sm:h-44 flex items-center justify-center select-none overflow-hidden"
+                animate={currentCard.mediaUrl ? undefined : { y: [0, -6, 0] }}
+                transition={currentCard.mediaUrl ? undefined : { duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                className={`flex items-center justify-center select-none overflow-hidden ${
+                  currentCard.mediaUrl
+                    ? "w-full max-w-[280px] aspect-video rounded-2xl border-4 border-sky-100 bg-black/5"
+                    : "p-2 sm:p-3 bg-sky-50/50 rounded-full border-2 border-dashed border-sky-100 w-28 h-28 min-[380px]:w-36 min-[380px]:h-36 sm:w-44 sm:h-44"
+                }`}
               >
-                <IllustrationRenderer name={currentCard.emoji} size="75%" />
+                {currentCard.mediaUrl ? (
+                  currentCard.mediaType === "video" ? (
+                    <video
+                      src={currentCard.mediaUrl}
+                      className="w-full h-full object-cover rounded-xl"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                    />
+                  ) : (
+                    <img
+                      src={currentCard.mediaUrl}
+                      alt=""
+                      className="w-full h-full object-cover rounded-xl"
+                    />
+                  )
+                ) : (
+                  <IllustrationRenderer name={currentCard.emoji} size="75%" />
+                )}
               </motion.div>
 
               {/* Textes explicatifs */}
@@ -357,8 +380,29 @@ export default function PlayUniverse() {
               </div>
 
               {/* Intitulé de la question */}
-              <div className="text-center flex flex-col gap-1.5 sm:gap-2 my-2 sm:my-4">
-                <span className="text-3xl sm:text-4xl animate-bounce">🤔</span>
+              <div className="text-center flex flex-col items-center gap-1.5 sm:gap-2 my-2 sm:my-4 w-full">
+                {currentQuestion.mediaUrl ? (
+                  <div className="w-full max-w-[260px] aspect-video rounded-2xl border-4 border-purple-100 bg-black/5 overflow-hidden mb-2 shadow-inner">
+                    {currentQuestion.mediaType === "video" ? (
+                      <video
+                        src={currentQuestion.mediaUrl}
+                        className="w-full h-full object-cover"
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                      />
+                    ) : (
+                      <img
+                        src={currentQuestion.mediaUrl}
+                        alt=""
+                        className="w-full h-full object-cover"
+                      />
+                    )}
+                  </div>
+                ) : (
+                  <span className="text-3xl sm:text-4xl animate-bounce">🤔</span>
+                )}
                 <h3 className="text-lg sm:text-2xl font-bold text-slate-800 leading-snug px-2 sm:px-4">
                   {formatFrenchPunctuation(currentQuestion.question)}
                 </h3>

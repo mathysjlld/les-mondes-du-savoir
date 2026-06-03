@@ -3,6 +3,8 @@ export interface LessonCard {
   text: string;
   emoji: string;
   illustrationData?: string; // Information pour dessiner un SVG dynamique
+  mediaUrl?: string; // Optionnel : URL pour Fal AI / image / vidéo
+  mediaType?: "image" | "video"; // Optionnel : type de média
 }
 
 export interface QuizQuestion {
@@ -10,6 +12,8 @@ export interface QuizQuestion {
   options: string[];
   correctAnswer: string;
   imageHint?: string; // Optionnel : emoji ou type d'illustration
+  mediaUrl?: string; // Optionnel : URL pour Fal AI / image / vidéo
+  mediaType?: "image" | "video"; // Optionnel : type de média
 }
 
 export interface Lesson {
@@ -1279,7 +1283,9 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               question: "Quel type de molécule biologique accélère la décomposition chimique de notre nourriture ?",
               options: ["Les vitamines 💊", "Les hormones 🧪", "Les enzymes 🧬"],
-              correctAnswer: "Les enzymes 🧬"
+              correctAnswer: "Les enzymes 🧬",
+              mediaUrl: "https://assets.mixkit.co/videos/preview/mixkit-animation-of-a-human-beating-heart-41764-large.mp4",
+              mediaType: "video"
             },
             {
               question: "Quelle enzyme salivaire commence la digestion de l'amidon dans la bouche ?",
@@ -1367,7 +1373,9 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               question: "Quelles parties forment le Système Nerveux Central ?",
               options: ["Le cœur et les artères 🩸", "L'encéphale et la moelle épinière 🧠", "Les nerfs et les récepteurs sensoriels ⚡"],
-              correctAnswer: "L'encéphale et la moelle épinière 🧠"
+              correctAnswer: "L'encéphale et la moelle épinière 🧠",
+              mediaUrl: "https://assets.mixkit.co/videos/preview/mixkit-futuristic-human-brain-animation-43180-large.mp4",
+              mediaType: "video"
             },
             {
               question: "Quel prolongement ramifié du neurone reçoit les messages des autres cellules ?",
