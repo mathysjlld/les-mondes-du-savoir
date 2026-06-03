@@ -1,26 +1,82 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --font-fredoka: "Fredoka", sans-serif;
+  --font-nunito: "Nunito", sans-serif;
+  
+  --background: #f8fafc;
+  --foreground: #1e293b;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans: var(--font-nunito), sans-serif;
+  --font-title: var(--font-fredoka), sans-serif;
 }
 
 body {
-  background: var(--background);
+  background-color: #e0f2fe; /* Light blue sky background */
+  background-image: radial-gradient(circle at 10% 20%, rgba(215, 235, 255, 0.4) 0%, rgba(255, 255, 255, 0) 90%);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-nunito), system-ui, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, button, .font-display {
+  font-family: var(--font-fredoka), sans-serif;
+}
+
+/* Scrollbar enfantin customisé */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #e0f2fe;
+}
+::-webkit-scrollbar-thumb {
+  background: #93c5fd;
+  border-radius: 9999px;
+  border: 2px solid #e0f2fe;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #60a5fa;
+}
+
+/* Animations enfants fun */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Boutons Boursouflés Mignons (Bubble Buttons) */
+.btn-bubble {
+  position: relative;
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 6px 0 0 rgba(0, 0, 0, 0.15);
+}
+.btn-bubble:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 0 0 rgba(0, 0, 0, 0.12);
+}
+.btn-bubble:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Cartes Glassmorphism */
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 3px solid rgba(255, 255, 255, 0.6);
+  border-radius: 2rem;
+  box-shadow: 0 10px 30px -10px rgba(100, 116, 139, 0.15);
 }
