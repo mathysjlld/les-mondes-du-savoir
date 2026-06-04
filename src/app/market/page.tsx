@@ -282,10 +282,16 @@ export default function Market() {
     : profile.activePet;
 
   return (
-    <div className="flex-1 flex flex-col p-3 sm:p-6 max-w-4xl mx-auto w-full gap-4 sm:gap-6 min-h-screen bg-gradient-to-b from-stone-900 via-amber-950 to-stone-900 text-stone-100">
+    <div 
+      className="flex-1 flex flex-col p-3 sm:p-6 max-w-4xl mx-auto w-full gap-4 sm:gap-6 min-h-screen text-stone-100"
+      style={{
+        backgroundImage: `linear-gradient(to bottom, rgba(28, 25, 23, 0.94), rgba(69, 26, 3, 0.89)), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='180' viewBox='0 0 120 180'%3E%3Crect x='0' y='55' width='120' height='6' fill='%235c3a21' opacity='0.25'/%3E%3Crect x='0' y='61' width='120' height='2' fill='%233a2010' opacity='0.4'/%3E%3Crect x='0' y='145' width='120' height='6' fill='%235c3a21' opacity='0.25'/%3E%3Crect x='0' y='151' width='120' height='2' fill='%233a2010' opacity='0.4'/%3E%3Crect x='8' y='0' width='5' height='180' fill='%23422817' opacity='0.2'/%3E%3Crect x='107' y='0' width='5' height='180' fill='%23422817' opacity='0.2'/%3E%3C/svg%3E")`,
+        backgroundAttachment: 'fixed'
+      }}
+    >
       
       {/* Barre supérieure */}
-      <header className="w-full flex items-center justify-between glass-card p-3 sm:p-4 bg-amber-900/10 border-b-4 border-amber-800 shadow-md">
+      <header className="w-full flex items-center justify-between p-3 sm:p-4 bg-stone-900/90 backdrop-blur-md rounded-2xl border-b-4 border-amber-800 shadow-md">
         <button
           onClick={() => {
             playSound("click");
@@ -526,7 +532,7 @@ export default function Market() {
             </div>
 
             {/* Cabine d'essayage compacte */}
-            <div className="glass-card p-3 sm:p-4 bg-amber-950/20 text-center flex flex-col items-center gap-2 border-4 border-amber-800/40 justify-center">
+            <div className="p-3 sm:p-4 bg-stone-900/90 backdrop-blur-md text-center flex flex-col items-center gap-2 border-4 border-amber-800/60 rounded-[2rem] justify-center shadow-lg">
               <span className="text-[10px] font-black text-amber-200 uppercase tracking-widest bg-amber-950 border border-amber-900 px-2.5 py-0.5 rounded-full">
                 Essayage 👕
               </span>
@@ -612,7 +618,7 @@ export default function Market() {
 
         {/* Colonne droite (Shelves des boutiques) - Défile en dessous */}
         <section className="md:col-span-8 flex flex-col gap-4">
-          <div className="glass-card p-4 sm:p-5 bg-stone-900/60 border-4 border-amber-800/40">
+          <div className="bg-stone-900/90 backdrop-blur-md p-4 sm:p-5 border-4 border-amber-800/60 rounded-[2rem] shadow-lg">
             
             {/* Onglets boutiques médiévales */}
             <div className="flex border-b border-amber-900/30 pb-3 mb-4 gap-2 overflow-x-auto scrollbar-none">
@@ -701,12 +707,12 @@ export default function Market() {
                           }}
                           className={`flex items-center justify-between p-2.5 rounded-2xl border-2 transition-all relative cursor-pointer ${
                             isEquipped
-                              ? "border-emerald-700 bg-emerald-950/30"
+                              ? "border-emerald-500 bg-emerald-950/35 hover:bg-emerald-950/45"
                               : isCurrentlyPreviewed
-                              ? "border-amber-450 bg-amber-950/30 shadow-md shadow-amber-500/25"
+                              ? "border-amber-400 bg-amber-950/35 shadow-md shadow-amber-500/25 animate-pulse"
                               : isUnlocked
-                              ? "border-amber-800/40 bg-amber-950/15 hover:border-amber-700"
-                              : "border-stone-850 bg-stone-950/10 hover:border-stone-750"
+                              ? "border-stone-700 bg-stone-900/50 hover:border-stone-600 hover:bg-stone-900/70"
+                              : "border-stone-800 bg-stone-950/50 hover:border-stone-750 hover:bg-stone-900/40"
                           }`}
                         >
                           <div className="flex items-center gap-3">
@@ -715,12 +721,12 @@ export default function Market() {
                             </span>
                             <div className="flex flex-col">
                               <div className="flex items-center gap-1.5">
-                                <span className="font-extrabold text-xs sm:text-sm text-stone-200">{item.name}</span>
+                                <span className="font-extrabold text-xs sm:text-sm text-amber-100">{item.name}</span>
                                 <span className={`text-[7px] font-bold px-1.5 py-0.5 rounded-full border ${rarityColors[item.rarity]}`}>
                                   {item.rarity}
                                 </span>
                               </div>
-                              <span className="text-[9px] sm:text-xs text-stone-400 leading-tight mt-0.5">{item.desc}</span>
+                              <span className="text-[9px] sm:text-xs text-stone-300 leading-tight mt-0.5">{item.desc}</span>
                             </div>
                           </div>
 
@@ -820,12 +826,12 @@ export default function Market() {
                           }}
                           className={`flex items-center justify-between p-2.5 rounded-2xl border-2 transition-all relative cursor-pointer ${
                             isEquipped
-                              ? "border-emerald-700 bg-emerald-950/30"
+                              ? "border-emerald-500 bg-emerald-950/35 hover:bg-emerald-950/45"
                               : isCurrentlyPreviewed
-                              ? "border-cyan-400 bg-cyan-950/35 shadow-md shadow-cyan-500/25"
+                              ? "border-cyan-400 bg-cyan-950/35 shadow-md shadow-cyan-500/25 animate-pulse"
                               : isUnlocked
-                              ? "border-cyan-800/40 bg-cyan-950/15 hover:border-cyan-700"
-                              : "border-stone-850 bg-stone-950/10 hover:border-stone-750"
+                              ? "border-cyan-800/45 bg-cyan-950/15 hover:border-cyan-700"
+                              : "border-stone-800 bg-stone-950/50 hover:border-stone-750 hover:bg-stone-900/40"
                           }`}
                         >
                           <div className="flex items-center gap-3">
@@ -834,12 +840,12 @@ export default function Market() {
                             </span>
                             <div className="flex flex-col">
                               <div className="flex items-center gap-1.5">
-                                <span className="font-extrabold text-xs sm:text-sm text-stone-200">{item.name}</span>
+                                <span className="font-extrabold text-xs sm:text-sm text-amber-100">{item.name}</span>
                                 <span className={`text-[7px] font-bold px-1.5 py-0.5 rounded-full border ${rarityColors[item.rarity]}`}>
                                   {item.rarity}
                                 </span>
                               </div>
-                              <span className="text-[9px] sm:text-xs text-stone-400 leading-tight mt-0.5">{item.desc}</span>
+                              <span className="text-[9px] sm:text-xs text-stone-300 leading-tight mt-0.5">{item.desc}</span>
                             </div>
                           </div>
 
@@ -939,8 +945,8 @@ export default function Market() {
                             isUnlocked
                               ? "border-emerald-800/40 bg-emerald-950/15"
                               : isCurrentlyPreviewed
-                              ? "border-emerald-400 bg-emerald-950/35 shadow-md shadow-emerald-500/25"
-                              : "border-stone-850 bg-stone-950/10 hover:border-stone-750"
+                              ? "border-emerald-450 bg-emerald-950/35 shadow-md shadow-emerald-500/25 animate-pulse"
+                              : "border-stone-800 bg-stone-950/50 hover:border-stone-750 hover:bg-stone-900/40"
                           }`}
                         >
                           <div className="flex items-center gap-3">
@@ -949,12 +955,12 @@ export default function Market() {
                             </span>
                             <div className="flex flex-col">
                               <div className="flex items-center gap-1.5">
-                                <span className="font-extrabold text-xs sm:text-sm text-stone-200">{item.name}</span>
+                                <span className="font-extrabold text-xs sm:text-sm text-amber-100">{item.name}</span>
                                 <span className={`text-[7px] font-bold px-1.5 py-0.5 rounded-full border ${rarityColors[item.rarity]}`}>
                                   {item.rarity}
                                 </span>
                               </div>
-                              <span className="text-[9px] sm:text-xs text-stone-400 leading-tight mt-0.5">{item.desc}</span>
+                              <span className="text-[9px] sm:text-xs text-stone-300 leading-tight mt-0.5">{item.desc}</span>
                             </div>
                           </div>
 
