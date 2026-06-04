@@ -15,12 +15,15 @@ export interface UserProfile {
   avatar: AvatarConfig;
   xp: number;
   coins: number;
+  diamonds: number; // Nouvelle monnaie rare
   streak: number;
   lastActiveDate: string;
   completedLessons: string[];
   completedQuizzes: string[];
   unlockedBadges: string[]; // liste de badgeId
   unlockedAccessories: string[]; // Liste des accessoires achetés
+  unlockedPets: string[]; // Liste des compagnons achetés
+  activePet: "none" | "fox" | "cat" | "koala" | "dragon"; // Compagnon équipé
   timeSpentToday: number; // en secondes
   maxTimeLimit: number; // en minutes (limite parents)
   soundEnabled: boolean;
@@ -33,10 +36,13 @@ interface AppContextType {
   onboardUser: (nickname: string, ageGroup: "3-5" | "6-8" | "9-12", avatar: AvatarConfig, parentCode: string) => void;
   addXp: (amount: number) => { leveledUp: boolean; currentLevel: number; newLevel: number };
   addCoins: (amount: number) => void;
+  addDiamonds: (amount: number) => void;
   completeLesson: (lessonId: string) => void;
   completeQuiz: (lessonId: string, badgeInfo: { id: string; name: string; emoji: string }) => boolean; // renvoie true si nouveau badge débloqué
   buyAccessory: (accessoryId: string, price: number) => boolean; // renvoie true si achat réussi
+  buyPet: (petId: string, price: number) => boolean; // renvoie true si achat réussi
   equipAccessory: (accessoryId: AvatarConfig["accessory"]) => void;
+  equipPet: (petId: UserProfile["activePet"]) => void;
   updateAvatarColor: (color: string) => void;
   updateTimeSpent: (seconds: number) => void;
   updateMaxTimeLimit: (minutes: number) => void;
@@ -86,8 +92,11 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
             ...parsed,
             streak: updatedStreak,
             lastActiveDate: todayStr,
-            // S'assurer que les tableaux existent
+            // S'assurer que les tableaux et nouvelles valeurs existent
+            diamonds: parsed.diamonds || 0,
             unlockedAccessories: parsed.unlockedAccessories || DEFAULT_ACCESSORIES,
+            unlockedPets: parsed.unlockedPets || ["none"],
+            activePet: parsed.activePet || "none",
             timeSpentToday: parsed.lastActiveDate === todayStr ? (parsed.timeSpentToday || 0) : 0,
             maxTimeLimit: parsed.maxTimeLimit || 20,
             parentCode: parsed.parentCode || "2912",
@@ -116,12 +125,15 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
       avatar,
       xp: 0,
       coins: 20, // 20 pièces offertes à la création
+      diamonds: 0, // 0 diamants au départ
       streak: 1,
       lastActiveDate: todayStr,
       completedLessons: [],
       completedQuizzes: [],
       unlockedBadges: [],
       unlockedAccessories: [...DEFAULT_ACCESSORIES],
+      unlockedPets: ["none"],
+      activePet: "none",
       timeSpentToday: 0,
       maxTimeLimit: 20,
       soundEnabled: true,
@@ -230,7 +242,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
         ...prev,
         completedLessons: [...prev.completedLessons, lessonId],
         xp: prev.xp + 15, // 15 XP pour avoir lu la leçon
-        coins: prev.coins + 5 // 5 pièces
+        coins: prev.coins + 2 // 2 pièces (réduit)
       };
     });
   };
@@ -247,7 +259,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
       
       // Points additionnels si c'est la première fois
       const xpEarned = alreadyDone ? 10 : 35; // 35 XP première fois, 10 XP les fois suivantes
-      const coinsEarned = alreadyDone ? 2 : 10; // 10 pièces première fois
+      const coinsEarned = alreadyDone ? 1 : 5; // 5 pièces première fois, 1 après (réduit)
 
       const updatedXp = prev.xp + xpEarned;
       const updatedCoins = prev.coins + coinsEarned;
@@ -270,6 +282,17 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     return unlockedNewBadge;
   };
 
+  // Ajouter des diamants
+  const addDiamonds = (amount: number) => {
+    setProfile(prev => {
+      if (!prev) return null;
+      return {
+        ...prev,
+        diamonds: prev.diamonds + amount
+      };
+    });
+  };
+
   // Acheter un accessoire dans le magasin
   const buyAccessory = (accessoryId: string, price: number) => {
     let success = false;
@@ -288,6 +311,24 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     return success;
   };
 
+  // Acheter un compagnon
+  const buyPet = (petId: string, price: number) => {
+    let success = false;
+    setProfile(prev => {
+      if (!prev) return null;
+      if (prev.unlockedPets.includes(petId)) return prev; // Déjà débloqué
+      if (prev.diamonds < price) return prev; // Pas assez de diamants
+
+      success = true;
+      return {
+        ...prev,
+        diamonds: prev.diamonds - price,
+        unlockedPets: [...prev.unlockedPets, petId]
+      };
+    });
+    return success;
+  };
+
   // Équiper un accessoire
   const equipAccessory = (accessoryId: AvatarConfig["accessory"]) => {
     setProfile(prev => {
@@ -298,6 +339,17 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
           ...prev.avatar,
           accessory: accessoryId
         }
+      };
+    });
+  };
+
+  // Équiper un compagnon
+  const equipPet = (petId: UserProfile["activePet"]) => {
+    setProfile(prev => {
+      if (!prev) return null;
+      return {
+        ...prev,
+        activePet: petId
       };
     });
   };
@@ -388,10 +440,13 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
         onboardUser,
         addXp,
         addCoins,
+        addDiamonds,
         completeLesson,
         completeQuiz,
         buyAccessory,
+        buyPet,
         equipAccessory,
+        equipPet,
         updateAvatarColor,
         updateTimeSpent,
         updateMaxTimeLimit,

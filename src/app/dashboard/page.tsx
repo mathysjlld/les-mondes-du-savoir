@@ -48,8 +48,8 @@ export default function Dashboard() {
     updateMaxTimeLimit,
   } = useApp();
 
-  // Modales
-  const [showShop, setShowShop] = useState(false);
+  // Modales & Transition
+  const [showMarketTransition, setShowMarketTransition] = useState(false);
   const [showBadges, setShowBadges] = useState(false);
   const [showParentsGate, setShowParentsGate] = useState(false);
   const [showParentsSpace, setShowParentsSpace] = useState(false);
@@ -57,6 +57,30 @@ export default function Dashboard() {
   // Barrière parentale
   const [parentAnswer, setParentAnswer] = useState("");
   const [gateError, setGateError] = useState(false);
+
+  // Redirection animée vers le marché
+  useEffect(() => {
+    if (showMarketTransition) {
+      // Sons
+      const timer1 = setTimeout(() => {
+        playSound("levelup");
+      }, 500);
+
+      const timer2 = setTimeout(() => {
+        playSound("win");
+      }, 3000);
+
+      const timer3 = setTimeout(() => {
+        router.push("/market");
+      }, 4500);
+
+      return () => {
+        clearTimeout(timer1);
+        clearTimeout(timer2);
+        clearTimeout(timer3);
+      };
+    }
+  }, [showMarketTransition, router]);
 
   // Réglages parents
   const [showTimeLimitAlert, setShowTimeLimitAlert] = useState(false);
@@ -147,10 +171,10 @@ export default function Dashboard() {
           <div
             onClick={() => {
               playSound("click");
-              setShowShop(true);
+              setShowMarketTransition(true);
             }}
             className="cursor-pointer bg-sky-100 hover:bg-sky-200 transition-all p-1 rounded-xl sm:rounded-2xl border-2 border-sky-300 relative group shrink-0"
-            title="Personnaliser mon avatar"
+            title="Aller au Marché"
           >
             <AvatarRenderer config={profile.avatar} size={50} interactive={true} />
             <div className="absolute -bottom-1 -right-1 bg-yellow-400 text-yellow-950 p-1 rounded-lg text-[10px] font-bold shadow border border-white group-hover:scale-110 transition-transform">
@@ -167,6 +191,17 @@ export default function Dashboard() {
                 Niv. {currentLevel}
               </span>
             </div>
+            {profile.activePet && profile.activePet !== "none" && (
+              <div className="flex items-center gap-1 mt-1 text-[10px] sm:text-xs font-bold text-indigo-700 bg-indigo-50 border border-indigo-100 px-2 py-0.5 rounded-full w-max select-none animate-pulse">
+                <span>🐾</span>
+                <span>
+                  {profile.activePet === "fox" && "Renardeau 🦊"}
+                  {profile.activePet === "cat" && "Chaton 🐱"}
+                  {profile.activePet === "koala" && "Koala Câlin 🐨"}
+                  {profile.activePet === "dragon" && "Dragonneau 🐲"}
+                </span>
+              </div>
+            )}
 
             {/* Barre d'XP */}
             <div className="w-full bg-slate-100 rounded-full h-3 sm:h-4 mt-1 sm:mt-2 overflow-hidden border border-slate-200 relative">
@@ -290,12 +325,12 @@ export default function Dashboard() {
               <button
                 onClick={() => {
                   playSound("click");
-                  setShowShop(true);
+                  setShowMarketTransition(true);
                 }}
                 className="py-2.5 px-2 min-[380px]:py-3 min-[380px]:px-4 rounded-2xl bg-amber-400 hover:bg-amber-500 text-amber-950 font-bold text-xs sm:text-sm transition-all shadow-md btn-bubble border-b-4 border-amber-600 flex items-center justify-center gap-1.5 sm:gap-2 cursor-pointer"
               >
                 <ShoppingBag size={14} className="sm:w-4 sm:h-4" />
-                <span>Boutique Avatar</span>
+                <span>Aller au Marché 🛒</span>
               </button>
             </div>
           </div>
@@ -392,128 +427,100 @@ export default function Dashboard() {
         </section>
       </main>
 
-      {/* ========================================================================= */}
-      {/* 3. Modale Boutique d'Accessoires */}
+      {/* 3. Transition animée vers le Marché (Chariot et pièces qui tombent) */}
       <AnimatePresence>
-        {showShop && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm">
-            <motion.div
-              initial={{ scale: 0.9, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.9, opacity: 0 }}
-              className="w-full max-w-lg bg-white rounded-3xl p-4 min-[380px]:p-5 sm:p-6 border-4 border-amber-300 shadow-2xl relative max-h-[85vh] overflow-y-auto"
-            >
-              <button
-                onClick={() => {
-                  playSound("click");
-                  setShowShop(false);
-                }}
-                className="absolute top-4 right-4 text-slate-400 hover:text-slate-700 text-2xl font-black cursor-pointer"
+        {showMarketTransition && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-[100] bg-gradient-to-b from-sky-300 via-sky-200 to-indigo-100 flex flex-col items-center justify-between p-6 sm:p-10 select-none overflow-hidden"
+          >
+            {/* Nuages en arrière-plan */}
+            <div className="absolute top-10 left-[10%] w-32 h-10 bg-white/70 rounded-full blur-[1px] animate-pulse" />
+            <div className="absolute top-20 right-[15%] w-48 h-12 bg-white/60 rounded-full blur-[1px]" />
+
+            {/* Titre de transition */}
+            <div className="text-center mt-12 z-10">
+              <motion.h2
+                initial={{ y: -30, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.3 }}
+                className="text-3xl sm:text-5xl font-black text-indigo-950 drop-shadow-md"
               >
-                ✕
-              </button>
+                En route pour le Marché ! 🛒✨
+              </motion.h2>
+              <p className="text-sm sm:text-base text-indigo-900 font-bold mt-2">
+                Tes pièces tombent dans le chariot...
+              </p>
+            </div>
 
-              <div className="text-center mb-4 sm:mb-6">
-                <ShoppingBag className="text-amber-500 w-8 h-8 sm:w-10 sm:h-10 mx-auto" />
-                <h3 className="font-bold text-xl sm:text-2xl text-amber-950 mt-1">Boutique de l'Aventurier</h3>
-                <p className="text-xs font-bold text-slate-500">
-                  Achète des chapeaux et déguisements avec tes pièces d'or !
-                </p>
-                <div className="inline-flex items-center gap-1.5 bg-amber-50 border-2 border-amber-200 px-3 py-0.5 sm:py-1 rounded-full mt-2 sm:mt-3">
-                  <Coins className="text-amber-500 w-3.5 h-3.5 sm:w-4 sm:h-4" />
-                  <span className="text-xs sm:text-sm font-black text-amber-900">{profile.coins} pièces</span>
-                </div>
-              </div>
+            {/* Pluie de pièces cascade */}
+            {[...Array(15)].map((_, i) => (
+              <motion.div
+                key={i}
+                initial={{ x: 80, y: -40, opacity: 0 }}
+                animate={{
+                  x: [80, 100, 160, 200],
+                  y: [-40, 150, 350, 480],
+                  opacity: [0, 1, 1, 0],
+                  scale: [0.8, 1.3, 1]
+                }}
+                transition={{
+                  duration: 0.9,
+                  delay: i * 0.12 + 0.5,
+                  ease: "easeIn"
+                }}
+                className="absolute left-1/4 top-0 text-3xl sm:text-4xl z-25 pointer-events-none"
+              >
+                🪙
+              </motion.div>
+            ))}
 
-              {/* Preview Avatar en haut */}
-              <div className="bg-sky-50 rounded-2xl p-3 sm:p-4 border-2 border-sky-100 flex items-center justify-center gap-4 sm:gap-6 mb-4 sm:mb-6">
-                <AvatarRenderer config={profile.avatar} size={70} interactive={false} />
-                <div className="flex flex-col">
-                  <span className="text-[10px] sm:text-xs font-bold text-sky-600">Aperçu en direct</span>
-                  <span className="font-bold text-base sm:text-slate-700 capitalize">{profile.nickname}</span>
-                  <button
-                    onClick={() => {
-                      equipAccessory("none");
-                      playSound("click");
-                    }}
-                    className="text-[9px] sm:text-[10px] font-bold text-slate-500 hover:text-slate-800 text-left mt-1.5 sm:mt-2 underline"
-                  >
-                    Retirer l'accessoire
-                  </button>
-                </div>
-              </div>
-
-              {/* Grille d'objets */}
-              <div className="flex flex-col gap-2 sm:gap-3">
-                {SHOP_ITEMS.map((item) => {
-                  const isUnlocked = profile.unlockedAccessories.includes(item.id);
-                  const isEquipped = profile.avatar.accessory === item.id;
-                  const canBuy = profile.coins >= item.price;
-
-                  return (
-                    <div
-                      key={item.id}
-                      className={`flex items-center justify-between p-2.5 sm:p-3 rounded-xl sm:rounded-2xl border-2 transition-all ${
-                        isEquipped
-                          ? "border-emerald-400 bg-emerald-50/50"
-                          : isUnlocked
-                          ? "border-indigo-100 bg-indigo-50/30"
-                          : "border-slate-100 bg-slate-50"
-                      }`}
-                    >
-                      <div className="flex items-center gap-2.5 sm:gap-3">
-                        <span className="text-2xl sm:text-3xl p-1 sm:p-1.5 bg-white rounded-xl shadow-sm border border-slate-100">
-                          {item.emoji}
-                        </span>
-                        <div className="flex flex-col">
-                          <span className="font-bold text-xs sm:text-sm text-slate-700">{item.name}</span>
-                          <span className="text-[9px] sm:text-[10px] text-slate-500 leading-tight">{item.desc}</span>
-                        </div>
-                      </div>
-
-                      {/* Bouton d'action */}
-                      {isEquipped ? (
-                        <span className="text-[10px] sm:text-xs font-bold text-emerald-600 px-2 py-0.5 sm:px-3 sm:py-1 bg-emerald-100 rounded-full">
-                          Équipé !
-                        </span>
-                      ) : isUnlocked ? (
-                        <button
-                          onClick={() => {
-                            equipAccessory(item.id);
-                            playSound("click");
-                          }}
-                          className="px-2 py-1 sm:px-3 sm:py-1.5 text-[10px] sm:text-xs font-bold bg-indigo-500 hover:bg-indigo-600 text-white rounded-lg sm:rounded-xl shadow cursor-pointer transition-colors"
-                        >
-                          Porter
-                        </button>
-                      ) : (
-                        <button
-                          onClick={() => {
-                            const success = buyAccessory(item.id, item.price);
-                            if (success) {
-                              playSound("levelup");
-                            } else {
-                              playSound("incorrect");
-                              alert("Il te manque des pièces d'or ! Résous des quiz pour en gagner ! 🪙");
-                            }
-                          }}
-                          disabled={!canBuy}
-                          className={`px-2 py-1 sm:px-3 sm:py-1.5 rounded-lg sm:rounded-xl text-[10px] sm:text-xs font-bold shadow transition-all flex items-center gap-1 cursor-pointer ${
-                            canBuy
-                              ? "bg-amber-400 hover:bg-amber-500 text-amber-950"
-                              : "bg-slate-200 text-slate-400 cursor-not-allowed shadow-none"
-                          }`}
-                        >
-                          <span>Acheter {item.price}</span>
-                          <Coins size={10} className="text-amber-600" />
-                        </button>
-                      )}
-                    </div>
-                  );
-                })}
-              </div>
+            {/* Chariot au sol */}
+            <motion.div
+              initial={{ scale: 0, rotate: -10 }}
+              animate={{ scale: [0, 1.1, 1] }}
+              transition={{ duration: 0.5, delay: 0.2, type: "spring" }}
+              className="absolute bottom-20 left-[22%] text-7xl sm:text-8xl z-10 pointer-events-none"
+            >
+              🛒
             </motion.div>
-          </div>
+
+            {/* Avatar qui pousse le chariot vers la porte */}
+            <motion.div
+              initial={{ x: "-30vw" }}
+              animate={{ x: "120vw" }}
+              transition={{ duration: 3.8, delay: 1.8, ease: "easeInOut" }}
+              className="absolute bottom-20 left-0 flex items-center gap-1 z-30 pointer-events-none"
+            >
+              <AvatarRenderer config={profile.avatar} size={70} interactive={false} />
+              <span className="text-6xl sm:text-7xl">🛒</span>
+            </motion.div>
+
+            {/* Grande porte de marché sur la droite */}
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.8, type: "spring" }}
+              className="absolute right-10 bottom-24 flex flex-col items-center gap-3 z-10"
+            >
+              <div className="w-28 h-40 bg-amber-800 border-4 border-amber-600 rounded-t-full shadow-2xl relative flex items-center justify-center overflow-hidden">
+                <motion.div
+                  animate={{ opacity: [0.3, 0.8, 0.3] }}
+                  transition={{ duration: 1.5, repeat: Infinity }}
+                  className="absolute inset-0 bg-yellow-400/40"
+                />
+                <span className="text-4xl font-black text-white z-10">🚪</span>
+              </div>
+              <span className="bg-amber-950 text-amber-200 font-black px-3 py-1 rounded-full text-xs uppercase tracking-widest border-2 border-amber-600 shadow-md">
+                Porte du Marché 🏰
+              </span>
+            </motion.div>
+
+            {/* Sol d'herbe */}
+            <div className="absolute bottom-0 left-0 right-0 h-24 bg-emerald-500 border-t-4 border-emerald-600 z-0" />
+          </motion.div>
         )}
       </AnimatePresence>
 

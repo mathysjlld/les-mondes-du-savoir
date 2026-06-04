@@ -19,7 +19,7 @@ export default function PlayUniverse() {
   const params = useParams();
   const universeId = params.universe as string;
 
-  const { profile, completeLesson, completeQuiz } = useApp();
+  const { profile, completeLesson, completeQuiz, addDiamonds } = useApp();
 
   const [lesson, setLesson] = useState<Lesson | null>(null);
   const [gameState, setGameState] = useState<"onboarding" | "lesson" | "quiz" | "victory">("lesson");
@@ -33,6 +33,7 @@ export default function PlayUniverse() {
   const [answeredState, setAnsweredState] = useState<"idle" | "correct" | "wrong">("idle");
   const [shakingOption, setShakingOption] = useState<string | null>(null);
   const [shuffledOptions, setShuffledOptions] = useState<string[]>([]);
+  const [showDiamondFeedback, setShowDiamondFeedback] = useState(false);
 
   // Réf pour éviter la synthèse vocale en boucle
   const hasSpoken = useRef(false);
@@ -125,6 +126,13 @@ export default function PlayUniverse() {
       // Bonne réponse !
       playSound("correct");
       setAnsweredState("correct");
+
+      // Offrir un diamant si c'est la première fois qu'on répond correctement à une question spéciale
+      if (currentQuestion.isSpecial && !profile.completedQuizzes.includes(lesson.id)) {
+        addDiamonds(1);
+        setShowDiamondFeedback(true);
+        setTimeout(() => setShowDiamondFeedback(false), 2000);
+      }
       
       // Petit confetti local
       confetti({
@@ -507,6 +515,25 @@ export default function PlayUniverse() {
 
         </AnimatePresence>
       </main>
+
+      {/* Pop-up d'obtention de diamant rare */}
+      <AnimatePresence>
+        {showDiamondFeedback && (
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5, y: 20 }}
+            animate={{ opacity: 1, scale: 1.2, y: -40 }}
+            exit={{ opacity: 0, scale: 0.8, y: -100 }}
+            transition={{ type: "spring", stiffness: 120 }}
+            className="fixed inset-0 pointer-events-none z-50 flex items-center justify-center flex-col gap-2"
+          >
+            <div className="bg-gradient-to-r from-cyan-400 to-indigo-500 text-white font-black px-6 py-4 rounded-3xl shadow-2xl border-4 border-white flex flex-col items-center gap-2 scale-110">
+              <span className="text-6xl animate-bounce">💎</span>
+              <span className="text-lg sm:text-xl uppercase tracking-wider">Diamant Rare !</span>
+              <span className="text-xs font-semibold text-cyan-100">Super récompense obtenue ! ✨</span>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
     </div>
   );

@@ -40,6 +40,46 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
 
   const stage = getGrowthStage();
 
+  const [processedSrc, setProcessedSrc] = React.useState<string | null>(null);
+
+  React.useEffect(() => {
+    const imgSrc = `/images/tree_${stage}.png`;
+    const img = new Image();
+    img.src = imgSrc;
+    img.onload = () => {
+      const canvas = document.createElement("canvas");
+      canvas.width = img.naturalWidth;
+      canvas.height = img.naturalHeight;
+      const ctx = canvas.getContext("2d");
+      if (ctx) {
+        ctx.drawImage(img, 0, 0);
+        const imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+        const data = imgData.data;
+        for (let i = 0; i < data.length; i += 4) {
+          const r = data[i];
+          const g = data[i + 1];
+          const b = data[i + 2];
+          
+          // Si le pixel est presque blanc/gris clair neutre (le fond)
+          const isGrayscale = Math.abs(r - g) < 20 && Math.abs(r - b) < 20 && Math.abs(g - b) < 20;
+          if (isGrayscale && r > 230 && g > 230 && b > 230) {
+            data[i + 3] = 0; // Transparent
+          } else if (isGrayscale && r > 200 && g > 200 && b > 200) {
+            // Dégradé progressif pour adoucir le contour
+            const maxVal = Math.max(r, g, b);
+            const alpha = Math.floor(((230 - maxVal) / (230 - 200)) * 255);
+            data[i + 3] = Math.max(0, Math.min(255, alpha));
+          }
+        }
+        ctx.putImageData(imgData, 0, 0);
+        setProcessedSrc(canvas.toDataURL("image/png"));
+      }
+    };
+    img.onerror = () => {
+      setProcessedSrc(null);
+    };
+  }, [stage]);
+
   const badgeFruits: TreeBadgeFruit[] = [
     { id: "sound-master", emoji: "🐾", x: 24, y: 36, color: "#FF9F43" }, // Animaux 3-5
     { id: "habitat-explorer", emoji: "🌲", x: 36, y: 24, color: "#10AC84" }, // Animaux 6-8
@@ -99,12 +139,13 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
             style={{ originX: "50px", originY: "85px" }}
           >
             <image
-              href={`/images/tree_${stage}.png`}
+              href={processedSrc || `/images/tree_${stage}.png`}
               x="12"
               y="10"
               width="76"
               height="76"
               className="select-none pointer-events-none"
+              style={processedSrc ? {} : { mixBlendMode: "multiply" }}
             />
           </motion.g>
         </AnimatePresence>

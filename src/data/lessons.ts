@@ -14,6 +14,7 @@ export interface QuizQuestion {
   imageHint?: string; // Optionnel : emoji ou type d'illustration
   mediaUrl?: string; // Optionnel : URL pour Fal AI / image / vidéo
   mediaType?: "image" | "video"; // Optionnel : type de média
+  isSpecial?: boolean; // Optionnel : question spéciale qui donne des diamants
 }
 
 export interface Lesson {
@@ -256,7 +257,62 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               question: "Quel oiseau parcourt environ 70 000 km par an pour migrer d'un pôle à l'autre ?",
               options: ["La poule domestique 🐔", "La Sterne arctique 🐦", "Le pigeon voyageur 🕊️"],
-              correctAnswer: "La Sterne arctique 🐦"
+              correctAnswer: "La Sterne arctique 🐦",
+              isSpecial: true
+            }
+          ]
+        },
+        {
+          id: "ornithology",
+          title: "Les secrets des oiseaux",
+          emoji: "🦅",
+          themeColor: "amber",
+          badgeId: "bird-watcher",
+          badgeName: "Ornithologue Junior",
+          badgeEmoji: "🦅",
+          cards: [
+            {
+              title: "Qu'est-ce qu'un oiseau ?",
+              text: "Les oiseaux sont des animaux avec des plumes, deux ailes et un bec sans dents. Leurs os sont très légers et creux, ce qui leur permet de s'envoler facilement dans les airs !",
+              emoji: "🪶"
+            },
+            {
+              title: "Le chant des oiseaux",
+              text: "Les oiseaux chantent pour deux raisons principales : pour défendre leur territoire contre d'autres oiseaux, ou pour séduire un amoureux ou une amoureuse au printemps.",
+              emoji: "🐦"
+            },
+            {
+              title: "Les plumes magiques",
+              text: "Leurs plumes ont plusieurs rôles : elles les protègent du froid en gardant la chaleur, elles les guident pendant le vol, et elles les gardent au sec grâce à une huile imperméable.",
+              emoji: "🌧️"
+            },
+            {
+              title: "Les rapaces et la vision",
+              text: "Certains oiseaux, comme l'aigle ou le faucon, sont des rapaces. Ils ont une vue extraordinaire : ils peuvent repérer une petite souris au sol à plus de 1 kilomètre d'altitude !",
+              emoji: "🦅"
+            }
+          ],
+          quiz: [
+            {
+              question: "Quelle caractéristique physique unique permet aux oiseaux de voler facilement ?",
+              options: ["Leurs os creux et très légers 🦴🪶", "Leur peau très épaisse 👤", "Leurs dents pointues 🦷"],
+              correctAnswer: "Leurs os creux et très légers 🦴🪶"
+            },
+            {
+              question: "Pourquoi les oiseaux chantent-ils beaucoup au printemps ?",
+              options: ["Pour défendre leur territoire ou trouver un amoureux 🌳❤️", "Pour s'entraîner à la radio 🎤", "Pour faire fuir la pluie 🌧️"],
+              correctAnswer: "Pour défendre leur territoire ou trouver un amoureux 🌳❤️"
+            },
+            {
+              question: "À quoi sert l'huile spéciale sur les plumes des oiseaux ?",
+              options: ["À les rendre imperméables pour rester au sec 🌧️🪶", "À glisser sur les toboggans 🛝", "À changer de couleur 🌈"],
+              correctAnswer: "À les rendre imperméables pour rester au sec 🌧️🪶"
+            },
+            {
+              question: "À quelle distance un aigle peut-il repérer une proie grâce à sa vue ?",
+              options: ["À plus de 1 kilomètre 🦅🔬", "À 10 mètres 🚶", "À 100 kilomètres 🪐"],
+              correctAnswer: "À plus de 1 kilomètre 🦅🔬",
+              isSpecial: true
             }
           ]
         }
@@ -346,7 +402,8 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               question: "Pourquoi la lumière produite par bioluminescence est-elle qualifiée de 'froide' ?",
               options: ["Parce qu'elle est bleue 🔵", "Parce que sa réaction produit de la lumière avec très peu de perte de chaleur 💡", "Parce qu'elle gèle l'eau autour d'elle ❄️"],
-              correctAnswer: "Parce que sa réaction produit de la lumière avec très peu de perte de chaleur 💡"
+              correctAnswer: "Parce que sa réaction produit de la lumière avec très peu de perte de chaleur 💡",
+              isSpecial: true
             }
           ]
         },
@@ -434,7 +491,8 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               question: "Comment le corps de la Barge rousse s'adapte-t-il physiquement pour son long voyage ?",
               options: ["Il fait pousser des plumes supplémentaires 🪶", "Il réduit temporairement la taille de ses organes non essentiels pour s'alléger 🐦", "Il stocke de l'eau dans ses os 🦴"],
-              correctAnswer: "Il réduit temporairement la taille de ses organes non essentiels pour s'alléger 🐦"
+              correctAnswer: "Il réduit temporairement la taille de ses organes non essentiels pour s'alléger 🐦",
+              isSpecial: true
             }
           ]
         },
@@ -522,7 +580,8 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               question: "Combien de pattes possède spécifiquement un arachnide (comme l'araignée) ?",
               options: ["6 pattes 🐜", "8 pattes 🕷️", "10 pattes 🦀"],
-              correctAnswer: "8 pattes 🕷️"
+              correctAnswer: "8 pattes 🕷️",
+              isSpecial: true
             }
           ]
         }
@@ -576,7 +635,8 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               question: "Que voit-on apparaître sur les arbres au printemps ?",
               options: ["De la neige ❄️", "Des fleurs et des bourgeons 🌸", "Des citrouilles 🎃"],
-              correctAnswer: "Des fleurs et des bourgeons 🌸"
+              correctAnswer: "Des fleurs et des bourgeons 🌸",
+              isSpecial: true
             }
           ]
         },
@@ -619,7 +679,8 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               question: "Que faut-il mettre sur sa tête quand le Soleil brille fort ?",
               options: ["Une écharpe en laine 🧣", "Une casquette 🧢", "Un bonnet de ski 🎿"],
-              correctAnswer: "Une casquette 🧢"
+              correctAnswer: "Une casquette 🧢",
+              isSpecial: true
             }
           ]
         }
@@ -684,7 +745,8 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               question: "Qu'est-ce que l'évapotranspiration chez les plantes ?",
               options: ["Leur façon de boire de l'eau 🥤", "Leur rejet d'eau sous forme de vapeur par les feuilles 🌿", "Leur perte de feuilles en automne 🍂"],
-              correctAnswer: "Leur rejet d'eau sous forme de vapeur par les feuilles 🌿"
+              correctAnswer: "Leur rejet d'eau sous forme de vapeur par les feuilles 🌿",
+              isSpecial: true
             }
           ]
         },
@@ -748,6 +810,60 @@ export const UNIVERSES: Record<string, Universe> = {
               question: "Quelle sève nourrit la plante avec le sucre fabriqué par les feuilles ?",
               options: ["La sève brute 🪵", "La sève élaborée 🪵", "La sève sucrée 🍯"],
               correctAnswer: "La sève élaborée 🪵"
+            }
+          ]
+        },
+        {
+          id: "outdoor-survival",
+          title: "Survie en nature !",
+          emoji: "🔥",
+          themeColor: "emerald",
+          badgeId: "survival-expert",
+          badgeName: "Survivor Pro",
+          badgeEmoji: "🔥",
+          cards: [
+            {
+              title: "Faire un feu de camp",
+              text: "Pour faire un feu en toute sécurité, il faut dégager le sol de toute herbe sèche et entourer le foyer de grosses pierres. On utilise du petit bois sec (brindilles) et de l'écorce de bouleau pour démarrer l'étincelle.",
+              emoji: "🔥"
+            },
+            {
+              title: "Les numéros d'urgence",
+              text: "En cas de danger en forêt ou en montagne, il faut composer le **112** (numéro d'urgence européen). C'est gratuit et fonctionne même sans réseau mobile complet !",
+              emoji: "📞"
+            },
+            {
+              title: "L'eau potable",
+              text: "Dans la nature, il ne faut jamais boire l'eau d'une rivière directement, car elle peut contenir des microbes. Il faut toujours la faire bouillir ou la filtrer avec du charbon.",
+              emoji: "🧪"
+            },
+            {
+              title: "Jeux vidéo et Survie",
+              text: "Dans les jeux de survie comme *Minecraft*, la priorité absolue pour passer la première nuit est de construire un abri pour s'abriter du vent et de fabriquer une torche. En vrai, c'est pareil !",
+              emoji: "🏡"
+            }
+          ],
+          quiz: [
+            {
+              question: "Quel numéro d'urgence gratuit fonctionne partout pour appeler du secours en Europe ?",
+              options: ["Le 112 📞", "Le 18 🚒", "Le 15 🚑"],
+              correctAnswer: "Le 112 📞"
+            },
+            {
+              question: "Que doit-on absolument faire avant de boire l'eau d'une rivière en forêt ?",
+              options: ["La filtrer ou la faire bouillir 🧪🔥", "Y rajouter du sucre 🍬", "La secouer très fort 🧴"],
+              correctAnswer: "La filtrer ou la faire bouillir 🧪🔥"
+            },
+            {
+              question: "Comment sécurise-t-on le sol avant de démarrer un feu de camp ?",
+              options: ["On dégage la terre et on entoure le foyer de pierres 🪨", "On le recouvre de feuilles mortes 🍂", "On verse du jus de fruits 🧃"],
+              correctAnswer: "On dégage la terre et on entoure le foyer de pierres 🪨"
+            },
+            {
+              question: "Dans un jeu de survie comme Minecraft, quelle est la priorité absolue ?",
+              options: ["Trouver des diamants 💎", "Se construire un abri et s'éclairer 🏡", "Dompter un loup 🐺"],
+              correctAnswer: "Se construire un abri et s'éclairer 🏡",
+              isSpecial: true
             }
           ]
         }
@@ -1328,7 +1444,8 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               question: "Quelle substance sécrétée par le pancréas neutralise l'acidité du chyme stomacal ?",
               options: ["Le bicarbonate de sodium 🧪", "L'insuline 🧪", "La bile 🧪"],
-              correctAnswer: "Le bicarbonate de sodium 🧪"
+              correctAnswer: "Le bicarbonate de sodium 🧪",
+              isSpecial: true
             }
           ]
         },
@@ -1416,7 +1533,8 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               question: "Quel neurotransmetteur célèbre est associé au circuit de la récompense et du plaisir ?",
               options: ["L'adrénaline 🧪", "La dopamine 🧪", "La mélatonine 💤"],
-              correctAnswer: "La dopamine 🧪"
+              correctAnswer: "La dopamine 🧪",
+              isSpecial: true
             }
           ]
         },
