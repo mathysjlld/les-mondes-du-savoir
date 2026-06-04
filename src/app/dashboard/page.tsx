@@ -265,18 +265,41 @@ export default function Dashboard() {
         
         {/* Infos profil gauche */}
         <div className="flex items-center gap-3 sm:gap-4">
-          <div
-            onClick={() => {
-              playSound("click");
-              setShowMarketTransition(true);
-            }}
-            className="cursor-pointer bg-sky-100 hover:bg-sky-200 transition-all p-1 rounded-xl sm:rounded-2xl border-2 border-sky-300 relative group shrink-0"
-            title="Aller au Marché"
-          >
-            <AvatarRenderer config={profile.avatar} size={50} interactive={true} />
-            <div className="absolute -bottom-1 -right-1 bg-yellow-400 text-yellow-950 p-1 rounded-lg text-[10px] font-bold shadow border border-white group-hover:scale-110 transition-transform">
-              👕
+          {/* Avatar (sans lien marché) + Animal compagnon à côté */}
+          <div className="relative shrink-0 flex items-end gap-1.5">
+            {/* Avatar principal */}
+            <div className="bg-sky-100 p-1 rounded-xl sm:rounded-2xl border-2 border-sky-300">
+              <AvatarRenderer config={profile.avatar} size={50} interactive={true} />
             </div>
+
+            {/* Animal compagnon affiché clairement à côté de l'avatar */}
+            {profile.activePet && profile.activePet !== "none" && (
+              <motion.div
+                animate={{ y: [0, -5, 0], rotate: [0, 5, -5, 0] }}
+                transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
+                className="flex flex-col items-center select-none"
+                title={`Compagnon : ${profile.activePet}`}
+              >
+                <div className="text-2xl sm:text-3xl drop-shadow-md">
+                  {profile.activePet === "fox" && "🦊"}
+                  {profile.activePet === "cat" && "🐱"}
+                  {profile.activePet === "koala" && "🐨"}
+                  {profile.activePet === "dragon" && "🐲"}
+                  {profile.activePet === "unicorn" && "🦄"}
+                  {profile.activePet === "panda" && "🐼"}
+                  {profile.activePet === "lion" && "🦁"}
+                </div>
+                <span className="text-[8px] sm:text-[9px] font-black text-indigo-600 bg-indigo-50 border border-indigo-200 px-1.5 py-0.5 rounded-full leading-none -mt-0.5 whitespace-nowrap">
+                  {profile.activePet === "fox" && "Renardeau"}
+                  {profile.activePet === "cat" && "Chaton"}
+                  {profile.activePet === "koala" && "Koala"}
+                  {profile.activePet === "dragon" && "Dragonneau"}
+                  {profile.activePet === "unicorn" && "Licorne"}
+                  {profile.activePet === "panda" && "Panda"}
+                  {profile.activePet === "lion" && "Lion"}
+                </span>
+              </motion.div>
+            )}
           </div>
 
           <div className="flex flex-col flex-1 min-w-0">
@@ -288,17 +311,6 @@ export default function Dashboard() {
                 Niv. {currentLevel}
               </span>
             </div>
-            {profile.activePet && profile.activePet !== "none" && (
-              <div className="flex items-center gap-1 mt-1 text-[10px] sm:text-xs font-bold text-indigo-700 bg-indigo-50 border border-indigo-100 px-2 py-0.5 rounded-full w-max select-none animate-pulse">
-                <span>🐾</span>
-                <span>
-                  {profile.activePet === "fox" && "Renardeau 🦊"}
-                  {profile.activePet === "cat" && "Chaton 🐱"}
-                  {profile.activePet === "koala" && "Koala Câlin 🐨"}
-                  {profile.activePet === "dragon" && "Dragonneau 🐲"}
-                </span>
-              </div>
-            )}
 
             {/* Barre d'XP */}
             <div className="w-full bg-slate-100 rounded-full h-3 sm:h-4 mt-1 sm:mt-2 overflow-hidden border border-slate-200 relative">
