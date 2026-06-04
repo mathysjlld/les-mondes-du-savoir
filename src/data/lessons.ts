@@ -309,9 +309,9 @@ export const UNIVERSES: Record<string, Universe> = {
               correctAnswer: "À les rendre imperméables pour rester au sec 🌧️🪶"
             },
             {
-              question: "À quelle distance un aigle peut-il repérer une proie grâce à sa vue ?",
-              options: ["À plus de 1 kilomètre 🦅🔬", "À 10 mètres 🚶", "À 100 kilomètres 🪐"],
-              correctAnswer: "À plus de 1 kilomètre 🦅🔬",
+              question: "Si l'œil humain peut voir un petit détail d'une certaine taille, à quelle distance maximale un aigle peut-il discerner ce même détail ?",
+              options: ["Huit fois plus loin que l'homme (environ 1 km de haut pour une souris) 🦅🔬", "Exactement à la même distance 🚶", "Deux fois moins loin (sa vue est moins bonne) 👁️"],
+              correctAnswer: "Huit fois plus loin que l'homme (environ 1 km de haut pour une souris) 🦅🔬",
               isSpecial: true
             }
           ]
@@ -860,9 +860,9 @@ export const UNIVERSES: Record<string, Universe> = {
               correctAnswer: "On dégage la terre et on entoure le foyer de pierres 🪨"
             },
             {
-              question: "Dans un jeu de survie comme Minecraft, quelle est la priorité absolue ?",
-              options: ["Trouver des diamants 💎", "Se construire un abri et s'éclairer 🏡", "Dompter un loup 🐺"],
-              correctAnswer: "Se construire un abri et s'éclairer 🏡",
+              question: "En survie réelle, si tu es perdu en forêt, quelle est la toute première priorité absolue pour ne pas tomber malade ou avoir froid ?",
+              options: ["Construire ou trouver un abri thermique pour se protéger du vent et de l'humidité 🏡🌲", "Chercher des baies sauvages à manger 🍓", "Creuser un puits dans le sol avec ses mains 🤚"],
+              correctAnswer: "Construire ou trouver un abri thermique pour se protéger du vent et de l'humidité 🏡🌲",
               isSpecial: true
             }
           ]

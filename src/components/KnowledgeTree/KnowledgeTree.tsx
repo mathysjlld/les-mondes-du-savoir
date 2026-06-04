@@ -9,6 +9,7 @@ interface KnowledgeTreeProps {
   xp: number;
   level: number;
   unlockedBadges: string[];
+  unlockedTreeAnimals?: string[];
 }
 
 interface TreeBadgeFruit {
@@ -23,22 +24,26 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
   xp,
   level,
   unlockedBadges,
+  unlockedTreeAnimals = [],
 }) => {
-  // Déterminer la phase de croissance de l'arbre
-  // Niveau 1 : Pousse (Sprout)
-  // Niveau 2 : Jeune branche (Sapling)
-  // Niveau 3 : Arbuste (Young Tree)
-  // Niveau 4 : Arbre mature (Mature Tree)
-  // Niveau 5+ : Arbre magique fleuri (Magic Tree)
+  // Déterminer la phase de croissance de l'arbre (plus lente et plus de niveaux)
   const getGrowthStage = () => {
-    if (level === 1) return "sprout";
-    if (level === 2) return "sapling";
-    if (level === 3) return "young";
-    if (level === 4) return "mature";
-    return "magic";
+    if (level <= 2) return "sprout";   // Niv 1 et 2
+    if (level <= 4) return "sapling";  // Niv 3 et 4
+    if (level <= 6) return "young";    // Niv 5 et 6
+    if (level <= 9) return "mature";   // Niv 7, 8 et 9
+    return "magic";                    // Niv 10+
   };
 
   const stage = getGrowthStage();
+
+  // Calculer une échelle continue pour faire grandir l'arbre à chaque niveau (0.75 à 1.15)
+  const getTreeScale = () => {
+    const baseScale = 0.75;
+    const bonus = Math.min(9, level - 1) * 0.04; // +4% de taille à chaque niveau
+    return baseScale + bonus;
+  };
+  const treeScale = getTreeScale();
 
   const [processedSrc, setProcessedSrc] = React.useState<string | null>(null);
 
@@ -60,15 +65,26 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
           const g = data[i + 1];
           const b = data[i + 2];
           
-          // Si le pixel est presque blanc/gris clair neutre (le fond)
-          const isGrayscale = Math.abs(r - g) < 20 && Math.abs(r - b) < 20 && Math.abs(g - b) < 20;
-          if (isGrayscale && r > 230 && g > 230 && b > 230) {
-            data[i + 3] = 0; // Transparent
-          } else if (isGrayscale && r > 200 && g > 200 && b > 200) {
-            // Dégradé progressif pour adoucir le contour
-            const maxVal = Math.max(r, g, b);
-            const alpha = Math.floor(((230 - maxVal) / (230 - 200)) * 255);
-            data[i + 3] = Math.max(0, Math.min(255, alpha));
+          // Le fond de l'image est un dégradé très clair et peu saturé (ciel bleu, nuages, sol sableux)
+          const max = Math.max(r, g, b);
+          const min = Math.min(r, g, b);
+          const diff = max - min;
+          
+          // Si les valeurs de couleur sont élevées (clair) et proches les unes des autres (peu saturé)
+          if (r > 150 && g > 150 && b > 130 && diff < 80) {
+            // Calculer un score de confiance de fond (0 à 1)
+            const rScore = Math.min(1, Math.max(0, (r - 150) / 40));
+            const gScore = Math.min(1, Math.max(0, (g - 150) / 40));
+            const bScore = Math.min(1, Math.max(0, (b - 130) / 40));
+            const diffScore = Math.min(1, Math.max(0, (80 - diff) / 45));
+            
+            const bgConfidence = rScore * gScore * bScore * diffScore;
+            
+            if (bgConfidence > 0.8) {
+              data[i + 3] = 0; // Rend le pixel entièrement transparent
+            } else {
+              data[i + 3] = Math.floor(data[i + 3] * (1 - bgConfidence)); // Dégradé doux sur les contours
+            }
           }
         }
         ctx.putImageData(imgData, 0, 0);
@@ -136,7 +152,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
             exit={{ scale: 0.6, opacity: 0 }}
             transition={{ type: "spring", stiffness: 120, damping: 14 }}
             className="origin-bottom"
-            style={{ originX: "50px", originY: "85px" }}
+            style={{ originX: "50px", originY: "85px", scale: treeScale }}
           >
             <image
               href={processedSrc || `/images/tree_${stage}.png`}
@@ -229,14 +245,78 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
               </g>
             );
           })}
+        {/* Animaux de l'arbre débloqués */}
+        {unlockedTreeAnimals.includes("tree-butterfly") && (
+          <motion.g
+            animate={{ 
+              x: [0, 1.5, -1, 0],
+              y: [0, -3, 1.5, 0],
+              rotate: [0, 8, -8, 0]
+            }}
+            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+            className="origin-center"
+            style={{ transformBox: "fill-box", transformOrigin: "center" }}
+          >
+            <text x="62" y="44" className="text-[7px] select-none pointer-events-none filter drop-shadow-sm">
+              🦋
+            </text>
+          </motion.g>
+        )}
+
+        {unlockedTreeAnimals.includes("tree-owl") && (
+          <motion.g
+            animate={{ 
+              scaleY: [1, 1.08, 1],
+              rotate: [0, 1.5, -1.5, 0]
+            }}
+            transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+            className="origin-center"
+            style={{ transformBox: "fill-box", transformOrigin: "bottom center" }}
+          >
+            <text x="47" y="34" className="text-[7px] select-none pointer-events-none filter drop-shadow-sm">
+              🦉
+            </text>
+          </motion.g>
+        )}
+
+        {unlockedTreeAnimals.includes("tree-squirrel") && (
+          <motion.g
+            animate={{ 
+              y: [0, -1.5, 0],
+              scaleX: [1, 0.96, 1]
+            }}
+            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 0.7 }}
+            className="origin-center"
+            style={{ transformBox: "fill-box", transformOrigin: "bottom center" }}
+          >
+            <text x="28" y="65" className="text-[7px] select-none pointer-events-none filter drop-shadow-sm">
+              🐿️
+            </text>
+          </motion.g>
+        )}
+
+        {unlockedTreeAnimals.includes("tree-parrot") && (
+          <motion.g
+            animate={{ 
+              rotate: [0, -3, 3, 0]
+            }}
+            transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut" }}
+            className="origin-center"
+            style={{ transformBox: "fill-box", transformOrigin: "bottom center" }}
+          >
+            <text x="74" y="55" className="text-[7px] select-none pointer-events-none filter drop-shadow-sm">
+              🦜
+            </text>
+          </motion.g>
+        )}
       </svg>
 
       {/* Texte indicateur en bas de l'arbre */}
       <div className="absolute bottom-2 left-1/2 -translate-x-1/2 bg-white/95 px-3 py-1 rounded-full shadow-md text-xs font-bold text-emerald-700 select-none">
         {stage === "sprout" && "🌱 Petite Pousse"}
         {stage === "sapling" && "🌿 Jeune Arbuste"}
-        {stage === "young" && "🌳 Bel Arbuste"}
-        {stage === "mature" && "🍏 Bel Arbre Fruitier"}
+        {stage === "young" && "🌳 Arbuste en Croissance"}
+        {stage === "mature" && "🍏 Arbre Fruitier Mature"}
         {stage === "magic" && "✨ Arbre Magique Fleuri"}
       </div>
     </div>

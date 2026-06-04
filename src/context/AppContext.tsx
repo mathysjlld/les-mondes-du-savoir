@@ -6,7 +6,7 @@ import { playSound } from "@/lib/sound";
 export interface AvatarConfig {
   type: "fox" | "panda" | "owl" | "koala";
   color: string;
-  accessory: "none" | "glasses" | "magic-hat" | "crown" | "super-cape" | "headphones";
+  accessory: "none" | "glasses" | "magic-hat" | "crown" | "super-cape" | "headphones" | "shield" | "wand" | "bow-tie" | "balloon";
 }
 
 export interface UserProfile {
@@ -23,7 +23,8 @@ export interface UserProfile {
   unlockedBadges: string[]; // liste de badgeId
   unlockedAccessories: string[]; // Liste des accessoires achetés
   unlockedPets: string[]; // Liste des compagnons achetés
-  activePet: "none" | "fox" | "cat" | "koala" | "dragon"; // Compagnon équipé
+  unlockedTreeAnimals?: string[]; // Liste des animaux d'arbre achetés
+  activePet: "none" | "fox" | "cat" | "koala" | "dragon" | "unicorn" | "panda" | "lion"; // Compagnon équipé
   timeSpentToday: number; // en secondes
   maxTimeLimit: number; // en minutes (limite parents)
   soundEnabled: boolean;
@@ -41,6 +42,7 @@ interface AppContextType {
   completeQuiz: (lessonId: string, badgeInfo: { id: string; name: string; emoji: string }) => boolean; // renvoie true si nouveau badge débloqué
   buyAccessory: (accessoryId: string, price: number) => boolean; // renvoie true si achat réussi
   buyPet: (petId: string, price: number) => boolean; // renvoie true si achat réussi
+  buyTreeAnimal: (animalId: string, price: number) => boolean; // renvoie true si achat réussi
   equipAccessory: (accessoryId: AvatarConfig["accessory"]) => void;
   equipPet: (petId: UserProfile["activePet"]) => void;
   updateAvatarColor: (color: string) => void;
@@ -96,6 +98,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
             diamonds: parsed.diamonds || 0,
             unlockedAccessories: parsed.unlockedAccessories || DEFAULT_ACCESSORIES,
             unlockedPets: parsed.unlockedPets || ["none"],
+            unlockedTreeAnimals: parsed.unlockedTreeAnimals || [],
             activePet: parsed.activePet || "none",
             timeSpentToday: parsed.lastActiveDate === todayStr ? (parsed.timeSpentToday || 0) : 0,
             maxTimeLimit: parsed.maxTimeLimit || 20,
@@ -133,6 +136,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
       unlockedBadges: [],
       unlockedAccessories: [...DEFAULT_ACCESSORIES],
       unlockedPets: ["none"],
+      unlockedTreeAnimals: [],
       activePet: "none",
       timeSpentToday: 0,
       maxTimeLimit: 20,
@@ -329,6 +333,25 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     return success;
   };
 
+  // Acheter un animal pour l'arbre
+  const buyTreeAnimal = (animalId: string, price: number) => {
+    let success = false;
+    setProfile(prev => {
+      if (!prev) return null;
+      const currentAnimals = prev.unlockedTreeAnimals || [];
+      if (currentAnimals.includes(animalId)) return prev; // Déjà débloqué
+      if (prev.diamonds < price) return prev; // Pas assez de diamants
+
+      success = true;
+      return {
+        ...prev,
+        diamonds: prev.diamonds - price,
+        unlockedTreeAnimals: [...currentAnimals, animalId]
+      };
+    });
+    return success;
+  };
+
   // Équiper un accessoire
   const equipAccessory = (accessoryId: AvatarConfig["accessory"]) => {
     setProfile(prev => {
@@ -445,6 +468,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
         completeQuiz,
         buyAccessory,
         buyPet,
+        buyTreeAnimal,
         equipAccessory,
         equipPet,
         updateAvatarColor,

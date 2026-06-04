@@ -304,6 +304,7 @@ export default function Dashboard() {
               xp={profile.xp}
               level={currentLevel}
               unlockedBadges={profile.unlockedBadges}
+              unlockedTreeAnimals={profile.unlockedTreeAnimals || []}
             />
 
             <p className="text-xs sm:text-sm font-medium text-slate-600 px-2 leading-relaxed">

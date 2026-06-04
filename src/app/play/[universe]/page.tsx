@@ -35,6 +35,12 @@ export default function PlayUniverse() {
   const [shuffledOptions, setShuffledOptions] = useState<string[]>([]);
   const [showDiamondFeedback, setShowDiamondFeedback] = useState(false);
 
+  // Barre de vie (Hearts)
+  const [health, setHealth] = useState(10); // 10 demi-cœurs = 5 cœurs complets
+  const [wrongAttempts, setWrongAttempts] = useState(0); // Erreurs sur la question actuelle
+  const [firstTryWrongCurrent, setFirstTryWrongCurrent] = useState(false); // Premier essai de la question actuelle raté
+  const [firstTryWrongPrevious, setFirstTryWrongPrevious] = useState(false); // Premier essai de la question précédente raté
+
   // Réf pour éviter la synthèse vocale en boucle
   const hasSpoken = useRef(false);
 
@@ -117,9 +123,9 @@ export default function PlayUniverse() {
     }
   };
 
-  // Traiter la réponse au quiz
+  // Traiter la réponse au quiz avec gestion des cœurs
   const handleSelectOption = (option: string) => {
-    if (answeredState === "correct") return; // Déjà validé
+    if (answeredState === "correct" || health <= 0) return; // Déjà validé ou Game Over
     setSelectedOption(option);
 
     if (option === currentQuestion.correctAnswer) {
@@ -143,6 +149,11 @@ export default function PlayUniverse() {
 
       // Passer à la question suivante après 1.5s
       setTimeout(() => {
+        // Enregistrer si le premier essai était faux pour cette question
+        setFirstTryWrongPrevious(firstTryWrongCurrent);
+        setFirstTryWrongCurrent(false);
+        setWrongAttempts(0);
+
         if (currentQuestionIdx < lesson.quiz.length - 1) {
           setCurrentQuestionIdx(prev => prev + 1);
           setSelectedOption(null);
@@ -158,10 +169,33 @@ export default function PlayUniverse() {
       setAnsweredState("wrong");
       setShakingOption(option);
       
+      // Gestion de la vie (Cœurs)
+      const nextWrongAttempts = wrongAttempts + 1;
+      setWrongAttempts(nextWrongAttempts);
+
+      // Règle 1 : deux fois faux sur la même question -> perd un demi-cœur (1 unité de vie)
+      if (nextWrongAttempts === 2) {
+        setHealth(h => Math.max(0, h - 1));
+        setWrongAttempts(0); // Réinitialiser pour cette question
+      }
+
+      // Règle 2 : faux au premier essai sur deux questions d'affilée -> perd un demi-cœur
+      if (nextWrongAttempts === 1) {
+        setFirstTryWrongCurrent(true);
+        if (firstTryWrongPrevious) {
+          setHealth(h => Math.max(0, h - 1));
+        }
+      }
+      
       // Retirer la secousse après 0.5s
       setTimeout(() => {
         setShakingOption(null);
-        setAnsweredState("idle");
+        setHealth(currentHealth => {
+          if (currentHealth > 0) {
+            setAnsweredState("idle");
+          }
+          return currentHealth;
+        });
       }, 500);
     }
   };
@@ -366,7 +400,7 @@ export default function PlayUniverse() {
           )}
 
           {/* ÉCRAN 2 : LE QUIZ INTERACTIF */}
-          {gameState === "quiz" && currentQuestion && (
+          {gameState === "quiz" && health > 0 && currentQuestion && (
             <motion.div
               key="quiz-card"
               initial={{ scale: 0.95, opacity: 0 }}
@@ -386,6 +420,42 @@ export default function PlayUniverse() {
                   className="bg-purple-500 h-full rounded-full transition-all duration-300"
                   style={{ width: `${((currentQuestionIdx + 1) / lesson.quiz.length) * 100}%` }}
                 />
+              </div>
+
+              {/* Barre de vie (Cœurs style Minecraft) */}
+              <div className="w-full flex justify-center gap-1.5 my-1 bg-rose-50/50 py-1.5 px-3 rounded-2xl border border-rose-100/50">
+                {[...Array(5)].map((_, i) => {
+                  const heartVal = i * 2;
+                  let type: "full" | "half" | "empty" = "empty";
+                  if (health >= heartVal + 2) {
+                    type = "full";
+                  } else if (health === heartVal + 1) {
+                    type = "half";
+                  }
+                  
+                  return (
+                    <motion.svg
+                      key={i}
+                      animate={type === "full" && answeredState === "wrong" ? { scale: [1, 1.2, 0.9, 1.1, 1] } : {}}
+                      transition={{ duration: 0.5 }}
+                      className={`w-6 h-6 ${type === "empty" ? "text-slate-200" : "text-rose-500"} fill-current drop-shadow-sm`}
+                      viewBox="0 0 24 24"
+                    >
+                      {type === "full" && (
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                      )}
+                      {type === "half" && (
+                        <>
+                          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09V18.5l-1.45 1.53z" />
+                          <path d="M12 5.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35V5.09z" fill="#E2E8F0" />
+                        </>
+                      )}
+                      {type === "empty" && (
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                      )}
+                    </motion.svg>
+                  );
+                })}
               </div>
 
               {/* Intitulé de la question */}
@@ -453,6 +523,48 @@ export default function PlayUniverse() {
                   );
                 })}
               </div>
+            </motion.div>
+          )}
+
+          {/* ÉCRAN 2.5 : GAME OVER (PLUS DE VIE) */}
+          {gameState === "quiz" && health === 0 && (
+            <motion.div
+              key="game-over-card"
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              className="w-full max-w-xl bg-white rounded-3xl p-6 sm:p-8 border-4 border-rose-300 shadow-xl flex flex-col justify-center items-center text-center gap-4 sm:gap-6 min-h-[360px]"
+            >
+              <span className="text-6xl animate-bounce">💔</span>
+              <h3 className="text-2xl sm:text-3xl font-black text-rose-950">Oups, plus de cœurs !</h3>
+              <p className="text-sm sm:text-base font-bold text-slate-600 leading-relaxed max-w-md">
+                Tu as perdu tous tes cœurs sur ce quiz. Pas de panique ! Prends ton temps, relis bien les leçons si besoin, et réessaie pour débloquer ton badge ! 💪🌟
+              </p>
+              
+              <button
+                onClick={() => {
+                  playSound("click");
+                  setHealth(10);
+                  setCurrentQuestionIdx(0);
+                  setSelectedOption(null);
+                  setAnsweredState("idle");
+                  setWrongAttempts(0);
+                  setFirstTryWrongCurrent(false);
+                  setFirstTryWrongPrevious(false);
+                  const firstQ = lesson.quiz[0];
+                  if (firstQ) {
+                    const optionsCopy = [...firstQ.options];
+                    for (let i = optionsCopy.length - 1; i > 0; i--) {
+                      const j = Math.floor(Math.random() * (i + 1));
+                      [optionsCopy[i], optionsCopy[j]] = [optionsCopy[j], optionsCopy[i]];
+                    }
+                    setShuffledOptions(optionsCopy);
+                  }
+                }}
+                className="py-3 px-8 rounded-2xl bg-rose-500 hover:bg-rose-600 text-white text-base sm:text-lg font-black shadow-md border-b-4 border-rose-700 transition-all cursor-pointer btn-bubble"
+              >
+                Réessayer le Quiz 🔁
+              </button>
             </motion.div>
           )}
 

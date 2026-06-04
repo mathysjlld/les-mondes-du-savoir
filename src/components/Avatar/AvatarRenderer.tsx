@@ -246,6 +246,61 @@ export const AvatarRenderer: React.FC<AvatarRendererProps> = ({
           </g>
         );
 
+      case "shield":
+        return (
+          <g id="accessory-shield" transform="translate(8, 55)">
+            {/* Bouclier de chevalier */}
+            <path d="M 0 0 L 12 -4 L 24 0 L 24 12 C 24 20 12 28 12 28 C 12 28 0 20 0 12 Z" fill="#BDC3C7" stroke="#7F8C8D" strokeWidth="1.5" />
+            <path d="M 3 2 L 12 -1 L 21 2 L 21 12 C 21 18 12 24 12 24 C 12 24 3 18 3 12 Z" fill="#E74C3C" />
+            <line x1="12" y1="0" x2="12" y2="22" stroke="#BDC3C7" strokeWidth="1.5" />
+            <line x1="3" y1="10" x2="21" y2="10" stroke="#BDC3C7" strokeWidth="1.5" />
+          </g>
+        );
+
+      case "wand":
+        return (
+          <g id="accessory-wand" transform="translate(68, 48)">
+            {/* Baguette magique */}
+            <line x1="5" y1="30" x2="18" y2="8" stroke="#8B5A2B" strokeWidth="2.5" strokeLinecap="round" />
+            {/* Étoile magique au bout */}
+            <polygon points="18,3 20,6 23,6 21,8 22,11 18,9 14,11 15,8 13,6 16,6" fill="#F1C40F" stroke="#F39C12" strokeWidth="0.6" />
+            {/* Petites étincelles */}
+            <circle cx="24" cy="2" r="0.6" fill="#FFF" />
+            <circle cx="11" cy="15" r="0.6" fill="#FFF" />
+            <circle cx="23" cy="12" r="0.6" fill="#FFF" />
+          </g>
+        );
+
+      case "bow-tie":
+        return (
+          <g id="accessory-bow-tie" transform="translate(50, 56)">
+            {/* Nœud papillon chic */}
+            <polygon points="-10,-5 -10,5 0,0" fill="#E74C3C" stroke="#C0392B" strokeWidth="0.8" />
+            <polygon points="10,-5 10,5 0,0" fill="#E74C3C" stroke="#C0392B" strokeWidth="0.8" />
+            <circle cx="0" cy="0" r="3" fill="#C0392B" />
+            {/* Pois blancs */}
+            <circle cx="-6" cy="-1.5" r="0.8" fill="#FFF" />
+            <circle cx="-6" cy="1.5" r="0.8" fill="#FFF" />
+            <circle cx="6" cy="-1.5" r="0.8" fill="#FFF" />
+            <circle cx="6" cy="1.5" r="0.8" fill="#FFF" />
+          </g>
+        );
+
+      case "balloon":
+        return (
+          <g id="accessory-balloon">
+            {/* Ballon de baudruche volant */}
+            <path d="M 72 72 Q 78 50 75 28" fill="none" stroke="#7F8C8D" strokeWidth="1" strokeDasharray="1,1" />
+            <g transform="translate(75, 20)">
+              <ellipse cx="0" cy="-10" rx="9" ry="11" fill="#FF7675" />
+              {/* Reflet de brillance */}
+              <ellipse cx="-3" cy="-13" rx="1.8" ry="3.5" fill="#FFEAA7" opacity="0.6" transform="rotate(-15 -3 -13)" />
+              {/* Petit noeud de fermeture */}
+              <polygon points="-1.5,0 1.5,0 0,-2.5" fill="#D63031" />
+            </g>
+          </g>
+        );
+
       default:
         return null;
     }
