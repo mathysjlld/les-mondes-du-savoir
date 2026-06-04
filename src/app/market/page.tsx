@@ -40,6 +40,100 @@ const TREE_ANIMALS_ITEMS = [
   { id: "tree-parrot", name: "Perroquet Arc-en-ciel", emoji: "🦜", price: 5, desc: "Un perroquet bavard perché au sommet !", rarity: "Mythique" },
 ] as const;
 
+function TreePreview({
+  stage,
+  processedTreeSrc,
+  unlockedTreeAnimals,
+  activePreviewTreeAnimalId,
+}: {
+  stage: string;
+  processedTreeSrc: string | null;
+  unlockedTreeAnimals: string[];
+  activePreviewTreeAnimalId: string | null;
+}) {
+  const treeAnimalsToRender = [
+    { id: "tree-butterfly", emoji: "🦋", x: 62, y: 44 },
+    { id: "tree-owl", emoji: "🦉", x: 47, y: 34 },
+    { id: "tree-squirrel", emoji: "🐿️", x: 28, y: 65 },
+    { id: "tree-parrot", emoji: "🦜", x: 74, y: 55 },
+  ];
+
+  return (
+    <svg
+      viewBox="0 0 100 100"
+      className="w-full h-full select-none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      {/* Colline d'herbe au sol */}
+      <path d="M -10 90 Q 50 82 110 90 L 110 110 L -10 110 Z" fill="#2ECC71" />
+      <path d="M -10 92 Q 50 86 110 92 L 110 110 L -10 110 Z" fill="#27AE60" />
+
+      {/* Tree Image */}
+      <image
+        href={processedTreeSrc || `/images/tree_${stage}.png`}
+        x="12"
+        y="10"
+        width="76"
+        height="76"
+        className="select-none pointer-events-none"
+        style={processedTreeSrc ? {} : { mixBlendMode: "multiply" }}
+      />
+
+      {/* Animals */}
+      {treeAnimalsToRender.map((item) => {
+        const isUnlocked = unlockedTreeAnimals.includes(item.id);
+        const isPreview = item.id === activePreviewTreeAnimalId;
+        
+        if (!isUnlocked && !isPreview) return null;
+
+        return (
+          <motion.g
+            key={item.id}
+            animate={
+              isPreview
+                ? { scale: [1, 1.25, 1], rotate: [0, 5, -5, 0] }
+                : item.id === "tree-butterfly"
+                ? { x: [0, 1.5, -1, 0], y: [0, -2, 1.5, 0], rotate: [0, 8, -8, 0] }
+                : item.id === "tree-squirrel"
+                ? { y: [0, -1.5, 0] }
+                : item.id === "tree-owl"
+                ? { scaleY: [1, 1.08, 1], rotate: [0, 1.5, -1.5, 0] }
+                : { rotate: [0, -3, 3, 0] } // parrot
+            }
+            transition={{
+              duration: isPreview ? 2 : 4.5,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+            className="origin-center"
+            style={{ transformBox: "fill-box", transformOrigin: "center" }}
+          >
+            <text
+              x={item.x}
+              y={item.y}
+              className={`select-none pointer-events-none filter drop-shadow-sm font-sans fill-current`}
+              style={{ fontSize: isPreview ? "9px" : "7px" }}
+            >
+              {item.emoji}
+            </text>
+            
+            {/* Petit indicateur scintillant pour l'aperçu */}
+            {isPreview && (
+              <circle
+                cx={item.x + 3.5}
+                cy={item.y - 4.5}
+                r="1"
+                fill="#F1C40F"
+                className="animate-pulse"
+              />
+            )}
+          </motion.g>
+        );
+      })}
+    </svg>
+  );
+}
+
 export default function Market() {
   const router = useRouter();
   const {
@@ -49,6 +143,7 @@ export default function Market() {
     buyTreeAnimal,
     equipAccessory,
     equipPet,
+    getLevel,
   } = useApp();
 
   const [activeTab, setActiveTab] = useState<"accessories" | "pets" | "treeAnimals">("accessories");
@@ -98,6 +193,64 @@ export default function Market() {
     setHoveredTreeAnimalId(null);
     setSelectedPreviewTreeAnimalId(null);
   }, [activeTab]);
+
+  const level = getLevel();
+  const getGrowthStage = () => {
+    if (level <= 2) return "sprout";   // Niv 1 et 2
+    if (level <= 4) return "sapling";  // Niv 3 et 4
+    if (level <= 6) return "young";    // Niv 5 et 6
+    if (level <= 9) return "mature";   // Niv 7, 8 et 9
+    return "magic";                    // Niv 10+
+  };
+  const stage = getGrowthStage();
+  const [processedTreeSrc, setProcessedTreeSrc] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (typeof window === "undefined" || !profile) return;
+    const imgSrc = `/images/tree_${stage}.png`;
+    const img = new Image();
+    img.src = imgSrc;
+    img.onload = () => {
+      const canvas = document.createElement("canvas");
+      canvas.width = img.naturalWidth;
+      canvas.height = img.naturalHeight;
+      const ctx = canvas.getContext("2d");
+      if (ctx) {
+        ctx.drawImage(img, 0, 0);
+        const imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+        const data = imgData.data;
+        for (let i = 0; i < data.length; i += 4) {
+          const r = data[i];
+          const g = data[i + 1];
+          const b = data[i + 2];
+          
+          const max = Math.max(r, g, b);
+          const min = Math.min(r, g, b);
+          const diff = max - min;
+          
+          if (r > 150 && g > 150 && b > 130 && diff < 80) {
+            const rScore = Math.min(1, Math.max(0, (r - 150) / 40));
+            const gScore = Math.min(1, Math.max(0, (g - 150) / 40));
+            const bScore = Math.min(1, Math.max(0, (b - 130) / 40));
+            const diffScore = Math.min(1, Math.max(0, (80 - diff) / 45));
+            
+            const bgConfidence = rScore * gScore * bScore * diffScore;
+            
+            if (bgConfidence > 0.8) {
+              data[i + 3] = 0;
+            } else {
+              data[i + 3] = Math.floor(data[i + 3] * (1 - bgConfidence));
+            }
+          }
+        }
+        ctx.putImageData(imgData, 0, 0);
+        setProcessedTreeSrc(canvas.toDataURL("image/png"));
+      }
+    };
+    img.onerror = () => {
+      setProcessedTreeSrc(null);
+    };
+  }, [stage, profile]);
 
   // Synthétiseur Web Audio pour la musique cozy du Marché
   useEffect(() => {
@@ -368,69 +521,82 @@ export default function Market() {
 
           {/* Cabine d'essayage compacte */}
           <div className="w-16 h-16 shrink-0 rounded-xl bg-gradient-to-b from-stone-900 via-amber-950 to-stone-900 border-2 border-amber-800 flex items-center justify-center relative overflow-hidden shadow-inner">
-            {activePetToRender && activePetToRender !== "none" && (
-              <motion.div
-                key={activePetToRender}
-                animate={{ y: [0, -2, 0] }}
-                transition={{ duration: 2.2, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute bottom-1.5 left-0.5 text-lg select-none z-10 filter drop-shadow-md"
-              >
-                {activePetToRender === "fox" && "🦊"}
-                {activePetToRender === "cat" && "🐱"}
-                {activePetToRender === "koala" && "🐨"}
-                {activePetToRender === "panda" && "🐼"}
-                {activePetToRender === "unicorn" && "🦄"}
-                {activePetToRender === "dragon" && "🐲"}
-                {activePetToRender === "lion" && "🦁"}
-              </motion.div>
+            {activeTab === "treeAnimals" ? (
+              <TreePreview
+                stage={stage}
+                processedTreeSrc={processedTreeSrc}
+                unlockedTreeAnimals={unlockedTreeAnimals}
+                activePreviewTreeAnimalId={activePreviewTreeAnimalId}
+              />
+            ) : (
+              <>
+                {activePetToRender && activePetToRender !== "none" && (
+                  <motion.div
+                    key={activePetToRender}
+                    animate={{ y: [0, -2, 0] }}
+                    transition={{ duration: 2.2, repeat: Infinity, ease: "easeInOut" }}
+                    className="absolute bottom-1.5 left-0.5 text-lg select-none z-10 filter drop-shadow-md"
+                  >
+                    {activePetToRender === "fox" && "🦊"}
+                    {activePetToRender === "cat" && "🐱"}
+                    {activePetToRender === "koala" && "🐨"}
+                    {activePetToRender === "panda" && "🐼"}
+                    {activePetToRender === "unicorn" && "🦄"}
+                    {activePetToRender === "dragon" && "🐲"}
+                    {activePetToRender === "lion" && "🦁"}
+                  </motion.div>
+                )}
+                {activePreviewTreeAnimalId && activePreviewTreeAnimalId !== "none" && (
+                  <motion.div
+                    key={activePreviewTreeAnimalId}
+                    animate={{ y: [0, -2, 0] }}
+                    transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                    className="absolute top-0.5 right-0.5 text-sm select-none z-10 filter drop-shadow-sm"
+                  >
+                    {activePreviewTreeAnimalId === "tree-butterfly" && "🦋"}
+                    {activePreviewTreeAnimalId === "tree-squirrel" && "🐿️"}
+                    {activePreviewTreeAnimalId === "tree-owl" && "🦉"}
+                    {activePreviewTreeAnimalId === "tree-parrot" && "🦜"}
+                  </motion.div>
+                )}
+                <div className="z-0 scale-65">
+                  <AvatarRenderer config={previewAvatarConfig} size={65} interactive={false} />
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 h-2 bg-emerald-950" />
+              </>
             )}
-            {activePreviewTreeAnimalId && activePreviewTreeAnimalId !== "none" && (
-              <motion.div
-                key={activePreviewTreeAnimalId}
-                animate={{ y: [0, -2, 0] }}
-                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute top-0.5 right-0.5 text-sm select-none z-10 filter drop-shadow-sm"
-              >
-                {activePreviewTreeAnimalId === "tree-butterfly" && "🦋"}
-                {activePreviewTreeAnimalId === "tree-squirrel" && "🐿️"}
-                {activePreviewTreeAnimalId === "tree-owl" && "🦉"}
-                {activePreviewTreeAnimalId === "tree-parrot" && "🦜"}
-              </motion.div>
-            )}
-            <div className="z-0 scale-65">
-              <AvatarRenderer config={previewAvatarConfig} size={65} interactive={false} />
-            </div>
-            <div className="absolute bottom-0 left-0 right-0 h-2 bg-emerald-950" />
           </div>
         </div>
 
         {/* Boutons de déséquipement rapide mobile */}
-        <div className="flex gap-2 w-full">
-          <button
-            onClick={() => {
-              equipAccessory("none");
-              playSound("click");
-              setSelectedPreviewAccessoryId(null);
-              setDialogue("Tu as retiré tous tes accessoires. Prêt pour un nouveau style ? 🎩");
-            }}
-            disabled={currentAccessories.length === 0}
-            className="flex-1 py-1 px-1 text-[8px] font-black rounded-lg border border-amber-800 bg-amber-950 hover:bg-amber-900 text-amber-200 disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer transition-colors"
-          >
-            Tout retirer
-          </button>
-          <button
-            onClick={() => {
-              equipPet("none");
-              playSound("click");
-              setSelectedPreviewPetId(null);
-              setDialogue("Ton compagnon est allé se reposer au chaud. 💤");
-            }}
-            disabled={profile.activePet === "none"}
-            className="flex-1 py-1 px-1 text-[8px] font-black rounded-lg border border-amber-800 bg-amber-950 hover:bg-amber-900 text-amber-200 disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer transition-colors"
-          >
-            Pas d'animal
-          </button>
-        </div>
+        {activeTab !== "treeAnimals" && (
+          <div className="flex gap-2 w-full">
+            <button
+              onClick={() => {
+                equipAccessory("none");
+                playSound("click");
+                setSelectedPreviewAccessoryId(null);
+                setDialogue("Tu as retiré tous tes accessoires. Prêt pour un nouveau style ? 🎩");
+              }}
+              disabled={currentAccessories.length === 0}
+              className="flex-1 py-1 px-1 text-[8px] font-black rounded-lg border border-amber-800 bg-amber-950 hover:bg-amber-900 text-amber-200 disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer transition-colors"
+            >
+              Tout retirer
+            </button>
+            <button
+              onClick={() => {
+                equipPet("none");
+                playSound("click");
+                setSelectedPreviewPetId(null);
+                setDialogue("Ton compagnon est allé se reposer au chaud. 💤");
+              }}
+              disabled={profile.activePet === "none"}
+              className="flex-1 py-1 px-1 text-[8px] font-black rounded-lg border border-amber-800 bg-amber-950 hover:bg-amber-900 text-amber-200 disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer transition-colors"
+            >
+              Pas d'animal
+            </button>
+          </div>
+        )}
       </div>
 
       {/* Grid principale : Mobile-optimized structure */}
@@ -534,83 +700,96 @@ export default function Market() {
             {/* Cabine d'essayage compacte */}
             <div className="p-3 sm:p-4 bg-stone-900/90 backdrop-blur-md text-center flex flex-col items-center gap-2 border-4 border-amber-800/60 rounded-[2rem] justify-center shadow-lg">
               <span className="text-[10px] font-black text-amber-200 uppercase tracking-widest bg-amber-950 border border-amber-900 px-2.5 py-0.5 rounded-full">
-                Essayage 👕
+                {activeTab === "treeAnimals" ? "Mon Arbre 🌳" : "Essayage 👕"}
               </span>
 
               {/* Zone de preview avec l'avatar, compagnons et previews */}
               <div className="w-28 h-28 sm:w-36 sm:h-36 rounded-2xl bg-gradient-to-b from-stone-900 via-amber-950 to-stone-900 border-4 border-amber-800 flex items-center justify-center relative overflow-hidden shadow-inner mx-auto">
-                {/* Compagnon actif ou preview */}
-                {activePetToRender && activePetToRender !== "none" && (
-                  <motion.div
-                    key={activePetToRender}
-                    animate={{ y: [0, -3, 0] }}
-                    transition={{ duration: 2.2, repeat: Infinity, ease: "easeInOut" }}
-                    className="absolute bottom-3 left-1 text-3xl select-none z-10 filter drop-shadow-md"
-                  >
-                    {activePetToRender === "fox" && "🦊"}
-                    {activePetToRender === "cat" && "🐱"}
-                    {activePetToRender === "koala" && "🐨"}
-                    {activePetToRender === "panda" && "🐼"}
-                    {activePetToRender === "unicorn" && "🦄"}
-                    {activePetToRender === "dragon" && "🐲"}
-                    {activePetToRender === "lion" && "🦁"}
-                  </motion.div>
+                {activeTab === "treeAnimals" ? (
+                  <TreePreview
+                    stage={stage}
+                    processedTreeSrc={processedTreeSrc}
+                    unlockedTreeAnimals={unlockedTreeAnimals}
+                    activePreviewTreeAnimalId={activePreviewTreeAnimalId}
+                  />
+                ) : (
+                  <>
+                    {/* Compagnon actif ou preview */}
+                    {activePetToRender && activePetToRender !== "none" && (
+                      <motion.div
+                        key={activePetToRender}
+                        animate={{ y: [0, -3, 0] }}
+                        transition={{ duration: 2.2, repeat: Infinity, ease: "easeInOut" }}
+                        className="absolute bottom-3 left-1 text-3xl select-none z-10 filter drop-shadow-md"
+                      >
+                        {activePetToRender === "fox" && "🦊"}
+                        {activePetToRender === "cat" && "🐱"}
+                        {activePetToRender === "koala" && "🐨"}
+                        {activePetToRender === "panda" && "🐼"}
+                        {activePetToRender === "unicorn" && "🦄"}
+                        {activePetToRender === "dragon" && "🐲"}
+                        {activePetToRender === "lion" && "🦁"}
+                      </motion.div>
+                    )}
+
+                    {/* Preview de l'animal d'arbre */}
+                    {activePreviewTreeAnimalId && activePreviewTreeAnimalId !== "none" && (
+                      <motion.div
+                        key={activePreviewTreeAnimalId}
+                        animate={{ 
+                          x: [0, 1.5, -1.5, 0],
+                          y: [0, -3, 1.5, 0]
+                        }}
+                        transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                        className="absolute top-2 right-1 text-2xl select-none z-10 filter drop-shadow-sm"
+                      >
+                        {activePreviewTreeAnimalId === "tree-butterfly" && "🦋"}
+                        {activePreviewTreeAnimalId === "tree-squirrel" && "🐿️"}
+                        {activePreviewTreeAnimalId === "tree-owl" && "🦉"}
+                        {activePreviewTreeAnimalId === "tree-parrot" && "🦜"}
+                      </motion.div>
+                    )}
+
+                    {/* Avatar avec preview accessories */}
+                    <div className="z-0 scale-90 sm:scale-100">
+                      <AvatarRenderer config={previewAvatarConfig} size={90} interactive={true} />
+                    </div>
+
+                    {/* Sol */}
+                    <div className="absolute bottom-0 left-0 right-0 h-5 bg-emerald-950 border-t border-emerald-900" />
+                  </>
                 )}
-
-                {/* Preview de l'animal d'arbre */}
-                {activePreviewTreeAnimalId && activePreviewTreeAnimalId !== "none" && (
-                  <motion.div
-                    key={activePreviewTreeAnimalId}
-                    animate={{ 
-                      x: [0, 1.5, -1.5, 0],
-                      y: [0, -3, 1.5, 0]
-                    }}
-                    transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                    className="absolute top-2 right-1 text-2xl select-none z-10 filter drop-shadow-sm"
-                  >
-                    {activePreviewTreeAnimalId === "tree-butterfly" && "🦋"}
-                    {activePreviewTreeAnimalId === "tree-squirrel" && "🐿️"}
-                    {activePreviewTreeAnimalId === "tree-owl" && "🦉"}
-                    {activePreviewTreeAnimalId === "tree-parrot" && "🦜"}
-                  </motion.div>
-                )}
-
-                {/* Avatar avec preview accessories */}
-                <div className="z-0 scale-90 sm:scale-100">
-                  <AvatarRenderer config={previewAvatarConfig} size={90} interactive={true} />
-                </div>
-
-                {/* Sol */}
-                <div className="absolute bottom-0 left-0 right-0 h-5 bg-emerald-950 border-t border-emerald-900" />
               </div>
 
               {/* Bouton de déséquipement rapide */}
-              <div className="grid grid-cols-2 gap-1.5 w-full mt-1">
-                <button
-                  onClick={() => {
-                    equipAccessory("none");
-                    playSound("click");
-                    setSelectedPreviewAccessoryId(null);
-                    setDialogue("Tu as retiré tous tes accessoires. Prêt pour un nouveau style ? 🎩");
-                  }}
-                  disabled={currentAccessories.length === 0}
-                  className="py-1 px-1 text-[8px] font-black rounded-lg border border-amber-800 bg-amber-950 hover:bg-amber-900 text-amber-200 disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer transition-colors"
-                >
-                  Tout retirer
-                </button>
-                <button
-                  onClick={() => {
-                    equipPet("none");
-                    playSound("click");
-                    setSelectedPreviewPetId(null);
-                    setDialogue("Ton compagnon est allé se reposer au chaud. 💤");
-                  }}
-                  disabled={profile.activePet === "none"}
-                  className="py-1 px-1 text-[8px] font-black rounded-lg border border-amber-800 bg-amber-950 hover:bg-amber-900 text-amber-200 disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer transition-colors"
-                >
-                  Pas d'animal
-                </button>
-              </div>
+              {activeTab !== "treeAnimals" && (
+                <div className="grid grid-cols-2 gap-1.5 w-full mt-1">
+                  <button
+                    onClick={() => {
+                      equipAccessory("none");
+                      playSound("click");
+                      setSelectedPreviewAccessoryId(null);
+                      setDialogue("Tu as retiré tous tes accessoires. Prêt pour un nouveau style ? 🎩");
+                    }}
+                    disabled={currentAccessories.length === 0}
+                    className="py-1 px-1 text-[8px] font-black rounded-lg border border-amber-800 bg-amber-950 hover:bg-amber-900 text-amber-200 disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer transition-colors"
+                  >
+                    Tout retirer
+                  </button>
+                  <button
+                    onClick={() => {
+                      equipPet("none");
+                      playSound("click");
+                      setSelectedPreviewPetId(null);
+                      setDialogue("Ton compagnon est allé se reposer au chaud. 💤");
+                    }}
+                    disabled={profile.activePet === "none"}
+                    className="py-1 px-1 text-[8px] font-black rounded-lg border border-amber-800 bg-amber-950 hover:bg-amber-900 text-amber-200 disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer transition-colors"
+                  >
+                    Pas d'animal
+                  </button>
+                </div>
+              )}
             </div>
 
           </div>
