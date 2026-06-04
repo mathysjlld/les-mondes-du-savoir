@@ -1056,7 +1056,7 @@ export default function Market() {
                               }}
                               className="px-2.5 py-1.5 text-[10px] font-black bg-cyan-600 hover:bg-cyan-500 text-stone-100 rounded-xl shadow cursor-pointer transition-colors border-b-2 border-cyan-800 z-10"
                             >
-                              Suivre
+                              Ajouter
                             </button>
                           ) : (
                             <button
