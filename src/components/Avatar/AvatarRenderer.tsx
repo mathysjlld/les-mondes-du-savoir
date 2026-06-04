@@ -17,7 +17,7 @@ export const AvatarRenderer: React.FC<AvatarRendererProps> = ({
   size = 120,
   interactive = true,
 }) => {
-  const { type, color, accessory } = config;
+  const { type, color, accessories = [] } = config;
 
   // Animation properties are specified directly on the motion.div below
 
@@ -183,8 +183,8 @@ export const AvatarRenderer: React.FC<AvatarRendererProps> = ({
   };
 
   // Rendu de l'accessoire superposé au bon endroit
-  const renderAccessory = () => {
-    switch (accessory) {
+  const renderAccessory = (accId: string) => {
+    switch (accId) {
       case "glasses":
         return (
           <g id="accessory-glasses">
@@ -328,13 +328,17 @@ export const AvatarRenderer: React.FC<AvatarRendererProps> = ({
         xmlns="http://www.w3.org/2000/svg"
       >
         {/* Render Cape first (so it stays in the back) */}
-        {accessory === "super-cape" && renderAccessory()}
+        {accessories.includes("super-cape") && renderAccessory("super-cape")}
 
         {/* Animal Core Body & Head */}
         {renderAnimalSVG()}
 
         {/* Render other accessories (on top of the head) */}
-        {accessory !== "super-cape" && renderAccessory()}
+        {accessories.filter(a => a !== "super-cape" && a !== "none").map(a => (
+          <React.Fragment key={a}>
+            {renderAccessory(a)}
+          </React.Fragment>
+        ))}
       </svg>
     </motion.div>
   );

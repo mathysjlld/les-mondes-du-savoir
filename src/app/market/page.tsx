@@ -57,6 +57,48 @@ export default function Market() {
   // Barnabé le marchand dialogue
   const [dialogue, setDialogue] = useState("Bienvenue dans mon échoppe de l'aventurier ! Que veux-tu échanger aujourd'hui ? 🎒");
 
+  // États de prévisualisation au survol ou clic (particulièrement utile sur mobile)
+  const [hoveredAccessoryId, setHoveredAccessoryId] = useState<string | null>(null);
+  const [selectedPreviewAccessoryId, setSelectedPreviewAccessoryId] = useState<string | null>(null);
+
+  const [hoveredPetId, setHoveredPetId] = useState<string | null>(null);
+  const [selectedPreviewPetId, setSelectedPreviewPetId] = useState<string | null>(null);
+
+  const [hoveredTreeAnimalId, setHoveredTreeAnimalId] = useState<string | null>(null);
+  const [selectedPreviewTreeAnimalId, setSelectedPreviewTreeAnimalId] = useState<string | null>(null);
+
+  // États pour animer le marchand Barnabé
+  const [isTalking, setIsTalking] = useState(false);
+  const [isBlinking, setIsBlinking] = useState(false);
+
+  // Déclencher le mouvement de la bouche quand Barnabé parle (changement de dialogue)
+  useEffect(() => {
+    setIsTalking(true);
+    const timer = setTimeout(() => {
+      setIsTalking(false);
+    }, 2800);
+    return () => clearTimeout(timer);
+  }, [dialogue]);
+
+  // Clignotement périodique des yeux
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsBlinking(true);
+      setTimeout(() => setIsBlinking(false), 150);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, []);
+
+  // Remise à zéro des previews quand on change d'onglet
+  useEffect(() => {
+    setHoveredAccessoryId(null);
+    setSelectedPreviewAccessoryId(null);
+    setHoveredPetId(null);
+    setSelectedPreviewPetId(null);
+    setHoveredTreeAnimalId(null);
+    setSelectedPreviewTreeAnimalId(null);
+  }, [activeTab]);
+
   // Synthétiseur Web Audio pour la musique cozy du Marché
   useEffect(() => {
     if (typeof window === "undefined" || !profile?.soundEnabled) return;
@@ -110,7 +152,6 @@ export default function Market() {
 
   if (!profile) return null;
 
-  // Récupérer le tableau des animaux d'arbre débloqués en toute sécurité
   const unlockedTreeAnimals = profile.unlockedTreeAnimals || [];
 
   const handlePurchaseAccessory = (item: typeof ACCESSORIES_ITEMS[number]) => {
@@ -161,7 +202,7 @@ export default function Market() {
     }
   };
 
-  // Modifier le dialogue quand l'enfant survole un objet
+  // Modifier le dialogue quand l'enfant survole ou clique sur un objet
   const handleHoverItem = (item: { name: string; id: string }, type: "acc" | "pet" | "tree") => {
     if (type === "acc") {
       switch (item.id) {
@@ -183,8 +224,8 @@ export default function Market() {
         case "koala": setDialogue("Un koala tout calme accroché à ton épaule. Ne le réveille pas quand il dort ! 🐨"); break;
         case "panda": setDialogue("Un petit bébé panda qui adore les roulades et grignoter du bambou ! 🐼"); break;
         case "unicorn": setDialogue("Une licorne magique avec une crinière arc-en-ciel qui brille dans le noir ! 🦄"); break;
-        case "dragon": setDialogue("Un bébé dragon domestique. Pas d'inquiétude, il ne crache que des paillettes de joie ! 🐲"); break;
-        case "lion": setDialogue("Un bébé lionceau très courageux pour rugir de fierté à chaque niveau passé ! 🦁"); break;
+        case "dragon": setDialogue("Un adorable bébé dragon qui adore le feu et cracher des paillettes ! 🐲"); break;
+        case "lion": setDialogue("Un lionceau courageux qui t'accompagnera en poussant des petits rugissements ! 🦁"); break;
       }
     } else {
       switch (item.id) {
@@ -204,10 +245,46 @@ export default function Market() {
     Mythique: "text-rose-300 bg-rose-950/60 border-rose-900 font-extrabold animate-bounce",
   };
 
+  // Résoudre les catégories d'accessoires pour éviter le chevauchement
+  const getAccessoryCategory = (id: string): string => {
+    if (["crown", "magic-hat", "headphones"].includes(id)) return "head";
+    if (id === "glasses") return "eyes";
+    if (id === "bow-tie") return "neck";
+    if (id === "shield") return "left-hand";
+    if (id === "wand") return "right-hand";
+    if (["super-cape", "balloon"].includes(id)) return "back";
+    return "other";
+  };
+
+  // Calcul du rendu de l'avatar avec preview dynamique (hover ou sélection)
+  const activePreviewAccessoryId = hoveredAccessoryId || selectedPreviewAccessoryId;
+  const activePreviewPetId = hoveredPetId || selectedPreviewPetId;
+  const activePreviewTreeAnimalId = hoveredTreeAnimalId || selectedPreviewTreeAnimalId;
+
+  const currentAccessories = profile.avatar.accessories || [];
+  let previewAccessories = [...currentAccessories];
+  if (activePreviewAccessoryId) {
+    if (!currentAccessories.includes(activePreviewAccessoryId)) {
+      const category = getAccessoryCategory(activePreviewAccessoryId);
+      // Remplacer l'accessoire de la même catégorie pour la prévisualisation
+      previewAccessories = previewAccessories.filter(a => getAccessoryCategory(a) !== category);
+      previewAccessories.push(activePreviewAccessoryId);
+    }
+  }
+
+  const previewAvatarConfig = {
+    ...profile.avatar,
+    accessories: previewAccessories
+  };
+
+  const activePetToRender = activePreviewPetId !== null
+    ? activePreviewPetId
+    : profile.activePet;
+
   return (
     <div className="flex-1 flex flex-col p-3 sm:p-6 max-w-4xl mx-auto w-full gap-4 sm:gap-6 min-h-screen bg-gradient-to-b from-stone-900 via-amber-950 to-stone-900 text-stone-100">
       
-      {/* Barre supérieure style taverne */}
+      {/* Barre supérieure */}
       <header className="w-full flex items-center justify-between glass-card p-3 sm:p-4 bg-amber-900/10 border-b-4 border-amber-800 shadow-md">
         <button
           onClick={() => {
@@ -235,117 +312,317 @@ export default function Market() {
         </div>
       </header>
 
-      {/* Grid principale */}
-      <main className="grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-6 items-start">
-        
-        {/* Colonne gauche (Commerçant & Cabine) */}
-        <section className="md:col-span-4 flex flex-col gap-4">
-          
-          {/* Barnabé l'Ours Marchand */}
-          <div className="flex flex-col gap-3 bg-amber-900/10 border-4 border-amber-800/40 p-4 rounded-3xl relative">
-            <div className="flex items-center gap-4">
-              <motion.div
-                animate={{ 
-                  scale: [1, 1.05, 1],
-                  rotate: [0, 2, -2, 0] 
-                }}
-                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                className="text-5xl sm:text-6xl shrink-0 select-none filter drop-shadow-md"
-              >
-                🐻
-              </motion.div>
-              
-              <div className="bg-amber-950 border border-amber-800 text-stone-100 p-3 rounded-2xl rounded-tl-none text-xs sm:text-sm font-bold relative shadow-md leading-relaxed flex-1">
-                {/* Flèche bulle */}
-                <div className="absolute top-[8px] left-[-8px] w-0 h-0 border-t-6 border-t-transparent border-r-8 border-r-amber-950 border-b-6 border-b-transparent" />
-                <span className="text-amber-300 font-black block text-[9px] uppercase tracking-wider mb-0.5">Barnabé :</span>
-                {dialogue}
-              </div>
+      {/* SECTION PREVISUALISATION MOBILE STICKY */}
+      <div className="block md:hidden sticky top-[0px] z-30 w-full bg-stone-900/95 backdrop-blur-md border-b-4 border-amber-800 p-2.5 flex flex-col gap-1.5 shadow-lg rounded-2xl mb-2">
+        <div className="flex items-center gap-2">
+          {/* Marchand Barnabé compact */}
+          <div className="flex-1 bg-amber-950/80 border border-amber-850 p-2 rounded-xl flex items-center gap-2 min-w-0">
+            <div className="w-10 h-10 shrink-0 select-none">
+              <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-sm">
+                <defs>
+                  <linearGradient id="bearGradMini" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stopColor="#A76D3C" />
+                    <stop offset="100%" stopColor="#6E3E1A" />
+                  </linearGradient>
+                  <linearGradient id="snoutGradMini" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stopColor="#FFF9E6" />
+                    <stop offset="100%" stopColor="#E6DFCE" />
+                  </linearGradient>
+                </defs>
+                <circle cx="30" cy="36" r="8.5" fill="url(#bearGradMini)" />
+                <circle cx="30" cy="36" r="5" fill="#FFA3B1" opacity="0.8" />
+                <circle cx="70" cy="36" r="8.5" fill="url(#bearGradMini)" />
+                <circle cx="70" cy="36" r="5" fill="#FFA3B1" opacity="0.8" />
+                <circle cx="50" cy="50" r="20" fill="url(#bearGradMini)" />
+                <ellipse cx="42" cy="45" rx="2.5" ry={isBlinking ? 0.2 : 2.5} fill="#2C3E50" />
+                <ellipse cx="58" cy="45" rx="2.5" ry={isBlinking ? 0.2 : 2.5} fill="#2C3E50" />
+                <ellipse cx="50" cy="54" rx="7.5" ry="5" fill="url(#snoutGradMini)" />
+                <polygon points="47,52 53,52 50,54.5" fill="#2C3E50" />
+                {isTalking ? (
+                  <motion.ellipse
+                    cx="50"
+                    cy="56.5"
+                    rx="2"
+                    ry={2}
+                    fill="#2C3E50"
+                    animate={{ scaleY: [0.2, 1, 0.2] }}
+                    transition={{ duration: 0.25, repeat: Infinity, ease: "easeInOut" }}
+                    style={{ originX: "50px", originY: "56.5px" }}
+                  />
+                ) : (
+                  <path d="M 47.5 56 Q 50 58 52.5 56" fill="none" stroke="#2C3E50" strokeWidth="1.2" strokeLinecap="round" />
+                )}
+              </svg>
+            </div>
+            <div className="text-[10px] leading-tight font-bold text-stone-200 truncate flex-1">
+              <span className="text-amber-300 font-extrabold text-[8px] uppercase block">Barnabé :</span>
+              <span className="whitespace-normal line-clamp-2">{dialogue}</span>
             </div>
           </div>
 
-          {/* Cabine d'essayage */}
-          <div className="glass-card p-4 sm:p-5 bg-amber-950/20 text-center flex flex-col items-center gap-4 border-4 border-amber-800/40">
-            <span className="text-xs font-black text-amber-200 uppercase tracking-widest bg-amber-950 border border-amber-850 px-3 py-0.5 rounded-full">
-              Cabine d'essayage 👕
-            </span>
+          {/* Cabine d'essayage compacte */}
+          <div className="w-16 h-16 shrink-0 rounded-xl bg-gradient-to-b from-stone-900 via-amber-950 to-stone-900 border-2 border-amber-800 flex items-center justify-center relative overflow-hidden shadow-inner">
+            {activePetToRender && activePetToRender !== "none" && (
+              <motion.div
+                key={activePetToRender}
+                animate={{ y: [0, -2, 0] }}
+                transition={{ duration: 2.2, repeat: Infinity, ease: "easeInOut" }}
+                className="absolute bottom-1.5 left-0.5 text-lg select-none z-10 filter drop-shadow-md"
+              >
+                {activePetToRender === "fox" && "🦊"}
+                {activePetToRender === "cat" && "🐱"}
+                {activePetToRender === "koala" && "🐨"}
+                {activePetToRender === "panda" && "🐼"}
+                {activePetToRender === "unicorn" && "🦄"}
+                {activePetToRender === "dragon" && "🐲"}
+                {activePetToRender === "lion" && "🦁"}
+              </motion.div>
+            )}
+            {activePreviewTreeAnimalId && activePreviewTreeAnimalId !== "none" && (
+              <motion.div
+                key={activePreviewTreeAnimalId}
+                animate={{ y: [0, -2, 0] }}
+                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                className="absolute top-0.5 right-0.5 text-sm select-none z-10 filter drop-shadow-sm"
+              >
+                {activePreviewTreeAnimalId === "tree-butterfly" && "🦋"}
+                {activePreviewTreeAnimalId === "tree-squirrel" && "🐿️"}
+                {activePreviewTreeAnimalId === "tree-owl" && "🦉"}
+                {activePreviewTreeAnimalId === "tree-parrot" && "🦜"}
+              </motion.div>
+            )}
+            <div className="z-0 scale-65">
+              <AvatarRenderer config={previewAvatarConfig} size={65} interactive={false} />
+            </div>
+            <div className="absolute bottom-0 left-0 right-0 h-2 bg-emerald-950" />
+          </div>
+        </div>
 
-            {/* Zone de preview avec l'avatar et son compagnon */}
-            <div className="w-full aspect-square rounded-3xl bg-gradient-to-b from-stone-900 via-amber-950 to-stone-900 border-4 border-amber-800 flex items-center justify-center relative overflow-hidden shadow-inner max-w-[200px] mx-auto">
-              {/* Le compagnon équipé à gauche de l'avatar */}
-              {profile.activePet && profile.activePet !== "none" && (
-                <motion.div
-                  animate={{ y: [0, -3, 0] }}
-                  transition={{ duration: 2.2, repeat: Infinity, ease: "easeInOut" }}
-                  className="absolute bottom-5 left-2 text-4xl select-none z-10 filter drop-shadow-md"
-                >
-                  {profile.activePet === "fox" && "🦊"}
-                  {profile.activePet === "cat" && "🐱"}
-                  {profile.activePet === "koala" && "🐨"}
-                  {profile.activePet === "panda" && "🐼"}
-                  {profile.activePet === "unicorn" && "🦄"}
-                  {profile.activePet === "dragon" && "🐲"}
-                  {profile.activePet === "lion" && "🦁"}
-                </motion.div>
-              )}
+        {/* Boutons de déséquipement rapide mobile */}
+        <div className="flex gap-2 w-full">
+          <button
+            onClick={() => {
+              equipAccessory("none");
+              playSound("click");
+              setSelectedPreviewAccessoryId(null);
+              setDialogue("Tu as retiré tous tes accessoires. Prêt pour un nouveau style ? 🎩");
+            }}
+            disabled={currentAccessories.length === 0}
+            className="flex-1 py-1 px-1 text-[8px] font-black rounded-lg border border-amber-800 bg-amber-950 hover:bg-amber-900 text-amber-200 disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer transition-colors"
+          >
+            Tout retirer
+          </button>
+          <button
+            onClick={() => {
+              equipPet("none");
+              playSound("click");
+              setSelectedPreviewPetId(null);
+              setDialogue("Ton compagnon est allé se reposer au chaud. 💤");
+            }}
+            disabled={profile.activePet === "none"}
+            className="flex-1 py-1 px-1 text-[8px] font-black rounded-lg border border-amber-800 bg-amber-950 hover:bg-amber-900 text-amber-200 disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer transition-colors"
+          >
+            Pas d'animal
+          </button>
+        </div>
+      </div>
 
-              {/* L'avatar principal */}
-              <div className="z-0">
-                <AvatarRenderer config={profile.avatar} size={100} interactive={true} />
+      {/* Grid principale : Mobile-optimized structure */}
+      <main className="grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-6 items-start">
+        
+        {/* Colonne gauche (Marchand & Cabine) - Cachée sur Mobile (remplacée par le bandeau sticky), visible sur Desktop */}
+        <section className="hidden md:flex md:col-span-4 flex-col gap-4 md:sticky md:top-6">
+          
+          <div className="grid grid-cols-1 gap-3 w-full">
+            
+            {/* Barnabé l'Ours Marchand réaliste */}
+            <div className="flex flex-col gap-2.5 bg-amber-900/10 border-4 border-amber-850 p-3.5 rounded-3xl relative justify-center items-center">
+              <div className="flex flex-row min-[420px]:flex-col items-center gap-3 w-full">
+                
+                {/* Rendu réaliste et animé de Barnabé l'Ours en SVG */}
+                <div className="w-16 h-16 sm:w-20 sm:h-20 shrink-0 select-none">
+                  <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-md">
+                    <defs>
+                      <linearGradient id="bearGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" stopColor="#A76D3C" />
+                        <stop offset="100%" stopColor="#6E3E1A" />
+                      </linearGradient>
+                      <linearGradient id="snoutGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" stopColor="#FFF9E6" />
+                        <stop offset="100%" stopColor="#E6DFCE" />
+                      </linearGradient>
+                      <linearGradient id="hatGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stopColor="#962D22" />
+                        <stop offset="100%" stopColor="#C0392B" />
+                      </linearGradient>
+                    </defs>
+                    {/* Chapeau de marchand médiéval */}
+                    <path d="M 32 28 Q 50 14 68 28 Z" fill="url(#hatGrad)" />
+                    <rect x="28" y="25" width="44" height="4" rx="2" fill="#7B241C" />
+                    <motion.path 
+                      animate={{ rotate: [0, -5, 5, 0] }}
+                      transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                      d="M 62 23 Q 74 12 72 7 Q 66 14 62 23" 
+                      fill="#FFFFFF" 
+                    />
+
+                    {/* Oreilles */}
+                    <circle cx="30" cy="36" r="8.5" fill="url(#bearGrad)" />
+                    <circle cx="30" cy="36" r="5" fill="#FFA3B1" opacity="0.8" />
+                    <circle cx="70" cy="36" r="8.5" fill="url(#bearGrad)" />
+                    <circle cx="70" cy="36" r="5" fill="#FFA3B1" opacity="0.8" />
+
+                    {/* Tête */}
+                    <circle cx="50" cy="50" r="20" fill="url(#bearGrad)" />
+
+                    {/* Yeux qui clignotent */}
+                    <ellipse cx="42" cy="45" rx="2.5" ry={isBlinking ? 0.2 : 2.5} fill="#2C3E50" />
+                    {!isBlinking && <circle cx="43" cy="43.8" r="0.7" fill="#FFFFFF" />}
+                    <ellipse cx="58" cy="45" rx="2.5" ry={isBlinking ? 0.2 : 2.5} fill="#2C3E50" />
+                    {!isBlinking && <circle cx="59" cy="43.8" r="0.7" fill="#FFFFFF" />}
+
+                    {/* Joues roses */}
+                    <circle cx="35" cy="51" r="2" fill="#FFA3B1" opacity="0.5" />
+                    <circle cx="65" cy="51" r="2" fill="#FFA3B1" opacity="0.5" />
+
+                    {/* Museau */}
+                    <ellipse cx="50" cy="54" rx="7.5" ry="5" fill="url(#snoutGrad)" />
+                    
+                    {/* Nez */}
+                    <polygon points="47,52 53,52 50,54.5" fill="#2C3E50" />
+
+                    {/* Bouche animée quand parle */}
+                    {isTalking ? (
+                      <motion.ellipse
+                        cx="50"
+                        cy="56.5"
+                        rx="2.5"
+                        ry={2.5}
+                        fill="#2C3E50"
+                        animate={{ scaleY: [0.2, 1, 0.2] }}
+                        transition={{ duration: 0.25, repeat: Infinity, ease: "easeInOut" }}
+                        style={{ originX: "50px", originY: "56.5px" }}
+                      />
+                    ) : (
+                      <path d="M 47.5 56 Q 50 58 52.5 56" fill="none" stroke="#2C3E50" strokeWidth="1.2" strokeLinecap="round" />
+                    )}
+
+                    {/* Col chemise */}
+                    <path d="M 38 70 L 50 82 L 62 70 Z" fill="#FFFFFF" />
+                    {/* Veste verte */}
+                    <path d="M 30 70 L 36 96 L 64 96 L 70 70 Z" fill="#1E824C" />
+                    {/* Boutons dorés */}
+                    <circle cx="50" cy="77" r="1.5" fill="#F1C40F" />
+                    <circle cx="50" cy="85" r="1.5" fill="#F1C40F" />
+                  </svg>
+                </div>
+                
+                {/* Dialogue */}
+                <div className="bg-amber-950 border border-amber-850 text-stone-100 p-2.5 rounded-2xl rounded-tl-none text-[11px] sm:text-xs font-bold leading-relaxed flex-1 w-full">
+                  <span className="text-amber-300 font-black block text-[8px] uppercase tracking-wider mb-0.5">Barnabé :</span>
+                  {dialogue}
+                </div>
+              </div>
+            </div>
+
+            {/* Cabine d'essayage compacte */}
+            <div className="glass-card p-3 sm:p-4 bg-amber-950/20 text-center flex flex-col items-center gap-2 border-4 border-amber-800/40 justify-center">
+              <span className="text-[10px] font-black text-amber-200 uppercase tracking-widest bg-amber-950 border border-amber-900 px-2.5 py-0.5 rounded-full">
+                Essayage 👕
+              </span>
+
+              {/* Zone de preview avec l'avatar, compagnons et previews */}
+              <div className="w-28 h-28 sm:w-36 sm:h-36 rounded-2xl bg-gradient-to-b from-stone-900 via-amber-950 to-stone-900 border-4 border-amber-800 flex items-center justify-center relative overflow-hidden shadow-inner mx-auto">
+                {/* Compagnon actif ou preview */}
+                {activePetToRender && activePetToRender !== "none" && (
+                  <motion.div
+                    key={activePetToRender}
+                    animate={{ y: [0, -3, 0] }}
+                    transition={{ duration: 2.2, repeat: Infinity, ease: "easeInOut" }}
+                    className="absolute bottom-3 left-1 text-3xl select-none z-10 filter drop-shadow-md"
+                  >
+                    {activePetToRender === "fox" && "🦊"}
+                    {activePetToRender === "cat" && "🐱"}
+                    {activePetToRender === "koala" && "🐨"}
+                    {activePetToRender === "panda" && "🐼"}
+                    {activePetToRender === "unicorn" && "🦄"}
+                    {activePetToRender === "dragon" && "🐲"}
+                    {activePetToRender === "lion" && "🦁"}
+                  </motion.div>
+                )}
+
+                {/* Preview de l'animal d'arbre */}
+                {activePreviewTreeAnimalId && activePreviewTreeAnimalId !== "none" && (
+                  <motion.div
+                    key={activePreviewTreeAnimalId}
+                    animate={{ 
+                      x: [0, 1.5, -1.5, 0],
+                      y: [0, -3, 1.5, 0]
+                    }}
+                    transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                    className="absolute top-2 right-1 text-2xl select-none z-10 filter drop-shadow-sm"
+                  >
+                    {activePreviewTreeAnimalId === "tree-butterfly" && "🦋"}
+                    {activePreviewTreeAnimalId === "tree-squirrel" && "🐿️"}
+                    {activePreviewTreeAnimalId === "tree-owl" && "🦉"}
+                    {activePreviewTreeAnimalId === "tree-parrot" && "🦜"}
+                  </motion.div>
+                )}
+
+                {/* Avatar avec preview accessories */}
+                <div className="z-0 scale-90 sm:scale-100">
+                  <AvatarRenderer config={previewAvatarConfig} size={90} interactive={true} />
+                </div>
+
+                {/* Sol */}
+                <div className="absolute bottom-0 left-0 right-0 h-5 bg-emerald-950 border-t border-emerald-900" />
               </div>
 
-              {/* Sol en herbe sombre */}
-              <div className="absolute bottom-0 left-0 right-0 h-7 bg-emerald-950 border-t-2 border-emerald-900" />
+              {/* Bouton de déséquipement rapide */}
+              <div className="grid grid-cols-2 gap-1.5 w-full mt-1">
+                <button
+                  onClick={() => {
+                    equipAccessory("none");
+                    playSound("click");
+                    setSelectedPreviewAccessoryId(null);
+                    setDialogue("Tu as retiré tous tes accessoires. Prêt pour un nouveau style ? 🎩");
+                  }}
+                  disabled={currentAccessories.length === 0}
+                  className="py-1 px-1 text-[8px] font-black rounded-lg border border-amber-800 bg-amber-950 hover:bg-amber-900 text-amber-200 disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer transition-colors"
+                >
+                  Tout retirer
+                </button>
+                <button
+                  onClick={() => {
+                    equipPet("none");
+                    playSound("click");
+                    setSelectedPreviewPetId(null);
+                    setDialogue("Ton compagnon est allé se reposer au chaud. 💤");
+                  }}
+                  disabled={profile.activePet === "none"}
+                  className="py-1 px-1 text-[8px] font-black rounded-lg border border-amber-800 bg-amber-950 hover:bg-amber-900 text-amber-200 disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer transition-colors"
+                >
+                  Pas d'animal
+                </button>
+              </div>
             </div>
 
-            <div className="flex flex-col gap-1 w-full text-center">
-              <h3 className="font-extrabold text-amber-100 text-base capitalize">{profile.nickname}</h3>
-              <p className="text-[10px] font-bold text-stone-400 leading-snug">
-                Clique sur tes objets débloqués pour les équiper !
-              </p>
-            </div>
-
-            {/* Boutons de déséquipement rapide */}
-            <div className="grid grid-cols-2 gap-2 w-full mt-1">
-              <button
-                onClick={() => {
-                  equipAccessory("none");
-                  playSound("click");
-                  setDialogue("Hop ! Te voilà débarrassé de ton accessoire. 👍");
-                }}
-                disabled={profile.avatar.accessory === "none"}
-                className="py-1.5 px-2 text-[9px] font-black rounded-xl border border-amber-800 bg-amber-950 hover:bg-amber-900 text-amber-200 disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer transition-colors"
-              >
-                Retirer Chapeau
-              </button>
-              <button
-                onClick={() => {
-                  equipPet("none");
-                  playSound("click");
-                  setDialogue("Ton compagnon est allé se reposer au chaud. 💤");
-                }}
-                disabled={profile.activePet === "none"}
-                className="py-1.5 px-2 text-[9px] font-black rounded-xl border border-amber-800 bg-amber-950 hover:bg-amber-900 text-amber-200 disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer transition-colors"
-              >
-                Retirer Compagnon
-              </button>
-            </div>
           </div>
         </section>
 
-        {/* Colonne droite (Shelves des boutiques) */}
+        {/* Colonne droite (Shelves des boutiques) - Défile en dessous */}
         <section className="md:col-span-8 flex flex-col gap-4">
           <div className="glass-card p-4 sm:p-5 bg-stone-900/60 border-4 border-amber-800/40">
             
             {/* Onglets boutiques médiévales */}
-            <div className="flex border-b border-amber-900/30 pb-3 mb-4 gap-2 overflow-x-auto">
+            <div className="flex border-b border-amber-900/30 pb-3 mb-4 gap-2 overflow-x-auto scrollbar-none">
               <button
                 onClick={() => {
                   playSound("click");
                   setActiveTab("accessories");
                   setDialogue("Voici mes équipements spéciaux pour ton avatar. L'or 🪙 fait l'affaire ici !");
                 }}
-                className={`py-2 px-3.5 rounded-xl font-black text-xs transition-all cursor-pointer flex items-center gap-1 shrink-0 ${
+                className={`py-2 px-3 sm:px-4 rounded-xl font-black text-xs transition-all cursor-pointer flex items-center gap-1 shrink-0 ${
                   activeTab === "accessories"
                     ? "bg-amber-600 text-amber-950 shadow-md scale-105 border-b-4 border-amber-800"
                     : "bg-amber-950/40 border border-amber-900/20 text-stone-400 hover:text-stone-200 hover:bg-amber-950/60"
@@ -361,7 +638,7 @@ export default function Market() {
                   setActiveTab("pets");
                   setDialogue("Les compagnons mignons ! Ils demandent des diamants rares 💎, la monnaie des grands explorateurs !");
                 }}
-                className={`py-2 px-3.5 rounded-xl font-black text-xs transition-all cursor-pointer flex items-center gap-1 shrink-0 ${
+                className={`py-2 px-3 sm:px-4 rounded-xl font-black text-xs transition-all cursor-pointer flex items-center gap-1 shrink-0 ${
                   activeTab === "pets"
                     ? "bg-cyan-600 text-cyan-950 shadow-md scale-105 border-b-4 border-cyan-800"
                     : "bg-amber-950/40 border border-amber-900/20 text-stone-400 hover:text-stone-200 hover:bg-amber-950/60"
@@ -377,7 +654,7 @@ export default function Market() {
                   setActiveTab("treeAnimals");
                   setDialogue("Tu veux décorer ton arbre ? Ces animaux magiques 🦋🐿️ viendront s'installer de façon permanente sur ton Arbre du Savoir !");
                 }}
-                className={`py-2 px-3.5 rounded-xl font-black text-xs transition-all cursor-pointer flex items-center gap-1 shrink-0 ${
+                className={`py-2 px-3 sm:px-4 rounded-xl font-black text-xs transition-all cursor-pointer flex items-center gap-1 shrink-0 ${
                   activeTab === "treeAnimals"
                     ? "bg-emerald-600 text-emerald-950 shadow-md scale-105 border-b-4 border-emerald-800"
                     : "bg-amber-950/40 border border-amber-900/20 text-stone-400 hover:text-stone-200 hover:bg-amber-950/60"
@@ -403,20 +680,33 @@ export default function Market() {
                   >
                     {ACCESSORIES_ITEMS.map((item) => {
                       const isUnlocked = profile.unlockedAccessories.includes(item.id);
-                      const isEquipped = profile.avatar.accessory === item.id;
+                      const isEquipped = currentAccessories.includes(item.id);
                       const canBuy = profile.coins >= item.price;
                       const isWinning = successAnimItem === item.id;
+                      const isCurrentlyPreviewed = activePreviewAccessoryId === item.id;
 
                       return (
                         <div
                           key={item.id}
-                          onMouseEnter={() => handleHoverItem(item, "acc")}
-                          className={`flex items-center justify-between p-2.5 rounded-2xl border-2 transition-all relative ${
+                          onMouseEnter={() => {
+                            setHoveredAccessoryId(item.id);
+                            handleHoverItem(item, "acc");
+                          }}
+                          onMouseLeave={() => {
+                            setHoveredAccessoryId(null);
+                          }}
+                          onClick={() => {
+                            setSelectedPreviewAccessoryId(item.id);
+                            handleHoverItem(item, "acc");
+                          }}
+                          className={`flex items-center justify-between p-2.5 rounded-2xl border-2 transition-all relative cursor-pointer ${
                             isEquipped
                               ? "border-emerald-700 bg-emerald-950/30"
+                              : isCurrentlyPreviewed
+                              ? "border-amber-450 bg-amber-950/30 shadow-md shadow-amber-500/25"
                               : isUnlocked
-                              ? "border-amber-800/40 bg-amber-950/15"
-                              : "border-stone-800 bg-stone-950/10"
+                              ? "border-amber-800/40 bg-amber-950/15 hover:border-amber-700"
+                              : "border-stone-850 bg-stone-950/10 hover:border-stone-750"
                           }`}
                         >
                           <div className="flex items-center gap-3">
@@ -434,26 +724,44 @@ export default function Market() {
                             </div>
                           </div>
 
-                          {isEquipped ? (
-                            <span className="text-[9px] font-black text-emerald-400 px-2.5 py-1 bg-emerald-950/80 rounded-full border border-emerald-800">
-                              Porté !
+                          {isCurrentlyPreviewed && !isEquipped && (
+                            <span className="absolute top-1 right-2 text-[7px] font-black uppercase bg-amber-500 text-amber-950 px-1.5 py-0.5 rounded-full border border-amber-400 animate-pulse">
+                              Aperçu
                             </span>
+                          )}
+
+                          {isEquipped ? (
+                            <button
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                equipAccessory(item.id); // Toggle off
+                                playSound("click");
+                                setDialogue(`Tu as retiré ton ${item.name}. 👍`);
+                              }}
+                              className="text-[9px] font-black text-emerald-400 px-2.5 py-1.5 bg-emerald-950/80 rounded-xl border border-emerald-800 hover:bg-emerald-900 transition-colors cursor-pointer z-10"
+                            >
+                              Retirer
+                            </button>
                           ) : isUnlocked ? (
                             <button
-                              onClick={() => {
-                                equipAccessory(item.id);
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                equipAccessory(item.id); // Toggle on
                                 playSound("click");
-                                setDialogue(`Parfait ! Tu portes fièrement ton ${item.name} ! ✨`);
+                                setDialogue(`Génial ! Tu as équipé ton ${item.name} ! ✨`);
                               }}
-                              className="px-2.5 py-1.5 text-[10px] font-black bg-amber-700 hover:bg-amber-600 text-stone-100 rounded-xl shadow cursor-pointer transition-colors border-b-2 border-amber-900"
+                              className="px-2.5 py-1.5 text-[10px] font-black bg-amber-700 hover:bg-amber-600 text-stone-100 rounded-xl shadow cursor-pointer transition-colors border-b-2 border-amber-900 z-10"
                             >
                               Porter
                             </button>
                           ) : (
                             <button
-                              onClick={() => handlePurchaseAccessory(item)}
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                handlePurchaseAccessory(item);
+                              }}
                               disabled={!canBuy}
-                              className={`px-2.5 py-1.5 rounded-xl text-[10px] font-black shadow transition-all flex items-center gap-1 cursor-pointer ${
+                              className={`px-2.5 py-1.5 rounded-xl text-[10px] font-black shadow transition-all flex items-center gap-1 cursor-pointer z-10 ${
                                 canBuy
                                   ? "bg-amber-500 hover:bg-amber-400 text-amber-950 border-b-2 border-amber-700"
                                   : "bg-stone-800 text-stone-500 cursor-not-allowed shadow-none"
@@ -494,17 +802,30 @@ export default function Market() {
                       const isEquipped = profile.activePet === item.id;
                       const canBuy = profile.diamonds >= item.price;
                       const isWinning = successAnimItem === item.id;
+                      const isCurrentlyPreviewed = activePreviewPetId === item.id;
 
                       return (
                         <div
                           key={item.id}
-                          onMouseEnter={() => handleHoverItem(item, "pet")}
-                          className={`flex items-center justify-between p-2.5 rounded-2xl border-2 transition-all relative ${
+                          onMouseEnter={() => {
+                            setHoveredPetId(item.id);
+                            handleHoverItem(item, "pet");
+                          }}
+                          onMouseLeave={() => {
+                            setHoveredPetId(null);
+                          }}
+                          onClick={() => {
+                            setSelectedPreviewPetId(item.id);
+                            handleHoverItem(item, "pet");
+                          }}
+                          className={`flex items-center justify-between p-2.5 rounded-2xl border-2 transition-all relative cursor-pointer ${
                             isEquipped
                               ? "border-emerald-700 bg-emerald-950/30"
+                              : isCurrentlyPreviewed
+                              ? "border-cyan-400 bg-cyan-950/35 shadow-md shadow-cyan-500/25"
                               : isUnlocked
-                              ? "border-cyan-800/40 bg-cyan-950/15"
-                              : "border-stone-800 bg-stone-950/10"
+                              ? "border-cyan-800/40 bg-cyan-950/15 hover:border-cyan-700"
+                              : "border-stone-850 bg-stone-950/10 hover:border-stone-750"
                           }`}
                         >
                           <div className="flex items-center gap-3">
@@ -522,28 +843,46 @@ export default function Market() {
                             </div>
                           </div>
 
-                          {isEquipped ? (
-                            <span className="text-[9px] font-black text-emerald-400 px-2.5 py-1 bg-emerald-950/80 rounded-full border border-emerald-800">
-                              Équipé !
+                          {isCurrentlyPreviewed && !isEquipped && (
+                            <span className="absolute top-1 right-2 text-[7px] font-black uppercase bg-cyan-500 text-cyan-950 px-1.5 py-0.5 rounded-full border border-cyan-400 animate-pulse">
+                              Aperçu
                             </span>
+                          )}
+
+                          {isEquipped ? (
+                            <button
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                equipPet("none"); // Toggle off
+                                playSound("click");
+                                setDialogue(`Tu as retiré ton compagnon. 🐾`);
+                              }}
+                              className="text-[9px] font-black text-emerald-400 px-2.5 py-1.5 bg-emerald-950/80 rounded-xl border border-emerald-800 hover:bg-emerald-900 transition-colors cursor-pointer z-10"
+                            >
+                              Retirer
+                            </button>
                           ) : isUnlocked ? (
                             <button
-                              onClick={() => {
-                                equipPet(item.id);
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                equipPet(item.id); // Toggle on
                                 playSound("click");
                                 setDialogue(`Tu es accompagné de ton mignon ${item.name} ! ❤️`);
                               }}
-                              className="px-2.5 py-1.5 text-[10px] font-black bg-cyan-600 hover:bg-cyan-500 text-stone-100 rounded-xl shadow cursor-pointer transition-colors border-b-2 border-cyan-800"
+                              className="px-2.5 py-1.5 text-[10px] font-black bg-cyan-600 hover:bg-cyan-500 text-stone-100 rounded-xl shadow cursor-pointer transition-colors border-b-2 border-cyan-800 z-10"
                             >
                               Suivre
                             </button>
                           ) : (
                             <button
-                              onClick={() => handlePurchasePet(item)}
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                handlePurchasePet(item);
+                              }}
                               disabled={!canBuy}
-                              className={`px-2.5 py-1.5 rounded-xl text-[10px] font-black shadow transition-all flex items-center gap-1 cursor-pointer ${
+                              className={`px-2.5 py-1.5 rounded-xl text-[10px] font-black shadow transition-all flex items-center gap-1 cursor-pointer z-10 ${
                                 canBuy
-                                  ? "bg-cyan-500 hover:bg-cyan-400 text-cyan-950 border-b-2 border-cyan-700"
+                                  ? "bg-cyan-500 hover:bg-cyan-400 text-stone-100 border-b-2 border-cyan-700"
                                   : "bg-stone-800 text-stone-500 cursor-not-allowed shadow-none"
                               }`}
                             >
@@ -580,15 +919,28 @@ export default function Market() {
                       const isUnlocked = unlockedTreeAnimals.includes(item.id);
                       const canBuy = profile.diamonds >= item.price;
                       const isWinning = successAnimItem === item.id;
+                      const isCurrentlyPreviewed = activePreviewTreeAnimalId === item.id;
 
                       return (
                         <div
                           key={item.id}
-                          onMouseEnter={() => handleHoverItem(item, "tree")}
-                          className={`flex items-center justify-between p-2.5 rounded-2xl border-2 transition-all relative ${
+                          onMouseEnter={() => {
+                            setHoveredTreeAnimalId(item.id);
+                            handleHoverItem(item, "tree");
+                          }}
+                          onMouseLeave={() => {
+                            setHoveredTreeAnimalId(null);
+                          }}
+                          onClick={() => {
+                            setSelectedPreviewTreeAnimalId(item.id);
+                            handleHoverItem(item, "tree");
+                          }}
+                          className={`flex items-center justify-between p-2.5 rounded-2xl border-2 transition-all relative cursor-pointer ${
                             isUnlocked
                               ? "border-emerald-800/40 bg-emerald-950/15"
-                              : "border-stone-800 bg-stone-950/10"
+                              : isCurrentlyPreviewed
+                              ? "border-emerald-400 bg-emerald-950/35 shadow-md shadow-emerald-500/25"
+                              : "border-stone-850 bg-stone-950/10 hover:border-stone-750"
                           }`}
                         >
                           <div className="flex items-center gap-3">
@@ -606,15 +958,24 @@ export default function Market() {
                             </div>
                           </div>
 
+                          {isCurrentlyPreviewed && !isUnlocked && (
+                            <span className="absolute top-1 right-2 text-[7px] font-black uppercase bg-emerald-500 text-emerald-950 px-1.5 py-0.5 rounded-full border border-emerald-400 animate-pulse">
+                              Aperçu
+                            </span>
+                          )}
+
                           {isUnlocked ? (
-                            <span className="text-[9px] font-black text-emerald-400 px-2.5 py-1 bg-emerald-950/80 rounded-full border border-emerald-800">
+                            <span className="text-[9px] font-black text-emerald-400 px-2.5 py-1.5 bg-emerald-950/80 rounded-full border border-emerald-800 select-none">
                               Débloqué ! 🌳
                             </span>
                           ) : (
                             <button
-                              onClick={() => handlePurchaseTreeAnimal(item)}
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                handlePurchaseTreeAnimal(item);
+                              }}
                               disabled={!canBuy}
-                              className={`px-2.5 py-1.5 rounded-xl text-[10px] font-black shadow transition-all flex items-center gap-1 cursor-pointer ${
+                              className={`px-2.5 py-1.5 rounded-xl text-[10px] font-black shadow transition-all flex items-center gap-1 cursor-pointer z-10 ${
                                 canBuy
                                   ? "bg-emerald-600 hover:bg-emerald-500 text-stone-100 border-b-2 border-emerald-800"
                                   : "bg-stone-800 text-stone-500 cursor-not-allowed shadow-none"

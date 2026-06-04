@@ -24,13 +24,7 @@ import {
   Gamepad2,
 } from "lucide-react";
 
-const SHOP_ITEMS: { id: AvatarConfig["accessory"]; name: string; emoji: string; price: number; desc: string }[] = [
-  { id: "glasses", name: "Super Lunettes", emoji: "👓", price: 15, desc: "Pour avoir l'air d'un petit génie !" },
-  { id: "headphones", name: "Casque Funky", emoji: "🎧", price: 20, desc: "Pour écouter des rythmes entraînants !" },
-  { id: "magic-hat", name: "Chapeau de Magicien", emoji: "🧙", price: 30, desc: "Pour faire apparaître des étoiles !" },
-  { id: "crown", name: "Couronne Royale", emoji: "👑", price: 40, desc: "Pour gouverner le royaume du savoir !" },
-  { id: "super-cape", name: "Cape Héroïque", emoji: "🦸", price: 50, desc: "Pour s'envoler vers la réussite !" },
-];
+
 
 export default function Dashboard() {
   const router = useRouter();

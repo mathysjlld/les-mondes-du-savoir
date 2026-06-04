@@ -6,7 +6,7 @@ import { playSound } from "@/lib/sound";
 export interface AvatarConfig {
   type: "fox" | "panda" | "owl" | "koala";
   color: string;
-  accessory: "none" | "glasses" | "magic-hat" | "crown" | "super-cape" | "headphones" | "shield" | "wand" | "bow-tie" | "balloon";
+  accessories: string[];
 }
 
 export interface UserProfile {
@@ -43,7 +43,7 @@ interface AppContextType {
   buyAccessory: (accessoryId: string, price: number) => boolean; // renvoie true si achat réussi
   buyPet: (petId: string, price: number) => boolean; // renvoie true si achat réussi
   buyTreeAnimal: (animalId: string, price: number) => boolean; // renvoie true si achat réussi
-  equipAccessory: (accessoryId: AvatarConfig["accessory"]) => void;
+  equipAccessory: (accessoryId: string) => void;
   equipPet: (petId: UserProfile["activePet"]) => void;
   updateAvatarColor: (color: string) => void;
   updateTimeSpent: (seconds: number) => void;
@@ -90,11 +90,20 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
             }
           }
           
+          const parsedAvatar = parsed.avatar || { type: "fox", color: "orange", accessories: [] };
+          let initialAccessories = parsedAvatar.accessories || [];
+          if ((parsedAvatar as any).accessory && (parsedAvatar as any).accessory !== "none" && initialAccessories.length === 0) {
+            initialAccessories = [(parsedAvatar as any).accessory];
+          }
+
           setProfile({
             ...parsed,
             streak: updatedStreak,
             lastActiveDate: todayStr,
-            // S'assurer que les tableaux et nouvelles valeurs existent
+            avatar: {
+              ...parsedAvatar,
+              accessories: initialAccessories,
+            },
             diamonds: parsed.diamonds || 0,
             unlockedAccessories: parsed.unlockedAccessories || DEFAULT_ACCESSORIES,
             unlockedPets: parsed.unlockedPets || ["none"],
@@ -352,15 +361,54 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     return success;
   };
 
-  // Équiper un accessoire
-  const equipAccessory = (accessoryId: AvatarConfig["accessory"]) => {
+  // Équiper un accessoire (multi-accessoires avec catégories)
+  const equipAccessory = (accessoryId: string) => {
     setProfile(prev => {
       if (!prev) return null;
+      
+      let currentAccs = prev.avatar.accessories || [];
+      currentAccs = currentAccs.filter(a => a !== "none");
+      
+      if (accessoryId === "none") {
+        return {
+          ...prev,
+          avatar: {
+            ...prev.avatar,
+            accessories: []
+          }
+        };
+      }
+      
+      if (currentAccs.includes(accessoryId)) {
+        const updated = currentAccs.filter(a => a !== accessoryId);
+        return {
+          ...prev,
+          avatar: {
+            ...prev.avatar,
+            accessories: updated
+          }
+        };
+      }
+      
+      const getAccessoryCategory = (id: string): string => {
+        if (["crown", "magic-hat", "headphones"].includes(id)) return "head";
+        if (id === "glasses") return "eyes";
+        if (id === "bow-tie") return "neck";
+        if (id === "shield") return "left-hand";
+        if (id === "wand") return "right-hand";
+        if (["super-cape", "balloon"].includes(id)) return "back";
+        return "other";
+      };
+      
+      const category = getAccessoryCategory(accessoryId);
+      const updated = currentAccs.filter(a => getAccessoryCategory(a) !== category);
+      updated.push(accessoryId);
+      
       return {
         ...prev,
         avatar: {
           ...prev.avatar,
-          accessory: accessoryId
+          accessories: updated
         }
       };
     });

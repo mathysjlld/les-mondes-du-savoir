@@ -61,7 +61,7 @@ export default function Onboarding() {
     onboardUser(nickname.trim(), ageGroup, {
       type: avatarType,
       color: avatarColor,
-      accessory: "none",
+      accessories: [],
     }, parentCode.trim());
     
     // Jouer un son joyeux
@@ -185,7 +185,7 @@ export default function Onboarding() {
                 >
                   <div className="w-14 h-14 min-[380px]:w-16 min-[380px]:h-16 sm:w-20 sm:h-20 flex items-center justify-center">
                     <AvatarRenderer
-                      config={{ type: item.type, color: avatarColor, accessory: "none" }}
+                      config={{ type: item.type, color: avatarColor, accessories: [] }}
                       size={50}
                       interactive={false}
                     />
@@ -222,7 +222,7 @@ export default function Onboarding() {
             {/* Colonne Preview */}
             <div className="flex flex-col items-center gap-3 sm:gap-4 bg-sky-50 rounded-2xl p-4 sm:p-6 border-4 border-sky-100 w-full sm:w-1/2">
               <AvatarRenderer
-                config={{ type: avatarType, color: avatarColor, accessory: "none" }}
+                config={{ type: avatarType, color: avatarColor, accessories: [] }}
                 size={100}
                 interactive={true}
               />
