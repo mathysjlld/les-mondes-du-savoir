@@ -113,6 +113,10 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
     { id: "lunar-explorer", emoji: "🌑", x: 48, y: 16, color: "#5F27CD" }, // Espace 6-8
     { id: "space-commander", emoji: "🪐", x: 76, y: 30, color: "#5F27CD" }, // Espace 9-12
     { id: "astronaut-badge", emoji: "🧑‍🚀", x: 70, y: 24, color: "#5F27CD" }, // Espace 9-12 (3ème leçon)
+    { id: "computer-badge-l10", emoji: "🕹️", x: 18, y: 30, color: "#9B5DE5" }, // Informatique Niv 10
+    { id: "survival-badge-l10", emoji: "🧭", x: 82, y: 38, color: "#E67E22" }, // Survie Niv 10
+    { id: "ornithology-badge-l10", emoji: "🐦", x: 42, y: 12, color: "#10AC84" }, // Ornithologie Niv 10
+    { id: "history-badge-l10", emoji: "🏰", x: 32, y: 18, color: "#E74C3C" }, // Histoire Niv 10
   ];
 
   return (
