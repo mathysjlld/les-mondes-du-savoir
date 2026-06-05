@@ -34,6 +34,7 @@ export default function PlayUniverse() {
   const [shakingOption, setShakingOption] = useState<string | null>(null);
   const [shuffledOptions, setShuffledOptions] = useState<string[]>([]);
   const [showDiamondFeedback, setShowDiamondFeedback] = useState(false);
+  const [hasMadeMistake, setHasMadeMistake] = useState(false);
 
   // Barre de vie (Hearts)
   const [health, setHealth] = useState(10); // 10 demi-cœurs = 5 cœurs complets
@@ -116,6 +117,7 @@ export default function PlayUniverse() {
       // Fin des fiches d'apprentissage -> récompense de lecture
       completeLesson(lesson.id);
       setGameState("quiz");
+      setHasMadeMistake(false);
     }
   };
 
@@ -148,7 +150,8 @@ export default function PlayUniverse() {
       }
 
       // Offrir un diamant si c'est la première fois qu'on répond correctement à une question spéciale
-      if (currentQuestion.isSpecial && !profile.completedQuizzes.includes(lesson.id)) {
+      // et qu'on n'a fait aucune erreur durant le quiz
+      if (currentQuestion.isSpecial && !profile.completedQuizzes.includes(lesson.id) && !hasMadeMistake) {
         addDiamonds(1);
         setShowDiamondFeedback(true);
         setTimeout(() => setShowDiamondFeedback(false), 2000);
@@ -183,6 +186,7 @@ export default function PlayUniverse() {
       setAnsweredState("wrong");
       setShakingOption(option);
       setCorrectStreak(0); // Réinitialiser la série
+      setHasMadeMistake(true);
       
       // Gestion de la vie (Cœurs)
       const nextWrongAttempts = wrongAttempts + 1;
@@ -579,6 +583,7 @@ export default function PlayUniverse() {
                   setWrongAttempts(0);
                   setFirstTryWrongCurrent(false);
                   setFirstTryWrongPrevious(false);
+                  setHasMadeMistake(false);
                   const firstQ = lesson.quiz[0];
                   if (firstQ) {
                     const optionsCopy = [...firstQ.options];

@@ -64,8 +64,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Dans un placard"
               ],
               "correctAnswer": "Dans la savane chaude"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Le roi Lion\" ?",
               "options": [
@@ -134,7 +133,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "La leçon ne le dit pas",
                 "Seulement parfois"
               ],
-              "correctAnswer": "Oui, c'est exact"
+              "correctAnswer": "Oui, c'est exact",
+              "isSpecial": true
             }
           ]
         },
@@ -190,8 +190,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Avec son nez"
               ],
               "correctAnswer": "Avec ses bras agiles et sa queue"
-            }
-          ,
+            },
             {
               "question": "D'après la leçon \"La grande Girafe\", complète : La girafe est le plus...",
               "options": [
@@ -260,7 +259,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "La leçon ne le dit pas",
                 "Seulement parfois"
               ],
-              "correctAnswer": "Oui, c'est exact"
+              "correctAnswer": "Oui, c'est exact",
+              "isSpecial": true
             }
           ]
         },
@@ -329,8 +329,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 2"
               ],
               "correctAnswer": "Niveau 3"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Les Reptiles\" ?",
               "options": [
@@ -379,7 +378,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Les Reptiles"
+              "correctAnswer": "Cette leçon traite de Les Reptiles",
+              "isSpecial": true
             }
           ]
         },
@@ -448,8 +448,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 3"
               ],
               "correctAnswer": "Niveau 4"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Les Insectes\" ?",
               "options": [
@@ -498,7 +497,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Les Insectes"
+              "correctAnswer": "Cette leçon traite de Les Insectes",
+              "isSpecial": true
             }
           ]
         },
@@ -567,8 +567,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 4"
               ],
               "correctAnswer": "Niveau 5"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Les Amphibiens\" ?",
               "options": [
@@ -617,7 +616,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Les Amphibiens"
+              "correctAnswer": "Cette leçon traite de Les Amphibiens",
+              "isSpecial": true
             }
           ]
         },
@@ -686,8 +686,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 5"
               ],
               "correctAnswer": "Niveau 6"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Les Animaux Marins\" ?",
               "options": [
@@ -736,7 +735,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Les Animaux Marins"
+              "correctAnswer": "Cette leçon traite de Les Animaux Marins",
+              "isSpecial": true
             }
           ]
         },
@@ -805,8 +805,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 6"
               ],
               "correctAnswer": "Niveau 7"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Les Animaux de Forêt\" ?",
               "options": [
@@ -855,7 +854,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Les Animaux de Forêt"
+              "correctAnswer": "Cette leçon traite de Les Animaux de Forêt",
+              "isSpecial": true
             }
           ]
         },
@@ -924,8 +924,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 7"
               ],
               "correctAnswer": "Niveau 8"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Les Animaux du Désert\" ?",
               "options": [
@@ -974,7 +973,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Les Animaux du Désert"
+              "correctAnswer": "Cette leçon traite de Les Animaux du Désert",
+              "isSpecial": true
             }
           ]
         },
@@ -1043,8 +1043,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 8"
               ],
               "correctAnswer": "Niveau 9"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Animaux de la Jungle\" ?",
               "options": [
@@ -1093,7 +1092,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Animaux de la Jungle"
+              "correctAnswer": "Cette leçon traite de Animaux de la Jungle",
+              "isSpecial": true
             }
           ]
         },
@@ -1162,8 +1162,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 9"
               ],
               "correctAnswer": "Niveau 10"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Les Dinosaures\" ?",
               "options": [
@@ -1212,7 +1211,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Les Dinosaures"
+              "correctAnswer": "Cette leçon traite de Les Dinosaures",
+              "isSpecial": true
             }
           ]
         }
@@ -1298,8 +1298,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Elle peut inverser son vieillissement pour renaître"
               ],
               "correctAnswer": "Elle peut inverser son vieillissement pour renaître"
-            }
-          ,
+            },
             {
               "question": "D'après la leçon \"L'art du camouflage\", complète : Le caméléon et certains insectes...",
               "options": [
@@ -1348,7 +1347,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "La méduse Turritopsis dohrnii a un pouvoir incroyable : lorsqu'elle..."
+              "correctAnswer": "La méduse Turritopsis dohrnii a un pouvoir incroyable : lorsqu'elle...",
+              "isSpecial": true
             }
           ]
         },
@@ -1431,10 +1431,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "La Sterne arctique",
                 "Le pigeon voyageur"
               ],
-              "correctAnswer": "La Sterne arctique",
-              "isSpecial": true
-            }
-          ,
+              "correctAnswer": "La Sterne arctique"
+            },
             {
               "question": "D'après la leçon \"Pourquoi migrer ?\", complète : Chaque année, des millions d'animaux...",
               "options": [
@@ -1483,7 +1481,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "La Sterne arctique détient le record mondial de la plus longue migr..."
+              "correctAnswer": "La Sterne arctique détient le record mondial de la plus longue migr...",
+              "isSpecial": true
             }
           ]
         },
@@ -1552,10 +1551,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Exactement à la même distance",
                 "Deux fois moins loin (sa vue est moins bonne)"
               ],
-              "correctAnswer": "Huit fois plus loin que l'homme (environ 1 km de haut pour une souris)",
-              "isSpecial": true
-            }
-          ,
+              "correctAnswer": "Huit fois plus loin que l'homme (environ 1 km de haut pour une souris)"
+            },
             {
               "question": "D'après la leçon \"Qu'est-ce qu'un oiseau ?\", complète : Les oiseaux sont des animaux...",
               "options": [
@@ -1614,7 +1611,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "C'est l'inverse de ce que dit la leçon",
                 "La leçon parle d'autre chose"
               ],
-              "correctAnswer": "Les oiseaux chantent pour deux raisons principales : pour défendre leur terri..."
+              "correctAnswer": "Les oiseaux chantent pour deux raisons principales : pour défendre leur terri...",
+              "isSpecial": true
             }
           ]
         },
@@ -3665,10 +3663,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Des fleurs et des bourgeons",
                 "Des citrouilles"
               ],
-              "correctAnswer": "Des fleurs et des bourgeons",
-              "isSpecial": true
-            }
-          ,
+              "correctAnswer": "Des fleurs et des bourgeons"
+            },
             {
               "question": "D'après la leçon \"Le Printemps renaît !\", complète : Au printemps, le soleil revient...",
               "options": [
@@ -3737,7 +3733,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "La leçon ne le dit pas",
                 "Seulement parfois"
               ],
-              "correctAnswer": "Oui, c'est exact"
+              "correctAnswer": "Oui, c'est exact",
+              "isSpecial": true
             }
           ]
         },
@@ -3792,10 +3789,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Une casquette",
                 "Un bonnet de ski"
               ],
-              "correctAnswer": "Une casquette",
-              "isSpecial": true
-            }
-          ,
+              "correctAnswer": "Une casquette"
+            },
             {
               "question": "D'après la leçon \"Le beau Soleil\", complète : Quand il n'y a pas...",
               "options": [
@@ -3864,7 +3859,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "La leçon ne le dit pas",
                 "Seulement parfois"
               ],
-              "correctAnswer": "Oui, c'est exact"
+              "correctAnswer": "Oui, c'est exact",
+              "isSpecial": true
             }
           ]
         },
@@ -3933,8 +3929,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 2"
               ],
               "correctAnswer": "Niveau 3"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : L'Eau\" ?",
               "options": [
@@ -3983,7 +3978,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de L'Eau"
+              "correctAnswer": "Cette leçon traite de L'Eau",
+              "isSpecial": true
             }
           ]
         },
@@ -4052,8 +4048,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 3"
               ],
               "correctAnswer": "Niveau 4"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Le Vent\" ?",
               "options": [
@@ -4102,7 +4097,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Le Vent"
+              "correctAnswer": "Cette leçon traite de Le Vent",
+              "isSpecial": true
             }
           ]
         },
@@ -4171,8 +4167,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 4"
               ],
               "correctAnswer": "Niveau 5"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : La Terre\" ?",
               "options": [
@@ -4221,7 +4216,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de La Terre"
+              "correctAnswer": "Cette leçon traite de La Terre",
+              "isSpecial": true
             }
           ]
         },
@@ -4290,8 +4286,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 5"
               ],
               "correctAnswer": "Niveau 6"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Les Forêts\" ?",
               "options": [
@@ -4340,7 +4335,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Les Forêts"
+              "correctAnswer": "Cette leçon traite de Les Forêts",
+              "isSpecial": true
             }
           ]
         },
@@ -4409,8 +4405,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 6"
               ],
               "correctAnswer": "Niveau 7"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Les Volcans\" ?",
               "options": [
@@ -4459,7 +4454,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Les Volcans"
+              "correctAnswer": "Cette leçon traite de Les Volcans",
+              "isSpecial": true
             }
           ]
         },
@@ -4528,8 +4524,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 7"
               ],
               "correctAnswer": "Niveau 8"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Les Étoiles\" ?",
               "options": [
@@ -4578,7 +4573,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Les Étoiles"
+              "correctAnswer": "Cette leçon traite de Les Étoiles",
+              "isSpecial": true
             }
           ]
         },
@@ -4647,8 +4643,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 8"
               ],
               "correctAnswer": "Niveau 9"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : La Pollution\" ?",
               "options": [
@@ -4697,7 +4692,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de La Pollution"
+              "correctAnswer": "Cette leçon traite de La Pollution",
+              "isSpecial": true
             }
           ]
         },
@@ -4766,8 +4762,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 9"
               ],
               "correctAnswer": "Niveau 10"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Le Recyclage\" ?",
               "options": [
@@ -4816,7 +4811,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Le Recyclage"
+              "correctAnswer": "Cette leçon traite de Le Recyclage",
+              "isSpecial": true
             }
           ]
         }
@@ -4901,10 +4897,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Leur rejet d'eau sous forme de vapeur par les feuilles",
                 "Leur perte de feuilles en automne"
               ],
-              "correctAnswer": "Leur rejet d'eau sous forme de vapeur par les feuilles",
-              "isSpecial": true
-            }
-          ,
+              "correctAnswer": "Leur rejet d'eau sous forme de vapeur par les feuilles"
+            },
             {
               "question": "D'après la leçon \"1. L'Évaporation\", complète : Le Soleil chauffe l'eau des...",
               "options": [
@@ -4953,7 +4947,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Les plantes aussi participent au cycle"
+              "correctAnswer": "Les plantes aussi participent au cycle",
+              "isSpecial": true
             }
           ]
         },
@@ -5037,8 +5032,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "La sève sucrée"
               ],
               "correctAnswer": "La sève élaborée"
-            }
-          ,
+            },
             {
               "question": "D'après la leçon \"Les usines à sucre\", complète : Contrairement aux animaux, les plantes...",
               "options": [
@@ -5087,7 +5081,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "L'eau captée par les racines monte jusqu'aux feuilles : c'est la **..."
+              "correctAnswer": "L'eau captée par les racines monte jusqu'aux feuilles : c'est la **...",
+              "isSpecial": true
             }
           ]
         },
@@ -5156,10 +5151,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Chercher des baies sauvages à manger",
                 "Creuser un puits dans le sol avec ses mains"
               ],
-              "correctAnswer": "Construire ou trouver un abri thermique pour se protéger du vent et de l'humidité",
-              "isSpecial": true
-            }
-          ,
+              "correctAnswer": "Construire ou trouver un abri thermique pour se protéger du vent et de l'humidité"
+            },
             {
               "question": "D'après la leçon \"Faire un feu de camp\", complète : Pour faire un feu en...",
               "options": [
@@ -5218,7 +5211,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "C'est l'inverse de ce que dit la leçon",
                 "La leçon parle d'autre chose"
               ],
-              "correctAnswer": "C'est gratuit et fonctionne même sans réseau mobile complet"
+              "correctAnswer": "C'est gratuit et fonctionne même sans réseau mobile complet",
+              "isSpecial": true
             }
           ]
         },
@@ -6146,7 +6140,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "0,5 mm",
                 "5 mm"
               ],
-              "correctAnswer": "0,5 mm"
+              "correctAnswer": "0,5 mm",
+              "isSpecial": true
             }
           ]
         },
@@ -6274,7 +6269,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "La tension-cohésion par évaporation foliaire",
                 "La gravité inversée"
               ],
-              "correctAnswer": "La tension-cohésion par évaporation foliaire"
+              "correctAnswer": "La tension-cohésion par évaporation foliaire",
+              "isSpecial": true
             }
           ]
         },
@@ -6402,7 +6398,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ils ont une pince dure externe et une semelle centrale antidérapante souple",
                 "Ils sont ronds et lisses"
               ],
-              "correctAnswer": "Ils ont une pince dure externe et une semelle centrale antidérapante souple"
+              "correctAnswer": "Ils ont une pince dure externe et une semelle centrale antidérapante souple",
+              "isSpecial": true
             }
           ]
         },
@@ -7267,8 +7264,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Avec tes pieds"
               ],
               "correctAnswer": "Avec ton nez"
-            }
-          ,
+            },
             {
               "question": "D'après la leçon \"Mes jolies mains\", complète : J'ai deux mains avec 5...",
               "options": [
@@ -7337,7 +7333,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "La leçon ne le dit pas",
                 "Seulement parfois"
               ],
-              "correctAnswer": "Oui, c'est exact"
+              "correctAnswer": "Oui, c'est exact",
+              "isSpecial": true
             }
           ]
         },
@@ -7393,8 +7390,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Le sel des frites"
               ],
               "correctAnswer": "Le calcium du lait"
-            }
-          ,
+            },
             {
               "question": "D'après la leçon \"Mon squelette dur\", complète : Sous ta peau toute douce,...",
               "options": [
@@ -7463,7 +7459,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "La leçon ne le dit pas",
                 "Seulement parfois"
               ],
-              "correctAnswer": "Oui, c'est exact"
+              "correctAnswer": "Oui, c'est exact",
+              "isSpecial": true
             }
           ]
         },
@@ -7532,8 +7529,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 2"
               ],
               "correctAnswer": "Niveau 3"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Les Muscles\" ?",
               "options": [
@@ -7582,7 +7578,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Les Muscles"
+              "correctAnswer": "Cette leçon traite de Les Muscles",
+              "isSpecial": true
             }
           ]
         },
@@ -7651,8 +7648,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 3"
               ],
               "correctAnswer": "Niveau 4"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : La Digestion\" ?",
               "options": [
@@ -7701,7 +7697,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de La Digestion"
+              "correctAnswer": "Cette leçon traite de La Digestion",
+              "isSpecial": true
             }
           ]
         },
@@ -7770,8 +7767,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 4"
               ],
               "correctAnswer": "Niveau 5"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : La Respiration\" ?",
               "options": [
@@ -7820,7 +7816,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de La Respiration"
+              "correctAnswer": "Cette leçon traite de La Respiration",
+              "isSpecial": true
             }
           ]
         },
@@ -7889,8 +7886,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 5"
               ],
               "correctAnswer": "Niveau 6"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Le Cœur\" ?",
               "options": [
@@ -7939,7 +7935,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Le Cœur"
+              "correctAnswer": "Cette leçon traite de Le Cœur",
+              "isSpecial": true
             }
           ]
         },
@@ -8008,8 +8005,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 6"
               ],
               "correctAnswer": "Niveau 7"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Le Cerveau\" ?",
               "options": [
@@ -8058,7 +8054,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Le Cerveau"
+              "correctAnswer": "Cette leçon traite de Le Cerveau",
+              "isSpecial": true
             }
           ]
         },
@@ -8127,8 +8124,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 7"
               ],
               "correctAnswer": "Niveau 8"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Le Sommeil\" ?",
               "options": [
@@ -8177,7 +8173,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Le Sommeil"
+              "correctAnswer": "Cette leçon traite de Le Sommeil",
+              "isSpecial": true
             }
           ]
         },
@@ -8246,8 +8243,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 8"
               ],
               "correctAnswer": "Niveau 9"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Les Dents\" ?",
               "options": [
@@ -8296,7 +8292,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Les Dents"
+              "correctAnswer": "Cette leçon traite de Les Dents",
+              "isSpecial": true
             }
           ]
         },
@@ -8365,8 +8362,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 9"
               ],
               "correctAnswer": "Niveau 10"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Les Globules Rouges\" ?",
               "options": [
@@ -8415,7 +8411,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Les Globules Rouges"
+              "correctAnswer": "Cette leçon traite de Les Globules Rouges",
+              "isSpecial": true
             }
           ]
         }
@@ -8501,8 +8498,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Des petits os dans l'intestin"
               ],
               "correctAnswer": "Des milliards de bonnes bactéries qui aident à digérer"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"1. La bouche et l'œsophage\" ?",
               "options": [
@@ -8551,7 +8547,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Ton gros intestin abrite des milliards de bonnes bactéries appelées..."
+              "correctAnswer": "Ton gros intestin abrite des milliards de bonnes bactéries appelées...",
+              "isSpecial": true
             }
           ]
         },
@@ -8635,8 +8632,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "L'hémisphère arrière"
               ],
               "correctAnswer": "L'hémisphère gauche"
-            }
-          ,
+            },
             {
               "question": "D'après la leçon \"Le centre de contrôle\", complète : Le **cerveau** est installé dans...",
               "options": [
@@ -8685,7 +8681,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Le cerveau est séparé en deux moitiés : l'hémisphère gauche (très l..."
+              "correctAnswer": "Le cerveau est séparé en deux moitiés : l'hémisphère gauche (très l...",
+              "isSpecial": true
             }
           ]
         },
@@ -9985,7 +9982,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "L'artère aorte",
                 "La veine porte hépatique"
               ],
-              "correctAnswer": "L'artère aorte"
+              "correctAnswer": "L'artère aorte",
+              "isSpecial": true
             }
           ]
         },
@@ -10850,8 +10848,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Un croissant ou un rond complet"
               ],
               "correctAnswer": "Un croissant ou un rond complet"
-            }
-          ,
+            },
             {
               "question": "D'après la leçon \"Le grand Soleil chaud\", complète : Le Soleil est une énorme...",
               "options": [
@@ -10920,7 +10917,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "La leçon ne le dit pas",
                 "Seulement parfois"
               ],
-              "correctAnswer": "Oui, c'est exact"
+              "correctAnswer": "Oui, c'est exact",
+              "isSpecial": true
             }
           ]
         },
@@ -10976,8 +10974,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Rose"
               ],
               "correctAnswer": "Jaune éclatant"
-            }
-          ,
+            },
             {
               "question": "D'après la leçon \"Le Soleil brillant\", complète : Notre **Soleil** est une étoile...",
               "options": [
@@ -11046,7 +11043,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "La leçon ne le dit pas",
                 "Seulement parfois"
               ],
-              "correctAnswer": "Oui, c'est exact"
+              "correctAnswer": "Oui, c'est exact",
+              "isSpecial": true
             }
           ]
         },
@@ -11115,8 +11113,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 2"
               ],
               "correctAnswer": "Niveau 3"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : La Terre\" ?",
               "options": [
@@ -11165,7 +11162,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de La Terre"
+              "correctAnswer": "Cette leçon traite de La Terre",
+              "isSpecial": true
             }
           ]
         },
@@ -11234,8 +11232,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 3"
               ],
               "correctAnswer": "Niveau 4"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Mars\" ?",
               "options": [
@@ -11284,7 +11281,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Mars"
+              "correctAnswer": "Cette leçon traite de Mars",
+              "isSpecial": true
             }
           ]
         },
@@ -11353,8 +11351,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 4"
               ],
               "correctAnswer": "Niveau 5"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Jupiter\" ?",
               "options": [
@@ -11403,7 +11400,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Jupiter"
+              "correctAnswer": "Cette leçon traite de Jupiter",
+              "isSpecial": true
             }
           ]
         },
@@ -11472,8 +11470,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 5"
               ],
               "correctAnswer": "Niveau 6"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Saturne\" ?",
               "options": [
@@ -11522,7 +11519,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Saturne"
+              "correctAnswer": "Cette leçon traite de Saturne",
+              "isSpecial": true
             }
           ]
         },
@@ -11591,8 +11589,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 6"
               ],
               "correctAnswer": "Niveau 7"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Les Étoiles\" ?",
               "options": [
@@ -11641,7 +11638,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Les Étoiles"
+              "correctAnswer": "Cette leçon traite de Les Étoiles",
+              "isSpecial": true
             }
           ]
         },
@@ -11710,8 +11708,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 7"
               ],
               "correctAnswer": "Niveau 8"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Les Fusées\" ?",
               "options": [
@@ -11760,7 +11757,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Les Fusées"
+              "correctAnswer": "Cette leçon traite de Les Fusées",
+              "isSpecial": true
             }
           ]
         },
@@ -11829,8 +11827,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 8"
               ],
               "correctAnswer": "Niveau 9"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : La Gravité\" ?",
               "options": [
@@ -11879,7 +11876,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de La Gravité"
+              "correctAnswer": "Cette leçon traite de La Gravité",
+              "isSpecial": true
             }
           ]
         },
@@ -11948,8 +11946,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 9"
               ],
               "correctAnswer": "Niveau 10"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Les Galaxies\" ?",
               "options": [
@@ -11998,7 +11995,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Les Galaxies"
+              "correctAnswer": "Cette leçon traite de Les Galaxies",
+              "isSpecial": true
             }
           ]
         }
@@ -12084,8 +12082,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Le vent solaire"
               ],
               "correctAnswer": "La force de gravité"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Notre étoile : Le Soleil\" ?",
               "options": [
@@ -12134,7 +12131,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Pourquoi tout tourne sans s'envoler"
+              "correctAnswer": "Pourquoi tout tourne sans s'envoler",
+              "isSpecial": true
             }
           ]
         },
@@ -12218,8 +12216,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Une éclipse totale"
               ],
               "correctAnswer": "Une supernova"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Les crèches d'étoiles\" ?",
               "options": [
@@ -12268,7 +12265,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "À la fin de leur vie, les très grosses étoiles s'effondrent sur ell..."
+              "correctAnswer": "À la fin de leur vie, les très grosses étoiles s'effondrent sur ell...",
+              "isSpecial": true
             }
           ]
         },
@@ -13310,7 +13308,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Pluton",
                 "Mars"
               ],
-              "correctAnswer": "Pluton"
+              "correctAnswer": "Pluton",
+              "isSpecial": true
             }
           ]
         },
@@ -13438,7 +13437,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Parce que la vitesse de libération de sa gravité dépasse la vitesse de la lumière",
                 "Parce qu'il y fait trop froid"
               ],
-              "correctAnswer": "Parce que la vitesse de libération de sa gravité dépasse la vitesse de la lumière"
+              "correctAnswer": "Parce que la vitesse de libération de sa gravité dépasse la vitesse de la lumière",
+              "isSpecial": true
             }
           ]
         },
@@ -13566,7 +13566,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Un disque d'or contenant des images et sons de la Terre",
                 "Une bouteille d'eau"
               ],
-              "correctAnswer": "Un disque d'or contenant des images et sons de la Terre"
+              "correctAnswer": "Un disque d'or contenant des images et sons de la Terre",
+              "isSpecial": true
             }
           ]
         },
@@ -14431,8 +14432,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "3"
               ],
               "correctAnswer": "1"
-            }
-          ,
+            },
             {
               "question": "D'après la leçon \"Le chiffre 1\", complète : Il y a **un (1)**...",
               "options": [
@@ -14501,7 +14501,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "La leçon ne le dit pas",
                 "Seulement parfois"
               ],
-              "correctAnswer": "Oui, c'est exact"
+              "correctAnswer": "Oui, c'est exact",
+              "isSpecial": true
             }
           ]
         },
@@ -14557,8 +14558,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Le triangle"
               ],
               "correctAnswer": "Le carré"
-            }
-          ,
+            },
             {
               "question": "D'après la leçon \"Le Cercle rond\", complète : Le **cercle** est tout rond...",
               "options": [
@@ -14627,7 +14627,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "La leçon ne le dit pas",
                 "Seulement parfois"
               ],
-              "correctAnswer": "Oui, c'est exact"
+              "correctAnswer": "Oui, c'est exact",
+              "isSpecial": true
             }
           ]
         },
@@ -14695,10 +14696,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "5",
                 "1"
               ],
-              "correctAnswer": "2",
-              "isSpecial": true
-            }
-          ,
+              "correctAnswer": "2"
+            },
             {
               "question": "D'après la leçon \"Les Premières Soustractions\", complète : Dans ce niveau 3, nous...",
               "options": [
@@ -14747,7 +14746,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Dans ce niveau 3, nous allons nous entraîner sur : Les Premières So..."
+              "correctAnswer": "Dans ce niveau 3, nous allons nous entraîner sur : Les Premières So...",
+              "isSpecial": true
             }
           ]
         },
@@ -14815,10 +14815,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "7",
                 "2"
               ],
-              "correctAnswer": "4",
-              "isSpecial": true
-            }
-          ,
+              "correctAnswer": "4"
+            },
             {
               "question": "D'après la leçon \"Compter plus loin\", complète : Dans ce niveau 4, nous...",
               "options": [
@@ -14867,7 +14865,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Dans ce niveau 4, nous allons nous entraîner sur : Compter plus loin"
+              "correctAnswer": "Dans ce niveau 4, nous allons nous entraîner sur : Compter plus loin",
+              "isSpecial": true
             }
           ]
         },
@@ -14935,10 +14934,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "8",
                 "3"
               ],
-              "correctAnswer": "5",
-              "isSpecial": true
-            }
-          ,
+              "correctAnswer": "5"
+            },
             {
               "question": "D'après la leçon \"Double et Moitié\", complète : Dans ce niveau 5, nous...",
               "options": [
@@ -14987,7 +14984,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Dans ce niveau 5, nous allons nous entraîner sur : Double et Moitié"
+              "correctAnswer": "Dans ce niveau 5, nous allons nous entraîner sur : Double et Moitié",
+              "isSpecial": true
             }
           ]
         },
@@ -15055,10 +15053,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "6",
                 "1"
               ],
-              "correctAnswer": "3",
-              "isSpecial": true
-            }
-          ,
+              "correctAnswer": "3"
+            },
             {
               "question": "D'après la leçon \"Les Formes Géométriques\", complète : Dans ce niveau 6, nous...",
               "options": [
@@ -15107,7 +15103,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Dans ce niveau 6, nous allons nous entraîner sur : Les Formes Géomé..."
+              "correctAnswer": "Dans ce niveau 6, nous allons nous entraîner sur : Les Formes Géomé...",
+              "isSpecial": true
             }
           ]
         },
@@ -15175,10 +15172,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "6",
                 "1"
               ],
-              "correctAnswer": "3",
-              "isSpecial": true
-            }
-          ,
+              "correctAnswer": "3"
+            },
             {
               "question": "D'après la leçon \"La Table de Multiplication\", complète : Dans ce niveau 7, nous...",
               "options": [
@@ -15227,7 +15222,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Dans ce niveau 7, nous allons nous entraîner sur : La Table de Mult..."
+              "correctAnswer": "Dans ce niveau 7, nous allons nous entraîner sur : La Table de Mult...",
+              "isSpecial": true
             }
           ]
         },
@@ -15295,10 +15291,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "8",
                 "3"
               ],
-              "correctAnswer": "5",
-              "isSpecial": true
-            }
-          ,
+              "correctAnswer": "5"
+            },
             {
               "question": "D'après la leçon \"Les Divisions Faciles\", complète : Dans ce niveau 8, nous...",
               "options": [
@@ -15347,7 +15341,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Dans ce niveau 8, nous allons nous entraîner sur : Les Divisions Fa..."
+              "correctAnswer": "Dans ce niveau 8, nous allons nous entraîner sur : Les Divisions Fa...",
+              "isSpecial": true
             }
           ]
         },
@@ -15415,10 +15410,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "9",
                 "4"
               ],
-              "correctAnswer": "6",
-              "isSpecial": true
-            }
-          ,
+              "correctAnswer": "6"
+            },
             {
               "question": "D'après la leçon \"Les Fractions Simples\", complète : Dans ce niveau 9, nous...",
               "options": [
@@ -15467,7 +15460,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Dans ce niveau 9, nous allons nous entraîner sur : Les Fractions Si..."
+              "correctAnswer": "Dans ce niveau 9, nous allons nous entraîner sur : Les Fractions Si...",
+              "isSpecial": true
             }
           ]
         },
@@ -15535,10 +15529,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "10",
                 "5"
               ],
-              "correctAnswer": "7",
-              "isSpecial": true
-            }
-          ,
+              "correctAnswer": "7"
+            },
             {
               "question": "D'après la leçon \"Grand Défi de Logique\", complète : Dans ce niveau 10, nous...",
               "options": [
@@ -15587,7 +15579,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Dans ce niveau 10, nous allons nous entraîner sur : Grand Défi de L..."
+              "correctAnswer": "Dans ce niveau 10, nous allons nous entraîner sur : Grand Défi de L...",
+              "isSpecial": true
             }
           ]
         }
@@ -15673,8 +15666,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Le groupe le plus grand"
               ],
               "correctAnswer": "Les éléments qui appartiennent aux deux groupes en même temps"
-            }
-          ,
+            },
             {
               "question": "D'après la leçon \"Les suites logiques\", complète : Une suite logique est une...",
               "options": [
@@ -15723,7 +15715,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Pour organiser des informations, on utilise des cercles qui se croi..."
+              "correctAnswer": "Pour organiser des informations, on utilise des cercles qui se croi...",
+              "isSpecial": true
             }
           ]
         },
@@ -15807,8 +15800,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "L'infini"
               ],
               "correctAnswer": "Toujours 0"
-            }
-          ,
+            },
             {
               "question": "D'après la leçon \"Multiplier, c'est répéter !\", complète : La multiplication (x) sert à...",
               "options": [
@@ -15857,7 +15849,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Multiplier par 1 ne change jamais le nombre (7 x 1 = 7)"
+              "correctAnswer": "Multiplier par 1 ne change jamais le nombre (7 x 1 = 7)",
+              "isSpecial": true
             }
           ]
         },
@@ -16899,7 +16892,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "L'opérateur NON",
                 "L'opérateur OU"
               ],
-              "correctAnswer": "L'opérateur NON"
+              "correctAnswer": "L'opérateur NON",
+              "isSpecial": true
             }
           ]
         },
@@ -17027,7 +17021,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Parce qu'il ne change pas le résultat du nombre multiplié",
                 "Parce qu'il est pair"
               ],
-              "correctAnswer": "Parce qu'il ne change pas le résultat du nombre multiplié"
+              "correctAnswer": "Parce qu'il ne change pas le résultat du nombre multiplié",
+              "isSpecial": true
             }
           ]
         },
@@ -17155,7 +17150,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Thalès de Milet",
                 "Carl von Linné"
               ],
-              "correctAnswer": "Thalès de Milet"
+              "correctAnswer": "Thalès de Milet",
+              "isSpecial": true
             }
           ]
         },
@@ -18020,8 +18016,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Personne, elle est vide"
               ],
               "correctAnswer": "Les humains, les animaux et les plantes"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"La Terre est ronde\" ?",
               "options": [
@@ -18090,7 +18085,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "La leçon ne le dit pas",
                 "Seulement parfois"
               ],
-              "correctAnswer": "Oui, c'est exact"
+              "correctAnswer": "Oui, c'est exact",
+              "isSpecial": true
             }
           ]
         },
@@ -18146,8 +18142,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Un téléphone portable"
               ],
               "correctAnswer": "Une torche allumée"
-            }
-          ,
+            },
             {
               "question": "D'après la leçon \"La Tour Eiffel\", complète : La **Tour Eiffel** est un...",
               "options": [
@@ -18216,7 +18211,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "La leçon ne le dit pas",
                 "Seulement parfois"
               ],
-              "correctAnswer": "Oui, c'est exact"
+              "correctAnswer": "Oui, c'est exact",
+              "isSpecial": true
             }
           ]
         },
@@ -18285,8 +18281,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 2"
               ],
               "correctAnswer": "Niveau 3"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Les Pays d'Europe\" ?",
               "options": [
@@ -18335,7 +18330,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Les Pays d'Europe"
+              "correctAnswer": "Cette leçon traite de Les Pays d'Europe",
+              "isSpecial": true
             }
           ]
         },
@@ -18404,8 +18400,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 3"
               ],
               "correctAnswer": "Niveau 4"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Les Capitales\" ?",
               "options": [
@@ -18454,7 +18449,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Les Capitales"
+              "correctAnswer": "Cette leçon traite de Les Capitales",
+              "isSpecial": true
             }
           ]
         },
@@ -18523,8 +18519,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 4"
               ],
               "correctAnswer": "Niveau 5"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Les Pays d'Asie\" ?",
               "options": [
@@ -18573,7 +18568,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Les Pays d'Asie"
+              "correctAnswer": "Cette leçon traite de Les Pays d'Asie",
+              "isSpecial": true
             }
           ]
         },
@@ -18642,8 +18638,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 5"
               ],
               "correctAnswer": "Niveau 6"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Les Pays d'Afrique\" ?",
               "options": [
@@ -18692,7 +18687,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Les Pays d'Afrique"
+              "correctAnswer": "Cette leçon traite de Les Pays d'Afrique",
+              "isSpecial": true
             }
           ]
         },
@@ -18761,8 +18757,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 6"
               ],
               "correctAnswer": "Niveau 7"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Les Océans\" ?",
               "options": [
@@ -18811,7 +18806,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Les Océans"
+              "correctAnswer": "Cette leçon traite de Les Océans",
+              "isSpecial": true
             }
           ]
         },
@@ -18880,8 +18876,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 7"
               ],
               "correctAnswer": "Niveau 8"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Les Montagnes\" ?",
               "options": [
@@ -18930,7 +18925,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Les Montagnes"
+              "correctAnswer": "Cette leçon traite de Les Montagnes",
+              "isSpecial": true
             }
           ]
         },
@@ -18999,8 +18995,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 8"
               ],
               "correctAnswer": "Niveau 9"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Les Fleuves\" ?",
               "options": [
@@ -19049,7 +19044,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Les Fleuves"
+              "correctAnswer": "Cette leçon traite de Les Fleuves",
+              "isSpecial": true
             }
           ]
         },
@@ -19118,8 +19114,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 9"
               ],
               "correctAnswer": "Niveau 10"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Les Cartes\" ?",
               "options": [
@@ -19168,7 +19163,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Les Cartes"
+              "correctAnswer": "Cette leçon traite de Les Cartes",
+              "isSpecial": true
             }
           ]
         }
@@ -19254,8 +19250,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Il n'y a pas d'électricité"
               ],
               "correctAnswer": "C'est un désert de glace trop hostile réservé à la recherche scientifique"
-            }
-          ,
+            },
             {
               "question": "D'après la leçon \"Les blocs de terre\", complète : La surface de la Terre...",
               "options": [
@@ -19304,7 +19299,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "C'est le continent le plus froid, le plus sec et le plus venteux du..."
+              "correctAnswer": "C'est le continent le plus froid, le plus sec et le plus venteux du...",
+              "isSpecial": true
             }
           ]
         },
@@ -19388,8 +19384,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "La chute d'une météorite"
               ],
               "correctAnswer": "La collision lente de deux plaques tectoniques"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"La peau : la Croûte\" ?",
               "options": [
@@ -19438,7 +19433,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Quand deux plaques tectoniques entrent en collision, la terre tremb..."
+              "correctAnswer": "Quand deux plaques tectoniques entrent en collision, la terre tremb...",
+              "isSpecial": true
             }
           ]
         },
@@ -20480,7 +20476,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Il est réservé uniquement à la recherche scientifique et protégé de toute exploitation militaire",
                 "Il est ouvert à la colonisation minière"
               ],
-              "correctAnswer": "Il est réservé uniquement à la recherche scientifique et protégé de toute exploitation militaire"
+              "correctAnswer": "Il est réservé uniquement à la recherche scientifique et protégé de toute exploitation militaire",
+              "isSpecial": true
             }
           ]
         },
@@ -20608,7 +20605,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Le vent solaire (particules chargées)",
                 "L'azote"
               ],
-              "correctAnswer": "Le vent solaire (particules chargées)"
+              "correctAnswer": "Le vent solaire (particules chargées)",
+              "isSpecial": true
             }
           ]
         },
@@ -20736,7 +20734,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Il les déplace vers les pôles et en altitude",
                 "Il n'a aucune influence géographique"
               ],
-              "correctAnswer": "Il les déplace vers les pôles et en altitude"
+              "correctAnswer": "Il les déplace vers les pôles et en altitude",
+              "isSpecial": true
             }
           ]
         },
@@ -21601,8 +21600,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "B"
               ],
               "correctAnswer": "B"
-            }
-          ,
+            },
             {
               "question": "D'après la leçon \"La lettre A\", complète : L'âne est un animal gentil...",
               "options": [
@@ -21671,7 +21669,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "La leçon ne le dit pas",
                 "Seulement parfois"
               ],
-              "correctAnswer": "Oui, c'est exact"
+              "correctAnswer": "Oui, c'est exact",
+              "isSpecial": true
             }
           ]
         },
@@ -21727,8 +21726,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ils veulent dire le contraire"
               ],
               "correctAnswer": "Ils se terminent par le même son"
-            }
-          ,
+            },
             {
               "question": "D'après la leçon \"Qu'est-ce qu'une rime ?\", complète : Deux mots **riment** quand ils...",
               "options": [
@@ -21797,7 +21795,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "La leçon ne le dit pas",
                 "Seulement parfois"
               ],
-              "correctAnswer": "Oui, c'est exact"
+              "correctAnswer": "Oui, c'est exact",
+              "isSpecial": true
             }
           ]
         },
@@ -21866,8 +21865,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 2"
               ],
               "correctAnswer": "Niveau 3"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Les Verbes\" ?",
               "options": [
@@ -21916,7 +21914,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Les Verbes"
+              "correctAnswer": "Cette leçon traite de Les Verbes",
+              "isSpecial": true
             }
           ]
         },
@@ -21985,8 +21984,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 3"
               ],
               "correctAnswer": "Niveau 4"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Le Pluriel\" ?",
               "options": [
@@ -22035,7 +22033,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Le Pluriel"
+              "correctAnswer": "Cette leçon traite de Le Pluriel",
+              "isSpecial": true
             }
           ]
         },
@@ -22104,8 +22103,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 4"
               ],
               "correctAnswer": "Niveau 5"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Le Féminin\" ?",
               "options": [
@@ -22154,7 +22152,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Le Féminin"
+              "correctAnswer": "Cette leçon traite de Le Féminin",
+              "isSpecial": true
             }
           ]
         },
@@ -22223,8 +22222,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 5"
               ],
               "correctAnswer": "Niveau 6"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Les Adjectifs\" ?",
               "options": [
@@ -22273,7 +22271,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Les Adjectifs"
+              "correctAnswer": "Cette leçon traite de Les Adjectifs",
+              "isSpecial": true
             }
           ]
         },
@@ -22342,8 +22341,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 6"
               ],
               "correctAnswer": "Niveau 7"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : La Ponctuation\" ?",
               "options": [
@@ -22392,7 +22390,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de La Ponctuation"
+              "correctAnswer": "Cette leçon traite de La Ponctuation",
+              "isSpecial": true
             }
           ]
         },
@@ -22461,8 +22460,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 7"
               ],
               "correctAnswer": "Niveau 8"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Les Synonymes\" ?",
               "options": [
@@ -22511,7 +22509,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Les Synonymes"
+              "correctAnswer": "Cette leçon traite de Les Synonymes",
+              "isSpecial": true
             }
           ]
         },
@@ -22580,8 +22579,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 8"
               ],
               "correctAnswer": "Niveau 9"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Le Présent\" ?",
               "options": [
@@ -22630,7 +22628,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Le Présent"
+              "correctAnswer": "Cette leçon traite de Le Présent",
+              "isSpecial": true
             }
           ]
         },
@@ -22699,8 +22698,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 9"
               ],
               "correctAnswer": "Niveau 10"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Les Homophones\" ?",
               "options": [
@@ -22749,7 +22747,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Les Homophones"
+              "correctAnswer": "Cette leçon traite de Les Homophones",
+              "isSpecial": true
             }
           ]
         }
@@ -22835,8 +22834,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Une demeure"
               ],
               "correctAnswer": "Une demeure"
-            }
-          ,
+            },
             {
               "question": "D'après la leçon \"Qu'est-ce qu'un synonyme ?\", complète : Deux mots sont synonymes s'ils...",
               "options": [
@@ -22885,7 +22883,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Un même synonyme peut appartenir à un niveau de langage différent :..."
+              "correctAnswer": "Un même synonyme peut appartenir à un niveau de langage différent :...",
+              "isSpecial": true
             }
           ]
         },
@@ -22969,8 +22968,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Les chats miaule très fort"
               ],
               "correctAnswer": "Les chats miaule très fort"
-            }
-          ,
+            },
             {
               "question": "D'après la leçon \"Des jumeaux de prononciation\", complète : Les **homophones** sont des mots...",
               "options": [
@@ -23019,7 +23017,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Si le sujet est au pluriel, la terminaison change"
+              "correctAnswer": "Si le sujet est au pluriel, la terminaison change",
+              "isSpecial": true
             }
           ]
         },
@@ -24061,7 +24060,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Une demeure",
                 "Une cabane"
               ],
-              "correctAnswer": "Une demeure"
+              "correctAnswer": "Une demeure",
+              "isSpecial": true
             }
           ]
         },
@@ -24189,7 +24189,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "-e (que je voie)",
                 "-t"
               ],
-              "correctAnswer": "-e (que je voie)"
+              "correctAnswer": "-e (que je voie)",
+              "isSpecial": true
             }
           ]
         },
@@ -24317,7 +24318,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Complément d'agent",
                 "Complément circonstanciel de lieu"
               ],
-              "correctAnswer": "Complément d'agent"
+              "correctAnswer": "Complément d'agent",
+              "isSpecial": true
             }
           ]
         },
@@ -25182,8 +25184,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Noir, Blanc et Gris"
               ],
               "correctAnswer": "Bleu, Rouge et Jaune"
-            }
-          ,
+            },
             {
               "question": "D'après la leçon \"Les couleurs primaires\", complète : Le Bleu 🔵, le Rouge...",
               "options": [
@@ -25252,7 +25253,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "La leçon ne le dit pas",
                 "Seulement parfois"
               ],
-              "correctAnswer": "Oui, c'est exact"
+              "correctAnswer": "Oui, c'est exact",
+              "isSpecial": true
             }
           ]
         },
@@ -25308,8 +25310,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "En soufflant dedans"
               ],
               "correctAnswer": "En faisant vibrer ses cordes"
-            }
-          ,
+            },
             {
               "question": "D'après la leçon \"Le Tambour rond\", complète : Le **tambour** ou la batterie...",
               "options": [
@@ -25378,7 +25379,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "La leçon ne le dit pas",
                 "Seulement parfois"
               ],
-              "correctAnswer": "Oui, c'est exact"
+              "correctAnswer": "Oui, c'est exact",
+              "isSpecial": true
             }
           ]
         },
@@ -25447,8 +25449,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 2"
               ],
               "correctAnswer": "Niveau 3"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Le Dessin\" ?",
               "options": [
@@ -25497,7 +25498,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Le Dessin"
+              "correctAnswer": "Cette leçon traite de Le Dessin",
+              "isSpecial": true
             }
           ]
         },
@@ -25566,8 +25568,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 3"
               ],
               "correctAnswer": "Niveau 4"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : La Musique\" ?",
               "options": [
@@ -25616,7 +25617,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de La Musique"
+              "correctAnswer": "Cette leçon traite de La Musique",
+              "isSpecial": true
             }
           ]
         },
@@ -25685,8 +25687,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 4"
               ],
               "correctAnswer": "Niveau 5"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Les Chansons\" ?",
               "options": [
@@ -25735,7 +25736,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Les Chansons"
+              "correctAnswer": "Cette leçon traite de Les Chansons",
+              "isSpecial": true
             }
           ]
         },
@@ -25804,8 +25806,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 5"
               ],
               "correctAnswer": "Niveau 6"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Le Théâtre\" ?",
               "options": [
@@ -25854,7 +25855,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Le Théâtre"
+              "correctAnswer": "Cette leçon traite de Le Théâtre",
+              "isSpecial": true
             }
           ]
         },
@@ -25923,8 +25925,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 6"
               ],
               "correctAnswer": "Niveau 7"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Le Cinéma\" ?",
               "options": [
@@ -25973,7 +25974,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Le Cinéma"
+              "correctAnswer": "Cette leçon traite de Le Cinéma",
+              "isSpecial": true
             }
           ]
         },
@@ -26042,8 +26044,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 7"
               ],
               "correctAnswer": "Niveau 8"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : La Sculpture\" ?",
               "options": [
@@ -26092,7 +26093,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de La Sculpture"
+              "correctAnswer": "Cette leçon traite de La Sculpture",
+              "isSpecial": true
             }
           ]
         },
@@ -26161,8 +26163,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 8"
               ],
               "correctAnswer": "Niveau 9"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Les Musées\" ?",
               "options": [
@@ -26211,7 +26212,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Les Musées"
+              "correctAnswer": "Cette leçon traite de Les Musées",
+              "isSpecial": true
             }
           ]
         },
@@ -26280,8 +26282,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 9"
               ],
               "correctAnswer": "Niveau 10"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Les Instruments\" ?",
               "options": [
@@ -26330,7 +26331,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Les Instruments"
+              "correctAnswer": "Cette leçon traite de Les Instruments",
+              "isSpecial": true
             }
           ]
         }
@@ -26416,8 +26418,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Peindre les yeux fermés"
               ],
               "correctAnswer": "Poser des petits points de couleurs différentes côte à côte et laisser l'œil faire le mélange de loin"
-            }
-          ,
+            },
             {
               "question": "D'après la leçon \"Peindre la lumière\", complète : L'Impressionnisme est un mouvement artistique...",
               "options": [
@@ -26466,7 +26467,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Dans l'impressionnisme et le pointillisme, au lieu de mélanger le b..."
+              "correctAnswer": "Dans l'impressionnisme et le pointillisme, au lieu de mélanger le b...",
+              "isSpecial": true
             }
           ]
         },
@@ -26550,8 +26552,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Adagio"
               ],
               "correctAnswer": "Forte"
-            }
-          ,
+            },
             {
               "question": "D'après la leçon \"Le Tempo\", complète : Le **tempo** est la vitesse...",
               "options": [
@@ -26600,7 +26601,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Le volume sonore d'un morceau est appelé **nuance**"
+              "correctAnswer": "Le volume sonore d'un morceau est appelé **nuance**",
+              "isSpecial": true
             }
           ]
         },
@@ -27642,7 +27644,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "En montrant simultanément plusieurs angles de vue d'un même sujet",
                 "En peignant uniquement des paysages"
               ],
-              "correctAnswer": "En montrant simultanément plusieurs angles de vue d'un même sujet"
+              "correctAnswer": "En montrant simultanément plusieurs angles de vue d'un même sujet",
+              "isSpecial": true
             }
           ]
         },
@@ -27770,7 +27773,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Jouer doucement/faiblement",
                 "Jouer très vite"
               ],
-              "correctAnswer": "Jouer doucement/faiblement"
+              "correctAnswer": "Jouer doucement/faiblement",
+              "isSpecial": true
             }
           ]
         },
@@ -27898,7 +27902,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Parce que le poids est supporté par des piliers et des arcs-boutants extérieurs, libérant les murs",
                 "Pour bloquer le vent"
               ],
-              "correctAnswer": "Parce que le poids est supporté par des piliers et des arcs-boutants extérieurs, libérant les murs"
+              "correctAnswer": "Parce que le poids est supporté par des piliers et des arcs-boutants extérieurs, libérant les murs",
+              "isSpecial": true
             }
           ]
         },
@@ -28781,8 +28786,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Un vélo"
               ],
               "correctAnswer": "Un ordinateur"
-            }
-          ,
+            },
             {
               "question": "D'après la leçon \"L'ordinateur\", complète : Un ordinateur est une machine...",
               "options": [
@@ -28831,7 +28835,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "L'écran montre les images"
+              "correctAnswer": "L'écran montre les images",
+              "isSpecial": true
             }
           ]
         },
@@ -28905,8 +28910,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "L'écran"
               ],
               "correctAnswer": "La lettre voulue"
-            }
-          ,
+            },
             {
               "question": "D'après la leçon \"La souris\", complète : La souris est un petit...",
               "options": [
@@ -28955,7 +28959,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "La touche Suppr efface une lettre"
+              "correctAnswer": "La touche Suppr efface une lettre",
+              "isSpecial": true
             }
           ]
         },
@@ -29029,8 +29034,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "À stocker des mots"
               ],
               "correctAnswer": "À composer les images sur un écran"
-            }
-          ,
+            },
             {
               "question": "D'après la leçon \"Qu'est-ce qu'un pixel ?\", complète : Les images sur un écran...",
               "options": [
@@ -29079,7 +29083,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Chaque pixel peut être d'une couleur différente"
+              "correctAnswer": "Chaque pixel peut être d'une couleur différente",
+              "isSpecial": true
             }
           ]
         },
@@ -29153,8 +29158,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Oui, si on lui demande gentiment"
               ],
               "correctAnswer": "Non, il suit uniquement des instructions"
-            }
-          ,
+            },
             {
               "question": "Selon la leçon, un robot est une machine fabriquée par des humains pour effectuer des tâches à leur place - est-ce correct ?",
               "options": [
@@ -29203,7 +29207,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "On trouve des robots dans les usines pour construire des voitures, ..."
+              "correctAnswer": "On trouve des robots dans les usines pour construire des voitures, ...",
+              "isSpecial": true
             }
           ]
         },
@@ -29277,8 +29282,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "La tablette a un clavier plus grand"
               ],
               "correctAnswer": "La tablette est contrôlée au toucher, sans souris"
-            }
-          ,
+            },
             {
               "question": "D'après la leçon \"Les écrans tactiles\", complète : Une tablette et un smartphone...",
               "options": [
@@ -29327,7 +29331,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Avec un smartphone ou une tablette, on peut téléphoner, envoyer des..."
+              "correctAnswer": "Avec un smartphone ou une tablette, on peut téléphoner, envoyer des...",
+              "isSpecial": true
             }
           ]
         },
@@ -29401,8 +29406,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Appuyer une deuxième fois"
               ],
               "correctAnswer": "Attendre que le système charge"
-            }
-          ,
+            },
             {
               "question": "D'après la leçon \"Comment allumer un ordinateur ?\", complète : Pour allumer un ordinateur, on...",
               "options": [
@@ -29451,7 +29455,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "On ne doit jamais éteindre un ordinateur en tirant sur le câble"
+              "correctAnswer": "On ne doit jamais éteindre un ordinateur en tirant sur le câble",
+              "isSpecial": true
             }
           ]
         },
@@ -29525,8 +29530,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Appuyer sur tous les boutons"
               ],
               "correctAnswer": "En parler à un adulte de confiance"
-            }
-          ,
+            },
             {
               "question": "Selon la leçon, internet est un gigantesque réseau qui relie des millions d'ordinateurs et de téléphones à travers le monde - est-ce correct ?",
               "options": [
@@ -29575,7 +29579,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Chaque site a une adresse spéciale qu'on appelle une URL (par exemp..."
+              "correctAnswer": "Chaque site a une adresse spéciale qu'on appelle une URL (par exemp...",
+              "isSpecial": true
             }
           ]
         },
@@ -29649,8 +29654,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Des vidéos uniquement"
               ],
               "correctAnswer": "De la musique"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Les haut-parleurs\" ?",
               "options": [
@@ -29699,7 +29703,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Les formats les plus connus sont le MP3 et le WAV"
+              "correctAnswer": "Les formats les plus connus sont le MP3 et le WAV",
+              "isSpecial": true
             }
           ]
         },
@@ -29773,8 +29778,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Un texto rigolo"
               ],
               "correctAnswer": "Une lettre professionnelle sérieuse"
-            }
-          ,
+            },
             {
               "question": "Selon la leçon, un emoji est un petit dessin coloré utilisé dans les messages pour exprimer une émotion ou une idée - est-ce correct ?",
               "options": [
@@ -29823,7 +29827,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Le mot 'emoji' vient du japonais et signifie 'image-caractère'"
+              "correctAnswer": "Le mot 'emoji' vient du japonais et signifie 'image-caractère'",
+              "isSpecial": true
             }
           ]
         },
@@ -29896,10 +29901,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Résoudre des énigmes et assembler des pièces",
                 "Construire des maisons"
               ],
-              "correctAnswer": "Résoudre des énigmes et assembler des pièces",
-              "isSpecial": true
-            }
-          ,
+              "correctAnswer": "Résoudre des énigmes et assembler des pièces"
+            },
             {
               "question": "Selon la leçon, un jeu vidéo est un programme informatique qui permet de jouer de façon interactive sur un écran - est-ce correct ?",
               "options": [
@@ -29948,7 +29951,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Il existe de nombreux types : les jeux de plateforme (comme Mario),..."
+              "correctAnswer": "Il existe de nombreux types : les jeux de plateforme (comme Mario),...",
+              "isSpecial": true
             }
           ]
         }
@@ -32512,8 +32516,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 1"
               ],
               "correctAnswer": "Niveau 1"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Leçon\" ?",
               "options": [
@@ -32562,7 +32565,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Leçon"
+              "correctAnswer": "Cette leçon traite de Leçon",
+              "isSpecial": true
             }
           ]
         },
@@ -32631,8 +32635,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 1"
               ],
               "correctAnswer": "Niveau 2"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Leçon Intermédiaire\" ?",
               "options": [
@@ -32681,7 +32684,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Leçon Intermédiaire"
+              "correctAnswer": "Cette leçon traite de Leçon Intermédiaire",
+              "isSpecial": true
             }
           ]
         },
@@ -32750,8 +32754,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 2"
               ],
               "correctAnswer": "Niveau 3"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Leçon Avancée\" ?",
               "options": [
@@ -32800,7 +32803,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Leçon Avancée"
+              "correctAnswer": "Cette leçon traite de Leçon Avancée",
+              "isSpecial": true
             }
           ]
         },
@@ -32869,8 +32873,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 3"
               ],
               "correctAnswer": "Niveau 4"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Leçon Générale\" ?",
               "options": [
@@ -32919,7 +32922,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Leçon Générale"
+              "correctAnswer": "Cette leçon traite de Leçon Générale",
+              "isSpecial": true
             }
           ]
         },
@@ -32988,8 +32992,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 4"
               ],
               "correctAnswer": "Niveau 5"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Leçon Découverte\" ?",
               "options": [
@@ -33038,7 +33041,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Leçon Découverte"
+              "correctAnswer": "Cette leçon traite de Leçon Découverte",
+              "isSpecial": true
             }
           ]
         },
@@ -33107,8 +33111,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 5"
               ],
               "correctAnswer": "Niveau 6"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Leçon Nature\" ?",
               "options": [
@@ -33157,7 +33160,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Leçon Nature"
+              "correctAnswer": "Cette leçon traite de Leçon Nature",
+              "isSpecial": true
             }
           ]
         },
@@ -33226,8 +33230,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 6"
               ],
               "correctAnswer": "Niveau 7"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Leçon Monde\" ?",
               "options": [
@@ -33276,7 +33279,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Leçon Monde"
+              "correctAnswer": "Cette leçon traite de Leçon Monde",
+              "isSpecial": true
             }
           ]
         },
@@ -33345,8 +33349,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 7"
               ],
               "correctAnswer": "Niveau 8"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Leçon Science\" ?",
               "options": [
@@ -33395,7 +33398,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Leçon Science"
+              "correctAnswer": "Cette leçon traite de Leçon Science",
+              "isSpecial": true
             }
           ]
         },
@@ -33464,8 +33468,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 8"
               ],
               "correctAnswer": "Niveau 9"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Leçon Espace\" ?",
               "options": [
@@ -33514,7 +33517,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Leçon Espace"
+              "correctAnswer": "Cette leçon traite de Leçon Espace",
+              "isSpecial": true
             }
           ]
         },
@@ -33583,8 +33587,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 9"
               ],
               "correctAnswer": "Niveau 10"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Leçon Défi\" ?",
               "options": [
@@ -33633,7 +33636,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Leçon Défi"
+              "correctAnswer": "Cette leçon traite de Leçon Défi",
+              "isSpecial": true
             }
           ]
         }
@@ -35997,8 +36001,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 1"
               ],
               "correctAnswer": "Niveau 1"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Leçon\" ?",
               "options": [
@@ -36047,7 +36050,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Leçon"
+              "correctAnswer": "Cette leçon traite de Leçon",
+              "isSpecial": true
             }
           ]
         },
@@ -36116,8 +36120,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 1"
               ],
               "correctAnswer": "Niveau 2"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Leçon Intermédiaire\" ?",
               "options": [
@@ -36166,7 +36169,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Leçon Intermédiaire"
+              "correctAnswer": "Cette leçon traite de Leçon Intermédiaire",
+              "isSpecial": true
             }
           ]
         },
@@ -36235,8 +36239,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 2"
               ],
               "correctAnswer": "Niveau 3"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Leçon Avancée\" ?",
               "options": [
@@ -36285,7 +36288,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Leçon Avancée"
+              "correctAnswer": "Cette leçon traite de Leçon Avancée",
+              "isSpecial": true
             }
           ]
         },
@@ -36354,8 +36358,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 3"
               ],
               "correctAnswer": "Niveau 4"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Leçon Générale\" ?",
               "options": [
@@ -36404,7 +36407,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Leçon Générale"
+              "correctAnswer": "Cette leçon traite de Leçon Générale",
+              "isSpecial": true
             }
           ]
         },
@@ -36473,8 +36477,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 4"
               ],
               "correctAnswer": "Niveau 5"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Leçon Découverte\" ?",
               "options": [
@@ -36523,7 +36526,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Leçon Découverte"
+              "correctAnswer": "Cette leçon traite de Leçon Découverte",
+              "isSpecial": true
             }
           ]
         },
@@ -36592,8 +36596,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 5"
               ],
               "correctAnswer": "Niveau 6"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Leçon Nature\" ?",
               "options": [
@@ -36642,7 +36645,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Leçon Nature"
+              "correctAnswer": "Cette leçon traite de Leçon Nature",
+              "isSpecial": true
             }
           ]
         },
@@ -36711,8 +36715,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 6"
               ],
               "correctAnswer": "Niveau 7"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Leçon Monde\" ?",
               "options": [
@@ -36761,7 +36764,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Leçon Monde"
+              "correctAnswer": "Cette leçon traite de Leçon Monde",
+              "isSpecial": true
             }
           ]
         },
@@ -36830,8 +36834,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 7"
               ],
               "correctAnswer": "Niveau 8"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Leçon Science\" ?",
               "options": [
@@ -36880,7 +36883,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Leçon Science"
+              "correctAnswer": "Cette leçon traite de Leçon Science",
+              "isSpecial": true
             }
           ]
         },
@@ -36949,8 +36953,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 8"
               ],
               "correctAnswer": "Niveau 9"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Leçon Espace\" ?",
               "options": [
@@ -36999,7 +37002,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Leçon Espace"
+              "correctAnswer": "Cette leçon traite de Leçon Espace",
+              "isSpecial": true
             }
           ]
         },
@@ -37068,8 +37072,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 9"
               ],
               "correctAnswer": "Niveau 10"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Leçon Défi\" ?",
               "options": [
@@ -37118,7 +37121,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Leçon Défi"
+              "correctAnswer": "Cette leçon traite de Leçon Défi",
+              "isSpecial": true
             }
           ]
         }
@@ -39482,8 +39486,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 1"
               ],
               "correctAnswer": "Niveau 1"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Leçon\" ?",
               "options": [
@@ -39532,7 +39535,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Leçon"
+              "correctAnswer": "Cette leçon traite de Leçon",
+              "isSpecial": true
             }
           ]
         },
@@ -39601,8 +39605,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 1"
               ],
               "correctAnswer": "Niveau 2"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Leçon Intermédiaire\" ?",
               "options": [
@@ -39651,7 +39654,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Leçon Intermédiaire"
+              "correctAnswer": "Cette leçon traite de Leçon Intermédiaire",
+              "isSpecial": true
             }
           ]
         },
@@ -39720,8 +39724,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 2"
               ],
               "correctAnswer": "Niveau 3"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Leçon Avancée\" ?",
               "options": [
@@ -39770,7 +39773,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Leçon Avancée"
+              "correctAnswer": "Cette leçon traite de Leçon Avancée",
+              "isSpecial": true
             }
           ]
         },
@@ -39839,8 +39843,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 3"
               ],
               "correctAnswer": "Niveau 4"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Leçon Générale\" ?",
               "options": [
@@ -39889,7 +39892,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Leçon Générale"
+              "correctAnswer": "Cette leçon traite de Leçon Générale",
+              "isSpecial": true
             }
           ]
         },
@@ -39958,8 +39962,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 4"
               ],
               "correctAnswer": "Niveau 5"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Leçon Découverte\" ?",
               "options": [
@@ -40008,7 +40011,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Leçon Découverte"
+              "correctAnswer": "Cette leçon traite de Leçon Découverte",
+              "isSpecial": true
             }
           ]
         },
@@ -40077,8 +40081,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 5"
               ],
               "correctAnswer": "Niveau 6"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Leçon Nature\" ?",
               "options": [
@@ -40127,7 +40130,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Leçon Nature"
+              "correctAnswer": "Cette leçon traite de Leçon Nature",
+              "isSpecial": true
             }
           ]
         },
@@ -40196,8 +40200,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 6"
               ],
               "correctAnswer": "Niveau 7"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Leçon Monde\" ?",
               "options": [
@@ -40246,7 +40249,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Leçon Monde"
+              "correctAnswer": "Cette leçon traite de Leçon Monde",
+              "isSpecial": true
             }
           ]
         },
@@ -40315,8 +40319,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 7"
               ],
               "correctAnswer": "Niveau 8"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Leçon Science\" ?",
               "options": [
@@ -40365,7 +40368,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Leçon Science"
+              "correctAnswer": "Cette leçon traite de Leçon Science",
+              "isSpecial": true
             }
           ]
         },
@@ -40434,8 +40438,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 8"
               ],
               "correctAnswer": "Niveau 9"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Leçon Espace\" ?",
               "options": [
@@ -40484,7 +40487,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Leçon Espace"
+              "correctAnswer": "Cette leçon traite de Leçon Espace",
+              "isSpecial": true
             }
           ]
         },
@@ -40553,8 +40557,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 9"
               ],
               "correctAnswer": "Niveau 10"
-            }
-          ,
+            },
             {
               "question": "Que dit la leçon sur \"Découverte : Leçon Défi\" ?",
               "options": [
@@ -40603,7 +40606,8 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Ce n'est pas mentionné dans la leçon",
                 "C'est l'inverse de ce que dit la leçon"
               ],
-              "correctAnswer": "Cette leçon traite de Leçon Défi"
+              "correctAnswer": "Cette leçon traite de Leçon Défi",
+              "isSpecial": true
             }
           ]
         }
