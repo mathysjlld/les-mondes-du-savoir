@@ -504,8 +504,15 @@ export default function PlayUniverse() {
                 ) : (
                   <span className="text-3xl sm:text-4xl animate-bounce">{lesson.emoji || "🤔"}</span>
                 )}
-                <h3 className="text-lg sm:text-2xl font-bold text-slate-800 leading-snug px-2 sm:px-4">
-                  {formatFrenchPunctuation(currentQuestion.question)}
+                <h3 className="text-lg sm:text-2xl font-bold text-slate-800 leading-snug px-2 sm:px-4 flex items-center justify-center gap-2">
+                  <span>{formatFrenchPunctuation(currentQuestion.question)}</span>
+                  <button
+                    onClick={() => speakText(currentQuestion.question)}
+                    className="shrink-0 p-1.5 sm:p-2 rounded-full bg-purple-100 hover:bg-purple-200 text-purple-600 transition-colors cursor-pointer border border-purple-200"
+                    title="Écouter la question"
+                  >
+                    <Volume2 size={16} className="sm:w-5 sm:h-5" />
+                  </button>
                 </h3>
               </div>
 

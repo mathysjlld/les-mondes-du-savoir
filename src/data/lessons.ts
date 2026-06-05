@@ -41,29 +41,100 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Quel animal fait 'Miaou' quand il veut des caresses ?",
               "options": [
-                "Le Lion 🦁",
-                "Le Chat 🐱",
-                "La Grenouille 🐸"
+                "Le Lion",
+                "Le Chat",
+                "La Grenouille"
               ],
-              "correctAnswer": "Le Chat 🐱"
+              "correctAnswer": "Le Chat"
             },
             {
               "question": "Quel cri fait la petite grenouille dans l'eau ?",
               "options": [
-                "Roar ! 🦁",
-                "Miaou ! 🐱",
-                "Coââ ! 🐸"
+                "Roar !",
+                "Miaou !",
+                "Coââ !"
               ],
-              "correctAnswer": "Coââ ! 🐸"
+              "correctAnswer": "Coââ !"
             },
             {
               "question": "Où vit le grand Lion sauvage ?",
               "options": [
-                "Dans la savane chaude 🦁",
-                "Dans une baignoire 🛁",
-                "Dans un placard 🚪"
+                "Dans la savane chaude",
+                "Dans une baignoire",
+                "Dans un placard"
               ],
-              "correctAnswer": "Dans la savane chaude 🦁"
+              "correctAnswer": "Dans la savane chaude"
+            }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Le roi Lion\" ?",
+              "options": [
+                "Le lion vit dans la savane chaude",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Le lion vit dans la savane chaude"
+            },
+            {
+              "question": "Est-il vrai que our dire bonjour ou demander des caresses, il miaule : miaou ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"La grenouille adore l'eau _____ des grands bonds\"",
+              "options": [
+                "et fait",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "et fait"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le roi Lion\" ?",
+              "options": [
+                "Quand il est content ou veut se faire entendre, il rugit très fort ...",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Quand il est content ou veut se faire entendre, il rugit très fort ..."
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Le petit Chat\" ?",
+              "options": [
+                "Le chat est un animal de compagnie tout doux",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Le chat est un animal de compagnie tout doux"
+            },
+            {
+              "question": "D'après la leçon \"La Grenouille rigolote\", complète : Près de l'étang, elle chante...",
+              "options": [
+                "Près de l'étang, elle chante en faisant : COÂÂ",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Près de l'étang, elle chante en faisant : COÂÂ"
+            },
+            {
+              "question": "Est-il vrai que e lion vit dans la savane chaude ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
             }
           ]
         },
@@ -96,29 +167,100 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Quel animal possède une longue trompe pour boire et manger ?",
               "options": [
-                "La Girafe 🦒",
-                "L'Éléphant 🐘",
-                "Le Singe 🐒"
+                "La Girafe",
+                "L'Éléphant",
+                "Le Singe"
               ],
-              "correctAnswer": "L'Éléphant 🐘"
+              "correctAnswer": "L'Éléphant"
             },
             {
               "question": "Pourquoi la girafe a-t-elle un très long cou ?",
               "options": [
-                "Pour chanter plus fort 🎤",
-                "Pour attraper les feuilles en haut des arbres 🌳",
-                "Pour faire de la gymnastique 🤸"
+                "Pour chanter plus fort",
+                "Pour attraper les feuilles en haut des arbres",
+                "Pour faire de la gymnastique"
               ],
-              "correctAnswer": "Pour attraper les feuilles en haut des arbres 🌳"
+              "correctAnswer": "Pour attraper les feuilles en haut des arbres"
             },
             {
               "question": "Comment le singe se suspend-il aux branches ?",
               "options": [
-                "Avec ses ailes 🪶",
-                "Avec ses bras agiles et sa queue 🐒",
-                "Avec son nez 👃"
+                "Avec ses ailes",
+                "Avec ses bras agiles et sa queue",
+                "Avec son nez"
               ],
-              "correctAnswer": "Avec ses bras agiles et sa queue 🐒"
+              "correctAnswer": "Avec ses bras agiles et sa queue"
+            }
+          ,
+            {
+              "question": "D'après la leçon \"La grande Girafe\", complète : La girafe est le plus...",
+              "options": [
+                "La girafe est le plus grand animal de la Terre",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "La girafe est le plus grand animal de la Terre"
+            },
+            {
+              "question": "Est-il vrai que l utilise sa **longue trompe** pour boire de l'eau et attraper sa nourriture ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Le singe adore _____ grimaces\"",
+              "options": [
+                "faire des",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "faire des"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"La grande Girafe\" ?",
+              "options": [
+                "Grâce à son très **long cou**, elle peut attraper les feuilles tout...",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Grâce à son très **long cou**, elle peut attraper les feuilles tout..."
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Le gros Éléphant\" ?",
+              "options": [
+                "L'éléphant est énorme et a de grandes oreilles",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "L'éléphant est énorme et a de grandes oreilles"
+            },
+            {
+              "question": "D'après la leçon \"Le Singe rigolo\", complète : Il se sert de ses...",
+              "options": [
+                "Il se sert de ses bras agiles et de sa **queue** pour se suspendre et sauter ...",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Il se sert de ses bras agiles et de sa **queue** pour se suspendre et sauter ..."
+            },
+            {
+              "question": "Est-il vrai que a girafe est le plus grand animal de la terre ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
             }
           ]
         },
@@ -188,6 +330,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Niveau 3"
             }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Les Reptiles\" ?",
+              "options": [
+                "Cette leçon traite de Les Reptiles",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Reptiles"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Reptiles\"",
+              "options": [
+                "de Les",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Les"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Les Reptiles\" ?",
+              "options": [
+                "Cette leçon traite de Les Reptiles",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Reptiles"
+            }
           ]
         },
         {
@@ -255,6 +448,57 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 3"
               ],
               "correctAnswer": "Niveau 4"
+            }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Les Insectes\" ?",
+              "options": [
+                "Cette leçon traite de Les Insectes",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Insectes"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Insectes\"",
+              "options": [
+                "de Les",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Les"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Les Insectes\" ?",
+              "options": [
+                "Cette leçon traite de Les Insectes",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Insectes"
             }
           ]
         },
@@ -324,6 +568,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Niveau 5"
             }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Les Amphibiens\" ?",
+              "options": [
+                "Cette leçon traite de Les Amphibiens",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Amphibiens"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Amphibiens\"",
+              "options": [
+                "de Les",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Les"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Les Amphibiens\" ?",
+              "options": [
+                "Cette leçon traite de Les Amphibiens",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Amphibiens"
+            }
           ]
         },
         {
@@ -391,6 +686,57 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 5"
               ],
               "correctAnswer": "Niveau 6"
+            }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Les Animaux Marins\" ?",
+              "options": [
+                "Cette leçon traite de Les Animaux Marins",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Animaux Marins"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Animaux Marins\"",
+              "options": [
+                "de Les",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Les"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Les Animaux Marins\" ?",
+              "options": [
+                "Cette leçon traite de Les Animaux Marins",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Animaux Marins"
             }
           ]
         },
@@ -460,6 +806,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Niveau 7"
             }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Les Animaux de Forêt\" ?",
+              "options": [
+                "Cette leçon traite de Les Animaux de Forêt",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Animaux de Forêt"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite de _____ de Forêt\"",
+              "options": [
+                "Les Animaux",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Les Animaux"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Les Animaux de Forêt\" ?",
+              "options": [
+                "Cette leçon traite de Les Animaux de Forêt",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Animaux de Forêt"
+            }
           ]
         },
         {
@@ -527,6 +924,57 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 7"
               ],
               "correctAnswer": "Niveau 8"
+            }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Les Animaux du Désert\" ?",
+              "options": [
+                "Cette leçon traite de Les Animaux du Désert",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Animaux du Désert"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite de _____ du Désert\"",
+              "options": [
+                "Les Animaux",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Les Animaux"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Les Animaux du Désert\" ?",
+              "options": [
+                "Cette leçon traite de Les Animaux du Désert",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Animaux du Désert"
             }
           ]
         },
@@ -596,6 +1044,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Niveau 9"
             }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Animaux de la Jungle\" ?",
+              "options": [
+                "Cette leçon traite de Animaux de la Jungle",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Animaux de la Jungle"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite de _____ la Jungle\"",
+              "options": [
+                "Animaux de",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Animaux de"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Animaux de la Jungle\" ?",
+              "options": [
+                "Cette leçon traite de Animaux de la Jungle",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Animaux de la Jungle"
+            }
           ]
         },
         {
@@ -664,6 +1163,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Niveau 10"
             }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Les Dinosaures\" ?",
+              "options": [
+                "Cette leçon traite de Les Dinosaures",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Dinosaures"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Dinosaures\"",
+              "options": [
+                "de Les",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Les"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Les Dinosaures\" ?",
+              "options": [
+                "Cette leçon traite de Les Dinosaures",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Dinosaures"
+            }
           ]
         }
       ],
@@ -707,47 +1257,98 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Comment appelle-t-on la capacité du caméléon à se fondre dans le décor ?",
               "options": [
-                "La photosynthèse 🌿",
-                "Le camouflage 🦎",
-                "La téléportation 🌀"
+                "La photosynthèse",
+                "Le camouflage",
+                "La téléportation"
               ],
-              "correctAnswer": "Le camouflage 🦎"
+              "correctAnswer": "Le camouflage"
             },
             {
               "question": "Quelle partie du corps du lézard peut repousser s'il la perd ?",
               "options": [
-                "Sa tête 🦎",
-                "Ses pattes 🐾",
-                "Sa queue 🦎"
+                "Sa tête",
+                "Ses pattes",
+                "Sa queue"
               ],
-              "correctAnswer": "Sa queue 🦎"
+              "correctAnswer": "Sa queue"
             },
             {
               "question": "Quel outil naturel la chauve-souris utilise-t-elle pour naviguer dans le noir ?",
               "options": [
-                "Des yeux phosphorescents 👀",
-                "L'écholocalisation par ultrasons 🦇",
-                "Un compas intégré 🧭"
+                "Des yeux phosphorescents",
+                "L'écholocalisation par ultrasons",
+                "Un compas intégré"
               ],
-              "correctAnswer": "L'écholocalisation par ultrasons 🦇"
+              "correctAnswer": "L'écholocalisation par ultrasons"
             },
             {
               "question": "Qu'est-ce qui empêche le sang des poissons polaires de geler dans l'eau glacée ?",
               "options": [
-                "Des lunettes thermiques 😎",
-                "Des protéines antigel spéciales ❄️",
-                "Une bouillotte interne 🧼"
+                "Des lunettes thermiques",
+                "Des protéines antigel spéciales",
+                "Une bouillotte interne"
               ],
-              "correctAnswer": "Des protéines antigel spéciales ❄️"
+              "correctAnswer": "Des protéines antigel spéciales"
             },
             {
               "question": "Quel est le super-pouvoir unique de la méduse Turritopsis dohrnii ?",
               "options": [
-                "Elle peut cracher du feu 🔥",
-                "Elle peut courir sur l'eau 🏃‍♂️",
-                "Elle peut inverser son vieillissement pour renaître 🔄"
+                "Elle peut cracher du feu",
+                "Elle peut courir sur l'eau",
+                "Elle peut inverser son vieillissement pour renaître"
               ],
-              "correctAnswer": "Elle peut inverser son vieillissement pour renaître 🔄"
+              "correctAnswer": "Elle peut inverser son vieillissement pour renaître"
+            }
+          ,
+            {
+              "question": "D'après la leçon \"L'art du camouflage\", complète : Le caméléon et certains insectes...",
+              "options": [
+                "Le caméléon et certains insectes imitent les couleurs de leur environnement p...",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Le caméléon et certains insectes imitent les couleurs de leur environnement p..."
+            },
+            {
+              "question": "Est-il vrai que 'étoile de mer peut même recréer un bras entier ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète cette information : \"La chauve-souris util...\"",
+              "options": [
+                "ise l'écholocalisation",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "ise l'écholocalisation"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"L'antigel des poissons\" ?",
+              "options": [
+                "Certains poissons vivant sous la glace de l'Antarctique produisent ...",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Certains poissons vivant sous la glace de l'Antarctique produisent ..."
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"L'immortalité de la méduse\" ?",
+              "options": [
+                "La méduse Turritopsis dohrnii a un pouvoir incroyable : lorsqu'elle...",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "La méduse Turritopsis dohrnii a un pouvoir incroyable : lorsqu'elle..."
             }
           ]
         },
@@ -790,48 +1391,99 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Quel est le but principal de la migration des animaux ?",
               "options": [
-                "Jouer à cache-cache avec les humains 🙈",
-                "Fuir le froid de l'hiver et trouver à manger ❄️🍎",
-                "Visiter de grandes villes touristiques 🗼"
+                "Jouer à cache-cache avec les humains",
+                "Fuir le froid de l'hiver et trouver à manger",
+                "Visiter de grandes villes touristiques"
               ],
-              "correctAnswer": "Fuir le froid de l'hiver et trouver à manger ❄️🍎"
+              "correctAnswer": "Fuir le froid de l'hiver et trouver à manger"
             },
             {
               "question": "Quel trajet incroyable le papillon Monarque réalise-t-il ?",
               "options": [
-                "Du Canada jusqu'au Mexique 🦋",
-                "De l'Afrique vers l'Asie 🗺️",
-                "De la banquise au désert 🧊🐪"
+                "Du Canada jusqu'au Mexique",
+                "De l'Afrique vers l'Asie",
+                "De la banquise au désert"
               ],
-              "correctAnswer": "Du Canada jusqu'au Mexique 🦋"
+              "correctAnswer": "Du Canada jusqu'au Mexique"
             },
             {
               "question": "Où le saumon retourne-t-il pondre ses œufs à l'âge adulte ?",
               "options": [
-                "Dans le sable du désert 🐪",
-                "Dans la rivière exacte où il est né 🐟",
-                "Au fond des fosses marines 🌊"
+                "Dans le sable du désert",
+                "Dans la rivière exacte où il est né",
+                "Au fond des fosses marines"
               ],
-              "correctAnswer": "Dans la rivière exacte où il est né 🐟"
+              "correctAnswer": "Dans la rivière exacte où il est né"
             },
             {
               "question": "Quel phénomène physique invisible de la Terre guide les oiseaux migrateurs ?",
               "options": [
-                "Les courants d'air chaud 💨",
-                "Le champ magnétique terrestre 🧲",
-                "L'odeur des fleurs 🌸"
+                "Les courants d'air chaud",
+                "Le champ magnétique terrestre",
+                "L'odeur des fleurs"
               ],
-              "correctAnswer": "Le champ magnétique terrestre 🧲"
+              "correctAnswer": "Le champ magnétique terrestre"
             },
             {
               "question": "Quel oiseau parcourt environ 70 000 km par an pour migrer d'un pôle à l'autre ?",
               "options": [
-                "La poule domestique 🐔",
-                "La Sterne arctique 🐦",
-                "Le pigeon voyageur 🕊️"
+                "La poule domestique",
+                "La Sterne arctique",
+                "Le pigeon voyageur"
               ],
-              "correctAnswer": "La Sterne arctique 🐦",
+              "correctAnswer": "La Sterne arctique",
               "isSpecial": true
+            }
+          ,
+            {
+              "question": "D'après la leçon \"Pourquoi migrer ?\", complète : Chaque année, des millions d'animaux...",
+              "options": [
+                "Chaque année, des millions d'animaux se déplacent sur des milliers de kilomètres",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Chaque année, des millions d'animaux se déplacent sur des milliers de kilomètres"
+            },
+            {
+              "question": "Est-il vrai que e minuscule papillon orange et noir réalise un exploit : il parcourt plus de **4 000 kilomètres** depuis le canada jusqu'aux forêts du mexique pour y passer l'hiver au chaud ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Le saumon naît dans les _____ descend vivre dans l'océan\"",
+              "options": [
+                "rivières, puis",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "rivières, puis"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le magnétisme terrestre\" ?",
+              "options": [
+                "De nombreux animaux, comme les oiseaux et les tortues marines, poss...",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "De nombreux animaux, comme les oiseaux et les tortues marines, poss..."
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Le record de la Sterne\" ?",
+              "options": [
+                "La Sterne arctique détient le record mondial de la plus longue migr...",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "La Sterne arctique détient le record mondial de la plus longue migr..."
             }
           ]
         },
@@ -869,39 +1521,100 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Quelle caractéristique physique unique permet aux oiseaux de voler facilement ?",
               "options": [
-                "Leurs os creux et très légers 🦴🪶",
-                "Leur peau très épaisse 👤",
-                "Leurs dents pointues 🦷"
+                "Leurs os creux et très légers",
+                "Leur peau très épaisse",
+                "Leurs dents pointues"
               ],
-              "correctAnswer": "Leurs os creux et très légers 🦴🪶"
+              "correctAnswer": "Leurs os creux et très légers"
             },
             {
               "question": "Pourquoi les oiseaux chantent-ils beaucoup au printemps ?",
               "options": [
-                "Pour défendre leur territoire ou trouver un amoureux 🌳❤️",
-                "Pour s'entraîner à la radio 🎤",
-                "Pour faire fuir la pluie 🌧️"
+                "Pour défendre leur territoire ou trouver un amoureux",
+                "Pour s'entraîner à la radio",
+                "Pour faire fuir la pluie"
               ],
-              "correctAnswer": "Pour défendre leur territoire ou trouver un amoureux 🌳❤️"
+              "correctAnswer": "Pour défendre leur territoire ou trouver un amoureux"
             },
             {
               "question": "À quoi sert l'huile spéciale sur les plumes des oiseaux ?",
               "options": [
-                "À les rendre imperméables pour rester au sec 🌧️🪶",
-                "À glisser sur les toboggans 🛝",
-                "À changer de couleur 🌈"
+                "À les rendre imperméables pour rester au sec",
+                "À glisser sur les toboggans",
+                "À changer de couleur"
               ],
-              "correctAnswer": "À les rendre imperméables pour rester au sec 🌧️🪶"
+              "correctAnswer": "À les rendre imperméables pour rester au sec"
             },
             {
               "question": "Si l'œil humain peut voir un petit détail d'une certaine taille, à quelle distance maximale un aigle peut-il discerner ce même détail ?",
               "options": [
-                "Huit fois plus loin que l'homme (environ 1 km de haut pour une souris) 🦅🔬",
-                "Exactement à la même distance 🚶",
-                "Deux fois moins loin (sa vue est moins bonne) 👁️"
+                "Huit fois plus loin que l'homme (environ 1 km de haut pour une souris)",
+                "Exactement à la même distance",
+                "Deux fois moins loin (sa vue est moins bonne)"
               ],
-              "correctAnswer": "Huit fois plus loin que l'homme (environ 1 km de haut pour une souris) 🦅🔬",
+              "correctAnswer": "Huit fois plus loin que l'homme (environ 1 km de haut pour une souris)",
               "isSpecial": true
+            }
+          ,
+            {
+              "question": "D'après la leçon \"Qu'est-ce qu'un oiseau ?\", complète : Les oiseaux sont des animaux...",
+              "options": [
+                "Les oiseaux sont des animaux avec des plumes, deux ailes et un bec sans dents",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Les oiseaux sont des animaux avec des plumes, deux ailes et un bec sans dents"
+            },
+            {
+              "question": "Est-il vrai que es oiseaux chantent pour deux raisons principales : pour défendre leur territoire contre d'autres oiseaux, ou pour séduire un amoureux ou une amoureuse au printemps ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Leurs plumes ont plusieurs rôles : elles les protègent du froid en gardant la chaleur, elles _____ pendant le vol, et elles les gardent au sec grâce à une huile imperméable\"",
+              "options": [
+                "les guident",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "les guident"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Les rapaces et la vision\" ?",
+              "options": [
+                "Ils ont une vue extraordinaire : ils peuvent repérer une petite sou...",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Ils ont une vue extraordinaire : ils peuvent repérer une petite sou..."
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Qu'est-ce qu'un oiseau ?\" ?",
+              "options": [
+                "Les oiseaux sont des animaux avec des plumes, deux ailes et un bec ...",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Les oiseaux sont des animaux avec des plumes, deux ailes et un bec ..."
+            },
+            {
+              "question": "D'après la leçon \"Le chant des oiseaux\", complète : Les oiseaux chantent pour deux...",
+              "options": [
+                "Les oiseaux chantent pour deux raisons principales : pour défendre leur terri...",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Les oiseaux chantent pour deux raisons principales : pour défendre leur terri..."
             }
           ]
         },
@@ -1744,92 +2457,92 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Quel mécanisme décrit la survie et la reproduction préférentielle des individus les mieux adaptés ?",
               "options": [
-                "La photosynthèse 🌿",
-                "La sélection naturelle 🧬",
-                "La dérive magnétique 🧲"
+                "La photosynthèse",
+                "La sélection naturelle",
+                "La dérive magnétique"
               ],
-              "correctAnswer": "La sélection naturelle 🧬"
+              "correctAnswer": "La sélection naturelle"
             },
             {
               "question": "Comment appelle-t-on les substances chimiques utilisées pour communiquer au sein d'une espèce ?",
               "options": [
-                "Les hormones 🧪",
-                "Les phéromones 🧪",
-                "Les vitamines 💊"
+                "Les hormones",
+                "Les phéromones",
+                "Les vitamines"
               ],
-              "correctAnswer": "Les phéromones 🧪"
+              "correctAnswer": "Les phéromones"
             },
             {
               "question": "Quelle stratégie thermique caractérise un animal qui produit sa propre chaleur par son métabolisme ?",
               "options": [
-                "L'ectothermie 🦎",
-                "L'endothermie 🐕",
-                "L'isothermie 🌡️"
+                "L'ectothermie",
+                "L'endothermie",
+                "L'isothermie"
               ],
-              "correctAnswer": "L'endothermie 🐕"
+              "correctAnswer": "L'endothermie"
             },
             {
               "question": "Quelle enzyme catalyse la réaction chimique produisant de la lumière chez les animaux abyssaux ?",
               "options": [
-                "La luciférase 💡",
-                "L'amylase 🧬",
-                "La pepsine 🔬"
+                "La luciférase",
+                "L'amylase",
+                "La pepsine"
               ],
-              "correctAnswer": "La luciférase 💡"
+              "correctAnswer": "La luciférase"
             },
             {
               "question": "Quel état permet aux tardigrades de survivre sans eau et sans métabolisme actif ?",
               "options": [
-                "L'hibernation 🐻",
-                "La photosynthèse 🍃",
-                "La cryptobiose 🔬"
+                "L'hibernation",
+                "La photosynthèse",
+                "La cryptobiose"
               ],
-              "correctAnswer": "La cryptobiose 🔬"
+              "correctAnswer": "La cryptobiose"
             },
             {
               "question": "Qui a formulé les fondements théoriques de l'évolution par la sélection naturelle ?",
               "options": [
-                "Isaac Newton 🍎",
-                "Albert Einstein 🌌",
-                "Charles Darwin 🧔"
+                "Isaac Newton",
+                "Albert Einstein",
+                "Charles Darwin"
               ],
-              "correctAnswer": "Charles Darwin 🧔"
+              "correctAnswer": "Charles Darwin"
             },
             {
               "question": "Comment une fourmi trace-t-elle une piste vers une source de nourriture ?",
               "options": [
-                "En criant fort 🔊",
-                "En déposant des phéromones sur le sol 🧪",
-                "En faisant des dessins 🗺️"
+                "En criant fort",
+                "En déposant des phéromones sur le sol",
+                "En faisant des dessins"
               ],
-              "correctAnswer": "En déposant des phéromones sur le sol 🧪"
+              "correctAnswer": "En déposant des phéromones sur le sol"
             },
             {
               "question": "Qu'est-ce qu'un organisme ectotherme ?",
               "options": [
-                "Un animal dont la température dépend de son environnement 🦎",
-                "Un animal qui ne respire pas 🚫",
-                "Un animal vivant uniquement dans les abysses 🌊"
+                "Un animal dont la température dépend de son environnement",
+                "Un animal qui ne respire pas",
+                "Un animal vivant uniquement dans les abysses"
               ],
-              "correctAnswer": "Un animal dont la température dépend de son environnement 🦎"
+              "correctAnswer": "Un animal dont la température dépend de son environnement"
             },
             {
               "question": "Quel sucre protecteur remplace l'eau dans les cellules des tardigrades en cryptobiose ?",
               "options": [
-                "Le glucose 🍬",
-                "Le saccharose 🍯",
-                "Le tréhalose 🧪"
+                "Le glucose",
+                "Le saccharose",
+                "Le tréhalose"
               ],
-              "correctAnswer": "Le tréhalose 🧪"
+              "correctAnswer": "Le tréhalose"
             },
             {
               "question": "Pourquoi la lumière produite par bioluminescence est-elle qualifiée de 'froide' ?",
               "options": [
-                "Parce qu'elle est bleue 🔵",
-                "Parce que sa réaction produit de la lumière avec très peu de perte de chaleur 💡",
-                "Parce qu'elle gèle l'eau autour d'elle ❄️"
+                "Parce qu'elle est bleue",
+                "Parce que sa réaction produit de la lumière avec très peu de perte de chaleur",
+                "Parce qu'elle gèle l'eau autour d'elle"
               ],
-              "correctAnswer": "Parce que sa réaction produit de la lumière avec très peu de perte de chaleur 💡",
+              "correctAnswer": "Parce que sa réaction produit de la lumière avec très peu de perte de chaleur",
               "isSpecial": true
             }
           ]
@@ -1873,92 +2586,92 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Quel mécanisme lié à la lumière du jour déclenche le comportement migratoire ?",
               "options": [
-                "La bioluminescence 💡",
-                "Le photopériodisme ☀️",
-                "La photosynthèse 🍃"
+                "La bioluminescence",
+                "Le photopériodisme",
+                "La photosynthèse"
               ],
-              "correctAnswer": "Le photopériodisme ☀️"
+              "correctAnswer": "Le photopériodisme"
             },
             {
               "question": "Comment appelle-t-on le besoin frénétique de s'alimenter avant la migration ?",
               "options": [
-                "L'hyperphagie 🍎",
-                "La cryptobiose 🔬",
-                "La thermorégulation 🦎"
+                "L'hyperphagie",
+                "La cryptobiose",
+                "La thermorégulation"
               ],
-              "correctAnswer": "L'hyperphagie 🍎"
+              "correctAnswer": "L'hyperphagie"
             },
             {
               "question": "Sur quelle étoile fixe les migrateurs nocturnes s'appuient-ils pour s'orienter ?",
               "options": [
-                "Le Soleil ☀️",
-                "L'Étoile Polaire ⭐️",
-                "Sirius 🌌"
+                "Le Soleil",
+                "L'Étoile Polaire",
+                "Sirius"
               ],
-              "correctAnswer": "L'Étoile Polaire ⭐️"
+              "correctAnswer": "L'Étoile Polaire"
             },
             {
               "question": "Quelle protéine oculaire permet aux oiseaux de voir le champ magnétique terrestre ?",
               "options": [
-                "La chlorophylle 🌿",
-                "L'hémoglobine 🩸",
-                "Le cryptochrome 👁️🧲"
+                "La chlorophylle",
+                "L'hémoglobine",
+                "Le cryptochrome"
               ],
-              "correctAnswer": "Le cryptochrome 👁️🧲"
+              "correctAnswer": "Le cryptochrome"
             },
             {
               "question": "Quel oiseau détient le record mondial du vol continu sans escale (12 000 km) ?",
               "options": [
-                "La Sterne arctique 🐦",
-                "La Barge rousse 🐦",
-                "Le faucon pèlerin 🦅"
+                "La Sterne arctique",
+                "La Barge rousse",
+                "Le faucon pèlerin"
               ],
-              "correctAnswer": "La Barge rousse 🐦"
+              "correctAnswer": "La Barge rousse"
             },
             {
               "question": "Quel organe sécrète les hormones responsables du métabolisme de migration ?",
               "options": [
-                "L'estomac 🥣",
-                "La glande pinéale 🧠",
-                "Les poumons 🫁"
+                "L'estomac",
+                "La glande pinéale",
+                "Les poumons"
               ],
-              "correctAnswer": "La glande pinéale 🧠"
+              "correctAnswer": "La glande pinéale"
             },
             {
               "question": "Comment la pollution lumineuse affecte-t-elle les migrateurs nocturnes ?",
               "options": [
-                "Elle les aide à voir les insectes 🐛",
-                "Elle les désoriente et provoque des collisions avec les bâtiments 🏙️💡",
-                "Elle augmente leur vitesse de vol ⚡"
+                "Elle les aide à voir les insectes",
+                "Elle les désoriente et provoque des collisions avec les bâtiments",
+                "Elle augmente leur vitesse de vol"
               ],
-              "correctAnswer": "Elle les désoriente et provoque des collisions avec les bâtiments 🏙️💡"
+              "correctAnswer": "Elle les désoriente et provoque des collisions avec les bâtiments"
             },
             {
               "question": "Pourquoi la conservation des zones humides est-elle cruciale pour les migrateurs ?",
               "options": [
-                "Pour qu'ils puissent se baigner 🛁",
-                "Pour servir de haltes migratoires riches en nourriture 🌾",
-                "Pour éviter qu'ils aient trop chaud ☀️"
+                "Pour qu'ils puissent se baigner",
+                "Pour servir de haltes migratoires riches en nourriture",
+                "Pour éviter qu'ils aient trop chaud"
               ],
-              "correctAnswer": "Pour servir de haltes migratoires riches en nourriture 🌾"
+              "correctAnswer": "Pour servir de haltes migratoires riches en nourriture"
             },
             {
               "question": "De quel État à quel pays la Barge rousse migre-t-elle sans s'arrêter ?",
               "options": [
-                "Du Canada vers le Mexique 🦋",
-                "De l'Alaska vers la Nouvelle-Zélande 🗺️",
-                "De l'Afrique vers l'Europe 🇪🇺"
+                "Du Canada vers le Mexique",
+                "De l'Alaska vers la Nouvelle-Zélande",
+                "De l'Afrique vers l'Europe"
               ],
-              "correctAnswer": "De l'Alaska vers la Nouvelle-Zélande 🗺️"
+              "correctAnswer": "De l'Alaska vers la Nouvelle-Zélande"
             },
             {
               "question": "Comment le corps de la Barge rousse s'adapte-t-il physiquement pour son long voyage ?",
               "options": [
-                "Il fait pousser des plumes supplémentaires 🪶",
-                "Il réduit temporairement la taille de ses organes non essentiels pour s'alléger 🐦",
-                "Il stocke de l'eau dans ses os 🦴"
+                "Il fait pousser des plumes supplémentaires",
+                "Il réduit temporairement la taille de ses organes non essentiels pour s'alléger",
+                "Il stocke de l'eau dans ses os"
               ],
-              "correctAnswer": "Il réduit temporairement la taille de ses organes non essentiels pour s'alléger 🐦",
+              "correctAnswer": "Il réduit temporairement la taille de ses organes non essentiels pour s'alléger",
               "isSpecial": true
             }
           ]
@@ -2002,92 +2715,92 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Qui est le créateur de la nomenclature binominale en latin au 18ème siècle ?",
               "options": [
-                "Charles Darwin 🧔",
-                "Carl von Linné 📜",
-                "Gregor Mendel 🌱"
+                "Charles Darwin",
+                "Carl von Linné",
+                "Gregor Mendel"
               ],
-              "correctAnswer": "Carl von Linné 📜"
+              "correctAnswer": "Carl von Linné"
             },
             {
               "question": "Quelle science étudie les relations de parenté évolutive entre les êtres vivants ?",
               "options": [
-                "La géologie 🪨",
-                "La phylogénie 🧬",
-                "La climatologie ☁️"
+                "La géologie",
+                "La phylogénie",
+                "La climatologie"
               ],
-              "correctAnswer": "La phylogénie 🧬"
+              "correctAnswer": "La phylogénie"
             },
             {
               "question": "Quelle classe d'animaux caractérise la présence de poils et l'allaitement des petits ?",
               "options": [
-                "Les reptiles 🦎",
-                "Les mammifères 🐾",
-                "Les oiseaux 🦅"
+                "Les reptiles",
+                "Les mammifères",
+                "Les oiseaux"
               ],
-              "correctAnswer": "Les mammifères 🐾"
+              "correctAnswer": "Les mammifères"
             },
             {
               "question": "Quelle est la proportion approximative d'invertébrés dans le règne animal ?",
               "options": [
-                "5% 🦈",
-                "50% 🐸",
-                "95% 🕷️"
+                "5%",
+                "50%",
+                "95%"
               ],
-              "correctAnswer": "95% 🕷️"
+              "correctAnswer": "95%"
             },
             {
               "question": "Quel critère principal définit deux individus comme faisant partie de la même espèce ?",
               "options": [
-                "Ils doivent se ressembler physiquement 🦌",
-                "Ils doivent pouvoir concevoir des descendants viables et fertiles 👶",
-                "Ils doivent habiter dans la même région 🗺️"
+                "Ils doivent se ressembler physiquement",
+                "Ils doivent pouvoir concevoir des descendants viables et fertiles",
+                "Ils doivent habiter dans la même région"
               ],
-              "correctAnswer": "Ils doivent pouvoir concevoir des descendants viables et fertiles 👶"
+              "correctAnswer": "Ils doivent pouvoir concevoir des descendants viables et fertiles"
             },
             {
               "question": "Quel est le nom scientifique binomial écrit correctement pour désigner l'être humain ?",
               "options": [
-                "Homo Sapiens 🧔",
-                "Homo sapiens 🧔",
-                "homo Sapiens 🧔"
+                "Homo Sapiens",
+                "Homo sapiens",
+                "homo Sapiens"
               ],
-              "correctAnswer": "Homo sapiens 🧔"
+              "correctAnswer": "Homo sapiens"
             },
             {
               "question": "De quel grand clade préhistorique les oiseaux sont-ils les descendants directs ?",
               "options": [
-                "Les mammouths 🦣",
-                "Les dinosaures 🦖",
-                "Les trilobites 🪱"
+                "Les mammouths",
+                "Les dinosaures",
+                "Les trilobites"
               ],
-              "correctAnswer": "Les dinosaures 🦖"
+              "correctAnswer": "Les dinosaures"
             },
             {
               "question": "Quel constituant chimique rigide compose l'exosquelette des arthropodes ?",
               "options": [
-                "Le calcium 🦴",
-                "La chitine 🕷️",
-                "La kératine 💇"
+                "Le calcium",
+                "La chitine",
+                "La kératine"
               ],
-              "correctAnswer": "La chitine 🕷️"
+              "correctAnswer": "La chitine"
             },
             {
               "question": "Pourquoi le mulet (issu d'un âne et d'une jument) prouve-t-il que ses parents sont d'espèces distinctes ?",
               "options": [
-                "Parce qu'il est trop petit 🐴",
-                "Parce qu'il est stérile 🚫👶",
-                "Parce qu'il a de grandes oreilles 👂"
+                "Parce qu'il est trop petit",
+                "Parce qu'il est stérile",
+                "Parce qu'il a de grandes oreilles"
               ],
-              "correctAnswer": "Parce qu'il est stérile 🚫👶"
+              "correctAnswer": "Parce qu'il est stérile"
             },
             {
               "question": "Combien de pattes possède spécifiquement un arachnide (comme l'araignée) ?",
               "options": [
-                "6 pattes 🐜",
-                "8 pattes 🕷️",
-                "10 pattes 🦀"
+                "6 pattes",
+                "8 pattes",
+                "10 pattes"
               ],
-              "correctAnswer": "8 pattes 🕷️",
+              "correctAnswer": "8 pattes",
               "isSpecial": true
             }
           ]
@@ -2930,30 +3643,101 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Quelle saison fait tomber les jolies feuilles rousses des arbres ?",
               "options": [
-                "Le Printemps 🌸",
-                "L'Été ☀️",
-                "L'Automne 🍁"
+                "Le Printemps",
+                "L'Été",
+                "L'Automne"
               ],
-              "correctAnswer": "L'Automne 🍁"
+              "correctAnswer": "L'Automne"
             },
             {
               "question": "Quelle est la saison idéale pour aller nager car il fait très chaud ?",
               "options": [
-                "L'Été ☀️",
-                "L'Hiver ❄️",
-                "L'Automne 🍁"
+                "L'Été",
+                "L'Hiver",
+                "L'Automne"
               ],
-              "correctAnswer": "L'Été ☀️"
+              "correctAnswer": "L'Été"
             },
             {
               "question": "Que voit-on apparaître sur les arbres au printemps ?",
               "options": [
-                "De la neige ❄️",
-                "Des fleurs et des bourgeons 🌸",
-                "Des citrouilles 🎃"
+                "De la neige",
+                "Des fleurs et des bourgeons",
+                "Des citrouilles"
               ],
-              "correctAnswer": "Des fleurs et des bourgeons 🌸",
+              "correctAnswer": "Des fleurs et des bourgeons",
               "isSpecial": true
+            }
+          ,
+            {
+              "question": "D'après la leçon \"Le Printemps renaît !\", complète : Au printemps, le soleil revient...",
+              "options": [
+                "Au printemps, le soleil revient doucement, les bourgeons s'ouvrent et les fle...",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Au printemps, le soleil revient doucement, les bourgeons s'ouvrent et les fle..."
+            },
+            {
+              "question": "Est-il vrai que 'est la saison des cerises, de la plage et du soleil qui se couche tard ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"En automne, le vent souffle, les feuilles des _____ rouges et jaunes puis tombent au sol\"",
+              "options": [
+                "arbres deviennent",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "arbres deviennent"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le Printemps renaît !\" ?",
+              "options": [
+                "Au printemps, le soleil revient doucement, les bourgeons s'ouvrent ...",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Au printemps, le soleil revient doucement, les bourgeons s'ouvrent ..."
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"L'Été brille !\" ?",
+              "options": [
+                "En été, il fait très chaud",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "En été, il fait très chaud"
+            },
+            {
+              "question": "D'après la leçon \"L'Automne colore !\", complète : En automne, le vent souffle,...",
+              "options": [
+                "En automne, le vent souffle, les feuilles des arbres deviennent rouges et jau...",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "En automne, le vent souffle, les feuilles des arbres deviennent rouges et jau..."
+            },
+            {
+              "question": "Est-il vrai que u printemps, le soleil revient doucement, les bourgeons s'ouvrent et les fleurs colorent les jardins ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
             }
           ]
         },
@@ -2986,30 +3770,101 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "À quoi sert la pluie qui tombe des nuages ?",
               "options": [
-                "À nettoyer les fenêtres 🪟",
-                "À arroser les plantes et la nature 🌿💧",
-                "À refroidir le soleil ☀️"
+                "À nettoyer les fenêtres",
+                "À arroser les plantes et la nature",
+                "À refroidir le soleil"
               ],
-              "correctAnswer": "À arroser les plantes et la nature 🌿💧"
+              "correctAnswer": "À arroser les plantes et la nature"
             },
             {
               "question": "Quel objet s'envole très bien dans le ciel quand il y a du vent ?",
               "options": [
-                "Un cerf-volant 🪁",
-                "Une bicyclette 🚲",
-                "Une peluche panda 🐼"
+                "Un cerf-volant",
+                "Une bicyclette",
+                "Une peluche panda"
               ],
-              "correctAnswer": "Un cerf-volant 🪁"
+              "correctAnswer": "Un cerf-volant"
             },
             {
               "question": "Que faut-il mettre sur sa tête quand le Soleil brille fort ?",
               "options": [
-                "Une écharpe en laine 🧣",
-                "Une casquette 🧢",
-                "Un bonnet de ski 🎿"
+                "Une écharpe en laine",
+                "Une casquette",
+                "Un bonnet de ski"
               ],
-              "correctAnswer": "Une casquette 🧢",
+              "correctAnswer": "Une casquette",
               "isSpecial": true
+            }
+          ,
+            {
+              "question": "D'après la leçon \"Le beau Soleil\", complète : Quand il n'y a pas...",
+              "options": [
+                "Quand il n'y a pas de nuages, le **Soleil** brille tout jaune",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Quand il n'y a pas de nuages, le **Soleil** brille tout jaune"
+            },
+            {
+              "question": "Est-il vrai que lle arrose les plantes et remplit les rivières pour que la nature boive ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Le **vent**, c'est de _____ court très vite\"",
+              "options": [
+                "l'air qui",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "l'air qui"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le beau Soleil\" ?",
+              "options": [
+                "Quand il n'y a pas de nuages, le **Soleil** brille tout jaune",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Quand il n'y a pas de nuages, le **Soleil** brille tout jaune"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"La gentille Pluie\" ?",
+              "options": [
+                "Les nuages gris apportent des petites gouttes d'eau : c'est la **pl...",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Les nuages gris apportent des petites gouttes d'eau : c'est la **pl..."
+            },
+            {
+              "question": "D'après la leçon \"Le Vent farceur\", complète : Il fait danser les branches...",
+              "options": [
+                "Il fait danser les branches des arbres et fait voler les cerfs-volants",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Il fait danser les branches des arbres et fait voler les cerfs-volants"
+            },
+            {
+              "question": "Est-il vrai que uand il n'y a pas de nuages, le **soleil** brille tout jaune ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
             }
           ]
         },
@@ -3079,6 +3934,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Niveau 3"
             }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : L'Eau\" ?",
+              "options": [
+                "Cette leçon traite de L'Eau",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de L'Eau"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète cette information : \"Cette leçon t...\"",
+              "options": [
+                "raite de L'Eau",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "raite de L'Eau"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : L'Eau\" ?",
+              "options": [
+                "Cette leçon traite de L'Eau",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de L'Eau"
+            }
           ]
         },
         {
@@ -3146,6 +4052,57 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 3"
               ],
               "correctAnswer": "Niveau 4"
+            }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Le Vent\" ?",
+              "options": [
+                "Cette leçon traite de Le Vent",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Le Vent"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Vent\"",
+              "options": [
+                "de Le",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Le"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Le Vent\" ?",
+              "options": [
+                "Cette leçon traite de Le Vent",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Le Vent"
             }
           ]
         },
@@ -3215,6 +4172,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Niveau 5"
             }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : La Terre\" ?",
+              "options": [
+                "Cette leçon traite de La Terre",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de La Terre"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Terre\"",
+              "options": [
+                "de La",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de La"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : La Terre\" ?",
+              "options": [
+                "Cette leçon traite de La Terre",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de La Terre"
+            }
           ]
         },
         {
@@ -3282,6 +4290,57 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 5"
               ],
               "correctAnswer": "Niveau 6"
+            }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Les Forêts\" ?",
+              "options": [
+                "Cette leçon traite de Les Forêts",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Forêts"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Forêts\"",
+              "options": [
+                "de Les",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Les"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Les Forêts\" ?",
+              "options": [
+                "Cette leçon traite de Les Forêts",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Forêts"
             }
           ]
         },
@@ -3351,6 +4410,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Niveau 7"
             }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Les Volcans\" ?",
+              "options": [
+                "Cette leçon traite de Les Volcans",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Volcans"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Volcans\"",
+              "options": [
+                "de Les",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Les"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Les Volcans\" ?",
+              "options": [
+                "Cette leçon traite de Les Volcans",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Volcans"
+            }
           ]
         },
         {
@@ -3418,6 +4528,57 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 7"
               ],
               "correctAnswer": "Niveau 8"
+            }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Les Étoiles\" ?",
+              "options": [
+                "Cette leçon traite de Les Étoiles",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Étoiles"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Étoiles\"",
+              "options": [
+                "de Les",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Les"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Les Étoiles\" ?",
+              "options": [
+                "Cette leçon traite de Les Étoiles",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Étoiles"
             }
           ]
         },
@@ -3487,6 +4648,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Niveau 9"
             }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : La Pollution\" ?",
+              "options": [
+                "Cette leçon traite de La Pollution",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de La Pollution"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Pollution\"",
+              "options": [
+                "de La",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de La"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : La Pollution\" ?",
+              "options": [
+                "Cette leçon traite de La Pollution",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de La Pollution"
+            }
           ]
         },
         {
@@ -3555,6 +4767,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Niveau 10"
             }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Le Recyclage\" ?",
+              "options": [
+                "Cette leçon traite de Le Recyclage",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Le Recyclage"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Recyclage\"",
+              "options": [
+                "de Le",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Le"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Le Recyclage\" ?",
+              "options": [
+                "Cette leçon traite de Le Recyclage",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Le Recyclage"
+            }
           ]
         }
       ],
@@ -3598,48 +4861,99 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Comment s'appelle l'étape où le Soleil transforme l'eau liquide en vapeur invisible ?",
               "options": [
-                "La condensation ☁️",
-                "L'évaporation ☀️",
-                "Les précipitations 🌧️"
+                "La condensation",
+                "L'évaporation",
+                "Les précipitations"
               ],
-              "correctAnswer": "L'évaporation ☀️"
+              "correctAnswer": "L'évaporation"
             },
             {
               "question": "Que se passe-t-il pendant la condensation ?",
               "options": [
-                "La vapeur d'eau forme des nuages ☁️",
-                "La pluie tombe sur la terre 🌧️",
-                "L'eau gèle en glace 🧊"
+                "La vapeur d'eau forme des nuages",
+                "La pluie tombe sur la terre",
+                "L'eau gèle en glace"
               ],
-              "correctAnswer": "La vapeur d'eau forme des nuages ☁️"
+              "correctAnswer": "La vapeur d'eau forme des nuages"
             },
             {
               "question": "Comment l'eau des nuages retourne-t-elle au sol ?",
               "options": [
-                "Par téléportation 🌀",
-                "Par les précipitations (pluie, neige) 🌧️",
-                "Elle ne retourne jamais 🚫"
+                "Par téléportation",
+                "Par les précipitations (pluie, neige)",
+                "Elle ne retourne jamais"
               ],
-              "correctAnswer": "Par les précipitations (pluie, neige) 🌧️"
+              "correctAnswer": "Par les précipitations (pluie, neige)"
             },
             {
               "question": "Qu'est-ce qu'une nappe phréatique ?",
               "options": [
-                "Une rivière de lave sous la Terre 🌋",
-                "Un grand réservoir d'eau souterrain naturel 💧",
-                "Un nuage très bas ☁️"
+                "Une rivière de lave sous la Terre",
+                "Un grand réservoir d'eau souterrain naturel",
+                "Un nuage très bas"
               ],
-              "correctAnswer": "Un grand réservoir d'eau souterrain naturel 💧"
+              "correctAnswer": "Un grand réservoir d'eau souterrain naturel"
             },
             {
               "question": "Qu'est-ce que l'évapotranspiration chez les plantes ?",
               "options": [
-                "Leur façon de boire de l'eau 🥤",
-                "Leur rejet d'eau sous forme de vapeur par les feuilles 🌿",
-                "Leur perte de feuilles en automne 🍂"
+                "Leur façon de boire de l'eau",
+                "Leur rejet d'eau sous forme de vapeur par les feuilles",
+                "Leur perte de feuilles en automne"
               ],
-              "correctAnswer": "Leur rejet d'eau sous forme de vapeur par les feuilles 🌿",
+              "correctAnswer": "Leur rejet d'eau sous forme de vapeur par les feuilles",
               "isSpecial": true
+            }
+          ,
+            {
+              "question": "D'après la leçon \"1. L'Évaporation\", complète : Le Soleil chauffe l'eau des...",
+              "options": [
+                "Le Soleil chauffe l'eau des rivières et des océans",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Le Soleil chauffe l'eau des rivières et des océans"
+            },
+            {
+              "question": "Est-il vrai que lles s'assemblent pour former les nuages ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Quand les nuages deviennent trop lourds, les gouttes tombent : _____ pluie, ou la neige s'il fait très froid\"",
+              "options": [
+                "c'est la",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "c'est la"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"4. L'Infiltration et les nappes\" ?",
+              "options": [
+                "Elle remplit d'immenses réservoirs souterrains naturels appelés nap...",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Elle remplit d'immenses réservoirs souterrains naturels appelés nap..."
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"5. L'Évapotranspiration\" ?",
+              "options": [
+                "Les plantes aussi participent au cycle",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Les plantes aussi participent au cycle"
             }
           ]
         },
@@ -3682,47 +4996,98 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Quel nom donne-t-on au processus de fabrication de nourriture par les plantes ?",
               "options": [
-                "La respiration cellulaire 🫁",
-                "La photosynthèse 🍃",
-                "La cristallisation 💎"
+                "La respiration cellulaire",
+                "La photosynthèse",
+                "La cristallisation"
               ],
-              "correctAnswer": "La photosynthèse 🍃"
+              "correctAnswer": "La photosynthèse"
             },
             {
               "question": "À quoi sert principalement la chlorophylle dans les feuilles ?",
               "options": [
-                "À capter la lumière du soleil pour fabriquer de l'énergie ☀️",
-                "À repousser les insectes gourmands 🐛",
-                "À stocker l'eau de pluie 🌧️"
+                "À capter la lumière du soleil pour fabriquer de l'énergie",
+                "À repousser les insectes gourmands",
+                "À stocker l'eau de pluie"
               ],
-              "correctAnswer": "À capter la lumière du soleil pour fabriquer de l'énergie ☀️"
+              "correctAnswer": "À capter la lumière du soleil pour fabriquer de l'énergie"
             },
             {
               "question": "Quel gaz utile aux humains les plantes rejettent-elles lors de la photosynthèse ?",
               "options": [
-                "Du dioxyde de carbone (CO2) 🧪",
-                "De l'oxygène (O2) 💨",
-                "Du sucre en poudre 🍬"
+                "Du dioxyde de carbone (CO2)",
+                "De l'oxygène (O2)",
+                "Du sucre en poudre"
               ],
-              "correctAnswer": "De l'oxygène (O2) 💨"
+              "correctAnswer": "De l'oxygène (O2)"
             },
             {
               "question": "Comment s'appellent les minuscules pores microscopiques sous les feuilles qui respirent le CO2 ?",
               "options": [
-                "Les stomates 🔍",
-                "Les racines 🎋",
-                "Les pétales 🌸"
+                "Les stomates",
+                "Les racines",
+                "Les pétales"
               ],
-              "correctAnswer": "Les stomates 🔍"
+              "correctAnswer": "Les stomates"
             },
             {
               "question": "Quelle sève nourrit la plante avec le sucre fabriqué par les feuilles ?",
               "options": [
-                "La sève brute 🪵",
-                "La sève élaborée 🪵",
-                "La sève sucrée 🍯"
+                "La sève brute",
+                "La sève élaborée",
+                "La sève sucrée"
               ],
-              "correctAnswer": "La sève élaborée 🪵"
+              "correctAnswer": "La sève élaborée"
+            }
+          ,
+            {
+              "question": "D'après la leçon \"Les usines à sucre\", complète : Contrairement aux animaux, les plantes...",
+              "options": [
+                "Contrairement aux animaux, les plantes fabriquent leur propre nourriture",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Contrairement aux animaux, les plantes fabriquent leur propre nourriture"
+            },
+            {
+              "question": "Est-il vrai que 'est un pigment qui absorbe la lumière rouge et bleue du soleil pour la transformer en énergie chimique ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Pour cuisiner son sucre, la feuille mélange : l'eau puisée par les _____ gaz carbonique (CO2) absorbé par l'air, et la lumière solaire\"",
+              "options": [
+                "racines, le",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "racines, le"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Les Stomates\" ?",
+              "options": [
+                "Elles peuvent s'ouvrir ou se fermer",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Elles peuvent s'ouvrir ou se fermer"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"La Sève brute et élaborée\" ?",
+              "options": [
+                "L'eau captée par les racines monte jusqu'aux feuilles : c'est la **...",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "L'eau captée par les racines monte jusqu'aux feuilles : c'est la **..."
             }
           ]
         },
@@ -3760,39 +5125,100 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Quel numéro d'urgence gratuit fonctionne partout pour appeler du secours en Europe ?",
               "options": [
-                "Le 112 📞",
-                "Le 18 🚒",
-                "Le 15 🚑"
+                "Le 112",
+                "Le 18",
+                "Le 15"
               ],
-              "correctAnswer": "Le 112 📞"
+              "correctAnswer": "Le 112"
             },
             {
               "question": "Que doit-on absolument faire avant de boire l'eau d'une rivière en forêt ?",
               "options": [
-                "La filtrer ou la faire bouillir 🧪🔥",
-                "Y rajouter du sucre 🍬",
-                "La secouer très fort 🧴"
+                "La filtrer ou la faire bouillir",
+                "Y rajouter du sucre",
+                "La secouer très fort"
               ],
-              "correctAnswer": "La filtrer ou la faire bouillir 🧪🔥"
+              "correctAnswer": "La filtrer ou la faire bouillir"
             },
             {
               "question": "Comment sécurise-t-on le sol avant de démarrer un feu de camp ?",
               "options": [
-                "On dégage la terre et on entoure le foyer de pierres 🪨",
-                "On le recouvre de feuilles mortes 🍂",
-                "On verse du jus de fruits 🧃"
+                "On dégage la terre et on entoure le foyer de pierres",
+                "On le recouvre de feuilles mortes",
+                "On verse du jus de fruits"
               ],
-              "correctAnswer": "On dégage la terre et on entoure le foyer de pierres 🪨"
+              "correctAnswer": "On dégage la terre et on entoure le foyer de pierres"
             },
             {
               "question": "En survie réelle, si tu es perdu en forêt, quelle est la toute première priorité absolue pour ne pas tomber malade ou avoir froid ?",
               "options": [
-                "Construire ou trouver un abri thermique pour se protéger du vent et de l'humidité 🏡🌲",
-                "Chercher des baies sauvages à manger 🍓",
-                "Creuser un puits dans le sol avec ses mains 🤚"
+                "Construire ou trouver un abri thermique pour se protéger du vent et de l'humidité",
+                "Chercher des baies sauvages à manger",
+                "Creuser un puits dans le sol avec ses mains"
               ],
-              "correctAnswer": "Construire ou trouver un abri thermique pour se protéger du vent et de l'humidité 🏡🌲",
+              "correctAnswer": "Construire ou trouver un abri thermique pour se protéger du vent et de l'humidité",
               "isSpecial": true
+            }
+          ,
+            {
+              "question": "D'après la leçon \"Faire un feu de camp\", complète : Pour faire un feu en...",
+              "options": [
+                "Pour faire un feu en toute sécurité, il faut dégager le sol de toute herbe sè...",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Pour faire un feu en toute sécurité, il faut dégager le sol de toute herbe sè..."
+            },
+            {
+              "question": "Est-il vrai que 'est gratuit et fonctionne même sans réseau mobile complet ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Dans la nature, il ne faut jamais boire l'eau _____ directement, car elle peut contenir des microbes\"",
+              "options": [
+                "d'une rivière",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "d'une rivière"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Jeux vidéo et Survie\" ?",
+              "options": [
+                "En vrai, c'est pareil",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "En vrai, c'est pareil"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Faire un feu de camp\" ?",
+              "options": [
+                "Pour faire un feu en toute sécurité, il faut dégager le sol de tout...",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Pour faire un feu en toute sécurité, il faut dégager le sol de tout..."
+            },
+            {
+              "question": "D'après la leçon \"Les numéros d'urgence\", complète : C'est gratuit et fonctionne même...",
+              "options": [
+                "C'est gratuit et fonctionne même sans réseau mobile complet",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "C'est gratuit et fonctionne même sans réseau mobile complet"
             }
           ]
         },
@@ -4635,92 +6061,92 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Quel pourcentage approximatif de l'eau terrestre est salée ?",
               "options": [
-                "2,5% 💧",
-                "50% 🌊",
-                "97,5% 🌊"
+                "2,5%",
+                "50%",
+                "97,5%"
               ],
-              "correctAnswer": "97,5% 🌊"
+              "correctAnswer": "97,5%"
             },
             {
               "question": "Où se trouve la majorité de l'eau douce de notre planète ?",
               "options": [
-                "Dans les fleuves 🏞️",
-                "Dans les nuages ☁️",
-                "Dans les glaciers et calottes polaires ❄️"
+                "Dans les fleuves",
+                "Dans les nuages",
+                "Dans les glaciers et calottes polaires"
               ],
-              "correctAnswer": "Dans les glaciers et calottes polaires ❄️"
+              "correctAnswer": "Dans les glaciers et calottes polaires"
             },
             {
               "question": "Quel terme décrit le passage direct de la glace ou neige à l'état de vapeur d'eau ?",
               "options": [
-                "La condensation ☁️",
-                "La sublimation 💨",
-                "La fusion 🫠"
+                "La condensation",
+                "La sublimation",
+                "La fusion"
               ],
-              "correctAnswer": "La sublimation 💨"
+              "correctAnswer": "La sublimation"
             },
             {
               "question": "Comment appelle-t-on la fusion de petites gouttelettes d'eau en gouttes plus grosses dans un nuage ?",
               "options": [
-                "L'infiltration 💧",
-                "La coalescence 🌧️",
-                "La sublimation 💨"
+                "L'infiltration",
+                "La coalescence",
+                "La sublimation"
               ],
-              "correctAnswer": "La coalescence 🌧️"
+              "correctAnswer": "La coalescence"
             },
             {
               "question": "Qu'est-ce qu'une nappe phréatique ?",
               "options": [
-                "Le niveau supérieur d'une zone saturée en eau souterraine 💧",
-                "Une rivière de lave sous la Terre 🌋",
-                "Un grand nuage d'orage ⛈️"
+                "Le niveau supérieur d'une zone saturée en eau souterraine",
+                "Une rivière de lave sous la Terre",
+                "Un grand nuage d'orage"
               ],
-              "correctAnswer": "Le niveau supérieur d'une zone saturée en eau souterraine 💧"
+              "correctAnswer": "Le niveau supérieur d'une zone saturée en eau souterraine"
             },
             {
               "question": "Quel est le moteur énergétique principal qui fait circuler l'eau dans son cycle ?",
               "options": [
-                "La force de gravité 🪐",
-                "L'énergie thermique du Soleil ☀️",
-                "La rotation de la Terre 🌍"
+                "La force de gravité",
+                "L'énergie thermique du Soleil",
+                "La rotation de la Terre"
               ],
-              "correctAnswer": "L'énergie thermique du Soleil ☀️"
+              "correctAnswer": "L'énergie thermique du Soleil"
             },
             {
               "question": "Quelle forme de transfert de chaleur refroidit la surface de la Terre lors de l'évaporation ?",
               "options": [
-                "La chaleur latente de vaporisation ☀️",
-                "La conduction thermique 🌡️",
-                "Le rayonnement ultraviolet ⚡"
+                "La chaleur latente de vaporisation",
+                "La conduction thermique",
+                "Le rayonnement ultraviolet"
               ],
-              "correctAnswer": "La chaleur latente de vaporisation ☀️"
+              "correctAnswer": "La chaleur latente de vaporisation"
             },
             {
               "question": "Que se passe-t-il lorsque la vapeur d'eau se condense pour former un nuage ?",
               "options": [
-                "Elle absorbe du froid 🥶",
-                "Elle libère sa chaleur latente dans l'atmosphère ☁️🔥",
-                "Elle détruit le CO2 🍃"
+                "Elle absorbe du froid",
+                "Elle libère sa chaleur latente dans l'atmosphère",
+                "Elle détruit le CO2"
               ],
-              "correctAnswer": "Elle libère sa chaleur latente dans l'atmosphère ☁️🔥"
+              "correctAnswer": "Elle libère sa chaleur latente dans l'atmosphère"
             },
             {
               "question": "Comment appelle-t-on l'eau stockée depuis des millénaires dans des aquifères profonds ?",
               "options": [
-                "L'eau de ruissellement 🌊",
-                "L'eau fossile 💧",
-                "L'eau de condensation ☁️"
+                "L'eau de ruissellement",
+                "L'eau fossile",
+                "L'eau de condensation"
               ],
-              "correctAnswer": "L'eau fossile 💧"
+              "correctAnswer": "L'eau fossile"
             },
             {
               "question": "Quelle taille critique minimale une goutte de pluie doit-elle atteindre pour vaincre les courants d'air ?",
               "options": [
-                "0,01 mm 🔍",
-                "0,5 mm 🌧️",
-                "5 mm 🌧️"
+                "0,01 mm",
+                "0,5 mm",
+                "5 mm"
               ],
-              "correctAnswer": "0,5 mm 🌧️"
+              "correctAnswer": "0,5 mm"
             }
           ]
         },
@@ -4763,92 +6189,92 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Dans quels organites de la cellule végétale se produit la photosynthèse ?",
               "options": [
-                "Les noyaux 🧬",
-                "Les mitochondries 🔋",
-                "Les chloroplastes 🍃"
+                "Les noyaux",
+                "Les mitochondries",
+                "Les chloroplastes"
               ],
-              "correctAnswer": "Les chloroplastes 🍃"
+              "correctAnswer": "Les chloroplastes"
             },
             {
               "question": "Quelles longueurs d'onde de la lumière la chlorophylle absorbe-t-elle principalement ?",
               "options": [
-                "La lumière verte 🟢",
-                "Les lumières rouge et bleue 🔴🔵",
-                "La lumière jaune 🟡"
+                "La lumière verte",
+                "Les lumières rouge et bleue",
+                "La lumière jaune"
               ],
-              "correctAnswer": "Les lumières rouge et bleue 🔴🔵"
+              "correctAnswer": "Les lumières rouge et bleue"
             },
             {
               "question": "Comment appelle-t-on la phase sombre de fixation du CO2 qui produit le glucose ?",
               "options": [
-                "La glycolyse 🧪",
-                "Le cycle de Calvin 🔄",
-                "Le cycle de Krebs 🔄"
+                "La glycolyse",
+                "Le cycle de Calvin",
+                "Le cycle de Krebs"
               ],
-              "correctAnswer": "Le cycle de Calvin 🔄"
+              "correctAnswer": "Le cycle de Calvin"
             },
             {
               "question": "Quel canal conduit la sève brute minérale des racines vers le haut de la plante ?",
               "options": [
-                "Le phloème 🪵",
-                "Le xylème 🪵",
-                "Le stomate 🔍"
+                "Le phloème",
+                "Le xylème",
+                "Le stomate"
               ],
-              "correctAnswer": "Le xylème 🪵"
+              "correctAnswer": "Le xylème"
             },
             {
               "question": "Quel pore microscopique régule les échanges gazeux et la transpiration des feuilles ?",
               "options": [
-                "Le stomate 🔍",
-                "Le chloroplaste 🍃",
-                "La racine 🎋"
+                "Le stomate",
+                "Le chloroplaste",
+                "La racine"
               ],
-              "correctAnswer": "Le stomate 🔍"
+              "correctAnswer": "Le stomate"
             },
             {
               "question": "Quelle sève transporte les sucres organiques synthétisés vers le reste de la plante ?",
               "options": [
-                "La sève brute 🪵",
-                "La sève élaborée 🪵",
-                "La sève minérale 🍯"
+                "La sève brute",
+                "La sève élaborée",
+                "La sève minérale"
               ],
-              "correctAnswer": "La sève élaborée 🪵"
+              "correctAnswer": "La sève élaborée"
             },
             {
               "question": "Que se passe-t-il pour la photosynthèse si la plante ferme ses stomates pendant une sécheresse ?",
               "options": [
-                "Elle s'accélère ⚡",
-                "Elle s'arrête car le CO2 ne peut plus entrer 🚫💨",
-                "Elle produit plus d'oxygène 💨"
+                "Elle s'accélère",
+                "Elle s'arrête car le CO2 ne peut plus entrer",
+                "Elle produit plus d'oxygène"
               ],
-              "correctAnswer": "Elle s'arrête car le CO2 ne peut plus entrer 🚫💨"
+              "correctAnswer": "Elle s'arrête car le CO2 ne peut plus entrer"
             },
             {
               "question": "Quelle formule chimique modélise le glucose fabriqué par la plante ?",
               "options": [
-                "H2O 💧",
-                "CO2 🧪",
-                "C6H12O6 🍬"
+                "H2O",
+                "CO2",
+                "C6H12O6"
               ],
-              "correctAnswer": "C6H12O6 🍬"
+              "correctAnswer": "C6H12O6"
             },
             {
               "question": "Quelle proportion de l'oxygène de notre atmosphère est produite par le phytoplancton marin ?",
               "options": [
-                "Plus de 50% 🌊💨",
-                "Environ 5% 💨",
-                "100% 🚫"
+                "Plus de 50%",
+                "Environ 5%",
+                "100%"
               ],
-              "correctAnswer": "Plus de 50% 🌊💨"
+              "correctAnswer": "Plus de 50%"
             },
             {
               "question": "Par quel phénomène physique l'eau est-elle aspirée vers le haut à travers le xylème ?",
               "options": [
-                "La poussée cardiaque 🩸",
-                "La tension-cohésion par évaporation foliaire 🍃",
-                "La gravité inversée 🪐"
+                "La poussée cardiaque",
+                "La tension-cohésion par évaporation foliaire",
+                "La gravité inversée"
               ],
-              "correctAnswer": "La tension-cohésion par évaporation foliaire 🍃"
+              "correctAnswer": "La tension-cohésion par évaporation foliaire"
             }
           ]
         },
@@ -4891,92 +6317,92 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "De combien la température baisse-t-elle en moyenne tous les 100 mètres d'altitude ?",
               "options": [
-                "0,1°C 🌡️",
-                "0,6°C 🌡️",
-                "2°C 🌡️"
+                "0,1°C",
+                "0,6°C",
+                "2°C"
               ],
-              "correctAnswer": "0,6°C 🌡️"
+              "correctAnswer": "0,6°C"
             },
             {
               "question": "Quel étage de végétation correspond à la pelouse rase et aux fleurs d'altitude, sans arbres ?",
               "options": [
-                "L'étage montagnard 🌲",
-                "L'étage subalpin 🌲",
-                "L'étage alpin 🌸"
+                "L'étage montagnard",
+                "L'étage subalpin",
+                "L'étage alpin"
               ],
-              "correctAnswer": "L'étage alpin 🌸"
+              "correctAnswer": "L'étage alpin"
             },
             {
               "question": "Comment l'Edelweiss s'adapte-t-elle au rayonnement UV intense des sommets ?",
               "options": [
-                "Elle se cache sous les pierres 🪨",
-                "Elle possède un duvet de poils blancs réfléchissant 🌸",
-                "Elle fleurit uniquement la nuit 🌑"
+                "Elle se cache sous les pierres",
+                "Elle possède un duvet de poils blancs réfléchissant",
+                "Elle fleurit uniquement la nuit"
               ],
-              "correctAnswer": "Elle possède un duvet de poils blancs réfléchissant 🌸"
+              "correctAnswer": "Elle possède un duvet de poils blancs réfléchissant"
             },
             {
               "question": "Quelle adaptation sanguine permet au chamois de courir en haute altitude malgré le manque d'oxygène ?",
               "options": [
-                "Un sang pauvre en eau 🧪",
-                "Une grande quantité de globules rouges pour capter le peu d'oxygène 🐐🩸",
-                "Des poumons rétractables 🫁"
+                "Un sang pauvre en eau",
+                "Une grande quantité de globules rouges pour capter le peu d'oxygène",
+                "Des poumons rétractables"
               ],
-              "correctAnswer": "Une grande quantité de globules rouges pour capter le peu d'oxygène 🐐🩸"
+              "correctAnswer": "Une grande quantité de globules rouges pour capter le peu d'oxygène"
             },
             {
               "question": "Comment s'appelle l'éclatement des roches provoqué par le gel de l'eau infiltrée ?",
               "options": [
-                "La gélifraction 🪨",
-                "La subduction ⛰️",
-                "L'accrétion 🪐"
+                "La gélifraction",
+                "La subduction",
+                "L'accrétion"
               ],
-              "correctAnswer": "La gélifraction 🪨"
+              "correctAnswer": "La gélifraction"
             },
             {
               "question": "De quel pourcentage le volume de l'eau augmente-t-il lorsqu'elle se transforme en glace ?",
               "options": [
-                "1% 💧",
-                "9% 🧊",
-                "50% 🧊"
+                "1%",
+                "9%",
+                "50%"
               ],
-              "correctAnswer": "9% 🧊"
+              "correctAnswer": "9%"
             },
             {
               "question": "Quelle est la forme caractéristique d'une vallée creusée par un glacier ?",
               "options": [
-                "Une vallée en forme de V ⛰️",
-                "Une vallée en forme de U (auge) ⛰️",
-                "Une plaine circulaire ⭕"
+                "Une vallée en forme de V",
+                "Une vallée en forme de U (auge)",
+                "Une plaine circulaire"
               ],
-              "correctAnswer": "Une vallée en forme de U (auge) ⛰️"
+              "correctAnswer": "Une vallée en forme de U (auge)"
             },
             {
               "question": "Qu'est-ce qu'une moraine en géomorphologie glaciaire ?",
               "options": [
-                "Un lac d'eau de fonte glacé 🏞️",
-                "Un empilement de débris rocheux transportés et déposés par un glacier 🪨",
-                "Une crevasse très profonde 🕳️"
+                "Un lac d'eau de fonte glacé",
+                "Un empilement de débris rocheux transportés et déposés par un glacier",
+                "Une crevasse très profonde"
               ],
-              "correctAnswer": "Un empilement de débris rocheux transportés et déposés par un glacier 🪨"
+              "correctAnswer": "Un empilement de débris rocheux transportés et déposés par un glacier"
             },
             {
               "question": "Quelle adaptation comportementale permet à la marmotte de survivre à l'hiver ?",
               "options": [
-                "Elle change de couleur 🐇",
-                "Elle migre vers le sud 🐦",
-                "Elle entre en hibernation en abaissant sa température interne 💤"
+                "Elle change de couleur",
+                "Elle migre vers le sud",
+                "Elle entre en hibernation en abaissant sa température interne"
               ],
-              "correctAnswer": "Elle entre en hibernation en abaissant sa température interne 💤"
+              "correctAnswer": "Elle entre en hibernation en abaissant sa température interne"
             },
             {
               "question": "Comment les sabots du bouquetin sont-ils adaptés à la roche glissante ?",
               "options": [
                 "Ils ont des griffes en métal 爪",
-                "Ils ont une pince dure externe et une semelle centrale antidérapante souple 🐐",
-                "Ils sont ronds et lisses ⭕"
+                "Ils ont une pince dure externe et une semelle centrale antidérapante souple",
+                "Ils sont ronds et lisses"
               ],
-              "correctAnswer": "Ils ont une pince dure externe et une semelle centrale antidérapante souple 🐐"
+              "correctAnswer": "Ils ont une pince dure externe et une semelle centrale antidérapante souple"
             }
           ]
         },
@@ -5818,29 +7244,100 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Combien de doigts as-tu au total sur une seule main ?",
               "options": [
-                "3 doigts 👋",
-                "5 doigts ✋",
-                "10 doigts 👐"
+                "3 doigts",
+                "5 doigts",
+                "10 doigts"
               ],
-              "correctAnswer": "5 doigts ✋"
+              "correctAnswer": "5 doigts"
             },
             {
               "question": "Quelle partie de ton corps t'aide à sauter et à courir ?",
               "options": [
-                "Tes mains 🖐️",
-                "Tes jambes 🦵",
-                "Tes oreilles 👂"
+                "Tes mains",
+                "Tes jambes",
+                "Tes oreilles"
               ],
-              "correctAnswer": "Tes jambes 🦵"
+              "correctAnswer": "Tes jambes"
             },
             {
               "question": "Avec quoi sens-tu le parfum d'une jolie fleur ?",
               "options": [
-                "Avec ton nez 👃",
-                "Avec ton coude 💪",
-                "Avec tes pieds 👣"
+                "Avec ton nez",
+                "Avec ton coude",
+                "Avec tes pieds"
               ],
-              "correctAnswer": "Avec ton nez 👃"
+              "correctAnswer": "Avec ton nez"
+            }
+          ,
+            {
+              "question": "D'après la leçon \"Mes jolies mains\", complète : J'ai deux mains avec 5...",
+              "options": [
+                "J'ai deux mains avec 5 doigts sur chaque main",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "J'ai deux mains avec 5 doigts sur chaque main"
+            },
+            {
+              "question": "Est-il vrai que es jambes me permettent de marcher, de courir vite dans le parc et de sauter très haut comme un kangourou ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Sur mon visage, j'ai des yeux pour voir, un nez pour _____ bonnes odeurs et une bouche pour manger et rire\"",
+              "options": [
+                "sentir les",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "sentir les"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Mes jolies mains\" ?",
+              "options": [
+                "Elles me permettent de dessiner, d'attraper des jouets et de faire ...",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Elles me permettent de dessiner, d'attraper des jouets et de faire ..."
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Mes jambes agiles\" ?",
+              "options": [
+                "Mes jambes me permettent de marcher, de courir vite dans le parc et...",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Mes jambes me permettent de marcher, de courir vite dans le parc et..."
+            },
+            {
+              "question": "D'après la leçon \"Mon visage souriant\", complète : Sur mon visage, j'ai des...",
+              "options": [
+                "Sur mon visage, j'ai des yeux pour voir, un nez pour sentir les bonnes odeurs...",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Sur mon visage, j'ai des yeux pour voir, un nez pour sentir les bonnes odeurs..."
+            },
+            {
+              "question": "Est-il vrai que 'ai deux mains avec 5 doigts sur chaque main ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
             }
           ]
         },
@@ -5873,29 +7370,100 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Comment s'appelle l'ensemble de tous les os de ton corps ?",
               "options": [
-                "La peau 👤",
-                "Le squelette 🦴",
-                "Les muscles 💪"
+                "La peau",
+                "Le squelette",
+                "Les muscles"
               ],
-              "correctAnswer": "Le squelette 🦴"
+              "correctAnswer": "Le squelette"
             },
             {
               "question": "Que se passerait-il si nous n'avions pas d'os ?",
               "options": [
-                "Nous pourrions voler 🦅",
-                "Nous ne pourrions pas tenir debout et serions tout mous 🧸",
-                "Nous serions bleus 🔵"
+                "Nous pourrions voler",
+                "Nous ne pourrions pas tenir debout et serions tout mous",
+                "Nous serions bleus"
               ],
-              "correctAnswer": "Nous ne pourrions pas tenir debout et serions tout mous 🧸"
+              "correctAnswer": "Nous ne pourrions pas tenir debout et serions tout mous"
             },
             {
               "question": "Quel ingrédient aide à rendre tes os très solides ?",
               "options": [
-                "Le sucre des bonbons 🍬",
-                "Le calcium du lait 🥛",
-                "Le sel des frites 🍟"
+                "Le sucre des bonbons",
+                "Le calcium du lait",
+                "Le sel des frites"
               ],
-              "correctAnswer": "Le calcium du lait 🥛"
+              "correctAnswer": "Le calcium du lait"
+            }
+          ,
+            {
+              "question": "D'après la leçon \"Mon squelette dur\", complète : Sous ta peau toute douce,...",
+              "options": [
+                "Sous ta peau toute douce, tu as des os durs et blancs",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Sous ta peau toute douce, tu as des os durs et blancs"
+            },
+            {
+              "question": "Est-il vrai que e squelette protège tes organes mous (comme le cœur ou les poumons) et te permet de tenir debout bien droit sans t'écrouler par terre ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Pour faire grandir tes os et les rendre _____ ton corps a besoin de **calcium**\"",
+              "options": [
+                "très solides,",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "très solides,"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Mon squelette dur\" ?",
+              "options": [
+                "Tous tes os assemblés forment une structure solide appelée le **squ...",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Tous tes os assemblés forment une structure solide appelée le **squ..."
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Comme une maison !\" ?",
+              "options": [
+                "Le squelette protège tes organes mous (comme le cœur ou les poumons...",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Le squelette protège tes organes mous (comme le cœur ou les poumons..."
+            },
+            {
+              "question": "D'après la leçon \"Du bon lait\", complète : On en trouve beaucoup dans...",
+              "options": [
+                "On en trouve beaucoup dans le lait, les yaourts et le fromage",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "On en trouve beaucoup dans le lait, les yaourts et le fromage"
+            },
+            {
+              "question": "Est-il vrai que ous ta peau toute douce, tu as des os durs et blancs ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
             }
           ]
         },
@@ -5965,6 +7533,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Niveau 3"
             }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Les Muscles\" ?",
+              "options": [
+                "Cette leçon traite de Les Muscles",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Muscles"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Muscles\"",
+              "options": [
+                "de Les",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Les"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Les Muscles\" ?",
+              "options": [
+                "Cette leçon traite de Les Muscles",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Muscles"
+            }
           ]
         },
         {
@@ -6032,6 +7651,57 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 3"
               ],
               "correctAnswer": "Niveau 4"
+            }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : La Digestion\" ?",
+              "options": [
+                "Cette leçon traite de La Digestion",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de La Digestion"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Digestion\"",
+              "options": [
+                "de La",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de La"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : La Digestion\" ?",
+              "options": [
+                "Cette leçon traite de La Digestion",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de La Digestion"
             }
           ]
         },
@@ -6101,6 +7771,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Niveau 5"
             }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : La Respiration\" ?",
+              "options": [
+                "Cette leçon traite de La Respiration",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de La Respiration"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Respiration\"",
+              "options": [
+                "de La",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de La"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : La Respiration\" ?",
+              "options": [
+                "Cette leçon traite de La Respiration",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de La Respiration"
+            }
           ]
         },
         {
@@ -6168,6 +7889,57 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 5"
               ],
               "correctAnswer": "Niveau 6"
+            }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Le Cœur\" ?",
+              "options": [
+                "Cette leçon traite de Le Cœur",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Le Cœur"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Cœur\"",
+              "options": [
+                "de Le",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Le"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Le Cœur\" ?",
+              "options": [
+                "Cette leçon traite de Le Cœur",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Le Cœur"
             }
           ]
         },
@@ -6237,6 +8009,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Niveau 7"
             }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Le Cerveau\" ?",
+              "options": [
+                "Cette leçon traite de Le Cerveau",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Le Cerveau"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Cerveau\"",
+              "options": [
+                "de Le",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Le"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Le Cerveau\" ?",
+              "options": [
+                "Cette leçon traite de Le Cerveau",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Le Cerveau"
+            }
           ]
         },
         {
@@ -6304,6 +8127,57 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 7"
               ],
               "correctAnswer": "Niveau 8"
+            }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Le Sommeil\" ?",
+              "options": [
+                "Cette leçon traite de Le Sommeil",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Le Sommeil"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Sommeil\"",
+              "options": [
+                "de Le",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Le"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Le Sommeil\" ?",
+              "options": [
+                "Cette leçon traite de Le Sommeil",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Le Sommeil"
             }
           ]
         },
@@ -6373,6 +8247,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Niveau 9"
             }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Les Dents\" ?",
+              "options": [
+                "Cette leçon traite de Les Dents",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Dents"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Dents\"",
+              "options": [
+                "de Les",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Les"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Les Dents\" ?",
+              "options": [
+                "Cette leçon traite de Les Dents",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Dents"
+            }
           ]
         },
         {
@@ -6441,6 +8366,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Niveau 10"
             }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Les Globules Rouges\" ?",
+              "options": [
+                "Cette leçon traite de Les Globules Rouges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Globules Rouges"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Globules Rouges\"",
+              "options": [
+                "de Les",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Les"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Les Globules Rouges\" ?",
+              "options": [
+                "Cette leçon traite de Les Globules Rouges",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Globules Rouges"
+            }
           ]
         }
       ],
@@ -6484,47 +8460,98 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Où commence le processus de digestion des aliments ?",
               "options": [
-                "Dans l'estomac 🥣",
-                "Dans la bouche 👄",
-                "Dans l'intestin grêle 🌀"
+                "Dans l'estomac",
+                "Dans la bouche",
+                "Dans l'intestin grêle"
               ],
-              "correctAnswer": "Dans la bouche 👄"
+              "correctAnswer": "Dans la bouche"
             },
             {
               "question": "Quel organe utilise des acides pour dissoudre les aliments en bouillie ?",
               "options": [
-                "L'estomac 🧪",
-                "Les poumons 🫁",
-                "Le cœur ❤️"
+                "L'estomac",
+                "Les poumons",
+                "Le cœur"
               ],
-              "correctAnswer": "L'estomac 🧪"
+              "correctAnswer": "L'estomac"
             },
             {
               "question": "À quoi sert principalement l'intestin grêle ?",
               "options": [
-                "À fabriquer de l'air pour parler 🗣️",
-                "À filtrer les nutriments pour les envoyer dans le sang 💪",
-                "À stocker l'eau froide 🥤"
+                "À fabriquer de l'air pour parler",
+                "À filtrer les nutriments pour les envoyer dans le sang",
+                "À stocker l'eau froide"
               ],
-              "correctAnswer": "À filtrer les nutriments pour les envoyer dans le sang 💪"
+              "correctAnswer": "À filtrer les nutriments pour les envoyer dans le sang"
             },
             {
               "question": "Quel liquide sécrété par le foie permet de digérer les graisses ?",
               "options": [
-                "L'acide gastrique 🧪",
-                "La bile 🧪",
-                "La salive 👄"
+                "L'acide gastrique",
+                "La bile",
+                "La salive"
               ],
-              "correctAnswer": "La bile 🧪"
+              "correctAnswer": "La bile"
             },
             {
               "question": "Qu'est-ce que le microbiote intestinal ?",
               "options": [
-                "De petites cellules musculaires 💪",
-                "Des milliards de bonnes bactéries qui aident à digérer 🦠",
-                "Des petits os dans l'intestin 🦴"
+                "De petites cellules musculaires",
+                "Des milliards de bonnes bactéries qui aident à digérer",
+                "Des petits os dans l'intestin"
               ],
-              "correctAnswer": "Des milliards de bonnes bactéries qui aident à digérer 🦠"
+              "correctAnswer": "Des milliards de bonnes bactéries qui aident à digérer"
+            }
+          ,
+            {
+              "question": "Que dit la leçon sur \"1. La bouche et l'œsophage\" ?",
+              "options": [
+                "La digestion commence dans la bouche",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "La digestion commence dans la bouche"
+            },
+            {
+              "question": "Est-il vrai que 'est une poche musculaire remplie de jus très acides qui dissolvent les aliments en une bouillie liquide ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette bouillie passe _____ grêle\"",
+              "options": [
+                "dans l'intestin",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "dans l'intestin"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"4. Le foie et le pancréas\" ?",
+              "options": [
+                "Le foie fabrique la bile pour digérer les graisses, et le pancréas ...",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Le foie fabrique la bile pour digérer les graisses, et le pancréas ..."
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"5. Le microbiote intestinal\" ?",
+              "options": [
+                "Ton gros intestin abrite des milliards de bonnes bactéries appelées...",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Ton gros intestin abrite des milliards de bonnes bactéries appelées..."
             }
           ]
         },
@@ -6567,47 +8594,98 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Quel organe commande les mouvements, gère les émotions et enregistre les souvenirs ?",
               "options": [
-                "Le cœur ❤️",
-                "Le cerveau 🧠",
-                "L'estomac 🥣"
+                "Le cœur",
+                "Le cerveau",
+                "L'estomac"
               ],
-              "correctAnswer": "Le cerveau 🧠"
+              "correctAnswer": "Le cerveau"
             },
             {
               "question": "Comment s'appellent les petits filaments électriques qui relient le cerveau au reste du corps ?",
               "options": [
-                "Les cheveux 💇",
-                "Les os 🦴",
-                "Les nerfs ⚡"
+                "Les cheveux",
+                "Les os",
+                "Les nerfs"
               ],
-              "correctAnswer": "Les nerfs ⚡"
+              "correctAnswer": "Les nerfs"
             },
             {
               "question": "Que fait le cerveau pendant que tu es en train de dormir la nuit ?",
               "options": [
-                "Il s'éteint complètement comme un téléphone 📴",
-                "Il trie les souvenirs de la journée et gère la mémoire 💤💾",
-                "Il nettoie les oreilles 👂"
+                "Il s'éteint complètement comme un téléphone",
+                "Il trie les souvenirs de la journée et gère la mémoire",
+                "Il nettoie les oreilles"
               ],
-              "correctAnswer": "Il trie les souvenirs de la journée et gère la mémoire 💤💾"
+              "correctAnswer": "Il trie les souvenirs de la journée et gère la mémoire"
             },
             {
               "question": "Comment s'appellent les cellules nerveuses du cerveau et leurs points de contact ?",
               "options": [
-                "Les neurones et les synapses 🔬",
-                "Les globules rouges et blancs 🩸",
-                "Les muscles et les tendons 💪"
+                "Les neurones et les synapses",
+                "Les globules rouges et blancs",
+                "Les muscles et les tendons"
               ],
-              "correctAnswer": "Les neurones et les synapses 🔬"
+              "correctAnswer": "Les neurones et les synapses"
             },
             {
               "question": "Lequel des hémisphères s'occupe principalement de la logique, du calcul et du langage ?",
               "options": [
-                "L'hémisphère droit 🎨",
-                "L'hémisphère gauche 🔢",
-                "L'hémisphère arrière 💤"
+                "L'hémisphère droit",
+                "L'hémisphère gauche",
+                "L'hémisphère arrière"
               ],
-              "correctAnswer": "L'hémisphère gauche 🔢"
+              "correctAnswer": "L'hémisphère gauche"
+            }
+          ,
+            {
+              "question": "D'après la leçon \"Le centre de contrôle\", complète : Le **cerveau** est installé dans...",
+              "options": [
+                "Le **cerveau** est installé dans ton crâne qui le protège comme un casque",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Le **cerveau** est installé dans ton crâne qui le protège comme un casque"
+            },
+            {
+              "question": "Est-il vrai que e cerveau envoie et reçoit des messages électriques ultra-rapides en utilisant des câbles microscopiques dans tout ton corps : les **nerfs** ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Pendant que tu dors _____ cerveau reste actif\"",
+              "options": [
+                "profondément, ton",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "profondément, ton"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Les neurones et synapses\" ?",
+              "options": [
+                "Elles communiquent entre elles grâce à des connexions appelées **sy...",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Elles communiquent entre elles grâce à des connexions appelées **sy..."
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Deux hémisphères\" ?",
+              "options": [
+                "Le cerveau est séparé en deux moitiés : l'hémisphère gauche (très l...",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Le cerveau est séparé en deux moitiés : l'hémisphère gauche (très l..."
             }
           ]
         },
@@ -7564,92 +9642,92 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Quel type de molécule biologique accélère la décomposition chimique de notre nourriture ?",
               "options": [
-                "Les vitamines 💊",
-                "Les hormones 🧪",
-                "Les enzymes 🧬"
+                "Les vitamines",
+                "Les hormones",
+                "Les enzymes"
               ],
-              "correctAnswer": "Les enzymes 🧬"
+              "correctAnswer": "Les enzymes"
             },
             {
               "question": "Quelle enzyme salivaire commence la digestion de l'amidon dans la bouche ?",
               "options": [
-                "La pepsine 🧬",
-                "L'amylase 🧬",
-                "La lipase 🧬"
+                "La pepsine",
+                "L'amylase",
+                "La lipase"
               ],
-              "correctAnswer": "L'amylase 🧬"
+              "correctAnswer": "L'amylase"
             },
             {
               "question": "Où se trouve le duodénum dans le système digestif ?",
               "options": [
-                "Au début de l'intestin grêle 🌀",
-                "À l'entrée de l'estomac 🥣",
-                "Dans le gros intestin 🦠"
+                "Au début de l'intestin grêle",
+                "À l'entrée de l'estomac",
+                "Dans le gros intestin"
               ],
-              "correctAnswer": "Au début de l'intestin grêle 🌀"
+              "correctAnswer": "Au début de l'intestin grêle"
             },
             {
               "question": "Quel liquide produit par le foie émulsionne les graisses dans le duodénum ?",
               "options": [
-                "L'acide chlorhydrique 🧪",
-                "La salive 👄",
-                "La bile 🧪"
+                "L'acide chlorhydrique",
+                "La salive",
+                "La bile"
               ],
-              "correctAnswer": "La bile 🧪"
+              "correctAnswer": "La bile"
             },
             {
               "question": "Pourquoi l'intestin grêle est-il tapissé de millions de villosités microscopiques ?",
               "options": [
-                "Pour empêcher le passage des aliments 🚫",
-                "Pour augmenter la surface d'absorption des nutriments 💪🔬",
-                "Pour fabriquer des vitamines 💊"
+                "Pour empêcher le passage des aliments",
+                "Pour augmenter la surface d'absorption des nutriments",
+                "Pour fabriquer des vitamines"
               ],
-              "correctAnswer": "Pour augmenter la surface d'absorption des nutriments 💪🔬"
+              "correctAnswer": "Pour augmenter la surface d'absorption des nutriments"
             },
             {
               "question": "Quel vaisseau sanguin conduit le sang chargé de nutriments des intestins au foie ?",
               "options": [
-                "L'artère aorte 🩸",
-                "La veine porte hépatique 🩸",
-                "La veine cave supérieure 🩸"
+                "L'artère aorte",
+                "La veine porte hépatique",
+                "La veine cave supérieure"
               ],
-              "correctAnswer": "La veine porte hépatique 🩸"
+              "correctAnswer": "La veine porte hépatique"
             },
             {
               "question": "Sous quelle forme chimique le glucose est-il stocké dans le foie ?",
               "options": [
-                "Le saccharose 🍬",
-                "Le glycogène 🩸",
-                "Les acides gras 🥩"
+                "Le saccharose",
+                "Le glycogène",
+                "Les acides gras"
               ],
-              "correctAnswer": "Le glycogène 🩸"
+              "correctAnswer": "Le glycogène"
             },
             {
               "question": "Qu'est-ce que le microbiote intestinal ?",
               "options": [
-                "Un ensemble de petits muscles digestifs 💪",
-                "Des milliards de micro-organismes vivant en symbiose dans le côlon 🦠",
-                "Un groupe d'hormones 🧪"
+                "Un ensemble de petits muscles digestifs",
+                "Des milliards de micro-organismes vivant en symbiose dans le côlon",
+                "Un groupe d'hormones"
               ],
-              "correctAnswer": "Des milliards de micro-organismes vivant en symbiose dans le côlon 🦠"
+              "correctAnswer": "Des milliards de micro-organismes vivant en symbiose dans le côlon"
             },
             {
               "question": "Quelle vitamine importante pour la coagulation sanguine est produite par notre microbiote ?",
               "options": [
-                "La vitamine C 🍋",
-                "La vitamine K 🥦",
-                "La vitamine D ☀️"
+                "La vitamine C",
+                "La vitamine K",
+                "La vitamine D"
               ],
-              "correctAnswer": "La vitamine K 🥦"
+              "correctAnswer": "La vitamine K"
             },
             {
               "question": "Quelle substance sécrétée par le pancréas neutralise l'acidité du chyme stomacal ?",
               "options": [
-                "Le bicarbonate de sodium 🧪",
-                "L'insuline 🧪",
-                "La bile 🧪"
+                "Le bicarbonate de sodium",
+                "L'insuline",
+                "La bile"
               ],
-              "correctAnswer": "Le bicarbonate de sodium 🧪",
+              "correctAnswer": "Le bicarbonate de sodium",
               "isSpecial": true
             }
           ]
@@ -7693,92 +9771,92 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Quelles parties forment le Système Nerveux Central ?",
               "options": [
-                "Le cœur et les artères 🩸",
-                "L'encéphale et la moelle épinière 🧠",
-                "Les nerfs et les récepteurs sensoriels ⚡"
+                "Le cœur et les artères",
+                "L'encéphale et la moelle épinière",
+                "Les nerfs et les récepteurs sensoriels"
               ],
-              "correctAnswer": "L'encéphale et la moelle épinière 🧠"
+              "correctAnswer": "L'encéphale et la moelle épinière"
             },
             {
               "question": "Quel prolongement ramifié du neurone reçoit les messages des autres cellules ?",
               "options": [
-                "L'axone ⚡",
-                "La dendrite 🔬",
-                "La gaine de myéline 🧠"
+                "L'axone",
+                "La dendrite",
+                "La gaine de myéline"
               ],
-              "correctAnswer": "La dendrite 🔬"
+              "correctAnswer": "La dendrite"
             },
             {
               "question": "Quelle gaine isolante accélère l'influx électrique le long de l'axone ?",
               "options": [
-                "La myéline ⚡",
-                "La chitine 🕷️",
-                "Le collagène 🦴"
+                "La myéline",
+                "La chitine",
+                "Le collagène"
               ],
-              "correctAnswer": "La myéline ⚡"
+              "correctAnswer": "La myéline"
             },
             {
               "question": "Comment appelle-t-on l'espace microscopique de connexion entre deux neurones ?",
               "options": [
-                "La synapse 🔬",
-                "Le neurone 🧠",
-                "Le noyau 🧬"
+                "La synapse",
+                "Le neurone",
+                "Le noyau"
               ],
-              "correctAnswer": "La synapse 🔬"
+              "correctAnswer": "La synapse"
             },
             {
               "question": "Quelles molécules chimiques transmettent le signal d'un neurone à l'autre ?",
               "options": [
-                "Les enzymes 🧬",
-                "Les neurotransmetteurs 🧪",
-                "Les phéromones 🧪"
+                "Les enzymes",
+                "Les neurotransmetteurs",
+                "Les phéromones"
               ],
-              "correctAnswer": "Les neurotransmetteurs 🧪"
+              "correctAnswer": "Les neurotransmetteurs"
             },
             {
               "question": "Quel lobe du cortex cérébral est dédié au traitement de la vision ?",
               "options": [
-                "Le lobe frontal 🧠",
-                "Le lobe temporal 🧠",
-                "Le lobe occipital 🧠"
+                "Le lobe frontal",
+                "Le lobe temporal",
+                "Le lobe occipital"
               ],
-              "correctAnswer": "Le lobe occipital 🧠"
+              "correctAnswer": "Le lobe occipital"
             },
             {
               "question": "Quelle zone du cerveau gère le raisonnement, la motricité et le contrôle des émotions ?",
               "options": [
-                "Le lobe frontal 🧠",
-                "Le lobe occipital 👀",
-                "La moelle épinière 🦴"
+                "Le lobe frontal",
+                "Le lobe occipital",
+                "La moelle épinière"
               ],
-              "correctAnswer": "Le lobe frontal 🧠"
+              "correctAnswer": "Le lobe frontal"
             },
             {
               "question": "Qu'est-ce que la plasticité cérébrale ?",
               "options": [
-                "La déformation du crâne lors d'un choc 🦴",
-                "La capacité du cerveau à remodeler ses connexions en fonction de l'apprentissage 🧠✨",
-                "La fabrication de cellules artificielles 🔬"
+                "La déformation du crâne lors d'un choc",
+                "La capacité du cerveau à remodeler ses connexions en fonction de l'apprentissage",
+                "La fabrication de cellules artificielles"
               ],
-              "correctAnswer": "La capacité du cerveau à remodeler ses connexions en fonction de l'apprentissage 🧠✨"
+              "correctAnswer": "La capacité du cerveau à remodeler ses connexions en fonction de l'apprentissage"
             },
             {
               "question": "À quelle vitesse maximale l'influx électrique peut-il voyager le long d'un axone myélinisé ?",
               "options": [
-                "1 mètre par seconde 🚶‍♂️",
-                "10 mètres par seconde 🏃‍♂️",
-                "120 mètres par seconde ⚡"
+                "1 mètre par seconde",
+                "10 mètres par seconde",
+                "120 mètres par seconde"
               ],
-              "correctAnswer": "120 mètres par seconde ⚡"
+              "correctAnswer": "120 mètres par seconde"
             },
             {
               "question": "Quel neurotransmetteur célèbre est associé au circuit de la récompense et du plaisir ?",
               "options": [
-                "L'adrénaline 🧪",
-                "La dopamine 🧪",
-                "La mélatonine 💤"
+                "L'adrénaline",
+                "La dopamine",
+                "La mélatonine"
               ],
-              "correctAnswer": "La dopamine 🧪",
+              "correctAnswer": "La dopamine",
               "isSpecial": true
             }
           ]
@@ -7822,92 +9900,92 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Quelle partie du cœur propulse le sang oxygéné dans la grande circulation (artère aorte) ?",
               "options": [
-                "L'oreillette droite 🩸",
-                "Le ventricule gauche ❤️",
-                "Le ventricule droit 🩸"
+                "L'oreillette droite",
+                "Le ventricule gauche",
+                "Le ventricule droit"
               ],
-              "correctAnswer": "Le ventricule gauche ❤️"
+              "correctAnswer": "Le ventricule gauche"
             },
             {
               "question": "Comment appelle-t-il la phase de relâchement du cœur pendant laquelle il se remplit de sang ?",
               "options": [
-                "La systole ⚡",
-                "La diastole 💤",
-                "L'hématose 🫁"
+                "La systole",
+                "La diastole",
+                "L'hématose"
               ],
-              "correctAnswer": "La diastole 💤"
+              "correctAnswer": "La diastole"
             },
             {
               "question": "Quel vaisseau sanguin ramène le sang vers le cœur à faible pression ?",
               "options": [
-                "L'artère 🩸",
-                "La veine 🩸",
-                "Le capillaire 🔬"
+                "L'artère",
+                "La veine",
+                "Le capillaire"
               ],
-              "correctAnswer": "La veine 🩸"
+              "correctAnswer": "La veine"
             },
             {
               "question": "Où se déroulent précisément les échanges gazeux entre l'air inspiré et le sang ?",
               "options": [
-                "Dans la trachée 🌬️",
-                "Dans les bronches 🌬️",
-                "Dans les alvéoles pulmonaires 🫁"
+                "Dans la trachée",
+                "Dans les bronches",
+                "Dans les alvéoles pulmonaires"
               ],
-              "correctAnswer": "Dans les alvéoles pulmonaires 🫁"
+              "correctAnswer": "Dans les alvéoles pulmonaires"
             },
             {
               "question": "Dans quels organites des cellules s'effectue la respiration cellulaire productrice d'énergie ?",
               "options": [
-                "Les mitochondries 🔋",
-                "Les chloroplastes 🍃",
-                "Les synapses 🔬"
+                "Les mitochondries",
+                "Les chloroplastes",
+                "Les synapses"
               ],
-              "correctAnswer": "Les mitochondries 🔋"
+              "correctAnswer": "Les mitochondries"
             },
             {
               "question": "Quel nom porte le muscle principal du cœur ?",
               "options": [
-                "Le biceps 💪",
-                "Le myocarde ❤️",
-                "Le diaphragme 🫁"
+                "Le biceps",
+                "Le myocarde",
+                "Le diaphragme"
               ],
-              "correctAnswer": "Le myocarde ❤️"
+              "correctAnswer": "Le myocarde"
             },
             {
               "question": "Quel rôle jouent les valvules présentes à l'intérieur des veines ?",
               "options": [
-                "Elles augmentent la pression du sang ⚡",
-                "Elles forcent le sang à circuler dans un seul sens vers le cœur (anti-reflux) 🩸",
-                "Elles filtrent les déchets 🦠"
+                "Elles augmentent la pression du sang",
+                "Elles forcent le sang à circuler dans un seul sens vers le cœur (anti-reflux)",
+                "Elles filtrent les déchets"
               ],
-              "correctAnswer": "Elles forcent le sang à circuler dans un seul sens vers le cœur (anti-reflux) 🩸"
+              "correctAnswer": "Elles forcent le sang à circuler dans un seul sens vers le cœur (anti-reflux)"
             },
             {
               "question": "Qu'est-ce que l'hématose ?",
               "options": [
-                "La fabrication de globules rouges par la moelle osseuse 🦴",
-                "L'échange gazeux au niveau des alvéoles chargeant le sang en oxygène 🫁",
-                "La contraction des ventricules ⚡"
+                "La fabrication de globules rouges par la moelle osseuse",
+                "L'échange gazeux au niveau des alvéoles chargeant le sang en oxygène",
+                "La contraction des ventricules"
               ],
-              "correctAnswer": "L'échange gazeux au niveau des alvéoles chargeant le sang en oxygène 🫁"
+              "correctAnswer": "L'échange gazeux au niveau des alvéoles chargeant le sang en oxygène"
             },
             {
               "question": "Quel déchet gazeux est produit par la respiration cellulaire et éliminé par l'expiration ?",
               "options": [
-                "Le dioxygène (O2) 💨",
-                "Le dioxyde de carbone (CO2) 🧪",
-                "L'azote 💨"
+                "Le dioxygène (O2)",
+                "Le dioxyde de carbone (CO2)",
+                "L'azote"
               ],
-              "correctAnswer": "Le dioxyde de carbone (CO2) 🧪"
+              "correctAnswer": "Le dioxyde de carbone (CO2)"
             },
             {
               "question": "Quelle artère majeure quitte le ventricule gauche pour distribuer le sang oxygéné aux organes ?",
               "options": [
-                "L'artère pulmonaire 🩸",
-                "L'artère aorte 🩸",
-                "La veine porte hépatique 🩸"
+                "L'artère pulmonaire",
+                "L'artère aorte",
+                "La veine porte hépatique"
               ],
-              "correctAnswer": "L'artère aorte 🩸"
+              "correctAnswer": "L'artère aorte"
             }
           ]
         },
@@ -8749,29 +10827,100 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Quel astre nous éclaire et nous réchauffe pendant la journée ?",
               "options": [
-                "La Lune 🌙",
-                "Le Soleil ☀️",
-                "Un nuage ☁️"
+                "La Lune",
+                "Le Soleil",
+                "Un nuage"
               ],
-              "correctAnswer": "Le Soleil ☀️"
+              "correctAnswer": "Le Soleil"
             },
             {
               "question": "Quand peut-on voir briller la Lune et les étoiles dans le ciel ?",
               "options": [
-                "Pendant la nuit 🌃",
-                "Au milieu de l'après-midi ☀️",
-                "Sous la douche 🚿"
+                "Pendant la nuit",
+                "Au milieu de l'après-midi",
+                "Sous la douche"
               ],
-              "correctAnswer": "Pendant la nuit 🌃"
+              "correctAnswer": "Pendant la nuit"
             },
             {
               "question": "Quelle forme peut prendre la Lune dans le ciel ?",
               "options": [
-                "Un carré 🟩",
-                "Un triangle 🔺",
-                "Un croissant ou un rond complet 🌙"
+                "Un carré",
+                "Un triangle",
+                "Un croissant ou un rond complet"
               ],
-              "correctAnswer": "Un croissant ou un rond complet 🌙"
+              "correctAnswer": "Un croissant ou un rond complet"
+            }
+          ,
+            {
+              "question": "D'après la leçon \"Le grand Soleil chaud\", complète : Le Soleil est une énorme...",
+              "options": [
+                "Le Soleil est une énorme boule de feu dans le ciel",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Le Soleil est une énorme boule de feu dans le ciel"
+            },
+            {
+              "question": "Est-il vrai que arfois elle est toute ronde comme un ballon, parfois elle ressemble à un petit croissant doré ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"La nuit, le ciel se remplit de milliers de points _____ ce sont les étoiles, de lointains soleils très mystérieux\"",
+              "options": [
+                "brillants :",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "brillants :"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le grand Soleil chaud\" ?",
+              "options": [
+                "Il brille le jour, nous éclaire et nous réchauffe tout au long de l...",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Il brille le jour, nous éclaire et nous réchauffe tout au long de l..."
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"La Lune argentée\" ?",
+              "options": [
+                "La Lune apparaît la nuit",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "La Lune apparaît la nuit"
+            },
+            {
+              "question": "D'après la leçon \"Les petites Étoiles\", complète : La nuit, le ciel se...",
+              "options": [
+                "La nuit, le ciel se remplit de milliers de points brillants : ce sont les éto...",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "La nuit, le ciel se remplit de milliers de points brillants : ce sont les éto..."
+            },
+            {
+              "question": "Est-il vrai que e soleil est une énorme boule de feu dans le ciel ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
             }
           ]
         },
@@ -8804,29 +10953,100 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "De quelle couleur est la planète Mars dans l'espace ?",
               "options": [
-                "Vert fluo 💚",
-                "Bleu marine 🔵",
-                "Rouge orangé 🔴"
+                "Vert fluo",
+                "Bleu marine",
+                "Rouge orangé"
               ],
-              "correctAnswer": "Rouge orangé 🔴"
+              "correctAnswer": "Rouge orangé"
             },
             {
               "question": "Quelle planète brille comme un océan tout bleu ?",
               "options": [
-                "Mars 🔴",
-                "Neptune 🔵",
-                "Le Soleil ☀️"
+                "Mars",
+                "Neptune",
+                "Le Soleil"
               ],
-              "correctAnswer": "Neptune 🔵"
+              "correctAnswer": "Neptune"
             },
             {
               "question": "De quelle couleur est notre grand Soleil qui brille ?",
               "options": [
-                "Jaune éclatant 🟡",
+                "Jaune éclatant",
                 "Noir ⬛",
-                "Rose 💗"
+                "Rose"
               ],
-              "correctAnswer": "Jaune éclatant 🟡"
+              "correctAnswer": "Jaune éclatant"
+            }
+          ,
+            {
+              "question": "D'après la leçon \"Le Soleil brillant\", complète : Notre **Soleil** est une étoile...",
+              "options": [
+                "Notre **Soleil** est une étoile géante qui brille d'un jaune très lumineux da...",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Notre **Soleil** est une étoile géante qui brille d'un jaune très lumineux da..."
+            },
+            {
+              "question": "Est-il vrai que n l'appelle la planète rouge ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"La planète **Neptune** est _____ éloignée et glacée\"",
+              "options": [
+                "très très",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "très très"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le Soleil brillant\" ?",
+              "options": [
+                "Notre **Soleil** est une étoile géante qui brille d'un jaune très l...",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Notre **Soleil** est une étoile géante qui brille d'un jaune très l..."
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Mars, la rouge\" ?",
+              "options": [
+                "La planète **Mars** est toute recouverte de sable et de roches de c...",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "La planète **Mars** est toute recouverte de sable et de roches de c..."
+            },
+            {
+              "question": "D'après la leçon \"Neptune, la bleue\", complète : Elle apparaît d'un joli bleu...",
+              "options": [
+                "Elle apparaît d'un joli bleu foncé comme l'océan 🔵",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Elle apparaît d'un joli bleu foncé comme l'océan 🔵"
+            },
+            {
+              "question": "Est-il vrai que otre **soleil** est une étoile géante qui brille d'un jaune très lumineux dans le ciel 🟡 ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
             }
           ]
         },
@@ -8896,6 +11116,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Niveau 3"
             }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : La Terre\" ?",
+              "options": [
+                "Cette leçon traite de La Terre",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de La Terre"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Terre\"",
+              "options": [
+                "de La",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de La"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : La Terre\" ?",
+              "options": [
+                "Cette leçon traite de La Terre",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de La Terre"
+            }
           ]
         },
         {
@@ -8963,6 +11234,57 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 3"
               ],
               "correctAnswer": "Niveau 4"
+            }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Mars\" ?",
+              "options": [
+                "Cette leçon traite de Mars",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Mars"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète cette information : \"Cette leçon t...\"",
+              "options": [
+                "raite de Mars",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "raite de Mars"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Mars\" ?",
+              "options": [
+                "Cette leçon traite de Mars",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Mars"
             }
           ]
         },
@@ -9032,6 +11354,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Niveau 5"
             }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Jupiter\" ?",
+              "options": [
+                "Cette leçon traite de Jupiter",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Jupiter"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète cette information : \"Cette leçon tr...\"",
+              "options": [
+                "aite de Jupiter",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "aite de Jupiter"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Jupiter\" ?",
+              "options": [
+                "Cette leçon traite de Jupiter",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Jupiter"
+            }
           ]
         },
         {
@@ -9099,6 +11472,57 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 5"
               ],
               "correctAnswer": "Niveau 6"
+            }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Saturne\" ?",
+              "options": [
+                "Cette leçon traite de Saturne",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Saturne"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète cette information : \"Cette leçon tr...\"",
+              "options": [
+                "aite de Saturne",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "aite de Saturne"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Saturne\" ?",
+              "options": [
+                "Cette leçon traite de Saturne",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Saturne"
             }
           ]
         },
@@ -9168,6 +11592,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Niveau 7"
             }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Les Étoiles\" ?",
+              "options": [
+                "Cette leçon traite de Les Étoiles",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Étoiles"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Étoiles\"",
+              "options": [
+                "de Les",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Les"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Les Étoiles\" ?",
+              "options": [
+                "Cette leçon traite de Les Étoiles",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Étoiles"
+            }
           ]
         },
         {
@@ -9235,6 +11710,57 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 7"
               ],
               "correctAnswer": "Niveau 8"
+            }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Les Fusées\" ?",
+              "options": [
+                "Cette leçon traite de Les Fusées",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Fusées"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Fusées\"",
+              "options": [
+                "de Les",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Les"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Les Fusées\" ?",
+              "options": [
+                "Cette leçon traite de Les Fusées",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Fusées"
             }
           ]
         },
@@ -9304,6 +11830,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Niveau 9"
             }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : La Gravité\" ?",
+              "options": [
+                "Cette leçon traite de La Gravité",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de La Gravité"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Gravité\"",
+              "options": [
+                "de La",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de La"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : La Gravité\" ?",
+              "options": [
+                "Cette leçon traite de La Gravité",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de La Gravité"
+            }
           ]
         },
         {
@@ -9372,6 +11949,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Niveau 10"
             }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Les Galaxies\" ?",
+              "options": [
+                "Cette leçon traite de Les Galaxies",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Galaxies"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Galaxies\"",
+              "options": [
+                "de Les",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Les"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Les Galaxies\" ?",
+              "options": [
+                "Cette leçon traite de Les Galaxies",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Galaxies"
+            }
           ]
         }
       ],
@@ -9415,47 +12043,98 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Combien de planètes tournent autour de notre Soleil ?",
               "options": [
-                "5 planètes 🛰️",
-                "8 planètes 🪐",
-                "12 planètes 🌌"
+                "5 planètes",
+                "8 planètes",
+                "12 planètes"
               ],
-              "correctAnswer": "8 planètes 🪐"
+              "correctAnswer": "8 planètes"
             },
             {
               "question": "Quelles sont les planètes rocheuses les plus proches du Soleil ?",
               "options": [
-                "Mercure, Vénus, Terre et Mars 🌍",
-                "Jupiter, Saturne, Uranus et Neptune 🪐",
-                "La Lune et le Soleil ☀️"
+                "Mercure, Vénus, Terre et Mars",
+                "Jupiter, Saturne, Uranus et Neptune",
+                "La Lune et le Soleil"
               ],
-              "correctAnswer": "Mercure, Vénus, Terre et Mars 🌍"
+              "correctAnswer": "Mercure, Vénus, Terre et Mars"
             },
             {
               "question": "Quelle planète géante possède les anneaux les plus visibles et impressionnants ?",
               "options": [
-                "Mars 🔴",
-                "La Terre 🌍",
-                "Saturne 🪐"
+                "Mars",
+                "La Terre",
+                "Saturne"
               ],
-              "correctAnswer": "Saturne 🪐"
+              "correctAnswer": "Saturne"
             },
             {
               "question": "Où se situe principalement la ceinture d'astéroïdes dans notre système solaire ?",
               "options": [
-                "Entre la Terre et la Lune 🌑",
-                "Entre Mars et Jupiter ☄️",
-                "Autour de Neptune 🌀"
+                "Entre la Terre et la Lune",
+                "Entre Mars et Jupiter",
+                "Autour de Neptune"
               ],
-              "correctAnswer": "Entre Mars et Jupiter ☄️"
+              "correctAnswer": "Entre Mars et Jupiter"
             },
             {
               "question": "Quelle force maintient les planètes en orbite stable autour du Soleil ?",
               "options": [
-                "La force magnétique 🧲",
-                "La force de gravité 🪐",
-                "Le vent solaire 💨"
+                "La force magnétique",
+                "La force de gravité",
+                "Le vent solaire"
               ],
-              "correctAnswer": "La force de gravité 🪐"
+              "correctAnswer": "La force de gravité"
+            }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Notre étoile : Le Soleil\" ?",
+              "options": [
+                "Le Soleil est au centre",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Le Soleil est au centre"
+            },
+            {
+              "question": "Est-il vrai que es 4 planètes les plus proches du soleil sont faites de roche : mercure, vénus, la terre (couverte d'eau) et mars (couverte de fer rouillé) ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Les 4 planètes les plus éloignées sont géantes et faites de gaz _____ (la plus grande), Saturne (avec ses magnifiques anneaux), Uranus et Neptune\"",
+              "options": [
+                ": Jupiter",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": ": Jupiter"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"La ceinture d'astéroïdes\" ?",
+              "options": [
+                "Entre Mars et Jupiter se trouve la ceinture d'astéroïdes : des mill...",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Entre Mars et Jupiter se trouve la ceinture d'astéroïdes : des mill..."
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"La force de gravité\" ?",
+              "options": [
+                "Pourquoi tout tourne sans s'envoler",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Pourquoi tout tourne sans s'envoler"
             }
           ]
         },
@@ -9498,47 +12177,98 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Où naissent les étoiles dans l'univers ?",
               "options": [
-                "Dans des volcans spatiaux 🌋",
-                "Dans des nuages de gaz appelés nébuleuses 🌌",
-                "Au cœur des trous noirs 🕳️"
+                "Dans des volcans spatiaux",
+                "Dans des nuages de gaz appelés nébuleuses",
+                "Au cœur des trous noirs"
               ],
-              "correctAnswer": "Dans des nuages de gaz appelés nébuleuses 🌌"
+              "correctAnswer": "Dans des nuages de gaz appelés nébuleuses"
             },
             {
               "question": "Quel âge a environ notre Soleil actuellement ?",
               "options": [
-                "2000 ans 🗓️",
-                "4,5 milliards d'années ☀️",
-                "90 milliards d'années 📅"
+                "2000 ans",
+                "4,5 milliards d'années",
+                "90 milliards d'années"
               ],
-              "correctAnswer": "4,5 milliards d'années ☀️"
+              "correctAnswer": "4,5 milliards d'années"
             },
             {
               "question": "Pourquoi rien ne peut s'échapper d'un Trou Noir, pas même la lumière ?",
               "options": [
-                "Parce qu'il y fait trop noir 🌃",
-                "Parce que sa force d'attraction (gravité) est incroyablement forte et dense 🕳️⚡",
-                "Parce qu'il est fermé à clé 🔑"
+                "Parce qu'il y fait trop noir",
+                "Parce que sa force d'attraction (gravité) est incroyablement forte et dense",
+                "Parce qu'il est fermé à clé"
               ],
-              "correctAnswer": "Parce que sa force d'attraction (gravité) est incroyablement forte et dense 🕳️⚡"
+              "correctAnswer": "Parce que sa force d'attraction (gravité) est incroyablement forte et dense"
             },
             {
               "question": "Quelle réaction chimique au cœur des étoiles produit leur lumière et leur chaleur ?",
               "options": [
-                "La combustion classique 🔥",
-                "La fusion nucléaire 🔬",
-                "La photosynthèse stellaire 🍃"
+                "La combustion classique",
+                "La fusion nucléaire",
+                "La photosynthèse stellaire"
               ],
-              "correctAnswer": "La fusion nucléaire 🔬"
+              "correctAnswer": "La fusion nucléaire"
             },
             {
               "question": "Comment s'appelle la gigantesque explosion marquant la mort d'une étoile massive ?",
               "options": [
-                "Une comète filante ☄️",
-                "Une supernova 💥",
-                "Une éclipse totale 🌑"
+                "Une comète filante",
+                "Une supernova",
+                "Une éclipse totale"
               ],
-              "correctAnswer": "Une supernova 💥"
+              "correctAnswer": "Une supernova"
+            }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Les crèches d'étoiles\" ?",
+              "options": [
+                "Les étoiles ne sont pas éternelles",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Les étoiles ne sont pas éternelles"
+            },
+            {
+              "question": "Est-il vrai que l brûle de l'hydrogène depuis 4,5 milliards d'années et a assez de carburant pour briller encore 5 milliards d'années ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Pour briller et chauffer, le cœur du _____ une usine de fusion nucléaire\"",
+              "options": [
+                "Soleil est",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Soleil est"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Les Supernovas\" ?",
+              "options": [
+                "Cette explosion projette des métaux et des poussières qui formeront...",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette explosion projette des métaux et des poussières qui formeront..."
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Les Trous Noirs\" ?",
+              "options": [
+                "À la fin de leur vie, les très grosses étoiles s'effondrent sur ell...",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "À la fin de leur vie, les très grosses étoiles s'effondrent sur ell..."
             }
           ]
         },
@@ -10495,92 +13225,92 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Comment nomme-t-on le processus d'agglomération gravitationnelle de matière ayant formé les planètes ?",
               "options": [
-                "La convection 🌀",
-                "L'accrétion 🪐",
-                "La subduction ⛰️"
+                "La convection",
+                "L'accrétion",
+                "La subduction"
               ],
-              "correctAnswer": "L'accrétion 🪐"
+              "correctAnswer": "L'accrétion"
             },
             {
               "question": "Si on double la distance entre deux corps célestes, comment varie la force de gravité ?",
               "options": [
-                "Elle est divisée par deux 🌗",
-                "Elle est divisée par quatre 🧲",
-                "Elle reste identique 🤝"
+                "Elle est divisée par deux",
+                "Elle est divisée par quatre",
+                "Elle reste identique"
               ],
-              "correctAnswer": "Elle est divisée par quatre 🧲"
+              "correctAnswer": "Elle est divisée par quatre"
             },
             {
               "question": "Quel élément chimique à l'état liquide définit la zone d'habitabilité d'un système ?",
               "options": [
-                "Le méthane 🧪",
-                "L'eau 🌊",
-                "Le dioxyde de carbone 💨"
+                "Le méthane",
+                "L'eau",
+                "Le dioxyde de carbone"
               ],
-              "correctAnswer": "L'eau 🌊"
+              "correctAnswer": "L'eau"
             },
             {
               "question": "Quelle est la forme réelle de l'orbite des planètes d'après la première loi de Kepler ?",
               "options": [
-                "Un cercle parfait ⭕",
-                "Une ellipse (ovale) 🌌",
-                "Une spirale infinie 🌀"
+                "Un cercle parfait",
+                "Une ellipse (ovale)",
+                "Une spirale infinie"
               ],
-              "correctAnswer": "Une ellipse (ovale) 🌌"
+              "correctAnswer": "Une ellipse (ovale)"
             },
             {
               "question": "Quelle structure sphérique lointaine est le réservoir principal des comètes à longue période ?",
               "options": [
-                "La ceinture d'astéroïdes ☄️",
-                "La ceinture de Kuiper ☄️",
-                "Le nuage d'Oort ☄️"
+                "La ceinture d'astéroïdes",
+                "La ceinture de Kuiper",
+                "Le nuage d'Oort"
               ],
-              "correctAnswer": "Le nuage d'Oort ☄️"
+              "correctAnswer": "Le nuage d'Oort"
             },
             {
               "question": "Quel pourcentage approximatif de la masse du Système Solaire le Soleil représente-t-il ?",
               "options": [
-                "50% 🌓",
-                "99,8% ☀️",
-                "10% 🌑"
+                "50%",
+                "99,8%",
+                "10%"
               ],
-              "correctAnswer": "99,8% ☀️"
+              "correctAnswer": "99,8%"
             },
             {
               "question": "Qui a formulé la loi de la gravitation universelle ?",
               "options": [
-                "Isaac Newton 🍎",
-                "Albert Einstein 🧠",
-                "Johannes Kepler 🌌"
+                "Isaac Newton",
+                "Albert Einstein",
+                "Johannes Kepler"
               ],
-              "correctAnswer": "Isaac Newton 🍎"
+              "correctAnswer": "Isaac Newton"
             },
             {
               "question": "Comment s'appelle le point de l'orbite d'une planète le plus proche du Soleil ?",
               "options": [
-                "L'aphélie 🌌",
-                "Le périhélie ☀️",
-                "La singularité 🕳️"
+                "L'aphélie",
+                "Le périhélie",
+                "La singularité"
               ],
-              "correctAnswer": "Le périhélie ☀️"
+              "correctAnswer": "Le périhélie"
             },
             {
               "question": "Pourquoi l'atmosphère de Vénus empêche-t-elle la présence d'eau liquide ?",
               "options": [
-                "Parce qu'elle est absente 🚫",
-                "Parce qu'elle génère un effet de serre extrême rendant le sol brûlant 🌡️",
-                "Parce qu'elle gèle l'eau ❄️"
+                "Parce qu'elle est absente",
+                "Parce qu'elle génère un effet de serre extrême rendant le sol brûlant",
+                "Parce qu'elle gèle l'eau"
               ],
-              "correctAnswer": "Parce qu'elle génère un effet de serre extrême rendant le sol brûlant 🌡️"
+              "correctAnswer": "Parce qu'elle génère un effet de serre extrême rendant le sol brûlant"
             },
             {
               "question": "Quelle planète naine célèbre est située au sein de la ceinture de Kuiper ?",
               "options": [
-                "Cérès ☄️",
-                "Pluton 🪐",
-                "Mars 🔴"
+                "Cérès",
+                "Pluton",
+                "Mars"
               ],
-              "correctAnswer": "Pluton 🪐"
+              "correctAnswer": "Pluton"
             }
           ]
         },
@@ -10623,92 +13353,92 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Quelle réaction physique produit la lumière et l'énergie des étoiles ?",
               "options": [
-                "La fission nucléaire ☢️",
-                "La fusion nucléaire de l'hydrogène 🔬",
-                "La combustion chimique 🔥"
+                "La fission nucléaire",
+                "La fusion nucléaire de l'hydrogène",
+                "La combustion chimique"
               ],
-              "correctAnswer": "La fusion nucléaire de l'hydrogène 🔬"
+              "correctAnswer": "La fusion nucléaire de l'hydrogène"
             },
             {
               "question": "Quelle équation d'Einstein régit la conversion de masse en énergie stellaire ?",
               "options": [
-                "F = ma 🍎",
-                "E = mc² 🔬",
-                "PV = nRT 🌡️"
+                "F = ma",
+                "E = mc²",
+                "PV = nRT"
               ],
-              "correctAnswer": "E = mc² 🔬"
+              "correctAnswer": "E = mc²"
             },
             {
               "question": "Quel équilibre oppose la gravité interne à la pression de radiation thermique d'une étoile ?",
               "options": [
-                "L'équilibre thermique 🌡️",
-                "L'équilibre hydrostatique ⚖️",
-                "L'équilibre sismique 📈"
+                "L'équilibre thermique",
+                "L'équilibre hydrostatique",
+                "L'équilibre sismique"
               ],
-              "correctAnswer": "L'équilibre hydrostatique ⚖️"
+              "correctAnswer": "L'équilibre hydrostatique"
             },
             {
               "question": "Quel sera le stade d'évolution final de notre Soleil à la fin de sa vie ?",
               "options": [
-                "Une supernova 💥",
-                "Un trou noir 🕳️",
-                "Une naine blanche ⚪"
+                "Une supernova",
+                "Un trou noir",
+                "Une naine blanche"
               ],
-              "correctAnswer": "Une naine blanche ⚪"
+              "correctAnswer": "Une naine blanche"
             },
             {
               "question": "Comment appelle-t-on la synthèse d'éléments lourds au cœur des étoiles ?",
               "options": [
-                "La photosynthèse 🍃",
-                "La nucléosynthèse stellaire 🧪",
-                "La sédimentation 🪨"
+                "La photosynthèse",
+                "La nucléosynthèse stellaire",
+                "La sédimentation"
               ],
-              "correctAnswer": "La nucléosynthèse stellaire 🧪"
+              "correctAnswer": "La nucléosynthèse stellaire"
             },
             {
               "question": "Quelle explosion titanesque marque la mort d'une étoile massive ?",
               "options": [
-                "Une aurore boréale 🌌",
-                "Une supernova 💥",
-                "Une éruption solaire ☀️"
+                "Une aurore boréale",
+                "Une supernova",
+                "Une éruption solaire"
               ],
-              "correctAnswer": "Une supernova 💥"
+              "correctAnswer": "Une supernova"
             },
             {
               "question": "Quel astre ultra-dense se forme si le cœur d'une supernova fait moins de 3 masses solaires ?",
               "options": [
-                "Une naine blanche ⚪",
-                "Une étoile à neutrons ⚡",
-                "Un trou noir 🕳️"
+                "Une naine blanche",
+                "Une étoile à neutrons",
+                "Un trou noir"
               ],
-              "correctAnswer": "Une étoile à neutrons ⚡"
+              "correctAnswer": "Une étoile à neutrons"
             },
             {
               "question": "Quelle frontière marque la limite de non-retour d'un Trou Noir ?",
               "options": [
-                "La fente synaptique 🔬",
-                "L'horizon des événements 🕳️⚡",
-                "La discontinuité du Moho 🥾"
+                "La fente synaptique",
+                "L'horizon des événements",
+                "La discontinuité du Moho"
               ],
-              "correctAnswer": "L'horizon des événements 🕳️⚡"
+              "correctAnswer": "L'horizon des événements"
             },
             {
               "question": "Quel élément chimique marque l'arrêt des fusions nucléaires dans une étoile massive ?",
               "options": [
-                "Le carbone 🪨",
-                "Le silicium 💎",
-                "Le fer ⚙️"
+                "Le carbone",
+                "Le silicium",
+                "Le fer"
               ],
-              "correctAnswer": "Le fer ⚙️"
+              "correctAnswer": "Le fer"
             },
             {
               "question": "Pourquoi la lumière ne peut-elle pas s'échapper d'un Trou Noir ?",
               "options": [
-                "Parce qu'il est fermé à clé 🔑",
-                "Parce que la vitesse de libération de sa gravité dépasse la vitesse de la lumière 🕳️⚡",
-                "Parce qu'il y fait trop froid 🥶"
+                "Parce qu'il est fermé à clé",
+                "Parce que la vitesse de libération de sa gravité dépasse la vitesse de la lumière",
+                "Parce qu'il y fait trop froid"
               ],
-              "correctAnswer": "Parce que la vitesse de libération de sa gravité dépasse la vitesse de la lumière 🕳️⚡"
+              "correctAnswer": "Parce que la vitesse de libération de sa gravité dépasse la vitesse de la lumière"
             }
           ]
         },
@@ -10751,92 +13481,92 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Quelle loi physique de Newton explique la poussée d'une fusée éjectant des gaz ?",
               "options": [
-                "La loi de la gravité 🍎",
-                "La loi d'action-réaction 🚀",
-                "Les lois de Kepler Ellipses 🌌"
+                "La loi de la gravité",
+                "La loi d'action-réaction",
+                "Les lois de Kepler Ellipses"
               ],
-              "correctAnswer": "La loi d'action-réaction 🚀"
+              "correctAnswer": "La loi d'action-réaction"
             },
             {
               "question": "Pourquoi une fusée emporte-t-elle de l'oxygène liquide (comburant) dans l'espace ?",
               "options": [
-                "Pour que les astronautes puissent boire 🥤",
-                "Parce qu'il n'y a pas d'air dans le vide spatial pour brûler le carburant 🚫💨",
-                "Pour refroidir les moteurs ❄️"
+                "Pour que les astronautes puissent boire",
+                "Parce qu'il n'y a pas d'air dans le vide spatial pour brûler le carburant",
+                "Pour refroidir les moteurs"
               ],
-              "correctAnswer": "Parce qu'il n'y a pas d'air dans le vide spatial pour brûler le carburant 🚫💨"
+              "correctAnswer": "Parce qu'il n'y a pas d'air dans le vide spatial pour brûler le carburant"
             },
             {
               "question": "Quelle vitesse un vaisseau doit-il atteindre pour échapper à la gravité de la Terre (vitesse de libération) ?",
               "options": [
-                "28 000 km/h 🛰️",
-                "40 300 km/h (11,2 km/s) 🚀",
-                "300 000 km/s ⚡"
+                "28 000 km/h",
+                "40 300 km/h (11,2 km/s)",
+                "300 000 km/s"
               ],
-              "correctAnswer": "40 300 km/h (11,2 km/s) 🚀"
+              "correctAnswer": "40 300 km/h (11,2 km/s)"
             },
             {
               "question": "Pourquoi le son ne peut-il pas se déplacer dans l'espace ?",
               "options": [
-                "Parce qu'il y fait trop froid 🥶",
-                "Parce que le son a besoin d'un milieu matériel (gaz, liquide) pour vibrer et que l'espace est un vide 🚫💨",
-                "Parce que les étoiles font trop de bruit 🔊"
+                "Parce qu'il y fait trop froid",
+                "Parce que le son a besoin d'un milieu matériel (gaz, liquide) pour vibrer et que l'espace est un vide",
+                "Parce que les étoiles font trop de bruit"
               ],
-              "correctAnswer": "Parce que le son a besoin d'un milieu matériel (gaz, liquide) pour vibrer et que l'espace est un vide 🚫💨"
+              "correctAnswer": "Parce que le son a besoin d'un milieu matériel (gaz, liquide) pour vibrer et que l'espace est un vide"
             },
             {
               "question": "Quel type d'ondes les sondes spatiales utilisent-elles pour communiquer ?",
               "options": [
-                "Des ondes sonores 🔊",
-                "Des ondes électromagnétiques (radio) 📡",
-                "Des impulsions laser vertes 🟢"
+                "Des ondes sonores",
+                "Des ondes électromagnétiques (radio)",
+                "Des impulsions laser vertes"
               ],
-              "correctAnswer": "Des ondes électromagnétiques (radio) 📡"
+              "correctAnswer": "Des ondes électromagnétiques (radio)"
             },
             {
               "question": "Pourquoi les astronautes flottent-ils à bord de l'ISS ?",
               "options": [
-                "Parce qu'il n'y a pas de gravité à 400 km de haut 🚫",
-                "Parce que la station et les astronautes sont en chute libre permanente autour de la Terre (microgravité) 🧑‍🚀",
-                "Parce qu'ils portent des combinaisons spéciales 👕"
+                "Parce qu'il n'y a pas de gravité à 400 km de haut",
+                "Parce que la station et les astronautes sont en chute libre permanente autour de la Terre (microgravité)",
+                "Parce qu'ils portent des combinaisons spéciales"
               ],
-              "correctAnswer": "Parce que la station et les astronautes sont en chute libre permanente autour de la Terre (microgravité) 🧑‍🚀"
+              "correctAnswer": "Parce que la station et les astronautes sont en chute libre permanente autour de la Terre (microgravité)"
             },
             {
               "question": "À quelle distance moyenne de la Terre se trouve la Lune ?",
               "options": [
-                "10 000 km 🚗",
-                "384 000 km 🌕",
-                "150 millions de km ☀️"
+                "10 000 km",
+                "384 000 km",
+                "150 millions de km"
               ],
-              "correctAnswer": "384 000 km 🌕"
+              "correctAnswer": "384 000 km"
             },
             {
               "question": "Quelles sondes spatiales lancées en 1977 ont survolé les géantes gazeuses et quitté le Système Solaire ?",
               "options": [
-                "Apollo 🚀",
-                "Voyager 🛰️",
-                "James Webb 📡"
+                "Apollo",
+                "Voyager",
+                "James Webb"
               ],
-              "correctAnswer": "Voyager 🛰️"
+              "correctAnswer": "Voyager"
             },
             {
               "question": "Quel télescope spatial infrarouge ultra-moderne étudie les premières galaxies de l'Univers ?",
               "options": [
-                "Hubble 🔭",
-                "James Webb 🔭",
-                "Kepler 🪐"
+                "Hubble",
+                "James Webb",
+                "Kepler"
               ],
-              "correctAnswer": "James Webb 🔭"
+              "correctAnswer": "James Webb"
             },
             {
               "question": "Quel message les sondes Voyager transportent-elles à destination d'autres civilisations ?",
               "options": [
-                "Un livre d'histoire 📖",
-                "Un disque d'or contenant des images et sons de la Terre 📀",
-                "Une bouteille d'eau 🥤"
+                "Un livre d'histoire",
+                "Un disque d'or contenant des images et sons de la Terre",
+                "Une bouteille d'eau"
               ],
-              "correctAnswer": "Un disque d'or contenant des images et sons de la Terre 📀"
+              "correctAnswer": "Un disque d'or contenant des images et sons de la Terre"
             }
           ]
         },
@@ -11678,20 +14408,20 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Combien de canards nagent dans la mare ? 🦆 🦆",
               "options": [
-                "1 canard 🦆",
-                "2 canards 🦆🦆",
-                "3 canards 🦆🦆🦆"
+                "1 canard",
+                "2 canards",
+                "3 canards"
               ],
-              "correctAnswer": "2 canards 🦆🦆"
+              "correctAnswer": "2 canards"
             },
             {
               "question": "Combien de pommes vois-tu ici ? 🍎 🍎 🍎",
               "options": [
-                "3 pommes 🍎",
-                "1 pomme 🍎",
-                "5 pommes 🍎"
+                "3 pommes",
+                "1 pomme",
+                "5 pommes"
               ],
-              "correctAnswer": "3 pommes 🍎"
+              "correctAnswer": "3 pommes"
             },
             {
               "question": "Quel chiffre correspond à un seul papillon ? 🦋",
@@ -11701,6 +14431,77 @@ export const UNIVERSES: Record<string, Universe> = {
                 "3"
               ],
               "correctAnswer": "1"
+            }
+          ,
+            {
+              "question": "D'après la leçon \"Le chiffre 1\", complète : Il y a **un (1)**...",
+              "options": [
+                "Il y a **un (1)** joli papillon multicolore qui vole sur la fleur",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Il y a **un (1)** joli papillon multicolore qui vole sur la fleur"
+            },
+            {
+              "question": "Est-il vrai que oilà **deux (2)** petits canards jaunes qui nagent ensemble dans l'eau ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Il y a **trois (3)** pommes _____ sucrées sur la table\"",
+              "options": [
+                "rouges et",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "rouges et"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le chiffre 1\" ?",
+              "options": [
+                "Il y a **un (1)** joli papillon multicolore qui vole sur la fleur",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Il y a **un (1)** joli papillon multicolore qui vole sur la fleur"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Le chiffre 2\" ?",
+              "options": [
+                "Voilà **deux (2)** petits canards jaunes qui nagent ensemble dans l...",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Voilà **deux (2)** petits canards jaunes qui nagent ensemble dans l..."
+            },
+            {
+              "question": "D'après la leçon \"Le chiffre 3\", complète : Il y a **trois (3)**...",
+              "options": [
+                "Il y a **trois (3)** pommes rouges et sucrées sur la table",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Il y a **trois (3)** pommes rouges et sucrées sur la table"
+            },
+            {
+              "question": "Est-il vrai que l y a **un (1)** joli papillon multicolore qui vole sur la fleur ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
             }
           ]
         },
@@ -11733,29 +14534,100 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Quelle forme ressemble à un joli ballon rond ?",
               "options": [
-                "Un carré 🟦",
-                "Un triangle 🔺",
-                "Un cercle 🟡"
+                "Un carré",
+                "Un triangle",
+                "Un cercle"
               ],
-              "correctAnswer": "Un cercle 🟡"
+              "correctAnswer": "Un cercle"
             },
             {
               "question": "Combien de coins pointus possède le triangle ? 🔺",
               "options": [
-                "3 coins 🔺",
-                "4 coins 🟦",
-                "0 coin 🟡"
+                "3 coins",
+                "4 coins",
+                "0 coin"
               ],
-              "correctAnswer": "3 coins 🔺"
+              "correctAnswer": "3 coins"
             },
             {
               "question": "Quelle forme a 4 côtés identiques ?",
               "options": [
-                "Le cercle 🟡",
-                "Le carré 🟦",
-                "Le triangle 🔺"
+                "Le cercle",
+                "Le carré",
+                "Le triangle"
               ],
-              "correctAnswer": "Le carré 🟦"
+              "correctAnswer": "Le carré"
+            }
+          ,
+            {
+              "question": "D'après la leçon \"Le Cercle rond\", complète : Le **cercle** est tout rond...",
+              "options": [
+                "Le **cercle** est tout rond comme un ballon de foot ou une assiette de soupe 🟡",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Le **cercle** est tout rond comme un ballon de foot ou une assiette de soupe 🟡"
+            },
+            {
+              "question": "Est-il vrai que e **carré** possède 4 côtés qui ont tous exactement la même longueur 🟦, et 4 coins bien droits ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Le **triangle** possède 3 côtés _____ coins pointus 🔺\"",
+              "options": [
+                "et 3",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "et 3"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le Cercle rond\" ?",
+              "options": [
+                "Il n'a aucun côté pointu",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Il n'a aucun côté pointu"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Le Carré droit\" ?",
+              "options": [
+                "Le **carré** possède 4 côtés qui ont tous exactement la même longue...",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Le **carré** possède 4 côtés qui ont tous exactement la même longue..."
+            },
+            {
+              "question": "Que dit la leçon sur \"Le Triangle pointu\" ?",
+              "options": [
+                "Il ressemble au toit d'une petite maison",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Il ressemble au toit d'une petite maison"
+            },
+            {
+              "question": "Est-il vrai que e **cercle** est tout rond comme un ballon de foot ou une assiette de soupe 🟡 ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
             }
           ]
         },
@@ -11826,6 +14698,57 @@ export const UNIVERSES: Record<string, Universe> = {
               "correctAnswer": "2",
               "isSpecial": true
             }
+          ,
+            {
+              "question": "D'après la leçon \"Les Premières Soustractions\", complète : Dans ce niveau 3, nous...",
+              "options": [
+                "Dans ce niveau 3, nous allons nous entraîner sur : Les Premières Soustractions",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Dans ce niveau 3, nous allons nous entraîner sur : Les Premières Soustractions"
+            },
+            {
+              "question": "Est-il vrai que ais des exercices chaque jour pour progresser rapidement ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Dans ce niveau 3, nous allons _____ sur : Les Premières Soustractions\"",
+              "options": [
+                "nous entraîner",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "nous entraîner"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Conseil\" ?",
+              "options": [
+                "Fais des exercices chaque jour pour progresser rapidement",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Fais des exercices chaque jour pour progresser rapidement"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Les Premières Soustractions\" ?",
+              "options": [
+                "Dans ce niveau 3, nous allons nous entraîner sur : Les Premières So...",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Dans ce niveau 3, nous allons nous entraîner sur : Les Premières So..."
+            }
           ]
         },
         {
@@ -11894,6 +14817,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "4",
               "isSpecial": true
+            }
+          ,
+            {
+              "question": "D'après la leçon \"Compter plus loin\", complète : Dans ce niveau 4, nous...",
+              "options": [
+                "Dans ce niveau 4, nous allons nous entraîner sur : Compter plus loin",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Dans ce niveau 4, nous allons nous entraîner sur : Compter plus loin"
+            },
+            {
+              "question": "Est-il vrai que ais des exercices chaque jour pour progresser rapidement ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Dans ce niveau 4, nous allons _____ sur : Compter plus loin\"",
+              "options": [
+                "nous entraîner",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "nous entraîner"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Conseil\" ?",
+              "options": [
+                "Fais des exercices chaque jour pour progresser rapidement",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Fais des exercices chaque jour pour progresser rapidement"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Compter plus loin\" ?",
+              "options": [
+                "Dans ce niveau 4, nous allons nous entraîner sur : Compter plus loin",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Dans ce niveau 4, nous allons nous entraîner sur : Compter plus loin"
             }
           ]
         },
@@ -11964,6 +14938,57 @@ export const UNIVERSES: Record<string, Universe> = {
               "correctAnswer": "5",
               "isSpecial": true
             }
+          ,
+            {
+              "question": "D'après la leçon \"Double et Moitié\", complète : Dans ce niveau 5, nous...",
+              "options": [
+                "Dans ce niveau 5, nous allons nous entraîner sur : Double et Moitié",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Dans ce niveau 5, nous allons nous entraîner sur : Double et Moitié"
+            },
+            {
+              "question": "Est-il vrai que ais des exercices chaque jour pour progresser rapidement ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Dans ce niveau 5, nous allons _____ sur : Double et Moitié\"",
+              "options": [
+                "nous entraîner",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "nous entraîner"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Conseil\" ?",
+              "options": [
+                "Fais des exercices chaque jour pour progresser rapidement",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Fais des exercices chaque jour pour progresser rapidement"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Double et Moitié\" ?",
+              "options": [
+                "Dans ce niveau 5, nous allons nous entraîner sur : Double et Moitié",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Dans ce niveau 5, nous allons nous entraîner sur : Double et Moitié"
+            }
           ]
         },
         {
@@ -12032,6 +15057,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "3",
               "isSpecial": true
+            }
+          ,
+            {
+              "question": "D'après la leçon \"Les Formes Géométriques\", complète : Dans ce niveau 6, nous...",
+              "options": [
+                "Dans ce niveau 6, nous allons nous entraîner sur : Les Formes Géométriques",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Dans ce niveau 6, nous allons nous entraîner sur : Les Formes Géométriques"
+            },
+            {
+              "question": "Est-il vrai que ais des exercices chaque jour pour progresser rapidement ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Dans ce niveau 6, nous allons _____ sur : Les Formes Géométriques\"",
+              "options": [
+                "nous entraîner",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "nous entraîner"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Conseil\" ?",
+              "options": [
+                "Fais des exercices chaque jour pour progresser rapidement",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Fais des exercices chaque jour pour progresser rapidement"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Les Formes Géométriques\" ?",
+              "options": [
+                "Dans ce niveau 6, nous allons nous entraîner sur : Les Formes Géomé...",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Dans ce niveau 6, nous allons nous entraîner sur : Les Formes Géomé..."
             }
           ]
         },
@@ -12102,6 +15178,57 @@ export const UNIVERSES: Record<string, Universe> = {
               "correctAnswer": "3",
               "isSpecial": true
             }
+          ,
+            {
+              "question": "D'après la leçon \"La Table de Multiplication\", complète : Dans ce niveau 7, nous...",
+              "options": [
+                "Dans ce niveau 7, nous allons nous entraîner sur : La Table de Multiplication",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Dans ce niveau 7, nous allons nous entraîner sur : La Table de Multiplication"
+            },
+            {
+              "question": "Est-il vrai que ais des exercices chaque jour pour progresser rapidement ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Dans ce niveau 7, nous allons nous _____ : La Table de Multiplication\"",
+              "options": [
+                "entraîner sur",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "entraîner sur"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Conseil\" ?",
+              "options": [
+                "Fais des exercices chaque jour pour progresser rapidement",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Fais des exercices chaque jour pour progresser rapidement"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"La Table de Multiplication\" ?",
+              "options": [
+                "Dans ce niveau 7, nous allons nous entraîner sur : La Table de Mult...",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Dans ce niveau 7, nous allons nous entraîner sur : La Table de Mult..."
+            }
           ]
         },
         {
@@ -12170,6 +15297,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "5",
               "isSpecial": true
+            }
+          ,
+            {
+              "question": "D'après la leçon \"Les Divisions Faciles\", complète : Dans ce niveau 8, nous...",
+              "options": [
+                "Dans ce niveau 8, nous allons nous entraîner sur : Les Divisions Faciles",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Dans ce niveau 8, nous allons nous entraîner sur : Les Divisions Faciles"
+            },
+            {
+              "question": "Est-il vrai que ais des exercices chaque jour pour progresser rapidement ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Dans ce niveau 8, nous allons _____ sur : Les Divisions Faciles\"",
+              "options": [
+                "nous entraîner",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "nous entraîner"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Conseil\" ?",
+              "options": [
+                "Fais des exercices chaque jour pour progresser rapidement",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Fais des exercices chaque jour pour progresser rapidement"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Les Divisions Faciles\" ?",
+              "options": [
+                "Dans ce niveau 8, nous allons nous entraîner sur : Les Divisions Fa...",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Dans ce niveau 8, nous allons nous entraîner sur : Les Divisions Fa..."
             }
           ]
         },
@@ -12240,6 +15418,57 @@ export const UNIVERSES: Record<string, Universe> = {
               "correctAnswer": "6",
               "isSpecial": true
             }
+          ,
+            {
+              "question": "D'après la leçon \"Les Fractions Simples\", complète : Dans ce niveau 9, nous...",
+              "options": [
+                "Dans ce niveau 9, nous allons nous entraîner sur : Les Fractions Simples",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Dans ce niveau 9, nous allons nous entraîner sur : Les Fractions Simples"
+            },
+            {
+              "question": "Est-il vrai que ais des exercices chaque jour pour progresser rapidement ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Dans ce niveau 9, nous allons _____ sur : Les Fractions Simples\"",
+              "options": [
+                "nous entraîner",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "nous entraîner"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Conseil\" ?",
+              "options": [
+                "Fais des exercices chaque jour pour progresser rapidement",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Fais des exercices chaque jour pour progresser rapidement"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Les Fractions Simples\" ?",
+              "options": [
+                "Dans ce niveau 9, nous allons nous entraîner sur : Les Fractions Si...",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Dans ce niveau 9, nous allons nous entraîner sur : Les Fractions Si..."
+            }
           ]
         },
         {
@@ -12308,6 +15537,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "7",
               "isSpecial": true
+            }
+          ,
+            {
+              "question": "D'après la leçon \"Grand Défi de Logique\", complète : Dans ce niveau 10, nous...",
+              "options": [
+                "Dans ce niveau 10, nous allons nous entraîner sur : Grand Défi de Logique",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Dans ce niveau 10, nous allons nous entraîner sur : Grand Défi de Logique"
+            },
+            {
+              "question": "Est-il vrai que ais des exercices chaque jour pour progresser rapidement ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Dans ce niveau 10, nous allons nous _____ : Grand Défi de Logique\"",
+              "options": [
+                "entraîner sur",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "entraîner sur"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Conseil\" ?",
+              "options": [
+                "Fais des exercices chaque jour pour progresser rapidement",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Fais des exercices chaque jour pour progresser rapidement"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Grand Défi de Logique\" ?",
+              "options": [
+                "Dans ce niveau 10, nous allons nous entraîner sur : Grand Défi de L...",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Dans ce niveau 10, nous allons nous entraîner sur : Grand Défi de L..."
             }
           ]
         }
@@ -12381,18 +15661,69 @@ export const UNIVERSES: Record<string, Universe> = {
               "options": [
                 "9",
                 "11",
-                "13 🔢"
+                "13"
               ],
-              "correctAnswer": "13 🔢"
+              "correctAnswer": "13"
             },
             {
               "question": "Dans un diagramme de Venn, que représente la zone d'intersection entre deux cercles ?",
               "options": [
-                "Ceux qui n'aiment rien 🚫",
-                "Les éléments qui appartiennent aux deux groupes en même temps ⭕",
-                "Le groupe le plus grand 📈"
+                "Ceux qui n'aiment rien",
+                "Les éléments qui appartiennent aux deux groupes en même temps",
+                "Le groupe le plus grand"
               ],
-              "correctAnswer": "Les éléments qui appartiennent aux deux groupes en même temps ⭕"
+              "correctAnswer": "Les éléments qui appartiennent aux deux groupes en même temps"
+            }
+          ,
+            {
+              "question": "D'après la leçon \"Les suites logiques\", complète : Une suite logique est une...",
+              "options": [
+                "Une suite logique est une série de nombres ou de formes qui suivent une règle...",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Une suite logique est une série de nombres ou de formes qui suivent une règle..."
+            },
+            {
+              "question": "Est-il vrai que ette suite nous aide beaucoup à lire les minutes sur une horloge à aiguilles ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette suite célèbre commence par 0, 1, puis chaque nombre est la _____ deux précédents : 0, 1, 1, 2, 3, 5, 8, 13\"",
+              "options": [
+                "somme des",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "somme des"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Résoudre des énigmes\" ?",
+              "options": [
+                "Élimine ce qui est impossible pour trouver la bonne réponse",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Élimine ce qui est impossible pour trouver la bonne réponse"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Les diagrammes de Venn\" ?",
+              "options": [
+                "Pour organiser des informations, on utilise des cercles qui se croi...",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Pour organiser des informations, on utilise des cercles qui se croi..."
             }
           ]
         },
@@ -12462,20 +15793,71 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Quelle astuce permet de calculer rapidement de tête 7 x 11 ?",
               "options": [
-                "Calculer 7 + 11 ➕",
-                "Calculer (7 x 10) + (7 x 1) = 77 ⚡",
-                "Poser le calcul sur une feuille 📝"
+                "Calculer 7 + 11",
+                "Calculer (7 x 10) + (7 x 1) = 77",
+                "Poser le calcul sur une feuille"
               ],
-              "correctAnswer": "Calculer (7 x 10) + (7 x 1) = 77 ⚡"
+              "correctAnswer": "Calculer (7 x 10) + (7 x 1) = 77"
             },
             {
               "question": "Que vaut n'importe quel nombre multiplié par 0 ?",
               "options": [
-                "Le nombre lui-même 💁",
-                "Toujours 0 🛑",
-                "L'infini ♾️"
+                "Le nombre lui-même",
+                "Toujours 0",
+                "L'infini"
               ],
-              "correctAnswer": "Toujours 0 🛑"
+              "correctAnswer": "Toujours 0"
+            }
+          ,
+            {
+              "question": "D'après la leçon \"Multiplier, c'est répéter !\", complète : La multiplication (x) sert à...",
+              "options": [
+                "La multiplication (x) sert à compter des groupes identiques",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "La multiplication (x) sert à compter des groupes identiques"
+            },
+            {
+              "question": "Est-il vrai que onnaître le produit (le résultat) de tête t'évite de faire de très longues additions fatigantes ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"(ex: 5, 10, _____ 25)\"",
+              "options": [
+                "15, 20,",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "15, 20,"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"La distributivité\" ?",
+              "options": [
+                "Pour multiplier de grands nombres de tête, on peut les découper",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Pour multiplier de grands nombres de tête, on peut les découper"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Zéro et Un\" ?",
+              "options": [
+                "Multiplier par 1 ne change jamais le nombre (7 x 1 = 7)",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Multiplier par 1 ne change jamais le nombre (7 x 1 = 7)"
             }
           ]
         },
@@ -13433,91 +16815,91 @@ export const UNIVERSES: Record<string, Universe> = {
               "question": "Quelle est la valeur du terme u3 d'une suite arithmétique avec u0 = 4 et raison r = 3 ?",
               "options": [
                 "10",
-                "13 (termes: 4, 7, 10, 13) 🔢",
+                "13 (termes: 4, 7, 10, 13)",
                 "16"
               ],
-              "correctAnswer": "13 (termes: 4, 7, 10, 13) 🔢"
+              "correctAnswer": "13 (termes: 4, 7, 10, 13)"
             },
             {
               "question": "Quelle formule modélise le terme général un d'une suite géométrique de raison q ?",
               "options": [
-                "un = u0 + n x q 🔢",
-                "un = u0 x q^n 📈",
-                "un = u0 - n x q 📉"
+                "un = u0 + n x q",
+                "un = u0 x q^n",
+                "un = u0 - n x q"
               ],
-              "correctAnswer": "un = u0 x q^n 📈"
+              "correctAnswer": "un = u0 x q^n"
             },
             {
               "question": "Quelle est la valeur numérique approximative du nombre d'or ?",
               "options": [
-                "3,1416 🥧",
-                "1,618 📏",
-                "2,718 📈"
+                "3,1416",
+                "1,618",
+                "2,718"
               ],
-              "correctAnswer": "1,618 📏"
+              "correctAnswer": "1,618"
             },
             {
               "question": "En logique, que vaut la proposition (A ET B) si A est vrai et B est faux ?",
               "options": [
-                "Vrai 🟩",
-                "Faux ❌",
-                "Indéterminé 🤷"
+                "Vrai",
+                "Faux",
+                "Indéterminé"
               ],
-              "correctAnswer": "Faux ❌"
+              "correctAnswer": "Faux"
             },
             {
               "question": "Quel symbole mathématique représente la réunion (union) de tous les éléments de deux ensembles ?",
               "options": [
-                "Le symbole ∩ ⭕",
-                "Le symbole ∪ ⭕",
-                "Le symbole ∈ ✏️"
+                "Le symbole ∩",
+                "Le symbole ∪",
+                "Le symbole ∈"
               ],
-              "correctAnswer": "Le symbole ∪ ⭕"
+              "correctAnswer": "Le symbole ∪"
             },
             {
               "question": "Quels sont les deux premiers termes de la suite de Fibonacci ?",
               "options": [
-                "1 et 2 🔢",
-                "0 et 1 🔢",
-                "0 et 10 🔢"
+                "1 et 2",
+                "0 et 1",
+                "0 et 10"
               ],
-              "correctAnswer": "0 et 1 🔢"
+              "correctAnswer": "0 et 1"
             },
             {
               "question": "Comment appelle-t-on le tableau répertoriant les états de vérité logiques possibles ?",
               "options": [
-                "Un diagramme de Venn ⭕",
-                "Une table de vérité 🕵️‍♂️",
-                "Une équation différentielle 📉"
+                "Un diagramme de Venn",
+                "Une table de vérité",
+                "Une équation différentielle"
               ],
-              "correctAnswer": "Une table de vérité 🕵️‍♂️"
+              "correctAnswer": "Une table de vérité"
             },
             {
               "question": "Dans une suite géométrique de premier terme u0 = 2 et de raison q = 3, que vaut u2 ?",
               "options": [
-                "8 🔢",
-                "18 (termes: 2, 6, 18) 📈",
-                "12 🔢"
+                "8",
+                "18 (termes: 2, 6, 18)",
+                "12"
               ],
-              "correctAnswer": "18 (termes: 2, 6, 18) 📈"
+              "correctAnswer": "18 (termes: 2, 6, 18)"
             },
             {
               "question": "Dans un diagramme de Venn, que représente le chevauchement (l'intersection) ?",
               "options": [
-                "Les éléments appartenant à l'un ou à l'autre ⭕",
-                "Les éléments appartenant aux deux ensembles en même temps (A ∩ B) ⭕",
-                "Les éléments extérieurs 🚫"
+                "Les éléments appartenant à l'un ou à l'autre",
+                "Les éléments appartenant aux deux ensembles en même temps (A ∩ B)",
+                "Les éléments extérieurs"
               ],
-              "correctAnswer": "Les éléments appartenant aux deux ensembles en même temps (A ∩ B) ⭕"
+              "correctAnswer": "Les éléments appartenant aux deux ensembles en même temps (A ∩ B)"
             },
             {
               "question": "Quel opérateur logique inverse la valeur de vérité d'une proposition (transforme Vrai en Faux) ?",
               "options": [
-                "L'opérateur ET ➕",
-                "L'opérateur NON ❌",
-                "L'opérateur OU ⭕"
+                "L'opérateur ET",
+                "L'opérateur NON",
+                "L'opérateur OU"
               ],
-              "correctAnswer": "L'opérateur NON ❌"
+              "correctAnswer": "L'opérateur NON"
             }
           ]
         },
@@ -13560,92 +16942,92 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Quelle propriété permet d'écrire indifféremment : 7 x 8 = 8 x 7 ?",
               "options": [
-                "La distributivité ⚡",
-                "La commutativité 🔄",
-                "L'associativité 🔢"
+                "La distributivité",
+                "La commutativité",
+                "L'associativité"
               ],
-              "correctAnswer": "La commutativité 🔄"
+              "correctAnswer": "La commutativité"
             },
             {
               "question": "Calculez mentalement 14 x 103 en utilisant la distributivité :",
               "options": [
                 "1430",
-                "1442 (1400 + 42) ⚡",
+                "1442 (1400 + 42)",
                 "1452"
               ],
-              "correctAnswer": "1442 (1400 + 42) ⚡"
+              "correctAnswer": "1442 (1400 + 42)"
             },
             {
               "question": "Développez l'expression algébrique : (x + 5)²",
               "options": [
-                "x² + 25 📐",
-                "x² + 10x + 25 📐",
-                "x² + 5x + 10 📐"
+                "x² + 25",
+                "x² + 10x + 25",
+                "x² + 5x + 10"
               ],
-              "correctAnswer": "x² + 10x + 25 📐"
+              "correctAnswer": "x² + 10x + 25"
             },
             {
               "question": "Quelle est la factorisation en nombres premiers de l'entier 90 ?",
               "options": [
-                "9 x 10 🔢",
-                "2 x 3² x 5 🔢",
-                "3 x 30 🔢"
+                "9 x 10",
+                "2 x 3² x 5",
+                "3 x 30"
               ],
-              "correctAnswer": "2 x 3² x 5 🔢"
+              "correctAnswer": "2 x 3² x 5"
             },
             {
               "question": "Quel rôle le nombre 0 joue-t-il pour la multiplication ?",
               "options": [
-                "L'élément neutre 🤝",
-                "L'élément absorbant 🛑",
-                "La variable commune 🔢"
+                "L'élément neutre",
+                "L'élément absorbant",
+                "La variable commune"
               ],
-              "correctAnswer": "L'élément absorbant 🛑"
+              "correctAnswer": "L'élément absorbant"
             },
             {
               "question": "Que donne le développement de l'identité remarquable : (a - b)(a + b) ?",
               "options": [
-                "a² + b² 📐",
-                "a² - b² 📐",
-                "a² - 2ab + b² 📐"
+                "a² + b²",
+                "a² - b²",
+                "a² - 2ab + b²"
               ],
-              "correctAnswer": "a² - b² 📐"
+              "correctAnswer": "a² - b²"
             },
             {
               "question": "Quelle propriété de la multiplication justifie de pouvoir regrouper les facteurs d'un produit ?",
               "options": [
-                "La distributivité ⚡",
-                "L'associativité 🔢",
-                "La commutativité 🔄"
+                "La distributivité",
+                "L'associativité",
+                "La commutativité"
               ],
-              "correctAnswer": "L'associativité 🔢"
+              "correctAnswer": "L'associativité"
             },
             {
               "question": "Calculez rapidement 12 x 98 en utilisant la distributivité (12 x (100 - 2)) :",
               "options": [
-                "1176 ⚡",
+                "1176",
                 "1180",
                 "1166"
               ],
-              "correctAnswer": "1176 ⚡"
+              "correctAnswer": "1176"
             },
             {
               "question": "Lequel de ces nombres est un nombre premier ?",
               "options": [
-                "15 🔢",
-                "21 🔢",
-                "17 🔢"
+                "15",
+                "21",
+                "17"
               ],
-              "correctAnswer": "17 🔢"
+              "correctAnswer": "17"
             },
             {
               "question": "Pourquoi le nombre 1 est-il qualifié d'élément neutre ?",
               "options": [
-                "Parce qu'il détruit le calcul 🛑",
-                "Parce qu'il ne change pas le résultat du nombre multiplié 🤝",
-                "Parce qu'il est pair 🔢"
+                "Parce qu'il détruit le calcul",
+                "Parce qu'il ne change pas le résultat du nombre multiplié",
+                "Parce qu'il est pair"
               ],
-              "correctAnswer": "Parce qu'il ne change pas le résultat du nombre multiplié 🤝"
+              "correctAnswer": "Parce qu'il ne change pas le résultat du nombre multiplié"
             }
           ]
         },
@@ -13688,92 +17070,92 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Dans un triangle rectangle dont les côtés adjacents mesurent 3 cm et 4 cm, que vaut l'hypoténuse ?",
               "options": [
-                "5 cm (3² + 4² = 9 + 16 = 25, √25 = 5) 📐",
+                "5 cm (3² + 4² = 9 + 16 = 25, √25 = 5)",
                 "7 cm",
                 "6 cm"
               ],
-              "correctAnswer": "5 cm (3² + 4² = 9 + 16 = 25, √25 = 5) 📐"
+              "correctAnswer": "5 cm (3² + 4² = 9 + 16 = 25, √25 = 5)"
             },
             {
               "question": "Quelle condition est indispensable pour pouvoir appliquer le théorème de Pythagore ?",
               "options": [
-                "Le triangle doit être équilatéral 📐",
-                "Le triangle doit posséder un angle droit (rectangle) 📐",
-                "Le triangle doit avoir des côtés égaux 📐"
+                "Le triangle doit être équilatéral",
+                "Le triangle doit posséder un angle droit (rectangle)",
+                "Le triangle doit avoir des côtés égaux"
               ],
-              "correctAnswer": "Le triangle doit posséder un angle droit (rectangle) 📐"
+              "correctAnswer": "Le triangle doit posséder un angle droit (rectangle)"
             },
             {
               "question": "Quel théorème géométrique traite des proportions de segments formés par des droites parallèles ?",
               "options": [
-                "Le théorème de Thalès 📐",
-                "Le théorème de Pythagore 📐",
-                "Le théorème de Venn ⭕"
+                "Le théorème de Thalès",
+                "Le théorème de Pythagore",
+                "Le théorème de Venn"
               ],
-              "correctAnswer": "Le théorème de Thalès 📐"
+              "correctAnswer": "Le théorème de Thalès"
             },
             {
               "question": "Où se croisent les trois médianes d'un triangle ?",
               "options": [
-                "À l'orthocentre 📐",
-                "Au centre de gravité du triangle 📐",
-                "Au centre du cercle inscrit ⭕"
+                "À l'orthocentre",
+                "Au centre de gravité du triangle",
+                "Au centre du cercle inscrit"
               ],
-              "correctAnswer": "Au centre de gravité du triangle 📐"
+              "correctAnswer": "Au centre de gravité du triangle"
             },
             {
               "question": "Quelle formule donne le volume d'un cône de révolution de base B et de hauteur h ?",
               "options": [
-                "Volume = B x h 📏",
-                "Volume = 1/3 x B x h 📐",
-                "Volume = B + h 📏"
+                "Volume = B x h",
+                "Volume = 1/3 x B x h",
+                "Volume = B + h"
               ],
-              "correctAnswer": "Volume = 1/3 x B x h 📐"
+              "correctAnswer": "Volume = 1/3 x B x h"
             },
             {
               "question": "Dans un triangle rectangle, quel rapport définit le cosinus d'un angle ?",
               "options": [
-                "Côté opposé / Hypoténuse 🧭",
-                "Côté adjacent / Hypoténuse 🧭",
-                "Côté opposé / Côté adjacent 🧭"
+                "Côté opposé / Hypoténuse",
+                "Côté adjacent / Hypoténuse",
+                "Côté opposé / Côté adjacent"
               ],
-              "correctAnswer": "Côté adjacent / Hypoténuse 🧭"
+              "correctAnswer": "Côté adjacent / Hypoténuse"
             },
             {
               "question": "Quelle est la formule de calcul de l'aire d'un disque de rayon r ?",
               "options": [
-                "2 x π x r 📏",
-                "π x r² 📏",
-                "π x r³ 📏"
+                "2 x π x r",
+                "π x r²",
+                "π x r³"
               ],
-              "correctAnswer": "π x r² 📏"
+              "correctAnswer": "π x r²"
             },
             {
               "question": "Quelle droite d'un triangle est perpendiculaire à un côté et passe par le milieu de celui-ci ?",
               "options": [
-                "La hauteur 📐",
-                "La bissectrice 📐",
-                "La médiatrice 📐"
+                "La hauteur",
+                "La bissectrice",
+                "La médiatrice"
               ],
-              "correctAnswer": "La médiatrice 📐"
+              "correctAnswer": "La médiatrice"
             },
             {
               "question": "Quel mot mnémotechnique permet de retenir les formules du sinus, cosinus et tangente ?",
               "options": [
-                "SOH CAH TOA 🧭",
-                "PYTHAGORE 📐",
-                "ALGEBRE 🔢"
+                "SOH CAH TOA",
+                "PYTHAGORE",
+                "ALGEBRE"
               ],
-              "correctAnswer": "SOH CAH TOA 🧭"
+              "correctAnswer": "SOH CAH TOA"
             },
             {
               "question": "Qui a mesuré pour la première fois la hauteur de la pyramide de Khéops grâce à son ombre ?",
               "options": [
-                "Pythagore 📐",
-                "Thalès de Milet 📐",
-                "Carl von Linné 📜"
+                "Pythagore",
+                "Thalès de Milet",
+                "Carl von Linné"
               ],
-              "correctAnswer": "Thalès de Milet 📐"
+              "correctAnswer": "Thalès de Milet"
             }
           ]
         },
@@ -14615,29 +17997,100 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "De quelle couleur est la mer sur une carte de la Terre ?",
               "options": [
-                "Rouge 🔴",
-                "Bleu 🔵",
-                "Jaune 🟡"
+                "Rouge",
+                "Bleu",
+                "Jaune"
               ],
-              "correctAnswer": "Bleu 🔵"
+              "correctAnswer": "Bleu"
             },
             {
               "question": "À quoi ressemble la forme de notre planète Terre ?",
               "options": [
-                "À une boîte carrée 📦",
-                "À un grand ballon rond 🏀",
-                "À une étoile pointue ⭐"
+                "À une boîte carrée",
+                "À un grand ballon rond",
+                "À une étoile pointue"
               ],
-              "correctAnswer": "À un grand ballon rond 🏀"
+              "correctAnswer": "À un grand ballon rond"
             },
             {
               "question": "Qui habite sur la planète Terre ?",
               "options": [
-                "Seulement les poissons 🐠",
-                "Les humains, les animaux et les plantes 🧑‍🤝‍🧑🐶🌲",
-                "Personne, elle est vide 🌌"
+                "Seulement les poissons",
+                "Les humains, les animaux et les plantes",
+                "Personne, elle est vide"
               ],
-              "correctAnswer": "Les humains, les animaux et les plantes 🧑‍🤝‍🧑🐶🌲"
+              "correctAnswer": "Les humains, les animaux et les plantes"
+            }
+          ,
+            {
+              "question": "Que dit la leçon sur \"La Terre est ronde\" ?",
+              "options": [
+                "La Terre est la planète où nous vivons",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "La Terre est la planète où nous vivons"
+            },
+            {
+              "question": "Est-il vrai que e vert et le marron, ce sont les pays et les montagnes où nous habitons ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Il y a beaucoup _____ différents sur Terre\"",
+              "options": [
+                "de pays",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de pays"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"La Terre est ronde\" ?",
+              "options": [
+                "Elle ressemble à une grande bille bleue et verte suspendue dans l'e...",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Elle ressemble à une grande bille bleue et verte suspendue dans l'e..."
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"L'eau et la terre\" ?",
+              "options": [
+                "Le bleu sur le globe, c'est l'eau de la mer",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Le bleu sur le globe, c'est l'eau de la mer"
+            },
+            {
+              "question": "D'après la leçon \"Les pays lointains\", complète : Certains sont très chauds et...",
+              "options": [
+                "Certains sont très chauds et d'autres sont tout froids",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Certains sont très chauds et d'autres sont tout froids"
+            },
+            {
+              "question": "Est-il vrai que a terre est la planète où nous vivons ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
             }
           ]
         },
@@ -14670,29 +18123,100 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Dans quel pays peut-on visiter la grande Tour Eiffel en fer ? 🗼",
               "options": [
-                "En Égypte 🇪🇬",
-                "En France 🇫🇷",
-                "Aux États-Unis 🇺🇸"
+                "En Égypte",
+                "En France",
+                "Aux États-Unis"
               ],
-              "correctAnswer": "En France 🇫🇷"
+              "correctAnswer": "En France"
             },
             {
               "question": "Quelle est la forme géométrique des pyramides d'Égypte ?",
               "options": [
-                "Toutes rondes comme un ballon 🎈",
-                "Pointues comme des triangles 🔺",
-                "Plates comme une feuille 📄"
+                "Toutes rondes comme un ballon",
+                "Pointues comme des triangles",
+                "Plates comme une feuille"
               ],
-              "correctAnswer": "Pointues comme des triangles 🔺"
+              "correctAnswer": "Pointues comme des triangles"
             },
             {
               "question": "Que tient la Statue de la Liberté verte dans sa main ? 🗽",
               "options": [
-                "Une torche allumée 🔥",
-                "Un canard en plastique 🦆",
-                "Un téléphone portable 📱"
+                "Une torche allumée",
+                "Un canard en plastique",
+                "Un téléphone portable"
               ],
-              "correctAnswer": "Une torche allumée 🔥"
+              "correctAnswer": "Une torche allumée"
+            }
+          ,
+            {
+              "question": "D'après la leçon \"La Tour Eiffel\", complète : La **Tour Eiffel** est un...",
+              "options": [
+                "La **Tour Eiffel** est un immense monument en fer situé à Paris, la capitale ...",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "La **Tour Eiffel** est un immense monument en fer situé à Paris, la capitale ..."
+            },
+            {
+              "question": "Est-il vrai que lles ont été construites il y a très longtemps par les pharaons ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Aux États-Unis, à New York, il y a une statue géante d'une dame _____ tient une torche allumée : la **Statue de la Liberté** 🗽\"",
+              "options": [
+                "verte qui",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "verte qui"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"La Tour Eiffel\" ?",
+              "options": [
+                "Elle ressemble à une grande aiguille",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Elle ressemble à une grande aiguille"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Les Pyramides d'Égypte\" ?",
+              "options": [
+                "En Égypte, il y a de très vieilles et grandes pyramides en pierre p...",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "En Égypte, il y a de très vieilles et grandes pyramides en pierre p..."
+            },
+            {
+              "question": "D'après la leçon \"La Statue de la Liberté\", complète : Aux États-Unis, à New York,...",
+              "options": [
+                "Aux États-Unis, à New York, il y a une statue géante d'une dame verte qui tie...",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Aux États-Unis, à New York, il y a une statue géante d'une dame verte qui tie..."
+            },
+            {
+              "question": "Est-il vrai que a **tour eiffel** est un immense monument en fer situé à paris, la capitale de la france 🇫🇷 ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
             }
           ]
         },
@@ -14762,6 +18286,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Niveau 3"
             }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Les Pays d'Europe\" ?",
+              "options": [
+                "Cette leçon traite de Les Pays d'Europe",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Pays d'Europe"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Pays d'Europe\"",
+              "options": [
+                "de Les",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Les"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Les Pays d'Europe\" ?",
+              "options": [
+                "Cette leçon traite de Les Pays d'Europe",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Pays d'Europe"
+            }
           ]
         },
         {
@@ -14829,6 +18404,57 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 3"
               ],
               "correctAnswer": "Niveau 4"
+            }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Les Capitales\" ?",
+              "options": [
+                "Cette leçon traite de Les Capitales",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Capitales"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Capitales\"",
+              "options": [
+                "de Les",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Les"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Les Capitales\" ?",
+              "options": [
+                "Cette leçon traite de Les Capitales",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Capitales"
             }
           ]
         },
@@ -14898,6 +18524,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Niveau 5"
             }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Les Pays d'Asie\" ?",
+              "options": [
+                "Cette leçon traite de Les Pays d'Asie",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Pays d'Asie"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Pays d'Asie\"",
+              "options": [
+                "de Les",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Les"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Les Pays d'Asie\" ?",
+              "options": [
+                "Cette leçon traite de Les Pays d'Asie",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Pays d'Asie"
+            }
           ]
         },
         {
@@ -14965,6 +18642,57 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 5"
               ],
               "correctAnswer": "Niveau 6"
+            }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Les Pays d'Afrique\" ?",
+              "options": [
+                "Cette leçon traite de Les Pays d'Afrique",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Pays d'Afrique"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Pays d'Afrique\"",
+              "options": [
+                "de Les",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Les"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Les Pays d'Afrique\" ?",
+              "options": [
+                "Cette leçon traite de Les Pays d'Afrique",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Pays d'Afrique"
             }
           ]
         },
@@ -15034,6 +18762,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Niveau 7"
             }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Les Océans\" ?",
+              "options": [
+                "Cette leçon traite de Les Océans",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Océans"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Océans\"",
+              "options": [
+                "de Les",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Les"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Les Océans\" ?",
+              "options": [
+                "Cette leçon traite de Les Océans",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Océans"
+            }
           ]
         },
         {
@@ -15101,6 +18880,57 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 7"
               ],
               "correctAnswer": "Niveau 8"
+            }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Les Montagnes\" ?",
+              "options": [
+                "Cette leçon traite de Les Montagnes",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Montagnes"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Montagnes\"",
+              "options": [
+                "de Les",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Les"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Les Montagnes\" ?",
+              "options": [
+                "Cette leçon traite de Les Montagnes",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Montagnes"
             }
           ]
         },
@@ -15170,6 +19000,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Niveau 9"
             }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Les Fleuves\" ?",
+              "options": [
+                "Cette leçon traite de Les Fleuves",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Fleuves"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Fleuves\"",
+              "options": [
+                "de Les",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Les"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Les Fleuves\" ?",
+              "options": [
+                "Cette leçon traite de Les Fleuves",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Fleuves"
+            }
           ]
         },
         {
@@ -15238,6 +19119,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Niveau 10"
             }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Les Cartes\" ?",
+              "options": [
+                "Cette leçon traite de Les Cartes",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Cartes"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Cartes\"",
+              "options": [
+                "de Les",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Les"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Les Cartes\" ?",
+              "options": [
+                "Cette leçon traite de Les Cartes",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Cartes"
+            }
           ]
         }
       ],
@@ -15281,47 +19213,98 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Comment appelle-t-on les grands blocs de terre entourés d'océans ?",
               "options": [
-                "Des îles volcaniques 🌋",
-                "Des continents 🗺️",
-                "Des pays frontaliers 🤝"
+                "Des îles volcaniques",
+                "Des continents",
+                "Des pays frontaliers"
               ],
-              "correctAnswer": "Des continents 🗺️"
+              "correctAnswer": "Des continents"
             },
             {
               "question": "Quel et le continent le plus grand et le plus peuplé de la Terre ?",
               "options": [
-                "L'Europe 🇪🇺",
-                "L'Afrique 🌍",
-                "L'Asie 🌏"
+                "L'Europe",
+                "L'Afrique",
+                "L'Asie"
               ],
-              "correctAnswer": "L'Asie 🌏"
+              "correctAnswer": "L'Asie"
             },
             {
               "question": "Sur quel continent se trouve la France ?",
               "options": [
-                "En Europe 🇪🇺",
-                "En Océanie 🐨",
-                "En Amérique du Nord 🗽"
+                "En Europe",
+                "En Océanie",
+                "En Amérique du Nord"
               ],
-              "correctAnswer": "En Europe 🇪🇺"
+              "correctAnswer": "En Europe"
             },
             {
               "question": "De quel continent fait partie l'Australie, entourée de milliers d'îles ?",
               "options": [
-                "L'Asie 🌏",
-                "L'Océanie 🐨",
-                "L'Afrique 🌍"
+                "L'Asie",
+                "L'Océanie",
+                "L'Afrique"
               ],
-              "correctAnswer": "L'Océanie 🐨"
+              "correctAnswer": "L'Océanie"
             },
             {
               "question": "Pourquoi aucun pays n'a de villes permanentes en Antarctique ?",
               "options": [
-                "Parce qu'il appartient aux manchots 🐧",
-                "C'est un désert de glace trop hostile réservé à la recherche scientifique ❄️",
-                "Il n'y a pas d'électricité 🔌"
+                "Parce qu'il appartient aux manchots",
+                "C'est un désert de glace trop hostile réservé à la recherche scientifique",
+                "Il n'y a pas d'électricité"
               ],
-              "correctAnswer": "C'est un désert de glace trop hostile réservé à la recherche scientifique ❄️"
+              "correctAnswer": "C'est un désert de glace trop hostile réservé à la recherche scientifique"
+            }
+          ,
+            {
+              "question": "D'après la leçon \"Les blocs de terre\", complète : La surface de la Terre...",
+              "options": [
+                "La surface de la Terre est divisée en de très grands morceaux de terre entour...",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "La surface de la Terre est divisée en de très grands morceaux de terre entour..."
+            },
+            {
+              "question": "Est-il vrai que 'asie est le continent le plus grand et le plus peuplé, avec des pays comme la chine et l'inde ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète cette information : \"L'Europe est n...\"",
+              "options": [
+                "otre continent",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "otre continent"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"L'Océanie et ses îles\" ?",
+              "options": [
+                "Il est formé principalement de l'Australie et de milliers d'îles sa...",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Il est formé principalement de l'Australie et de milliers d'îles sa..."
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"L'Antarctique gelé\" ?",
+              "options": [
+                "C'est le continent le plus froid, le plus sec et le plus venteux du...",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "C'est le continent le plus froid, le plus sec et le plus venteux du..."
             }
           ]
         },
@@ -15364,47 +19347,98 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Quelle est la couche externe et solide de la Terre sur laquelle nous vivons ?",
               "options": [
-                "Le manteau 🔥",
-                "La croûte terrestre 🥾",
-                "Le noyau central ☄️"
+                "Le manteau",
+                "La croûte terrestre",
+                "Le noyau central"
               ],
-              "correctAnswer": "La croûte terrestre 🥾"
+              "correctAnswer": "La croûte terrestre"
             },
             {
               "question": "Quelle partie au centre de la Terre est aussi chaude que le Soleil ?",
               "options": [
-                "L'océan Pacifique 🌊",
-                "Le manteau rocheux 🗻",
-                "Le noyau en métal ☄️"
+                "L'océan Pacifique",
+                "Le manteau rocheux",
+                "Le noyau en métal"
               ],
-              "correctAnswer": "Le noyau en métal ☄️"
+              "correctAnswer": "Le noyau en métal"
             },
             {
               "question": "Que se trouve-t-il principalement dans le manteau terrestre ?",
               "options": [
-                "De l'eau potable glacée 🧊",
-                "Des roches très chaudes pouvant fondre en magma 🔥",
-                "Des squelettes de dinosaures intacts 🦖"
+                "De l'eau potable glacée",
+                "Des roches très chaudes pouvant fondre en magma",
+                "Des squelettes de dinosaures intacts"
               ],
-              "correctAnswer": "Des roches très chaudes pouvant fondre en magma 🔥"
+              "correctAnswer": "Des roches très chaudes pouvant fondre en magma"
             },
             {
               "question": "Comment s'appellent les morceaux du puzzle géant de la croûte terrestre qui bougent lentement ?",
               "options": [
-                "Les plaques tectoniques 🧩",
-                "Les zones sismiques 🌋",
-                "Les courants marins 🌊"
+                "Les plaques tectoniques",
+                "Les zones sismiques",
+                "Les courants marins"
               ],
-              "correctAnswer": "Les plaques tectoniques 🧩"
+              "correctAnswer": "Les plaques tectoniques"
             },
             {
               "question": "Qu'est-ce qui provoque la formation de grandes chaînes de montagnes ?",
               "options": [
-                "Le vent et l'érosion 💨",
-                "La collision lente de deux plaques tectoniques ⛰️",
-                "La chute d'une météorite ☄️"
+                "Le vent et l'érosion",
+                "La collision lente de deux plaques tectoniques",
+                "La chute d'une météorite"
               ],
-              "correctAnswer": "La collision lente de deux plaques tectoniques ⛰️"
+              "correctAnswer": "La collision lente de deux plaques tectoniques"
+            }
+          ,
+            {
+              "question": "Que dit la leçon sur \"La peau : la Croûte\" ?",
+              "options": [
+                "La Terre ressemble un peu à une pêche",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "La Terre ressemble un peu à une pêche"
+            },
+            {
+              "question": "Est-il vrai que l est composé de roches extrêmement chaudes qui peuvent fondre et former du magma liquide (la lave des volcans) ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Au centre se trouve le **noyau**, _____ fer et de nickel\"",
+              "options": [
+                "composé de",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "composé de"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"La dérive des continents\" ?",
+              "options": [
+                "Ses morceaux, les **plaques tectoniques**, glissent lentement sur l...",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Ses morceaux, les **plaques tectoniques**, glissent lentement sur l..."
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Les séismes et montagnes\" ?",
+              "options": [
+                "Quand deux plaques tectoniques entrent en collision, la terre tremb...",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Quand deux plaques tectoniques entrent en collision, la terre tremb..."
             }
           ]
         },
@@ -16361,92 +20395,92 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Quelle couche géologique rigide externe de la Terre dérive lentement sur l'asthénosphère ?",
               "options": [
-                "La biosphère 🌍",
-                "La lithosphère 🗺️",
-                "L'atmosphère 🌬️"
+                "La biosphère",
+                "La lithosphère",
+                "L'atmosphère"
               ],
-              "correctAnswer": "La lithosphère 🗺️"
+              "correctAnswer": "La lithosphère"
             },
             {
               "question": "Quel nom portait l'unique supercontinent regroupant toutes les terres il y a 250 millions d'années ?",
               "options": [
-                "L'Eurasie 🗺️",
-                "La Pangée 🧩",
-                "L'Atlantide 🌊"
+                "L'Eurasie",
+                "La Pangée",
+                "L'Atlantide"
               ],
-              "correctAnswer": "La Pangée 🧩"
+              "correctAnswer": "La Pangée"
             },
             {
               "question": "Quelle chaîne de montagnes russe marque la frontière conventionnelle entre l'Europe et l'Asie ?",
               "options": [
-                "Les Alpes 🏔️",
-                "L'Oural ⛰️",
-                "L'Himalaya ⛰️"
+                "Les Alpes",
+                "L'Oural",
+                "L'Himalaya"
               ],
-              "correctAnswer": "L'Oural ⛰️"
+              "correctAnswer": "L'Oural"
             },
             {
               "question": "Quel phénomène géologique étire et fracture l'Est du continent africain ?",
               "options": [
-                "La subduction océanique 🌊",
-                "Le grand rift est-africain 🌋",
-                "L'érosion fluviale 🏞️"
+                "La subduction océanique",
+                "Le grand rift est-africain",
+                "L'érosion fluviale"
               ],
-              "correctAnswer": "Le grand rift est-africain 🌋"
+              "correctAnswer": "Le grand rift est-africain"
             },
             {
               "question": "Quelle plaque océanique plonge sous la plaque sud-américaine pour former les Andes ?",
               "options": [
-                "La plaque Pacifique 🌊",
-                "La plaque de Nazca ⛰️",
-                "La plaque eurasienne 🗺️"
+                "La plaque Pacifique",
+                "La plaque de Nazca",
+                "La plaque eurasienne"
               ],
-              "correctAnswer": "La plaque de Nazca ⛰️"
+              "correctAnswer": "La plaque de Nazca"
             },
             {
               "question": "Qu'est-ce que la subduction en tectonique des plaques ?",
               "options": [
-                "L'écartement de deux plaques formant un océan 🌊",
-                "L'enfoncement d'une plaque sous une autre plaque ⛰️",
-                "L'érosion des roches par le vent 💨"
+                "L'écartement de deux plaques formant un océan",
+                "L'enfoncement d'une plaque sous une autre plaque",
+                "L'érosion des roches par le vent"
               ],
-              "correctAnswer": "L'enfoncement d'une plaque sous une autre plaque ⛰️"
+              "correctAnswer": "L'enfoncement d'une plaque sous une autre plaque"
             },
             {
               "question": "Quelle différence physique majeure distingue l'Arctique de l'Antarctique ?",
               "options": [
-                "L'Arctique est plus froid ❄️",
-                "L'Arctique est un océan gelé sans terre, l'Antarctique est un continent terrestre ❄️",
-                "L'Antarctique n'a pas de glace ☀️"
+                "L'Arctique est plus froid",
+                "L'Arctique est un océan gelé sans terre, l'Antarctique est un continent terrestre",
+                "L'Antarctique n'a pas de glace"
               ],
-              "correctAnswer": "L'Arctique est un océan gelé sans terre, l'Antarctique est un continent terrestre ❄️"
+              "correctAnswer": "L'Arctique est un océan gelé sans terre, l'Antarctique est un continent terrestre"
             },
             {
               "question": "Quelle est l'épaisseur moyenne de la couche de glace (inlandsis) recouvrant le continent de l'Antarctique ?",
               "options": [
-                "2 mètres 🧊",
-                "200 mètres 🧊",
-                "2 kilomètres 🧊"
+                "2 mètres",
+                "200 mètres",
+                "2 kilomètres"
               ],
-              "correctAnswer": "2 kilomètres 🧊"
+              "correctAnswer": "2 kilomètres"
             },
             {
               "question": "Sur quel continent se trouve le mont Kilimandjaro, grand volcan inactif ?",
               "options": [
-                "En Asie 🌏",
-                "En Afrique 🌍",
-                "En Amérique du Sud 🗽"
+                "En Asie",
+                "En Afrique",
+                "En Amérique du Sud"
               ],
-              "correctAnswer": "En Afrique 🌍"
+              "correctAnswer": "En Afrique"
             },
             {
               "question": "Quelle règle géopolitique encadre le continent de l'Antarctique ?",
               "options": [
-                "Il est divisé entre 5 grands pays 🗺️",
-                "Il est réservé uniquement à la recherche scientifique et protégé de toute exploitation militaire 🕊️",
-                "Il est ouvert à la colonisation minière 🪨"
+                "Il est divisé entre 5 grands pays",
+                "Il est réservé uniquement à la recherche scientifique et protégé de toute exploitation militaire",
+                "Il est ouvert à la colonisation minière"
               ],
-              "correctAnswer": "Il est réservé uniquement à la recherche scientifique et protégé de toute exploitation militaire 🕊️"
+              "correctAnswer": "Il est réservé uniquement à la recherche scientifique et protégé de toute exploitation militaire"
             }
           ]
         },
@@ -16489,92 +20523,92 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Quelle méthode permet d'obtenir des données sur la composition interne de la Terre ?",
               "options": [
-                "Le forage direct jusqu'au centre 🕳️",
-                "La sismologie et l'étude des ondes sismiques 📈",
-                "L'observation par satellite 🛰️"
+                "Le forage direct jusqu'au centre",
+                "La sismologie et l'étude des ondes sismiques",
+                "L'observation par satellite"
               ],
-              "correctAnswer": "La sismologie et l'étude des ondes sismiques 📈"
+              "correctAnswer": "La sismologie et l'étude des ondes sismiques"
             },
             {
               "question": "Quelle est la principale caractéristique physique des ondes sismiques S (secondaires) ?",
               "options": [
-                "Elles traversent uniquement les milieux gazeux 🌬️",
-                "Elles s'arrêtent net dans les milieux liquides 📈",
-                "Elles sont plus rapides que les ondes P ⚡"
+                "Elles traversent uniquement les milieux gazeux",
+                "Elles s'arrêtent net dans les milieux liquides",
+                "Elles sont plus rapides que les ondes P"
               ],
-              "correctAnswer": "Elles s'arrêtent net dans les milieux liquides 📈"
+              "correctAnswer": "Elles s'arrêtent net dans les milieux liquides"
             },
             {
               "question": "Comment s'appelle la limite physique séparant la croûte terrestre du manteau ?",
               "options": [
-                "La faille de San Andreas 💥",
-                "La discontinuité du Moho 🥾",
-                "L'horizon des événements 🕳️"
+                "La faille de San Andreas",
+                "La discontinuité du Moho",
+                "L'horizon des événements"
               ],
-              "correctAnswer": "La discontinuité du Moho 🥾"
+              "correctAnswer": "La discontinuité du Moho"
             },
             {
               "question": "De quel type de roche la croûte océanique est-elle principalement composée ?",
               "options": [
-                "Le granite 🪨",
-                "Le basalte 🪨",
-                "Le calcaire 🪨"
+                "Le granite",
+                "Le basalte",
+                "Le calcaire"
               ],
-              "correctAnswer": "Le basalte 🪨"
+              "correctAnswer": "Le basalte"
             },
             {
               "question": "Dans quelle zone du manteau les roches solides deviennent-elles ductiles (plastiques) ?",
               "options": [
-                "La lithosphère 🗺️",
-                "L'asthénosphère 🌋",
-                "Le noyau externe ☄️"
+                "La lithosphère",
+                "L'asthénosphère",
+                "Le noyau externe"
               ],
-              "correctAnswer": "L'asthénosphère 🌋"
+              "correctAnswer": "L'asthénosphère"
             },
             {
               "question": "Quel mécanisme thermique dans le manteau déplace lentement les plaques tectoniques ?",
               "options": [
-                "La conduction 🌡️",
-                "Les courants de convection 🌀",
-                "Le rayonnement infrarouge ☀️"
+                "La conduction",
+                "Les courants de convection",
+                "Le rayonnement infrarouge"
               ],
-              "correctAnswer": "Les courants de convection 🌀"
+              "correctAnswer": "Les courants de convection"
             },
             {
               "question": "Quelle couche terrestre liquide génère le champ magnétique de notre planète par effet dynamo ?",
               "options": [
-                "Le noyau externe liquide 🧲",
-                "L'asthénosphère 🌋",
-                "Le manteau inférieur 🌀"
+                "Le noyau externe liquide",
+                "L'asthénosphère",
+                "Le manteau inférieur"
               ],
-              "correctAnswer": "Le noyau externe liquide 🧲"
+              "correctAnswer": "Le noyau externe liquide"
             },
             {
               "question": "Comment s'appelle la partie solide centrale du noyau de la Terre ?",
               "options": [
-                "La graine ☄️",
-                "Le manteau 🌋",
-                "Le Moho 🥾"
+                "La graine",
+                "Le manteau",
+                "Le Moho"
               ],
-              "correctAnswer": "La graine ☄️"
+              "correctAnswer": "La graine"
             },
             {
               "question": "Pourquoi le fer reste-t-il solide dans le noyau interne malgré une température de 5000°C ?",
               "options": [
-                "Parce qu'il y fait froid 🥶",
-                "En raison de la pression phénoménale exercée au centre de la Terre ☄️",
-                "Grâce au champ magnétique 🧲"
+                "Parce qu'il y fait froid",
+                "En raison de la pression phénoménale exercée au centre de la Terre",
+                "Grâce au champ magnétique"
               ],
-              "correctAnswer": "En raison de la pression phénoménale exercée au centre de la Terre ☄️"
+              "correctAnswer": "En raison de la pression phénoménale exercée au centre de la Terre"
             },
             {
               "question": "Quel gaz solaire nocif le champ magnétique terrestre bloque-t-il pour nous protéger ?",
               "options": [
-                "L'hélium 🧪",
-                "Le vent solaire (particules chargées) 💨",
-                "L'azote 💨"
+                "L'hélium",
+                "Le vent solaire (particules chargées)",
+                "L'azote"
               ],
-              "correctAnswer": "Le vent solaire (particules chargées) 💨"
+              "correctAnswer": "Le vent solaire (particules chargées)"
             }
           ]
         },
@@ -16617,92 +20651,92 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Pourquoi fait-il plus chaud à l'équateur qu'aux pôles ?",
               "options": [
-                "Parce que le Soleil y est plus proche ☀️",
-                "Parce que les rayons y frappent verticalement et se concentrent sur une surface plus petite ☀️",
-                "En raison de la présence de volcans équatoriaux 🌋"
+                "Parce que le Soleil y est plus proche",
+                "Parce que les rayons y frappent verticalement et se concentrent sur une surface plus petite",
+                "En raison de la présence de volcans équatoriaux"
               ],
-              "correctAnswer": "Parce que les rayons y frappent verticalement et se concentrent sur une surface plus petite ☀️"
+              "correctAnswer": "Parce que les rayons y frappent verticalement et se concentrent sur une surface plus petite"
             },
             {
               "question": "Quelle cellule atmosphérique génère la sécheresse des grands déserts tropicaux ?",
               "options": [
-                "La cellule de Hadley 🌀",
-                "La cellule de Ferrel 🌀",
-                "La cellule polaire 🌀"
+                "La cellule de Hadley",
+                "La cellule de Ferrel",
+                "La cellule polaire"
               ],
-              "correctAnswer": "La cellule de Hadley 🌀"
+              "correctAnswer": "La cellule de Hadley"
             },
             {
               "question": "Quel paramètre physique dicte la densité de l'eau dans la circulation thermohaline ?",
               "options": [
-                "La pression et le vent 💨",
-                "La température et la salinité 🌊",
-                "La profondeur du fond marin 🌊"
+                "La pression et le vent",
+                "La température et la salinité",
+                "La profondeur du fond marin"
               ],
-              "correctAnswer": "La température et la salinité 🌊"
+              "correctAnswer": "La température et la salinité"
             },
             {
               "question": "Quel courant marin chaud adoucit le climat hivernal de l'Europe de l'Ouest ?",
               "options": [
-                "Le Gulf Stream 🌊",
-                "Le courant de Humboldt 🌊",
-                "Le courant circumpolaire ❄️"
+                "Le Gulf Stream",
+                "Le courant de Humboldt",
+                "Le courant circumpolaire"
               ],
-              "correctAnswer": "Le Gulf Stream 🌊"
+              "correctAnswer": "Le Gulf Stream"
             },
             {
               "question": "Comment appelle-t-on le sol gelé en permanence caractéristique de la toundra ?",
               "options": [
-                "L'humus 🍂",
-                "Le pergélisol (pergélisol) ❄️",
-                "Le calcaire 🪨"
+                "L'humus",
+                "Le pergélisol (pergélisol)",
+                "Le calcaire"
               ],
-              "correctAnswer": "Le pergélisol (pergélisol) ❄️"
+              "correctAnswer": "Le pergélisol (pergélisol)"
             },
             {
               "question": "Quel biome est composé d'une vaste forêt de conifères (pins, sapins) résistants aux hivers froids ?",
               "options": [
-                "La toundra ❄️",
-                "La taïga (forêt boréale) 🌲",
-                "La savane 🦁"
+                "La toundra",
+                "La taïga (forêt boréale)",
+                "La savane"
               ],
-              "correctAnswer": "La taïga (forêt boréale) 🌲"
+              "correctAnswer": "La taïga (forêt boréale)"
             },
             {
               "question": "Quel gaz à effet de serre est libéré massivement lors de la fonte du pergélisol ?",
               "options": [
-                "Le dioxygène 💨",
-                "Le méthane 🧪",
-                "L'azote 💨"
+                "Le dioxygène",
+                "Le méthane",
+                "L'azote"
               ],
-              "correctAnswer": "Le méthane 🧪"
+              "correctAnswer": "Le méthane"
             },
             {
               "question": "Dans quelle zone climatique générale la France est-elle située ?",
               "options": [
-                "La zone chaude ☀️",
-                "La zone tempérée 🌤️",
-                "La zone froide ❄️"
+                "La zone chaude",
+                "La zone tempérée",
+                "La zone froide"
               ],
-              "correctAnswer": "La zone tempérée 🌤️"
+              "correctAnswer": "La zone tempérée"
             },
             {
               "question": "Quelle est la principale caractéristique de la végétation du biome de la toundra ?",
               "options": [
-                "Des arbres géants 🌲",
-                "Une absence d'arbres avec présence de mousses et lichens rases ❄️",
-                "Des cactus épineux 🌵"
+                "Des arbres géants",
+                "Une absence d'arbres avec présence de mousses et lichens rases",
+                "Des cactus épineux"
               ],
-              "correctAnswer": "Une absence d'arbres avec présence de mousses et lichens rases ❄️"
+              "correctAnswer": "Une absence d'arbres avec présence de mousses et lichens rases"
             },
             {
               "question": "Comment le changement climatique modifie-t-il la position des biomes ?",
               "options": [
-                "Il les déplace vers l'équateur 🌍",
-                "Il les déplace vers les pôles et en altitude 📈",
-                "Il n'a aucune influence géographique 🤷"
+                "Il les déplace vers l'équateur",
+                "Il les déplace vers les pôles et en altitude",
+                "Il n'a aucune influence géographique"
               ],
-              "correctAnswer": "Il les déplace vers les pôles et en altitude 📈"
+              "correctAnswer": "Il les déplace vers les pôles et en altitude"
             }
           ]
         },
@@ -17553,11 +21587,11 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Quel mot commence par la lettre C ? 🐞",
               "options": [
-                "Bébé 👶",
-                "Coccinelle 🐞",
-                "Âne 🫏"
+                "Bébé",
+                "Coccinelle",
+                "Âne"
               ],
-              "correctAnswer": "Coccinelle 🐞"
+              "correctAnswer": "Coccinelle"
             },
             {
               "question": "Quelle lettre commence le mot 'Bébé' ? 👶",
@@ -17567,6 +21601,77 @@ export const UNIVERSES: Record<string, Universe> = {
                 "B"
               ],
               "correctAnswer": "B"
+            }
+          ,
+            {
+              "question": "D'après la leçon \"La lettre A\", complète : L'âne est un animal gentil...",
+              "options": [
+                "L'âne est un animal gentil avec de grandes oreilles qui fait 'Hi-Han",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "L'âne est un animal gentil avec de grandes oreilles qui fait 'Hi-Han"
+            },
+            {
+              "question": "Est-il vrai que e bébé dort dans son berceau tout chaud en serrant son doudou ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète cette information : \"C comme **C...\"",
+              "options": [
+                "occinelle**",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "occinelle**"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"La lettre A\" ?",
+              "options": [
+                "L'âne est un animal gentil avec de grandes oreilles qui fait 'Hi-Han",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "L'âne est un animal gentil avec de grandes oreilles qui fait 'Hi-Han"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"La lettre B\" ?",
+              "options": [
+                "B comme **Bébé**",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "B comme **Bébé**"
+            },
+            {
+              "question": "D'après la leçon \"La lettre C\", complète : C'est une petite bête rouge...",
+              "options": [
+                "C'est une petite bête rouge avec des points noirs sur le dos",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "C'est une petite bête rouge avec des points noirs sur le dos"
+            },
+            {
+              "question": "Est-il vrai que 'âne est un animal gentil avec de grandes oreilles qui fait 'hi-han ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
             }
           ]
         },
@@ -17599,29 +21704,100 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Quel mot rime avec le mot 'Lapin' ? 🐇",
               "options": [
-                "Chat 🐱",
-                "Sapin 🌲",
-                "Chocolat 🍫"
+                "Chat",
+                "Sapin",
+                "Chocolat"
               ],
-              "correctAnswer": "Sapin 🌲"
+              "correctAnswer": "Sapin"
             },
             {
               "question": "Quel mot rime avec 'Maison' ? 🏠",
               "options": [
-                "Ballon 🎈",
-                "Girafe 🦒",
-                "Grenouille 🐸"
+                "Ballon",
+                "Girafe",
+                "Grenouille"
               ],
-              "correctAnswer": "Ballon 🎈"
+              "correctAnswer": "Ballon"
             },
             {
               "question": "Que se passe-t-il quand deux mots riment ?",
               "options": [
-                "Ils s'écrivent pareil 📝",
-                "Ils se terminent par le même son 🎶",
-                "Ils veulent dire le contraire 🚫"
+                "Ils s'écrivent pareil",
+                "Ils se terminent par le même son",
+                "Ils veulent dire le contraire"
               ],
-              "correctAnswer": "Ils se terminent par le même son 🎶"
+              "correctAnswer": "Ils se terminent par le même son"
+            }
+          ,
+            {
+              "question": "D'après la leçon \"Qu'est-ce qu'une rime ?\", complète : Deux mots **riment** quand ils...",
+              "options": [
+                "Deux mots **riment** quand ils se terminent par le même son sonore",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Deux mots **riment** quand ils se terminent par le même son sonore"
+            },
+            {
+              "question": "Est-il vrai que ls finissent tous les deux par le son 'in' ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Le mot **maison** 🏠 rime _____ mot **ballon** 🎈\"",
+              "options": [
+                "avec le",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "avec le"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Qu'est-ce qu'une rime ?\" ?",
+              "options": [
+                "C'est amusant et poétique",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "C'est amusant et poétique"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"La rime en 'in'\" ?",
+              "options": [
+                "Le mot **lapin** 🐰 rime avec le mot **sapin** 🌲",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Le mot **lapin** 🐰 rime avec le mot **sapin** 🌲"
+            },
+            {
+              "question": "D'après la leçon \"La rime en 'on'\", complète : Ils finissent tous les deux...",
+              "options": [
+                "Ils finissent tous les deux par le son 'on'",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Ils finissent tous les deux par le son 'on'"
+            },
+            {
+              "question": "Est-il vrai que eux mots **riment** quand ils se terminent par le même son sonore ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
             }
           ]
         },
@@ -17691,6 +21867,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Niveau 3"
             }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Les Verbes\" ?",
+              "options": [
+                "Cette leçon traite de Les Verbes",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Verbes"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Verbes\"",
+              "options": [
+                "de Les",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Les"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Les Verbes\" ?",
+              "options": [
+                "Cette leçon traite de Les Verbes",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Verbes"
+            }
           ]
         },
         {
@@ -17758,6 +21985,57 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 3"
               ],
               "correctAnswer": "Niveau 4"
+            }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Le Pluriel\" ?",
+              "options": [
+                "Cette leçon traite de Le Pluriel",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Le Pluriel"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Pluriel\"",
+              "options": [
+                "de Le",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Le"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Le Pluriel\" ?",
+              "options": [
+                "Cette leçon traite de Le Pluriel",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Le Pluriel"
             }
           ]
         },
@@ -17827,6 +22105,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Niveau 5"
             }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Le Féminin\" ?",
+              "options": [
+                "Cette leçon traite de Le Féminin",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Le Féminin"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Féminin\"",
+              "options": [
+                "de Le",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Le"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Le Féminin\" ?",
+              "options": [
+                "Cette leçon traite de Le Féminin",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Le Féminin"
+            }
           ]
         },
         {
@@ -17894,6 +22223,57 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 5"
               ],
               "correctAnswer": "Niveau 6"
+            }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Les Adjectifs\" ?",
+              "options": [
+                "Cette leçon traite de Les Adjectifs",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Adjectifs"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Adjectifs\"",
+              "options": [
+                "de Les",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Les"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Les Adjectifs\" ?",
+              "options": [
+                "Cette leçon traite de Les Adjectifs",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Adjectifs"
             }
           ]
         },
@@ -17963,6 +22343,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Niveau 7"
             }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : La Ponctuation\" ?",
+              "options": [
+                "Cette leçon traite de La Ponctuation",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de La Ponctuation"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Ponctuation\"",
+              "options": [
+                "de La",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de La"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : La Ponctuation\" ?",
+              "options": [
+                "Cette leçon traite de La Ponctuation",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de La Ponctuation"
+            }
           ]
         },
         {
@@ -18030,6 +22461,57 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 7"
               ],
               "correctAnswer": "Niveau 8"
+            }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Les Synonymes\" ?",
+              "options": [
+                "Cette leçon traite de Les Synonymes",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Synonymes"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Synonymes\"",
+              "options": [
+                "de Les",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Les"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Les Synonymes\" ?",
+              "options": [
+                "Cette leçon traite de Les Synonymes",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Synonymes"
             }
           ]
         },
@@ -18099,6 +22581,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Niveau 9"
             }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Le Présent\" ?",
+              "options": [
+                "Cette leçon traite de Le Présent",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Le Présent"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Présent\"",
+              "options": [
+                "de Le",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Le"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Le Présent\" ?",
+              "options": [
+                "Cette leçon traite de Le Présent",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Le Présent"
+            }
           ]
         },
         {
@@ -18167,6 +22700,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Niveau 10"
             }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Les Homophones\" ?",
+              "options": [
+                "Cette leçon traite de Les Homophones",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Homophones"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Homophones\"",
+              "options": [
+                "de Les",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Les"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Les Homophones\" ?",
+              "options": [
+                "Cette leçon traite de Les Homophones",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Homophones"
+            }
           ]
         }
       ],
@@ -18210,47 +22794,98 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Quel est le synonyme du mot 'heureux' ?",
               "options": [
-                "Triste 😢",
-                "Fatigué 🥱",
-                "Joyeux 😊"
+                "Triste",
+                "Fatigué",
+                "Joyeux"
               ],
-              "correctAnswer": "Joyeux 😊"
+              "correctAnswer": "Joyeux"
             },
             {
               "question": "Trouve le synonyme du mot 'bâtir' :",
               "options": [
-                "Détruire 🔨",
-                "Construire 🏗️",
-                "Dessiner 🎨"
+                "Détruire",
+                "Construire",
+                "Dessiner"
               ],
-              "correctAnswer": "Construire 🏗️"
+              "correctAnswer": "Construire"
             },
             {
               "question": "Lequel de ces mots est synonyme de 'bicyclette' ?",
               "options": [
-                "Voiture 🚗",
-                "Train 🚆",
-                "Vélo 🚲"
+                "Voiture",
+                "Train",
+                "Vélo"
               ],
-              "correctAnswer": "Vélo 🚲"
+              "correctAnswer": "Vélo"
             },
             {
               "question": "Quel est l'antonyme (le contraire) du mot 'rapide' ?",
               "options": [
-                "Véloce ⚡",
-                "Lent 🐢",
-                "Pressé 🏃‍♂️"
+                "Véloce",
+                "Lent",
+                "Pressé"
               ],
-              "correctAnswer": "Lent 🐢"
+              "correctAnswer": "Lent"
             },
             {
               "question": "Parmi ces mots de sens proche, lequel appartient au registre de langue soutenu ?",
               "options": [
-                "Une piaule 🛏️",
-                "Une maison 🏠",
-                "Une demeure 🏰"
+                "Une piaule",
+                "Une maison",
+                "Une demeure"
               ],
-              "correctAnswer": "Une demeure 🏰"
+              "correctAnswer": "Une demeure"
+            }
+          ,
+            {
+              "question": "D'après la leçon \"Qu'est-ce qu'un synonyme ?\", complète : Deux mots sont synonymes s'ils...",
+              "options": [
+                "Deux mots sont synonymes s'ils ont presque le même sens",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Deux mots sont synonymes s'ils ont presque le même sens"
+            },
+            {
+              "question": "Est-il vrai que tiliser des synonymes évite de répéter le même mot plusieurs fois dans une rédaction et rend tes textes plus riches et intéressants ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Voici des couples de synonymes : *heureux* _____ *rapide* et *véloce*, *maison* et *habitation*\"",
+              "options": [
+                "et *content*,",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "et *content*,"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Les Antonymes\" ?",
+              "options": [
+                "Par exemple : chaud et froid, grand et petit, monter et descendre",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Par exemple : chaud et froid, grand et petit, monter et descendre"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Les registres de langue\" ?",
+              "options": [
+                "Un même synonyme peut appartenir à un niveau de langage différent :...",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Un même synonyme peut appartenir à un niveau de langage différent :..."
             }
           ]
         },
@@ -18293,47 +22928,98 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Quel mot complète la phrase : 'Marie ___ fatiguée ce soir' ?",
               "options": [
-                "et ➕",
-                "est (verbe être) 🥱",
-                "es 👤"
+                "et",
+                "est (verbe être)",
+                "es"
               ],
-              "correctAnswer": "est (verbe être) 🥱"
+              "correctAnswer": "est (verbe être)"
             },
             {
               "question": "Quel mot complète la phrase : 'Il va ___ la plage avec son seau' ?",
               "options": [
-                "a (verbe avoir) 🫴",
-                "à (direction) 🏖️",
-                "ah ! 😲"
+                "a (verbe avoir)",
+                "à (direction)",
+                "ah !"
               ],
-              "correctAnswer": "à (direction) 🏖️"
+              "correctAnswer": "à (direction)"
             },
             {
               "question": "Trouve la bonne orthographe : 'Le ___ rampe sous les feuilles' :",
               "options": [
-                "ver 🪱",
-                "verre 🥛",
-                "vers 🧭"
+                "ver",
+                "verre",
+                "vers"
               ],
-              "correctAnswer": "ver 🪱"
+              "correctAnswer": "ver"
             },
             {
               "question": "Complète la phrase : 'Les enfants ___ ravis de ce jeu.'",
               "options": [
-                "son (bruit) 🔊",
-                "sont (verbe être) 😊",
-                "sans 🚫"
+                "son (bruit)",
+                "sont (verbe être)",
+                "sans"
               ],
-              "correctAnswer": "sont (verbe être) 😊"
+              "correctAnswer": "sont (verbe être)"
             },
             {
               "question": "Trouve la phrase qui contient une ERREUR d'accord du verbe :",
               "options": [
-                "Le singe grimpe vite 🐒",
-                "Les girafes mangent des feuilles 🦒",
-                "Les chats miaule très fort 🐱"
+                "Le singe grimpe vite",
+                "Les girafes mangent des feuilles",
+                "Les chats miaule très fort"
               ],
-              "correctAnswer": "Les chats miaule très fort 🐱"
+              "correctAnswer": "Les chats miaule très fort"
+            }
+          ,
+            {
+              "question": "D'après la leçon \"Des jumeaux de prononciation\", complète : Les **homophones** sont des mots...",
+              "options": [
+                "Les **homophones** sont des mots différents qui font exactement le même son à...",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Les **homophones** sont des mots différents qui font exactement le même son à..."
+            },
+            {
+              "question": "Est-il vrai que e **à** avec accent montre une direction ou un lieu (il va *à* la piscine) ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète cette information : \"Astuce : rempl...\"",
+              "options": [
+                "ace par 'était'",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "ace par 'était'"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Les homophones 'son' et 'sont'\" ?",
+              "options": [
+                "Le **son** est un bruit ou un adjectif possessif (son ballon)",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Le **son** est un bruit ou un adjectif possessif (son ballon)"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"L'accord du verbe\" ?",
+              "options": [
+                "Si le sujet est au pluriel, la terminaison change",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Si le sujet est au pluriel, la terminaison change"
             }
           ]
         },
@@ -19290,92 +23976,92 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Quel terme qualifie un mot ayant plusieurs significations différentes ?",
               "options": [
-                "Polysémique 📚",
-                "Homophone 🗣️",
-                "Antonymique ⚖️"
+                "Polysémique",
+                "Homophone",
+                "Antonymique"
               ],
-              "correctAnswer": "Polysémique 📚"
+              "correctAnswer": "Polysémique"
             },
             {
               "question": "Trouvez le synonyme le plus adapté de 'glacé' dans : 'Ce bruit soudain m'a glacé.'",
               "options": [
-                "Congelé ❄️",
-                "Paralysé de peur 😨",
-                "Rafraîchi 🌬️"
+                "Congelé",
+                "Paralysé de peur",
+                "Rafraîchi"
               ],
-              "correctAnswer": "Paralysé de peur 😨"
+              "correctAnswer": "Paralysé de peur"
             },
             {
               "question": "Quel type d'antonymes s'excluent mutuellement sans intermédiaire (comme 'présent' et 'absent') ?",
               "options": [
-                "Les antonymes graduels 🌡️",
-                "Les antonymes complémentaires ⚖️",
-                "Les synonymes 🤝"
+                "Les antonymes graduels",
+                "Les antonymes complémentaires",
+                "Les synonymes"
               ],
-              "correctAnswer": "Les antonymes complémentaires ⚖️"
+              "correctAnswer": "Les antonymes complémentaires"
             },
             {
               "question": "Quel préfixe privatif convient pour former l'antonyme de 'légal' ?",
               "options": [
-                "Le préfixe ir- ✍️",
-                "Le préfixe il- (illégal) ✍️",
-                "Le préfixe im- ✍️"
+                "Le préfixe ir-",
+                "Le préfixe il- (illégal)",
+                "Le préfixe im-"
               ],
-              "correctAnswer": "Le préfixe il- (illégal) ✍️"
+              "correctAnswer": "Le préfixe il- (illégal)"
             },
             {
               "question": "Qu'est-ce que la dénotation d'un mot ?",
               "options": [
-                "Sa valeur subjective et affective 🗣️",
-                "Sa définition neutre et objective dans le dictionnaire 📖",
-                "Son origine historique 📜"
+                "Sa valeur subjective et affective",
+                "Sa définition neutre et objective dans le dictionnaire",
+                "Son origine historique"
               ],
-              "correctAnswer": "Sa définition neutre et objective dans le dictionnaire 📖"
+              "correctAnswer": "Sa définition neutre et objective dans le dictionnaire"
             },
             {
               "question": "Quel synonyme de 'grand' exprime une nuance d'immensité physique écrasante ?",
               "options": [
-                "Gros 📏",
-                "Gigantesque 📏",
-                "Moyen 📏"
+                "Gros",
+                "Gigantesque",
+                "Moyen"
               ],
-              "correctAnswer": "Gigantesque 📏"
+              "correctAnswer": "Gigantesque"
             },
             {
               "question": "Quelle est la connotation du mot 'clébard' par rapport à 'chien' ?",
               "options": [
-                "Méliorative (positive) 😊",
-                "Péjorative (négative/méprisante) ❌",
-                "Neutre 📖"
+                "Méliorative (positive)",
+                "Péjorative (négative/méprisante)",
+                "Neutre"
               ],
-              "correctAnswer": "Péjorative (négative/méprisante) ❌"
+              "correctAnswer": "Péjorative (négative/méprisante)"
             },
             {
               "question": "Trouvez l'antonyme graduel de 'chaud' :",
               "options": [
-                "Froid (avec intermédiaire tiède possible) 🌡️",
-                "Mort 🪦",
-                "Vrai 🟩"
+                "Froid (avec intermédiaire tiède possible)",
+                "Mort",
+                "Vrai"
               ],
-              "correctAnswer": "Froid (avec intermédiaire tiède possible) 🌡️"
+              "correctAnswer": "Froid (avec intermédiaire tiède possible)"
             },
             {
               "question": "Quel préfixe exprime l'inversion d'une action pour le verbe 'coller' ?",
               "options": [
-                "Le préfixe in- ✍️",
-                "Le préfixe dé- (décoller) ✍️",
-                "Le préfixe re- ✍️"
+                "Le préfixe in-",
+                "Le préfixe dé- (décoller)",
+                "Le préfixe re-"
               ],
-              "correctAnswer": "Le préfixe dé- (décoller) ✍️"
+              "correctAnswer": "Le préfixe dé- (décoller)"
             },
             {
               "question": "Quel mot de sens proche possède la connotation la plus méliorative (luxueuse) ?",
               "options": [
-                "Un logis 🏠",
-                "Une demeure 🏰",
-                "Une cabane 🛖"
+                "Un logis",
+                "Une demeure",
+                "Une cabane"
               ],
-              "correctAnswer": "Une demeure 🏰"
+              "correctAnswer": "Une demeure"
             }
           ]
         },
@@ -19418,92 +24104,92 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Dans la phrase : 'Les parents ___ expliquent ___ leçons', complétez avec les bons homophones.",
               "options": [
-                "leur / leurs 📚",
-                "leurs / leur 📚",
-                "leur / leur 📚"
+                "leur / leurs",
+                "leurs / leur",
+                "leur / leur"
               ],
-              "correctAnswer": "leur / leurs 📚"
+              "correctAnswer": "leur / leurs"
             },
             {
               "question": "Quelle est l'orthographe correcte dans : 'Il ___ réveille à 6h pour ranger ___ outils.' ?",
               "options": [
-                "ce / ces 🛠️",
-                "se / ses 🛠️",
-                "ce / ses 🛠️"
+                "ce / ces",
+                "se / ses",
+                "ce / ses"
               ],
-              "correctAnswer": "se / ses 🛠️"
+              "correctAnswer": "se / ses"
             },
             {
               "question": "Accordez correctement le participe passé : 'La chanson qu'elles ont ___ était magnifique.'",
               "options": [
-                "chanté 🎤",
-                "chantée 🎤",
-                "chantées 🎤"
+                "chanté",
+                "chantée",
+                "chantées"
               ],
-              "correctAnswer": "chantée 🎤"
+              "correctAnswer": "chantée"
             },
             {
               "question": "Complétez la phrase : 'La ___ de Jules est allée se baigner dans la ___.'",
               "options": [
-                "mer / mère 👩",
-                "mère / mer (parent / eau) 👩🌊",
-                "maire / mer 🏛️"
+                "mer / mère",
+                "mère / mer (parent / eau)",
+                "maire / mer"
               ],
-              "correctAnswer": "mère / mer (parent / eau) 👩🌊"
+              "correctAnswer": "mère / mer (parent / eau)"
             },
             {
               "question": "Quelle phrase est correctement conjuguée au subjonctif présent ?",
               "options": [
-                "Je veux que tu viennes 💫",
-                "Il faut que je vois ce film 🎬",
-                "Je crois qu'il vient ☀️"
+                "Je veux que tu viennes",
+                "Il faut que je vois ce film",
+                "Je crois qu'il vient"
               ],
-              "correctAnswer": "Je veux que tu viennes 💫"
+              "correctAnswer": "Je veux que tu viennes"
             },
             {
               "question": "Dans la phrase 'Je leur parle', pourquoi 'leur' est-il invariable ?",
               "options": [
-                "Parce qu'il s'accorde avec le sujet 🚫",
-                "Parce qu'il est pronom personnel placé devant un verbe 🗣️",
-                "C'est une exception orthographique 📝"
+                "Parce qu'il s'accorde avec le sujet",
+                "Parce qu'il est pronom personnel placé devant un verbe",
+                "C'est une exception orthographique"
               ],
-              "correctAnswer": "Parce qu'il est pronom personnel placé devant un verbe 🗣️"
+              "correctAnswer": "Parce qu'il est pronom personnel placé devant un verbe"
             },
             {
               "question": "Comment écrit-on l'homophone dans : 'Il se dirige ___ le sud.' ?",
               "options": [
-                "ver 🪱",
-                "verre 🥛",
-                "vers 🧭"
+                "ver",
+                "verre",
+                "vers"
               ],
-              "correctAnswer": "vers 🧭"
+              "correctAnswer": "vers"
             },
             {
               "question": "Quel participe passé est correctement accordé dans la phrase ci-dessous ?",
               "options": [
-                "Elles ont achetés des pommes 🍎",
-                "Ils sont partis tôt 🏃‍♂️",
-                "Elle a mangée une tarte 🥧"
+                "Elles ont achetés des pommes",
+                "Ils sont partis tôt",
+                "Elle a mangée une tarte"
               ],
-              "correctAnswer": "Ils sont partis tôt 🏃‍♂️"
+              "correctAnswer": "Ils sont partis tôt"
             },
             {
               "question": "Quelle est la nature du mot 'ce' dans 'Ce garçon est poli' ?",
               "options": [
-                "Un pronom personnel 👤",
-                "Un déterminant démonstratif 🎒",
-                "Un verbe conjugué 📝"
+                "Un pronom personnel",
+                "Un déterminant démonstratif",
+                "Un verbe conjugué"
               ],
-              "correctAnswer": "Un déterminant démonstratif 🎒"
+              "correctAnswer": "Un déterminant démonstratif"
             },
             {
               "question": "Quelle est la terminaison de la 1ère personne du singulier au subjonctif présent pour le verbe 'voir' ?",
               "options": [
-                "-s 📝",
-                "-e (que je voie) 📝",
-                "-t 📝"
+                "-s",
+                "-e (que je voie)",
+                "-t"
               ],
-              "correctAnswer": "-e (que je voie) 📝"
+              "correctAnswer": "-e (que je voie)"
             }
           ]
         },
@@ -19546,92 +24232,92 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Combien de propositions conjuguées comporte une phrase simple ?",
               "options": [
-                "Une seule proposition 📝",
-                "Deux propositions 📝",
-                "Trois propositions ou plus 📝"
+                "Une seule proposition",
+                "Deux propositions",
+                "Trois propositions ou plus"
               ],
-              "correctAnswer": "Une seule proposition 📝"
+              "correctAnswer": "Une seule proposition"
             },
             {
               "question": "Quelle conjonction introduit la proposition subordonnée conjonctive complétive ?",
               "options": [
-                "Qui 🔍",
-                "Que 🔍",
-                "Mais ➕"
+                "Qui",
+                "Que",
+                "Mais"
               ],
-              "correctAnswer": "Que 🔍"
+              "correctAnswer": "Que"
             },
             {
               "question": "Dans un récit au passé, quel temps décrit une action soudaine de premier plan ?",
               "options": [
-                "L'imparfait ⏳",
-                "Le passé simple ⚡",
-                "Le présent de l'indicatif ⏳"
+                "L'imparfait",
+                "Le passé simple",
+                "Le présent de l'indicatif"
               ],
-              "correctAnswer": "Le passé simple ⚡"
+              "correctAnswer": "Le passé simple"
             },
             {
               "question": "Comment est formé le radical du conditionnel présent ?",
               "options": [
-                "Sur le radical du présent de l'indicatif 📝",
-                "Sur le radical du futur simple 🔮",
-                "Sur le participe passé ➕"
+                "Sur le radical du présent de l'indicatif",
+                "Sur le radical du futur simple",
+                "Sur le participe passé"
               ],
-              "correctAnswer": "Sur le radical du futur simple 🔮"
+              "correctAnswer": "Sur le radical du futur simple"
             },
             {
               "question": "Quelle phrase est à la voix passive ?",
               "options": [
-                "Le vent souffle fort 💨",
-                "Le gâteau a été dévoré par les enfants 🍰",
-                "Les élèves lisent un livre 📖"
+                "Le vent souffle fort",
+                "Le gâteau a été dévoré par les enfants",
+                "Les élèves lisent un livre"
               ],
-              "correctAnswer": "Le gâteau a été dévoré par les enfants 🍰"
+              "correctAnswer": "Le gâteau a été dévoré par les enfants"
             },
             {
               "question": "Comment sont reliées deux propositions séparées par une virgule ?",
               "options": [
-                "Elles sont coordonnées ➕",
-                "Elles sont juxtaposées 📝",
-                "Elles sont subordonnées 🔍"
+                "Elles sont coordonnées",
+                "Elles sont juxtaposées",
+                "Elles sont subordonnées"
               ],
-              "correctAnswer": "Elles sont juxtaposées 📝"
+              "correctAnswer": "Elles sont juxtaposées"
             },
             {
               "question": "Quel pronom introduit une proposition subordonnée relative ?",
               "options": [
-                "Parce que 🗣️",
-                "Dont 🔍",
-                "Mais ➕"
+                "Parce que",
+                "Dont",
+                "Mais"
               ],
-              "correctAnswer": "Dont 🔍"
+              "correctAnswer": "Dont"
             },
             {
               "question": "Quelle est la terminaison du verbe 'faire' à la 1ère personne du singulier au passé simple ?",
               "options": [
-                "je faisais ⏳",
-                "je fis ⚡",
-                "je ferai 🔮"
+                "je faisais",
+                "je fis",
+                "je ferai"
               ],
-              "correctAnswer": "je fis ⚡"
+              "correctAnswer": "je fis"
             },
             {
               "question": "Identifiez l'orthographe du conditionnel présent pour le verbe 'pouvoir' à la 1ère personne du singulier :",
               "options": [
-                "je pourrai 🔮",
-                "je pourrais 🔬",
-                "je pouvais ⏳"
+                "je pourrai",
+                "je pourrais",
+                "je pouvais"
               ],
-              "correctAnswer": "je pourrais 🔬"
+              "correctAnswer": "je pourrais"
             },
             {
               "question": "Dans la phrase passive 'La pomme est cueillie par Marc', quelle fonction occupe 'par Marc' ?",
               "options": [
-                "Sujet passif 🍎",
-                "Complément d'agent 👤",
-                "Complément circonstanciel de lieu 🗺️"
+                "Sujet passif",
+                "Complément d'agent",
+                "Complément circonstanciel de lieu"
               ],
-              "correctAnswer": "Complément d'agent 👤"
+              "correctAnswer": "Complément d'agent"
             }
           ]
         },
@@ -20473,29 +25159,100 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Quelle couleur obtiens-tu en mélangeant du Bleu et du Jaune ?",
               "options": [
-                "Vert 💚",
-                "Violet 💜",
-                "Rouge 🔴"
+                "Vert",
+                "Violet",
+                "Rouge"
               ],
-              "correctAnswer": "Vert 💚"
+              "correctAnswer": "Vert"
             },
             {
               "question": "Quel mélange donne la jolie couleur Orange ? 🍊",
               "options": [
                 "Bleu + Rouge",
-                "Rouge + Jaune 🔴+🟡",
+                "Rouge + Jaune +",
                 "Vert + Bleu"
               ],
-              "correctAnswer": "Rouge + Jaune 🔴+🟡"
+              "correctAnswer": "Rouge + Jaune +"
             },
             {
               "question": "Quelles sont les trois couleurs primaires ?",
               "options": [
                 "Vert, Orange et Violet",
-                "Bleu, Rouge et Jaune 🔵🔴🟡",
+                "Bleu, Rouge et Jaune",
                 "Noir, Blanc et Gris"
               ],
-              "correctAnswer": "Bleu, Rouge et Jaune 🔵🔴🟡"
+              "correctAnswer": "Bleu, Rouge et Jaune"
+            }
+          ,
+            {
+              "question": "D'après la leçon \"Les couleurs primaires\", complète : Le Bleu 🔵, le Rouge...",
+              "options": [
+                "Le Bleu 🔵, le Rouge 🔴 et le Jaune 🟡 sont les trois couleurs reines",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Le Bleu 🔵, le Rouge 🔴 et le Jaune 🟡 sont les trois couleurs reines"
+            },
+            {
+              "question": "Est-il vrai que u obtiens du beau vert pour peindre les arbres 🌱 ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Si tu mélanges de la peinture rouge et de la peinture _____ vas créer de l'Orange éclatant comme une clémentine 🍊\"",
+              "options": [
+                "jaune, tu",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "jaune, tu"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Les couleurs primaires\" ?",
+              "options": [
+                "Elles n'ont besoin d'aucune autre couleur pour exister",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Elles n'ont besoin d'aucune autre couleur pour exister"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Bleu + Jaune = Vert !\" ?",
+              "options": [
+                "Mélange un peu de peinture bleue et de peinture jaune dans ton assi...",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Mélange un peu de peinture bleue et de peinture jaune dans ton assi..."
+            },
+            {
+              "question": "D'après la leçon \"Rouge + Jaune = Orange !\", complète : Si tu mélanges de la...",
+              "options": [
+                "Si tu mélanges de la peinture rouge et de la peinture jaune, tu vas créer de ...",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Si tu mélanges de la peinture rouge et de la peinture jaune, tu vas créer de ..."
+            },
+            {
+              "question": "Est-il vrai que e bleu 🔵, le rouge 🔴 et le jaune 🟡 sont les trois couleurs reines ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
             }
           ]
         },
@@ -20528,29 +25285,100 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Quel instrument est tout long et demande de souffler dedans ?",
               "options": [
-                "La flûte 🪈",
-                "Le tambour 🥁",
-                "La guitare 🎸"
+                "La flûte",
+                "Le tambour",
+                "La guitare"
               ],
-              "correctAnswer": "La flûte 🪈"
+              "correctAnswer": "La flûte"
             },
             {
               "question": "Sur quel instrument tape-t-on pour faire du rythme ? 🥁",
               "options": [
-                "La guitare 🎸",
-                "Le piano 🎹",
-                "Le tambour 🥁"
+                "La guitare",
+                "Le piano",
+                "Le tambour"
               ],
-              "correctAnswer": "Le tambour 🥁"
+              "correctAnswer": "Le tambour"
             },
             {
               "question": "Comment produit-on du son sur une guitare ? 🎸",
               "options": [
-                "En tapant dessus 🔨",
-                "En faisant vibrer ses cordes 🎸",
-                "En soufflant dedans 💨"
+                "En tapant dessus",
+                "En faisant vibrer ses cordes",
+                "En soufflant dedans"
               ],
-              "correctAnswer": "En faisant vibrer ses cordes 🎸"
+              "correctAnswer": "En faisant vibrer ses cordes"
+            }
+          ,
+            {
+              "question": "D'après la leçon \"Le Tambour rond\", complète : Le **tambour** ou la batterie...",
+              "options": [
+                "Le **tambour** ou la batterie est tout rond 🥁",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Le **tambour** ou la batterie est tout rond 🥁"
+            },
+            {
+              "question": "Est-il vrai que n souffle dans un petit trou et on bouge ses doigts pour faire des notes douces ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"La **guitare** a un grand corps _____ six cordes tendues 🎸\"",
+              "options": [
+                "arrondi et",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "arrondi et"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le Tambour rond\" ?",
+              "options": [
+                "On tape dessus avec des baguettes pour faire un rythme rapide",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "On tape dessus avec des baguettes pour faire un rythme rapide"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"La Flûte longue\" ?",
+              "options": [
+                "La **flûte** est un instrument tout long et fin 🪈",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "La **flûte** est un instrument tout long et fin 🪈"
+            },
+            {
+              "question": "D'après la leçon \"La Guitare en bois\", complète : On fait vibrer les cordes...",
+              "options": [
+                "On fait vibrer les cordes avec ses doigts pour chanter des chansons",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "On fait vibrer les cordes avec ses doigts pour chanter des chansons"
+            },
+            {
+              "question": "Est-il vrai que e **tambour** ou la batterie est tout rond 🥁 ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
             }
           ]
         },
@@ -20620,6 +25448,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Niveau 3"
             }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Le Dessin\" ?",
+              "options": [
+                "Cette leçon traite de Le Dessin",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Le Dessin"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Dessin\"",
+              "options": [
+                "de Le",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Le"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Le Dessin\" ?",
+              "options": [
+                "Cette leçon traite de Le Dessin",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Le Dessin"
+            }
           ]
         },
         {
@@ -20687,6 +25566,57 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 3"
               ],
               "correctAnswer": "Niveau 4"
+            }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : La Musique\" ?",
+              "options": [
+                "Cette leçon traite de La Musique",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de La Musique"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Musique\"",
+              "options": [
+                "de La",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de La"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : La Musique\" ?",
+              "options": [
+                "Cette leçon traite de La Musique",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de La Musique"
             }
           ]
         },
@@ -20756,6 +25686,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Niveau 5"
             }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Les Chansons\" ?",
+              "options": [
+                "Cette leçon traite de Les Chansons",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Chansons"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Chansons\"",
+              "options": [
+                "de Les",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Les"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Les Chansons\" ?",
+              "options": [
+                "Cette leçon traite de Les Chansons",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Chansons"
+            }
           ]
         },
         {
@@ -20823,6 +25804,57 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 5"
               ],
               "correctAnswer": "Niveau 6"
+            }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Le Théâtre\" ?",
+              "options": [
+                "Cette leçon traite de Le Théâtre",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Le Théâtre"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Théâtre\"",
+              "options": [
+                "de Le",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Le"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Le Théâtre\" ?",
+              "options": [
+                "Cette leçon traite de Le Théâtre",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Le Théâtre"
             }
           ]
         },
@@ -20892,6 +25924,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Niveau 7"
             }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Le Cinéma\" ?",
+              "options": [
+                "Cette leçon traite de Le Cinéma",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Le Cinéma"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Cinéma\"",
+              "options": [
+                "de Le",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Le"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Le Cinéma\" ?",
+              "options": [
+                "Cette leçon traite de Le Cinéma",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Le Cinéma"
+            }
           ]
         },
         {
@@ -20959,6 +26042,57 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 7"
               ],
               "correctAnswer": "Niveau 8"
+            }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : La Sculpture\" ?",
+              "options": [
+                "Cette leçon traite de La Sculpture",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de La Sculpture"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Sculpture\"",
+              "options": [
+                "de La",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de La"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : La Sculpture\" ?",
+              "options": [
+                "Cette leçon traite de La Sculpture",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de La Sculpture"
             }
           ]
         },
@@ -21028,6 +26162,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Niveau 9"
             }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Les Musées\" ?",
+              "options": [
+                "Cette leçon traite de Les Musées",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Musées"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Musées\"",
+              "options": [
+                "de Les",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Les"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Les Musées\" ?",
+              "options": [
+                "Cette leçon traite de Les Musées",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Musées"
+            }
           ]
         },
         {
@@ -21096,6 +26281,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Niveau 10"
             }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Les Instruments\" ?",
+              "options": [
+                "Cette leçon traite de Les Instruments",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Instruments"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Instruments\"",
+              "options": [
+                "de Les",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Les"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Les Instruments\" ?",
+              "options": [
+                "Cette leçon traite de Les Instruments",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Les Instruments"
+            }
           ]
         }
       ],
@@ -21139,47 +26375,98 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Quel était le principal objectif des peintres impressionnistes ?",
               "options": [
-                "Peindre des portraits parfaits de rois 👑",
-                "Capturer la lumière naturelle et l'instant présent ☀️",
-                "Dessiner des formes géométriques abstraites 📐"
+                "Peindre des portraits parfaits de rois",
+                "Capturer la lumière naturelle et l'instant présent",
+                "Dessiner des formes géométriques abstraites"
               ],
-              "correctAnswer": "Capturer la lumière naturelle et l'instant présent ☀️"
+              "correctAnswer": "Capturer la lumière naturelle et l'instant présent"
             },
             {
               "question": "Quel peintre célèbre est l'une des figures majeures de l'Impressionnisme ?",
               "options": [
-                "Leonardo da Vinci 🎨",
-                "Claude Monet 🖼️",
-                "Pablo Picasso 🧑‍🎨"
+                "Leonardo da Vinci",
+                "Claude Monet",
+                "Pablo Picasso"
               ],
-              "correctAnswer": "Claude Monet 🖼️"
+              "correctAnswer": "Claude Monet"
             },
             {
               "question": "Quelle invention a permis aux artistes de peindre facilement en plein air ?",
               "options": [
-                "L'appareil photo numérique 📷",
+                "L'appareil photo numérique",
                 "Les tubes de peinture souples",
-                "L'électricité portative ⚡"
+                "L'électricité portative"
               ],
               "correctAnswer": "Les tubes de peinture souples"
             },
             {
               "question": "Qu'est-ce que l'art abstrait ?",
               "options": [
-                "De la peinture uniquement avec les doigts 👐",
-                "Une peinture qui n'essaie pas de représenter le monde réel mais exprime des émotions par les formes et couleurs 🎨",
-                "Des sculptures en stone 🗿"
+                "De la peinture uniquement avec les doigts",
+                "Une peinture qui n'essaie pas de représenter le monde réel mais exprime des émotions par les formes et couleurs",
+                "Des sculptures en stone"
               ],
-              "correctAnswer": "Une peinture qui n'essaie pas de représenter le monde réel mais exprime des émotions par les formes et couleurs 🎨"
+              "correctAnswer": "Une peinture qui n'essaie pas de représenter le monde réel mais exprime des émotions par les formes et couleurs"
             },
             {
               "question": "Qu'est-ce que le mélange optique en peinture ?",
               "options": [
-                "Mélanger les couleurs directement sur la toile avec de l'eau 💧",
-                "Poser des petits points de couleurs différentes côte à côte et laisser l'œil faire le mélange de loin 👁️",
-                "Peindre les yeux fermés 🙈"
+                "Mélanger les couleurs directement sur la toile avec de l'eau",
+                "Poser des petits points de couleurs différentes côte à côte et laisser l'œil faire le mélange de loin",
+                "Peindre les yeux fermés"
               ],
-              "correctAnswer": "Poser des petits points de couleurs différentes côte à côte et laisser l'œil faire le mélange de loin 👁️"
+              "correctAnswer": "Poser des petits points de couleurs différentes côte à côte et laisser l'œil faire le mélange de loin"
+            }
+          ,
+            {
+              "question": "D'après la leçon \"Peindre la lumière\", complète : L'Impressionnisme est un mouvement artistique...",
+              "options": [
+                "L'Impressionnisme est un mouvement artistique né en France il y a environ 150...",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "L'Impressionnisme est un mouvement artistique né en France il y a environ 150..."
+            },
+            {
+              "question": "Est-il vrai que râce à l'invention des tubes de peinture en étain, les peintres comme claude monet ont pu sortir de leur atelier pour peindre directement dans la nature, face aux paysages ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"De près, leurs peintures ressemblent à une _____ petites touches de couleurs juxtaposées\"",
+              "options": [
+                "multitude de",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "multitude de"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"L'Art abstrait\" ?",
+              "options": [
+                "Ils peignent des formes géométriques, des lignes et des couleurs po...",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Ils peignent des formes géométriques, des lignes et des couleurs po..."
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Le mélange optique\" ?",
+              "options": [
+                "Dans l'impressionnisme et le pointillisme, au lieu de mélanger le b...",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Dans l'impressionnisme et le pointillisme, au lieu de mélanger le b..."
             }
           ]
         },
@@ -21222,47 +26509,98 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Comment appelle-t-on la vitesse d'une composition musicale ?",
               "options": [
-                "Le volume 🔊",
-                "Le tempo ⏱️",
-                "La note 🎵"
+                "Le volume",
+                "Le tempo",
+                "La note"
               ],
-              "correctAnswer": "Le tempo ⏱️"
+              "correctAnswer": "Le tempo"
             },
             {
               "question": "Combien de lignes horizontales parallèles comporte une portée musicale ?",
               "options": [
                 "3 lignes",
-                "5 lignes 🎼",
+                "5 lignes",
                 "7 lignes"
               ],
-              "correctAnswer": "5 lignes 🎼"
+              "correctAnswer": "5 lignes"
             },
             {
               "question": "Qu'est-ce que la pulsation régulière en musique ?",
               "options": [
-                "Le cri du chanteur 🎤",
-                "Le battement stable comme le tic-tac d'une horloge ⏱️",
-                "L'instrument le plus fort 🎺"
+                "Le cri du chanteur",
+                "Le battement stable comme le tic-tac d'une horloge",
+                "L'instrument le plus fort"
               ],
-              "correctAnswer": "Le battement stable comme le tic-tac d'une horloge ⏱️"
+              "correctAnswer": "Le battement stable comme le tic-tac d'une horloge"
             },
             {
               "question": "À quelle famille appartient la flûte traversière et le saxophone ?",
               "options": [
-                "La famille des cordes 🎻",
-                "La famille des vents 🎷",
-                "La famille des percussions 🥁"
+                "La famille des cordes",
+                "La famille des vents",
+                "La famille des percussions"
               ],
-              "correctAnswer": "La famille des vents 🎷"
+              "correctAnswer": "La famille des vents"
             },
             {
               "question": "Quel terme italien est utilisé pour désigner une musique jouée très fort et puissamment ?",
               "options": [
-                "Piano 🎹",
-                "Forte 🔊",
-                "Adagio ⏱️"
+                "Piano",
+                "Forte",
+                "Adagio"
               ],
-              "correctAnswer": "Forte 🔊"
+              "correctAnswer": "Forte"
+            }
+          ,
+            {
+              "question": "D'après la leçon \"Le Tempo\", complète : Le **tempo** est la vitesse...",
+              "options": [
+                "Le **tempo** est la vitesse globale d'un morceau de musique",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Le **tempo** est la vitesse globale d'un morceau de musique"
+            },
+            {
+              "question": "Est-il vrai que 'est sur cette pulsation qu'on tape dans les mains en rythme ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Pour s'en souvenir et la rejouer, la musique s'écrit _____ grille de 5 lignes parallèles appelée une **portée**\"",
+              "options": [
+                "sur une",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "sur une"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Familles d'instruments\" ?",
+              "options": [
+                "Les instruments de l'orchestre sont rangés en 3 familles : les **co...",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Les instruments de l'orchestre sont rangés en 3 familles : les **co..."
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"L'intensité : les Nuances\" ?",
+              "options": [
+                "Le volume sonore d'un morceau est appelé **nuance**",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Le volume sonore d'un morceau est appelé **nuance**"
             }
           ]
         },
@@ -22219,92 +27557,92 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Où les peintres impressionnistes préféraient-ils peindre pour saisir la lumière ?",
               "options": [
-                "Dans des ateliers sombres 🚪",
-                "En extérieur, directement sur le motif ☀️",
-                "Dans des musées nationaux 🏛️"
+                "Dans des ateliers sombres",
+                "En extérieur, directement sur le motif",
+                "Dans des musées nationaux"
               ],
-              "correctAnswer": "En extérieur, directement sur le motif ☀️"
+              "correctAnswer": "En extérieur, directement sur le motif"
             },
             {
               "question": "Quel chimiste a écrit la loi du contraste simultané des couleurs ayant inspiré les impressionnistes ?",
               "options": [
-                "Antoine Lavoisier 🧪",
-                "Michel-Eugène Chevreul 🧪",
-                "Louis Pasteur 🔬"
+                "Antoine Lavoisier",
+                "Michel-Eugène Chevreul",
+                "Louis Pasteur"
               ],
-              "correctAnswer": "Michel-Eugène Chevreul 🧪"
+              "correctAnswer": "Michel-Eugène Chevreul"
             },
             {
               "question": "Quel peintre a fondé le Pointillisme avec son chef-d'œuvre de l'Île de la Grande Jatte ?",
               "options": [
-                "Claude Monet 🖼️",
-                "Georges Seurat 🎨",
-                "Vincent van Gogh 🌻"
+                "Claude Monet",
+                "Georges Seurat",
+                "Vincent van Gogh"
               ],
-              "correctAnswer": "Georges Seurat 🎨"
+              "correctAnswer": "Georges Seurat"
             },
             {
               "question": "Quelle est l'intention principale de l'art abstrait ?",
               "options": [
-                "Représenter des portraits précis de rois 👑",
-                "S'affranchir de la représentation du monde visible pour exprimer des émotions pures 🎨",
-                "Dessiner uniquement des animaux 🦁"
+                "Représenter des portraits précis de rois",
+                "S'affranchir de la représentation du monde visible pour exprimer des émotions pures",
+                "Dessiner uniquement des animaux"
               ],
-              "correctAnswer": "S'affranchir de la représentation du monde visible pour exprimer des émotions pures 🎨"
+              "correctAnswer": "S'affranchir de la représentation du monde visible pour exprimer des émotions pures"
             },
             {
               "question": "Quel mouvement artistique fondé par Picasso déconstruit les objets en facettes géométriques ?",
               "options": [
-                "L'Impressionnisme 🖼️",
-                "Le Cubisme 📐",
-                "Le Pointillisme 🖌️"
+                "L'Impressionnisme",
+                "Le Cubisme",
+                "Le Pointillisme"
               ],
-              "correctAnswer": "Le Cubisme 📐"
+              "correctAnswer": "Le Cubisme"
             },
             {
               "question": "En quelle année Kandinsky a-t-il peint la première œuvre totalement abstraite ?",
               "options": [
-                "1800 📜",
-                "1910 🎨",
-                "1980 💻"
+                "1800",
+                "1910",
+                "1980"
               ],
-              "correctAnswer": "1910 🎨"
+              "correctAnswer": "1910"
             },
             {
               "question": "Comment se fait le mélange des couleurs dans la technique du Pointillisme ?",
               "options": [
-                "Par dilution à l'eau 💧",
-                "Par synthèse optique directement dans l'œil du spectateur à distance 👁️",
-                "En mélangeant les pigments au couteau 🎨"
+                "Par dilution à l'eau",
+                "Par synthèse optique directement dans l'œil du spectateur à distance",
+                "En mélangeant les pigments au couteau"
               ],
-              "correctAnswer": "Par synthèse optique directement dans l'œil du spectateur à distance 👁️"
+              "correctAnswer": "Par synthèse optique directement dans l'œil du spectateur à distance"
             },
             {
               "question": "Quelle paire de couleurs complémentaires s'exalte mutuellement selon la théorie de Chevreul ?",
               "options": [
-                "Le bleu et le orange 🔵🟠",
-                "Le noir et le blanc 🖤🤍",
-                "Le vert et le jaune 🟢💛"
+                "Le bleu et le orange",
+                "Le noir et le blanc",
+                "Le vert et le jaune"
               ],
-              "correctAnswer": "Le bleu et le orange 🔵🟠"
+              "correctAnswer": "Le bleu et le orange"
             },
             {
               "question": "Quel peintre impressionniste célèbre est l'auteur de la série des Nymphéas ?",
               "options": [
-                "Pablo Picasso 🧑‍🎨",
-                "Claude Monet 🖼️",
-                "Vassily Kandinsky 📐"
+                "Pablo Picasso",
+                "Claude Monet",
+                "Vassily Kandinsky"
               ],
-              "correctAnswer": "Claude Monet 🖼️"
+              "correctAnswer": "Claude Monet"
             },
             {
               "question": "Comment les cubistes représentent-ils l'espace sur une toile plate ?",
               "options": [
-                "En utilisant une perspective parfaite 📐",
-                "En montrant simultanément plusieurs angles de vue d'un même sujet 👁️",
-                "En peignant uniquement des paysages 🏞️"
+                "En utilisant une perspective parfaite",
+                "En montrant simultanément plusieurs angles de vue d'un même sujet",
+                "En peignant uniquement des paysages"
               ],
-              "correctAnswer": "En montrant simultanément plusieurs angles de vue d'un même sujet 👁️"
+              "correctAnswer": "En montrant simultanément plusieurs angles de vue d'un même sujet"
             }
           ]
         },
@@ -22347,92 +27685,92 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Quel terme italien désigne un tempo rapide et joyeux ?",
               "options": [
-                "Adagio ⏱️",
-                "Andante 🚶‍♂️",
-                "Allegro ⏱️"
+                "Adagio",
+                "Andante",
+                "Allegro"
               ],
-              "correctAnswer": "Allegro ⏱️"
+              "correctAnswer": "Allegro"
             },
             {
               "question": "Que signifie une indication de tempo réglée sur 120 BPM ?",
               "options": [
-                "120 battements par seconde ⏱️",
-                "120 battements par minute (soit 2 par seconde) ⏱️",
-                "Une musique très forte 🔊"
+                "120 battements par seconde",
+                "120 battements par minute (soit 2 par seconde)",
+                "Une musique très forte"
               ],
-              "correctAnswer": "120 battements par minute (soit 2 par seconde) ⏱️"
+              "correctAnswer": "120 battements par minute (soit 2 par seconde)"
             },
             {
               "question": "Combien de temps dure une figure de note blanche dans une mesure en 4/4 ?",
               "options": [
-                "1 temps 🎼",
-                "2 temps 🎼",
-                "4 temps 🎼"
+                "1 temps",
+                "2 temps",
+                "4 temps"
               ],
-              "correctAnswer": "2 temps 🎼"
+              "correctAnswer": "2 temps"
             },
             {
               "question": "Pourquoi place-t-on les violons tout à l'avant d'un orchestre symphonique ?",
               "options": [
-                "Parce que ce sont les instruments les plus chers 💰",
-                "Pour équilibrer leur volume sonore plus doux par rapport aux cuivres placés au fond 🎻",
-                "Pour qu'ils puissent voir le chef d'orchestre 🧑‍💼"
+                "Parce que ce sont les instruments les plus chers",
+                "Pour équilibrer leur volume sonore plus doux par rapport aux cuivres placés au fond",
+                "Pour qu'ils puissent voir le chef d'orchestre"
               ],
-              "correctAnswer": "Pour équilibrer leur volume sonore plus doux par rapport aux cuivres placés au fond 🎻"
+              "correctAnswer": "Pour équilibrer leur volume sonore plus doux par rapport aux cuivres placés au fond"
             },
             {
               "question": "Quel mot italien décrit une hausse progressive du volume sonore ?",
               "options": [
-                "Un decrescendo 📉",
-                "Un crescendo 📈",
-                "Un adagio ⏱️"
+                "Un decrescendo",
+                "Un crescendo",
+                "Un adagio"
               ],
-              "correctAnswer": "Un crescendo 📈"
+              "correctAnswer": "Un crescendo"
             },
             {
               "question": "Quel instrument fait partie de la famille des percussions dans un orchestre ?",
               "options": [
-                "Le hautbois 🎷",
-                "La timbale 🥁",
-                "Le violoncelle 🎻"
+                "Le hautbois",
+                "La timbale",
+                "Le violoncelle"
               ],
-              "correctAnswer": "La timbale 🥁"
+              "correctAnswer": "La timbale"
             },
             {
               "question": "Quel mot italien indique le tempo le plus lent ?",
               "options": [
-                "Largo ⏱️",
-                "Presto ⏱️",
-                "Moderato ⏱️"
+                "Largo",
+                "Presto",
+                "Moderato"
               ],
-              "correctAnswer": "Largo ⏱️"
+              "correctAnswer": "Largo"
             },
             {
               "question": "Combien de lignes horizontales comporte une portée musicale classique ?",
               "options": [
-                "3 lignes 🎼",
-                "5 lignes 🎼",
-                "7 lignes 🎼"
+                "3 lignes",
+                "5 lignes",
+                "7 lignes"
               ],
-              "correctAnswer": "5 lignes 🎼"
+              "correctAnswer": "5 lignes"
             },
             {
               "question": "Quelle note vaut à elle seule l'équivalent de 4 temps (soit une mesure entière de 4/4) ?",
               "options": [
-                "Une croche 🎼",
-                "Une noire 🎼",
-                "Une ronde 🎼"
+                "Une croche",
+                "Une noire",
+                "Une ronde"
               ],
-              "correctAnswer": "Une ronde 🎼"
+              "correctAnswer": "Une ronde"
             },
             {
               "question": "Que signifie la nuance 'p' (piano) sur une partition ?",
               "options": [
-                "Jouer fort 🔊",
-                "Jouer doucement/faiblement 🎹",
-                "Jouer très vite ⏱️"
+                "Jouer fort",
+                "Jouer doucement/faiblement",
+                "Jouer très vite"
               ],
-              "correctAnswer": "Jouer doucement/faiblement 🎹"
+              "correctAnswer": "Jouer doucement/faiblement"
             }
           ]
         },
@@ -22475,92 +27813,92 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Quel artiste et architecte florentin a théorisé la perspective linéaire au 15ème siècle ?",
               "options": [
-                "Leonardo da Vinci 🎨",
-                "Filippo Brunelleschi 🏛️",
-                "Michel-Ange 🎨"
+                "Leonardo da Vinci",
+                "Filippo Brunelleschi",
+                "Michel-Ange"
               ],
-              "correctAnswer": "Filippo Brunelleschi 🏛️"
+              "correctAnswer": "Filippo Brunelleschi"
             },
             {
               "question": "Où convergent toutes les lignes de fuite parallèles dans un dessin en perspective ?",
               "options": [
-                "Sur la clé de voûte 🧱",
-                "Vers le point de fuite sur la ligne d'horizon 📐",
-                "Au centre de gravité ⚖️"
+                "Sur la clé de voûte",
+                "Vers le point de fuite sur la ligne d'horizon",
+                "Au centre de gravité"
               ],
-              "correctAnswer": "Vers le point de fuite sur la ligne d'horizon 📐"
+              "correctAnswer": "Vers le point de fuite sur la ligne d'horizon"
             },
             {
               "question": "Quel ordre de colonne grec est caractérisé par un chapiteau orné de volutes en spirale ?",
               "options": [
-                "L'ordre dorique 🏛️",
-                "L'ordre ionique 🏛️",
-                "L'ordre corinthien 🏛️"
+                "L'ordre dorique",
+                "L'ordre ionique",
+                "L'ordre corinthien"
               ],
-              "correctAnswer": "L'ordre ionique 🏛️"
+              "correctAnswer": "L'ordre ionique"
             },
             {
               "question": "Quelle pierre centrale verrouille la structure d'un arc en plein cintre romain ?",
               "options": [
-                "La clé de voûte 🧱",
-                "L'ogive ⛪",
-                "Le chapiteau 🏛️"
+                "La clé de voûte",
+                "L'ogive",
+                "Le chapiteau"
               ],
-              "correctAnswer": "La clé de voûte 🧱"
+              "correctAnswer": "La clé de voûte"
             },
             {
               "question": "Quelle innovation gothique permet de reporter la poussée de la voûte vers des piliers extérieurs ?",
               "options": [
-                "La clé de voûte 🧱",
-                "L'arc-boutant ⛪",
-                "L'exosquelette 🕷️"
+                "La clé de voûte",
+                "L'arc-boutant",
+                "L'exosquelette"
               ],
-              "correctAnswer": "L'arc-boutant ⛪"
+              "correctAnswer": "L'arc-boutant"
             },
             {
               "question": "Quel ordre de colonne grec est sculpté de motifs imitant des feuilles d'acanthe ?",
               "options": [
-                "L'ordre dorique 🏛️",
-                "L'ordre ionique 🏛️",
-                "L'ordre corinthien 🏛️"
+                "L'ordre dorique",
+                "L'ordre ionique",
+                "L'ordre corinthien"
               ],
-              "correctAnswer": "L'ordre corinthien 🏛️"
+              "correctAnswer": "L'ordre corinthien"
             },
             {
               "question": "Quelle est la principale caractéristique d'une voûte gothique par rapport à une voûte romane ?",
               "options": [
-                "Elle est plus basse 🛖",
-                "Elle utilise la croisée d'ogives et l'arc brisé pour monter très haut ⛪",
-                "Elle est en bois 🪵"
+                "Elle est plus basse",
+                "Elle utilise la croisée d'ogives et l'arc brisé pour monter très haut",
+                "Elle est en bois"
               ],
-              "correctAnswer": "Elle utilise la croisée d'ogives et l'arc brisé pour monter très haut ⛪"
+              "correctAnswer": "Elle utilise la croisée d'ogives et l'arc brisé pour monter très haut"
             },
             {
               "question": "Quelle célèbre école allemande de design a posé les bases du fonctionnalisme moderne en 1919 ?",
               "options": [
-                "L'école des Beaux-Arts 🎨",
-                "Le Bauhaus 🏢",
-                "L'Académie de Florence 🏛️"
+                "L'école des Beaux-Arts",
+                "Le Bauhaus",
+                "L'Académie de Florence"
               ],
-              "correctAnswer": "Le Bauhaus 🏢"
+              "correctAnswer": "Le Bauhaus"
             },
             {
               "question": "Quel slogan résume la philosophie de conception de l'architecture moderne du 20ème siècle ?",
               "options": [
-                "L'art pour l'art 🎨",
-                "La fonction détermine la forme 🏢",
-                "Plus c'est décoré, mieux c'est 🏛️"
+                "L'art pour l'art",
+                "La fonction détermine la forme",
+                "Plus c'est décoré, mieux c'est"
               ],
-              "correctAnswer": "La fonction détermine la forme 🏢"
+              "correctAnswer": "La fonction détermine la forme"
             },
             {
               "question": "Pourquoi l'architecture gothique a-t-elle permis d'installer de grands vitraux colorés ?",
               "options": [
-                "Parce que le verre a été inventé à cette époque 🥛",
-                "Parce que le poids est supporté par des piliers et des arcs-boutants extérieurs, libérant les murs ⛪",
-                "Pour bloquer le vent 💨"
+                "Parce que le verre a été inventé à cette époque",
+                "Parce que le poids est supporté par des piliers et des arcs-boutants extérieurs, libérant les murs",
+                "Pour bloquer le vent"
               ],
-              "correctAnswer": "Parce que le poids est supporté par des piliers et des arcs-boutants extérieurs, libérant les murs ⛪"
+              "correctAnswer": "Parce que le poids est supporté par des piliers et des arcs-boutants extérieurs, libérant les murs"
             }
           ]
         },
@@ -23444,6 +28782,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Un ordinateur"
             }
+          ,
+            {
+              "question": "D'après la leçon \"L'ordinateur\", complète : Un ordinateur est une machine...",
+              "options": [
+                "Un ordinateur est une machine qui peut lire, calculer et afficher des informa...",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Un ordinateur est une machine qui peut lire, calculer et afficher des informa..."
+            },
+            {
+              "question": "Est-il vrai que e clavier permet d'écrire des lettres et des chiffres ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Le premier ordinateur inventé était _____ qu'une maison entière\"",
+              "options": [
+                "aussi grand",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "aussi grand"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"L'ordinateur\" ?",
+              "options": [
+                "Il est composé d'un écran, d'un clavier, d'une souris et d'un boîti...",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Il est composé d'un écran, d'un clavier, d'une souris et d'un boîti..."
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"À quoi sert chaque partie ?\" ?",
+              "options": [
+                "L'écran montre les images",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "L'écran montre les images"
+            }
           ]
         },
         {
@@ -23516,6 +28905,57 @@ export const UNIVERSES: Record<string, Universe> = {
                 "L'écran"
               ],
               "correctAnswer": "La lettre voulue"
+            }
+          ,
+            {
+              "question": "D'après la leçon \"La souris\", complète : La souris est un petit...",
+              "options": [
+                "La souris est un petit objet que l'on tient dans la main",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "La souris est un petit objet que l'on tient dans la main"
+            },
+            {
+              "question": "Est-il vrai que haque touche correspond à une lettre, un chiffre ou une action ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Pour écrire une majuscule, tu dois appuyer en même temps _____ touche Maj (ou Shift) et la lettre voulue\"",
+              "options": [
+                "sur la",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "sur la"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"La souris\" ?",
+              "options": [
+                "Le double-clic permet d'ouvrir un programme",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Le double-clic permet d'ouvrir un programme"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Le clavier\" ?",
+              "options": [
+                "La touche Suppr efface une lettre",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "La touche Suppr efface une lettre"
             }
           ]
         },
@@ -23590,6 +29030,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "À composer les images sur un écran"
             }
+          ,
+            {
+              "question": "D'après la leçon \"Qu'est-ce qu'un pixel ?\", complète : Les images sur un écran...",
+              "options": [
+                "Les images sur un écran sont faites de milliers de minuscules petits carrés d...",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Les images sur un écran sont faites de milliers de minuscules petits carrés d..."
+            },
+            {
+              "question": "Est-il vrai que n mélangeant du rouge, du vert et du bleu (les trois couleurs de base de l'écran), on peut créer toutes les couleurs imaginables ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Les premiers jeux vidéo utilisaient de très _____ c'est pourquoi les personnages semblaient carrés\"",
+              "options": [
+                "gros pixels,",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "gros pixels,"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Qu'est-ce qu'un pixel ?\" ?",
+              "options": [
+                "Plus il y a de pixels, plus l'image est nette et belle",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Plus il y a de pixels, plus l'image est nette et belle"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Les couleurs des pixels\" ?",
+              "options": [
+                "Chaque pixel peut être d'une couleur différente",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Chaque pixel peut être d'une couleur différente"
+            }
           ]
         },
         {
@@ -23662,6 +29153,57 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Oui, si on lui demande gentiment"
               ],
               "correctAnswer": "Non, il suit uniquement des instructions"
+            }
+          ,
+            {
+              "question": "Selon la leçon, un robot est une machine fabriquée par des humains pour effectuer des tâches à leur place - est-ce correct ?",
+              "options": [
+                "Oui, c'est ce que dit la leçon",
+                "Non, la leçon dit le contraire",
+                "Ce sujet n'est pas abordé",
+                "C'est partiellement vrai"
+              ],
+              "correctAnswer": "Oui, c'est ce que dit la leçon"
+            },
+            {
+              "question": "Est-il vrai que n trouve des robots dans les usines pour construire des voitures, dans les hôpitaux pour aider les chirurgiens, et même dans les maisons comme les aspirateurs robots qui nettoient le sol tout seuls ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Si on lui donne la _____ il fera une erreur\"",
+              "options": [
+                "mauvaise instruction,",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "mauvaise instruction,"
+            },
+            {
+              "question": "Selon la leçon, les robots suivent des instructions précises qu'on leur a données à l'avance : c'est ce qu'on appelle un programme - est-ce correct ?",
+              "options": [
+                "Oui, c'est ce que dit la leçon",
+                "Non, la leçon dit le contraire",
+                "Ce sujet n'est pas abordé",
+                "C'est partiellement vrai"
+              ],
+              "correctAnswer": "Oui, c'est ce que dit la leçon"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Des robots partout !\" ?",
+              "options": [
+                "On trouve des robots dans les usines pour construire des voitures, ...",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "On trouve des robots dans les usines pour construire des voitures, ..."
             }
           ]
         },
@@ -23736,6 +29278,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "La tablette est contrôlée au toucher, sans souris"
             }
+          ,
+            {
+              "question": "D'après la leçon \"Les écrans tactiles\", complète : Une tablette et un smartphone...",
+              "options": [
+                "Une tablette et un smartphone sont des ordinateurs que l'on contrôle en touch...",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Une tablette et un smartphone sont des ordinateurs que l'on contrôle en touch..."
+            },
+            {
+              "question": "Est-il vrai que vec un smartphone ou une tablette, on peut téléphoner, envoyer des messages, jouer à des jeux, regarder des vidéos, et même utiliser des applications éducatives pour apprendre des choses nouvelles ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Une application (ou 'appli') est un programme que _____ sur sa tablette ou son smartphone\"",
+              "options": [
+                "l'on installe",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "l'on installe"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Les écrans tactiles\" ?",
+              "options": [
+                "Une tablette et un smartphone sont des ordinateurs que l'on contrôl...",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Une tablette et un smartphone sont des ordinateurs que l'on contrôl..."
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"À quoi ça sert ?\" ?",
+              "options": [
+                "Avec un smartphone ou une tablette, on peut téléphoner, envoyer des...",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Avec un smartphone ou une tablette, on peut téléphoner, envoyer des..."
+            }
           ]
         },
         {
@@ -23808,6 +29401,57 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Appuyer une deuxième fois"
               ],
               "correctAnswer": "Attendre que le système charge"
+            }
+          ,
+            {
+              "question": "D'après la leçon \"Comment allumer un ordinateur ?\", complète : Pour allumer un ordinateur, on...",
+              "options": [
+                "Pour allumer un ordinateur, on appuie sur le bouton Power, reconnaissable par...",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Pour allumer un ordinateur, on appuie sur le bouton Power, reconnaissable par..."
+            },
+            {
+              "question": "Est-il vrai que l faut toujours utiliser la commande 'arrêter' dans le menu pour que l'ordinateur sauvegarde bien ses données avant de s'éteindre ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Si on éteint brutalement un ordinateur (en débrancha nt le _____ peut perdre des fichiers ou endommager le système\"",
+              "options": [
+                "câble), on",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "câble), on"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Comment allumer un ordinateur ?\" ?",
+              "options": [
+                "Il faut ensuite attendre que l'ordinateur démarre et charge son sys...",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Il faut ensuite attendre que l'ordinateur démarre et charge son sys..."
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Comment éteindre correctement ?\" ?",
+              "options": [
+                "On ne doit jamais éteindre un ordinateur en tirant sur le câble",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "On ne doit jamais éteindre un ordinateur en tirant sur le câble"
             }
           ]
         },
@@ -23882,6 +29526,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "En parler à un adulte de confiance"
             }
+          ,
+            {
+              "question": "Selon la leçon, internet est un gigantesque réseau qui relie des millions d'ordinateurs et de téléphones à travers le monde - est-ce correct ?",
+              "options": [
+                "Oui, c'est ce que dit la leçon",
+                "Non, la leçon dit le contraire",
+                "Ce sujet n'est pas abordé",
+                "C'est partiellement vrai"
+              ],
+              "correctAnswer": "Oui, c'est ce que dit la leçon"
+            },
+            {
+              "question": "Est-il vrai que haque site a une adresse spéciale qu'on appelle une url (par exemple : www ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Si quelque chose semble bizarre, on _____ à un adulte de confiance\"",
+              "options": [
+                "en parle",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "en parle"
+            },
+            {
+              "question": "Selon la leçon, c'est grâce à internet qu'on peut regarder des vidéos, envoyer des messages et trouver des informations - est-ce correct ?",
+              "options": [
+                "Oui, c'est ce que dit la leçon",
+                "Non, la leçon dit le contraire",
+                "Ce sujet n'est pas abordé",
+                "C'est partiellement vrai"
+              ],
+              "correctAnswer": "Oui, c'est ce que dit la leçon"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Les sites web\" ?",
+              "options": [
+                "Chaque site a une adresse spéciale qu'on appelle une URL (par exemp...",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Chaque site a une adresse spéciale qu'on appelle une URL (par exemp..."
+            }
           ]
         },
         {
@@ -23954,6 +29649,57 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Des vidéos uniquement"
               ],
               "correctAnswer": "De la musique"
+            }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Les haut-parleurs\" ?",
+              "options": [
+                "L'ordinateur produit des sons grâce à des haut-parleurs",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "L'ordinateur produit des sons grâce à des haut-parleurs"
+            },
+            {
+              "question": "Est-il vrai que es formats les plus connus sont le mp3 et le wav ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Il existe des logiciels qui permettent de _____ propre musique sur un ordinateur\"",
+              "options": [
+                "créer sa",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "créer sa"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Les haut-parleurs\" ?",
+              "options": [
+                "On peut régler le volume en utilisant la barre de volume sur l'écra...",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "On peut régler le volume en utilisant la barre de volume sur l'écra..."
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"La musique numérique\" ?",
+              "options": [
+                "Les formats les plus connus sont le MP3 et le WAV",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Les formats les plus connus sont le MP3 et le WAV"
             }
           ]
         },
@@ -24028,6 +29774,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Une lettre professionnelle sérieuse"
             }
+          ,
+            {
+              "question": "Selon la leçon, un emoji est un petit dessin coloré utilisé dans les messages pour exprimer une émotion ou une idée - est-ce correct ?",
+              "options": [
+                "Oui, c'est ce que dit la leçon",
+                "Non, la leçon dit le contraire",
+                "Ce sujet n'est pas abordé",
+                "C'est partiellement vrai"
+              ],
+              "correctAnswer": "Oui, c'est ce que dit la leçon"
+            },
+            {
+              "question": "Est-il vrai que e mot 'emoji' vient du japonais et signifie 'image-caractère' ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Les emojis permettent de rendre _____ plus expressifs et amusants\"",
+              "options": [
+                "les messages",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "les messages"
+            },
+            {
+              "question": "Selon la leçon, par exemple : 😊 signifie qu'on est heureux, ❤️ veut dire qu'on aime quelque chose, et 🎉 exprime la fête - est-ce correct ?",
+              "options": [
+                "Oui, c'est ce que dit la leçon",
+                "Non, la leçon dit le contraire",
+                "Ce sujet n'est pas abordé",
+                "C'est partiellement vrai"
+              ],
+              "correctAnswer": "Oui, c'est ce que dit la leçon"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"D'où viennent les emojis ?\" ?",
+              "options": [
+                "Le mot 'emoji' vient du japonais et signifie 'image-caractère'",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Le mot 'emoji' vient du japonais et signifie 'image-caractère'"
+            }
           ]
         },
         {
@@ -24101,6 +29898,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Résoudre des énigmes et assembler des pièces",
               "isSpecial": true
+            }
+          ,
+            {
+              "question": "Selon la leçon, un jeu vidéo est un programme informatique qui permet de jouer de façon interactive sur un écran - est-ce correct ?",
+              "options": [
+                "Oui, c'est ce que dit la leçon",
+                "Non, la leçon dit le contraire",
+                "Ce sujet n'est pas abordé",
+                "C'est partiellement vrai"
+              ],
+              "correctAnswer": "Oui, c'est ce que dit la leçon"
+            },
+            {
+              "question": "Est-il vrai que haque jeu a ses propres règles et objectifs ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Les jeux vidéo peuvent être très amusants, mais il _____ de ne pas jouer trop longtemps d'affilée\"",
+              "options": [
+                "est important",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "est important"
+            },
+            {
+              "question": "Selon la leçon, on contrôle des personnages grâce à une manette, un clavier ou en touchant l'écran - est-ce correct ?",
+              "options": [
+                "Oui, c'est ce que dit la leçon",
+                "Non, la leçon dit le contraire",
+                "Ce sujet n'est pas abordé",
+                "C'est partiellement vrai"
+              ],
+              "correctAnswer": "Oui, c'est ce que dit la leçon"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Les types de jeux vidéo\" ?",
+              "options": [
+                "Il existe de nombreux types : les jeux de plateforme (comme Mario),...",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Il existe de nombreux types : les jeux de plateforme (comme Mario),..."
             }
           ]
         }
@@ -26665,6 +32513,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Niveau 1"
             }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Leçon\" ?",
+              "options": [
+                "Cette leçon traite de Leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète cette information : \"Cette leçon t...\"",
+              "options": [
+                "raite de Leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "raite de Leçon"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Leçon\" ?",
+              "options": [
+                "Cette leçon traite de Leçon",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon"
+            }
           ]
         },
         {
@@ -26732,6 +32631,57 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 1"
               ],
               "correctAnswer": "Niveau 2"
+            }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Leçon Intermédiaire\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Intermédiaire",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Intermédiaire"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Intermédiaire\"",
+              "options": [
+                "de Leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Leçon"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Leçon Intermédiaire\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Intermédiaire",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Intermédiaire"
             }
           ]
         },
@@ -26801,6 +32751,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Niveau 3"
             }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Leçon Avancée\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Avancée",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Avancée"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Avancée\"",
+              "options": [
+                "de Leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Leçon"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Leçon Avancée\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Avancée",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Avancée"
+            }
           ]
         },
         {
@@ -26868,6 +32869,57 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 3"
               ],
               "correctAnswer": "Niveau 4"
+            }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Leçon Générale\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Générale",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Générale"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Générale\"",
+              "options": [
+                "de Leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Leçon"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Leçon Générale\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Générale",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Générale"
             }
           ]
         },
@@ -26937,6 +32989,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Niveau 5"
             }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Leçon Découverte\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Découverte",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Découverte"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Découverte\"",
+              "options": [
+                "de Leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Leçon"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Leçon Découverte\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Découverte",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Découverte"
+            }
           ]
         },
         {
@@ -27004,6 +33107,57 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 5"
               ],
               "correctAnswer": "Niveau 6"
+            }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Leçon Nature\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Nature",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Nature"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Nature\"",
+              "options": [
+                "de Leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Leçon"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Leçon Nature\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Nature",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Nature"
             }
           ]
         },
@@ -27073,6 +33227,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Niveau 7"
             }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Leçon Monde\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Monde",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Monde"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Monde\"",
+              "options": [
+                "de Leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Leçon"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Leçon Monde\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Monde",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Monde"
+            }
           ]
         },
         {
@@ -27140,6 +33345,57 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 7"
               ],
               "correctAnswer": "Niveau 8"
+            }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Leçon Science\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Science",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Science"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Science\"",
+              "options": [
+                "de Leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Leçon"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Leçon Science\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Science",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Science"
             }
           ]
         },
@@ -27209,6 +33465,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Niveau 9"
             }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Leçon Espace\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Espace",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Espace"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Espace\"",
+              "options": [
+                "de Leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Leçon"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Leçon Espace\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Espace",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Espace"
+            }
           ]
         },
         {
@@ -27276,6 +33583,57 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 9"
               ],
               "correctAnswer": "Niveau 10"
+            }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Leçon Défi\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Défi",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Défi"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Défi\"",
+              "options": [
+                "de Leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Leçon"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Leçon Défi\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Défi",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Défi"
             }
           ]
         }
@@ -29640,6 +35998,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Niveau 1"
             }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Leçon\" ?",
+              "options": [
+                "Cette leçon traite de Leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète cette information : \"Cette leçon t...\"",
+              "options": [
+                "raite de Leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "raite de Leçon"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Leçon\" ?",
+              "options": [
+                "Cette leçon traite de Leçon",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon"
+            }
           ]
         },
         {
@@ -29707,6 +36116,57 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 1"
               ],
               "correctAnswer": "Niveau 2"
+            }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Leçon Intermédiaire\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Intermédiaire",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Intermédiaire"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Intermédiaire\"",
+              "options": [
+                "de Leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Leçon"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Leçon Intermédiaire\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Intermédiaire",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Intermédiaire"
             }
           ]
         },
@@ -29776,6 +36236,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Niveau 3"
             }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Leçon Avancée\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Avancée",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Avancée"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Avancée\"",
+              "options": [
+                "de Leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Leçon"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Leçon Avancée\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Avancée",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Avancée"
+            }
           ]
         },
         {
@@ -29843,6 +36354,57 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 3"
               ],
               "correctAnswer": "Niveau 4"
+            }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Leçon Générale\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Générale",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Générale"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Générale\"",
+              "options": [
+                "de Leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Leçon"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Leçon Générale\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Générale",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Générale"
             }
           ]
         },
@@ -29912,6 +36474,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Niveau 5"
             }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Leçon Découverte\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Découverte",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Découverte"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Découverte\"",
+              "options": [
+                "de Leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Leçon"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Leçon Découverte\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Découverte",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Découverte"
+            }
           ]
         },
         {
@@ -29979,6 +36592,57 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 5"
               ],
               "correctAnswer": "Niveau 6"
+            }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Leçon Nature\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Nature",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Nature"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Nature\"",
+              "options": [
+                "de Leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Leçon"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Leçon Nature\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Nature",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Nature"
             }
           ]
         },
@@ -30048,6 +36712,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Niveau 7"
             }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Leçon Monde\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Monde",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Monde"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Monde\"",
+              "options": [
+                "de Leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Leçon"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Leçon Monde\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Monde",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Monde"
+            }
           ]
         },
         {
@@ -30115,6 +36830,57 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 7"
               ],
               "correctAnswer": "Niveau 8"
+            }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Leçon Science\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Science",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Science"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Science\"",
+              "options": [
+                "de Leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Leçon"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Leçon Science\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Science",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Science"
             }
           ]
         },
@@ -30184,6 +36950,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Niveau 9"
             }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Leçon Espace\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Espace",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Espace"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Espace\"",
+              "options": [
+                "de Leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Leçon"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Leçon Espace\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Espace",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Espace"
+            }
           ]
         },
         {
@@ -30251,6 +37068,57 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 9"
               ],
               "correctAnswer": "Niveau 10"
+            }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Leçon Défi\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Défi",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Défi"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Défi\"",
+              "options": [
+                "de Leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Leçon"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Leçon Défi\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Défi",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Défi"
             }
           ]
         }
@@ -32615,6 +39483,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Niveau 1"
             }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Leçon\" ?",
+              "options": [
+                "Cette leçon traite de Leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète cette information : \"Cette leçon t...\"",
+              "options": [
+                "raite de Leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "raite de Leçon"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Leçon\" ?",
+              "options": [
+                "Cette leçon traite de Leçon",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon"
+            }
           ]
         },
         {
@@ -32682,6 +39601,57 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 1"
               ],
               "correctAnswer": "Niveau 2"
+            }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Leçon Intermédiaire\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Intermédiaire",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Intermédiaire"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Intermédiaire\"",
+              "options": [
+                "de Leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Leçon"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Leçon Intermédiaire\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Intermédiaire",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Intermédiaire"
             }
           ]
         },
@@ -32751,6 +39721,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Niveau 3"
             }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Leçon Avancée\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Avancée",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Avancée"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Avancée\"",
+              "options": [
+                "de Leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Leçon"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Leçon Avancée\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Avancée",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Avancée"
+            }
           ]
         },
         {
@@ -32818,6 +39839,57 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 3"
               ],
               "correctAnswer": "Niveau 4"
+            }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Leçon Générale\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Générale",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Générale"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Générale\"",
+              "options": [
+                "de Leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Leçon"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Leçon Générale\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Générale",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Générale"
             }
           ]
         },
@@ -32887,6 +39959,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Niveau 5"
             }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Leçon Découverte\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Découverte",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Découverte"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Découverte\"",
+              "options": [
+                "de Leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Leçon"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Leçon Découverte\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Découverte",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Découverte"
+            }
           ]
         },
         {
@@ -32954,6 +40077,57 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 5"
               ],
               "correctAnswer": "Niveau 6"
+            }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Leçon Nature\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Nature",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Nature"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Nature\"",
+              "options": [
+                "de Leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Leçon"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Leçon Nature\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Nature",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Nature"
             }
           ]
         },
@@ -33023,6 +40197,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Niveau 7"
             }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Leçon Monde\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Monde",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Monde"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Monde\"",
+              "options": [
+                "de Leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Leçon"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Leçon Monde\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Monde",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Monde"
+            }
           ]
         },
         {
@@ -33090,6 +40315,57 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 7"
               ],
               "correctAnswer": "Niveau 8"
+            }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Leçon Science\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Science",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Science"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Science\"",
+              "options": [
+                "de Leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Leçon"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Leçon Science\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Science",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Science"
             }
           ]
         },
@@ -33159,6 +40435,57 @@ export const UNIVERSES: Record<string, Universe> = {
               ],
               "correctAnswer": "Niveau 9"
             }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Leçon Espace\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Espace",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Espace"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Espace\"",
+              "options": [
+                "de Leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Leçon"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Leçon Espace\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Espace",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Espace"
+            }
           ]
         },
         {
@@ -33226,6 +40553,57 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Niveau 9"
               ],
               "correctAnswer": "Niveau 10"
+            }
+          ,
+            {
+              "question": "Que dit la leçon sur \"Découverte : Leçon Défi\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Défi",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Défi"
+            },
+            {
+              "question": "Est-il vrai que ontinue pour débloquer de nouveaux badges ?",
+              "options": [
+                "Oui, c'est exact",
+                "Non, c'est faux",
+                "La leçon ne le dit pas",
+                "Seulement parfois"
+              ],
+              "correctAnswer": "Oui, c'est exact"
+            },
+            {
+              "question": "Complète : \"Cette leçon traite _____ Défi\"",
+              "options": [
+                "de Leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "de Leçon"
+            },
+            {
+              "question": "Que retiens-tu de la partie \"Le savais-tu ?\" ?",
+              "options": [
+                "Continue pour débloquer de nouveaux badges",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon",
+                "La leçon parle d'autre chose"
+              ],
+              "correctAnswer": "Continue pour débloquer de nouveaux badges"
+            },
+            {
+              "question": "Dans la leçon, qu'apprend-on dans \"Découverte : Leçon Défi\" ?",
+              "options": [
+                "Cette leçon traite de Leçon Défi",
+                "Ce n'est pas abordé dans la leçon",
+                "Ce n'est pas mentionné dans la leçon",
+                "C'est l'inverse de ce que dit la leçon"
+              ],
+              "correctAnswer": "Cette leçon traite de Leçon Défi"
             }
           ]
         }
