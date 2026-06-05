@@ -39,3 +39,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# scripts & fichiers temporaires de travail
+/scratch
+analyze_lessons.js
+extract.js
+generate_patch.py
+pad_questions.js
+strip_emojis.js
+temp_lessons.txt

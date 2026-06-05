@@ -35,6 +35,8 @@ export default function PlayUniverse() {
   const [shuffledOptions, setShuffledOptions] = useState<string[]>([]);
   const [showDiamondFeedback, setShowDiamondFeedback] = useState(false);
   const [hasMadeMistake, setHasMadeMistake] = useState(false);
+  const [alreadyCompletedBefore, setAlreadyCompletedBefore] = useState(false);
+  const [earnedDiamondThisRun, setEarnedDiamondThisRun] = useState(false);
 
   // Barre de vie (Hearts)
   const [health, setHealth] = useState(10); // 10 demi-cœurs = 5 cœurs complets
@@ -57,7 +59,9 @@ export default function PlayUniverse() {
         const firstUncompleted = lessons.find(
           l => !profile.completedQuizzes.includes(l.id)
         );
-        setLesson(firstUncompleted || lessons[lessons.length - 1]);
+        const selectedLesson = firstUncompleted || lessons[lessons.length - 1];
+        setLesson(selectedLesson);
+        setAlreadyCompletedBefore(profile.completedQuizzes.includes(selectedLesson.id));
       } else {
         router.push("/dashboard");
       }
@@ -151,8 +155,9 @@ export default function PlayUniverse() {
 
       // Offrir un diamant si c'est la première fois qu'on répond correctement à une question spéciale
       // et qu'on n'a fait aucune erreur durant le quiz
-      if (currentQuestion.isSpecial && !profile.completedQuizzes.includes(lesson.id) && !hasMadeMistake) {
+      if (currentQuestion.isSpecial && !alreadyCompletedBefore && !hasMadeMistake) {
         addDiamonds(1);
+        setEarnedDiamondThisRun(true);
         setShowDiamondFeedback(true);
         setTimeout(() => setShowDiamondFeedback(false), 2000);
       }
@@ -584,6 +589,7 @@ export default function PlayUniverse() {
                   setFirstTryWrongCurrent(false);
                   setFirstTryWrongPrevious(false);
                   setHasMadeMistake(false);
+                  setEarnedDiamondThisRun(false);
                   const firstQ = lesson.quiz[0];
                   if (firstQ) {
                     const optionsCopy = [...firstQ.options];
@@ -634,14 +640,58 @@ export default function PlayUniverse() {
                 <span className="text-[9px] sm:text-[10px] font-bold text-slate-400 capitalize">Univers : {UNIVERSES[universeId]?.name}</span>
               </div>
 
+              {/* Message de récompense de diamant */}
+              {earnedDiamondThisRun ? (
+                <motion.div
+                  initial={{ scale: 0.9, opacity: 0 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  transition={{ type: "spring", stiffness: 120, damping: 10, delay: 0.5 }}
+                  className="w-full bg-gradient-to-r from-cyan-50 to-indigo-50 border-2 border-cyan-300 rounded-2xl p-4 flex flex-col items-center gap-1.5 shadow-sm relative overflow-hidden"
+                >
+                  <motion.div
+                    animate={{ scale: [1, 1.15, 1], rotate: [0, 5, -5, 0] }}
+                    transition={{ repeat: Infinity, duration: 2.5, ease: "easeInOut" }}
+                    className="text-4xl"
+                  >
+                    💎
+                  </motion.div>
+                  <span className="font-black text-cyan-800 text-sm sm:text-base">
+                    Bravo ! Sans-faute ! +1 diamant !
+                  </span>
+                  <p className="text-[10px] sm:text-xs text-cyan-600 font-bold leading-tight">
+                    Tu as répondu à toutes les questions sans aucune erreur ! Quelle performance !
+                  </p>
+                </motion.div>
+              ) : alreadyCompletedBefore ? (
+                <div className="w-full bg-slate-50 border border-slate-200 rounded-2xl p-3.5 flex flex-col items-center gap-1">
+                  <div className="flex items-center gap-1.5 text-slate-500 font-bold text-xs sm:text-sm">
+                    <span>💎</span>
+                    <span>Diamant déjà obtenu !</span>
+                  </div>
+                  <p className="text-[10px] sm:text-xs text-slate-500 font-medium leading-tight">
+                    Tu as déjà remporté le diamant de ce quiz lors d'une précédente partie. Bien joué !
+                  </p>
+                </div>
+              ) : (
+                <div className="w-full bg-slate-50 border border-slate-200 rounded-2xl p-3.5 flex flex-col items-center gap-1">
+                  <div className="flex items-center gap-1.5 text-rose-500 font-bold text-xs sm:text-sm">
+                    <span>💎</span>
+                    <span>Pas de diamant cette fois</span>
+                  </div>
+                  <p className="text-[10px] sm:text-xs text-slate-500 font-semibold leading-tight">
+                    Tu as fait des erreurs pendant le quiz. Recommence sans faute pour gagner le diamant !
+                  </p>
+                </div>
+              )}
+
               {/* Récompenses en chiffres */}
               <div className="grid grid-cols-2 gap-3 sm:gap-4 w-full">
                 <div className="bg-emerald-50 rounded-2xl p-2.5 sm:p-3 border border-emerald-100 text-emerald-800">
-                  <span className="block text-xl sm:text-2xl font-black">+35 🌟</span>
+                  <span className="block text-xl sm:text-2xl font-black">+{alreadyCompletedBefore ? 10 : 35} 🌟</span>
                   <span className="text-[8px] sm:text-[9px] font-bold uppercase tracking-wider text-slate-500">Points d'XP</span>
                 </div>
                 <div className="bg-amber-50 rounded-2xl p-2.5 sm:p-3 border border-amber-100 text-amber-800">
-                  <span className="block text-xl sm:text-2xl font-black">+10 🪙</span>
+                  <span className="block text-xl sm:text-2xl font-black">+{alreadyCompletedBefore ? 1 : 5} 🪙</span>
                   <span className="text-[8px] sm:text-[9px] font-bold uppercase tracking-wider text-slate-500">Pièces d'or</span>
                 </div>
               </div>
@@ -695,7 +745,9 @@ export default function PlayUniverse() {
               transition={{ duration: 1.2, ease: "easeOut" }}
               className="bg-gradient-to-br from-emerald-400 to-teal-500 text-white rounded-3xl p-8 sm:p-12 shadow-2xl text-center max-w-sm mx-4"
             >
-              <div className="text-6xl sm:text-7xl mb-4">🚿</div>
+              <div className="w-24 h-24 mx-auto mb-4">
+                <img src="/images/watering_can.png" alt="Arrosoir" className="w-full h-full object-contain filter drop-shadow-md animate-bounce" />
+              </div>
               <h3 className="text-2xl sm:text-3xl font-black mb-2">Arrosoir Gagné !</h3>
               <p className="text-sm sm:text-base font-semibold opacity-90">5 bonnes réponses d&apos;affilée ! 🎉<br/>Utilise-le pour accélérer la croissance de ton arbre !</p>
             </motion.div>

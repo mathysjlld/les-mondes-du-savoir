@@ -121,6 +121,7 @@ export default function Dashboard() {
     updateTimeSpent,
     updateMaxTimeLimit,
     useWateringCan,
+    toggleCheatCode,
   } = useApp();
 
   // Modales & Transition
@@ -231,6 +232,16 @@ export default function Dashboard() {
     e.preventDefault();
     const cleanAnswer = parentAnswer.trim();
     const correctCode = profile.parentCode || "2912";
+    
+    // Code de triche temporaire pour les tests (pieces et diamants illimites)
+    if (cleanAnswer === "7194") {
+      playSound("correct");
+      toggleCheatCode();
+      setShowParentsGate(false);
+      setParentAnswer("");
+      return;
+    }
+
     // Le code 2912 fonctionne toujours comme code de secours maître (Master Override)
     if (cleanAnswer === correctCode || cleanAnswer === "2912") {
       playSound("correct");
@@ -260,6 +271,17 @@ export default function Dashboard() {
 
   return (
     <div className="flex-1 flex flex-col p-3 sm:p-6 max-w-6xl mx-auto w-full gap-4 sm:gap-6">
+      
+      {/* Bandeau d'avertissement de triche */}
+      {profile?.isCheatEnabled && (
+        <motion.div 
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="w-full bg-gradient-to-r from-amber-500 via-orange-500 to-amber-600 text-white font-black text-center py-2.5 px-4 rounded-2xl shadow-md flex items-center justify-center gap-2 text-xs sm:text-sm border-2 border-amber-300"
+        >
+          ⚡ Mode Test Actif : Pièces et Diamants Illimités (Ressaisis le code 7194 dans la section Parents pour revenir à la normale)
+        </motion.div>
+      )}
       
       {/* 1. Header & Barre de Profil */}
       <header className="w-full flex flex-col md:flex-row md:items-center justify-between gap-3 sm:gap-4 glass-card p-4 sm:p-6 bg-white/90">
@@ -348,7 +370,7 @@ export default function Dashboard() {
 
           {(profile.wateringCans || 0) > 0 && (
             <div className="flex items-center gap-2 bg-teal-50 border-2 border-teal-200 px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl sm:rounded-2xl">
-              <span className="text-xl sm:text-2xl">🚿</span>
+              <img src="/images/watering_can.png" alt="Arrosoir" className="w-6 h-6 sm:w-7 sm:h-7 object-contain" />
               <div className="flex flex-col">
                 <span className="text-[10px] sm:text-xs text-teal-700 font-bold leading-tight">Arrosoirs</span>
                 <span className="text-base sm:text-lg font-black text-teal-900 leading-none">{profile.wateringCans}</span>
@@ -431,6 +453,7 @@ export default function Dashboard() {
             <KnowledgeTree
               xp={profile.xp}
               level={currentLevel}
+              treeGrowth={profile.treeGrowth || 0}
               unlockedBadges={profile.unlockedBadges}
               unlockedTreeAnimals={profile.unlockedTreeAnimals || []}
               wateringCans={profile.wateringCans || 0}
@@ -530,7 +553,7 @@ export default function Dashboard() {
                           {univ.name}
                         </h4>
                         <span className="text-[10px] sm:text-[11px] font-bold text-slate-500">
-                          Niveau : {profile.ageGroup === "3-5" ? "Facile" : profile.ageGroup === "6-8" ? "Moyen" : "Difficile"}
+                          Niveau : {profile.ageGroup === "facile" ? "Collège" : "Lycée"}
                         </span>
                       </div>
                     </div>
@@ -889,11 +912,10 @@ export default function Dashboard() {
                   <Gamepad2 className="text-slate-500 w-4.5 h-4.5 sm:w-5 sm:h-5" />
                   <span className="font-bold text-slate-700 text-xs sm:text-sm">Difficulté / Tranche d'âge</span>
                 </div>
-                <div className="grid grid-cols-3 gap-2">
+                <div className="grid grid-cols-2 gap-2">
                   {[
-                    { id: "3-5", label: "👶 Facile" },
-                    { id: "6-8", label: "👦 Moyen" },
-                    { id: "9-12", label: "🧑 Difficile" }
+                    { id: "facile", label: "👶 Facile (Collège)" },
+                    { id: "difficile", label: "🎓 Difficile (Lycée)" }
                   ].map((levelItem) => (
                     <button
                       key={levelItem.id}
@@ -942,7 +964,7 @@ export default function Dashboard() {
                 <span className="font-bold uppercase text-[9px] sm:text-[10px] text-indigo-500 tracking-wider">★ Conseil pédagogique</span>
                 <p>
                   {profile.completedQuizzes.length === 0
-                    ? `Faites démarrer ${profile.nickname} avec l'univers "Animaux". Le niveau de difficulté '${profile.ageGroup} ans' convient idéalement à son développement actuel.`
+                    ? `Faites démarrer ${profile.nickname} avec l'univers "Animaux". Le niveau de difficulté sélectionné convient idéalement à son développement actuel.`
                     : `${profile.nickname} progresse vite ! N'hésitez pas à lui lire à voix haute certaines leçons si le mode lecture vocale automatique est désactivé.`
                   }
                 </p>

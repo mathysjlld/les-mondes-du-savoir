@@ -11,7 +11,7 @@ export interface AvatarConfig {
 
 export interface UserProfile {
   nickname: string;
-  ageGroup: "3-5" | "6-8" | "9-12";
+  ageGroup: "facile" | "difficile";
   avatar: AvatarConfig;
   xp: number;
   coins: number;
@@ -31,11 +31,15 @@ export interface UserProfile {
   readAloudEnabled: boolean;
   parentCode?: string;
   wateringCans: number; // Arrosoirs gagnés (5 bonnes réponses d'affilée)
+  treeGrowth: number; // Pourcentage de croissance globale continue (0 à 100)
+  isCheatEnabled?: boolean;
+  savedCoins?: number;
+  savedDiamonds?: number;
 }
 
 interface AppContextType {
   profile: UserProfile | null;
-  onboardUser: (nickname: string, ageGroup: "3-5" | "6-8" | "9-12", avatar: AvatarConfig, parentCode: string) => void;
+  onboardUser: (nickname: string, ageGroup: "facile" | "difficile", avatar: AvatarConfig, parentCode: string) => void;
   addXp: (amount: number) => { leveledUp: boolean; currentLevel: number; newLevel: number };
   addCoins: (amount: number) => void;
   addDiamonds: (amount: number) => void;
@@ -53,14 +57,49 @@ interface AppContextType {
   updateMaxTimeLimit: (minutes: number) => void;
   setSoundEnabled: (enabled: boolean) => void;
   setReadAloudEnabled: (enabled: boolean) => void;
-  changeAgeGroup: (ageGroup: "3-5" | "6-8" | "9-12") => void;
+  changeAgeGroup: (ageGroup: "facile" | "difficile") => void;
   resetProgress: () => void;
   getLevel: () => number;
   getXpForNextLevel: () => number;
   getXpPercent: () => number;
+  toggleCheatCode: () => void;
 }
 
 const AppContext = createContext<AppContextType | undefined>(undefined);
+
+const calculateLevelFromXp = (xp: number): number => {
+  let tempXp = xp;
+  let lvl = 1;
+  let req = 100;
+  while (tempXp >= req) {
+    tempXp -= req;
+    lvl++;
+    req += 50;
+  }
+  return lvl;
+};
+
+const getGrowthPercentFromLevel = (level: number): number => {
+  let stage = "sprout";
+  if (level <= 2) stage = "sprout";
+  else if (level <= 4) stage = "sapling";
+  else if (level <= 6) stage = "young";
+  else if (level <= 9) stage = "mature";
+  else stage = "magic";
+
+  let percentInStage = 0;
+  if (stage === 'sprout') percentInStage = ((Math.min(level, 2) - 1) / 2) * 100;
+  else if (stage === 'sapling') percentInStage = ((level - 3) / 2) * 100;
+  else if (stage === 'young') percentInStage = ((level - 5) / 2) * 100;
+  else if (stage === 'mature') percentInStage = ((level - 7) / 3) * 100;
+  else percentInStage = 100;
+
+  if (stage === 'sprout') return 0 + (percentInStage / 100) * 20;
+  if (stage === 'sapling') return 20 + (percentInStage / 100) * 20;
+  if (stage === 'young') return 40 + (percentInStage / 100) * 20;
+  if (stage === 'mature') return 60 + (percentInStage / 100) * 30;
+  return 95;
+};
 
 const DEFAULT_ACCESSORIES = ["none"];
 
@@ -99,8 +138,15 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
             initialAccessories = [(parsedAvatar as any).accessory];
           }
 
+          let initialTreeGrowth = parsed.treeGrowth;
+          if (initialTreeGrowth === undefined) {
+            const calculatedLvl = calculateLevelFromXp(parsed.xp || 0);
+            initialTreeGrowth = getGrowthPercentFromLevel(calculatedLvl);
+          }
+
           setProfile({
             ...parsed,
+            ageGroup: ((["facile", "difficile"].includes(parsed.ageGroup as string) ? parsed.ageGroup : "facile") as "facile" | "difficile"),
             streak: updatedStreak,
             lastActiveDate: todayStr,
             avatar: {
@@ -116,6 +162,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
             maxTimeLimit: parsed.maxTimeLimit || 20,
             parentCode: parsed.parentCode || "2912",
             wateringCans: parsed.wateringCans || 0,
+            treeGrowth: initialTreeGrowth,
           });
         } catch (e) {
           console.error("Erreur de lecture du profil sauvegardé", e);
@@ -133,7 +180,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
   }, [profile, isLoaded]);
 
   // Initialisation de l'utilisateur
-  const onboardUser = (nickname: string, ageGroup: "3-5" | "6-8" | "9-12", avatar: AvatarConfig, parentCode: string) => {
+  const onboardUser = (nickname: string, ageGroup: "facile" | "difficile", avatar: AvatarConfig, parentCode: string) => {
     const todayStr = new Date().toISOString().split("T")[0];
     const newProfile: UserProfile = {
       nickname,
@@ -154,9 +201,10 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
       timeSpentToday: 0,
       maxTimeLimit: 20,
       soundEnabled: true,
-      readAloudEnabled: ageGroup === "3-5", // Activer par défaut pour les petits
+      readAloudEnabled: false, // Lecture voix-off non activée par défaut en Normal
       parentCode,
       wateringCans: 0,
+      treeGrowth: 0,
     };
     setProfile(newProfile);
   };
@@ -225,9 +273,18 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
 
       setProfile(prev => {
         if (!prev) return null;
+        // Croissance lente de 0.005% par XP gagné
+        let growthBonus = amount * 0.005;
+        // Si passage de niveau, +0.5% de croissance globale
+        if (leveledUp) {
+          growthBonus += 0.5;
+        }
+        const newGrowth = Math.min(100, (prev.treeGrowth || 0) + growthBonus);
+
         return {
           ...prev,
           xp: updatedXp,
+          treeGrowth: newGrowth
         };
       });
 
@@ -256,11 +313,29 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
       if (!prev) return null;
       if (prev.completedLessons.includes(lessonId)) return prev;
       
+      const xpEarned = 15;
+      const updatedXp = prev.xp + xpEarned;
+      
+      const currentLvl = calculateLevelFromXp(prev.xp);
+      const newLvl = calculateLevelFromXp(updatedXp);
+      const leveledUp = newLvl > currentLvl;
+      
+      let growthBonus = xpEarned * 0.005;
+      if (leveledUp) {
+        growthBonus += 0.5;
+      }
+      const newGrowth = Math.min(100, (prev.treeGrowth || 0) + growthBonus);
+
+      if (leveledUp && prev.soundEnabled) {
+        setTimeout(() => playSound("levelup"), 600);
+      }
+
       return {
         ...prev,
         completedLessons: [...prev.completedLessons, lessonId],
-        xp: prev.xp + 15, // 15 XP pour avoir lu la leçon
-        coins: prev.coins + 2 // 2 pièces (réduit)
+        xp: updatedXp,
+        coins: prev.coins + 2, // 2 pièces (réduit)
+        treeGrowth: newGrowth
       };
     });
   };
@@ -288,12 +363,27 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
         unlockedNewBadge = true;
       }
 
+      const currentLvl = calculateLevelFromXp(prev.xp);
+      const newLvl = calculateLevelFromXp(updatedXp);
+      const leveledUp = newLvl > currentLvl;
+      
+      let growthBonus = xpEarned * 0.005;
+      if (leveledUp) {
+        growthBonus += 0.5;
+      }
+      const newGrowth = Math.min(100, (prev.treeGrowth || 0) + growthBonus);
+
+      if (leveledUp && prev.soundEnabled) {
+        setTimeout(() => playSound("levelup"), 600);
+      }
+
       return {
         ...prev,
         completedQuizzes: updatedCompleted,
         xp: updatedXp,
         coins: updatedCoins,
-        unlockedBadges: updatedBadges
+        unlockedBadges: updatedBadges,
+        treeGrowth: newGrowth
       };
     });
 
@@ -322,10 +412,43 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
   // Utiliser un arrosoir pour booster la croissance de l'arbre
   const useWateringCan = (): boolean => {
     if (!profile || (profile.wateringCans || 0) <= 0) return false;
+
+    const currentLvl = getLevel();
+    const updatedXp = profile.xp + 50;
+
+    let tempXp = updatedXp;
+    let lvl = 1;
+    let req = 100;
+    while (tempXp >= req) {
+      tempXp -= req;
+      lvl++;
+      req += 50;
+    }
+    const newLvl = lvl;
+    const leveledUp = newLvl > currentLvl;
+
     setProfile(prev => {
       if (!prev || (prev.wateringCans || 0) <= 0) return prev;
-      return { ...prev, wateringCans: prev.wateringCans - 1, xp: prev.xp + 50 };
+      // L'arrosoir ajoute directement +1% de croissance globale
+      // + 0.25% de la part de l'XP (+50 * 0.005%) = 1.25% de croissance totale
+      let growthBonus = 1.0 + 0.25;
+      if (leveledUp) {
+        growthBonus += 0.5;
+      }
+      const newGrowth = Math.min(100, (prev.treeGrowth || 0) + growthBonus);
+
+      return {
+        ...prev,
+        wateringCans: prev.wateringCans - 1,
+        xp: updatedXp,
+        treeGrowth: newGrowth
+      };
     });
+
+    if (leveledUp && profile.soundEnabled) {
+      setTimeout(() => playSound("levelup"), 600);
+    }
+
     return true;
   };
 
@@ -507,14 +630,12 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
   };
 
   // Modifier la tranche d'âge / difficulté
-  const changeAgeGroup = (ageGroup: "3-5" | "6-8" | "9-12") => {
+  const changeAgeGroup = (ageGroup: "facile" | "difficile") => {
     setProfile(prev => {
       if (!prev) return null;
       return {
         ...prev,
         ageGroup,
-        // Activer la voix automatique par défaut si on passe sur 3-5 ans
-        readAloudEnabled: ageGroup === "3-5" ? true : prev.readAloudEnabled
       };
     });
   };
@@ -525,6 +646,33 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
       localStorage.removeItem("explorakids_profile");
     }
     setProfile(null);
+  };
+
+  // Activer/Désactiver le code de triche 7194 (illimité)
+  const toggleCheatCode = () => {
+    setProfile(prev => {
+      if (!prev) return null;
+      const wasCheatEnabled = !!prev.isCheatEnabled;
+      if (wasCheatEnabled) {
+        // Désactiver et restaurer les valeurs d'origine
+        return {
+          ...prev,
+          isCheatEnabled: false,
+          coins: prev.savedCoins ?? prev.coins,
+          diamonds: prev.savedDiamonds ?? prev.diamonds
+        };
+      } else {
+        // Activer le cheat et sauvegarder les valeurs actuelles
+        return {
+          ...prev,
+          isCheatEnabled: true,
+          savedCoins: prev.coins,
+          savedDiamonds: prev.diamonds,
+          coins: 99999,
+          diamonds: 99999
+        };
+      }
+    });
   };
 
   return (
@@ -554,6 +702,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
         getLevel,
         getXpForNextLevel,
         getXpPercent,
+        toggleCheatCode,
       }}
     >
       {children}

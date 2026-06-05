@@ -28,7 +28,7 @@ export default function Onboarding() {
   const { onboardUser, profile } = useApp();
 
   const [nickname, setNickname] = useState("");
-  const [ageGroup, setAgeGroup] = useState<"3-5" | "6-8" | "9-12">("6-8");
+  const [ageGroup, setAgeGroup] = useState<"facile" | "difficile">("facile");
   const [avatarType, setAvatarType] = useState<AvatarConfig["type"]>("fox");
   const [avatarColor, setAvatarColor] = useState("orange");
 
@@ -124,11 +124,10 @@ export default function Onboarding() {
               <label className="text-base sm:text-lg font-bold text-slate-700">
                 Choisis ton niveau de difficulté :
               </label>
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 sm:gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-4">
                 {[
-                  { id: "3-5", label: "👶 Facile (3-5 ans)", desc: "Leçons en sons & images" },
-                  { id: "6-8", label: "👦 Moyen (6-8 ans)", desc: "Jeux & devinettes simples" },
-                  { id: "9-12", label: "🧑 Difficile (9-12 ans)", desc: "Défis & cours complets" },
+                  { id: "facile", label: "👶 Facile (Niveau Collège)", desc: "Leçons illustrées & quiz interactifs" },
+                  { id: "difficile", label: "🎓 Difficile (Niveau Lycée)", desc: "Défis & cours complets avancés" },
                 ].map((item) => (
                   <button
                     key={item.id}
@@ -230,7 +229,7 @@ export default function Onboarding() {
                 <p className="font-bold text-slate-500 text-[10px] sm:text-xs uppercase tracking-wider">Aventurier</p>
                 <h3 className="font-bold text-lg sm:text-xl text-slate-700 capitalize">{nickname}</h3>
                 <span className="px-2.5 py-0.5 sm:px-3 sm:py-1 bg-indigo-100 text-indigo-700 text-[10px] sm:text-xs font-bold rounded-full mt-1.5 sm:mt-2 inline-block">
-                  Niveau {ageGroup === "3-5" ? "Facile" : ageGroup === "6-8" ? "Moyen" : "Difficile"}
+                  Niveau {ageGroup === "facile" ? "Collège" : "Lycée"}
                 </span>
               </div>
             </div>

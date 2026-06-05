@@ -8,6 +8,7 @@ import { UNIVERSES } from "@/data/lessons";
 interface KnowledgeTreeProps {
   xp: number;
   level: number;
+  treeGrowth: number;
   unlockedBadges: string[];
   unlockedTreeAnimals?: string[];
   wateringCans?: number;
@@ -25,26 +26,41 @@ interface TreeBadgeFruit {
 export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
   xp,
   level,
+  treeGrowth,
   unlockedBadges,
   unlockedTreeAnimals = [],
   wateringCans = 0,
   onUseWateringCan,
 }) => {
-  // Déterminer la phase de croissance de l'arbre (plus lente et plus de niveaux)
+  // Déterminer la phase de croissance de l'arbre par rapport à treeGrowth (0 à 100)
   const getGrowthStage = () => {
-    if (level <= 2) return "sprout";   // Niv 1 et 2
-    if (level <= 4) return "sapling";  // Niv 3 et 4
-    if (level <= 6) return "young";    // Niv 5 et 6
-    if (level <= 9) return "mature";   // Niv 7, 8 et 9
-    return "magic";                    // Niv 10+
+    if (treeGrowth < 8) return "sprout_1";    // 0% à 8%
+    if (treeGrowth < 16) return "sprout_2";   // 8% à 16%
+    if (treeGrowth < 24) return "sprout_3";   // 16% à 24%
+    if (treeGrowth < 34) return "sapling_1";  // 24% à 34%
+    if (treeGrowth < 44) return "sapling_2";  // 34% à 44%
+    if (treeGrowth < 55) return "young_1";    // 44% à 55%
+    if (treeGrowth < 66) return "young_2";    // 55% à 66%
+    if (treeGrowth < 78) return "young_3";    // 66% à 78%
+    if (treeGrowth < 90) return "mature";     // 78% à 90%
+    return "magic";                           // 90%+
   };
 
   const stage = getGrowthStage();
 
-  // Calculer une échelle continue pour faire grandir l'arbre à chaque niveau (0.75 à 1.15)
+  const getImageNameForStage = (stg: string) => {
+    if (stg.startsWith("sprout")) return "sprout";
+    if (stg.startsWith("sapling")) return "sapling";
+    if (stg.startsWith("young")) return "young";
+    if (stg.startsWith("mature")) return "mature";
+    return "magic";
+  };
+  const imgName = getImageNameForStage(stage);
+
+  // Calculer l'échelle continue pour faire grandir l'arbre de manière progressive
   const getTreeScale = () => {
-    const baseScale = 0.75;
-    const bonus = Math.min(9, level - 1) * 0.04; // +4% de taille à chaque niveau
+    const baseScale = 0.7;
+    const bonus = Math.min(100, treeGrowth) * 0.004; // +0.4% de taille par 1% de croissance globale
     return baseScale + bonus;
   };
   const treeScale = getTreeScale();
@@ -53,25 +69,35 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
   const [isWatering, setIsWatering] = React.useState(false);
   const [glowing, setGlowing] = React.useState(false);
 
-  // Calcul du pourcentage de croissance dans la phase actuelle
+  // Calcul du pourcentage de croissance propre à la phase actuelle (de 0 à 100%)
   const getGrowthPercent = () => {
-    if (stage === 'sprout') return ((Math.min(level, 2) - 1) / 2) * 100;
-    if (stage === 'sapling') return ((level - 3) / 2) * 100;
-    if (stage === 'young') return ((level - 5) / 2) * 100;
-    if (stage === 'mature') return ((level - 7) / 3) * 100;
+    if (stage === 'sprout_1') return (treeGrowth / 8) * 100;
+    if (stage === 'sprout_2') return ((treeGrowth - 8) / 8) * 100;
+    if (stage === 'sprout_3') return ((treeGrowth - 16) / 8) * 100;
+    if (stage === 'sapling_1') return ((treeGrowth - 24) / 10) * 100;
+    if (stage === 'sapling_2') return ((treeGrowth - 34) / 10) * 100;
+    if (stage === 'young_1') return ((treeGrowth - 44) / 11) * 100;
+    if (stage === 'young_2') return ((treeGrowth - 55) / 11) * 100;
+    if (stage === 'young_3') return ((treeGrowth - 66) / 12) * 100;
+    if (stage === 'mature') return ((treeGrowth - 78) / 12) * 100;
     return 100; // magic
   };
   const growthPercent = Math.max(0, Math.min(100, getGrowthPercent()));
 
   const barColors: Record<string, { gradient: string; track: string }> = {
-    sprout: { gradient: 'from-lime-400 to-lime-500', track: 'bg-lime-100' },
-    sapling: { gradient: 'from-green-400 to-green-500', track: 'bg-green-100' },
-    young: { gradient: 'from-emerald-400 to-emerald-500', track: 'bg-emerald-100' },
+    sprout_1: { gradient: 'from-lime-400 to-lime-500', track: 'bg-lime-100' },
+    sprout_2: { gradient: 'from-lime-500 to-green-400', track: 'bg-lime-100' },
+    sprout_3: { gradient: 'from-lime-500 to-green-500', track: 'bg-lime-100' },
+    sapling_1: { gradient: 'from-green-400 to-green-500', track: 'bg-green-100' },
+    sapling_2: { gradient: 'from-green-500 to-emerald-400', track: 'bg-green-100' },
+    young_1: { gradient: 'from-emerald-400 to-emerald-500', track: 'bg-emerald-100' },
+    young_2: { gradient: 'from-emerald-500 to-teal-400', track: 'bg-emerald-100' },
+    young_3: { gradient: 'from-emerald-500 to-teal-500', track: 'bg-emerald-100' },
     mature: { gradient: 'from-teal-400 to-teal-500', track: 'bg-teal-100' },
     magic: { gradient: 'from-violet-400 to-violet-500', track: 'bg-violet-100' },
   };
-  const barGradient = barColors[stage]?.gradient || barColors.sprout.gradient;
-  const barTrackColor = barColors[stage]?.track || barColors.sprout.track;
+  const barGradient = barColors[stage]?.gradient || barColors.sprout_1.gradient;
+  const barTrackColor = barColors[stage]?.track || barColors.sprout_1.track;
 
   const handleWatering = () => {
     if (!onUseWateringCan || isWatering) return;
@@ -85,7 +111,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
   };
 
   React.useEffect(() => {
-    const imgSrc = `/images/tree_${stage}.png`;
+    const imgSrc = `/images/tree_${imgName}.png`;
     const img = new Image();
     img.src = imgSrc;
     img.onload = () => {
@@ -102,14 +128,11 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
           const g = data[i + 1];
           const b = data[i + 2];
           
-          // Le fond de l'image est un dégradé très clair et peu saturé (ciel bleu, nuages, sol sableux)
           const max = Math.max(r, g, b);
           const min = Math.min(r, g, b);
           const diff = max - min;
           
-          // Si les valeurs de couleur sont élevées (clair) et proches les unes des autres (peu saturé)
           if (r > 150 && g > 150 && b > 130 && diff < 80) {
-            // Calculer un score de confiance de fond (0 à 1)
             const rScore = Math.min(1, Math.max(0, (r - 150) / 40));
             const gScore = Math.min(1, Math.max(0, (g - 150) / 40));
             const bScore = Math.min(1, Math.max(0, (b - 130) / 40));
@@ -118,9 +141,9 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
             const bgConfidence = rScore * gScore * bScore * diffScore;
             
             if (bgConfidence > 0.8) {
-              data[i + 3] = 0; // Rend le pixel entièrement transparent
+              data[i + 3] = 0;
             } else {
-              data[i + 3] = Math.floor(data[i + 3] * (1 - bgConfidence)); // Dégradé doux sur les contours
+              data[i + 3] = Math.floor(data[i + 3] * (1 - bgConfidence));
             }
           }
         }
@@ -131,30 +154,9 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
     img.onerror = () => {
       setProcessedSrc(null);
     };
-  }, [stage]);
+  }, [imgName]);
 
-  const badgeFruits: TreeBadgeFruit[] = [
-    { id: "sound-master", emoji: "🐾", x: 24, y: 36, color: "#FF9F43" }, // Animaux 3-5
-    { id: "habitat-explorer", emoji: "🌲", x: 36, y: 24, color: "#10AC84" }, // Animaux 6-8
-    { id: "adaptation-scientist", emoji: "🦅", x: 64, y: 30, color: "#FF9F43" }, // Animaux 9-12
-    { id: "taxonomist-expert", emoji: "🦕", x: 58, y: 20, color: "#FF9F43" }, // Animaux 9-12 (3ème leçon)
-    { id: "season-rookie", emoji: "🌸", x: 20, y: 46, color: "#FF7675" }, // Nature 3-5
-    { id: "green-thumb", emoji: "🌱", x: 44, y: 38, color: "#2ECC71" }, // Nature 6-8
-    { id: "water-guardian", emoji: "💧", x: 76, y: 46, color: "#54A0FF" }, // Nature 9-12
-    { id: "mountaineer-ecologist", emoji: "⛰️", x: 34, y: 46, color: "#10AC84" }, // Nature 9-12 (3ème leçon)
-    { id: "body-rookie", emoji: "👟", x: 32, y: 54, color: "#EE5253" }, // Corps 3-5
-    { id: "sensory-master", emoji: "👁️", x: 68, y: 56, color: "#EE5253" }, // Corps 6-8
-    { id: "digestion-doctor", emoji: "🥼", x: 52, y: 32, color: "#00DEC9" }, // Corps 9-12
-    { id: "cardiologist-expert", emoji: "❤️", x: 56, y: 52, color: "#EE5253" }, // Corps 9-12 (3ème leçon)
-    { id: "sky-watcher", emoji: "⭐", x: 26, y: 22, color: "#FECA57" }, // Espace 3-5
-    { id: "lunar-explorer", emoji: "🌑", x: 48, y: 16, color: "#5F27CD" }, // Espace 6-8
-    { id: "space-commander", emoji: "🪐", x: 76, y: 30, color: "#5F27CD" }, // Espace 9-12
-    { id: "astronaut-badge", emoji: "🧑‍🚀", x: 70, y: 24, color: "#5F27CD" }, // Espace 9-12 (3ème leçon)
-    { id: "computer-badge-l10", emoji: "🕹️", x: 18, y: 30, color: "#9B5DE5" }, // Informatique Niv 10
-    { id: "survival-badge-l10", emoji: "🧭", x: 82, y: 38, color: "#E67E22" }, // Survie Niv 10
-    { id: "ornithology-badge-l10", emoji: "🐦", x: 42, y: 12, color: "#10AC84" }, // Ornithologie Niv 10
-    { id: "history-badge-l10", emoji: "🏰", x: 32, y: 18, color: "#E74C3C" }, // Histoire Niv 10
-  ];
+
 
   return (
     <div className="relative w-full max-w-[340px] aspect-square mx-auto bg-gradient-to-b from-sky-100/50 to-emerald-50/20 rounded-3xl p-4 border-4 border-sky-200/50 shadow-inner flex items-center justify-center overflow-hidden">
@@ -209,20 +211,31 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
           <motion.g
             key={stage}
             initial={{ scale: 0.6, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
+            animate={isWatering ? {
+              scale: [treeScale, treeScale * 1.06, treeScale * 0.98, treeScale * 1.03, treeScale],
+              rotate: [0, -1.5, 1.5, -0.7, 0.7, 0],
+              opacity: 1,
+            } : {
+              scale: treeScale,
+              rotate: 0,
+              opacity: 1,
+            }}
             exit={{ scale: 0.6, opacity: 0 }}
-            transition={{ type: "spring", stiffness: 120, damping: 14 }}
+            transition={{
+              scale: isWatering ? { duration: 2.5, ease: "easeInOut" } : { type: "spring", stiffness: 120, damping: 14 },
+              rotate: { duration: 2.5, ease: "easeInOut" },
+              opacity: { duration: 0.2 }
+            }}
             className="origin-bottom"
             style={{
               originX: "50px",
               originY: "85px",
-              scale: treeScale,
-              filter: glowing ? 'brightness(1.3) drop-shadow(0 0 8px rgba(16,185,129,0.5))' : 'none',
+              filter: glowing ? 'brightness(1.6) drop-shadow(0 0 25px rgba(52,211,153,0.95)) drop-shadow(0 0 45px rgba(16,185,129,0.7))' : 'none',
               transition: 'filter 0.7s ease',
             }}
           >
             <image
-              href={processedSrc || `/images/tree_${stage}.png`}
+              href={processedSrc || `/images/tree_${imgName}.png`}
               x="12"
               y="10"
               width="76"
@@ -257,61 +270,6 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
           </g>
         )}
 
-        {/* Afficher les Badges-Fruits débloqués */}
-        {level >= 4 &&
-          badgeFruits.map((fruit) => {
-            const isUnlocked = unlockedBadges.includes(fruit.id);
-            if (!isUnlocked) return null;
-
-            return (
-              <g key={fruit.id}>
-                {/* Petit fil de suspension fin */}
-                <line
-                  x1={fruit.x}
-                  y1={fruit.y - 4}
-                  x2={fruit.x}
-                  y2={fruit.y}
-                  stroke="#4A3B32"
-                  strokeWidth="0.6"
-                />
-                {/* Corps du badge suspendu */}
-                <motion.g
-                  initial={{ scale: 0, rotate: -20 }}
-                  animate={{ scale: 1, rotate: 0 }}
-                  whileHover={{ scale: 1.25, rotate: [0, -8, 8, 0] }}
-                  transition={{ type: "tween", duration: 0.4 }}
-                  className="cursor-pointer"
-                  style={{ transformOrigin: `${fruit.x}px ${fruit.y}px` }}
-                >
-                  {/* Bulbe / Fond du fruit en verre brillant, plus discret */}
-                  <circle
-                    cx={fruit.x}
-                    cy={fruit.y}
-                    r="3.5"
-                    fill={fruit.color}
-                    stroke="#FFF"
-                    strokeWidth="0.6"
-                    className="drop-shadow-sm"
-                  />
-                  {/* Illustration vectorielle au centre du fruit, plus petite */}
-                  <foreignObject
-                    x={fruit.x - 2.25}
-                    y={fruit.y - 2.25}
-                    width="4.5"
-                    height="4.5"
-                  >
-                    <div className="w-full h-full flex items-center justify-center pointer-events-none select-none">
-                      <IllustrationRenderer
-                        name={fruit.emoji}
-                        size="100%"
-                        animate={false}
-                      />
-                    </div>
-                  </foreignObject>
-                </motion.g>
-              </g>
-            );
-          })}
         {/* Animaux de l'arbre débloqués */}
         {unlockedTreeAnimals.includes("tree-butterfly") && (
           <motion.g
@@ -324,9 +282,14 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
             className="origin-center"
             style={{ transformBox: "fill-box", transformOrigin: "center" }}
           >
-            <text x="62" y="44" className="text-[7px] select-none pointer-events-none filter drop-shadow-sm">
-              🦋
-            </text>
+            <image
+              href="/images/tree_butterfly.png"
+              x="58"
+              y="38"
+              width="10"
+              height="10"
+              className="select-none pointer-events-none filter drop-shadow-sm"
+            />
           </motion.g>
         )}
 
@@ -340,25 +303,35 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
             className="origin-center"
             style={{ transformBox: "fill-box", transformOrigin: "bottom center" }}
           >
-            <text x="47" y="34" className="text-[7px] select-none pointer-events-none filter drop-shadow-sm">
-              🦉
-            </text>
+            <image
+              href="/images/tree_owl.png"
+              x="43"
+              y="26"
+              width="12"
+              height="12"
+              className="select-none pointer-events-none filter drop-shadow-sm"
+            />
           </motion.g>
         )}
 
         {unlockedTreeAnimals.includes("tree-squirrel") && (
           <motion.g
             animate={{ 
-              y: [0, -1.5, 0],
-              scaleX: [1, 0.96, 1]
+              y: [0, -1, 0],
+              scaleX: [1, 0.97, 1]
             }}
             transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 0.7 }}
-            className="origin-center"
+            className="origin-bottom"
             style={{ transformBox: "fill-box", transformOrigin: "bottom center" }}
           >
-            <text x="28" y="65" className="text-[7px] select-none pointer-events-none filter drop-shadow-sm">
-              🐿️
-            </text>
+            <image
+              href="/images/tree_squirrel.png"
+              x="20"
+              y="74"
+              width="12"
+              height="12"
+              className="select-none pointer-events-none filter drop-shadow-sm"
+            />
           </motion.g>
         )}
 
@@ -371,9 +344,14 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
             className="origin-center"
             style={{ transformBox: "fill-box", transformOrigin: "bottom center" }}
           >
-            <text x="74" y="55" className="text-[7px] select-none pointer-events-none filter drop-shadow-sm">
-              🦜
-            </text>
+            <image
+              href="/images/tree_parrot.png"
+              x="68"
+              y="48"
+              width="12"
+              height="12"
+              className="select-none pointer-events-none filter drop-shadow-sm"
+            />
           </motion.g>
         )}
       </svg>
@@ -382,32 +360,86 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
       <AnimatePresence>
         {isWatering && (
           <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             className="absolute inset-0 z-20 pointer-events-none overflow-hidden"
           >
             {/* Arrosoir animé */}
             <motion.div
-              initial={{ x: '100%', rotate: 0 }}
-              animate={{ x: '20%', rotate: -30 }}
-              transition={{ duration: 1, ease: 'easeOut' }}
-              className="absolute top-[15%] text-5xl sm:text-6xl"
+              initial={{ x: 120, y: -20, rotate: 0, scale: 0.8 }}
+              animate={{ 
+                x: [120, -35, -35, 120], 
+                y: [-20, 0, 0, -20], 
+                rotate: [0, -35, -35, 0],
+                scale: [0.8, 1, 1, 0.8],
+              }}
+              transition={{ 
+                duration: 3.2, 
+                times: [0, 0.25, 0.75, 1],
+                ease: 'easeInOut' 
+              }}
+              className="absolute right-0 top-2 w-28 h-28 origin-center"
             >
-              🚿
+              <img 
+                src="/images/watering_can.png" 
+                alt="Arrosoir"
+                className="w-full h-full object-contain filter drop-shadow-md"
+              />
             </motion.div>
-            {/* Gouttes d'eau */}
-            {[...Array(12)].map((_, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: '20%', x: `${30 + Math.random() * 40}%` }}
-                animate={{ opacity: [0, 1, 1, 0], y: ['20%', '75%'] }}
-                transition={{ duration: 1.5, delay: 0.5 + i * 0.15, ease: 'easeIn' }}
-                className="absolute text-lg sm:text-xl"
-              >
-                💧
-              </motion.div>
-            ))}
+
+            {/* Flux de gouttelettes d'eau réaliste (plus grosses, visibles et bien positionnées) */}
+            {[...Array(40)].map((_, i) => {
+              const delay = 0.6 + (i * 0.055);
+              const startX = 55 + (Math.random() * 4 - 2); // Aligné sur le bec verseur
+              const startY = 20 + (Math.random() * 2 - 1); // Aligné sur le bec verseur
+              const targetX = 42 + (Math.random() * 16 - 8);
+              const targetY = 78 + (Math.random() * 8 - 4);
+              
+              return (
+                <motion.div
+                  key={`drop-${i}`}
+                  initial={{ opacity: 0, scale: 0.1, left: `${startX}%`, top: `${startY}%` }}
+                  animate={{ 
+                    opacity: [0, 0.95, 0.95, 0],
+                    scale: [0.4, 1.2, 1.2, 0.4],
+                    left: [`${startX}%`, `${startX - 10}%`, `${targetX}%`],
+                    top: [`${startY}%`, `${startY + 15}%`, `${targetY}%`],
+                  }}
+                  transition={{ 
+                    duration: 0.75, 
+                    delay: delay, 
+                    ease: 'easeIn' 
+                  }}
+                  className="absolute pointer-events-none select-none"
+                  style={{ transform: 'translate(-50%, -50%)' }}
+                >
+                  <div className="w-2.5 h-5.5 bg-gradient-to-b from-cyan-300 via-sky-400 to-blue-600 rounded-full border border-white/40 shadow-[0_0_12px_rgba(56,189,248,0.95)] drop-shadow-[0_1px_3px_rgba(255,255,255,0.8)] transform -rotate-[22deg]" />
+                </motion.div>
+              );
+            })}
+
+            {/* Éclaboussures et rides d'eau au pied de l'arbre */}
+            {[...Array(4)].map((_, i) => {
+              const delay = 0.8 + i * 0.45;
+              return (
+                <motion.div
+                  key={`splash-${i}`}
+                  initial={{ opacity: 0, scale: 0.1, left: '46%', top: '78%' }}
+                  animate={{ 
+                    opacity: [0, 0.6, 0],
+                    scale: [0.1, 1.8, 2.5],
+                  }}
+                  transition={{ 
+                    duration: 1.1, 
+                    delay: delay, 
+                    ease: 'easeOut'
+                  }}
+                  className="absolute w-20 h-5 rounded-full border border-sky-300/40 pointer-events-none select-none"
+                  style={{ transform: 'translate(-50%, -50%)' }}
+                />
+              );
+            })}
           </motion.div>
         )}
       </AnimatePresence>
@@ -415,12 +447,53 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
       {/* Effet d'illumination de l'arbre */}
       {glowing && (
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: [0, 0.6, 0.3] }}
-          transition={{ duration: 2, ease: 'easeInOut' }}
-          className="absolute inset-0 z-10 rounded-3xl pointer-events-none"
-          style={{ background: 'radial-gradient(circle at 50% 60%, rgba(16,185,129,0.25) 0%, transparent 70%)' }}
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ 
+            opacity: [0, 0.85, 0.6, 0.85, 0],
+            scale: [0.9, 1.1, 0.95, 1.05, 1]
+          }}
+          transition={{ duration: 3.5, ease: 'easeInOut' }}
+          className="absolute inset-0 z-10 rounded-3xl pointer-events-none mix-blend-screen"
+          style={{ background: 'radial-gradient(circle at 50% 55%, rgba(52,211,153,0.45) 0%, rgba(16,185,129,0.2) 40%, transparent 75%)' }}
         />
+      )}
+
+      {/* Particules magiques étincelantes (✨) */}
+      {isWatering && (
+        <div className="absolute inset-0 z-20 pointer-events-none overflow-hidden">
+          {[...Array(20)].map((_, i) => {
+            const delay = 0.8 + (Math.random() * 1.8);
+            const startX = 35 + (Math.random() * 30); // 35% à 65% (largeur de l'arbre)
+            const startY = 60 + (Math.random() * 15); // 60% à 75% (pied de l'arbre)
+            const targetX = startX + (Math.random() * 20 - 10);
+            const targetY = 15 + (Math.random() * 20); // monte vers les branches (15% à 35%)
+            const scale = 0.5 + (Math.random() * 0.7);
+            const duration = 1.2 + (Math.random() * 0.8);
+            const sparkleType = i % 3 === 0 ? "✨" : i % 3 === 1 ? "⭐" : "🌟";
+            
+            return (
+              <motion.div
+                key={`sparkle-${i}`}
+                initial={{ opacity: 0, scale: 0.1, left: `${startX}%`, top: `${startY}%`, rotate: 0 }}
+                animate={{ 
+                  opacity: [0, 1, 1, 0],
+                  scale: [0.1, scale, scale * 1.2, 0.1],
+                  left: [`${startX}%`, `${targetX}%`],
+                  top: [`${startY}%`, `${targetY}%`],
+                  rotate: [0, 180, 360],
+                }}
+                transition={{ 
+                  duration: duration, 
+                  delay: delay, 
+                  ease: 'easeOut' 
+                }}
+                className="absolute text-yellow-300 drop-shadow-[0_0_8px_rgba(253,224,71,0.8)] font-bold text-sm sm:text-base pointer-events-none select-none"
+              >
+                {sparkleType}
+              </motion.div>
+            );
+          })}
+        </div>
       )}
 
       {/* Bouton arrosoir */}
@@ -431,18 +504,23 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
           onClick={handleWatering}
           className="absolute bottom-10 right-3 z-30 bg-gradient-to-br from-teal-400 to-emerald-500 text-white rounded-2xl px-3 py-2 shadow-lg text-xs sm:text-sm font-black flex items-center gap-1.5 cursor-pointer border-2 border-teal-300 hover:shadow-xl transition-shadow"
         >
-          <span className="text-lg">🚿</span>
+          <img src="/images/watering_can.png" alt="Arrosoir" className="w-5 h-5 object-contain filter drop-shadow-sm" />
           <span>Arroser ({wateringCans})</span>
         </motion.button>
       )}
 
       {/* Texte indicateur en bas de l'arbre */}
       <div className="absolute bottom-2 left-1/2 -translate-x-1/2 bg-white/95 px-3 py-1 rounded-full shadow-md text-xs font-bold text-emerald-700 select-none">
-        {stage === "sprout" && "🌱 Petite Pousse"}
-        {stage === "sapling" && "🌿 Jeune Arbuste"}
-        {stage === "young" && "🌳 Arbuste en Croissance"}
+        {stage === "sprout_1" && "🌱 Graine en Germination"}
+        {stage === "sprout_2" && "🌱 Pousse Naissante"}
+        {stage === "sprout_3" && "🌿 Jeune Pousse"}
+        {stage === "sapling_1" && "☘️ Jeune Arbrisseau"}
+        {stage === "sapling_2" && "🌲 Arbrisseau Vigoureux"}
+        {stage === "young_1" && "🌳 Petit Arbre en Croissance"}
+        {stage === "young_2" && "🌴 Grand Arbre en Croissance"}
+        {stage === "young_3" && "🌳 Arbre Robuste"}
         {stage === "mature" && "🍏 Arbre Fruitier Mature"}
-        {stage === "magic" && "✨ Arbre Magique Fleuri"}
+        {stage === "magic" && "✨ Arbre Magique Légendaire"}
       </div>
     </div>
   );
