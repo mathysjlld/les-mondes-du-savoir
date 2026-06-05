@@ -30,6 +30,7 @@ export interface UserProfile {
   soundEnabled: boolean;
   readAloudEnabled: boolean;
   parentCode?: string;
+  wateringCans: number; // Arrosoirs gagnés (5 bonnes réponses d'affilée)
 }
 
 interface AppContextType {
@@ -38,6 +39,8 @@ interface AppContextType {
   addXp: (amount: number) => { leveledUp: boolean; currentLevel: number; newLevel: number };
   addCoins: (amount: number) => void;
   addDiamonds: (amount: number) => void;
+  addWateringCan: () => void;
+  useWateringCan: () => boolean; // retourne true si l'arrosoir a été utilisé avec succès
   completeLesson: (lessonId: string) => void;
   completeQuiz: (lessonId: string, badgeInfo: { id: string; name: string; emoji: string }) => boolean; // renvoie true si nouveau badge débloqué
   buyAccessory: (accessoryId: string, price: number) => boolean; // renvoie true si achat réussi
@@ -112,6 +115,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
             timeSpentToday: parsed.lastActiveDate === todayStr ? (parsed.timeSpentToday || 0) : 0,
             maxTimeLimit: parsed.maxTimeLimit || 20,
             parentCode: parsed.parentCode || "2912",
+            wateringCans: parsed.wateringCans || 0,
           });
         } catch (e) {
           console.error("Erreur de lecture du profil sauvegardé", e);
@@ -152,6 +156,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
       soundEnabled: true,
       readAloudEnabled: ageGroup === "3-5", // Activer par défaut pour les petits
       parentCode,
+      wateringCans: 0,
     };
     setProfile(newProfile);
   };
@@ -304,6 +309,24 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
         diamonds: prev.diamonds + amount
       };
     });
+  };
+
+  // Gagner un arrosoir (5 bonnes réponses d'affilée)
+  const addWateringCan = () => {
+    setProfile(prev => {
+      if (!prev) return null;
+      return { ...prev, wateringCans: (prev.wateringCans || 0) + 1 };
+    });
+  };
+
+  // Utiliser un arrosoir pour booster la croissance de l'arbre
+  const useWateringCan = (): boolean => {
+    if (!profile || (profile.wateringCans || 0) <= 0) return false;
+    setProfile(prev => {
+      if (!prev || (prev.wateringCans || 0) <= 0) return prev;
+      return { ...prev, wateringCans: prev.wateringCans - 1, xp: prev.xp + 50 };
+    });
+    return true;
   };
 
   // Acheter un accessoire dans le magasin
@@ -512,6 +535,8 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
         addXp,
         addCoins,
         addDiamonds,
+        addWateringCan,
+        useWateringCan,
         completeLesson,
         completeQuiz,
         buyAccessory,

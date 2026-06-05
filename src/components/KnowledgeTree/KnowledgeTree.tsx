@@ -10,6 +10,8 @@ interface KnowledgeTreeProps {
   level: number;
   unlockedBadges: string[];
   unlockedTreeAnimals?: string[];
+  wateringCans?: number;
+  onUseWateringCan?: () => boolean;
 }
 
 interface TreeBadgeFruit {
@@ -25,6 +27,8 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
   level,
   unlockedBadges,
   unlockedTreeAnimals = [],
+  wateringCans = 0,
+  onUseWateringCan,
 }) => {
   // Déterminer la phase de croissance de l'arbre (plus lente et plus de niveaux)
   const getGrowthStage = () => {
@@ -46,6 +50,39 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
   const treeScale = getTreeScale();
 
   const [processedSrc, setProcessedSrc] = React.useState<string | null>(null);
+  const [isWatering, setIsWatering] = React.useState(false);
+  const [glowing, setGlowing] = React.useState(false);
+
+  // Calcul du pourcentage de croissance dans la phase actuelle
+  const getGrowthPercent = () => {
+    if (stage === 'sprout') return ((Math.min(level, 2) - 1) / 2) * 100;
+    if (stage === 'sapling') return ((level - 3) / 2) * 100;
+    if (stage === 'young') return ((level - 5) / 2) * 100;
+    if (stage === 'mature') return ((level - 7) / 3) * 100;
+    return 100; // magic
+  };
+  const growthPercent = Math.max(0, Math.min(100, getGrowthPercent()));
+
+  const barColors: Record<string, { gradient: string; track: string }> = {
+    sprout: { gradient: 'from-lime-400 to-lime-500', track: 'bg-lime-100' },
+    sapling: { gradient: 'from-green-400 to-green-500', track: 'bg-green-100' },
+    young: { gradient: 'from-emerald-400 to-emerald-500', track: 'bg-emerald-100' },
+    mature: { gradient: 'from-teal-400 to-teal-500', track: 'bg-teal-100' },
+    magic: { gradient: 'from-violet-400 to-violet-500', track: 'bg-violet-100' },
+  };
+  const barGradient = barColors[stage]?.gradient || barColors.sprout.gradient;
+  const barTrackColor = barColors[stage]?.track || barColors.sprout.track;
+
+  const handleWatering = () => {
+    if (!onUseWateringCan || isWatering) return;
+    const success = onUseWateringCan();
+    if (success) {
+      setIsWatering(true);
+      setGlowing(true);
+      setTimeout(() => setIsWatering(false), 3000);
+      setTimeout(() => setGlowing(false), 4000);
+    }
+  };
 
   React.useEffect(() => {
     const imgSrc = `/images/tree_${stage}.png`;
@@ -121,9 +158,29 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
 
   return (
     <div className="relative w-full max-w-[340px] aspect-square mx-auto bg-gradient-to-b from-sky-100/50 to-emerald-50/20 rounded-3xl p-4 border-4 border-sky-200/50 shadow-inner flex items-center justify-center overflow-hidden">
+      {/* Barre de croissance au-dessus de l'arbre */}
+      <div className={`absolute top-2 left-4 right-4 z-10 transition-all duration-700 ${glowing ? 'drop-shadow-[0_0_12px_rgba(16,185,129,0.7)]' : ''}`}>
+        <div className="flex items-center justify-between mb-0.5">
+          <span className={`text-[9px] sm:text-[10px] font-black tracking-wide uppercase ${glowing ? 'text-emerald-300' : 'text-emerald-700'} transition-colors duration-700`}>
+            🌱 Croissance
+          </span>
+          <span className={`text-[9px] sm:text-[10px] font-bold ${glowing ? 'text-emerald-300' : 'text-emerald-600'} transition-colors duration-700`}>
+            {Math.round(growthPercent)}%
+          </span>
+        </div>
+        <div className={`w-full ${barTrackColor} rounded-full h-3 overflow-hidden border ${glowing ? 'border-emerald-300 shadow-[0_0_15px_rgba(16,185,129,0.5)]' : 'border-emerald-200'} transition-all duration-700`}>
+          <motion.div
+            initial={{ width: 0 }}
+            animate={{ width: `${growthPercent}%` }}
+            transition={{ duration: 1, ease: 'easeOut' }}
+            className={`h-full rounded-full bg-gradient-to-r ${barGradient} ${glowing ? 'shadow-[0_0_10px_rgba(16,185,129,0.6)]' : ''} transition-shadow duration-700`}
+          />
+        </div>
+      </div>
+
       {/* Nuages en arrière-plan */}
-      <div className="absolute top-4 left-4 w-12 h-6 bg-white opacity-60 rounded-full blur-[1px] animate-pulse" />
-      <div className="absolute top-10 right-6 w-16 h-8 bg-white opacity-50 rounded-full blur-[1px]" style={{ animationDuration: '6s' }} />
+      <div className="absolute top-14 left-4 w-12 h-6 bg-white opacity-60 rounded-full blur-[1px] animate-pulse" />
+      <div className="absolute top-20 right-6 w-16 h-8 bg-white opacity-50 rounded-full blur-[1px]" style={{ animationDuration: '6s' }} />
 
       <svg
         viewBox="0 0 100 100"
@@ -156,7 +213,13 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
             exit={{ scale: 0.6, opacity: 0 }}
             transition={{ type: "spring", stiffness: 120, damping: 14 }}
             className="origin-bottom"
-            style={{ originX: "50px", originY: "85px", scale: treeScale }}
+            style={{
+              originX: "50px",
+              originY: "85px",
+              scale: treeScale,
+              filter: glowing ? 'brightness(1.3) drop-shadow(0 0 8px rgba(16,185,129,0.5))' : 'none',
+              transition: 'filter 0.7s ease',
+            }}
           >
             <image
               href={processedSrc || `/images/tree_${stage}.png`}
@@ -314,6 +377,64 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
           </motion.g>
         )}
       </svg>
+
+      {/* Animation d'arrosage */}
+      <AnimatePresence>
+        {isWatering && (
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0 }}
+            className="absolute inset-0 z-20 pointer-events-none overflow-hidden"
+          >
+            {/* Arrosoir animé */}
+            <motion.div
+              initial={{ x: '100%', rotate: 0 }}
+              animate={{ x: '20%', rotate: -30 }}
+              transition={{ duration: 1, ease: 'easeOut' }}
+              className="absolute top-[15%] text-5xl sm:text-6xl"
+            >
+              🚿
+            </motion.div>
+            {/* Gouttes d'eau */}
+            {[...Array(12)].map((_, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: '20%', x: `${30 + Math.random() * 40}%` }}
+                animate={{ opacity: [0, 1, 1, 0], y: ['20%', '75%'] }}
+                transition={{ duration: 1.5, delay: 0.5 + i * 0.15, ease: 'easeIn' }}
+                className="absolute text-lg sm:text-xl"
+              >
+                💧
+              </motion.div>
+            ))}
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Effet d'illumination de l'arbre */}
+      {glowing && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: [0, 0.6, 0.3] }}
+          transition={{ duration: 2, ease: 'easeInOut' }}
+          className="absolute inset-0 z-10 rounded-3xl pointer-events-none"
+          style={{ background: 'radial-gradient(circle at 50% 60%, rgba(16,185,129,0.25) 0%, transparent 70%)' }}
+        />
+      )}
+
+      {/* Bouton arrosoir */}
+      {wateringCans > 0 && !isWatering && (
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          onClick={handleWatering}
+          className="absolute bottom-10 right-3 z-30 bg-gradient-to-br from-teal-400 to-emerald-500 text-white rounded-2xl px-3 py-2 shadow-lg text-xs sm:text-sm font-black flex items-center gap-1.5 cursor-pointer border-2 border-teal-300 hover:shadow-xl transition-shadow"
+        >
+          <span className="text-lg">🚿</span>
+          <span>Arroser ({wateringCans})</span>
+        </motion.button>
+      )}
 
       {/* Texte indicateur en bas de l'arbre */}
       <div className="absolute bottom-2 left-1/2 -translate-x-1/2 bg-white/95 px-3 py-1 rounded-full shadow-md text-xs font-bold text-emerald-700 select-none">

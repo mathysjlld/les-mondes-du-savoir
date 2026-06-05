@@ -120,6 +120,7 @@ export default function Dashboard() {
     changeAgeGroup,
     updateTimeSpent,
     updateMaxTimeLimit,
+    useWateringCan,
   } = useApp();
 
   // Modales & Transition
@@ -337,6 +338,24 @@ export default function Dashboard() {
             </div>
           </div>
 
+          <div className="flex items-center gap-2 bg-purple-50 border-2 border-purple-200 px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl sm:rounded-2xl">
+            <span className="text-xl sm:text-2xl">💎</span>
+            <div className="flex flex-col">
+              <span className="text-[10px] sm:text-xs text-purple-700 font-bold leading-tight">Diamants</span>
+              <span className="text-base sm:text-lg font-black text-purple-900 leading-none">{profile.diamonds}</span>
+            </div>
+          </div>
+
+          {(profile.wateringCans || 0) > 0 && (
+            <div className="flex items-center gap-2 bg-teal-50 border-2 border-teal-200 px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl sm:rounded-2xl">
+              <span className="text-xl sm:text-2xl">🚿</span>
+              <div className="flex flex-col">
+                <span className="text-[10px] sm:text-xs text-teal-700 font-bold leading-tight">Arrosoirs</span>
+                <span className="text-base sm:text-lg font-black text-teal-900 leading-none">{profile.wateringCans}</span>
+              </div>
+            </div>
+          )}
+
           <div className="flex items-center gap-2 bg-orange-50 border-2 border-orange-200 px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl sm:rounded-2xl">
             <Flame className="text-orange-500 w-5 h-5 sm:w-6 sm:h-6" />
             <div className="flex flex-col">
@@ -414,6 +433,8 @@ export default function Dashboard() {
               level={currentLevel}
               unlockedBadges={profile.unlockedBadges}
               unlockedTreeAnimals={profile.unlockedTreeAnimals || []}
+              wateringCans={profile.wateringCans || 0}
+              onUseWateringCan={useWateringCan}
             />
 
             <p className="text-xs sm:text-sm font-medium text-slate-600 px-2 leading-relaxed">

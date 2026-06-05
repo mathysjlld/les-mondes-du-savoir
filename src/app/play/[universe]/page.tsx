@@ -19,7 +19,7 @@ export default function PlayUniverse() {
   const params = useParams();
   const universeId = params.universe as string;
 
-  const { profile, completeLesson, completeQuiz, addDiamonds } = useApp();
+  const { profile, completeLesson, completeQuiz, addDiamonds, addWateringCan } = useApp();
 
   const [lesson, setLesson] = useState<Lesson | null>(null);
   const [gameState, setGameState] = useState<"onboarding" | "lesson" | "quiz" | "victory">("lesson");
@@ -40,6 +40,10 @@ export default function PlayUniverse() {
   const [wrongAttempts, setWrongAttempts] = useState(0); // Erreurs sur la question actuelle
   const [firstTryWrongCurrent, setFirstTryWrongCurrent] = useState(false); // Premier essai de la question actuelle raté
   const [firstTryWrongPrevious, setFirstTryWrongPrevious] = useState(false); // Premier essai de la question précédente raté
+
+  // Série de bonnes réponses (arrosoir à 5)
+  const [correctStreak, setCorrectStreak] = useState(0);
+  const [showWateringCanEarned, setShowWateringCanEarned] = useState(false);
 
   // Réf pour éviter la synthèse vocale en boucle
   const hasSpoken = useRef(false);
@@ -133,6 +137,16 @@ export default function PlayUniverse() {
       playSound("correct");
       setAnsweredState("correct");
 
+      // Compteur de série -> arrosoir à 5
+      const newStreak = correctStreak + 1;
+      setCorrectStreak(newStreak);
+      if (newStreak >= 5) {
+        addWateringCan();
+        setCorrectStreak(0);
+        setShowWateringCanEarned(true);
+        setTimeout(() => setShowWateringCanEarned(false), 3000);
+      }
+
       // Offrir un diamant si c'est la première fois qu'on répond correctement à une question spéciale
       if (currentQuestion.isSpecial && !profile.completedQuizzes.includes(lesson.id)) {
         addDiamonds(1);
@@ -168,6 +182,7 @@ export default function PlayUniverse() {
       playSound("incorrect");
       setAnsweredState("wrong");
       setShakingOption(option);
+      setCorrectStreak(0); // Réinitialiser la série
       
       // Gestion de la vie (Cœurs)
       const nextWrongAttempts = wrongAttempts + 1;
@@ -276,9 +291,15 @@ export default function PlayUniverse() {
           </h2>
         </div>
 
-        <div className="flex items-center gap-1.5 bg-amber-50 border border-amber-200 px-2.5 py-1 rounded-full text-xs font-bold text-amber-700 shrink-0">
-          <span>🪙 {profile.coins}</span>
+        <div className="flex items-center gap-1.5 shrink-0">
+          <span className="bg-amber-50 border border-amber-200 px-2 py-1 rounded-full text-xs font-bold text-amber-700">🪙 {profile.coins}</span>
+          <span className="bg-purple-50 border border-purple-200 px-2 py-1 rounded-full text-xs font-bold text-purple-700">💎 {profile.diamonds}</span>
         </div>
+        {correctStreak > 0 && (
+          <div className="flex items-center gap-0.5 bg-emerald-50 border border-emerald-200 px-2 py-1 rounded-full text-xs font-bold text-emerald-700 shrink-0">
+            <span>🔥 {correctStreak}/5</span>
+          </div>
+        )}
       </header>
 
       {/* Zone principale de jeu */}
@@ -643,6 +664,29 @@ export default function PlayUniverse() {
               <span className="text-lg sm:text-xl uppercase tracking-wider">Diamant Rare !</span>
               <span className="text-xs font-semibold text-cyan-100">Super récompense obtenue ! ✨</span>
             </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Notification Arrosoir Gagné */}
+      <AnimatePresence>
+        {showWateringCanEarned && (
+          <motion.div
+            initial={{ scale: 0, y: 50 }}
+            animate={{ scale: 1, y: 0 }}
+            exit={{ scale: 0, y: 50 }}
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm"
+          >
+            <motion.div
+              initial={{ rotate: -15, scale: 0.5 }}
+              animate={{ rotate: [0, -10, 10, -5, 5, 0], scale: [0.5, 1.2, 1] }}
+              transition={{ duration: 1.2, ease: "easeOut" }}
+              className="bg-gradient-to-br from-emerald-400 to-teal-500 text-white rounded-3xl p-8 sm:p-12 shadow-2xl text-center max-w-sm mx-4"
+            >
+              <div className="text-6xl sm:text-7xl mb-4">🚿</div>
+              <h3 className="text-2xl sm:text-3xl font-black mb-2">Arrosoir Gagné !</h3>
+              <p className="text-sm sm:text-base font-semibold opacity-90">5 bonnes réponses d&apos;affilée ! 🎉<br/>Utilise-le pour accélérer la croissance de ton arbre !</p>
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
