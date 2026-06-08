@@ -42,6 +42,7 @@ interface AppContextType {
   onboardUser: (nickname: string, ageGroup: "facile" | "difficile", avatar: AvatarConfig, parentCode: string) => void;
   addXp: (amount: number) => { leveledUp: boolean; currentLevel: number; newLevel: number };
   addCoins: (amount: number) => void;
+  resetCoins: () => void; // remet les pièces à 0 (ne touche pas aux diamants)
   addDiamonds: (amount: number) => void;
   addWateringCan: () => void;
   useWateringCan: () => boolean; // retourne true si l'arrosoir a été utilisé avec succès
@@ -303,6 +304,18 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
       return {
         ...prev,
         coins: prev.coins + amount
+      };
+    });
+  };
+
+  // Remet les pièces à zéro (ex: game over à un quiz). Ne touche pas aux diamants.
+  const resetCoins = () => {
+    setProfile(prev => {
+      if (!prev) return null;
+      if (prev.coins === 0) return prev;
+      return {
+        ...prev,
+        coins: 0
       };
     });
   };
@@ -682,6 +695,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
         onboardUser,
         addXp,
         addCoins,
+        resetCoins,
         addDiamonds,
         addWateringCan,
         useWateringCan,

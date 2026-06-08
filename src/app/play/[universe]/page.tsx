@@ -19,7 +19,7 @@ export default function PlayUniverse() {
   const params = useParams();
   const universeId = params.universe as string;
 
-  const { profile, completeLesson, completeQuiz, addDiamonds, addWateringCan } = useApp();
+  const { profile, completeLesson, completeQuiz, addDiamonds, addWateringCan, resetCoins } = useApp();
 
   const [lesson, setLesson] = useState<Lesson | null>(null);
   const [gameState, setGameState] = useState<"onboarding" | "lesson" | "quiz" | "victory">("lesson");
@@ -109,6 +109,13 @@ export default function PlayUniverse() {
       setShuffledOptions([]);
     }
   }, [currentQuestionIdx, lesson, gameState]);
+
+  // Game over (plus de cœurs) -> on remet les pièces à zéro (les diamants ne changent pas).
+  useEffect(() => {
+    if (gameState === "quiz" && health === 0) {
+      resetCoins();
+    }
+  }, [gameState, health, resetCoins]);
 
   if (!profile || !lesson) return null;
 
