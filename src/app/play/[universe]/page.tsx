@@ -590,7 +590,7 @@ export default function PlayUniverse() {
               <span className="text-6xl animate-bounce">💔</span>
               <h3 className="text-2xl sm:text-3xl font-black text-rose-950">Oups, plus de cœurs !</h3>
               <p className="text-sm sm:text-base font-bold text-slate-600 leading-relaxed max-w-md">
-                Tu as perdu tous tes cœurs sur ce quiz. Pas de panique ! Prends ton temps, relis bien les leçons si besoin, et réessaie pour débloquer ton badge ! 💪🌟
+                Tu as perdu tous tes cœurs sur ce quiz. Tu perds aussi toutes tes pièces 🪙 (mais tes diamants 💎 restent à toi !). Pas de panique : relis bien les leçons si besoin, et réessaie pour débloquer ton badge ! 💪🌟
               </p>
               
               <button
