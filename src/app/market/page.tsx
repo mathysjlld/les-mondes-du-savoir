@@ -475,7 +475,7 @@ export default function Market() {
       <div className="block md:hidden sticky top-[0px] z-30 w-full bg-stone-900/95 backdrop-blur-md border-b-4 border-amber-800 p-2.5 flex flex-col gap-1.5 shadow-lg rounded-2xl mb-2">
         <div className="flex items-center gap-2">
           {/* Marchand Barnabé compact */}
-          <div className="flex-1 bg-amber-950/80 border border-amber-850 p-2 rounded-xl flex items-center gap-2 min-w-0">
+          <div className="flex-1 bg-amber-950/80 border border-amber-800 p-2 rounded-xl flex items-center gap-2 min-w-0">
             <div className="w-10 h-10 shrink-0 select-none">
               <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-sm">
                 <defs>
@@ -608,7 +608,7 @@ export default function Market() {
           <div className="grid grid-cols-1 gap-3 w-full">
             
             {/* Barnabé l'Ours Marchand réaliste */}
-            <div className="flex flex-col gap-2.5 bg-amber-900/10 border-4 border-amber-850 p-3.5 rounded-3xl relative justify-center items-center">
+            <div className="flex flex-col gap-2.5 bg-amber-900/10 border-4 border-amber-800 p-3.5 rounded-3xl relative justify-center items-center">
               <div className="flex flex-row min-[420px]:flex-col items-center gap-3 w-full">
                 
                 {/* Rendu réaliste et animé de Barnabé l'Ours en SVG */}
@@ -690,7 +690,7 @@ export default function Market() {
                 </div>
                 
                 {/* Dialogue */}
-                <div className="bg-amber-950 border border-amber-850 text-stone-100 p-2.5 rounded-2xl rounded-tl-none text-[11px] sm:text-xs font-bold leading-relaxed flex-1 w-full">
+                <div className="bg-amber-950 border border-amber-800 text-stone-100 p-2.5 rounded-2xl rounded-tl-none text-[11px] sm:text-xs font-bold leading-relaxed flex-1 w-full">
                   <span className="text-amber-300 font-black block text-[8px] uppercase tracking-wider mb-0.5">Barnabé :</span>
                   {dialogue}
                 </div>
@@ -891,7 +891,7 @@ export default function Market() {
                               ? "border-amber-400 bg-amber-950/35 shadow-md shadow-amber-500/25 animate-pulse"
                               : isUnlocked
                               ? "border-stone-700 bg-stone-900/50 hover:border-stone-600 hover:bg-stone-900/70"
-                              : "border-stone-800 bg-stone-950/50 hover:border-stone-750 hover:bg-stone-900/40"
+                              : "border-stone-800 bg-stone-950/50 hover:border-stone-700 hover:bg-stone-900/40"
                           }`}
                         >
                           <div className="flex items-center gap-3">
@@ -1010,7 +1010,7 @@ export default function Market() {
                               ? "border-cyan-400 bg-cyan-950/35 shadow-md shadow-cyan-500/25 animate-pulse"
                               : isUnlocked
                               ? "border-cyan-800/45 bg-cyan-950/15 hover:border-cyan-700"
-                              : "border-stone-800 bg-stone-950/50 hover:border-stone-750 hover:bg-stone-900/40"
+                              : "border-stone-800 bg-stone-950/50 hover:border-stone-700 hover:bg-stone-900/40"
                           }`}
                         >
                           <div className="flex items-center gap-3">
@@ -1124,8 +1124,8 @@ export default function Market() {
                             isUnlocked
                               ? "border-emerald-800/40 bg-emerald-950/15"
                               : isCurrentlyPreviewed
-                              ? "border-emerald-450 bg-emerald-950/35 shadow-md shadow-emerald-500/25 animate-pulse"
-                              : "border-stone-800 bg-stone-950/50 hover:border-stone-750 hover:bg-stone-900/40"
+                              ? "border-emerald-400 bg-emerald-950/35 shadow-md shadow-emerald-500/25 animate-pulse"
+                              : "border-stone-800 bg-stone-950/50 hover:border-stone-700 hover:bg-stone-900/40"
                           }`}
                         >
                           <div className="flex items-center gap-3">

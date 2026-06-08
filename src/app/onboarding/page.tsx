@@ -52,7 +52,7 @@ export default function Onboarding() {
 
   const handleFinish = (e?: React.FormEvent) => {
     if (e) e.preventDefault();
-    if (parentCode.trim().length < 4) {
+    if (!/^\d{4,}$/.test(parentCode.trim())) {
       playSound("incorrect");
       setParentCodeError(true);
       return;
@@ -165,7 +165,7 @@ export default function Onboarding() {
             className="flex flex-col gap-4 sm:gap-6"
           >
             <label className="text-base sm:text-lg font-bold text-slate-700 text-center">
-              Choisis ton compagnon de voyage !
+              Choisis ton personnage !
             </label>
 
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
@@ -296,9 +296,10 @@ export default function Onboarding() {
                 </label>
                 <input
                   type="password"
+                  inputMode="numeric"
                   value={parentCode}
                   onChange={(e) => {
-                    setParentCode(e.target.value);
+                    setParentCode(e.target.value.replace(/\D/g, ""));
                     setParentCodeError(false);
                   }}
                   placeholder="Nouveau code secret parent..."

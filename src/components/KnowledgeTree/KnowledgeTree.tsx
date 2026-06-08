@@ -3,31 +3,20 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { IllustrationRenderer } from "../UI/IllustrationRenderer";
-import { UNIVERSES } from "@/data/lessons";
 
 interface KnowledgeTreeProps {
   xp: number;
   level: number;
   treeGrowth: number;
-  unlockedBadges: string[];
   unlockedTreeAnimals?: string[];
   wateringCans?: number;
   onUseWateringCan?: () => boolean;
-}
-
-interface TreeBadgeFruit {
-  id: string;
-  emoji: string;
-  x: number;
-  y: number;
-  color: string;
 }
 
 export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
   xp,
   level,
   treeGrowth,
-  unlockedBadges,
   unlockedTreeAnimals = [],
   wateringCans = 0,
   onUseWateringCan,

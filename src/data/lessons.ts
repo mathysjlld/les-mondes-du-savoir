@@ -2633,11 +2633,11 @@ export const UNIVERSES: Record<string, Universe> = {
       ],
       "difficile": [
         {
-          "id": "animal-sounds",
+          "id": "animal-sounds-difficile",
           "title": "Les cris des animaux",
           "emoji": "🔊",
           "themeColor": "amber",
-          "badgeId": "sound-master",
+          "badgeId": "sound-master-difficile",
           "badgeName": "Ami des Bêtes",
           "badgeEmoji": "🐾",
           "cards": [
@@ -2776,11 +2776,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "animal-shapes",
+          "id": "animal-shapes-difficile",
           "title": "Silhouettes de la jungle",
           "emoji": "🦒",
           "themeColor": "amber",
-          "badgeId": "expert-shapes",
+          "badgeId": "expert-shapes-difficile",
           "badgeName": "Explorateur de Jungle",
           "badgeEmoji": "🦒",
           "cards": [
@@ -2919,11 +2919,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "animals-gen-l3",
+          "id": "animals-gen-l3-difficile",
           "title": "Les Reptiles",
           "emoji": "💧",
           "themeColor": "amber",
-          "badgeId": "animals-badge-l3",
+          "badgeId": "animals-badge-l3-difficile",
           "badgeName": "Zoologiste L3",
           "badgeEmoji": "💧",
           "cards": [
@@ -3072,11 +3072,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "animals-gen-l4",
+          "id": "animals-gen-l4-difficile",
           "title": "Les Insectes",
           "emoji": "🔥",
           "themeColor": "amber",
-          "badgeId": "animals-badge-l4",
+          "badgeId": "animals-badge-l4-difficile",
           "badgeName": "Zoologiste L4",
           "badgeEmoji": "🔥",
           "cards": [
@@ -3255,11 +3255,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "animals-gen-l5",
+          "id": "animals-gen-l5-difficile",
           "title": "Les Amphibiens",
           "emoji": "💨",
           "themeColor": "amber",
-          "badgeId": "animals-badge-l5",
+          "badgeId": "animals-badge-l5-difficile",
           "badgeName": "Zoologiste L5",
           "badgeEmoji": "💨",
           "cards": [
@@ -3438,11 +3438,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "animals-gen-l6",
+          "id": "animals-gen-l6-difficile",
           "title": "Les Animaux Marins",
           "emoji": "⛰️",
           "themeColor": "amber",
-          "badgeId": "animals-badge-l6",
+          "badgeId": "animals-badge-l6-difficile",
           "badgeName": "Zoologiste L6",
           "badgeEmoji": "⛰️",
           "cards": [
@@ -3621,11 +3621,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "animals-gen-l7",
+          "id": "animals-gen-l7-difficile",
           "title": "Les Animaux de Forêt",
           "emoji": "🧭",
           "themeColor": "amber",
-          "badgeId": "animals-badge-l7",
+          "badgeId": "animals-badge-l7-difficile",
           "badgeName": "Zoologiste L7",
           "badgeEmoji": "🧭",
           "cards": [
@@ -3804,11 +3804,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "animals-gen-l8",
+          "id": "animals-gen-l8-difficile",
           "title": "Les Animaux du Désert",
           "emoji": "🛡️",
           "themeColor": "amber",
-          "badgeId": "animals-badge-l8",
+          "badgeId": "animals-badge-l8-difficile",
           "badgeName": "Zoologiste L8",
           "badgeEmoji": "🛡️",
           "cards": [
@@ -3987,11 +3987,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "animals-gen-l9",
+          "id": "animals-gen-l9-difficile",
           "title": "Animaux de la Jungle",
           "emoji": "🔮",
           "themeColor": "amber",
-          "badgeId": "animals-badge-l9",
+          "badgeId": "animals-badge-l9-difficile",
           "badgeName": "Zoologiste L9",
           "badgeEmoji": "🔮",
           "cards": [
@@ -4170,11 +4170,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "animals-gen-l10",
+          "id": "animals-gen-l10-difficile",
           "title": "Les Dinosaures",
           "emoji": "🏆",
           "themeColor": "amber",
-          "badgeId": "animals-badge-l10",
+          "badgeId": "animals-badge-l10-difficile",
           "badgeName": "Zoologiste L10",
           "badgeEmoji": "🏆",
           "cards": [
@@ -4348,11 +4348,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "animal-habitats",
+          "id": "animal-habitats-difficile",
           "title": "Les super-pouvoirs des animaux",
           "emoji": "⚡",
           "themeColor": "amber",
-          "badgeId": "habitat-explorer",
+          "badgeId": "habitat-explorer-difficile",
           "badgeName": "Explorateur de Habitats",
           "badgeEmoji": "🌲",
           "cards": [
@@ -4506,11 +4506,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "animal-diets",
+          "id": "animal-diets-difficile",
           "title": "Les grands voyages migrateurs",
           "emoji": "🪶",
           "themeColor": "amber",
-          "badgeId": "diet-expert",
+          "badgeId": "diet-expert-difficile",
           "badgeName": "Ami de la Nature",
           "badgeEmoji": "🍎",
           "cards": [
@@ -4659,11 +4659,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "ornithology",
+          "id": "ornithology-difficile",
           "title": "Les secrets des oiseaux",
           "emoji": "🦅",
           "themeColor": "amber",
-          "badgeId": "bird-watcher",
+          "badgeId": "bird-watcher-difficile",
           "badgeName": "Ornithologue Junior",
           "badgeEmoji": "🦅",
           "cards": [
@@ -4807,11 +4807,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "animal-adaptations",
+          "id": "animal-adaptations-difficile",
           "title": "Les super-pouvoirs des animaux",
           "emoji": "⚡",
           "themeColor": "amber",
-          "badgeId": "adaptation-scientist",
+          "badgeId": "adaptation-scientist-difficile",
           "badgeName": "Généticien Évolutif",
           "badgeEmoji": "🧬",
           "cards": [
@@ -4955,11 +4955,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "animal-migration",
+          "id": "animal-migration-difficile",
           "title": "Les grands voyages migrateurs",
           "emoji": "🪶",
           "themeColor": "amber",
-          "badgeId": "migration-scientist",
+          "badgeId": "migration-scientist-difficile",
           "badgeName": "Navigateur Stellaire",
           "badgeEmoji": "🧭",
           "cards": [
@@ -5103,11 +5103,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "animal-classification",
+          "id": "animal-classification-difficile",
           "title": "La classification des espèces",
           "emoji": "🦕",
           "themeColor": "amber",
-          "badgeId": "taxonomist-expert",
+          "badgeId": "taxonomist-expert-difficile",
           "badgeName": "Taxonomiste Expert",
           "badgeEmoji": "🦕",
           "cards": [
@@ -7982,11 +7982,11 @@ export const UNIVERSES: Record<string, Universe> = {
       ],
       "difficile": [
         {
-          "id": "seasons-intro",
+          "id": "seasons-intro-difficile",
           "title": "Les 4 saisons",
           "emoji": "🍂",
           "themeColor": "emerald",
-          "badgeId": "season-rookie",
+          "badgeId": "season-rookie-difficile",
           "badgeName": "Ami des Saisons",
           "badgeEmoji": "🌸",
           "cards": [
@@ -8125,11 +8125,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "weather-intro",
+          "id": "weather-intro-difficile",
           "title": "Le temps qu'il fait",
           "emoji": "🌈",
           "themeColor": "emerald",
-          "badgeId": "weather-kid",
+          "badgeId": "weather-kid-difficile",
           "badgeName": "Météorologue en Herbe",
           "badgeEmoji": "🌈",
           "cards": [
@@ -8268,11 +8268,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "nature-gen-l3",
+          "id": "nature-gen-l3-difficile",
           "title": "L'Eau",
           "emoji": "💧",
           "themeColor": "amber",
-          "badgeId": "nature-badge-l3",
+          "badgeId": "nature-badge-l3-difficile",
           "badgeName": "Écologiste L3",
           "badgeEmoji": "💧",
           "cards": [
@@ -8426,11 +8426,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "nature-gen-l4",
+          "id": "nature-gen-l4-difficile",
           "title": "Le Vent",
           "emoji": "🔥",
           "themeColor": "amber",
-          "badgeId": "nature-badge-l4",
+          "badgeId": "nature-badge-l4-difficile",
           "badgeName": "Écologiste L4",
           "badgeEmoji": "🔥",
           "cards": [
@@ -8624,11 +8624,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "nature-gen-l5",
+          "id": "nature-gen-l5-difficile",
           "title": "La Terre",
           "emoji": "💨",
           "themeColor": "amber",
-          "badgeId": "nature-badge-l5",
+          "badgeId": "nature-badge-l5-difficile",
           "badgeName": "Écologiste L5",
           "badgeEmoji": "💨",
           "cards": [
@@ -8827,11 +8827,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "nature-gen-l6",
+          "id": "nature-gen-l6-difficile",
           "title": "Les Forêts",
           "emoji": "⛰️",
           "themeColor": "amber",
-          "badgeId": "nature-badge-l6",
+          "badgeId": "nature-badge-l6-difficile",
           "badgeName": "Écologiste L6",
           "badgeEmoji": "⛰️",
           "cards": [
@@ -9025,11 +9025,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "nature-gen-l7",
+          "id": "nature-gen-l7-difficile",
           "title": "Les Volcans",
           "emoji": "🧭",
           "themeColor": "amber",
-          "badgeId": "nature-badge-l7",
+          "badgeId": "nature-badge-l7-difficile",
           "badgeName": "Écologiste L7",
           "badgeEmoji": "🧭",
           "cards": [
@@ -9213,11 +9213,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "nature-gen-l8",
+          "id": "nature-gen-l8-difficile",
           "title": "Les Étoiles",
           "emoji": "🛡️",
           "themeColor": "amber",
-          "badgeId": "nature-badge-l8",
+          "badgeId": "nature-badge-l8-difficile",
           "badgeName": "Écologiste L8",
           "badgeEmoji": "🛡️",
           "cards": [
@@ -9411,11 +9411,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "nature-gen-l9",
+          "id": "nature-gen-l9-difficile",
           "title": "La Pollution",
           "emoji": "🔮",
           "themeColor": "amber",
-          "badgeId": "nature-badge-l9",
+          "badgeId": "nature-badge-l9-difficile",
           "badgeName": "Écologiste L9",
           "badgeEmoji": "🔮",
           "cards": [
@@ -9609,11 +9609,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "nature-gen-l10",
+          "id": "nature-gen-l10-difficile",
           "title": "Le Recyclage",
           "emoji": "🏆",
           "themeColor": "amber",
-          "badgeId": "nature-badge-l10",
+          "badgeId": "nature-badge-l10-difficile",
           "badgeName": "Écologiste L10",
           "badgeEmoji": "🏆",
           "cards": [
@@ -9802,11 +9802,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "plant-growth",
+          "id": "plant-growth-difficile",
           "title": "Le grand voyage de l'eau",
           "emoji": "💧",
           "themeColor": "emerald",
-          "badgeId": "green-thumb",
+          "badgeId": "green-thumb-difficile",
           "badgeName": "Main Verte",
           "badgeEmoji": "🌱",
           "cards": [
@@ -9955,11 +9955,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "ecosystems-forest",
+          "id": "ecosystems-forest-difficile",
           "title": "Le secret de la photosynthèse",
           "emoji": "🍃",
           "themeColor": "emerald",
-          "badgeId": "forest-defender",
+          "badgeId": "forest-defender-difficile",
           "badgeName": "Gardien des Bois",
           "badgeEmoji": "🍄",
           "cards": [
@@ -10108,11 +10108,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "outdoor-survival",
+          "id": "outdoor-survival-difficile",
           "title": "Survie en nature !",
           "emoji": "🔥",
           "themeColor": "emerald",
-          "badgeId": "survival-expert",
+          "badgeId": "survival-expert-difficile",
           "badgeName": "Survivor Pro",
           "badgeEmoji": "🔥",
           "cards": [
@@ -10256,11 +10256,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "water-cycle",
+          "id": "water-cycle-difficile",
           "title": "Le grand voyage de l'eau",
           "emoji": "💧",
           "themeColor": "emerald",
-          "badgeId": "water-guardian",
+          "badgeId": "water-guardian-difficile",
           "badgeName": "Climatologue Global",
           "badgeEmoji": "🌍",
           "cards": [
@@ -10404,11 +10404,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "photosynthesis-deep",
+          "id": "photosynthesis-deep-difficile",
           "title": "Le secret de la photosynthèse",
           "emoji": "🍃",
           "themeColor": "emerald",
-          "badgeId": "botanist-genius",
+          "badgeId": "botanist-genius-difficile",
           "badgeName": "Biochimiste Végétal",
           "badgeEmoji": "🧪",
           "cards": [
@@ -10552,11 +10552,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "ecosystems-mountains",
+          "id": "ecosystems-mountains-difficile",
           "title": "Les écosystèmes montagnards",
           "emoji": "⛰️",
           "themeColor": "emerald",
-          "badgeId": "mountaineer-ecologist",
+          "badgeId": "mountaineer-ecologist-difficile",
           "badgeName": "Écologue Alpin",
           "badgeEmoji": "⛰️",
           "cards": [
@@ -12420,7 +12420,7 @@ export const UNIVERSES: Record<string, Universe> = {
           "title": "Le voyage des aliments",
           "emoji": "🍎",
           "themeColor": "rose",
-          "badgeId": "bone-builder",
+          "badgeId": "bone-builder-facile",
           "badgeName": "Bâtisseur d'Os",
           "badgeEmoji": "🦴",
           "cards": [
@@ -13158,11 +13158,11 @@ export const UNIVERSES: Record<string, Universe> = {
       ],
       "difficile": [
         {
-          "id": "body-parts",
+          "id": "body-parts-difficile",
           "title": "Mon corps bouge !",
           "emoji": "🏃",
           "themeColor": "rose",
-          "badgeId": "body-rookie",
+          "badgeId": "body-rookie-difficile",
           "badgeName": "Petit Athlète",
           "badgeEmoji": "👟",
           "cards": [
@@ -13301,11 +13301,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "skeleton-basics",
+          "id": "skeleton-basics-difficile",
           "title": "Mes os solides",
           "emoji": "🦴",
           "themeColor": "rose",
-          "badgeId": "bone-builder",
+          "badgeId": "bone-builder-difficile",
           "badgeName": "Ostéologue Junior",
           "badgeEmoji": "🦴",
           "cards": [
@@ -13444,11 +13444,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "body-gen-l3",
+          "id": "body-gen-l3-difficile",
           "title": "Les Muscles",
           "emoji": "💧",
           "themeColor": "amber",
-          "badgeId": "body-badge-l3",
+          "badgeId": "body-badge-l3-difficile",
           "badgeName": "Anatomiste L3",
           "badgeEmoji": "💧",
           "cards": [
@@ -13612,11 +13612,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "body-gen-l4",
+          "id": "body-gen-l4-difficile",
           "title": "La Digestion",
           "emoji": "🔥",
           "themeColor": "amber",
-          "badgeId": "body-badge-l4",
+          "badgeId": "body-badge-l4-difficile",
           "badgeName": "Anatomiste L4",
           "badgeEmoji": "🔥",
           "cards": [
@@ -13795,11 +13795,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "body-gen-l5",
+          "id": "body-gen-l5-difficile",
           "title": "La Respiration",
           "emoji": "💨",
           "themeColor": "amber",
-          "badgeId": "body-badge-l5",
+          "badgeId": "body-badge-l5-difficile",
           "badgeName": "Anatomiste L5",
           "badgeEmoji": "💨",
           "cards": [
@@ -13978,11 +13978,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "body-gen-l6",
+          "id": "body-gen-l6-difficile",
           "title": "Le Cœur",
           "emoji": "⛰️",
           "themeColor": "amber",
-          "badgeId": "body-badge-l6",
+          "badgeId": "body-badge-l6-difficile",
           "badgeName": "Anatomiste L6",
           "badgeEmoji": "⛰️",
           "cards": [
@@ -14156,11 +14156,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "body-gen-l7",
+          "id": "body-gen-l7-difficile",
           "title": "Le Cerveau",
           "emoji": "🧭",
           "themeColor": "amber",
-          "badgeId": "body-badge-l7",
+          "badgeId": "body-badge-l7-difficile",
           "badgeName": "Anatomiste L7",
           "badgeEmoji": "🧭",
           "cards": [
@@ -14329,11 +14329,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "body-gen-l8",
+          "id": "body-gen-l8-difficile",
           "title": "Le Sommeil",
           "emoji": "🛡️",
           "themeColor": "amber",
-          "badgeId": "body-badge-l8",
+          "badgeId": "body-badge-l8-difficile",
           "badgeName": "Anatomiste L8",
           "badgeEmoji": "🛡️",
           "cards": [
@@ -14507,11 +14507,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "body-gen-l9",
+          "id": "body-gen-l9-difficile",
           "title": "Les Dents",
           "emoji": "🔮",
           "themeColor": "amber",
-          "badgeId": "body-badge-l9",
+          "badgeId": "body-badge-l9-difficile",
           "badgeName": "Anatomiste L9",
           "badgeEmoji": "🔮",
           "cards": [
@@ -14685,11 +14685,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "body-gen-l10",
+          "id": "body-gen-l10-difficile",
           "title": "Les Globules Rouges",
           "emoji": "🏆",
           "themeColor": "amber",
-          "badgeId": "body-badge-l10",
+          "badgeId": "body-badge-l10-difficile",
           "badgeName": "Anatomiste L10",
           "badgeEmoji": "🏆",
           "cards": [
@@ -14863,11 +14863,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "bones-muscles",
+          "id": "bones-muscles-difficile",
           "title": "Le voyage des aliments",
           "emoji": "🍎",
           "themeColor": "rose",
-          "badgeId": "bone-builder",
+          "badgeId": "bone-builder-difficile-2",
           "badgeName": "Bâtisseur d'Os",
           "badgeEmoji": "🦴",
           "cards": [
@@ -15011,11 +15011,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "sensory-system",
+          "id": "sensory-system-difficile",
           "title": "Le cerveau coordinateur",
           "emoji": "🧠",
           "themeColor": "rose",
-          "badgeId": "sensory-master",
+          "badgeId": "sensory-master-difficile",
           "badgeName": "As des Sens",
           "badgeEmoji": "👁️",
           "cards": [
@@ -15159,11 +15159,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "digestion-trip",
+          "id": "digestion-trip-difficile",
           "title": "Le voyage des aliments",
           "emoji": "🍎",
           "themeColor": "rose",
-          "badgeId": "digestion-doctor",
+          "badgeId": "digestion-doctor-difficile",
           "badgeName": "Enzymologiste Expert",
           "badgeEmoji": "🔬",
           "cards": [
@@ -15307,11 +15307,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "brain-computer",
+          "id": "brain-computer-difficile",
           "title": "Le cerveau coordinateur",
           "emoji": "🧠",
           "themeColor": "rose",
-          "badgeId": "neuro-explorer",
+          "badgeId": "neuro-explorer-difficile",
           "badgeName": "Neuroscientifique Pro",
           "badgeEmoji": "🧠",
           "cards": [
@@ -15455,11 +15455,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "circulatory-respiratory",
+          "id": "circulatory-respiratory-difficile",
           "title": "Le système cardio-respiratoire",
           "emoji": "❤️",
           "themeColor": "rose",
-          "badgeId": "cardiologist-expert",
+          "badgeId": "cardiologist-expert-difficile",
           "badgeName": "Cardiologue Junior",
           "badgeEmoji": "❤️",
           "cards": [
@@ -17243,7 +17243,7 @@ export const UNIVERSES: Record<string, Universe> = {
           "title": "Le Système Solaire",
           "emoji": "🪐",
           "themeColor": "indigo",
-          "badgeId": "planet-artist",
+          "badgeId": "planet-artist-facile",
           "badgeName": "Dessinateur de Planètes",
           "badgeEmoji": "🪐",
           "cards": [
@@ -17981,11 +17981,11 @@ export const UNIVERSES: Record<string, Universe> = {
       ],
       "difficile": [
         {
-          "id": "sky-objects",
+          "id": "sky-objects-difficile",
           "title": "Le Soleil et la Lune",
           "emoji": "🌙",
           "themeColor": "indigo",
-          "badgeId": "sky-watcher",
+          "badgeId": "sky-watcher-difficile",
           "badgeName": "Observateur du Ciel",
           "badgeEmoji": "⭐",
           "cards": [
@@ -18119,11 +18119,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "planet-colors",
+          "id": "planet-colors-difficile",
           "title": "Les couleurs de l'espace",
           "emoji": "🎨",
           "themeColor": "indigo",
-          "badgeId": "planet-artist",
+          "badgeId": "planet-artist-difficile",
           "badgeName": "Peintre de l'Espace",
           "badgeEmoji": "🎨",
           "cards": [
@@ -18257,11 +18257,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "space-gen-l3",
+          "id": "space-gen-l3-difficile",
           "title": "La Terre",
           "emoji": "💧",
           "themeColor": "amber",
-          "badgeId": "space-badge-l3",
+          "badgeId": "space-badge-l3-difficile",
           "badgeName": "Cosmonaute L3",
           "badgeEmoji": "💧",
           "cards": [
@@ -18420,11 +18420,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "space-gen-l4",
+          "id": "space-gen-l4-difficile",
           "title": "Mars",
           "emoji": "🔥",
           "themeColor": "amber",
-          "badgeId": "space-badge-l4",
+          "badgeId": "space-badge-l4-difficile",
           "badgeName": "Cosmonaute L4",
           "badgeEmoji": "🔥",
           "cards": [
@@ -18598,11 +18598,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "space-gen-l5",
+          "id": "space-gen-l5-difficile",
           "title": "Jupiter",
           "emoji": "💨",
           "themeColor": "amber",
-          "badgeId": "space-badge-l5",
+          "badgeId": "space-badge-l5-difficile",
           "badgeName": "Cosmonaute L5",
           "badgeEmoji": "💨",
           "cards": [
@@ -18766,11 +18766,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "space-gen-l6",
+          "id": "space-gen-l6-difficile",
           "title": "Saturne",
           "emoji": "⛰️",
           "themeColor": "amber",
-          "badgeId": "space-badge-l6",
+          "badgeId": "space-badge-l6-difficile",
           "badgeName": "Cosmonaute L6",
           "badgeEmoji": "⛰️",
           "cards": [
@@ -18939,11 +18939,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "space-gen-l7",
+          "id": "space-gen-l7-difficile",
           "title": "Les Étoiles",
           "emoji": "🧭",
           "themeColor": "amber",
-          "badgeId": "space-badge-l7",
+          "badgeId": "space-badge-l7-difficile",
           "badgeName": "Cosmonaute L7",
           "badgeEmoji": "🧭",
           "cards": [
@@ -19107,11 +19107,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "space-gen-l8",
+          "id": "space-gen-l8-difficile",
           "title": "Les Fusées",
           "emoji": "🛡️",
           "themeColor": "amber",
-          "badgeId": "space-badge-l8",
+          "badgeId": "space-badge-l8-difficile",
           "badgeName": "Cosmonaute L8",
           "badgeEmoji": "🛡️",
           "cards": [
@@ -19275,11 +19275,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "space-gen-l9",
+          "id": "space-gen-l9-difficile",
           "title": "La Gravité",
           "emoji": "🔮",
           "themeColor": "amber",
-          "badgeId": "space-badge-l9",
+          "badgeId": "space-badge-l9-difficile",
           "badgeName": "Cosmonaute L9",
           "badgeEmoji": "🔮",
           "cards": [
@@ -19443,11 +19443,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "space-gen-l10",
+          "id": "space-gen-l10-difficile",
           "title": "Les Galaxies",
           "emoji": "🏆",
           "themeColor": "amber",
-          "badgeId": "space-badge-l10",
+          "badgeId": "space-badge-l10-difficile",
           "badgeName": "Cosmonaute L10",
           "badgeEmoji": "🏆",
           "cards": [
@@ -19606,11 +19606,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "planets-moons",
+          "id": "planets-moons-difficile",
           "title": "Le Système Solaire",
           "emoji": "🪐",
           "themeColor": "indigo",
-          "badgeId": "planet-artist",
+          "badgeId": "planet-artist-difficile-2",
           "badgeName": "Dessinateur de Planètes",
           "badgeEmoji": "🪐",
           "cards": [
@@ -19754,11 +19754,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "moon-phases",
+          "id": "moon-phases-difficile",
           "title": "La vie des étoiles",
           "emoji": "⭐",
           "themeColor": "indigo",
-          "badgeId": "lunar-explorer",
+          "badgeId": "lunar-explorer-difficile",
           "badgeName": "Explorateur Lunaire",
           "badgeEmoji": "🌑",
           "cards": [
@@ -19902,11 +19902,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "solar-system",
+          "id": "solar-system-difficile",
           "title": "Le Système Solaire",
           "emoji": "🪐",
           "themeColor": "indigo",
-          "badgeId": "space-commander",
+          "badgeId": "space-commander-difficile",
           "badgeName": "Astrophysicien Relativiste",
           "badgeEmoji": "🌌",
           "cards": [
@@ -20050,11 +20050,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "stars-lifecycle",
+          "id": "stars-lifecycle-difficile",
           "title": "La vie des étoiles",
           "emoji": "⭐",
           "themeColor": "indigo",
-          "badgeId": "nebula-expert",
+          "badgeId": "nebula-expert-difficile",
           "badgeName": "Cosmologue Expert",
           "badgeEmoji": "🕳️",
           "cards": [
@@ -20198,11 +20198,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "space-exploration",
+          "id": "space-exploration-difficile",
           "title": "La conquête de l'espace",
           "emoji": "🧑‍🚀",
           "themeColor": "indigo",
-          "badgeId": "astronaut-badge",
+          "badgeId": "astronaut-badge-difficile",
           "badgeName": "Commandant de Mission",
           "badgeEmoji": "🧑‍🚀",
           "cards": [
@@ -22499,11 +22499,11 @@ export const UNIVERSES: Record<string, Universe> = {
       ],
       "difficile": [
         {
-          "id": "counting-123",
+          "id": "counting-123-difficile",
           "title": "Apprends à compter",
           "emoji": "🍎",
           "themeColor": "orange",
-          "badgeId": "counting-star",
+          "badgeId": "counting-star-difficile",
           "badgeName": "Champion des Nombres",
           "badgeEmoji": "✨",
           "cards": [
@@ -22642,11 +22642,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "shapes-match",
+          "id": "shapes-match-difficile",
           "title": "Rond ou Carré ?",
           "emoji": "🔺",
           "themeColor": "orange",
-          "badgeId": "shape-sorter",
+          "badgeId": "shape-sorter-difficile",
           "badgeName": "Trieur de Formes",
           "badgeEmoji": "🔺",
           "cards": [
@@ -22785,11 +22785,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "maths-gen-l3",
+          "id": "maths-gen-l3-difficile",
           "title": "Les Premières Soustractions",
           "emoji": "➖",
           "themeColor": "amber",
-          "badgeId": "maths-badge-l3",
+          "badgeId": "maths-badge-l3-difficile",
           "badgeName": "Mathématicien L3",
           "badgeEmoji": "➖",
           "cards": [
@@ -22923,11 +22923,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "maths-gen-l4",
+          "id": "maths-gen-l4-difficile",
           "title": "Compter plus loin",
           "emoji": "🧮",
           "themeColor": "amber",
-          "badgeId": "maths-badge-l4",
+          "badgeId": "maths-badge-l4-difficile",
           "badgeName": "Mathématicien L4",
           "badgeEmoji": "🧮",
           "cards": [
@@ -23061,11 +23061,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "maths-gen-l5",
+          "id": "maths-gen-l5-difficile",
           "title": "Double et Moitié",
           "emoji": "⚖️",
           "themeColor": "amber",
-          "badgeId": "maths-badge-l5",
+          "badgeId": "maths-badge-l5-difficile",
           "badgeName": "Mathématicien L5",
           "badgeEmoji": "⚖️",
           "cards": [
@@ -23199,11 +23199,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "maths-gen-l6",
+          "id": "maths-gen-l6-difficile",
           "title": "Les Formes Géométriques",
           "emoji": "📐",
           "themeColor": "amber",
-          "badgeId": "maths-badge-l6",
+          "badgeId": "maths-badge-l6-difficile",
           "badgeName": "Mathématicien L6",
           "badgeEmoji": "📐",
           "cards": [
@@ -23337,11 +23337,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "maths-gen-l7",
+          "id": "maths-gen-l7-difficile",
           "title": "La Table de Multiplication",
           "emoji": "✖️",
           "themeColor": "amber",
-          "badgeId": "maths-badge-l7",
+          "badgeId": "maths-badge-l7-difficile",
           "badgeName": "Mathématicien L7",
           "badgeEmoji": "✖️",
           "cards": [
@@ -23475,11 +23475,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "maths-gen-l8",
+          "id": "maths-gen-l8-difficile",
           "title": "Les Divisions Faciles",
           "emoji": "➗",
           "themeColor": "amber",
-          "badgeId": "maths-badge-l8",
+          "badgeId": "maths-badge-l8-difficile",
           "badgeName": "Mathématicien L8",
           "badgeEmoji": "➗",
           "cards": [
@@ -23613,11 +23613,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "maths-gen-l9",
+          "id": "maths-gen-l9-difficile",
           "title": "Les Fractions Simples",
           "emoji": "🍰",
           "themeColor": "amber",
-          "badgeId": "maths-badge-l9",
+          "badgeId": "maths-badge-l9-difficile",
           "badgeName": "Mathématicien L9",
           "badgeEmoji": "🍰",
           "cards": [
@@ -23751,11 +23751,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "maths-gen-l10",
+          "id": "maths-gen-l10-difficile",
           "title": "Grand Défi de Logique",
           "emoji": "🧠",
           "themeColor": "amber",
-          "badgeId": "maths-badge-l10",
+          "badgeId": "maths-badge-l10-difficile",
           "badgeName": "Mathématicien L10",
           "badgeEmoji": "🧠",
           "cards": [
@@ -23889,11 +23889,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "addition-wizard",
+          "id": "addition-wizard-difficile",
           "title": "Logique et Suites",
           "emoji": "🧠",
           "themeColor": "orange",
-          "badgeId": "addition-wizard",
+          "badgeId": "addition-wizard-difficile",
           "badgeName": "Sorcier d'Additions",
           "badgeEmoji": "➕",
           "cards": [
@@ -24042,11 +24042,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "subtraction-hero",
+          "id": "subtraction-hero-difficile",
           "title": "La multiplication rapide",
           "emoji": "✖️",
           "themeColor": "orange",
-          "badgeId": "subtraction-hero",
+          "badgeId": "subtraction-hero-difficile",
           "badgeName": "Héros du Moins",
           "badgeEmoji": "➖",
           "cards": [
@@ -24195,11 +24195,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "math-logic",
+          "id": "math-logic-difficile",
           "title": "Logique et Suites",
           "emoji": "🧠",
           "themeColor": "orange",
-          "badgeId": "logic-champ",
+          "badgeId": "logic-champ-difficile",
           "badgeName": "Mathématicien Théorique",
           "badgeEmoji": "🔢",
           "cards": [
@@ -24343,11 +24343,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "multiplication-intro",
+          "id": "multiplication-intro-difficile",
           "title": "La multiplication rapide",
           "emoji": "✖️",
           "themeColor": "orange",
-          "badgeId": "multiplication-wizard",
+          "badgeId": "multiplication-wizard-difficile",
           "badgeName": "Algébriste Expert",
           "badgeEmoji": "📐",
           "cards": [
@@ -24491,11 +24491,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "geometry-theorems",
+          "id": "geometry-theorems-difficile",
           "title": "La géométrie de collège",
           "emoji": "📐",
           "themeColor": "orange",
-          "badgeId": "geometry-expert",
+          "badgeId": "geometry-expert-difficile",
           "badgeName": "Géomètre Pro",
           "badgeEmoji": "📐",
           "cards": [
@@ -27014,11 +27014,11 @@ export const UNIVERSES: Record<string, Universe> = {
       ],
       "difficile": [
         {
-          "id": "earth-intro",
+          "id": "earth-intro-difficile",
           "title": "Notre Planète Bleue",
           "emoji": "🌍",
           "themeColor": "cyan",
-          "badgeId": "earth-explorer",
+          "badgeId": "earth-explorer-difficile",
           "badgeName": "Petit Globe-Trotteur",
           "badgeEmoji": "🌍",
           "cards": [
@@ -27157,11 +27157,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "monuments-world",
+          "id": "monuments-world-difficile",
           "title": "Monuments du monde",
           "emoji": "🗽",
           "themeColor": "cyan",
-          "badgeId": "tourist-kid",
+          "badgeId": "tourist-kid-difficile",
           "badgeName": "Petit Voyageur",
           "badgeEmoji": "🗽",
           "cards": [
@@ -27335,11 +27335,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "geography-gen-l3",
+          "id": "geography-gen-l3-difficile",
           "title": "Les Pays d'Europe",
           "emoji": "💧",
           "themeColor": "amber",
-          "badgeId": "geography-badge-l3",
+          "badgeId": "geography-badge-l3-difficile",
           "badgeName": "Géographe L3",
           "badgeEmoji": "💧",
           "cards": [
@@ -27493,11 +27493,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "geography-gen-l4",
+          "id": "geography-gen-l4-difficile",
           "title": "Les Capitales",
           "emoji": "🔥",
           "themeColor": "amber",
-          "badgeId": "geography-badge-l4",
+          "badgeId": "geography-badge-l4-difficile",
           "badgeName": "Géographe L4",
           "badgeEmoji": "🔥",
           "cards": [
@@ -27671,11 +27671,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "geography-gen-l5",
+          "id": "geography-gen-l5-difficile",
           "title": "Les Pays d'Asie",
           "emoji": "💨",
           "themeColor": "amber",
-          "badgeId": "geography-badge-l5",
+          "badgeId": "geography-badge-l5-difficile",
           "badgeName": "Géographe L5",
           "badgeEmoji": "💨",
           "cards": [
@@ -27854,11 +27854,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "geography-gen-l6",
+          "id": "geography-gen-l6-difficile",
           "title": "Les Pays d'Afrique",
           "emoji": "⛰️",
           "themeColor": "amber",
-          "badgeId": "geography-badge-l6",
+          "badgeId": "geography-badge-l6-difficile",
           "badgeName": "Géographe L6",
           "badgeEmoji": "⛰️",
           "cards": [
@@ -28037,11 +28037,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "geography-gen-l7",
+          "id": "geography-gen-l7-difficile",
           "title": "Les Océans",
           "emoji": "🧭",
           "themeColor": "amber",
-          "badgeId": "geography-badge-l7",
+          "badgeId": "geography-badge-l7-difficile",
           "badgeName": "Géographe L7",
           "badgeEmoji": "🧭",
           "cards": [
@@ -28220,11 +28220,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "geography-gen-l8",
+          "id": "geography-gen-l8-difficile",
           "title": "Les Montagnes",
           "emoji": "🛡️",
           "themeColor": "amber",
-          "badgeId": "geography-badge-l8",
+          "badgeId": "geography-badge-l8-difficile",
           "badgeName": "Géographe L8",
           "badgeEmoji": "🛡️",
           "cards": [
@@ -28408,11 +28408,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "geography-gen-l9",
+          "id": "geography-gen-l9-difficile",
           "title": "Les Fleuves",
           "emoji": "🔮",
           "themeColor": "amber",
-          "badgeId": "geography-badge-l9",
+          "badgeId": "geography-badge-l9-difficile",
           "badgeName": "Géographe L9",
           "badgeEmoji": "🔮",
           "cards": [
@@ -28591,11 +28591,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "geography-gen-l10",
+          "id": "geography-gen-l10-difficile",
           "title": "Les Cartes",
           "emoji": "🏆",
           "themeColor": "amber",
-          "badgeId": "geography-badge-l10",
+          "badgeId": "geography-badge-l10-difficile",
           "badgeName": "Géographe L10",
           "badgeEmoji": "🏆",
           "cards": [
@@ -28779,11 +28779,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "flags-world",
+          "id": "flags-world-difficile",
           "title": "Voyage au centre de la Terre",
           "emoji": "🌋",
           "themeColor": "cyan",
-          "badgeId": "flag-expert",
+          "badgeId": "flag-expert-difficile",
           "badgeName": "As des Drapeaux",
           "badgeEmoji": "🚩",
           "cards": [
@@ -28932,11 +28932,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "continents-world",
+          "id": "continents-world-difficile",
           "title": "Les 6 Continents",
           "emoji": "🗺️",
           "themeColor": "cyan",
-          "badgeId": "continents-badge",
+          "badgeId": "continents-badge-difficile",
           "badgeName": "Tectonicien Pro",
           "badgeEmoji": "🧩",
           "cards": [
@@ -29080,11 +29080,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "earth-layers",
+          "id": "earth-layers-difficile",
           "title": "Voyage au centre de la Terre",
           "emoji": "🌋",
           "themeColor": "cyan",
-          "badgeId": "geologist-expert",
+          "badgeId": "geologist-expert-difficile",
           "badgeName": "Géophysicien Pro",
           "badgeEmoji": "🧲",
           "cards": [
@@ -29228,11 +29228,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "climatology-biomes",
+          "id": "climatology-biomes-difficile",
           "title": "Climats et Biomes terrestres",
           "emoji": "🌤️",
           "themeColor": "cyan",
-          "badgeId": "climatology-biomes",
+          "badgeId": "climatology-biomes-difficile",
           "badgeName": "Climatologue Pro",
           "badgeEmoji": "🌤️",
           "cards": [
@@ -31141,7 +31141,7 @@ export const UNIVERSES: Record<string, Universe> = {
           "title": "Les Synonymes",
           "emoji": "📚",
           "themeColor": "violet",
-          "badgeId": "rhyme-kid",
+          "badgeId": "rhyme-kid-facile",
           "badgeName": "Poète en Herbe",
           "badgeEmoji": "🎵",
           "cards": [
@@ -31894,11 +31894,11 @@ export const UNIVERSES: Record<string, Universe> = {
       ],
       "difficile": [
         {
-          "id": "alphabet-fun",
+          "id": "alphabet-fun-difficile",
           "title": "L'Alphabet des Animaux",
           "emoji": "🦁",
           "themeColor": "violet",
-          "badgeId": "alphabet-hero",
+          "badgeId": "alphabet-hero-difficile",
           "badgeName": "Ami des Lettres",
           "badgeEmoji": "🔤",
           "cards": [
@@ -32042,11 +32042,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "rhymes-songs",
+          "id": "rhymes-songs-difficile",
           "title": "Les mots qui chantent",
           "emoji": "🎶",
           "themeColor": "violet",
-          "badgeId": "rhyme-kid",
+          "badgeId": "rhyme-kid-difficile",
           "badgeName": "Petit Poète",
           "badgeEmoji": "🎶",
           "cards": [
@@ -32185,11 +32185,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "french-gen-l3",
+          "id": "french-gen-l3-difficile",
           "title": "Les Verbes",
           "emoji": "💧",
           "themeColor": "amber",
-          "badgeId": "french-badge-l3",
+          "badgeId": "french-badge-l3-difficile",
           "badgeName": "Linguiste L3",
           "badgeEmoji": "💧",
           "cards": [
@@ -32358,11 +32358,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "french-gen-l4",
+          "id": "french-gen-l4-difficile",
           "title": "Le Pluriel",
           "emoji": "🔥",
           "themeColor": "amber",
-          "badgeId": "french-badge-l4",
+          "badgeId": "french-badge-l4-difficile",
           "badgeName": "Linguiste L4",
           "badgeEmoji": "🔥",
           "cards": [
@@ -32541,11 +32541,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "french-gen-l5",
+          "id": "french-gen-l5-difficile",
           "title": "Le Féminin",
           "emoji": "💨",
           "themeColor": "amber",
-          "badgeId": "french-badge-l5",
+          "badgeId": "french-badge-l5-difficile",
           "badgeName": "Linguiste L5",
           "badgeEmoji": "💨",
           "cards": [
@@ -32729,11 +32729,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "french-gen-l6",
+          "id": "french-gen-l6-difficile",
           "title": "Les Adjectifs",
           "emoji": "⛰️",
           "themeColor": "amber",
-          "badgeId": "french-badge-l6",
+          "badgeId": "french-badge-l6-difficile",
           "badgeName": "Linguiste L6",
           "badgeEmoji": "⛰️",
           "cards": [
@@ -32912,11 +32912,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "french-gen-l7",
+          "id": "french-gen-l7-difficile",
           "title": "La Ponctuation",
           "emoji": "🧭",
           "themeColor": "amber",
-          "badgeId": "french-badge-l7",
+          "badgeId": "french-badge-l7-difficile",
           "badgeName": "Linguiste L7",
           "badgeEmoji": "🧭",
           "cards": [
@@ -33095,11 +33095,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "french-gen-l8",
+          "id": "french-gen-l8-difficile",
           "title": "Les Synonymes",
           "emoji": "🛡️",
           "themeColor": "amber",
-          "badgeId": "french-badge-l8",
+          "badgeId": "french-badge-l8-difficile",
           "badgeName": "Linguiste L8",
           "badgeEmoji": "🛡️",
           "cards": [
@@ -33278,11 +33278,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "french-gen-l9",
+          "id": "french-gen-l9-difficile",
           "title": "Le Présent",
           "emoji": "🔮",
           "themeColor": "amber",
-          "badgeId": "french-badge-l9",
+          "badgeId": "french-badge-l9-difficile",
           "badgeName": "Linguiste L9",
           "badgeEmoji": "🔮",
           "cards": [
@@ -33456,11 +33456,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "french-gen-l10",
+          "id": "french-gen-l10-difficile",
           "title": "Les Homophones",
           "emoji": "🏆",
           "themeColor": "amber",
-          "badgeId": "french-badge-l10",
+          "badgeId": "french-badge-l10-difficile",
           "badgeName": "Linguiste L10",
           "badgeEmoji": "🏆",
           "cards": [
@@ -33644,11 +33644,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "rhymes-fun",
+          "id": "rhymes-fun-difficile",
           "title": "Les Synonymes",
           "emoji": "📚",
           "themeColor": "violet",
-          "badgeId": "rhyme-kid",
+          "badgeId": "rhyme-kid-difficile-2",
           "badgeName": "Poète en Herbe",
           "badgeEmoji": "🎵",
           "cards": [
@@ -33797,11 +33797,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "syllables-count",
+          "id": "syllables-count-difficile",
           "title": "Les Homophones",
           "emoji": "✏️",
           "themeColor": "violet",
-          "badgeId": "syllable-king",
+          "badgeId": "syllable-king-difficile",
           "badgeName": "Roi des Syllabes",
           "badgeEmoji": "🗣️",
           "cards": [
@@ -33955,11 +33955,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "vocabulary-synonyms",
+          "id": "vocabulary-synonyms-difficile",
           "title": "Les Synonymes et registres",
           "emoji": "📚",
           "themeColor": "violet",
-          "badgeId": "vocab-genius",
+          "badgeId": "vocab-genius-difficile",
           "badgeName": "Linguiste Expert",
           "badgeEmoji": "🗣️",
           "cards": [
@@ -34103,11 +34103,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "grammar-homophones",
+          "id": "grammar-homophones-difficile",
           "title": "Les Homophones et accords",
           "emoji": "✏️",
           "themeColor": "violet",
-          "badgeId": "spelling-champion",
+          "badgeId": "spelling-champion-difficile",
           "badgeName": "Syntaxiste Pro",
           "badgeEmoji": "📝",
           "cards": [
@@ -34251,11 +34251,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "syntax-conjugation",
+          "id": "syntax-conjugation-difficile",
           "title": "Syntaxe et Conjugaison complexe",
           "emoji": "📚",
           "themeColor": "violet",
-          "badgeId": "syntax-champion",
+          "badgeId": "syntax-champion-difficile",
           "badgeName": "Grammairien Pro",
           "badgeEmoji": "📚",
           "cards": [
@@ -36059,7 +36059,7 @@ export const UNIVERSES: Record<string, Universe> = {
           "title": "L'Impressionnisme",
           "emoji": "🖼️",
           "themeColor": "pink",
-          "badgeId": "beat-master",
+          "badgeId": "beat-master-facile",
           "badgeName": "Maître du Rythme",
           "badgeEmoji": "🥁",
           "cards": [
@@ -36802,11 +36802,11 @@ export const UNIVERSES: Record<string, Universe> = {
       ],
       "difficile": [
         {
-          "id": "color-mixing",
+          "id": "color-mixing-difficile",
           "title": "Magie des Couleurs",
           "emoji": "🎨",
           "themeColor": "pink",
-          "badgeId": "color-magician",
+          "badgeId": "color-magician-difficile",
           "badgeName": "Magicien des Couleurs",
           "badgeEmoji": "🌈",
           "cards": [
@@ -36950,11 +36950,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "instruments-shapes",
+          "id": "instruments-shapes-difficile",
           "title": "Formes des instruments",
           "emoji": "🥁",
           "themeColor": "pink",
-          "badgeId": "beat-master",
+          "badgeId": "beat-master-difficile",
           "badgeName": "Petit Rythmicien",
           "badgeEmoji": "🥁",
           "cards": [
@@ -37098,11 +37098,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "arts-gen-l3",
+          "id": "arts-gen-l3-difficile",
           "title": "Le Dessin",
           "emoji": "💧",
           "themeColor": "amber",
-          "badgeId": "arts-badge-l3",
+          "badgeId": "arts-badge-l3-difficile",
           "badgeName": "Artiste L3",
           "badgeEmoji": "💧",
           "cards": [
@@ -37266,11 +37266,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "arts-gen-l4",
+          "id": "arts-gen-l4-difficile",
           "title": "La Musique",
           "emoji": "🔥",
           "themeColor": "amber",
-          "badgeId": "arts-badge-l4",
+          "badgeId": "arts-badge-l4-difficile",
           "badgeName": "Artiste L4",
           "badgeEmoji": "🔥",
           "cards": [
@@ -37439,11 +37439,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "arts-gen-l5",
+          "id": "arts-gen-l5-difficile",
           "title": "Les Chansons",
           "emoji": "💨",
           "themeColor": "amber",
-          "badgeId": "arts-badge-l5",
+          "badgeId": "arts-badge-l5-difficile",
           "badgeName": "Artiste L5",
           "badgeEmoji": "💨",
           "cards": [
@@ -37612,11 +37612,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "arts-gen-l6",
+          "id": "arts-gen-l6-difficile",
           "title": "Le Théâtre",
           "emoji": "⛰️",
           "themeColor": "amber",
-          "badgeId": "arts-badge-l6",
+          "badgeId": "arts-badge-l6-difficile",
           "badgeName": "Artiste L6",
           "badgeEmoji": "⛰️",
           "cards": [
@@ -37775,11 +37775,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "arts-gen-l7",
+          "id": "arts-gen-l7-difficile",
           "title": "Le Cinéma",
           "emoji": "🧭",
           "themeColor": "amber",
-          "badgeId": "arts-badge-l7",
+          "badgeId": "arts-badge-l7-difficile",
           "badgeName": "Artiste L7",
           "badgeEmoji": "🧭",
           "cards": [
@@ -37943,11 +37943,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "arts-gen-l8",
+          "id": "arts-gen-l8-difficile",
           "title": "La Sculpture",
           "emoji": "🛡️",
           "themeColor": "amber",
-          "badgeId": "arts-badge-l8",
+          "badgeId": "arts-badge-l8-difficile",
           "badgeName": "Artiste L8",
           "badgeEmoji": "🛡️",
           "cards": [
@@ -38111,11 +38111,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "arts-gen-l9",
+          "id": "arts-gen-l9-difficile",
           "title": "Les Musées",
           "emoji": "🔮",
           "themeColor": "amber",
-          "badgeId": "arts-badge-l9",
+          "badgeId": "arts-badge-l9-difficile",
           "badgeName": "Artiste L9",
           "badgeEmoji": "🔮",
           "cards": [
@@ -38279,11 +38279,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "arts-gen-l10",
+          "id": "arts-gen-l10-difficile",
           "title": "Les Instruments",
           "emoji": "🏆",
           "themeColor": "amber",
-          "badgeId": "arts-badge-l10",
+          "badgeId": "arts-badge-l10-difficile",
           "badgeName": "Artiste L10",
           "badgeEmoji": "🏆",
           "cards": [
@@ -38447,11 +38447,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "musical-instruments",
+          "id": "musical-instruments-difficile",
           "title": "L'Impressionnisme",
           "emoji": "🖼️",
           "themeColor": "pink",
-          "badgeId": "beat-master",
+          "badgeId": "beat-master-difficile-2",
           "badgeName": "Maître du Rythme",
           "badgeEmoji": "🥁",
           "cards": [
@@ -38595,11 +38595,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "classical-music",
+          "id": "classical-music-difficile",
           "title": "Le tempo et le rythme",
           "emoji": "⏱️",
           "themeColor": "pink",
-          "badgeId": "music-director",
+          "badgeId": "music-director-difficile",
           "badgeName": "Chef d'Orchestre",
           "badgeEmoji": "🎼",
           "cards": [
@@ -38748,11 +38748,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "art-movements",
+          "id": "art-movements-difficile",
           "title": "L'Impressionnisme et courants",
           "emoji": "🖼️",
           "themeColor": "pink",
-          "badgeId": "art-historian",
+          "badgeId": "art-historian-difficile",
           "badgeName": "Historien d'Art Moderne",
           "badgeEmoji": "🎨",
           "cards": [
@@ -38896,11 +38896,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "music-tempo",
+          "id": "music-tempo-difficile",
           "title": "Le tempo et le rythme",
           "emoji": "⏱️",
           "themeColor": "pink",
-          "badgeId": "tempo-master",
+          "badgeId": "tempo-master-difficile",
           "badgeName": "Musicologue Pro",
           "badgeEmoji": "🎼",
           "cards": [
@@ -39044,11 +39044,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "visualarts-architecture",
+          "id": "visualarts-architecture-difficile",
           "title": "Perspective et Architecture",
           "emoji": "🏛️",
           "themeColor": "pink",
-          "badgeId": "visualarts-badge",
+          "badgeId": "visualarts-badge-difficile",
           "badgeName": "Architecte Junior",
           "badgeEmoji": "🏛️",
           "cards": [
@@ -41035,11 +41035,11 @@ export const UNIVERSES: Record<string, Universe> = {
       ],
       "difficile": [
         {
-          "id": "computer-gen-l1",
+          "id": "computer-gen-l1-difficile",
           "title": "L'ordinateur et ses parties",
           "emoji": "💻",
           "themeColor": "indigo",
-          "badgeId": "computer-badge-l1",
+          "badgeId": "computer-badge-l1-difficile",
           "badgeName": "Ami des Ordis",
           "badgeEmoji": "🖥️",
           "cards": [
@@ -41218,11 +41218,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "computer-gen-l2",
+          "id": "computer-gen-l2-difficile",
           "title": "La souris et le clavier",
           "emoji": "🖱️",
           "themeColor": "indigo",
-          "badgeId": "computer-badge-l2",
+          "badgeId": "computer-badge-l2-difficile",
           "badgeName": "Maître du Clic",
           "badgeEmoji": "🖱️",
           "cards": [
@@ -41401,11 +41401,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "computer-gen-l3",
+          "id": "computer-gen-l3-difficile",
           "title": "Les images et les pixels",
           "emoji": "🖼️",
           "themeColor": "indigo",
-          "badgeId": "computer-badge-l3",
+          "badgeId": "computer-badge-l3-difficile",
           "badgeName": "Dessinateur Pixel",
           "badgeEmoji": "🎨",
           "cards": [
@@ -41584,11 +41584,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "computer-gen-l4",
+          "id": "computer-gen-l4-difficile",
           "title": "Les robots",
           "emoji": "🤖",
           "themeColor": "indigo",
-          "badgeId": "computer-badge-l4",
+          "badgeId": "computer-badge-l4-difficile",
           "badgeName": "Copain des Robots",
           "badgeEmoji": "🤖",
           "cards": [
@@ -41767,11 +41767,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "computer-gen-l5",
+          "id": "computer-gen-l5-difficile",
           "title": "Les tablettes et smartphones",
           "emoji": "📱",
           "themeColor": "indigo",
-          "badgeId": "computer-badge-l5",
+          "badgeId": "computer-badge-l5-difficile",
           "badgeName": "Doigt Magique",
           "badgeEmoji": "👉",
           "cards": [
@@ -41950,11 +41950,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "computer-gen-l6",
+          "id": "computer-gen-l6-difficile",
           "title": "Allumer et éteindre un ordinateur",
           "emoji": "🔌",
           "themeColor": "indigo",
-          "badgeId": "computer-badge-l6",
+          "badgeId": "computer-badge-l6-difficile",
           "badgeName": "Maître du Bouton",
           "badgeEmoji": "🟢",
           "cards": [
@@ -42133,11 +42133,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "computer-gen-l7",
+          "id": "computer-gen-l7-difficile",
           "title": "Internet et les sites web",
           "emoji": "🌐",
           "themeColor": "indigo",
-          "badgeId": "computer-badge-l7",
+          "badgeId": "computer-badge-l7-difficile",
           "badgeName": "Navigateur du Web",
           "badgeEmoji": "🌐",
           "cards": [
@@ -42316,11 +42316,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "computer-gen-l8",
+          "id": "computer-gen-l8-difficile",
           "title": "Les sons et la musique sur l'ordinateur",
           "emoji": "🎵",
           "themeColor": "indigo",
-          "badgeId": "computer-badge-l8",
+          "badgeId": "computer-badge-l8-difficile",
           "badgeName": "Mélomane Digital",
           "badgeEmoji": "🎧",
           "cards": [
@@ -42499,11 +42499,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "computer-gen-l9",
+          "id": "computer-gen-l9-difficile",
           "title": "Les emojis et la communication",
           "emoji": "😊",
           "themeColor": "indigo",
-          "badgeId": "computer-badge-l9",
+          "badgeId": "computer-badge-l9-difficile",
           "badgeName": "Roi des Emojis",
           "badgeEmoji": "😀",
           "cards": [
@@ -42682,11 +42682,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "computer-gen-l10",
+          "id": "computer-gen-l10-difficile",
           "title": "Les jeux vidéo",
           "emoji": "🎮",
           "themeColor": "indigo",
-          "badgeId": "computer-badge-l10",
+          "badgeId": "computer-badge-l10-difficile",
           "badgeName": "Jeune Gamer",
           "badgeEmoji": "🕹️",
           "cards": [
@@ -44633,11 +44633,11 @@ export const UNIVERSES: Record<string, Universe> = {
       ],
       "difficile": [
         {
-          "id": "survival-gen-l1",
+          "id": "survival-gen-l1-difficile",
           "title": "Leçon",
           "emoji": "🌟",
           "themeColor": "amber",
-          "badgeId": "survival-badge-l1",
+          "badgeId": "survival-badge-l1-difficile",
           "badgeName": "Explorateur L1",
           "badgeEmoji": "🌟",
           "cards": [
@@ -44806,11 +44806,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "survival-gen-l2",
+          "id": "survival-gen-l2-difficile",
           "title": "Leçon Intermédiaire",
           "emoji": "🌱",
           "themeColor": "amber",
-          "badgeId": "survival-badge-l2",
+          "badgeId": "survival-badge-l2-difficile",
           "badgeName": "Explorateur L2",
           "badgeEmoji": "🌱",
           "cards": [
@@ -44984,11 +44984,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "survival-gen-l3",
+          "id": "survival-gen-l3-difficile",
           "title": "Leçon Avancée",
           "emoji": "💧",
           "themeColor": "amber",
-          "badgeId": "survival-badge-l3",
+          "badgeId": "survival-badge-l3-difficile",
           "badgeName": "Explorateur L3",
           "badgeEmoji": "💧",
           "cards": [
@@ -45162,11 +45162,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "survival-gen-l4",
+          "id": "survival-gen-l4-difficile",
           "title": "Leçon Générale",
           "emoji": "🔥",
           "themeColor": "amber",
-          "badgeId": "survival-badge-l4",
+          "badgeId": "survival-badge-l4-difficile",
           "badgeName": "Explorateur L4",
           "badgeEmoji": "🔥",
           "cards": [
@@ -45340,11 +45340,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "survival-gen-l5",
+          "id": "survival-gen-l5-difficile",
           "title": "Leçon Découverte",
           "emoji": "💨",
           "themeColor": "amber",
-          "badgeId": "survival-badge-l5",
+          "badgeId": "survival-badge-l5-difficile",
           "badgeName": "Explorateur L5",
           "badgeEmoji": "💨",
           "cards": [
@@ -45518,11 +45518,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "survival-gen-l6",
+          "id": "survival-gen-l6-difficile",
           "title": "Leçon Nature",
           "emoji": "⛰️",
           "themeColor": "amber",
-          "badgeId": "survival-badge-l6",
+          "badgeId": "survival-badge-l6-difficile",
           "badgeName": "Explorateur L6",
           "badgeEmoji": "⛰️",
           "cards": [
@@ -45696,11 +45696,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "survival-gen-l7",
+          "id": "survival-gen-l7-difficile",
           "title": "Leçon Monde",
           "emoji": "🧭",
           "themeColor": "amber",
-          "badgeId": "survival-badge-l7",
+          "badgeId": "survival-badge-l7-difficile",
           "badgeName": "Explorateur L7",
           "badgeEmoji": "🧭",
           "cards": [
@@ -45869,11 +45869,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "survival-gen-l8",
+          "id": "survival-gen-l8-difficile",
           "title": "Leçon Science",
           "emoji": "🛡️",
           "themeColor": "amber",
-          "badgeId": "survival-badge-l8",
+          "badgeId": "survival-badge-l8-difficile",
           "badgeName": "Explorateur L8",
           "badgeEmoji": "🛡️",
           "cards": [
@@ -46042,11 +46042,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "survival-gen-l9",
+          "id": "survival-gen-l9-difficile",
           "title": "Leçon Espace",
           "emoji": "🔮",
           "themeColor": "amber",
-          "badgeId": "survival-badge-l9",
+          "badgeId": "survival-badge-l9-difficile",
           "badgeName": "Explorateur L9",
           "badgeEmoji": "🔮",
           "cards": [
@@ -46215,11 +46215,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "survival-gen-l10",
+          "id": "survival-gen-l10-difficile",
           "title": "Leçon Défi",
           "emoji": "🏆",
           "themeColor": "amber",
-          "badgeId": "survival-badge-l10",
+          "badgeId": "survival-badge-l10-difficile",
           "badgeName": "Explorateur L10",
           "badgeEmoji": "🏆",
           "cards": [
@@ -48391,11 +48391,11 @@ export const UNIVERSES: Record<string, Universe> = {
       ],
       "difficile": [
         {
-          "id": "ornithology-gen-l1",
+          "id": "ornithology-gen-l1-difficile",
           "title": "Leçon",
           "emoji": "🌟",
           "themeColor": "amber",
-          "badgeId": "ornithology-badge-l1",
+          "badgeId": "ornithology-badge-l1-difficile",
           "badgeName": "Explorateur L1",
           "badgeEmoji": "🌟",
           "cards": [
@@ -48584,11 +48584,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "ornithology-gen-l2",
+          "id": "ornithology-gen-l2-difficile",
           "title": "Leçon Intermédiaire",
           "emoji": "🌱",
           "themeColor": "amber",
-          "badgeId": "ornithology-badge-l2",
+          "badgeId": "ornithology-badge-l2-difficile",
           "badgeName": "Explorateur L2",
           "badgeEmoji": "🌱",
           "cards": [
@@ -48782,11 +48782,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "ornithology-gen-l3",
+          "id": "ornithology-gen-l3-difficile",
           "title": "Leçon Avancée",
           "emoji": "💧",
           "themeColor": "amber",
-          "badgeId": "ornithology-badge-l3",
+          "badgeId": "ornithology-badge-l3-difficile",
           "badgeName": "Explorateur L3",
           "badgeEmoji": "💧",
           "cards": [
@@ -48980,11 +48980,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "ornithology-gen-l4",
+          "id": "ornithology-gen-l4-difficile",
           "title": "Leçon Générale",
           "emoji": "🔥",
           "themeColor": "amber",
-          "badgeId": "ornithology-badge-l4",
+          "badgeId": "ornithology-badge-l4-difficile",
           "badgeName": "Explorateur L4",
           "badgeEmoji": "🔥",
           "cards": [
@@ -49178,11 +49178,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "ornithology-gen-l5",
+          "id": "ornithology-gen-l5-difficile",
           "title": "Leçon Découverte",
           "emoji": "💨",
           "themeColor": "amber",
-          "badgeId": "ornithology-badge-l5",
+          "badgeId": "ornithology-badge-l5-difficile",
           "badgeName": "Explorateur L5",
           "badgeEmoji": "💨",
           "cards": [
@@ -49376,11 +49376,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "ornithology-gen-l6",
+          "id": "ornithology-gen-l6-difficile",
           "title": "Leçon Nature",
           "emoji": "⛰️",
           "themeColor": "amber",
-          "badgeId": "ornithology-badge-l6",
+          "badgeId": "ornithology-badge-l6-difficile",
           "badgeName": "Explorateur L6",
           "badgeEmoji": "⛰️",
           "cards": [
@@ -49574,11 +49574,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "ornithology-gen-l7",
+          "id": "ornithology-gen-l7-difficile",
           "title": "Leçon Monde",
           "emoji": "🧭",
           "themeColor": "amber",
-          "badgeId": "ornithology-badge-l7",
+          "badgeId": "ornithology-badge-l7-difficile",
           "badgeName": "Explorateur L7",
           "badgeEmoji": "🧭",
           "cards": [
@@ -49772,11 +49772,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "ornithology-gen-l8",
+          "id": "ornithology-gen-l8-difficile",
           "title": "Leçon Science",
           "emoji": "🛡️",
           "themeColor": "amber",
-          "badgeId": "ornithology-badge-l8",
+          "badgeId": "ornithology-badge-l8-difficile",
           "badgeName": "Explorateur L8",
           "badgeEmoji": "🛡️",
           "cards": [
@@ -49975,11 +49975,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "ornithology-gen-l9",
+          "id": "ornithology-gen-l9-difficile",
           "title": "Leçon Espace",
           "emoji": "🔮",
           "themeColor": "amber",
-          "badgeId": "ornithology-badge-l9",
+          "badgeId": "ornithology-badge-l9-difficile",
           "badgeName": "Explorateur L9",
           "badgeEmoji": "🔮",
           "cards": [
@@ -50178,11 +50178,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "ornithology-gen-l10",
+          "id": "ornithology-gen-l10-difficile",
           "title": "Leçon Défi",
           "emoji": "🏆",
           "themeColor": "amber",
-          "badgeId": "ornithology-badge-l10",
+          "badgeId": "ornithology-badge-l10-difficile",
           "badgeName": "Explorateur L10",
           "badgeEmoji": "🏆",
           "cards": [
@@ -52289,11 +52289,11 @@ export const UNIVERSES: Record<string, Universe> = {
       ],
       "difficile": [
         {
-          "id": "history-gen-l1",
+          "id": "history-gen-l1-difficile",
           "title": "Leçon",
           "emoji": "🌟",
           "themeColor": "amber",
-          "badgeId": "history-badge-l1",
+          "badgeId": "history-badge-l1-difficile",
           "badgeName": "Explorateur L1",
           "badgeEmoji": "🌟",
           "cards": [
@@ -52482,11 +52482,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "history-gen-l2",
+          "id": "history-gen-l2-difficile",
           "title": "Leçon Intermédiaire",
           "emoji": "🌱",
           "themeColor": "amber",
-          "badgeId": "history-badge-l2",
+          "badgeId": "history-badge-l2-difficile",
           "badgeName": "Explorateur L2",
           "badgeEmoji": "🌱",
           "cards": [
@@ -52665,11 +52665,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "history-gen-l3",
+          "id": "history-gen-l3-difficile",
           "title": "Leçon Avancée",
           "emoji": "💧",
           "themeColor": "amber",
-          "badgeId": "history-badge-l3",
+          "badgeId": "history-badge-l3-difficile",
           "badgeName": "Explorateur L3",
           "badgeEmoji": "💧",
           "cards": [
@@ -52858,11 +52858,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "history-gen-l4",
+          "id": "history-gen-l4-difficile",
           "title": "Leçon Générale",
           "emoji": "🔥",
           "themeColor": "amber",
-          "badgeId": "history-badge-l4",
+          "badgeId": "history-badge-l4-difficile",
           "badgeName": "Explorateur L4",
           "badgeEmoji": "🔥",
           "cards": [
@@ -53051,11 +53051,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "history-gen-l5",
+          "id": "history-gen-l5-difficile",
           "title": "Leçon Découverte",
           "emoji": "💨",
           "themeColor": "amber",
-          "badgeId": "history-badge-l5",
+          "badgeId": "history-badge-l5-difficile",
           "badgeName": "Explorateur L5",
           "badgeEmoji": "💨",
           "cards": [
@@ -53239,11 +53239,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "history-gen-l6",
+          "id": "history-gen-l6-difficile",
           "title": "Leçon Nature",
           "emoji": "⛰️",
           "themeColor": "amber",
-          "badgeId": "history-badge-l6",
+          "badgeId": "history-badge-l6-difficile",
           "badgeName": "Explorateur L6",
           "badgeEmoji": "⛰️",
           "cards": [
@@ -53427,11 +53427,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "history-gen-l7",
+          "id": "history-gen-l7-difficile",
           "title": "Leçon Monde",
           "emoji": "🧭",
           "themeColor": "amber",
-          "badgeId": "history-badge-l7",
+          "badgeId": "history-badge-l7-difficile",
           "badgeName": "Explorateur L7",
           "badgeEmoji": "🧭",
           "cards": [
@@ -53620,11 +53620,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "history-gen-l8",
+          "id": "history-gen-l8-difficile",
           "title": "Leçon Science",
           "emoji": "🛡️",
           "themeColor": "amber",
-          "badgeId": "history-badge-l8",
+          "badgeId": "history-badge-l8-difficile",
           "badgeName": "Explorateur L8",
           "badgeEmoji": "🛡️",
           "cards": [
@@ -53803,11 +53803,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "history-gen-l9",
+          "id": "history-gen-l9-difficile",
           "title": "Leçon Espace",
           "emoji": "🔮",
           "themeColor": "amber",
-          "badgeId": "history-badge-l9",
+          "badgeId": "history-badge-l9-difficile",
           "badgeName": "Explorateur L9",
           "badgeEmoji": "🔮",
           "cards": [
@@ -53986,11 +53986,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "history-gen-l10",
+          "id": "history-gen-l10-difficile",
           "title": "Leçon Défi",
           "emoji": "🏆",
           "themeColor": "amber",
-          "badgeId": "history-badge-l10",
+          "badgeId": "history-badge-l10-difficile",
           "badgeName": "Explorateur L10",
           "badgeEmoji": "🏆",
           "cards": [

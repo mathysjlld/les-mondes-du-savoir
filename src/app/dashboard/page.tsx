@@ -454,14 +454,13 @@ export default function Dashboard() {
               xp={profile.xp}
               level={currentLevel}
               treeGrowth={profile.treeGrowth || 0}
-              unlockedBadges={profile.unlockedBadges}
               unlockedTreeAnimals={profile.unlockedTreeAnimals || []}
               wateringCans={profile.wateringCans || 0}
               onUseWateringCan={useWateringCan}
             />
 
             <p className="text-xs sm:text-sm font-medium text-slate-600 px-2 leading-relaxed">
-              Fais les leçons et les quiz pour gagner de l'XP ! Ton arbre grandira et tes badges gagnés s'y suspendront comme des fruits ! 🍎
+              Fais les leçons et les quiz pour gagner de l'XP ! Plus tu progresses, plus ton arbre grandit ! 🌱
             </p>
 
             <div className="grid grid-cols-2 gap-2 sm:gap-3 mt-1 sm:mt-2">
@@ -525,7 +524,7 @@ export default function Dashboard() {
                   pink: "bg-pink-500 text-white",
                 };
 
-                const currentStyle = colorMap[univ.themeColor] || colorMap.sky;
+                const currentStyle = colorMap[univ.themeColor] || colorMap.amber;
                 const badgeColor = badgesColors[univ.themeColor] || "bg-sky-500";
 
                 return (

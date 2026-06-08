@@ -37,6 +37,9 @@ export default function PlayUniverse() {
   const [hasMadeMistake, setHasMadeMistake] = useState(false);
   const [alreadyCompletedBefore, setAlreadyCompletedBefore] = useState(false);
   const [earnedDiamondThisRun, setEarnedDiamondThisRun] = useState(false);
+  // Suivi des gains réels de CE passage (pour un récap honnête sur l'écran de victoire)
+  const [gotLessonRewardThisRun, setGotLessonRewardThisRun] = useState(false);
+  const [unlockedNewBadgeThisRun, setUnlockedNewBadgeThisRun] = useState(false);
 
   // Barre de vie (Hearts)
   const [health, setHealth] = useState(10); // 10 demi-cœurs = 5 cœurs complets
@@ -119,6 +122,10 @@ export default function PlayUniverse() {
       setCurrentCardIdx(prev => prev + 1);
     } else {
       // Fin des fiches d'apprentissage -> récompense de lecture
+      // On mémorise si la récompense de lecture (+15 XP / +2 pièces) est réellement
+      // accordée ce passage (uniquement la 1re fois que la leçon est terminée).
+      const lessonRewardGiven = !profile.completedLessons.includes(lesson.id);
+      setGotLessonRewardThisRun(lessonRewardGiven);
       completeLesson(lesson.id);
       setGameState("quiz");
       setHasMadeMistake(false);
@@ -231,6 +238,7 @@ export default function PlayUniverse() {
       name: lesson.badgeName,
       emoji: lesson.badgeEmoji
     });
+    setUnlockedNewBadgeThisRun(newBadge);
 
     setGameState("victory");
     playSound("win");
@@ -590,6 +598,7 @@ export default function PlayUniverse() {
                   setFirstTryWrongPrevious(false);
                   setHasMadeMistake(false);
                   setEarnedDiamondThisRun(false);
+                  setCorrectStreak(0);
                   const firstQ = lesson.quiz[0];
                   if (firstQ) {
                     const optionsCopy = [...firstQ.options];
@@ -627,7 +636,7 @@ export default function PlayUniverse() {
 
               {/* Badge débloqué */}
               <div className="my-2 sm:my-4 flex flex-col items-center gap-2 bg-gradient-to-br from-amber-50 to-orange-50/50 p-4 sm:p-6 rounded-2xl sm:rounded-3xl border-2 border-amber-200 shadow-inner w-full">
-                <span className="text-[10px] sm:text-xs font-black text-amber-700 uppercase tracking-widest">Nouveau badge débloqué !</span>
+                <span className="text-[10px] sm:text-xs font-black text-amber-700 uppercase tracking-widest">{unlockedNewBadgeThisRun ? "Nouveau badge débloqué !" : "Badge déjà obtenu"}</span>
                 <motion.div
                   initial={{ scale: 0 }}
                   animate={{ scale: 1 }}
@@ -687,11 +696,11 @@ export default function PlayUniverse() {
               {/* Récompenses en chiffres */}
               <div className="grid grid-cols-2 gap-3 sm:gap-4 w-full">
                 <div className="bg-emerald-50 rounded-2xl p-2.5 sm:p-3 border border-emerald-100 text-emerald-800">
-                  <span className="block text-xl sm:text-2xl font-black">+{alreadyCompletedBefore ? 10 : 35} 🌟</span>
+                  <span className="block text-xl sm:text-2xl font-black">+{(gotLessonRewardThisRun ? 15 : 0) + (alreadyCompletedBefore ? 10 : 35)} 🌟</span>
                   <span className="text-[8px] sm:text-[9px] font-bold uppercase tracking-wider text-slate-500">Points d'XP</span>
                 </div>
                 <div className="bg-amber-50 rounded-2xl p-2.5 sm:p-3 border border-amber-100 text-amber-800">
-                  <span className="block text-xl sm:text-2xl font-black">+{alreadyCompletedBefore ? 1 : 5} 🪙</span>
+                  <span className="block text-xl sm:text-2xl font-black">+{(gotLessonRewardThisRun ? 2 : 0) + (alreadyCompletedBefore ? 1 : 5)} 🪙</span>
                   <span className="text-[8px] sm:text-[9px] font-bold uppercase tracking-wider text-slate-500">Pièces d'or</span>
                 </div>
               </div>
