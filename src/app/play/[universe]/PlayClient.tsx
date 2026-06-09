@@ -296,6 +296,17 @@ export default function PlayUniverse() {
 
   return (
     <div className="flex-1 flex flex-col p-3 sm:p-6 max-w-4xl mx-auto w-full gap-4 sm:gap-6">
+      {/* Le Temple des Sages : décor doré spécial pour un vrai dépaysement */}
+      {universeId === "temple" && (
+        <div
+          aria-hidden
+          className="fixed inset-0 -z-10"
+          style={{
+            background:
+              "radial-gradient(circle at 50% -5%, rgba(251,191,36,0.45), transparent 55%), radial-gradient(circle at 85% 90%, rgba(217,70,239,0.18), transparent 50%), linear-gradient(160deg, #fdf3d6 0%, #f6e7bd 55%, #efd6a3 100%)",
+          }}
+        />
+      )}
       
       {/* Top Bar navigation */}
       <header className="w-full flex items-center justify-between glass-card p-2.5 sm:p-4 bg-white/90 gap-2">
