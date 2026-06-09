@@ -128,8 +128,8 @@ export default function Dashboard() {
 
   // Modales & Transition
   const [showMarketTransition, setShowMarketTransition] = useState(false);
-  const [transitionPhase, setTransitionPhase] = useState<"raining" | "moving" | "entering">("raining");
-  const [isDoorOpen, setIsDoorOpen] = useState(false);
+  const [coinCount, setCoinCount] = useState(0); // pièces tombées dans la charrette
+  const [marketFade, setMarketFade] = useState(false); // fondu doux avant l'apparition du marché
   const [showBadges, setShowBadges] = useState(false);
   const [showParentsGate, setShowParentsGate] = useState(false);
   const [showParentsSpace, setShowParentsSpace] = useState(false);
@@ -138,13 +138,26 @@ export default function Dashboard() {
   const [parentAnswer, setParentAnswer] = useState("");
   const [gateError, setGateError] = useState(false);
 
-  // Transition vidéo cinématique vers le marché (générée avec fal.ai)
+  // Transition "charrette + pièces qui tombent", avec fondu doux avant le marché
   useEffect(() => {
     if (showMarketTransition) {
-      const sound = setTimeout(() => playSound("win"), 300);
-      // Sécurité : si la vidéo ne se charge pas ou ne se termine pas, on redirige quand même
-      const fallback = setTimeout(() => { router.push("/market"); }, 8000);
-      return () => { clearTimeout(sound); clearTimeout(fallback); };
+      setCoinCount(0);
+      setMarketFade(false);
+      playSound("levelup");
+      // Les pièces tombent une à une dans la charrette
+      const coinTimers: ReturnType<typeof setTimeout>[] = [];
+      for (let i = 1; i <= 8; i++) {
+        coinTimers.push(setTimeout(() => setCoinCount(i), 250 + i * 280));
+      }
+      const win = setTimeout(() => playSound("win"), 2600);
+      const fade = setTimeout(() => setMarketFade(true), 3000); // fondu doux de sortie
+      const nav = setTimeout(() => router.push("/market"), 3900);
+      return () => {
+        coinTimers.forEach(clearTimeout);
+        clearTimeout(win);
+        clearTimeout(fade);
+        clearTimeout(nav);
+      };
     }
   }, [showMarketTransition, router]);
 
@@ -609,32 +622,55 @@ export default function Dashboard() {
         </section>
       </main>
 
-      {/* Transition cinematique vers le Marche (video generee avec fal.ai) */}
+      {/* Transition vers le Marché : charrette + pièces qui tombent dedans, puis fondu doux */}
       <AnimatePresence>
         {showMarketTransition && (
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[100] bg-black flex items-center justify-center select-none overflow-hidden"
+            transition={{ duration: 0.4 }}
+            className="fixed inset-0 z-[100] bg-gradient-to-b from-sky-200 via-amber-50 to-orange-100 flex flex-col items-center justify-center select-none overflow-hidden"
           >
-            <video
-              src={asset("/videos/market-intro.mp4")}
-              autoPlay
-              muted
-              playsInline
-              onEnded={() => router.push("/market")}
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute bottom-6 left-0 right-0 text-center px-4">
-              <span className="text-white font-black text-base sm:text-xl drop-shadow-lg">En route pour l'echoppe magique... 🏰✨</span>
-            </div>
-            <button
-              onClick={() => router.push("/market")}
-              className="absolute top-4 right-4 z-10 px-3 py-1.5 rounded-xl bg-white/20 hover:bg-white/30 text-white text-xs font-bold backdrop-blur-sm cursor-pointer"
+            {/* Nuages doux */}
+            <div className="absolute top-12 left-[12%] w-32 h-9 bg-white/70 rounded-full blur-[1px]" />
+            <div className="absolute top-24 right-[15%] w-44 h-10 bg-white/60 rounded-full blur-[1px]" />
+
+            <motion.h2
+              initial={{ y: -20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.2 }}
+              className="text-2xl sm:text-4xl font-black text-amber-900 drop-shadow mb-8 z-10"
             >
-              Passer ▸
-            </button>
+              En route pour le Marché&#8239;! 🏰
+            </motion.h2>
+
+            {/* Charrette + pluie de pièces qui tombent dedans */}
+            <div className="relative w-72 h-56 flex items-end justify-center">
+              {Array.from({ length: 12 }).map((_, i) => (
+                <motion.div
+                  key={i}
+                  className="absolute text-2xl sm:text-3xl"
+                  style={{ left: `${30 + ((i * 13) % 45)}%` }}
+                  initial={{ top: "-10%", opacity: 0, rotate: 0 }}
+                  animate={{ top: "48%", opacity: [0, 1, 1, 0], rotate: 180 }}
+                  transition={{ duration: 0.9, delay: (i % 8) * 0.32, repeat: Infinity, repeatDelay: 1.3, ease: "easeIn" }}
+                >
+                  🪙
+                </motion.div>
+              ))}
+              <div className="relative z-10 scale-[2.3] origin-bottom mb-2">
+                <MedievalCart coinCount={coinCount} isMoving={false} />
+              </div>
+            </div>
+
+            {/* Fondu doux de sortie, juste avant l'apparition du marché (transition moins brute) */}
+            <motion.div
+              className="absolute inset-0 bg-amber-50 pointer-events-none"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: marketFade ? 1 : 0 }}
+              transition={{ duration: 0.9, ease: "easeInOut" }}
+            />
           </motion.div>
         )}
       </AnimatePresence>
