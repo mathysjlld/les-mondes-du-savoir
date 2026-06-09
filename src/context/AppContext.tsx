@@ -16,7 +16,8 @@ export interface UserProfile {
   avatar: AvatarConfig;
   xp: number;
   coins: number;
-  diamonds: number; // Nouvelle monnaie rare
+  diamonds: number; // Monnaie rare (sans-faute)
+  crystals: number; // Cristaux : monnaie spéciale gagnée en maîtrisant le thème secret, débloque le monde ultime
   streak: number;
   lastActiveDate: string;
   completedLessons: string[];
@@ -45,6 +46,7 @@ interface AppContextType {
   addCoins: (amount: number) => void;
   resetCoins: () => void; // remet les pièces à 0 (ne touche pas aux diamants)
   addDiamonds: (amount: number) => void;
+  addCrystals: (amount: number) => void; // ajoute des cristaux (monnaie du monde ultime)
   addWateringCan: () => void;
   useWateringCan: () => boolean; // retourne true si l'arrosoir a été utilisé avec succès
   completeLesson: (lessonId: string) => void;
@@ -164,6 +166,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
               accessories: initialAccessories,
             },
             diamonds: parsed.diamonds || 0,
+            crystals: parsed.crystals || 0,
             unlockedAccessories: parsed.unlockedAccessories || DEFAULT_ACCESSORIES,
             unlockedPets: parsed.unlockedPets || ["none"],
             unlockedTreeAnimals: parsed.unlockedTreeAnimals || [],
@@ -260,6 +263,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
       xp: 0,
       coins: 20, // 20 pièces offertes à la création
       diamonds: 0, // 0 diamants au départ
+      crystals: 0, // 0 cristaux au départ
       streak: 1,
       lastActiveDate: todayStr,
       completedLessons: [],
@@ -480,6 +484,17 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
       return {
         ...prev,
         diamonds: prev.diamonds + amount
+      };
+    });
+  };
+
+  // Gagner des cristaux (monnaie du monde ultime, gagnée en maîtrisant le thème secret)
+  const addCrystals = (amount: number) => {
+    setProfile(prev => {
+      if (!prev) return null;
+      return {
+        ...prev,
+        crystals: (prev.crystals || 0) + amount
       };
     });
   };
@@ -787,6 +802,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
         getXpForNextLevel,
         getXpPercent,
         toggleCheatCode,
+        addCrystals,
         cloudEnabled,
         userEmail,
         signUp,

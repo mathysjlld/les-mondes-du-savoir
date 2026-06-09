@@ -369,6 +369,16 @@ export default function Dashboard() {
             </div>
           </div>
 
+          {(profile.crystals || 0) > 0 && (
+            <div className="flex items-center gap-2 bg-pink-50 border-2 border-pink-200 px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl sm:rounded-2xl">
+              <span className="text-xl sm:text-2xl">💠</span>
+              <div className="flex flex-col">
+                <span className="text-[10px] sm:text-xs text-pink-700 font-bold leading-tight">Cristaux</span>
+                <span className="text-base sm:text-lg font-black text-pink-900 leading-none">{profile.crystals}</span>
+              </div>
+            </div>
+          )}
+
           {(profile.wateringCans || 0) > 0 && (
             <div className="flex items-center gap-2 bg-teal-50 border-2 border-teal-200 px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl sm:rounded-2xl">
               <img src={asset("/images/watering_can.png")} alt="Arrosoir" className="w-6 h-6 sm:w-7 sm:h-7 object-contain" />
@@ -502,21 +512,35 @@ export default function Dashboard() {
                 const { completed, total } = getUniverseProgress(univ.id);
                 const isFinished = total > 0 && completed === total;
 
-                // Thème secret : verrouillé tant que le joueur n'a pas atteint le niveau 5
-                if (univ.secret && currentLevel < 5) {
-                  return (
-                    <button
-                      key={univ.id}
-                      onClick={() => playSound("click")}
-                      className="p-4 sm:p-5 rounded-3xl border-4 border-dashed border-violet-300 bg-gradient-to-br from-violet-100 to-purple-100 flex flex-col items-center justify-center text-center cursor-not-allowed relative overflow-hidden min-h-[150px]"
-                    >
-                      <span className="text-5xl mb-2">🔒</span>
-                      <span className="font-black text-violet-900">Thème secret</span>
-                      <span className="text-[11px] font-bold text-violet-600 mt-1 px-2">
-                        Atteins le niveau 5 pour découvrir un univers mystère ! (niveau {currentLevel}/5)
-                      </span>
-                    </button>
-                  );
+                // Mondes secrets : déblocage générique (par niveau OU par cristaux)
+                if (univ.secret) {
+                  const unl = univ.unlock;
+                  let locked = false;
+                  let label = "Thème secret";
+                  let msg = "";
+                  if (unl && unl.type === "level") {
+                    locked = currentLevel < unl.value;
+                    label = "Thème secret";
+                    msg = `Atteins le niveau ${unl.value} pour découvrir un univers mystère ! (niveau ${currentLevel}/${unl.value})`;
+                  } else if (unl && unl.type === "crystals") {
+                    const cr = profile.crystals || 0;
+                    locked = cr < unl.value;
+                    label = "Monde légendaire";
+                    msg = `Réunis ${unl.value} cristaux 💠 (gagnés en réussissant les quiz du thème secret sans faute) pour ouvrir ce monde ! (${cr}/${unl.value})`;
+                  }
+                  if (locked) {
+                    return (
+                      <button
+                        key={univ.id}
+                        onClick={() => playSound("click")}
+                        className="p-4 sm:p-5 rounded-3xl border-4 border-dashed border-violet-300 bg-gradient-to-br from-violet-100 to-purple-100 flex flex-col items-center justify-center text-center cursor-not-allowed relative overflow-hidden min-h-[150px]"
+                      >
+                        <span className="text-5xl mb-2">🔒</span>
+                        <span className="font-black text-violet-900">{label}</span>
+                        <span className="text-[11px] font-bold text-violet-600 mt-1 px-2">{msg}</span>
+                      </button>
+                    );
+                  }
                 }
 
                 // Mapper les couleurs Tailwind

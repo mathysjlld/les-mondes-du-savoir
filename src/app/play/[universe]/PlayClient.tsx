@@ -20,7 +20,7 @@ export default function PlayUniverse() {
   const params = useParams();
   const universeId = params.universe as string;
 
-  const { profile, completeLesson, completeQuiz, addDiamonds, addWateringCan, resetCoins } = useApp();
+  const { profile, completeLesson, completeQuiz, addDiamonds, addWateringCan, resetCoins, addCrystals } = useApp();
 
   const [lesson, setLesson] = useState<Lesson | null>(null);
   const [gameState, setGameState] = useState<"onboarding" | "lesson" | "quiz" | "victory">("lesson");
@@ -175,6 +175,12 @@ export default function PlayUniverse() {
         setEarnedDiamondThisRun(true);
         setShowDiamondFeedback(true);
         setTimeout(() => setShowDiamondFeedback(false), 2000);
+        // Bonus : un sans-faute dans le thème secret (déblocable au niveau) rapporte
+        // aussi un cristal, la monnaie qui ouvre le monde ultime "Le Temple des Sages".
+        const u = UNIVERSES[universeId];
+        if (u && u.secret && u.unlock && u.unlock.type === "level") {
+          addCrystals(1);
+        }
       }
       
       // Petit confetti local

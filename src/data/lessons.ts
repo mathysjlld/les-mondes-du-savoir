@@ -1,7 +1,7 @@
 export interface LessonCard { title: string; text: string; emoji: string; illustrationData?: string; mediaUrl?: string; mediaType?: "image" | "video"; }
 export interface QuizQuestion { question: string; options: string[]; correctAnswer: string; imageHint?: string; mediaUrl?: string; mediaType?: "image" | "video"; isSpecial?: boolean; }
 export interface Lesson { id: string; title: string; emoji: string; themeColor: string; cards: LessonCard[]; quiz: QuizQuestion[]; badgeId: string; badgeName: string; badgeEmoji: string; }
-export interface Universe { id: string; name: string; emoji: string; description: string; themeColor: string; secret?: boolean; lessons: Record<string, Lesson[]>; }
+export interface Universe { id: string; name: string; emoji: string; description: string; themeColor: string; secret?: boolean; unlock?: { type: "level" | "crystals"; value: number }; lessons: Record<string, Lesson[]>; }
 
 export const UNIVERSES: Record<string, Universe> = {
   "animals": {
@@ -56502,6 +56502,10 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         }
       ]
+    },
+    "unlock": {
+      "type": "level",
+      "value": 5
     }
   },
   "history": {
@@ -62016,6 +62020,882 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Les penseurs de la Renaissance considèrent que l'homme est fondamentalement mauvais et doit être contrôlé par l'Église"
               ],
               "correctAnswer": "La Renaissance affirme que l'homme est capable de se perfectionner par la raison et l'éducation, indépendamment de la seule foi",
+              "isSpecial": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "temple": {
+    "id": "temple",
+    "name": "Le Temple des Sages",
+    "emoji": "🏯",
+    "description": "Le monde ultime, réservé aux plus grands explorateurs ! Réunis des cristaux pour entrer.",
+    "themeColor": "pink",
+    "secret": true,
+    "unlock": {
+      "type": "crystals",
+      "value": 3
+    },
+    "lessons": {
+      "facile": [
+        {
+          "id": "temple-gen-0",
+          "title": "Le grand quiz de culture générale",
+          "emoji": "🌍",
+          "themeColor": "pink",
+          "badgeId": "temple-badge-0",
+          "badgeName": "Sage Érudit",
+          "badgeEmoji": "🦉",
+          "cards": [
+            {
+              "title": "Le monde et sa géographie",
+              "text": "La Terre est divisée en 7 continents et compte près de 200 pays. L'océan Pacifique est le plus grand océan du monde, couvrant presque la moitié de la surface des océans. Le mont Everest, en Asie, est le point le plus haut de la planète avec 8 849 mètres d'altitude.",
+              "emoji": "🗺️"
+            },
+            {
+              "title": "L'histoire à travers les âges",
+              "text": "Les grandes civilisations anciennes, comme l'Égypte, la Grèce et Rome, ont façonné notre monde moderne. La Révolution française de 1789 a changé l'Europe en défendant les idées de liberté, d'égalité et de fraternité. Les deux guerres mondiales du XXe siècle ont profondément marqué l'humanité.",
+              "emoji": "🏛️"
+            },
+            {
+              "title": "Les sciences et la nature",
+              "text": "Le système solaire comprend 8 planètes qui tournent autour du Soleil, notre étoile. Les êtres vivants sont classés en grands groupes : animaux, végétaux, champignons et micro-organismes. La photosynthèse est le processus par lequel les plantes fabriquent leur nourriture grâce à la lumière du soleil.",
+              "emoji": "🔬"
+            },
+            {
+              "title": "L'art et la culture",
+              "text": "La Joconde, peinte par Léonard de Vinci au début du XVIe siècle, est le tableau le plus célèbre du monde. La musique classique européenne a été dominée par des compositeurs comme Mozart, Beethoven et Bach. La littérature mondiale regorge de chefs-d'œuvre, des fables de La Fontaine aux aventures de Jules Verne.",
+              "emoji": "🎨"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Quelle est la capitale de la France ?",
+              "options": [
+                "Lyon",
+                "Marseille",
+                "Paris",
+                "Bordeaux"
+              ],
+              "correctAnswer": "Paris",
+              "isSpecial": false
+            },
+            {
+              "question": "Combien de planètes compose notre système solaire ?",
+              "options": [
+                "6",
+                "7",
+                "8",
+                "9"
+              ],
+              "correctAnswer": "8",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel peintre a réalisé la Joconde ?",
+              "options": [
+                "Michel-Ange",
+                "Léonard de Vinci",
+                "Raphaël",
+                "Botticelli"
+              ],
+              "correctAnswer": "Léonard de Vinci",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le plus grand océan du monde ?",
+              "options": [
+                "Océan Atlantique",
+                "Océan Indien",
+                "Océan Arctique",
+                "Océan Pacifique"
+              ],
+              "correctAnswer": "Océan Pacifique",
+              "isSpecial": false
+            },
+            {
+              "question": "En quelle année a débuté la Révolution française ?",
+              "options": [
+                "1769",
+                "1789",
+                "1799",
+                "1815"
+              ],
+              "correctAnswer": "1789",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le continent le plus grand du monde ?",
+              "options": [
+                "Afrique",
+                "Amérique",
+                "Asie",
+                "Europe"
+              ],
+              "correctAnswer": "Asie",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment s'appelle le processus par lequel les plantes fabriquent leur nourriture grâce à la lumière ?",
+              "options": [
+                "La respiration",
+                "La fermentation",
+                "La photosynthèse",
+                "La germination"
+              ],
+              "correctAnswer": "La photosynthèse",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel célèbre compositeur était sourd lorsqu'il a composé sa 9e Symphonie ?",
+              "options": [
+                "Mozart",
+                "Bach",
+                "Beethoven",
+                "Chopin"
+              ],
+              "correctAnswer": "Beethoven",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est la montagne la plus haute du monde ?",
+              "options": [
+                "Le K2",
+                "Le Kilimandjaro",
+                "Le Mont Blanc",
+                "Le mont Everest"
+              ],
+              "correctAnswer": "Le mont Everest",
+              "isSpecial": false
+            },
+            {
+              "question": "Un marchand achète un objet 80 euros et le revend 100 euros. Quel est son bénéfice en pourcentage ?",
+              "options": [
+                "15 %",
+                "20 %",
+                "25 %",
+                "30 %"
+              ],
+              "correctAnswer": "25 %",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "temple-gen-1",
+          "title": "Énigmes et Logique",
+          "emoji": "🧩",
+          "themeColor": "pink",
+          "badgeId": "temple-badge-1",
+          "badgeName": "Maître des Énigmes",
+          "badgeEmoji": "🦉",
+          "cards": [
+            {
+              "title": "Les suites logiques",
+              "text": "Une suite logique est une série de nombres ou de formes qui suivent une règle cachée. Pour trouver la règle, observe les écarts entre les termes : addition, multiplication ou alternance de motifs.",
+              "emoji": "🔢"
+            },
+            {
+              "title": "Le raisonnement par déduction",
+              "text": "Déduire, c'est tirer une conclusion certaine à partir d'indices. Si tous les chats ont quatre pattes et que Félix est un chat, alors Félix a forcément quatre pattes. Cette méthode s'appelle le syllogisme.",
+              "emoji": "🕵️"
+            },
+            {
+              "title": "Les devinettes et jeux de mots",
+              "text": "Certaines énigmes jouent sur le sens des mots ou les apparences. Il faut lire attentivement chaque mot sans se laisser piéger par les suppositions. Parfois la réponse évidente est un piège.",
+              "emoji": "💬"
+            },
+            {
+              "title": "La logique des probabilités",
+              "text": "La logique aide à raisonner sur des situations incertaines. Si un sac contient 3 billes rouges et 1 bleue, il est plus probable de tirer une rouge. Réfléchir aux possibilités aide à prendre de meilleures décisions.",
+              "emoji": "🎲"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Quelle est la suite logique : 2, 4, 8, 16, ... ?",
+              "options": [
+                "24",
+                "32",
+                "28",
+                "20"
+              ],
+              "correctAnswer": "32",
+              "isSpecial": false
+            },
+            {
+              "question": "J'ai des aiguilles mais je ne couds pas. J'ai un cadran mais je ne lis pas. Qu'est-ce que je suis ?",
+              "options": [
+                "Une boussole",
+                "Une montre",
+                "Un thermomètre",
+                "Un cadre photo"
+              ],
+              "correctAnswer": "Une montre",
+              "isSpecial": false
+            },
+            {
+              "question": "Si 5 machines fabriquent 5 jouets en 5 minutes, combien faut-il de machines pour fabriquer 100 jouets en 100 minutes ?",
+              "options": [
+                "100 machines",
+                "50 machines",
+                "5 machines",
+                "10 machines"
+              ],
+              "correctAnswer": "5 machines",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle lettre complète la suite : A, C, E, G, ... ?",
+              "options": [
+                "H",
+                "I",
+                "J",
+                "K"
+              ],
+              "correctAnswer": "I",
+              "isSpecial": false
+            },
+            {
+              "question": "Un père a 3 fils. Le premier s'appelle Jean, le deuxième s'appelle Pierre. Comment s'appelle le troisième ?",
+              "options": [
+                "Paul",
+                "Jacques",
+                "Le troisième",
+                "On ne peut pas savoir"
+              ],
+              "correctAnswer": "On ne peut pas savoir",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans une famille, il y a 2 grands-parents, 2 parents et 4 enfants. Combien de paires de jambes y a-t-il en tout ?",
+              "options": [
+                "8 paires",
+                "16 paires",
+                "14 paires",
+                "12 paires"
+              ],
+              "correctAnswer": "8 paires",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est la suite : 1, 1, 2, 3, 5, 8, ... ?",
+              "options": [
+                "11",
+                "12",
+                "13",
+                "16"
+              ],
+              "correctAnswer": "13",
+              "isSpecial": false
+            },
+            {
+              "question": "Je suis léger comme une plume mais même l'homme le plus fort du monde ne peut me tenir plus d'une minute. Qu'est-ce que je suis ?",
+              "options": [
+                "Un secret",
+                "Le vent",
+                "Le souffle",
+                "La fumée"
+              ],
+              "correctAnswer": "Le souffle",
+              "isSpecial": false
+            },
+            {
+              "question": "Si lundi vient deux jours après vendredi dans un calendrier cyclique, quel jour vient deux jours après mardi ?",
+              "options": [
+                "Jeudi",
+                "Mercredi",
+                "Vendredi",
+                "Samedi"
+              ],
+              "correctAnswer": "Jeudi",
+              "isSpecial": false
+            },
+            {
+              "question": "Un marchand a 3 boites : une contient des pommes, une des oranges, et une contient les deux. Les étiquettes sont toutes mal placées. En prenant UN seul fruit dans UNE seule boite, comment identifier toutes les boites ?",
+              "options": [
+                "Piocher dans la boite etiquetee Pommes+Oranges",
+                "Piocher dans la boite etiquetee Pommes",
+                "Piocher dans la boite etiquetee Oranges",
+                "Il faut piocher dans deux boites"
+              ],
+              "correctAnswer": "Piocher dans la boite etiquetee Pommes+Oranges",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "temple-gen-2",
+          "title": "Inventions et grandes découvertes",
+          "emoji": "💡",
+          "themeColor": "pink",
+          "badgeId": "temple-badge-2",
+          "badgeName": "Génie Inventif",
+          "badgeEmoji": "🏆",
+          "cards": [
+            {
+              "title": "L'imprimerie change le monde",
+              "text": "En 1450, Johannes Gutenberg invente la presse à imprimer en Europe. Grâce à cette machine, on peut reproduire des livres rapidement et en grande quantité. Cette invention révolutionne la diffusion du savoir et rend les livres accessibles à bien plus de gens.",
+              "emoji": "📖"
+            },
+            {
+              "title": "L'électricité s'invite dans nos vies",
+              "text": "Thomas Edison invente l'ampoule électrique fonctionnelle en 1879, permettant d'éclairer les maisons sans flamme ni danger. Quelques années plus tôt, Alessandro Volta avait inventé la première pile électrique. Ces deux inventions ont transformé notre quotidien pour toujours.",
+              "emoji": "💡"
+            },
+            {
+              "title": "Conquérir les airs",
+              "text": "En 1903, les frères Wright réussissent le premier vol motorisé de l'histoire à Kitty Hawk, aux États-Unis. Leur avion vole pendant seulement 12 secondes, mais cette prouesse ouvre la voie à l'aviation moderne. Moins de 70 ans plus tard, l'homme marche sur la Lune.",
+              "emoji": "✈️"
+            },
+            {
+              "title": "La médecine fait des bonds en avant",
+              "text": "En 1928, Alexander Fleming découvre la pénicilline, le premier antibiotique, en observant qu'une moisissure tuait des bactéries. Cette découverte a sauvé des millions de vies. Plus tôt, en 1796, Edward Jenner avait mis au point le premier vaccin contre la variole.",
+              "emoji": "🔬"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Qui a inventé la presse à imprimer en Europe vers 1450 ?",
+              "options": [
+                "Leonardo da Vinci",
+                "Johannes Gutenberg",
+                "Galilée",
+                "Isaac Newton"
+              ],
+              "correctAnswer": "Johannes Gutenberg",
+              "isSpecial": false
+            },
+            {
+              "question": "En quelle année les frères Wright ont-ils réalisé le premier vol motorisé ?",
+              "options": [
+                "1887",
+                "1895",
+                "1903",
+                "1912"
+              ],
+              "correctAnswer": "1903",
+              "isSpecial": false
+            },
+            {
+              "question": "Alexander Fleming a découvert la pénicilline en observant quoi sur ses boîtes de culture ?",
+              "options": [
+                "Un virus inconnu",
+                "Une moisissure qui tuait des bactéries",
+                "Des cristaux de sel",
+                "Une réaction chimique colorée"
+              ],
+              "correctAnswer": "Une moisissure qui tuait des bactéries",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle invention de Thomas Edison, mise au point en 1879, a permis d'éclairer les maisons sans flamme ?",
+              "options": [
+                "Le moteur à vapeur",
+                "Le téléphone",
+                "L'ampoule électrique",
+                "La dynamo"
+              ],
+              "correctAnswer": "L'ampoule électrique",
+              "isSpecial": false
+            },
+            {
+              "question": "Qui a inventé le téléphone en 1876 ?",
+              "options": [
+                "Nikola Tesla",
+                "Alexander Graham Bell",
+                "Guglielmo Marconi",
+                "James Watt"
+              ],
+              "correctAnswer": "Alexander Graham Bell",
+              "isSpecial": false
+            },
+            {
+              "question": "En quelle année Christophe Colomb a-t-il atteint les Amériques lors de sa première traversée de l'Atlantique ?",
+              "options": [
+                "1488",
+                "1492",
+                "1498",
+                "1510"
+              ],
+              "correctAnswer": "1492",
+              "isSpecial": false
+            },
+            {
+              "question": "Qui a inventé la machine à vapeur pratique qui a lancé la révolution industrielle au XVIIIe siècle ?",
+              "options": [
+                "George Stephenson",
+                "James Watt",
+                "Michael Faraday",
+                "Humphry Davy"
+              ],
+              "correctAnswer": "James Watt",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel scientifique a découvert la gravitation universelle, inspiré selon la légende par une pomme qui tombait ?",
+              "options": [
+                "Galilée",
+                "René Descartes",
+                "Isaac Newton",
+                "Albert Einstein"
+              ],
+              "correctAnswer": "Isaac Newton",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel pays a envoyé les premiers hommes sur la Lune en 1969 ?",
+              "options": [
+                "L'Union soviétique",
+                "La France",
+                "Le Royaume-Uni",
+                "Les États-Unis"
+              ],
+              "correctAnswer": "Les États-Unis",
+              "isSpecial": false
+            },
+            {
+              "question": "Marie Curie est la première femme à avoir reçu un prix Nobel. Dans combien de disciplines scientifiques différentes a-t-elle reçu ce prix ?",
+              "options": [
+                "Un seul prix Nobel, en physique",
+                "Deux prix Nobel, en physique et en chimie",
+                "Deux prix Nobel, en chimie et en médecine",
+                "Trois prix Nobel, en physique, chimie et médecine"
+              ],
+              "correctAnswer": "Deux prix Nobel, en physique et en chimie",
+              "isSpecial": true
+            }
+          ]
+        }
+      ],
+      "difficile": [
+        {
+          "id": "temple-gen-3",
+          "title": "Le grand quiz de culture générale",
+          "emoji": "🌍",
+          "themeColor": "pink",
+          "badgeId": "temple-badge-3",
+          "badgeName": "Sage du Savoir",
+          "badgeEmoji": "🦉",
+          "cards": [
+            {
+              "title": "Histoire & Civilisations",
+              "text": "Les grandes civilisations antiques — Égypte, Grèce, Rome — ont façonné notre monde moderne par leurs lois, leur architecture et leur philosophie. La Révolution française de 1789 a introduit les idéaux de liberté, d'égalité et de fraternité qui influencent encore les démocraties d'aujourd'hui.",
+              "emoji": "🏛️"
+            },
+            {
+              "title": "Sciences & Découvertes",
+              "text": "De Galilée affirmant que la Terre tourne autour du Soleil à Marie Curie découvrant la radioactivité, les scientifiques ont repoussé les frontières du savoir au péril de leur vie. La théorie de la relativité d'Einstein, publiée en 1905, a révolutionné notre compréhension du temps, de l'espace et de la matière.",
+              "emoji": "🔬"
+            },
+            {
+              "title": "Géographie & Continents",
+              "text": "La Terre comprend sept continents et cinq océans. L'Asie est le continent le plus vaste et le plus peuplé, regroupant à elle seule plus de la moitié de la population mondiale. L'Amazonie, en Amérique du Sud, abrite la plus grande forêt tropicale du monde et une biodiversité exceptionnelle.",
+              "emoji": "🗺️"
+            },
+            {
+              "title": "Arts & Littérature",
+              "text": "La Renaissance italienne (XIVe-XVIe siècle) a vu éclore des génies comme Léonard de Vinci et Michel-Ange, qui ont révolutionné la peinture, la sculpture et l'architecture. En littérature, Victor Hugo avec 'Les Misérables' et Shakespeare avec ses pièces ont créé des œuvres qui traversent les siècles.",
+              "emoji": "🎨"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "En quelle année Christophe Colomb a-t-il atteint le continent américain ?",
+              "options": [
+                "1488",
+                "1492",
+                "1498",
+                "1504"
+              ],
+              "correctAnswer": "1492",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est l'élément chimique le plus abondant dans l'univers ?",
+              "options": [
+                "Hélium",
+                "Oxygène",
+                "Carbone",
+                "Hydrogène"
+              ],
+              "correctAnswer": "Hydrogène",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est la capitale de l'Australie ?",
+              "options": [
+                "Sydney",
+                "Melbourne",
+                "Canberra",
+                "Brisbane"
+              ],
+              "correctAnswer": "Canberra",
+              "isSpecial": false
+            },
+            {
+              "question": "Qui a peint 'La Joconde' (Mona Lisa) ?",
+              "options": [
+                "Michel-Ange",
+                "Raphaël",
+                "Léonard de Vinci",
+                "Botticelli"
+              ],
+              "correctAnswer": "Léonard de Vinci",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel philosophe grec est l'auteur de 'La République' ?",
+              "options": [
+                "Aristote",
+                "Socrate",
+                "Platon",
+                "Épicure"
+              ],
+              "correctAnswer": "Platon",
+              "isSpecial": false
+            },
+            {
+              "question": "Combien d'os compte le corps humain adulte ?",
+              "options": [
+                "186",
+                "206",
+                "226",
+                "246"
+              ],
+              "correctAnswer": "206",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel pays possède le plus grand nombre de pays frontaliers au monde ?",
+              "options": [
+                "Russie",
+                "Brésil",
+                "Chine",
+                "Allemagne"
+              ],
+              "correctAnswer": "Chine",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans quel roman Victor Hugo décrit-il le personnage de Jean Valjean ?",
+              "options": [
+                "Notre-Dame de Paris",
+                "Les Misérables",
+                "L'Homme qui rit",
+                "Quatre-vingt-treize"
+              ],
+              "correctAnswer": "Les Misérables",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle planète du système solaire possède le plus grand nombre de lunes connues ?",
+              "options": [
+                "Jupiter",
+                "Saturne",
+                "Uranus",
+                "Neptune"
+              ],
+              "correctAnswer": "Saturne",
+              "isSpecial": false
+            },
+            {
+              "question": "Si un train roule à 120 km/h et doit parcourir 300 km, combien de temps met-il pour arriver à destination ?",
+              "options": [
+                "2 heures",
+                "2 heures 30 minutes",
+                "3 heures",
+                "3 heures 30 minutes"
+              ],
+              "correctAnswer": "2 heures 30 minutes",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "temple-gen-4",
+          "title": "Énigmes et Logique",
+          "emoji": "🧩",
+          "themeColor": "pink",
+          "badgeId": "temple-badge-4",
+          "badgeName": "Maître du Raisonnement",
+          "badgeEmoji": "🏆",
+          "cards": [
+            {
+              "title": "Le raisonnement déductif",
+              "text": "La déduction consiste à tirer une conclusion certaine à partir de prémisses vraies. Si tous les A sont B, et que C est un A, alors C est forcément un B. Ce type de logique est utilisé en mathématiques, en droit et en philosophie.",
+              "emoji": "🔍"
+            },
+            {
+              "title": "Les suites logiques",
+              "text": "Une suite logique est une série de nombres ou de formes qui suivent une règle cachée. Pour trouver le terme suivant, il faut identifier l'opération répétée : addition, multiplication, alternance, ou une combinaison de plusieurs règles.",
+              "emoji": "🔢"
+            },
+            {
+              "title": "Les paradoxes célèbres",
+              "text": "Un paradoxe est une affirmation qui semble contradictoire mais qui peut être vraie. Le paradoxe du menteur dit : « Cette phrase est fausse. » Si elle est vraie, elle est fausse ; si elle est fausse, elle est vraie. Ces casse-têtes ont fasciné les philosophes pendant des siècles.",
+              "emoji": "🌀"
+            },
+            {
+              "title": "Le raisonnement par l'absurde",
+              "text": "Cette technique consiste à supposer que ce qu'on veut démontrer est faux, puis à montrer que cela mène à une contradiction. Si la négation d'une affirmation est impossible, alors l'affirmation elle-même doit être vraie. Euclide l'a utilisé pour prouver qu'il existe une infinité de nombres premiers.",
+              "emoji": "💡"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Dans une suite : 2, 6, 18, 54, … Quel est le terme suivant ?",
+              "options": [
+                "108",
+                "162",
+                "72",
+                "216"
+              ],
+              "correctAnswer": "162",
+              "isSpecial": false
+            },
+            {
+              "question": "J'ai des frères et des sœurs en nombre égal. Mais chacun de mes frères a deux fois plus de sœurs que de frères. Combien suis-je de frères et de sœurs ?",
+              "options": [
+                "3 frères et 4 sœurs",
+                "4 frères et 3 sœurs",
+                "2 frères et 2 sœurs",
+                "3 frères et 3 sœurs"
+              ],
+              "correctAnswer": "3 frères et 4 sœurs",
+              "isSpecial": false
+            },
+            {
+              "question": "Si « CHAT » se code « FKDW » (chaque lettre avancée de 3 rangs dans l'alphabet), comment se code « LOUP » ?",
+              "options": [
+                "ORXS",
+                "NQZR",
+                "ORXV",
+                "MQVS"
+              ],
+              "correctAnswer": "ORXS",
+              "isSpecial": false
+            },
+            {
+              "question": "Un père a 30 ans de plus que son fils. Dans 5 ans, il sera 3 fois plus vieux que lui. Quel est l'âge actuel du fils ?",
+              "options": [
+                "10 ans",
+                "5 ans",
+                "8 ans",
+                "12 ans"
+              ],
+              "correctAnswer": "10 ans",
+              "isSpecial": false
+            },
+            {
+              "question": "Trois amis mentent toujours, parfois, ou jamais. Alex dit : « Je mens parfois. » Bob dit : « Alex ment toujours. » Clara dit : « Bob dit la vérité. » Qui ne ment jamais ?",
+              "options": [
+                "Clara",
+                "Bob",
+                "Alex",
+                "Aucun des trois"
+              ],
+              "correctAnswer": "Clara",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans la suite : 1, 1, 2, 3, 5, 8, 13, … Quel est le prochain nombre ?",
+              "options": [
+                "21",
+                "18",
+                "20",
+                "26"
+              ],
+              "correctAnswer": "21",
+              "isSpecial": false
+            },
+            {
+              "question": "Tu dois traverser une rivière avec un loup, une chèvre et un chou. Tu ne peux emmener qu'un seul à la fois. Seul, le loup mange la chèvre, et la chèvre mange le chou. Quelle est la première action indispensable ?",
+              "options": [
+                "Emmener la chèvre en premier",
+                "Emmener le loup en premier",
+                "Emmener le chou en premier",
+                "Emmener le loup et la chèvre ensemble"
+              ],
+              "correctAnswer": "Emmener la chèvre en premier",
+              "isSpecial": false
+            },
+            {
+              "question": "Un escargot est au fond d'un puits de 10 mètres. Chaque jour il monte 3 mètres, chaque nuit il redescend 2 mètres. En combien de jours atteint-il le sommet ?",
+              "options": [
+                "8 jours",
+                "10 jours",
+                "7 jours",
+                "9 jours"
+              ],
+              "correctAnswer": "8 jours",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le nombre qui, multiplié par lui-même, donne le même résultat que si on lui ajoutait lui-même ?",
+              "options": [
+                "2",
+                "0 et 2",
+                "1",
+                "4"
+              ],
+              "correctAnswer": "0 et 2",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans un village, le barbier rase tous ceux qui ne se rasent pas eux-mêmes, et seulement eux. Qui rase le barbier ?",
+              "options": [
+                "Ce paradoxe n'a pas de solution logique",
+                "Le barbier se rase lui-même",
+                "Un autre barbier du village voisin",
+                "Personne, il ne peut pas exister"
+              ],
+              "correctAnswer": "Ce paradoxe n'a pas de solution logique",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "temple-gen-5",
+          "title": "Inventions et grandes découvertes",
+          "emoji": "⚗️",
+          "themeColor": "pink",
+          "badgeId": "temple-badge-5",
+          "badgeName": "Grand Inventeur",
+          "badgeEmoji": "🏆",
+          "cards": [
+            {
+              "title": "L'imprimerie : révolution du savoir",
+              "text": "Johannes Gutenberg invente la presse à caractères mobiles vers 1450, permettant de reproduire des livres en grande quantité pour la première fois en Europe. Cette invention bouleverse la diffusion du savoir et joue un rôle clé dans la Renaissance et la Réforme protestante.",
+              "emoji": "📜"
+            },
+            {
+              "title": "L'électricité apprivoisée",
+              "text": "Au XIXe siècle, des scientifiques comme Michael Faraday et Thomas Edison transforment la compréhension de l'électricité en technologies concrètes. Faraday découvre l'induction électromagnétique en 1831, principe fondateur des générateurs, tandis qu'Edison perfectionne l'ampoule électrique à incandescence en 1879.",
+              "emoji": "⚡"
+            },
+            {
+              "title": "La pénicilline : une découverte accidentelle",
+              "text": "En 1928, Alexander Fleming remarque qu'une moisissure (Penicillium notatum) détruit les bactéries autour d'elle dans une boîte de Pétri oubliée. Cette observation fortuite mène au développement de la pénicilline, le premier antibiotique, qui sauvera des millions de vies à partir des années 1940.",
+              "emoji": "🔬"
+            },
+            {
+              "title": "Internet : la toile mondiale",
+              "text": "Internet naît dans les années 1960 avec le projet militaire ARPANET aux États-Unis, mais c'est Tim Berners-Lee qui invente le World Wide Web en 1989 au CERN en Suisse. Il crée le protocole HTTP et le langage HTML, permettant à des pages reliées par des hyperliens d'être accessibles à tous.",
+              "emoji": "🌐"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Qui a inventé la presse à caractères mobiles en Europe, vers 1450 ?",
+              "options": [
+                "Léonard de Vinci",
+                "Johannes Gutenberg",
+                "Nicolás Copernicus",
+                "Roger Bacon"
+              ],
+              "correctAnswer": "Johannes Gutenberg",
+              "isSpecial": false
+            },
+            {
+              "question": "En quelle année Alexander Fleming découvre-t-il la pénicilline ?",
+              "options": [
+                "1905",
+                "1919",
+                "1928",
+                "1945"
+              ],
+              "correctAnswer": "1928",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel principe physique, découvert par Faraday en 1831, est à la base du fonctionnement des générateurs électriques ?",
+              "options": [
+                "La conduction thermique",
+                "La fission nucléaire",
+                "L'induction électromagnétique",
+                "L'effet photoélectrique"
+              ],
+              "correctAnswer": "L'induction électromagnétique",
+              "isSpecial": false
+            },
+            {
+              "question": "Tim Berners-Lee invente le World Wide Web en 1989. Dans quel organisme travaillait-il alors ?",
+              "options": [
+                "NASA",
+                "MIT",
+                "CERN",
+                "Bell Labs"
+              ],
+              "correctAnswer": "CERN",
+              "isSpecial": false
+            },
+            {
+              "question": "La machine à vapeur de James Watt, améliorée dans les années 1760-1780, alimente quelle grande transformation historique ?",
+              "options": [
+                "La Révolution française",
+                "La Révolution industrielle",
+                "La Renaissance italienne",
+                "La conquête de l'Ouest américain"
+              ],
+              "correctAnswer": "La Révolution industrielle",
+              "isSpecial": false
+            },
+            {
+              "question": "Marie Curie est la première femme à recevoir un prix Nobel. Dans quel domaine reçoit-elle son premier Nobel, en 1903 ?",
+              "options": [
+                "Chimie",
+                "Médecine",
+                "Physique",
+                "Paix"
+              ],
+              "correctAnswer": "Physique",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel élément chimique, découvert par Marie et Pierre Curie en 1898, porte le nom du pays d'origine de Marie ?",
+              "options": [
+                "Le radium",
+                "Le polonium",
+                "Le curium",
+                "Le francium"
+              ],
+              "correctAnswer": "Le polonium",
+              "isSpecial": false
+            },
+            {
+              "question": "Les frères Wright réalisent le premier vol motorisé contrôlé en 1903. Dans quel État américain a lieu cet exploit ?",
+              "options": [
+                "Caroline du Nord",
+                "Ohio",
+                "Floride",
+                "Virginie"
+              ],
+              "correctAnswer": "Caroline du Nord",
+              "isSpecial": false
+            },
+            {
+              "question": "Lequel de ces objets du quotidien utilise le principe du laser, inventé en 1960 ?",
+              "options": [
+                "Le four à micro-ondes",
+                "Le lecteur de code-barres",
+                "La machine à laver",
+                "Le réfrigérateur"
+              ],
+              "correctAnswer": "Le lecteur de code-barres",
+              "isSpecial": false
+            },
+            {
+              "question": "Un savant envoie une lettre codée : chaque lettre est remplacée par celle qui se trouve 3 positions plus loin dans l'alphabet (A devient D, B devient E…). Il écrit 'LQYHQWHXU'. Quel mot a-t-il chiffré ?",
+              "options": [
+                "INVENTEUR",
+                "CHERCHEUR",
+                "DECOUVERT",
+                "SCIENTIFI"
+              ],
+              "correctAnswer": "INVENTEUR",
               "isSpecial": true
             }
           ]
