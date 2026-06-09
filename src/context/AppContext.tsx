@@ -2,6 +2,7 @@
 
 import React, { createContext, useContext, useState, useEffect } from "react";
 import { playSound } from "@/lib/sound";
+import { supabase, cloudEnabled } from "@/lib/supabase";
 
 export interface AvatarConfig {
   type: "fox" | "panda" | "owl" | "koala";
@@ -64,6 +65,12 @@ interface AppContextType {
   getXpForNextLevel: () => number;
   getXpPercent: () => number;
   toggleCheatCode: () => void;
+  // Sauvegarde cloud + comptes (actif uniquement si un projet Supabase est connecté)
+  cloudEnabled: boolean;
+  userEmail: string | null;
+  signUp: (email: string, password: string) => Promise<{ error: string | null }>;
+  signIn: (email: string, password: string) => Promise<{ error: string | null }>;
+  signOut: () => Promise<void>;
 }
 
 const AppContext = createContext<AppContextType | undefined>(undefined);
@@ -107,6 +114,8 @@ const DEFAULT_ACCESSORIES = ["none"];
 export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [profile, setProfile] = useState<UserProfile | null>(null);
   const [isLoaded, setIsLoaded] = useState(false);
+  const [userId, setUserId] = useState<string | null>(null);
+  const [userEmail, setUserEmail] = useState<string | null>(null);
 
   // Charger la progression depuis le localStorage
   useEffect(() => {
@@ -179,6 +188,67 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
       localStorage.setItem("explorakids_profile", JSON.stringify(profile));
     }
   }, [profile, isLoaded]);
+
+  // ===== Sauvegarde cloud + comptes (Supabase) — actif seulement si configuré =====
+  const saveCloudProfile = async (uid: string, p: UserProfile) => {
+    if (!supabase) return;
+    const { error } = await supabase
+      .from("profiles")
+      .upsert({ id: uid, data: p, updated_at: new Date().toISOString() });
+    if (error) console.error("Sauvegarde cloud échouée", error.message);
+  };
+
+  const loadCloudProfile = async (uid: string) => {
+    if (!supabase) return;
+    const { data, error } = await supabase.from("profiles").select("data").eq("id", uid).maybeSingle();
+    if (error) { console.error("Lecture cloud échouée", error.message); return; }
+    if (data && data.data && Object.keys(data.data).length > 0) {
+      // Progression trouvée dans le cloud : on la restaure (multi-appareils).
+      setProfile(data.data as UserProfile);
+    } else if (profile) {
+      // Pas encore de profil cloud : on y pousse la progression locale (1re synchro).
+      saveCloudProfile(uid, profile);
+    }
+  };
+
+  // Initialiser la session et écouter les changements de connexion
+  useEffect(() => {
+    if (!cloudEnabled || !supabase) return;
+    supabase.auth.getSession().then(({ data }) => {
+      const u = data.session?.user;
+      if (u) { setUserId(u.id); setUserEmail(u.email ?? null); loadCloudProfile(u.id); }
+    });
+    const { data: sub } = supabase.auth.onAuthStateChange((_event, session) => {
+      const u = session?.user;
+      setUserId(u?.id ?? null);
+      setUserEmail(u?.email ?? null);
+      if (u) loadCloudProfile(u.id);
+    });
+    return () => sub.subscription.unsubscribe();
+  }, []);
+
+  // Synchroniser la progression vers le cloud (anti-rebond) quand l'utilisateur est connecté
+  useEffect(() => {
+    if (!cloudEnabled || !supabase || !userId || !profile || !isLoaded) return;
+    const t = setTimeout(() => { saveCloudProfile(userId, profile); }, 800);
+    return () => clearTimeout(t);
+  }, [profile, userId, isLoaded]);
+
+  const signUp = async (email: string, password: string) => {
+    if (!supabase) return { error: "Sauvegarde cloud non configurée." };
+    const { error } = await supabase.auth.signUp({ email, password });
+    return { error: error?.message ?? null };
+  };
+  const signIn = async (email: string, password: string) => {
+    if (!supabase) return { error: "Sauvegarde cloud non configurée." };
+    const { error } = await supabase.auth.signInWithPassword({ email, password });
+    return { error: error?.message ?? null };
+  };
+  const signOut = async () => {
+    if (supabase) await supabase.auth.signOut();
+    setUserId(null);
+    setUserEmail(null);
+  };
 
   // Initialisation de l'utilisateur
   const onboardUser = (nickname: string, ageGroup: "facile" | "difficile", avatar: AvatarConfig, parentCode: string) => {
@@ -717,6 +787,11 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
         getXpForNextLevel,
         getXpPercent,
         toggleCheatCode,
+        cloudEnabled,
+        userEmail,
+        signUp,
+        signIn,
+        signOut,
       }}
     >
       {children}
