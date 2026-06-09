@@ -17,7 +17,8 @@ export interface UserProfile {
   xp: number;
   coins: number;
   diamonds: number; // Monnaie rare (sans-faute)
-  crystals: number; // Cristaux : monnaie spéciale gagnée en maîtrisant le thème secret, débloque le monde ultime
+  crystals: number; // Cristaux : monnaie spéciale (dépensable) gagnée en maîtrisant le thème secret
+  maxCrystals: number; // Pic de cristaux jamais atteint -> garde le monde ultime débloqué même après dépense
   streak: number;
   lastActiveDate: string;
   completedLessons: string[];
@@ -51,9 +52,9 @@ interface AppContextType {
   useWateringCan: () => boolean; // retourne true si l'arrosoir a été utilisé avec succès
   completeLesson: (lessonId: string) => void;
   completeQuiz: (lessonId: string, badgeInfo: { id: string; name: string; emoji: string }) => boolean; // renvoie true si nouveau badge débloqué
-  buyAccessory: (accessoryId: string, price: number) => boolean; // renvoie true si achat réussi
-  buyPet: (petId: string, price: number) => boolean; // renvoie true si achat réussi
-  buyTreeAnimal: (animalId: string, price: number) => boolean; // renvoie true si achat réussi
+  buyAccessory: (accessoryId: string, price: number, currency?: "coins" | "diamonds" | "crystals") => boolean;
+  buyPet: (petId: string, price: number, currency?: "coins" | "diamonds" | "crystals") => boolean;
+  buyTreeAnimal: (animalId: string, price: number, currency?: "coins" | "diamonds" | "crystals") => boolean;
   equipAccessory: (accessoryId: string) => void;
   equipPet: (petId: UserProfile["activePet"]) => void;
   updateAvatarColor: (color: string) => void;
@@ -167,6 +168,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
             },
             diamonds: parsed.diamonds || 0,
             crystals: parsed.crystals || 0,
+            maxCrystals: parsed.maxCrystals || parsed.crystals || 0,
             unlockedAccessories: parsed.unlockedAccessories || DEFAULT_ACCESSORIES,
             unlockedPets: parsed.unlockedPets || ["none"],
             unlockedTreeAnimals: parsed.unlockedTreeAnimals || [],
@@ -264,6 +266,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
       coins: 20, // 20 pièces offertes à la création
       diamonds: 0, // 0 diamants au départ
       crystals: 0, // 0 cristaux au départ
+      maxCrystals: 0,
       streak: 1,
       lastActiveDate: todayStr,
       completedLessons: [],
@@ -492,9 +495,11 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
   const addCrystals = (amount: number) => {
     setProfile(prev => {
       if (!prev) return null;
+      const newCrystals = (prev.crystals || 0) + amount;
       return {
         ...prev,
-        crystals: (prev.crystals || 0) + amount
+        crystals: newCrystals,
+        maxCrystals: Math.max(prev.maxCrystals || 0, newCrystals)
       };
     });
   };
@@ -550,57 +555,52 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     return true;
   };
 
-  // Acheter un accessoire dans le magasin
-  const buyAccessory = (accessoryId: string, price: number) => {
+  // Calcule la déduction selon la monnaie ; renvoie null si solde insuffisant
+  const payPatch = (prev: UserProfile, currency: "coins" | "diamonds" | "crystals", price: number) => {
+    if (currency === "coins") return prev.coins >= price ? { coins: prev.coins - price } : null;
+    if (currency === "diamonds") return prev.diamonds >= price ? { diamonds: prev.diamonds - price } : null;
+    return (prev.crystals || 0) >= price ? { crystals: (prev.crystals || 0) - price } : null;
+  };
+
+  // Acheter un accessoire (pièces par défaut, ou diamants/cristaux)
+  const buyAccessory = (accessoryId: string, price: number, currency: "coins" | "diamonds" | "crystals" = "coins") => {
     let success = false;
     setProfile(prev => {
       if (!prev) return null;
-      if (prev.unlockedAccessories.includes(accessoryId)) return prev; // Déjà débloqué
-      if (prev.coins < price) return prev; // Pas assez de sous
-
+      if (prev.unlockedAccessories.includes(accessoryId)) return prev;
+      const patch = payPatch(prev, currency, price);
+      if (!patch) return prev;
       success = true;
-      return {
-        ...prev,
-        coins: prev.coins - price,
-        unlockedAccessories: [...prev.unlockedAccessories, accessoryId]
-      };
+      return { ...prev, ...patch, unlockedAccessories: [...prev.unlockedAccessories, accessoryId] };
     });
     return success;
   };
 
-  // Acheter un compagnon
-  const buyPet = (petId: string, price: number) => {
+  // Acheter un compagnon (diamants par défaut, ou pièces/cristaux)
+  const buyPet = (petId: string, price: number, currency: "coins" | "diamonds" | "crystals" = "diamonds") => {
     let success = false;
     setProfile(prev => {
       if (!prev) return null;
-      if (prev.unlockedPets.includes(petId)) return prev; // Déjà débloqué
-      if (prev.diamonds < price) return prev; // Pas assez de diamants
-
+      if (prev.unlockedPets.includes(petId)) return prev;
+      const patch = payPatch(prev, currency, price);
+      if (!patch) return prev;
       success = true;
-      return {
-        ...prev,
-        diamonds: prev.diamonds - price,
-        unlockedPets: [...prev.unlockedPets, petId]
-      };
+      return { ...prev, ...patch, unlockedPets: [...prev.unlockedPets, petId] };
     });
     return success;
   };
 
-  // Acheter un animal pour l'arbre
-  const buyTreeAnimal = (animalId: string, price: number) => {
+  // Acheter un animal pour l'arbre (diamants par défaut, ou pièces/cristaux)
+  const buyTreeAnimal = (animalId: string, price: number, currency: "coins" | "diamonds" | "crystals" = "diamonds") => {
     let success = false;
     setProfile(prev => {
       if (!prev) return null;
       const currentAnimals = prev.unlockedTreeAnimals || [];
-      if (currentAnimals.includes(animalId)) return prev; // Déjà débloqué
-      if (prev.diamonds < price) return prev; // Pas assez de diamants
-
+      if (currentAnimals.includes(animalId)) return prev;
+      const patch = payPatch(prev, currency, price);
+      if (!patch) return prev;
       success = true;
-      return {
-        ...prev,
-        diamonds: prev.diamonds - price,
-        unlockedTreeAnimals: [...currentAnimals, animalId]
-      };
+      return { ...prev, ...patch, unlockedTreeAnimals: [...currentAnimals, animalId] };
     });
     return success;
   };

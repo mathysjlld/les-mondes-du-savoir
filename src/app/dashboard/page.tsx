@@ -523,7 +523,7 @@ export default function Dashboard() {
                     label = "Thème secret";
                     msg = `Atteins le niveau ${unl.value} pour découvrir un univers mystère ! (niveau ${currentLevel}/${unl.value})`;
                   } else if (unl && unl.type === "crystals") {
-                    const cr = profile.crystals || 0;
+                    const cr = profile.maxCrystals || 0; // pic atteint : reste débloqué même après avoir dépensé des cristaux
                     locked = cr < unl.value;
                     label = "Monde légendaire";
                     msg = `Réunis ${unl.value} cristaux 💠 (gagnés en réussissant les quiz du thème secret sans faute) pour ouvrir ce monde ! (${cr}/${unl.value})`;

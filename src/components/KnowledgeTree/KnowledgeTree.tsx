@@ -344,6 +344,27 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
             />
           </motion.g>
         )}
+
+        {/* Animaux légendaires (cristaux) — rendus en emoji, sans image */}
+        {unlockedTreeAnimals.includes("tree-dragon") && (
+          <motion.g
+            animate={{ rotate: [0, 4, -4, 0], y: [0, -1.5, 0] }}
+            transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+            style={{ transformBox: "fill-box", transformOrigin: "center" }}
+          >
+            <text x="22" y="40" fontSize="11" className="select-none pointer-events-none">🐉</text>
+          </motion.g>
+        )}
+
+        {unlockedTreeAnimals.includes("tree-phoenix") && (
+          <motion.g
+            animate={{ scale: [1, 1.12, 1], opacity: [0.9, 1, 0.9] }}
+            transition={{ duration: 2.8, repeat: Infinity, ease: "easeInOut" }}
+            style={{ transformBox: "fill-box", transformOrigin: "center" }}
+          >
+            <text x="64" y="34" fontSize="10" className="select-none pointer-events-none">🔥</text>
+          </motion.g>
+        )}
       </svg>
 
       {/* Animation d'arrosage */}

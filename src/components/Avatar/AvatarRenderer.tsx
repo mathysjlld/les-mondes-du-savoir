@@ -301,6 +301,28 @@ export const AvatarRenderer: React.FC<AvatarRendererProps> = ({
           </g>
         );
 
+      case "halo":
+        return (
+          <g id="accessory-halo">
+            {/* Auréole dorée des Sages, flottant au-dessus de la tête */}
+            <ellipse cx="50" cy="15" rx="19" ry="5.5" fill="none" stroke="#F1C40F" strokeWidth="3.2" />
+            <ellipse cx="50" cy="15" rx="19" ry="5.5" fill="none" stroke="#FFF3B0" strokeWidth="1.1" />
+            <circle cx="31" cy="15" r="0.9" fill="#FFFFFF" />
+            <circle cx="69" cy="15" r="0.9" fill="#FFFFFF" />
+          </g>
+        );
+
+      case "sage-star":
+        return (
+          <g id="accessory-sage-star" transform="translate(50, 14)">
+            {/* Étoile du Sage : emblème lumineux au-dessus de la tête */}
+            <polygon points="0,-10 2.8,-3.2 10,-3.2 4.2,1.2 6.4,8 0,3.8 -6.4,8 -4.2,1.2 -10,-3.2 -2.8,-3.2" fill="#FBBF24" stroke="#D97706" strokeWidth="0.8" />
+            <circle cx="0" cy="-1" r="1.8" fill="#FFF7CC" />
+            <circle cx="11" cy="-9" r="0.8" fill="#FFFFFF" />
+            <circle cx="-11" cy="-7" r="0.7" fill="#FFFFFF" />
+          </g>
+        );
+
       default:
         return null;
     }

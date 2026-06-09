@@ -20,6 +20,8 @@ const ACCESSORIES_ITEMS = [
   { id: "shield", name: "Bouclier de Chevalier", emoji: "🛡️", price: 75, desc: "Pour te protéger durant tes aventures !", rarity: "Légendaire" },
   { id: "crown", name: "Couronne Royale", emoji: "👑", price: 100, desc: "Pour régner sur le royaume du savoir !", rarity: "Légendaire" },
   { id: "super-cape", name: "Cape Héroïque", emoji: "🦸‍♂️", price: 180, desc: "Pour s'envoler vers la réussite !", rarity: "Mythique" },
+  { id: "halo", name: "Auréole des Sages", emoji: "😇", price: 2, currency: "crystals", desc: "Une auréole dorée réservée aux maîtres du Temple !", rarity: "Mythique" },
+  { id: "sage-star", name: "Étoile du Sage", emoji: "🌟", price: 3, currency: "crystals", desc: "L'emblème lumineux des plus grands explorateurs !", rarity: "Mythique" },
 ] as const;
 
 // Les compagnons achetables avec les diamants (s'affichent à côté de l'avatar)
@@ -39,6 +41,8 @@ const TREE_ANIMALS_ITEMS = [
   { id: "tree-squirrel", name: "Écureuil Espiègle", emoji: "🐿️", price: 3, desc: "Un petit écureuil grimpant sur le tronc !", rarity: "Épique" },
   { id: "tree-owl", name: "Chouette Dorée", emoji: "🦉", price: 4, desc: "Une chouette nichant dans le creux des branches !", rarity: "Légendaire" },
   { id: "tree-parrot", name: "Perroquet Arc-en-ciel", emoji: "🦜", price: 5, desc: "Un perroquet bavard perché au sommet !", rarity: "Mythique" },
+  { id: "tree-dragon", name: "Dragon Gardien", emoji: "🐉", price: 1, currency: "crystals", desc: "Un dragon légendaire qui veille sur ton Arbre du Savoir !", rarity: "Mythique" },
+  { id: "tree-phoenix", name: "Phénix de Feu", emoji: "🔥", price: 2, currency: "crystals", desc: "Un phénix éternel qui illumine ton arbre !", rarity: "Mythique" },
 ] as const;
 
 function TreePreview({
@@ -309,7 +313,7 @@ export default function Market() {
   const unlockedTreeAnimals = profile.unlockedTreeAnimals || [];
 
   const handlePurchaseAccessory = (item: typeof ACCESSORIES_ITEMS[number]) => {
-    const success = buyAccessory(item.id, item.price);
+    const success = buyAccessory(item.id, item.price, (item as { currency?: "coins" | "diamonds" | "crystals" }).currency);
     if (success) {
       playSound("levelup");
       setSuccessAnimItem(item.id);
@@ -341,7 +345,7 @@ export default function Market() {
   };
 
   const handlePurchaseTreeAnimal = (item: typeof TREE_ANIMALS_ITEMS[number]) => {
-    const success = buyTreeAnimal(item.id, item.price);
+    const success = buyTreeAnimal(item.id, item.price, (item as { currency?: "coins" | "diamonds" | "crystals" }).currency);
     if (success) {
       playSound("levelup");
       setSuccessAnimItem(item.id);
@@ -469,6 +473,11 @@ export default function Market() {
           <div className="flex items-center gap-1 bg-cyan-950 border-2 border-cyan-800 px-3 py-1 rounded-full text-xs font-black text-cyan-200 shadow-inner">
             <span>💎 {profile.diamonds}</span>
           </div>
+          {(profile.crystals || 0) > 0 && (
+            <div className="flex items-center gap-1 bg-fuchsia-950 border-2 border-fuchsia-800 px-3 py-1 rounded-full text-xs font-black text-fuchsia-200 shadow-inner">
+              <span>💠 {profile.crystals}</span>
+            </div>
+          )}
         </div>
       </header>
 
@@ -867,7 +876,8 @@ export default function Market() {
                     {ACCESSORIES_ITEMS.map((item) => {
                       const isUnlocked = profile.unlockedAccessories.includes(item.id);
                       const isEquipped = currentAccessories.includes(item.id);
-                      const canBuy = profile.coins >= item.price;
+                      const accCur = (item as { currency?: string }).currency || "coins";
+                      const canBuy = (accCur === "crystals" ? (profile.crystals || 0) : profile.coins) >= item.price;
                       const isWinning = successAnimItem === item.id;
                       const isCurrentlyPreviewed = activePreviewAccessoryId === item.id;
 
@@ -954,7 +964,7 @@ export default function Market() {
                               }`}
                             >
                               <span>Acheter {item.price}</span>
-                              <Coins size={11} className="text-amber-800" />
+                              {accCur === "crystals" ? <span>💠</span> : <Coins size={11} className="text-amber-800" />}
                             </button>
                           )}
 
@@ -1103,7 +1113,8 @@ export default function Market() {
                   >
                     {TREE_ANIMALS_ITEMS.map((item) => {
                       const isUnlocked = unlockedTreeAnimals.includes(item.id);
-                      const canBuy = profile.diamonds >= item.price;
+                      const taCur = (item as { currency?: string }).currency || "diamonds";
+                      const canBuy = (taCur === "crystals" ? (profile.crystals || 0) : profile.diamonds) >= item.price;
                       const isWinning = successAnimItem === item.id;
                       const isCurrentlyPreviewed = activePreviewTreeAnimalId === item.id;
 
@@ -1167,7 +1178,7 @@ export default function Market() {
                                   : "bg-stone-800 text-stone-500 cursor-not-allowed shadow-none"
                               }`}
                             >
-                              <span>Débloquer {item.price} 💎</span>
+                              <span>Débloquer {item.price} {taCur === "crystals" ? "💠" : "💎"}</span>
                             </button>
                           )}
 
