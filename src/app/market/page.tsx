@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { useApp } from "@/context/AppContext";
+import { asset } from "@/lib/asset";
 import { AvatarRenderer } from "@/components/Avatar/AvatarRenderer";
 import { playSound } from "@/lib/sound";
 import { ArrowLeft, Coins, Sparkles, ShoppingBag, Landmark } from "lucide-react";
@@ -70,7 +71,7 @@ function TreePreview({
 
       {/* Tree Image */}
       <image
-        href={processedTreeSrc || `/images/tree_${stage}.png`}
+        href={processedTreeSrc || asset(`/images/tree_${stage}.png`)}
         x="12"
         y="10"
         width="76"
@@ -207,7 +208,7 @@ export default function Market() {
 
   useEffect(() => {
     if (typeof window === "undefined" || !profile) return;
-    const imgSrc = `/images/tree_${stage}.png`;
+    const imgSrc = asset(`/images/tree_${stage}.png`);
     const img = new Image();
     img.src = imgSrc;
     img.onload = () => {

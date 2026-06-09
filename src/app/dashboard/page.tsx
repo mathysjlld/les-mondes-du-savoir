@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { useApp, AvatarConfig } from "@/context/AppContext";
+import { asset } from "@/lib/asset";
 import { AvatarRenderer } from "@/components/Avatar/AvatarRenderer";
 import { KnowledgeTree } from "@/components/KnowledgeTree/KnowledgeTree";
 import { IllustrationRenderer } from "@/components/UI/IllustrationRenderer";
@@ -370,7 +371,7 @@ export default function Dashboard() {
 
           {(profile.wateringCans || 0) > 0 && (
             <div className="flex items-center gap-2 bg-teal-50 border-2 border-teal-200 px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl sm:rounded-2xl">
-              <img src="/images/watering_can.png" alt="Arrosoir" className="w-6 h-6 sm:w-7 sm:h-7 object-contain" />
+              <img src={asset("/images/watering_can.png")} alt="Arrosoir" className="w-6 h-6 sm:w-7 sm:h-7 object-contain" />
               <div className="flex flex-col">
                 <span className="text-[10px] sm:text-xs text-teal-700 font-bold leading-tight">Arrosoirs</span>
                 <span className="text-base sm:text-lg font-black text-teal-900 leading-none">{profile.wateringCans}</span>
@@ -538,14 +539,14 @@ export default function Dashboard() {
                   >
                     {/* Fond d'illustration géant flottant */}
                     <img
-                      src={`/images/${univ.id}.png`}
+                      src={asset(`/images/${univ.id}.png`)}
                       alt=""
                       className="absolute right-2 -bottom-2 w-24 h-24 sm:w-28 sm:h-28 opacity-10 select-none group-hover:scale-110 transition-transform duration-300 pointer-events-none object-contain"
                     />
 
                     <div className="flex items-center gap-2.5 sm:gap-3">
                       <div className="w-12 h-12 sm:w-16 sm:h-16 bg-white rounded-2xl shadow-sm border border-slate-100 group-hover:rotate-6 transition-transform flex items-center justify-center overflow-hidden p-1.5 shrink-0 select-none">
-                        <img src={`/images/${univ.id}.png`} alt={univ.name} className="w-full h-full object-contain" />
+                        <img src={asset(`/images/${univ.id}.png`)} alt={univ.name} className="w-full h-full object-contain" />
                       </div>
                       <div className="flex flex-col">
                         <h4 className="font-bold text-base sm:text-lg text-slate-800 leading-tight">

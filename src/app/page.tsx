@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import { playSound } from "@/lib/sound";
+import { asset } from "@/lib/asset";
 import { Sparkles, Gamepad2, Compass, Award } from "lucide-react";
 
 export default function Home() {
@@ -101,7 +102,7 @@ export default function Home() {
               transition={{ type: "spring", stiffness: 200 }}
               className="w-10 h-10 min-[380px]:w-14 min-[380px]:h-14 sm:w-20 sm:h-20 bg-white/90 rounded-2xl p-1.5 sm:p-2 shadow-lg border border-white flex items-center justify-center cursor-pointer"
             >
-              <img src={img.src} alt={img.alt} className="w-full h-full object-contain" />
+              <img src={asset(img.src)} alt={img.alt} className="w-full h-full object-contain" />
             </motion.div>
           ))}
         </motion.div>

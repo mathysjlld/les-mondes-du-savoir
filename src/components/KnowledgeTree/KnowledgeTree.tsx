@@ -3,6 +3,7 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { IllustrationRenderer } from "../UI/IllustrationRenderer";
+import { asset } from "@/lib/asset";
 
 interface KnowledgeTreeProps {
   xp: number;
@@ -100,7 +101,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
   };
 
   React.useEffect(() => {
-    const imgSrc = `/images/tree_${imgName}.png`;
+    const imgSrc = asset(`/images/tree_${imgName}.png`);
     const img = new Image();
     img.src = imgSrc;
     img.onload = () => {
@@ -224,7 +225,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
             }}
           >
             <image
-              href={processedSrc || `/images/tree_${imgName}.png`}
+              href={processedSrc || asset(`/images/tree_${imgName}.png`)}
               x="12"
               y="10"
               width="76"
@@ -272,7 +273,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
             style={{ transformBox: "fill-box", transformOrigin: "center" }}
           >
             <image
-              href="/images/tree_butterfly.png"
+              href={asset("/images/tree_butterfly.png")}
               x="58"
               y="38"
               width="10"
@@ -293,7 +294,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
             style={{ transformBox: "fill-box", transformOrigin: "bottom center" }}
           >
             <image
-              href="/images/tree_owl.png"
+              href={asset("/images/tree_owl.png")}
               x="43"
               y="26"
               width="12"
@@ -314,7 +315,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
             style={{ transformBox: "fill-box", transformOrigin: "bottom center" }}
           >
             <image
-              href="/images/tree_squirrel.png"
+              href={asset("/images/tree_squirrel.png")}
               x="20"
               y="74"
               width="12"
@@ -334,7 +335,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
             style={{ transformBox: "fill-box", transformOrigin: "bottom center" }}
           >
             <image
-              href="/images/tree_parrot.png"
+              href={asset("/images/tree_parrot.png")}
               x="68"
               y="48"
               width="12"
@@ -371,7 +372,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
               className="absolute right-0 top-2 w-28 h-28 origin-center"
             >
               <img 
-                src="/images/watering_can.png" 
+                src={asset("/images/watering_can.png")}
                 alt="Arrosoir"
                 className="w-full h-full object-contain filter drop-shadow-md"
               />
@@ -493,7 +494,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
           onClick={handleWatering}
           className="absolute bottom-10 right-3 z-30 bg-gradient-to-br from-teal-400 to-emerald-500 text-white rounded-2xl px-3 py-2 shadow-lg text-xs sm:text-sm font-black flex items-center gap-1.5 cursor-pointer border-2 border-teal-300 hover:shadow-xl transition-shadow"
         >
-          <img src="/images/watering_can.png" alt="Arrosoir" className="w-5 h-5 object-contain filter drop-shadow-sm" />
+          <img src={asset("/images/watering_can.png")} alt="Arrosoir" className="w-5 h-5 object-contain filter drop-shadow-sm" />
           <span>Arroser ({wateringCans})</span>
         </motion.button>
       )}
