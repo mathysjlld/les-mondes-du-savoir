@@ -27,7 +27,7 @@ export interface UserProfile {
   unlockedAccessories: string[]; // Liste des accessoires achetés
   unlockedPets: string[]; // Liste des compagnons achetés
   unlockedTreeAnimals?: string[]; // Liste des animaux d'arbre achetés
-  activePet: "none" | "fox" | "cat" | "koala" | "dragon" | "unicorn" | "panda" | "lion"; // Compagnon équipé
+  activePet: "none" | "fox" | "cat" | "koala" | "dragon" | "unicorn" | "panda" | "lion" | "griffon"; // Compagnon équipé
   timeSpentToday: number; // en secondes
   maxTimeLimit: number; // en minutes (limite parents)
   soundEnabled: boolean;

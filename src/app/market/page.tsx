@@ -33,6 +33,7 @@ const PETS_ITEMS = [
   { id: "unicorn", name: "Licorne Féérique", emoji: "🦄", price: 8, desc: "Une licorne magique avec une corne brillante !", rarity: "Légendaire" },
   { id: "dragon", name: "Dragonneau Vert", emoji: "🐲", price: 10, desc: "Un bébé dragon crachant des paillettes !", rarity: "Mythique" },
   { id: "lion", name: "Lionceau Courageux", emoji: "🦁", price: 12, desc: "Un petit lionceau fort et audacieux !", rarity: "Mythique" },
+  { id: "griffon", name: "Griffon Royal", emoji: "🦅", price: 1, currency: "crystals", desc: "Une créature légendaire du Temple des Sages, mi-aigle mi-lion !", rarity: "Mythique" },
 ] as const;
 
 // Les animaux d'arbre (se posent dans l'arbre du savoir au dashboard)
@@ -329,7 +330,7 @@ export default function Market() {
   };
 
   const handlePurchasePet = (item: typeof PETS_ITEMS[number]) => {
-    const success = buyPet(item.id, item.price);
+    const success = buyPet(item.id, item.price, (item as { currency?: "coins" | "diamonds" | "crystals" }).currency);
     if (success) {
       playSound("levelup");
       setSuccessAnimItem(item.id);
@@ -554,6 +555,7 @@ export default function Market() {
                     {activePetToRender === "unicorn" && "🦄"}
                     {activePetToRender === "dragon" && "🐲"}
                     {activePetToRender === "lion" && "🦁"}
+                    {activePetToRender === "griffon" && "🦅"}
                   </motion.div>
                 )}
                 {activePreviewTreeAnimalId && activePreviewTreeAnimalId !== "none" && (
@@ -739,6 +741,7 @@ export default function Market() {
                         {activePetToRender === "unicorn" && "🦄"}
                         {activePetToRender === "dragon" && "🐲"}
                         {activePetToRender === "lion" && "🦁"}
+                    {activePetToRender === "griffon" && "🦅"}
                       </motion.div>
                     )}
 
@@ -996,7 +999,8 @@ export default function Market() {
                     {PETS_ITEMS.map((item) => {
                       const isUnlocked = profile.unlockedPets?.includes(item.id);
                       const isEquipped = profile.activePet === item.id;
-                      const canBuy = profile.diamonds >= item.price;
+                      const petCur = (item as { currency?: string }).currency || "diamonds";
+                      const canBuy = (petCur === "crystals" ? (profile.crystals || 0) : profile.diamonds) >= item.price;
                       const isWinning = successAnimItem === item.id;
                       const isCurrentlyPreviewed = activePreviewPetId === item.id;
 
@@ -1082,7 +1086,7 @@ export default function Market() {
                                   : "bg-stone-800 text-stone-500 cursor-not-allowed shadow-none"
                               }`}
                             >
-                              <span>Acheter {item.price} 💎</span>
+                              <span>Acheter {item.price} {petCur === "crystals" ? "💠" : "💎"}</span>
                             </button>
                           )}
 

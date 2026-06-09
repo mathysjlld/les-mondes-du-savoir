@@ -312,6 +312,7 @@ export default function Dashboard() {
                   {profile.activePet === "unicorn" && "🦄"}
                   {profile.activePet === "panda" && "🐼"}
                   {profile.activePet === "lion" && "🦁"}
+                  {profile.activePet === "griffon" && "🦅"}
                 </div>
                 <span className="text-[8px] sm:text-[9px] font-black text-indigo-600 bg-indigo-50 border border-indigo-200 px-1.5 py-0.5 rounded-full leading-none -mt-0.5 whitespace-nowrap">
                   {profile.activePet === "fox" && "Renardeau"}
@@ -321,6 +322,7 @@ export default function Dashboard() {
                   {profile.activePet === "unicorn" && "Licorne"}
                   {profile.activePet === "panda" && "Panda"}
                   {profile.activePet === "lion" && "Lion"}
+                  {profile.activePet === "griffon" && "Griffon"}
                 </span>
               </motion.div>
             )}
