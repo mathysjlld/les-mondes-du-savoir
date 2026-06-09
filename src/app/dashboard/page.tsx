@@ -121,6 +121,7 @@ export default function Dashboard() {
     changeAgeGroup,
     updateTimeSpent,
     updateMaxTimeLimit,
+    setTimeLimitEnabled,
     useWateringCan,
     toggleCheatCode,
   } = useApp();
@@ -171,12 +172,12 @@ export default function Dashboard() {
   useEffect(() => {
     if (!profile) return;
     const minutesSpent = profile.timeSpentToday / 60;
-    if (minutesSpent >= profile.maxTimeLimit) {
+    if (profile.timeLimitEnabled !== false && minutesSpent >= profile.maxTimeLimit) {
       setShowTimeLimitAlert(true);
     } else {
       setShowTimeLimitAlert(false);
     }
-  }, [profile?.timeSpentToday, profile?.maxTimeLimit, profile]);
+  }, [profile?.timeSpentToday, profile?.maxTimeLimit, profile?.timeLimitEnabled, profile]);
 
   if (!profile) return null;
 
@@ -808,29 +809,46 @@ export default function Dashboard() {
                   </span>
                 </div>
 
-                <div className="flex flex-col gap-1.5 mt-1 sm:mt-2">
-                  <div className="flex justify-between text-xs font-bold text-slate-500">
-                    <span>Limite quotidienne :</span>
-                    <span className="font-bold text-indigo-700">{profile.maxTimeLimit} min</span>
+                {/* Interrupteur : activer / désactiver la limite de temps d'écran */}
+                <button
+                  onClick={() => { playSound("click"); setTimeLimitEnabled(profile.timeLimitEnabled === false); }}
+                  className={`mt-1 flex items-center justify-between gap-2 px-3 py-2 rounded-xl border-2 font-bold text-xs cursor-pointer transition-colors ${
+                    profile.timeLimitEnabled === false
+                      ? "bg-emerald-50 border-emerald-200 text-emerald-700"
+                      : "bg-indigo-50 border-indigo-200 text-indigo-700"
+                  }`}
+                >
+                  <span>{profile.timeLimitEnabled === false ? "Limite de temps : désactivée (accès illimité)" : "Limite de temps : activée"}</span>
+                  <span className={`px-2 py-0.5 rounded-full text-white text-[10px] font-black ${profile.timeLimitEnabled === false ? "bg-emerald-500" : "bg-indigo-500"}`}>
+                    {profile.timeLimitEnabled === false ? "OFF" : "ON"}
+                  </span>
+                </button>
+
+                {profile.timeLimitEnabled !== false && (
+                  <div className="flex flex-col gap-1.5 mt-1 sm:mt-2">
+                    <div className="flex justify-between text-xs font-bold text-slate-500">
+                      <span>Limite quotidienne :</span>
+                      <span className="font-bold text-indigo-700">{profile.maxTimeLimit} min</span>
+                    </div>
+                    <input
+                      type="range"
+                      min="5"
+                      max="180"
+                      step="5"
+                      value={profile.maxTimeLimit}
+                      onChange={(e) => updateMaxTimeLimit(parseInt(e.target.value))}
+                      className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-indigo-600"
+                    />
+                    <div className="flex justify-between text-[8px] sm:text-[9px] font-bold text-slate-400">
+                      <span>5 min</span>
+                      <span>30 m</span>
+                      <span>1h (60m)</span>
+                      <span>1h30 (90m)</span>
+                      <span>2h (120m)</span>
+                      <span>3h (180m)</span>
+                    </div>
                   </div>
-                  <input
-                    type="range"
-                    min="5"
-                    max="180"
-                    step="5"
-                    value={profile.maxTimeLimit}
-                    onChange={(e) => updateMaxTimeLimit(parseInt(e.target.value))}
-                    className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-indigo-600"
-                  />
-                  <div className="flex justify-between text-[8px] sm:text-[9px] font-bold text-slate-400">
-                    <span>5 min</span>
-                    <span>30 m</span>
-                    <span>1h (60m)</span>
-                    <span>1h30 (90m)</span>
-                    <span>2h (120m)</span>
-                    <span>3h (180m)</span>
-                  </div>
-                </div>
+                )}
               </div>
 
               {/* Ajuster la tranche d'âge / difficulté */}

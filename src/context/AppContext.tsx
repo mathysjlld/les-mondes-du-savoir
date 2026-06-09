@@ -30,6 +30,7 @@ export interface UserProfile {
   activePet: "none" | "fox" | "cat" | "koala" | "dragon" | "unicorn" | "panda" | "lion" | "griffon"; // Compagnon équipé
   timeSpentToday: number; // en secondes
   maxTimeLimit: number; // en minutes (limite parents)
+  timeLimitEnabled: boolean; // si false, la limite de temps d'écran est désactivée (site toujours accessible)
   soundEnabled: boolean;
   readAloudEnabled: boolean;
   parentCode?: string;
@@ -60,6 +61,7 @@ interface AppContextType {
   updateAvatarColor: (color: string) => void;
   updateTimeSpent: (seconds: number) => void;
   updateMaxTimeLimit: (minutes: number) => void;
+  setTimeLimitEnabled: (enabled: boolean) => void;
   setSoundEnabled: (enabled: boolean) => void;
   setReadAloudEnabled: (enabled: boolean) => void;
   changeAgeGroup: (ageGroup: "facile" | "difficile") => void;
@@ -175,6 +177,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
             activePet: parsed.activePet || "none",
             timeSpentToday: parsed.lastActiveDate === todayStr ? (parsed.timeSpentToday || 0) : 0,
             maxTimeLimit: parsed.maxTimeLimit || 20,
+            timeLimitEnabled: parsed.timeLimitEnabled !== false,
             parentCode: parsed.parentCode || "2912",
             wateringCans: parsed.wateringCans || 0,
             treeGrowth: initialTreeGrowth,
@@ -278,6 +281,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
       activePet: "none",
       timeSpentToday: 0,
       maxTimeLimit: 20,
+      timeLimitEnabled: true,
       soundEnabled: true,
       readAloudEnabled: false, // Lecture voix-off non activée par défaut en Normal
       parentCode,
@@ -705,6 +709,14 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     });
   };
 
+  // Activer/Désactiver la limite de temps d'écran
+  const setTimeLimitEnabled = (enabled: boolean) => {
+    setProfile(prev => {
+      if (!prev) return null;
+      return { ...prev, timeLimitEnabled: enabled };
+    });
+  };
+
   // Activer/Désactiver le son
   const setSoundEnabled = (enabled: boolean) => {
     setProfile(prev => {
@@ -794,6 +806,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
         updateAvatarColor,
         updateTimeSpent,
         updateMaxTimeLimit,
+        setTimeLimitEnabled,
         setSoundEnabled,
         setReadAloudEnabled,
         changeAgeGroup,
