@@ -1,7 +1,7 @@
 export interface LessonCard { title: string; text: string; emoji: string; illustrationData?: string; mediaUrl?: string; mediaType?: "image" | "video"; }
 export interface QuizQuestion { question: string; options: string[]; correctAnswer: string; imageHint?: string; mediaUrl?: string; mediaType?: "image" | "video"; isSpecial?: boolean; }
 export interface Lesson { id: string; title: string; emoji: string; themeColor: string; cards: LessonCard[]; quiz: QuizQuestion[]; badgeId: string; badgeName: string; badgeEmoji: string; }
-export interface Universe { id: string; name: string; emoji: string; description: string; themeColor: string; lessons: Record<string, Lesson[]>; }
+export interface Universe { id: string; name: string; emoji: string; description: string; themeColor: string; secret?: boolean; lessons: Record<string, Lesson[]>; }
 
 export const UNIVERSES: Record<string, Universe> = {
   "animals": {
@@ -2629,6 +2629,1996 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": true
             }
           ]
+        },
+        {
+          "id": "ornithology-gen-l1",
+          "title": "Leçon",
+          "emoji": "🌟",
+          "themeColor": "amber",
+          "badgeId": "ornithology-badge-l1",
+          "badgeName": "Explorateur L1",
+          "badgeEmoji": "🌟",
+          "cards": [
+            {
+              "title": "Découverte : Leçon",
+              "text": "Cette leçon traite de Leçon. Lis attentivement pour réussir le quiz !",
+              "emoji": "🌟"
+            },
+            {
+              "title": "Le savais-tu ?",
+              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
+              "emoji": "💡"
+            },
+            {
+              "title": "Qui sont les oiseaux ?",
+              "text": "Un oiseau est un animal qui a des plumes, un bec et deux ailes. La plupart aiment s'envoler très haut dans le ciel bleu !",
+              "emoji": "🕊️"
+            },
+            {
+              "title": "L'anatomie pour le vol",
+              "text": "Pour voler, un oiseau a besoin d'être léger. C'est pourquoi la plupart de ses os sont creux, on les appelle des os pneumatisés.",
+              "emoji": "🦴"
+            },
+            {
+              "title": "Des muscles puissants",
+              "text": "Le bréchet est un os spécial sur le torse de l'oiseau où s'attachent de gros muscles pectoraux, essentiels pour battre des ailes.",
+              "emoji": "💪"
+            },
+            {
+              "title": "Le Nid Douillet",
+              "text": "L'oiseau fabrique une petite maison avec des branches et de l'herbe. C'est son nid ! Il y dépose ses petits œufs fragiles.",
+              "emoji": "🪹"
+            },
+            {
+              "title": "L'Étude des Oiseaux",
+              "text": "L'ornithologie est la science qui étudie les oiseaux. Les personnes qui observent et protègent les oiseaux s'appellent des ornithologues.",
+              "emoji": "🔭"
+            },
+            {
+              "title": "L'aérodynamisme",
+              "text": "La forme du corps des oiseaux est profilée pour fendre l'air, réduisant la résistance et leur permettant de voler très vite.",
+              "emoji": "💨"
+            },
+            {
+              "title": "Le plumage impermable",
+              "text": "Les canards ont une glande spciale qui produit de l'huile. Ils en recouvrent leurs plumes pour flotter sans tre mouills.",
+              "emoji": "🦆"
+            },
+            {
+              "title": "Où dorment les oiseaux ?",
+              "text": "Beaucoup d'oiseaux dorment dans les arbres, bien cachés dans les branches pour être en sécurité.",
+              "emoji": "🌳"
+            },
+            {
+              "title": "L'incroyable réalité : Qui sont les oiseaux ?",
+              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
+              "emoji": "🦅"
+            },
+            {
+              "title": "En savoir plus : Qui sont les oiseaux ?",
+              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
+              "emoji": "🌳"
+            },
+            {
+              "title": "Analyse profonde : Qui sont les oiseaux ?",
+              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
+              "emoji": "🔬"
+            },
+            {
+              "title": "Pour aller plus loin : Qui sont les oiseaux ?",
+              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
+              "emoji": "📡"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Quelles sont les trois caractéristiques qui définissent un oiseau ?",
+              "options": [
+                "Des plumes, un bec et deux ailes",
+                "Des écailles, un bec et quatre pattes",
+                "Des plumes, des dents et deux ailes",
+                "Une queue, des griffes et un bec"
+              ],
+              "correctAnswer": "Des plumes, un bec et deux ailes",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment appelle-t-on les os creux des oiseaux qui les aident à voler ?",
+              "options": [
+                "Os pectoraux",
+                "Os pneumatisés",
+                "Os aériens",
+                "Os cartilagineux"
+              ],
+              "correctAnswer": "Os pneumatisés",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel os du torse de l'oiseau permet l'attachement des muscles nécessaires pour battre des ailes ?",
+              "options": [
+                "Le sternum plat",
+                "La clavicule",
+                "Le bréchet",
+                "L'omoplate"
+              ],
+              "correctAnswer": "Le bréchet",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi les os des oiseaux sont-ils creux plutôt que pleins ?",
+              "options": [
+                "Pour stocker de l'air lors des plongées sous-marines",
+                "Pour être plus légers et faciliter le vol",
+                "Pour mieux résister aux chocs en cas de chute",
+                "Pour permettre une croissance plus rapide"
+              ],
+              "correctAnswer": "Pour être plus légers et faciliter le vol",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment s'appelle la science qui étudie les oiseaux ?",
+              "options": [
+                "La zoologie",
+                "L'entomologie",
+                "L'ornithologie",
+                "La biologie aviaire"
+              ],
+              "correctAnswer": "L'ornithologie",
+              "isSpecial": false
+            },
+            {
+              "question": "Avec quels matériaux un oiseau construit-il généralement son nid ?",
+              "options": [
+                "De la boue et de la paille",
+                "Des branches et de l'herbe",
+                "Des pierres et de la mousse",
+                "Des feuilles et de l'argile"
+              ],
+              "correctAnswer": "Des branches et de l'herbe",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi la forme du corps des oiseaux est-elle profilée ?",
+              "options": [
+                "Pour mieux nager sous l'eau",
+                "Pour réduire la résistance de l'air et voler plus vite",
+                "Pour se camoufler entre les branches",
+                "Pour conserver la chaleur par temps froid"
+              ],
+              "correctAnswer": "Pour réduire la résistance de l'air et voler plus vite",
+              "isSpecial": false
+            },
+            {
+              "question": "Grâce à quelle glande spéciale les canards peuvent-ils imperméabiliser leurs plumes ?",
+              "options": [
+                "La glande salivaire",
+                "La glande uropygienne qui produit de l'huile",
+                "La glande thyroïde",
+                "La glande sébacée nasale"
+              ],
+              "correctAnswer": "La glande uropygienne qui produit de l'huile",
+              "isSpecial": false
+            },
+            {
+              "question": "Où la plupart des oiseaux dorment-ils pour se protéger des prédateurs ?",
+              "options": [
+                "Dans des terriers creusés dans le sol",
+                "Dans des cavernes au bord de l'eau",
+                "Dans les arbres, cachés dans les branches",
+                "Dans leur nid toute l'année"
+              ],
+              "correctAnswer": "Dans les arbres, cachés dans les branches",
+              "isSpecial": false
+            },
+            {
+              "question": "Un ornithologiste observe que les plumes d'un canard restent sèches même après une plongée. Quel mécanisme précis explique ce phénomène, et quel autre avantage cela apporte-t-il à l'oiseau en plus de l'imperméabilité ?",
+              "options": [
+                "Les plumes sont recouvertes d'huile produite par une glande spéciale, ce qui imperméabilise le plumage et permet à l'oiseau de flotter sur l'eau",
+                "Les plumes sont creuses et remplies d'air, ce qui repousse l'eau et aide l'oiseau à voler plus vite",
+                "Les plumes sont composées d'une protéine hydrophobe naturelle qui se renforce au contact de l'eau froide",
+                "Les oiseaux agitent leurs plumes très rapidement pour expulser l'eau avant qu'elle ne pénètre"
+              ],
+              "correctAnswer": "Les plumes sont recouvertes d'huile produite par une glande spéciale, ce qui imperméabilise le plumage et permet à l'oiseau de flotter sur l'eau",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "ornithology-gen-l2",
+          "title": "Leçon Intermédiaire",
+          "emoji": "🌱",
+          "themeColor": "amber",
+          "badgeId": "ornithology-badge-l2",
+          "badgeName": "Explorateur L2",
+          "badgeEmoji": "🌱",
+          "cards": [
+            {
+              "title": "Découverte : Leçon Intermédiaire",
+              "text": "Cette leçon traite de Leçon Intermédiaire. Lis attentivement pour réussir le quiz !",
+              "emoji": "🌱"
+            },
+            {
+              "title": "Le savais-tu ?",
+              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
+              "emoji": "💡"
+            },
+            {
+              "title": "Les couleurs des oiseaux",
+              "text": "Les oiseaux peuvent avoir plein de couleurs magnifiques ! Le flamant rose est rose parce qu'il mange beaucoup de petites crevettes.",
+              "emoji": "🦩"
+            },
+            {
+              "title": "Le bec des oiseaux",
+              "text": "Chaque oiseau a un bec différent ! Les becs pointus servent à attraper des insectes, et les becs épais à casser des petites graines.",
+              "emoji": "🦤"
+            },
+            {
+              "title": "Pas de dents !",
+              "text": "Sais-tu que les oiseaux n'ont pas de dents ? Ils avalent leur nourriture toute entière sans la mâcher.",
+              "emoji": "😲"
+            },
+            {
+              "title": "Le secret du plumage",
+              "text": "Les oiseaux passent beaucoup de temps à lisser leurs plumes. Ils utilisent une glande spéciale à la base de leur queue qui produit de l'huile pour les imperméabiliser.",
+              "emoji": "🪶"
+            },
+            {
+              "title": "Les différentes plumes",
+              "text": "Les grandes plumes des ailes sont les rémiges pour le vol, alors que le duvet, très doux, garde l'oiseau bien au chaud.",
+              "emoji": "🧥"
+            },
+            {
+              "title": "Le Bain des Oiseaux",
+              "text": "Les petits oiseaux adorent prendre des bains dans les flaques d'eau. Cela les aide à nettoyer leurs belles plumes pour bien voler !",
+              "emoji": "💦"
+            },
+            {
+              "title": "Les Plumes Imperméables",
+              "text": "Les canards ont des plumes spéciales sur lesquelles l'eau glisse sans jamais les mouiller. C'est très pratique pour nager longtemps !",
+              "emoji": "🦆"
+            },
+            {
+              "title": "Les os pneumatisés",
+              "text": "Pour être plus légers en vol, beaucoup d'oiseaux possèdent des os creux remplis d'air, appelés os pneumatisés.",
+              "emoji": "🦴"
+            },
+            {
+              "title": "Où dorment les oiseaux ?",
+              "text": "Beaucoup d'oiseaux dorment dans les arbres, bien cachés dans les branches pour être en sécurité.",
+              "emoji": "🌳"
+            },
+            {
+              "title": "L'incroyable réalité : Les couleurs des oiseaux",
+              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
+              "emoji": "🦅"
+            },
+            {
+              "title": "En savoir plus : Les couleurs des oiseaux",
+              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
+              "emoji": "🌳"
+            },
+            {
+              "title": "Analyse profonde : Les couleurs des oiseaux",
+              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
+              "emoji": "🔬"
+            },
+            {
+              "title": "Pour aller plus loin : Les couleurs des oiseaux",
+              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
+              "emoji": "📡"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Pourquoi le flamant rose a-t-il une couleur rose ?",
+              "options": [
+                "Il naît avec cette couleur naturellement",
+                "Il mange beaucoup de petites crevettes",
+                "Ses plumes reflètent la lumière du soleil",
+                "Il vit dans des eaux riches en algues rouges"
+              ],
+              "correctAnswer": "Il mange beaucoup de petites crevettes",
+              "isSpecial": false
+            },
+            {
+              "question": "A quoi servent les becs pointus chez les oiseaux ?",
+              "options": [
+                "A casser des graines dures",
+                "A filtrer l'eau des rivières",
+                "A attraper des insectes",
+                "A creuser des terriers"
+              ],
+              "correctAnswer": "A attraper des insectes",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment les oiseaux digèrent-ils leur nourriture, puisqu'ils n'ont pas de dents ?",
+              "options": [
+                "Ils mastiquent avec leur langue musculeuse",
+                "Ils avalent leur nourriture toute entière sans la mâcher",
+                "Ils déchirent les aliments avec leurs griffes avant de les avaler",
+                "Ils dissolvent la nourriture avec leur salive avant d'avaler"
+              ],
+              "correctAnswer": "Ils avalent leur nourriture toute entière sans la mâcher",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel nom donne-t-on aux grandes plumes des ailes qui permettent le vol ?",
+              "options": [
+                "Les duvetines",
+                "Les rectrices",
+                "Les rémiges",
+                "Les tectrices"
+              ],
+              "correctAnswer": "Les rémiges",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle partie du corps de l'oiseau produit une huile pour imperméabiliser les plumes ?",
+              "options": [
+                "Une glande située à la base de la queue",
+                "Les follicules situés à la racine des plumes",
+                "Une glande dans le bec de l'oiseau",
+                "Les glandes sudoripares sous les ailes"
+              ],
+              "correctAnswer": "Une glande située à la base de la queue",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le rôle principal du duvet chez les oiseaux ?",
+              "options": [
+                "Permettre un vol silencieux",
+                "Garder l'oiseau bien au chaud",
+                "Attirer les partenaires lors de la reproduction",
+                "Protéger l'oiseau des chocs"
+              ],
+              "correctAnswer": "Garder l'oiseau bien au chaud",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi les oiseaux prennent-ils des bains dans les flaques d'eau ?",
+              "options": [
+                "Pour réguler leur température corporelle",
+                "Pour nettoyer leurs plumes afin de bien voler",
+                "Pour se désaltérer plus facilement",
+                "Pour se débarrasser des parasites uniquement"
+              ],
+              "correctAnswer": "Pour nettoyer leurs plumes afin de bien voler",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment les plumes des canards leur permettent-elles de nager longtemps ?",
+              "options": [
+                "Elles stockent de l'air pour les aider à flotter",
+                "L'eau glisse dessus sans jamais les mouiller",
+                "Elles sont plus épaisses que celles des autres oiseaux",
+                "Elles absorbent l'eau puis la rejettent rapidement"
+              ],
+              "correctAnswer": "L'eau glisse dessus sans jamais les mouiller",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi beaucoup d'oiseaux choisissent-ils de dormir dans les branches des arbres ?",
+              "options": [
+                "Parce que la chaleur monte et les arbres sont plus chauds la nuit",
+                "Pour être bien cachés et en sécurité",
+                "Pour surveiller leurs proies depuis une hauteur",
+                "Parce que le sol est trop humide la nuit"
+              ],
+              "correctAnswer": "Pour être bien cachés et en sécurité",
+              "isSpecial": false
+            },
+            {
+              "question": "Les os pneumatisés des oiseaux sont creux et remplis d'air. Quel avantage cela leur procure-t-il, et quel inconvénient potentiel cela pourrait-il représenter ?",
+              "options": [
+                "Avantage : plus légers en vol ; inconvénient : os plus fragiles et risque de fractures",
+                "Avantage : meilleure flottabilité dans l'eau ; inconvénient : difficulté à plonger en profondeur",
+                "Avantage : meilleure isolation thermique ; inconvénient : ralentissement lors de la course",
+                "Avantage : réserve d'oxygène pendant le vol ; inconvénient : poids supplémentaire à basse altitude"
+              ],
+              "correctAnswer": "Avantage : plus légers en vol ; inconvénient : os plus fragiles et risque de fractures",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "ornithology-gen-l3",
+          "title": "Leçon Avancée",
+          "emoji": "💧",
+          "themeColor": "amber",
+          "badgeId": "ornithology-badge-l3",
+          "badgeName": "Explorateur L3",
+          "badgeEmoji": "💧",
+          "cards": [
+            {
+              "title": "Découverte : Leçon Avancée",
+              "text": "Cette leçon traite de Leçon Avancée. Lis attentivement pour réussir le quiz !",
+              "emoji": "💧"
+            },
+            {
+              "title": "Le savais-tu ?",
+              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
+              "emoji": "💡"
+            },
+            {
+              "title": "Le voyage des oiseaux",
+              "text": "Quand il fait trop froid, certains oiseaux font un très long voyage appelé migration. Ils volent ensemble vers des pays chauds !",
+              "emoji": "🌅"
+            },
+            {
+              "title": "Les nids douillets",
+              "text": "Les oiseaux construisent des nids pour y pondre leurs œufs. Ils utilisent des brindilles, de la boue et même de la mousse !",
+              "emoji": "🪹"
+            },
+            {
+              "title": "Les petits oisillons",
+              "text": "Quand les œufs éclosent, de petits bébés oiseaux sortent. On les appelle des oisillons.",
+              "emoji": "🐣"
+            },
+            {
+              "title": "Les descendants des dinosaures",
+              "text": "Les oiseaux sont les seuls survivants de la grande famille des dinosaures ! Les paléontologues ont trouvé des fossiles de dinosaures avec des plumes.",
+              "emoji": "🦖"
+            },
+            {
+              "title": "L'Archaeopteryx",
+              "text": "L'Archaeopteryx est l'un des plus célèbres fossiles. Il avait des plumes comme un oiseau mais des dents et une longue queue comme un reptile.",
+              "emoji": "🦴"
+            },
+            {
+              "title": "Le Petit Ver de Terre",
+              "text": "Beaucoup d'oiseaux aiment picorer la terre pour trouver des petits vers très bons à manger. C'est leur repas préféré !",
+              "emoji": "🪱"
+            },
+            {
+              "title": "L'Œil du Faucon",
+              "text": "Le faucon possède une vision si perçante qu'il peut repérer une petite proie depuis très haut dans les nuages.",
+              "emoji": "🦅"
+            },
+            {
+              "title": "La migration incroyable",
+              "text": "Certains oiseaux, comme la Sterne arctique, parcourent des dizaines de milliers de kilomètres chaque année pour trouver un climat favorable.",
+              "emoji": "🌍"
+            },
+            {
+              "title": "Où dorment les oiseaux ?",
+              "text": "Beaucoup d'oiseaux dorment dans les arbres, bien cachés dans les branches pour être en sécurité.",
+              "emoji": "🌳"
+            },
+            {
+              "title": "L'incroyable réalité : Le voyage des oiseaux",
+              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
+              "emoji": "🦅"
+            },
+            {
+              "title": "En savoir plus : Le voyage des oiseaux",
+              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
+              "emoji": "🌳"
+            },
+            {
+              "title": "Analyse profonde : Le voyage des oiseaux",
+              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
+              "emoji": "🔬"
+            },
+            {
+              "title": "Pour aller plus loin : Le voyage des oiseaux",
+              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
+              "emoji": "📡"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Pourquoi certains oiseaux migrent-ils vers des pays chauds en hiver ?",
+              "options": [
+                "Pour trouver de nouveaux nids",
+                "Parce qu'il fait trop froid dans leur pays d'origine",
+                "Pour fuir leurs prédateurs",
+                "Parce qu'ils cherchent de l'eau"
+              ],
+              "correctAnswer": "Parce qu'il fait trop froid dans leur pays d'origine",
+              "isSpecial": false
+            },
+            {
+              "question": "Quels matériaux les oiseaux utilisent-ils pour construire leur nid ?",
+              "options": [
+                "Des feuilles, du sable et du plastique",
+                "Des brindilles, de la boue et de la mousse",
+                "Des pierres, des coquillages et de la terre",
+                "Des plumes, du coton et du fil"
+              ],
+              "correctAnswer": "Des brindilles, de la boue et de la mousse",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment appelle-t-on les bébés oiseaux qui viennent de sortir de l'oeuf ?",
+              "options": [
+                "Des poussins",
+                "Des aiglons",
+                "Des oisillons",
+                "Des nichons"
+              ],
+              "correctAnswer": "Des oisillons",
+              "isSpecial": false
+            },
+            {
+              "question": "De quel groupe d'animaux disparus les oiseaux sont-ils les descendants survivants ?",
+              "options": [
+                "Des mammouths",
+                "Des reptiles marins",
+                "Des dinosaures",
+                "Des amphibiens préhistoriques"
+              ],
+              "correctAnswer": "Des dinosaures",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle preuve les paléontologues ont-ils trouvée pour relier les oiseaux aux dinosaures ?",
+              "options": [
+                "Des fossiles de dinosaures avec des plumes",
+                "Des empreintes de pattes semblables à celles des oiseaux",
+                "Des oeufs de dinosaures identiques aux oeufs d'oiseaux",
+                "Des dents de dinosaures retrouvées chez certains oiseaux modernes"
+              ],
+              "correctAnswer": "Des fossiles de dinosaures avec des plumes",
+              "isSpecial": false
+            },
+            {
+              "question": "Qu'est-ce qui rend l'Archaeopteryx différent d'un oiseau moderne ?",
+              "options": [
+                "Il n'avait pas de plumes",
+                "Il avait des dents et une longue queue comme un reptile",
+                "Il ne pouvait pas voler",
+                "Il vivait uniquement dans l'eau"
+              ],
+              "correctAnswer": "Il avait des dents et une longue queue comme un reptile",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle capacite visuelle remarquable possede le faucon ?",
+              "options": [
+                "Il voit parfaitement dans le noir complet",
+                "Il peut reperer une petite proie depuis tres haut dans les nuages",
+                "Il distingue les couleurs invisibles pour les humains",
+                "Il peut voir derriere lui sans tourner la tete"
+              ],
+              "correctAnswer": "Il peut reperer une petite proie depuis tres haut dans les nuages",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel oiseau est connu pour effectuer l'une des plus longues migrations du monde chaque annee ?",
+              "options": [
+                "L'aigle royal",
+                "Le pingouin",
+                "La Sterne arctique",
+                "Le perroquet"
+              ],
+              "correctAnswer": "La Sterne arctique",
+              "isSpecial": false
+            },
+            {
+              "question": "Ou la plupart des oiseaux dorment-ils pour etre en securite ?",
+              "options": [
+                "Dans des terriers creuses dans le sol",
+                "Au bord de l'eau",
+                "Dans les arbres, bien caches dans les branches",
+                "Dans des grottes rocheuses"
+              ],
+              "correctAnswer": "Dans les arbres, bien caches dans les branches",
+              "isSpecial": false
+            },
+            {
+              "question": "L'Archaeopteryx est considere comme un fossile de transition entre les reptiles et les oiseaux. Quelle caracteristique possedait-il en commun avec les oiseaux modernes, tout en gardant des traits reptiliens ?",
+              "options": [
+                "Il avait des plumes mais aussi des dents et une longue queue osseuse",
+                "Il avait des ailes mais ses pattes etaient recouvertes d'ecailles uniquement",
+                "Il pondait des oeufs comme les reptiles mais avait un bec sans dents",
+                "Il avait un squelette creux comme les oiseaux mais aucune plume"
+              ],
+              "correctAnswer": "Il avait des plumes mais aussi des dents et une longue queue osseuse",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "ornithology-gen-l4",
+          "title": "Leçon Générale",
+          "emoji": "🔥",
+          "themeColor": "amber",
+          "badgeId": "ornithology-badge-l4",
+          "badgeName": "Explorateur L4",
+          "badgeEmoji": "🔥",
+          "cards": [
+            {
+              "title": "Découverte : Leçon Générale",
+              "text": "Cette leçon traite de Leçon Générale. Lis attentivement pour réussir le quiz !",
+              "emoji": "🔥"
+            },
+            {
+              "title": "Le savais-tu ?",
+              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
+              "emoji": "💡"
+            },
+            {
+              "title": "Généralités sur les becs",
+              "text": "Le bec des oiseaux est magique. Un bec fin aide à attraper des insectes, et un bec court et fort sert à casser des graines.",
+              "emoji": "🦆"
+            },
+            {
+              "title": "Les belles plumes",
+              "text": "Le corps des oiseaux est recouvert de plumes. Elles les protègent du froid et de la pluie.",
+              "emoji": "🪶"
+            },
+            {
+              "title": "De toutes les couleurs",
+              "text": "Certains oiseaux ont des plumes très colorées pour attirer l'attention ou pour se cacher dans la nature.",
+              "emoji": "🌈"
+            },
+            {
+              "title": "L'intelligence des corvidés",
+              "text": "Les corbeaux et les corneilles font partie des corvidés. Ce sont parmi les oiseaux les plus intelligents au monde !",
+              "emoji": "🐦‍⬛"
+            },
+            {
+              "title": "Utiliser des outils",
+              "text": "Certains corbeaux sont capables d'utiliser des brindilles comme outils pour attraper des insectes cachés dans l'écorce des arbres.",
+              "emoji": "🛠️"
+            },
+            {
+              "title": "Cache-cache dans les Arbres",
+              "text": "Les oiseaux se cachent dans les grandes feuilles des arbres pour se protéger de la pluie et des grands animaux.",
+              "emoji": "🌳"
+            },
+            {
+              "title": "Les Migrateurs",
+              "text": "La sterne arctique est une incroyable voyageuse. Elle parcourt des milliers de kilomètres chaque année pour passer de l'Arctique à l'Antarctique !",
+              "emoji": "🌍"
+            },
+            {
+              "title": "Les rapaces nocturnes",
+              "text": "Les chouettes et les hiboux sont des prédateurs redoutables la nuit grâce à leur vision perçante et leur vol totalement silencieux.",
+              "emoji": "🦉"
+            },
+            {
+              "title": "Où dorment les oiseaux ?",
+              "text": "Beaucoup d'oiseaux dorment dans les arbres, bien cachés dans les branches pour être en sécurité.",
+              "emoji": "🌳"
+            },
+            {
+              "title": "L'incroyable réalité : Généralités sur les becs",
+              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
+              "emoji": "🦅"
+            },
+            {
+              "title": "En savoir plus : Généralités sur les becs",
+              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
+              "emoji": "🌳"
+            },
+            {
+              "title": "Analyse profonde : Généralités sur les becs",
+              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
+              "emoji": "🔬"
+            },
+            {
+              "title": "Pour aller plus loin : Généralités sur les becs",
+              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
+              "emoji": "📡"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "A quoi sert un bec court et fort chez un oiseau ?",
+              "options": [
+                "Attraper des poissons dans l'eau",
+                "Casser des graines",
+                "Attraper des insectes dans l'écorce",
+                "Filtrer l'eau des mares"
+              ],
+              "correctAnswer": "Casser des graines",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le principal rôle des plumes chez les oiseaux ?",
+              "options": [
+                "Permettre à l'oiseau de respirer sous l'eau",
+                "Servir uniquement de décoration pour attirer un partenaire",
+                "Protéger l'oiseau du froid et de la pluie",
+                "Aider l'oiseau à nager plus vite"
+              ],
+              "correctAnswer": "Protéger l'oiseau du froid et de la pluie",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi certains oiseaux ont-ils des plumes très colorées ?",
+              "options": [
+                "Pour voler plus vite grâce aux couleurs vives",
+                "Pour attirer l'attention ou se camoufler dans la nature",
+                "Pour effrayer tous les prédateurs sans exception",
+                "Pour mieux résister aux fortes pluies tropicales"
+              ],
+              "correctAnswer": "Pour attirer l'attention ou se camoufler dans la nature",
+              "isSpecial": false
+            },
+            {
+              "question": "Quels oiseaux appartiennent à la famille des corvidés ?",
+              "options": [
+                "Les chouettes et les hiboux",
+                "Les aigles et les faucons",
+                "Les corbeaux et les corneilles",
+                "Les perroquets et les perruches"
+              ],
+              "correctAnswer": "Les corbeaux et les corneilles",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment certains corbeaux parviennent-ils à attraper des insectes cachés dans l'écorce des arbres ?",
+              "options": [
+                "En creusant l'écorce avec leur bec très puissant",
+                "En utilisant des brindilles comme outils",
+                "En restant immobiles et en attendant que les insectes sortent",
+                "En tapant fort sur le tronc pour faire tomber les insectes"
+              ],
+              "correctAnswer": "En utilisant des brindilles comme outils",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi les oiseaux se cachent-ils dans les grandes feuilles des arbres ?",
+              "options": [
+                "Pour se protéger de la pluie et des grands animaux",
+                "Pour construire leur nid loin du sol",
+                "Pour trouver plus facilement des insectes à manger",
+                "Pour surveiller leur territoire depuis les hauteurs"
+              ],
+              "correctAnswer": "Pour se protéger de la pluie et des grands animaux",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel trajet exceptionnel accomplit la sterne arctique chaque année ?",
+              "options": [
+                "Elle vole de l'Europe vers l'Afrique du Nord",
+                "Elle traverse l'océan Pacifique d'est en ouest",
+                "Elle migre de l'Arctique jusqu'en Antarctique",
+                "Elle effectue le tour complet de la Méditerranée"
+              ],
+              "correctAnswer": "Elle migre de l'Arctique jusqu'en Antarctique",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle caracteristique permet aux chouettes et hiboux de chasser efficacement la nuit ?",
+              "options": [
+                "Leur plumage très coloré qui effraie les proies",
+                "Leur vision perçante et leur vol totalement silencieux",
+                "Leur capacité à utiliser des outils pour débusquer les proies",
+                "Leur bec très long adapté pour attraper les poissons de nuit"
+              ],
+              "correctAnswer": "Leur vision perçante et leur vol totalement silencieux",
+              "isSpecial": false
+            },
+            {
+              "question": "Ou dorment la plupart des oiseaux pour rester en securite ?",
+              "options": [
+                "Sur le sol, enfouis sous les feuilles mortes",
+                "Dans des terriers creusés dans la terre",
+                "Bien cachés dans les branches des arbres",
+                "Flottant sur l'eau des lacs et rivières"
+              ],
+              "correctAnswer": "Bien cachés dans les branches des arbres",
+              "isSpecial": false
+            },
+            {
+              "question": "Un scientifique observe qu'un oiseau a un bec fin et allongé. Quelle conclusion peut-il tirer sur le regime alimentaire de cet oiseau ?",
+              "options": [
+                "Il se nourrit principalement de grosses graines dures",
+                "Il est probablement adapté pour capturer des insectes ou du nectar",
+                "Il chasse surtout de petits mammifères et des reptiles",
+                "Il se nourrit exclusivement de poissons en eau profonde"
+              ],
+              "correctAnswer": "Il est probablement adapté pour capturer des insectes ou du nectar",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "ornithology-gen-l5",
+          "title": "Leçon Découverte",
+          "emoji": "💨",
+          "themeColor": "amber",
+          "badgeId": "ornithology-badge-l5",
+          "badgeName": "Explorateur L5",
+          "badgeEmoji": "💨",
+          "cards": [
+            {
+              "title": "Découverte : Leçon Découverte",
+              "text": "Cette leçon traite de Leçon Découverte. Lis attentivement pour réussir le quiz !",
+              "emoji": "💨"
+            },
+            {
+              "title": "Le savais-tu ?",
+              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
+              "emoji": "💡"
+            },
+            {
+              "title": "La découverte du chant",
+              "text": "As-tu déjà écouté un oiseau chanter ? Chaque oiseau a sa propre mélodie pour dire 'bonjour' ou pour appeler ses amis !",
+              "emoji": "🎵"
+            },
+            {
+              "title": "Le vol des oiseaux",
+              "text": "Pour voler, les oiseaux battent des ailes. Leurs os sont très légers, ce qui les aide à s'envoler facilement !",
+              "emoji": "🦅"
+            },
+            {
+              "title": "La descente",
+              "text": "Pour atterrir, l'oiseau ouvre grand ses ailes comme un parachute pour ralentir.",
+              "emoji": "🪂"
+            },
+            {
+              "title": "Une vision extraordinaire",
+              "text": "La vue est le sens le plus développé chez l'oiseau. Les rapaces ont une acuité visuelle bien supérieure à celle des humains.",
+              "emoji": "👁️"
+            },
+            {
+              "title": "Voir l'invisible",
+              "text": "De nombreux oiseaux peuvent percevoir la lumière ultraviolette. Cela les aide à repérer des fruits mûrs ou des traces laissées par leurs proies.",
+              "emoji": "✨"
+            },
+            {
+              "title": "L'Œuf Magique",
+              "text": "Tous les oiseaux naissent dans un œuf. Au début, le bébé oiseau casse la coquille avec son petit bec pour sortir.",
+              "emoji": "🥚"
+            },
+            {
+              "title": "La Symphonie des Oiseaux",
+              "text": "Chaque matin au printemps, les oiseaux offrent un magnifique concert appelé le 'chœur de l'aube' pour délimiter leur territoire.",
+              "emoji": "🎶"
+            },
+            {
+              "title": "Le rôle écologique",
+              "text": "Les oiseaux jouent un rôle crucial dans la nature : ils pollinisent les fleurs, dispersent les graines et contrôlent les populations d'insectes.",
+              "emoji": "🌱"
+            },
+            {
+              "title": "Où dorment les oiseaux ?",
+              "text": "Beaucoup d'oiseaux dorment dans les arbres, bien cachés dans les branches pour être en sécurité.",
+              "emoji": "🌳"
+            },
+            {
+              "title": "L'incroyable réalité : La découverte du chant",
+              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
+              "emoji": "🦅"
+            },
+            {
+              "title": "En savoir plus : La découverte du chant",
+              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
+              "emoji": "🌳"
+            },
+            {
+              "title": "Analyse profonde : La découverte du chant",
+              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
+              "emoji": "🔬"
+            },
+            {
+              "title": "Pour aller plus loin : La découverte du chant",
+              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
+              "emoji": "📡"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Pourquoi les oiseaux ont-ils des os très légers ?",
+              "options": [
+                "Pour mieux nager sous l'eau",
+                "Pour s'envoler plus facilement",
+                "Pour résister au froid",
+                "Pour pondre des oeufs plus solides"
+              ],
+              "correctAnswer": "Pour s'envoler plus facilement",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment un oiseau ralentit-il avant d'atterrir ?",
+              "options": [
+                "Il bat très vite des ailes",
+                "Il ferme complètement les ailes",
+                "Il ouvre grand ses ailes comme un parachute",
+                "Il plonge la tête vers le bas"
+              ],
+              "correctAnswer": "Il ouvre grand ses ailes comme un parachute",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le sens le plus développé chez les oiseaux ?",
+              "options": [
+                "L'ouie",
+                "L'odorat",
+                "Le toucher",
+                "La vue"
+              ],
+              "correctAnswer": "La vue",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment s'appelle le concert matinal que font les oiseaux au printemps ?",
+              "options": [
+                "La symphonie du soir",
+                "Le chant des migrations",
+                "Le choeur de l'aube",
+                "La serenade forestiere"
+              ],
+              "correctAnswer": "Le choeur de l'aube",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans quel but les oiseaux chantent-ils le matin au printemps ?",
+              "options": [
+                "Pour se rechauffer",
+                "Pour delimitier leur territoire",
+                "Pour attirer des insectes",
+                "Pour annoncer la pluie"
+              ],
+              "correctAnswer": "Pour delimitier leur territoire",
+              "isSpecial": false
+            },
+            {
+              "question": "Lequel de ces roles ecologiques est assure par les oiseaux ?",
+              "options": [
+                "Purifier l'eau des rivieres",
+                "Disperser les graines",
+                "Produire de l'oxygene",
+                "Decomposer les roches"
+              ],
+              "correctAnswer": "Disperser les graines",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment le bebe oiseau sort-il de son oeuf ?",
+              "options": [
+                "La coquille se ramollit dans l'eau",
+                "La mere la casse de l'exterieur",
+                "Il casse la coquille avec son bec",
+                "Elle eclate sous la chaleur du nid"
+              ],
+              "correctAnswer": "Il casse la coquille avec son bec",
+              "isSpecial": false
+            },
+            {
+              "question": "Ou la plupart des oiseaux dorment-ils la nuit ?",
+              "options": [
+                "Dans des terriers souterrains",
+                "Sur le sol entre les herbes",
+                "Bien caches dans les branches des arbres",
+                "A la surface de l'eau"
+              ],
+              "correctAnswer": "Bien caches dans les branches des arbres",
+              "isSpecial": false
+            },
+            {
+              "question": "A quoi sert la capacite de voir la lumiere ultraviolette chez certains oiseaux ?",
+              "options": [
+                "A voir la nuit comme en plein jour",
+                "A reperer des fruits murs ou des traces de proies",
+                "A communiquer en silence entre eux",
+                "A se proteger des rayons du soleil"
+              ],
+              "correctAnswer": "A reperer des fruits murs ou des traces de proies",
+              "isSpecial": false
+            },
+            {
+              "question": "Les rapaces ont une acuite visuelle superieure a celle des humains. Qu'est-ce que cela signifie concretement pour leur survie ?",
+              "options": [
+                "Ils peuvent voler plus vite grace a de meilleurs reflexes visuels",
+                "Ils repèrent leurs proies a de tres grandes distances avec precision",
+                "Ils voient uniquement les couleurs vives pour choisir leurs aliments",
+                "Ils sont capables de voir derriere eux sans tourner la tete"
+              ],
+              "correctAnswer": "Ils repèrent leurs proies a de tres grandes distances avec precision",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "ornithology-gen-l6",
+          "title": "Leçon Nature",
+          "emoji": "⛰️",
+          "themeColor": "amber",
+          "badgeId": "ornithology-badge-l6",
+          "badgeName": "Explorateur L6",
+          "badgeEmoji": "⛰️",
+          "cards": [
+            {
+              "title": "Découverte : Leçon Nature",
+              "text": "Cette leçon traite de Leçon Nature. Lis attentivement pour réussir le quiz !",
+              "emoji": "⛰️"
+            },
+            {
+              "title": "Le savais-tu ?",
+              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
+              "emoji": "💡"
+            },
+            {
+              "title": "La nature des oiseaux",
+              "text": "Les oiseaux adorent la nature. Ils construisent des nids douillets avec des brindilles et des feuilles pour protéger leurs bébés.",
+              "emoji": "🌳"
+            },
+            {
+              "title": "Le chant merveilleux",
+              "text": "Les oiseaux chantent pour se parler. Chaque espèce a sa propre mélodie !",
+              "emoji": "🎶"
+            },
+            {
+              "title": "Le matin au réveil",
+              "text": "C'est souvent très tôt le matin, à l'aube, qu'on entend le plus d'oiseaux chanter.",
+              "emoji": "🌅"
+            },
+            {
+              "title": "Les records du monde",
+              "text": "Le Colibri d'Elena est le plus petit oiseau du monde, pesant moins de 2 grammes ! À l'inverse, l'autruche est le plus grand et le plus lourd.",
+              "emoji": "🏆"
+            },
+            {
+              "title": "Le vol sur place",
+              "text": "Le colibri est le seul oiseau capable de voler en arrière et de faire du vol stationnaire parfait pour boire le nectar des fleurs.",
+              "emoji": "🌺"
+            },
+            {
+              "title": "Le Grand Vol",
+              "text": "Quand ils sont grands, les oiseaux ouvrent très grand leurs ailes et sautent dans le vide pour apprendre à voler. C'est magique !",
+              "emoji": "🦅"
+            },
+            {
+              "title": "Le nid douillet",
+              "text": "Les oiseaux construisent des nids avec des brindilles, de la boue et même des toiles d'araignée pour garder leurs œufs bien au chaud.",
+              "emoji": "🪹"
+            },
+            {
+              "title": "Le système respiratoire",
+              "text": "Le système respiratoire des oiseaux est unique. Grâce à des sacs aériens, l'air frais circule dans leurs poumons même quand ils expirent !",
+              "emoji": "🫁"
+            },
+            {
+              "title": "Où dorment les oiseaux ?",
+              "text": "Beaucoup d'oiseaux dorment dans les arbres, bien cachés dans les branches pour être en sécurité.",
+              "emoji": "🌳"
+            },
+            {
+              "title": "L'incroyable réalité : La nature des oiseaux",
+              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
+              "emoji": "🦅"
+            },
+            {
+              "title": "En savoir plus : La nature des oiseaux",
+              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
+              "emoji": "🌳"
+            },
+            {
+              "title": "Analyse profonde : La nature des oiseaux",
+              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
+              "emoji": "🔬"
+            },
+            {
+              "title": "Pour aller plus loin : La nature des oiseaux",
+              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
+              "emoji": "📡"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Quel est le plus petit oiseau du monde ?",
+              "options": [
+                "Le moineau domestique",
+                "Le colibri d'Elena",
+                "Le roitelet huppé",
+                "Le troglodyte mignon"
+              ],
+              "correctAnswer": "Le colibri d'Elena",
+              "isSpecial": false
+            },
+            {
+              "question": "Combien pèse approximativement le plus petit oiseau du monde ?",
+              "options": [
+                "Moins de 2 grammes",
+                "Environ 10 grammes",
+                "Entre 5 et 8 grammes",
+                "Moins de 20 grammes"
+              ],
+              "correctAnswer": "Moins de 2 grammes",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi le colibri est-il un oiseau exceptionnel parmi tous les oiseaux ?",
+              "options": [
+                "Il est le seul à construire des nids avec de la boue",
+                "Il est le seul capable de voler en arrière et de faire du vol stationnaire",
+                "Il est le seul à chanter la nuit",
+                "Il est le seul à ne pas avoir de plumes"
+              ],
+              "correctAnswer": "Il est le seul capable de voler en arrière et de faire du vol stationnaire",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel moment de la journée est le meilleur pour entendre le plus d'oiseaux chanter ?",
+              "options": [
+                "En milieu d'après-midi",
+                "Le soir au coucher du soleil",
+                "La nuit à minuit",
+                "Tôt le matin, à l'aube"
+              ],
+              "correctAnswer": "Tôt le matin, à l'aube",
+              "isSpecial": false
+            },
+            {
+              "question": "Avec quels matériaux les oiseaux construisent-ils principalement leurs nids ?",
+              "options": [
+                "Du sable, des pierres et de l'herbe sèche",
+                "Des brindilles, de la boue et des toiles d'araignée",
+                "Des feuilles mortes, de la mousse et du coton",
+                "De l'écorce, des graines et des plumes"
+              ],
+              "correctAnswer": "Des brindilles, de la boue et des toiles d'araignée",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi les oiseaux chantent-ils ?",
+              "options": [
+                "Pour attirer les insectes vers eux",
+                "Pour se repérer dans le noir",
+                "Pour communiquer entre eux",
+                "Pour effrayer les prédateurs uniquement"
+              ],
+              "correctAnswer": "Pour communiquer entre eux",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le plus grand et le plus lourd oiseau du monde ?",
+              "options": [
+                "L'albatros hurleur",
+                "L'autruche",
+                "Le condor des Andes",
+                "L'émeu"
+              ],
+              "correctAnswer": "L'autruche",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment les jeunes oiseaux apprennent-ils à voler ?",
+              "options": [
+                "Leurs parents les portent sur leur dos pendant plusieurs semaines",
+                "Ils imitent d'autres espèces d'oiseaux au sol",
+                "Ils ouvrent grand leurs ailes et sautent dans le vide",
+                "Ils glissent le long des branches sans jamais quitter l'arbre"
+              ],
+              "correctAnswer": "Ils ouvrent grand leurs ailes et sautent dans le vide",
+              "isSpecial": false
+            },
+            {
+              "question": "Où la plupart des oiseaux choisissent-ils de dormir pour rester en sécurité ?",
+              "options": [
+                "Dans des terriers creusés dans le sol",
+                "Dans les arbres, cachés dans les branches",
+                "Sur les bords des rivières",
+                "Dans des grottes ou des rochers"
+              ],
+              "correctAnswer": "Dans les arbres, cachés dans les branches",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle particularité unique possede le systeme respiratoire des oiseaux par rapport aux autres animaux ?",
+              "options": [
+                "Leurs poumons sont deux fois plus grands que ceux des mammiferes de taille equivalente",
+                "Ils possedent des sacs aeriens qui font circuler l'air frais dans leurs poumons meme pendant l'expiration",
+                "Ils peuvent retenir leur souffle pendant plus de dix minutes en vol",
+                "Leur trachee se divise en quatre conduits distincts pour filtrer l'air"
+              ],
+              "correctAnswer": "Ils possedent des sacs aeriens qui font circuler l'air frais dans leurs poumons meme pendant l'expiration",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "ornithology-gen-l7",
+          "title": "Leçon Monde",
+          "emoji": "🧭",
+          "themeColor": "amber",
+          "badgeId": "ornithology-badge-l7",
+          "badgeName": "Explorateur L7",
+          "badgeEmoji": "🧭",
+          "cards": [
+            {
+              "title": "Découverte : Leçon Monde",
+              "text": "Cette leçon traite de Leçon Monde. Lis attentivement pour réussir le quiz !",
+              "emoji": "🧭"
+            },
+            {
+              "title": "Le savais-tu ?",
+              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
+              "emoji": "💡"
+            },
+            {
+              "title": "Les oiseaux du monde",
+              "text": "Il existe des oiseaux partout dans le monde ! Le manchot vit dans le froid, tandis que le toucan préfère la chaleur de la jungle.",
+              "emoji": "🐧"
+            },
+            {
+              "title": "Le grand voyage",
+              "text": "En hiver, quand il fait froid, beaucoup d'oiseaux voyagent vers les pays chauds. C'est la migration !",
+              "emoji": "🌍"
+            },
+            {
+              "title": "Voler en groupe",
+              "text": "Pour moins se fatiguer, ils volent souvent en forme de 'V' avec tous leurs amis.",
+              "emoji": "🪿"
+            },
+            {
+              "title": "La parade nuptiale",
+              "text": "Pour attirer une femelle, le mâle réalise souvent une danse ou exhibe de magnifiques couleurs. C'est la parade nuptiale.",
+              "emoji": "🦚"
+            },
+            {
+              "title": "L'oiseau jardinier",
+              "text": "En Australie, l'oiseau jardinier construit un berceau de branches qu'il décore avec des objets bleus (fleurs, cailloux, bouchons) pour séduire sa partenaire !",
+              "emoji": "💙"
+            },
+            {
+              "title": "L'Oiseau qui Parle",
+              "text": "Certains oiseaux, comme le perroquet, sont très rigolos. Ils peuvent imiter les mots que nous disons et parler avec nous !",
+              "emoji": "🦜"
+            },
+            {
+              "title": "Le chant des oiseaux",
+              "text": "Chaque espèce d'oiseau a son propre chant. Ils chantent pour marquer leur territoire ou pour appeler leurs amis !",
+              "emoji": "🎶"
+            },
+            {
+              "title": "L'intelligence des corvidés",
+              "text": "Les corbeaux et les pies sont extrêmement intelligents. Ils sont capables de fabriquer des outils et de résoudre des énigmes complexes.",
+              "emoji": "🐦‍⬛"
+            },
+            {
+              "title": "Où dorment les oiseaux ?",
+              "text": "Beaucoup d'oiseaux dorment dans les arbres, bien cachés dans les branches pour être en sécurité.",
+              "emoji": "🌳"
+            },
+            {
+              "title": "L'incroyable réalité : Les oiseaux du monde",
+              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
+              "emoji": "🦅"
+            },
+            {
+              "title": "En savoir plus : Les oiseaux du monde",
+              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
+              "emoji": "🌳"
+            },
+            {
+              "title": "Analyse profonde : Les oiseaux du monde",
+              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
+              "emoji": "🔬"
+            },
+            {
+              "title": "Pour aller plus loin : Les oiseaux du monde",
+              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
+              "emoji": "📡"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Pourquoi beaucoup d'oiseaux migrent-ils en hiver ?",
+              "options": [
+                "Pour trouver un partenaire",
+                "Pour fuir les prédateurs",
+                "Pour rejoindre des régions plus chaudes",
+                "Pour apprendre de nouveaux chants"
+              ],
+              "correctAnswer": "Pour rejoindre des régions plus chaudes",
+              "isSpecial": false
+            },
+            {
+              "question": "En quelle forme les oiseaux migrateurs volent-ils souvent en groupe ?",
+              "options": [
+                "En cercle",
+                "En ligne droite",
+                "En forme de V",
+                "En zigzag"
+              ],
+              "correctAnswer": "En forme de V",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel oiseau vit dans les environnements froids, contrairement au toucan qui préfère la jungle ?",
+              "options": [
+                "Le perroquet",
+                "Le manchot",
+                "La pie",
+                "Le corbeau"
+              ],
+              "correctAnswer": "Le manchot",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment appelle-t-on le comportement du mâle qui danse ou montre ses couleurs pour attirer une femelle ?",
+              "options": [
+                "La migration",
+                "Le marquage territorial",
+                "La parade nuptiale",
+                "L'imitation"
+              ],
+              "correctAnswer": "La parade nuptiale",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans quel pays vit l'oiseau jardinier, connu pour décorer son berceau d'objets bleus ?",
+              "options": [
+                "Au Brésil",
+                "En Inde",
+                "En Australie",
+                "En Afrique du Sud"
+              ],
+              "correctAnswer": "En Australie",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi les oiseaux chantent-ils selon les informations de la leçon ?",
+              "options": [
+                "Pour se nourrir plus facilement",
+                "Pour marquer leur territoire ou appeler leurs congénères",
+                "Pour imiter les humains",
+                "Pour indiquer l'heure"
+              ],
+              "correctAnswer": "Pour marquer leur territoire ou appeler leurs congénères",
+              "isSpecial": false
+            },
+            {
+              "question": "Parmi ces oiseaux, lesquels sont réputés pour leur capacité à fabriquer des outils et résoudre des énigmes ?",
+              "options": [
+                "Les perroquets et les toucans",
+                "Les manchots et les aigles",
+                "Les corbeaux et les pies",
+                "Les moineaux et les hirondelles"
+              ],
+              "correctAnswer": "Les corbeaux et les pies",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle capacité particulière possède le perroquet qui le distingue de la plupart des autres oiseaux ?",
+              "options": [
+                "Il peut voler très haut",
+                "Il peut imiter les mots humains",
+                "Il construit des nids complexes",
+                "Il migre sur de très longues distances"
+              ],
+              "correctAnswer": "Il peut imiter les mots humains",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi beaucoup d'oiseaux dorment-ils cachés dans les branches des arbres ?",
+              "options": [
+                "Pour rester au chaud grâce aux feuilles",
+                "Pour se protéger des prédateurs",
+                "Pour être proches de leur nourriture",
+                "Pour mieux entendre les autres oiseaux"
+              ],
+              "correctAnswer": "Pour se protéger des prédateurs",
+              "isSpecial": false
+            },
+            {
+              "question": "L'oiseau jardinier utilise des objets d'une couleur particulière pour décorer son berceau. Quelle est cette couleur, et pourquoi ce comportement est-il considere comme une forme d'intelligence animale ?",
+              "options": [
+                "Rouge, car cette couleur effraie les predateurs et protege le nid",
+                "Bleu, car il selectionne deliberement des objets selon un critere esthetique pour seduire",
+                "Vert, car cette teinte se confond avec la vegetation et camouffle le nid",
+                "Jaune, car les femelles voient mieux cette longueur d'onde lumineuse"
+              ],
+              "correctAnswer": "Bleu, car il selectionne deliberement des objets selon un critere esthetique pour seduire",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "ornithology-gen-l8",
+          "title": "Leçon Science",
+          "emoji": "🛡️",
+          "themeColor": "amber",
+          "badgeId": "ornithology-badge-l8",
+          "badgeName": "Explorateur L8",
+          "badgeEmoji": "🛡️",
+          "cards": [
+            {
+              "title": "Découverte : Leçon Science",
+              "text": "Cette leçon traite de Leçon Science. Lis attentivement pour réussir le quiz !",
+              "emoji": "🛡️"
+            },
+            {
+              "title": "Le savais-tu ?",
+              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
+              "emoji": "💡"
+            },
+            {
+              "title": "La science des plumes",
+              "text": "Les plumes des oiseaux sont incroyables ! Elles les aident à voler, mais aussi à rester bien au chaud, comme un gros manteau.",
+              "emoji": "🪶"
+            },
+            {
+              "title": "Les oiseaux nageurs",
+              "text": "Les canards et les cygnes adorent l'eau. Leurs plumes ne se mouillent pas grâce à une huile spéciale.",
+              "emoji": "🦆"
+            },
+            {
+              "title": "Des pattes comme des rames",
+              "text": "Ils ont des pattes palmées qui les aident à nager très vite, comme des palmes de plongée.",
+              "emoji": "🌊"
+            },
+            {
+              "title": "Les menaces sur la nature",
+              "text": "De nombreuses espèces d'oiseaux sont en danger. La destruction de leurs habitats, comme la déforestation, est la plus grande menace pour eux.",
+              "emoji": "⚠️"
+            },
+            {
+              "title": "Comment les protéger",
+              "text": "Installer des nichoirs, réduire l'utilisation de pesticides et protéger les forêts aide les oiseaux à survivre et à se reproduire.",
+              "emoji": "🌳"
+            },
+            {
+              "title": "Les Graines Délicieuses",
+              "text": "En hiver, on peut donner des petites graines aux oiseaux pour les aider à avoir le ventre bien rempli.",
+              "emoji": "🌻"
+            },
+            {
+              "title": "Les plumes colorées",
+              "text": "Les plumes des oiseaux ne servent pas seulement à voler, elles les aident aussi à se cacher ou à attirer l'attention !",
+              "emoji": "🦚"
+            },
+            {
+              "title": "Les plumes de contour",
+              "text": "Les plumes de contour donnent à l'oiseau sa forme lisse, tandis que le duvet, situé en dessous, le protège du froid.",
+              "emoji": "🪶"
+            },
+            {
+              "title": "Découverte magique : La science des plumes",
+              "text": "Regarde bien les petits oiseaux ! Sais-tu qu'ils aiment beaucoup explorer et jouer dans la nature ? C'est fascinant de voir comment ils vivent.",
+              "emoji": "✨"
+            },
+            {
+              "title": "Le secret de : La science des plumes",
+              "text": "Chut, c'est un secret ! Les oiseaux ont des pouvoirs cachés dans leurs plumes et leur façon de chanter.",
+              "emoji": "🤫"
+            },
+            {
+              "title": "L'incroyable réalité : La science des plumes",
+              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
+              "emoji": "🦅"
+            },
+            {
+              "title": "En savoir plus : La science des plumes",
+              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
+              "emoji": "🌳"
+            },
+            {
+              "title": "Analyse profonde : La science des plumes",
+              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
+              "emoji": "🔬"
+            },
+            {
+              "title": "Pour aller plus loin : La science des plumes",
+              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
+              "emoji": "📡"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "A quoi servent principalement les plumes d'un oiseau ?",
+              "options": [
+                "Uniquement a voler",
+                "A voler et a conserver la chaleur du corps",
+                "A attirer les insectes pour se nourrir",
+                "A repousser les predateurs"
+              ],
+              "correctAnswer": "A voler et a conserver la chaleur du corps",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi les plumes des canards ne se mouillent-elles pas lorsqu'ils nagent ?",
+              "options": [
+                "Leurs plumes sont faites d'une matiere synthetique",
+                "Ils secouent leurs plumes tres rapidement",
+                "Une huile speciale impermeabilise leurs plumes",
+                "L'eau glisse grace a la forme aerodynamique de leurs plumes"
+              ],
+              "correctAnswer": "Une huile speciale impermeabilise leurs plumes",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle caracteristique des pattes des canards et cygnes les aide a nager efficacement ?",
+              "options": [
+                "Leurs pattes sont tres longues",
+                "Leurs pattes sont palmees",
+                "Leurs pattes ont des griffes acinees",
+                "Leurs pattes sont recouvertes de plumes impermeables"
+              ],
+              "correctAnswer": "Leurs pattes sont palmees",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est la principale menace pour les oiseaux selon la lecon ?",
+              "options": [
+                "La chasse excessive",
+                "La destruction de leurs habitats, notamment par la deforestation",
+                "Les maladies propagees par les insectes",
+                "Le rechauffement climatique uniquement"
+              ],
+              "correctAnswer": "La destruction de leurs habitats, notamment par la deforestation",
+              "isSpecial": false
+            },
+            {
+              "question": "Lequel de ces gestes aide concretement les oiseaux a survivre et a se reproduire ?",
+              "options": [
+                "Leur donner du pain rassis en ete",
+                "Installer des nichoirs et reduire les pesticides",
+                "Laisser les chats errants en liberte",
+                "Couper les arbres morts pour degager l'espace"
+              ],
+              "correctAnswer": "Installer des nichoirs et reduire les pesticides",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi est-il utile de donner des graines aux oiseaux en hiver ?",
+              "options": [
+                "Pour les habituer a vivre pres des humains",
+                "Parce qu'ils migrent moins bien sans graines",
+                "Parce que la nourriture naturelle est plus difficile a trouver en hiver",
+                "Pour les empecher de detruire les jardins"
+              ],
+              "correctAnswer": "Parce que la nourriture naturelle est plus difficile a trouver en hiver",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel role jouent les plumes colorees chez les oiseaux, en dehors du vol ?",
+              "options": [
+                "Elles servent uniquement a reguler la temperature",
+                "Elles permettent de se camoufler ou d'attirer l'attention",
+                "Elles protegent uniquement contre la pluie",
+                "Elles servent a communiquer avec les humains"
+              ],
+              "correctAnswer": "Elles permettent de se camoufler ou d'attirer l'attention",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est la difference entre les plumes de contour et le duvet chez un oiseau ?",
+              "options": [
+                "Les plumes de contour servent a nager, le duvet a voler",
+                "Les plumes de contour donnent la forme lisse de l'oiseau, le duvet protege du froid",
+                "Le duvet est visible a l'exterieur, les plumes de contour sont cachees",
+                "Il n'y a aucune difference fonctionnelle entre les deux"
+              ],
+              "correctAnswer": "Les plumes de contour donnent la forme lisse de l'oiseau, le duvet protege du froid",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment les scientifiques d'aujourd'hui etudient-ils la migration des oiseaux ?",
+              "options": [
+                "En observant uniquement les nids abandonnes",
+                "En comptant les oiseaux depuis des tours d'observation fixes",
+                "Grâce a des technologies avancees pour suivre leurs deplacements",
+                "En lisant les traces laissees sur le sol"
+              ],
+              "correctAnswer": "Grâce a des technologies avancees pour suivre leurs deplacements",
+              "isSpecial": false
+            },
+            {
+              "question": "Un oiseau aquatique comme le canard possede des pattes palmees, des plumes impermeabilisees par une huile et un corps adapte a la nage. Quel terme de biologie designe cet ensemble de caracteristiques permettant a un animal de survivre dans son milieu ?",
+              "options": [
+                "La metamorphose",
+                "L'adaptation",
+                "La symbiose",
+                "La migration"
+              ],
+              "correctAnswer": "L'adaptation",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "ornithology-gen-l9",
+          "title": "Leçon Espace",
+          "emoji": "🔮",
+          "themeColor": "amber",
+          "badgeId": "ornithology-badge-l9",
+          "badgeName": "Explorateur L9",
+          "badgeEmoji": "🔮",
+          "cards": [
+            {
+              "title": "Découverte : Leçon Espace",
+              "text": "Cette leçon traite de Leçon Espace. Lis attentivement pour réussir le quiz !",
+              "emoji": "🔮"
+            },
+            {
+              "title": "Le savais-tu ?",
+              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
+              "emoji": "💡"
+            },
+            {
+              "title": "Dans l'espace du ciel",
+              "text": "Les oiseaux sont les rois du ciel ! Certains, comme l'aigle, peuvent voler très haut pour observer tout ce qui se passe en bas.",
+              "emoji": "🦅"
+            },
+            {
+              "title": "Les grands rapaces",
+              "text": "Les aigles et les faucons sont des rapaces. Ils volent très haut pour chercher leur nourriture.",
+              "emoji": "🦅"
+            },
+            {
+              "title": "Des yeux de lynx",
+              "text": "Les rapaces ont une vue incroyable. Ils peuvent voir une petite souris depuis le ciel !",
+              "emoji": "👀"
+            },
+            {
+              "title": "Un outil sur mesure",
+              "text": "Le bec de l'oiseau est adapté à son régime alimentaire. Le pivert a un bec puissant comme un burin pour creuser le bois.",
+              "emoji": "🪵"
+            },
+            {
+              "title": "Filtrer l'eau",
+              "text": "Le flamant rose possède un bec courbé qui fonctionne comme une passoire. Il filtre l'eau pour retenir les petites crevettes dont il se nourrit.",
+              "emoji": "🦩"
+            },
+            {
+              "title": "Le Pic-vert",
+              "text": "Le pic-vert tape très fort son bec contre le tronc des arbres pour trouver des insectes. Toc toc toc !",
+              "emoji": "🪵"
+            },
+            {
+              "title": "Les becs utiles",
+              "text": "La forme du bec d'un oiseau dépend de ce qu'il mange. Un bec crochu est parfait pour la viande, et un bec fin pour les insectes.",
+              "emoji": "🦅"
+            },
+            {
+              "title": "La parade nuptiale",
+              "text": "Pour séduire une partenaire, beaucoup de mâles effectuent des danses incroyables ou construisent des structures complexes pour impressionner.",
+              "emoji": "💃"
+            },
+            {
+              "title": "Découverte magique : Dans l'espace du ciel",
+              "text": "Regarde bien les petits oiseaux ! Sais-tu qu'ils aiment beaucoup explorer et jouer dans la nature ? C'est fascinant de voir comment ils vivent.",
+              "emoji": "✨"
+            },
+            {
+              "title": "Le secret de : Dans l'espace du ciel",
+              "text": "Chut, c'est un secret ! Les oiseaux ont des pouvoirs cachés dans leurs plumes et leur façon de chanter.",
+              "emoji": "🤫"
+            },
+            {
+              "title": "L'incroyable réalité : Dans l'espace du ciel",
+              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
+              "emoji": "🦅"
+            },
+            {
+              "title": "En savoir plus : Dans l'espace du ciel",
+              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
+              "emoji": "🌳"
+            },
+            {
+              "title": "Analyse profonde : Dans l'espace du ciel",
+              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
+              "emoji": "🔬"
+            },
+            {
+              "title": "Pour aller plus loin : Dans l'espace du ciel",
+              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
+              "emoji": "📡"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Quel type de bec possède le flamant rose, et à quoi lui sert-il ?",
+              "options": [
+                "Un bec droit et pointu pour attraper des poissons",
+                "Un bec courbé qui filtre l'eau pour retenir les crevettes",
+                "Un bec crochu pour déchirer la viande",
+                "Un bec puissant pour creuser le bois"
+              ],
+              "correctAnswer": "Un bec courbé qui filtre l'eau pour retenir les crevettes",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi les rapaces comme l'aigle et le faucon volent-ils très haut dans le ciel ?",
+              "options": [
+                "Pour éviter les prédateurs terrestres",
+                "Pour se réchauffer près du soleil",
+                "Pour chercher leur nourriture depuis les airs",
+                "Pour migrer plus rapidement d'un pays à l'autre"
+              ],
+              "correctAnswer": "Pour chercher leur nourriture depuis les airs",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment le pic-vert trouve-t-il sa nourriture ?",
+              "options": [
+                "Il plonge dans l'eau pour attraper des poissons",
+                "Il filtre le sol avec son bec",
+                "Il tape fort son bec contre les troncs d'arbres pour débusquer des insectes",
+                "Il chasse en groupe avec d'autres oiseaux"
+              ],
+              "correctAnswer": "Il tape fort son bec contre les troncs d'arbres pour débusquer des insectes",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le principal critère qui détermine la forme du bec d'un oiseau ?",
+              "options": [
+                "La taille de l'oiseau",
+                "Le régime alimentaire de l'oiseau",
+                "La couleur de ses plumes",
+                "Le milieu dans lequel il dort"
+              ],
+              "correctAnswer": "Le régime alimentaire de l'oiseau",
+              "isSpecial": false
+            },
+            {
+              "question": "A quel outil de menuiserie compare-t-on le bec du pic-vert ?",
+              "options": [
+                "Une scie",
+                "Un marteau",
+                "Un burin",
+                "Une perceuse"
+              ],
+              "correctAnswer": "Un burin",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle capacité visuelle extraordinaire possèdent les rapaces ?",
+              "options": [
+                "Ils voient uniquement la nuit grâce à une vision infrarouge",
+                "Ils peuvent voir en couleurs que les humains ne percoivent pas",
+                "Ils peuvent reperer une petite souris depuis le ciel",
+                "Ils ont une vision a 360 degres sans tourner la tete"
+              ],
+              "correctAnswer": "Ils peuvent reperer une petite souris depuis le ciel",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel type de bec est le mieux adapte pour se nourrir d'insectes ?",
+              "options": [
+                "Un bec crochu et solide",
+                "Un bec courbé comme une passoire",
+                "Un bec fin et allonge",
+                "Un bec large et plat"
+              ],
+              "correctAnswer": "Un bec fin et allonge",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment beaucoup de mâles oiseaux cherchent-ils a seduire une partenaire ?",
+              "options": [
+                "En chantant uniquement la nuit pour ne pas etre entendus des predateurs",
+                "En effectuant des danses ou en construisant des structures pour impressionner",
+                "En offrant de la nourriture deja machee a la femelle",
+                "En changeant la couleur de leurs plumes selon les saisons"
+              ],
+              "correctAnswer": "En effectuant des danses ou en construisant des structures pour impressionner",
+              "isSpecial": false
+            },
+            {
+              "question": "Lequel de ces oiseaux est considere comme un rapace ?",
+              "options": [
+                "Le flamant rose",
+                "Le pic-vert",
+                "Le faucon",
+                "Le canard"
+              ],
+              "correctAnswer": "Le faucon",
+              "isSpecial": false
+            },
+            {
+              "question": "Un ornithologiste observe qu'un oiseau possede un bec crochu et de grandes serres. Quelle conclusion peut-il logiquement en tirer sur le mode de vie de cet oiseau ?",
+              "options": [
+                "C'est un oiseau filtreur qui se nourrit de plancton en eau peu profonde",
+                "C'est un granivore qui casse des graines dures avec son bec",
+                "C'est un rapace carnivore qui capture et dechire des proies animales",
+                "C'est un insectivore qui sonde l'ecorce des arbres a la recherche de larves"
+              ],
+              "correctAnswer": "C'est un rapace carnivore qui capture et dechire des proies animales",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "ornithology-gen-l10",
+          "title": "Leçon Défi",
+          "emoji": "🏆",
+          "themeColor": "amber",
+          "badgeId": "ornithology-badge-l10",
+          "badgeName": "Explorateur L10",
+          "badgeEmoji": "🏆",
+          "cards": [
+            {
+              "title": "Découverte : Leçon Défi",
+              "text": "Cette leçon traite de Leçon Défi. Lis attentivement pour réussir le quiz !",
+              "emoji": "🏆"
+            },
+            {
+              "title": "Le savais-tu ?",
+              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
+              "emoji": "💡"
+            },
+            {
+              "title": "Le défi du vol",
+              "text": "Apprendre à voler est un grand défi pour les bébés oiseaux. Au début, ils sautent de branche en branche avant de prendre leur envol.",
+              "emoji": "🐥"
+            },
+            {
+              "title": "Les oiseaux de la nuit",
+              "text": "La chouette et le hibou dorment le jour et se réveillent la nuit. On dit qu'ils sont nocturnes.",
+              "emoji": "🦉"
+            },
+            {
+              "title": "Un vol silencieux",
+              "text": "Les chouettes volent sans faire aucun bruit pour surprendre leur repas !",
+              "emoji": "🤫"
+            },
+            {
+              "title": "L'orientation magnétique",
+              "text": "Les oiseaux migrateurs accomplissent des voyages de milliers de kilomètres. Pour ne pas se perdre, ils utilisent le champ magnétique de la Terre !",
+              "emoji": "🧲"
+            },
+            {
+              "title": "Une boussole interne",
+              "text": "Grâce à des capteurs spéciaux, c'est comme s'ils avaient une boussole dans la tête qui leur indique toujours où se trouve le Nord ou le Sud.",
+              "emoji": "🧭"
+            },
+            {
+              "title": "Dormir sur une Patte",
+              "text": "Savais-tu que certains oiseaux aiment dormir en se tenant debout sur une seule de leurs pattes ? C'est très amusant à voir !",
+              "emoji": "🦩"
+            },
+            {
+              "title": "Les petits poussins",
+              "text": "Quand ils sortent de l'œuf, les oisillons ont très faim. Leurs parents font de nombreux allers-retours pour les nourrir.",
+              "emoji": "🐣"
+            },
+            {
+              "title": "Les oiseaux marins",
+              "text": "Certains oiseaux, comme les albatros, passent la majorité de leur vie en mer et peuvent boire de l'eau salée grâce à une glande spéciale.",
+              "emoji": "🌊"
+            },
+            {
+              "title": "Découverte magique : Le défi du vol",
+              "text": "Regarde bien les petits oiseaux ! Sais-tu qu'ils aiment beaucoup explorer et jouer dans la nature ? C'est fascinant de voir comment ils vivent.",
+              "emoji": "✨"
+            },
+            {
+              "title": "Le secret de : Le défi du vol",
+              "text": "Chut, c'est un secret ! Les oiseaux ont des pouvoirs cachés dans leurs plumes et leur façon de chanter.",
+              "emoji": "🤫"
+            },
+            {
+              "title": "L'incroyable réalité : Le défi du vol",
+              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
+              "emoji": "🦅"
+            },
+            {
+              "title": "En savoir plus : Le défi du vol",
+              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
+              "emoji": "🌳"
+            },
+            {
+              "title": "Analyse profonde : Le défi du vol",
+              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
+              "emoji": "🔬"
+            },
+            {
+              "title": "Pour aller plus loin : Le défi du vol",
+              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
+              "emoji": "📡"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Comment les bébés oiseaux apprennent-ils à voler ?",
+              "options": [
+                "Ils sautent de branche en branche avant de prendre leur envol",
+                "Ils sont poussés hors du nid par leurs parents dès la naissance",
+                "Ils regardent les autres oiseaux voler et imitent leurs mouvements",
+                "Ils commencent par nager avant d'apprendre à voler"
+              ],
+              "correctAnswer": "Ils sautent de branche en branche avant de prendre leur envol",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel terme désigne les animaux qui dorment le jour et sont actifs la nuit ?",
+              "options": [
+                "Diurnes",
+                "Migrateurs",
+                "Nocturnes",
+                "Hibernants"
+              ],
+              "correctAnswer": "Nocturnes",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi les chouettes volent-elles sans faire de bruit ?",
+              "options": [
+                "Pour ne pas réveiller leurs petits dans le nid",
+                "Pour surprendre leur proie et chasser efficacement",
+                "Pour éviter d'attirer les prédateurs pendant la nuit",
+                "Parce que leurs ailes sont trop petites pour produire du son"
+              ],
+              "correctAnswer": "Pour surprendre leur proie et chasser efficacement",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel outil naturel les oiseaux migrateurs utilisent-ils pour s'orienter lors de leurs longs voyages ?",
+              "options": [
+                "Les étoiles visibles uniquement la nuit",
+                "L'odeur des fleurs selon les saisons",
+                "Le champ magnétique de la Terre",
+                "La direction des vents dominants"
+              ],
+              "correctAnswer": "Le champ magnétique de la Terre",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment peut-on décrire la capacité d'orientation des oiseaux migrateurs ?",
+              "options": [
+                "Comme une carte dessinée sur leurs plumes",
+                "Comme une boussole interne qui leur indique le Nord ou le Sud",
+                "Comme une mémoire des routes apprises de leurs parents",
+                "Comme un instinct de retour au nid uniquement"
+              ],
+              "correctAnswer": "Comme une boussole interne qui leur indique le Nord ou le Sud",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est la particularité de la façon de dormir de certains oiseaux ?",
+              "options": [
+                "Ils dorment la tête sous l'eau",
+                "Ils dorment suspendus la tête en bas",
+                "Ils dorment debout sur une seule patte",
+                "Ils dorment en formant un cercle avec leurs congénères"
+              ],
+              "correctAnswer": "Ils dorment debout sur une seule patte",
+              "isSpecial": false
+            },
+            {
+              "question": "Que font les parents oiseaux pour nourrir leurs oisillons juste après l'éclosion ?",
+              "options": [
+                "Ils enseignent aux oisillons à trouver eux-mêmes leur nourriture",
+                "Ils font de nombreux allers-retours pour leur apporter de la nourriture",
+                "Ils régurgitent une réserve constituée avant la ponte",
+                "Ils amènent les oisillons jusqu'aux sources de nourriture"
+              ],
+              "correctAnswer": "Ils font de nombreux allers-retours pour leur apporter de la nourriture",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle capacité unique permet à l'albatros de boire de l'eau de mer ?",
+              "options": [
+                "Son foie filtre automatiquement le sel de l'eau ingérée",
+                "Il possède une glande spéciale qui élimine le sel",
+                "Il transforme l'eau salée en eau douce grâce à sa salive",
+                "Il ne boit jamais directement mais absorbe l'eau par les aliments"
+              ],
+              "correctAnswer": "Il possède une glande spéciale qui élimine le sel",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle affirmation décrit le mieux l'albatros parmi les oiseaux marins ?",
+              "options": [
+                "Il migre chaque hiver vers les zones tropicales pour se reproduire",
+                "Il passe la majorité de sa vie en mer",
+                "Il niche exclusivement sur les falaises des continents polaires",
+                "Il est incapable de voler mais nage sous l'eau comme un pingouin"
+              ],
+              "correctAnswer": "Il passe la majorité de sa vie en mer",
+              "isSpecial": false
+            },
+            {
+              "question": "Les chouettes et les hiboux sont tous les deux nocturnes. Parmi leurs caractéristiques communes liées à la chasse nocturne, laquelle est mentionnée dans ce cours ?",
+              "options": [
+                "Ils possèdent une vision infrarouge pour détecter la chaleur des proies",
+                "Leurs serres sont enduites d'une substance qui paralyse les proies",
+                "Les chouettes volent en silence pour surprendre leur repas",
+                "Ils emmagasinent de la lumière pendant le jour pour voir la nuit"
+              ],
+              "correctAnswer": "Les chouettes volent en silence pour surprendre leur repas",
+              "isSpecial": true
+            }
+          ]
         }
       ],
       "difficile": [
@@ -5246,6 +7236,1996 @@ export const UNIVERSES: Record<string, Universe> = {
                 "On ne peut pas conclure sans analyser leurs fossiles via la phylogénie"
               ],
               "correctAnswer": "Ce sont deux espèces distinctes, car leurs hybrides sont stériles selon le critère biologique d'espèce",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "ornithology-gen-l1-difficile",
+          "title": "Leçon",
+          "emoji": "🌟",
+          "themeColor": "amber",
+          "badgeId": "ornithology-badge-l1-difficile",
+          "badgeName": "Explorateur L1",
+          "badgeEmoji": "🌟",
+          "cards": [
+            {
+              "title": "Découverte : Leçon",
+              "text": "Cette leçon traite de Leçon. Lis attentivement pour réussir le quiz !",
+              "emoji": "🌟"
+            },
+            {
+              "title": "Le savais-tu ?",
+              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
+              "emoji": "💡"
+            },
+            {
+              "title": "Qui sont les oiseaux ?",
+              "text": "Un oiseau est un animal qui a des plumes, un bec et deux ailes. La plupart aiment s'envoler très haut dans le ciel bleu !",
+              "emoji": "🕊️"
+            },
+            {
+              "title": "L'anatomie pour le vol",
+              "text": "Pour voler, un oiseau a besoin d'être léger. C'est pourquoi la plupart de ses os sont creux, on les appelle des os pneumatisés.",
+              "emoji": "🦴"
+            },
+            {
+              "title": "Des muscles puissants",
+              "text": "Le bréchet est un os spécial sur le torse de l'oiseau où s'attachent de gros muscles pectoraux, essentiels pour battre des ailes.",
+              "emoji": "💪"
+            },
+            {
+              "title": "Le Nid Douillet",
+              "text": "L'oiseau fabrique une petite maison avec des branches et de l'herbe. C'est son nid ! Il y dépose ses petits œufs fragiles.",
+              "emoji": "🪹"
+            },
+            {
+              "title": "L'Étude des Oiseaux",
+              "text": "L'ornithologie est la science qui étudie les oiseaux. Les personnes qui observent et protègent les oiseaux s'appellent des ornithologues.",
+              "emoji": "🔭"
+            },
+            {
+              "title": "L'aérodynamisme",
+              "text": "La forme du corps des oiseaux est profilée pour fendre l'air, réduisant la résistance et leur permettant de voler très vite.",
+              "emoji": "💨"
+            },
+            {
+              "title": "Le plumage impermable",
+              "text": "Les canards ont une glande spciale qui produit de l'huile. Ils en recouvrent leurs plumes pour flotter sans tre mouills.",
+              "emoji": "🦆"
+            },
+            {
+              "title": "Où dorment les oiseaux ?",
+              "text": "Beaucoup d'oiseaux dorment dans les arbres, bien cachés dans les branches pour être en sécurité.",
+              "emoji": "🌳"
+            },
+            {
+              "title": "L'incroyable réalité : Qui sont les oiseaux ?",
+              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
+              "emoji": "🦅"
+            },
+            {
+              "title": "En savoir plus : Qui sont les oiseaux ?",
+              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
+              "emoji": "🌳"
+            },
+            {
+              "title": "Analyse profonde : Qui sont les oiseaux ?",
+              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
+              "emoji": "🔬"
+            },
+            {
+              "title": "Pour aller plus loin : Qui sont les oiseaux ?",
+              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
+              "emoji": "📡"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Comment appelle-t-on les os creux des oiseaux qui allègent leur squelette pour le vol ?",
+              "options": [
+                "Os pneumatisés",
+                "Os spongieux",
+                "Os cortical",
+                "Os trabéculaire"
+              ],
+              "correctAnswer": "Os pneumatisés",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel os du torse de l'oiseau sert de point d'ancrage aux muscles pectoraux nécessaires au battement des ailes ?",
+              "options": [
+                "Le sternum",
+                "Le bréchet",
+                "La clavicule",
+                "L'omoplate"
+              ],
+              "correctAnswer": "Le bréchet",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle adaptation du corps des oiseaux réduit la résistance de l'air et leur permet d'atteindre des vitesses élevées en vol ?",
+              "options": [
+                "Un plumage imperméable",
+                "Une forme profilée aérodynamique",
+                "Des os pneumatisés",
+                "Un bréchet saillant"
+              ],
+              "correctAnswer": "Une forme profilée aérodynamique",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment les canards maintiennent-ils leurs plumes imperméables pour flotter sans se mouiller ?",
+              "options": [
+                "En séchant leurs plumes au soleil après chaque plongée",
+                "En se frottant contre des roches humides",
+                "En enduisant leurs plumes d'huile produite par une glande spéciale",
+                "En changeant de plumage chaque saison"
+              ],
+              "correctAnswer": "En enduisant leurs plumes d'huile produite par une glande spéciale",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le nom de la science qui étudie les oiseaux ?",
+              "options": [
+                "La zoologie",
+                "L'entomologie",
+                "L'ornithologie",
+                "L'herpétologie"
+              ],
+              "correctAnswer": "L'ornithologie",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi les oiseaux ont-ils des os pneumatisés plutôt que des os denses comme la plupart des mammifères ?",
+              "options": [
+                "Pour mieux résister aux chocs lors de l'atterrissage",
+                "Pour réduire leur masse corporelle et faciliter le vol",
+                "Pour stocker des réserves d'oxygène pendant les longues migrations",
+                "Pour protéger les organes internes contre le froid"
+              ],
+              "correctAnswer": "Pour réduire leur masse corporelle et faciliter le vol",
+              "isSpecial": false
+            },
+            {
+              "question": "Parmi ces caractéristiques, laquelle est commune à TOUS les oiseaux sans exception ?",
+              "options": [
+                "La capacité de voler",
+                "La présence de plumes",
+                "La construction d'un nid",
+                "Un régime alimentaire carnivore"
+              ],
+              "correctAnswer": "La présence de plumes",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi beaucoup d'oiseaux choisissent-ils de dormir dans les branches des arbres plutôt qu'au sol ?",
+              "options": [
+                "Pour profiter de la chaleur dégagée par les feuilles",
+                "Pour être plus proches des insectes dont ils se nourrissent la nuit",
+                "Pour être protégés des prédateurs terrestres",
+                "Pour surveiller leur territoire depuis la hauteur"
+              ],
+              "correctAnswer": "Pour être protégés des prédateurs terrestres",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle technologie moderne les ornithologues utilisent-ils principalement pour suivre les migrations des oiseaux sur de longues distances ?",
+              "options": [
+                "Des caméras infrarouges fixées dans les nids",
+                "Des balises GPS ou des bagues de suivi électronique",
+                "Des drones munis de filets de capture",
+                "Des radars météorologiques classiques"
+              ],
+              "correctAnswer": "Des balises GPS ou des bagues de suivi électronique",
+              "isSpecial": false
+            },
+            {
+              "question": "Le bréchet est particulièrement développé chez les oiseaux volants et presque absent chez les ratites comme l'autruche. Quelle conclusion logique peut-on en tirer ?",
+              "options": [
+                "Les ratites ont des muscles pectoraux plus puissants que les oiseaux volants",
+                "L'absence de bréchet chez les ratites est liée à leur incapacité à voler, car ils n'ont pas besoin d'ancrer de gros muscles pectoraux",
+                "Les ratites utilisent leur bréchet uniquement pour la nage",
+                "Un bréchet réduit est un avantage pour courir plus vite"
+              ],
+              "correctAnswer": "L'absence de bréchet chez les ratites est liée à leur incapacité à voler, car ils n'ont pas besoin d'ancrer de gros muscles pectoraux",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "ornithology-gen-l2-difficile",
+          "title": "Leçon Intermédiaire",
+          "emoji": "🌱",
+          "themeColor": "amber",
+          "badgeId": "ornithology-badge-l2-difficile",
+          "badgeName": "Explorateur L2",
+          "badgeEmoji": "🌱",
+          "cards": [
+            {
+              "title": "Découverte : Leçon Intermédiaire",
+              "text": "Cette leçon traite de Leçon Intermédiaire. Lis attentivement pour réussir le quiz !",
+              "emoji": "🌱"
+            },
+            {
+              "title": "Le savais-tu ?",
+              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
+              "emoji": "💡"
+            },
+            {
+              "title": "Les couleurs des oiseaux",
+              "text": "Les oiseaux peuvent avoir plein de couleurs magnifiques ! Le flamant rose est rose parce qu'il mange beaucoup de petites crevettes.",
+              "emoji": "🦩"
+            },
+            {
+              "title": "Le bec des oiseaux",
+              "text": "Chaque oiseau a un bec différent ! Les becs pointus servent à attraper des insectes, et les becs épais à casser des petites graines.",
+              "emoji": "🦤"
+            },
+            {
+              "title": "Pas de dents !",
+              "text": "Sais-tu que les oiseaux n'ont pas de dents ? Ils avalent leur nourriture toute entière sans la mâcher.",
+              "emoji": "😲"
+            },
+            {
+              "title": "Le secret du plumage",
+              "text": "Les oiseaux passent beaucoup de temps à lisser leurs plumes. Ils utilisent une glande spéciale à la base de leur queue qui produit de l'huile pour les imperméabiliser.",
+              "emoji": "🪶"
+            },
+            {
+              "title": "Les différentes plumes",
+              "text": "Les grandes plumes des ailes sont les rémiges pour le vol, alors que le duvet, très doux, garde l'oiseau bien au chaud.",
+              "emoji": "🧥"
+            },
+            {
+              "title": "Le Bain des Oiseaux",
+              "text": "Les petits oiseaux adorent prendre des bains dans les flaques d'eau. Cela les aide à nettoyer leurs belles plumes pour bien voler !",
+              "emoji": "💦"
+            },
+            {
+              "title": "Les Plumes Imperméables",
+              "text": "Les canards ont des plumes spéciales sur lesquelles l'eau glisse sans jamais les mouiller. C'est très pratique pour nager longtemps !",
+              "emoji": "🦆"
+            },
+            {
+              "title": "Les os pneumatisés",
+              "text": "Pour être plus légers en vol, beaucoup d'oiseaux possèdent des os creux remplis d'air, appelés os pneumatisés.",
+              "emoji": "🦴"
+            },
+            {
+              "title": "Où dorment les oiseaux ?",
+              "text": "Beaucoup d'oiseaux dorment dans les arbres, bien cachés dans les branches pour être en sécurité.",
+              "emoji": "🌳"
+            },
+            {
+              "title": "L'incroyable réalité : Les couleurs des oiseaux",
+              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
+              "emoji": "🦅"
+            },
+            {
+              "title": "En savoir plus : Les couleurs des oiseaux",
+              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
+              "emoji": "🌳"
+            },
+            {
+              "title": "Analyse profonde : Les couleurs des oiseaux",
+              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
+              "emoji": "🔬"
+            },
+            {
+              "title": "Pour aller plus loin : Les couleurs des oiseaux",
+              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
+              "emoji": "📡"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Quelle glande les oiseaux utilisent-ils pour imperméabiliser leurs plumes, et où est-elle située ?",
+              "options": [
+                "La glande salivaire, située sous la langue",
+                "La glande uropygiale, située à la base de la queue",
+                "La glande sébacée, située sous les ailes",
+                "La glande thyroïde, située dans le cou"
+              ],
+              "correctAnswer": "La glande uropygiale, située à la base de la queue",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi le flamant rose possède-t-il une couleur aussi caractéristique ?",
+              "options": [
+                "Il produit naturellement un pigment rose dans ses cellules cutanées",
+                "Ses plumes reflètent la lumière du soleil couchant en milieu humide",
+                "Il absorbe des caroténoïdes présents dans les crustacés et algues qu'il consomme",
+                "Ses parents lui transmettent cette couleur par hérédité génétique directe"
+              ],
+              "correctAnswer": "Il absorbe des caroténoïdes présents dans les crustacés et algues qu'il consomme",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment s'appellent les grandes plumes des ailes qui permettent le vol chez les oiseaux ?",
+              "options": [
+                "Les tectricess",
+                "Les rectrices",
+                "Les rémiges",
+                "Les filoplumes"
+              ],
+              "correctAnswer": "Les rémiges",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi les oiseaux n'ont-ils pas de dents, contrairement à la plupart des vertébrés ?",
+              "options": [
+                "Leurs ancêtres ont perdu les dents au profit d'un bec plus léger, favorisant le vol",
+                "Leurs dents se transforment en bec chaque année lors de la mue",
+                "Les dents seraient trop lourdes pour leur petite taille corporelle",
+                "Les oiseaux appartiennent aux invertébrés et n'ont jamais eu de dents"
+              ],
+              "correctAnswer": "Leurs ancêtres ont perdu les dents au profit d'un bec plus léger, favorisant le vol",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel type de bec est le mieux adapté pour capturer des insectes en vol ?",
+              "options": [
+                "Un bec large et plat comme celui du canard",
+                "Un bec crochu et puissant comme celui de l'aigle",
+                "Un bec fin et pointu comme celui de la mésange ou de l'hirondelle",
+                "Un bec épais et court comme celui du bouvreuil"
+              ],
+              "correctAnswer": "Un bec fin et pointu comme celui de la mésange ou de l'hirondelle",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment appelle-t-on les os creux remplis d'air que possèdent de nombreux oiseaux pour alléger leur squelette ?",
+              "options": [
+                "Os trabéculaires",
+                "Os pneumatisés",
+                "Os spongieux",
+                "Os médullaires"
+              ],
+              "correctAnswer": "Os pneumatisés",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le rôle principal du duvet chez les oiseaux, par rapport aux rémiges ?",
+              "options": [
+                "Faciliter le vol en réduisant la résistance de l'air",
+                "Produire l'huile nécessaire à l'imperméabilisation",
+                "Assurer l'isolation thermique du corps",
+                "Permettre la communication visuelle entre individus"
+              ],
+              "correctAnswer": "Assurer l'isolation thermique du corps",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi les canards peuvent-ils nager longuement sans que leurs plumes ne se gorgent d'eau ?",
+              "options": [
+                "Leurs plumes sont naturellement hydrophobes grâce à leur structure microscopique unique",
+                "Ils enduisent leurs plumes d'une huile produite par leur glande uropygiale qui repousse l'eau",
+                "Ils possèdent une couche de peau imperméable sous les plumes qui bloque l'eau",
+                "Ils battent constamment des ailes pour chasser l'eau avant qu'elle ne pénètre"
+              ],
+              "correctAnswer": "Ils enduisent leurs plumes d'une huile produite par leur glande uropygiale qui repousse l'eau",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi les petits oiseaux prennent-ils des bains dans les flaques d'eau, alors que cela pourrait sembler dangereux ?",
+              "options": [
+                "Pour réguler leur température corporelle en période de chaleur",
+                "Pour nettoyer leurs plumes et maintenir leur capacité de vol",
+                "Pour marquer leur territoire en mouillant les zones proches",
+                "Pour se débarrasser des parasites en noyant les insectes dans l'eau"
+              ],
+              "correctAnswer": "Pour nettoyer leurs plumes et maintenir leur capacité de vol",
+              "isSpecial": false
+            },
+            {
+              "question": "Un oiseau possède des os pneumatisés, une glande uropygiale fonctionnelle et des rémiges bien développées. Lequel de ces facteurs contribue LE PLUS directement a la reduction de la consommation d'energie pendant un long vol migratoire ?",
+              "options": [
+                "La glande uropygiale, car l'imperméabilisation réduit la friction avec l'air",
+                "Les os pneumatisés, car la reduction de masse diminue la force necessaire pour maintenir l'altitude",
+                "Les rémiges, car leur rigidité permet de planer sans battre des ailes sur de longues distances",
+                "Le duvet, car l'isolation thermique évite de dépenser de l'énergie pour se réchauffer en altitude"
+              ],
+              "correctAnswer": "Les rémiges, car leur rigidité permet de planer sans battre des ailes sur de longues distances",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "ornithology-gen-l3-difficile",
+          "title": "Leçon Avancée",
+          "emoji": "💧",
+          "themeColor": "amber",
+          "badgeId": "ornithology-badge-l3-difficile",
+          "badgeName": "Explorateur L3",
+          "badgeEmoji": "💧",
+          "cards": [
+            {
+              "title": "Découverte : Leçon Avancée",
+              "text": "Cette leçon traite de Leçon Avancée. Lis attentivement pour réussir le quiz !",
+              "emoji": "💧"
+            },
+            {
+              "title": "Le savais-tu ?",
+              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
+              "emoji": "💡"
+            },
+            {
+              "title": "Le voyage des oiseaux",
+              "text": "Quand il fait trop froid, certains oiseaux font un très long voyage appelé migration. Ils volent ensemble vers des pays chauds !",
+              "emoji": "🌅"
+            },
+            {
+              "title": "Les nids douillets",
+              "text": "Les oiseaux construisent des nids pour y pondre leurs œufs. Ils utilisent des brindilles, de la boue et même de la mousse !",
+              "emoji": "🪹"
+            },
+            {
+              "title": "Les petits oisillons",
+              "text": "Quand les œufs éclosent, de petits bébés oiseaux sortent. On les appelle des oisillons.",
+              "emoji": "🐣"
+            },
+            {
+              "title": "Les descendants des dinosaures",
+              "text": "Les oiseaux sont les seuls survivants de la grande famille des dinosaures ! Les paléontologues ont trouvé des fossiles de dinosaures avec des plumes.",
+              "emoji": "🦖"
+            },
+            {
+              "title": "L'Archaeopteryx",
+              "text": "L'Archaeopteryx est l'un des plus célèbres fossiles. Il avait des plumes comme un oiseau mais des dents et une longue queue comme un reptile.",
+              "emoji": "🦴"
+            },
+            {
+              "title": "Le Petit Ver de Terre",
+              "text": "Beaucoup d'oiseaux aiment picorer la terre pour trouver des petits vers très bons à manger. C'est leur repas préféré !",
+              "emoji": "🪱"
+            },
+            {
+              "title": "L'Œil du Faucon",
+              "text": "Le faucon possède une vision si perçante qu'il peut repérer une petite proie depuis très haut dans les nuages.",
+              "emoji": "🦅"
+            },
+            {
+              "title": "La migration incroyable",
+              "text": "Certains oiseaux, comme la Sterne arctique, parcourent des dizaines de milliers de kilomètres chaque année pour trouver un climat favorable.",
+              "emoji": "🌍"
+            },
+            {
+              "title": "Où dorment les oiseaux ?",
+              "text": "Beaucoup d'oiseaux dorment dans les arbres, bien cachés dans les branches pour être en sécurité.",
+              "emoji": "🌳"
+            },
+            {
+              "title": "L'incroyable réalité : Le voyage des oiseaux",
+              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
+              "emoji": "🦅"
+            },
+            {
+              "title": "En savoir plus : Le voyage des oiseaux",
+              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
+              "emoji": "🌳"
+            },
+            {
+              "title": "Analyse profonde : Le voyage des oiseaux",
+              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
+              "emoji": "🔬"
+            },
+            {
+              "title": "Pour aller plus loin : Le voyage des oiseaux",
+              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
+              "emoji": "📡"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Quel groupe d'animaux disparus les oiseaux modernes ont-ils comme ancêtres directs ?",
+              "options": [
+                "Les reptiles marins",
+                "Les dinosaures",
+                "Les mammifères primitifs",
+                "Les amphibiens"
+              ],
+              "correctAnswer": "Les dinosaures",
+              "isSpecial": false
+            },
+            {
+              "question": "Qu'est-ce qui rend l'Archaeopteryx si particulier parmi les fossiles connus ?",
+              "options": [
+                "Il possédait des plumes mais aussi des dents et une longue queue osseuse",
+                "Il était entièrement recouvert d'écailles et ne pouvait pas voler",
+                "Il était le plus grand dinosaure à plumes jamais découvert",
+                "Il vivait exclusivement dans les milieux aquatiques"
+              ],
+              "correctAnswer": "Il possédait des plumes mais aussi des dents et une longue queue osseuse",
+              "isSpecial": false
+            },
+            {
+              "question": "La Sterne arctique est célèbre pour sa migration exceptionnelle. Quelle distance parcourt-elle environ chaque année ?",
+              "options": [
+                "Quelques centaines de kilomètres",
+                "Environ 5 000 kilomètres",
+                "Des dizaines de milliers de kilomètres",
+                "Environ 3 000 kilomètres"
+              ],
+              "correctAnswer": "Des dizaines de milliers de kilomètres",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi de nombreux oiseaux dorment-ils dans les branches des arbres plutôt qu'au sol ?",
+              "options": [
+                "Pour profiter de la chaleur dégagée par le feuillage",
+                "Parce qu'ils ne peuvent pas s'asseoir sur une surface plate",
+                "Pour être mieux cachés et protégés des prédateurs",
+                "Pour faciliter leur envol au lever du soleil"
+              ],
+              "correctAnswer": "Pour être mieux cachés et protégés des prédateurs",
+              "isSpecial": false
+            },
+            {
+              "question": "Quels matériaux les oiseaux utilisent-ils pour construire leur nid ?",
+              "options": [
+                "Uniquement des plumes et du duvet",
+                "Des brindilles, de la boue et de la mousse",
+                "Des pierres, de la résine et des feuilles sèches",
+                "De la terre argileuse et des épines"
+              ],
+              "correctAnswer": "Des brindilles, de la boue et de la mousse",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel terme désigne spécifiquement les jeunes oiseaux qui viennent de sortir de l'oeuf ?",
+              "options": [
+                "Des poussins",
+                "Des oisillons",
+                "Des nidicoles",
+                "Des fledglings"
+              ],
+              "correctAnswer": "Des oisillons",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle caractéristique sensorielle du faucon lui permet de chasser avec une efficacité remarquable ?",
+              "options": [
+                "Une ouie capable de détecter les infra-sons",
+                "Une vision perçante lui permettant de repérer une proie depuis très haut",
+                "Un odorat développé pour pister les animaux au sol",
+                "Des vibrisses sensibles aux mouvements de l'air"
+              ],
+              "correctAnswer": "Une vision perçante lui permettant de repérer une proie depuis très haut",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi certains oiseaux entreprennent-ils une migration saisonnière vers des régions plus chaudes ?",
+              "options": [
+                "Pour trouver de nouveaux partenaires d'une espèce différente",
+                "Parce que leurs plumes ne résistent pas à la lumière estivale",
+                "Pour fuir les températures trop froides et trouver un climat favorable",
+                "Pour pondre leurs oeufs dans un sol plus mou"
+              ],
+              "correctAnswer": "Pour fuir les températures trop froides et trouver un climat favorable",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle discipline scientifique utilise des technologies avancées pour étudier et suivre les déplacements migratoires des oiseaux ?",
+              "options": [
+                "La zoologie comportementale",
+                "La paléontologie",
+                "L'ornithologie moderne",
+                "L'éthologie comparative"
+              ],
+              "correctAnswer": "L'ornithologie moderne",
+              "isSpecial": false
+            },
+            {
+              "question": "L'Archaeopteryx est souvent qualifié de \"chaînon manquant\" entre reptiles et oiseaux. Lequel de ces éléments prouve qu'il n'était pas encore un oiseau moderne à part entière ?",
+              "options": [
+                "L'absence totale de plumes sur son corps",
+                "La présence de dents dans sa machoire et d'une longue queue osseuse non pygostyle",
+                "Son incapacité anatomique à battre des ailes",
+                "La forme de ses pattes, identique à celle des crocodiliens actuels"
+              ],
+              "correctAnswer": "La présence de dents dans sa machoire et d'une longue queue osseuse non pygostyle",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "ornithology-gen-l4-difficile",
+          "title": "Leçon Générale",
+          "emoji": "🔥",
+          "themeColor": "amber",
+          "badgeId": "ornithology-badge-l4-difficile",
+          "badgeName": "Explorateur L4",
+          "badgeEmoji": "🔥",
+          "cards": [
+            {
+              "title": "Découverte : Leçon Générale",
+              "text": "Cette leçon traite de Leçon Générale. Lis attentivement pour réussir le quiz !",
+              "emoji": "🔥"
+            },
+            {
+              "title": "Le savais-tu ?",
+              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
+              "emoji": "💡"
+            },
+            {
+              "title": "Généralités sur les becs",
+              "text": "Le bec des oiseaux est magique. Un bec fin aide à attraper des insectes, et un bec court et fort sert à casser des graines.",
+              "emoji": "🦆"
+            },
+            {
+              "title": "Les belles plumes",
+              "text": "Le corps des oiseaux est recouvert de plumes. Elles les protègent du froid et de la pluie.",
+              "emoji": "🪶"
+            },
+            {
+              "title": "De toutes les couleurs",
+              "text": "Certains oiseaux ont des plumes très colorées pour attirer l'attention ou pour se cacher dans la nature.",
+              "emoji": "🌈"
+            },
+            {
+              "title": "L'intelligence des corvidés",
+              "text": "Les corbeaux et les corneilles font partie des corvidés. Ce sont parmi les oiseaux les plus intelligents au monde !",
+              "emoji": "🐦‍⬛"
+            },
+            {
+              "title": "Utiliser des outils",
+              "text": "Certains corbeaux sont capables d'utiliser des brindilles comme outils pour attraper des insectes cachés dans l'écorce des arbres.",
+              "emoji": "🛠️"
+            },
+            {
+              "title": "Cache-cache dans les Arbres",
+              "text": "Les oiseaux se cachent dans les grandes feuilles des arbres pour se protéger de la pluie et des grands animaux.",
+              "emoji": "🌳"
+            },
+            {
+              "title": "Les Migrateurs",
+              "text": "La sterne arctique est une incroyable voyageuse. Elle parcourt des milliers de kilomètres chaque année pour passer de l'Arctique à l'Antarctique !",
+              "emoji": "🌍"
+            },
+            {
+              "title": "Les rapaces nocturnes",
+              "text": "Les chouettes et les hiboux sont des prédateurs redoutables la nuit grâce à leur vision perçante et leur vol totalement silencieux.",
+              "emoji": "🦉"
+            },
+            {
+              "title": "Où dorment les oiseaux ?",
+              "text": "Beaucoup d'oiseaux dorment dans les arbres, bien cachés dans les branches pour être en sécurité.",
+              "emoji": "🌳"
+            },
+            {
+              "title": "L'incroyable réalité : Généralités sur les becs",
+              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
+              "emoji": "🦅"
+            },
+            {
+              "title": "En savoir plus : Généralités sur les becs",
+              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
+              "emoji": "🌳"
+            },
+            {
+              "title": "Analyse profonde : Généralités sur les becs",
+              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
+              "emoji": "🔬"
+            },
+            {
+              "title": "Pour aller plus loin : Généralités sur les becs",
+              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
+              "emoji": "📡"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Un oiseau possède un bec fin et allongé. Quel type de régime alimentaire ce bec suggère-t-il le plus probablement ?",
+              "options": [
+                "Consommation de graines dures et résistantes",
+                "Capture d'insectes dans des fissures ou sous l'écorce",
+                "Déchirement de proies de grande taille",
+                "Filtration de l'eau pour en extraire des algues"
+              ],
+              "correctAnswer": "Capture d'insectes dans des fissures ou sous l'écorce",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi les plumes constituent-elles un avantage décisif pour les oiseaux vivant dans des environnements froids et humides ?",
+              "options": [
+                "Elles alourdissent le corps pour une meilleure stabilité au sol",
+                "Elles isolent du froid et repoussent l'eau grâce à leur structure",
+                "Elles absorbent la chaleur solaire et la restituent la nuit",
+                "Elles permettent une mue permanente sans interruption de vol"
+              ],
+              "correctAnswer": "Elles isolent du froid et repoussent l'eau grâce à leur structure",
+              "isSpecial": false
+            },
+            {
+              "question": "Chez certaines espèces d'oiseaux, le plumage vivement coloré du mâle sert principalement à quoi ?",
+              "options": [
+                "Faciliter la chasse en aveuglant les proies",
+                "Attirer les femelles lors de la parade nuptiale",
+                "Réguler la température corporelle en absorbant plus de lumière",
+                "Avertir les prédateurs de leur toxicité"
+              ],
+              "correctAnswer": "Attirer les femelles lors de la parade nuptiale",
+              "isSpecial": false
+            },
+            {
+              "question": "Les corvidés sont reconnus comme étant parmi les oiseaux les plus intelligents. Quelle famille regroupe les corbeaux et les corneilles ?",
+              "options": [
+                "Les rapaces",
+                "Les passereaux",
+                "Les corvidés",
+                "Les échassiers"
+              ],
+              "correctAnswer": "Les corvidés",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment certains corbeaux obtiennent-ils des insectes dissimulés sous l'écorce des arbres ?",
+              "options": [
+                "En frappant l'écorce avec leur bec de manière répétée jusqu'à la fendre",
+                "En utilisant des brindilles comme outils pour les extraire",
+                "En inondant les galeries avec leur salive pour forcer les insectes à sortir",
+                "En s'associant avec d'autres oiseaux pour encercler l'arbre"
+              ],
+              "correctAnswer": "En utilisant des brindilles comme outils pour les extraire",
+              "isSpecial": false
+            },
+            {
+              "question": "La sterne arctique effectue chaque année une migration exceptionnelle. Quel trajet accomplit-elle ?",
+              "options": [
+                "De l'Europe occidentale vers l'Afrique subsaharienne",
+                "De l'Arctique jusqu'en Antarctique",
+                "De l'Asie centrale vers les côtes méditerranéennes",
+                "De l'Amérique du Nord vers l'Amérique du Sud en longeant les côtes"
+              ],
+              "correctAnswer": "De l'Arctique jusqu'en Antarctique",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle caractéristique du vol des chouettes et des hiboux leur permet de surprendre leurs proies la nuit sans être détectés ?",
+              "options": [
+                "Leur vol est extrêmement rapide, ne laissant pas le temps à la proie de réagir",
+                "Leur vol est totalement silencieux grâce à la structure de leurs plumes",
+                "Leur envergure réduite leur permet de voler au ras du sol",
+                "Ils émettent des ultrasons qui paralysent temporairement les proies"
+              ],
+              "correctAnswer": "Leur vol est totalement silencieux grâce à la structure de leurs plumes",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi de nombreux oiseaux choisissent-ils de dormir dans les branches d'arbres plutôt qu'au sol ?",
+              "options": [
+                "La chaleur dégagée par les feuilles les nuit les maintient au chaud",
+                "Ils sont mieux camouflés et protégés des prédateurs terrestres",
+                "Les vibrations du tronc les alertent en cas d'approche d'un prédateur",
+                "Ils profitent de l'humidité nocturne pour hydrater leurs plumes"
+              ],
+              "correctAnswer": "Ils sont mieux camouflés et protégés des prédateurs terrestres",
+              "isSpecial": false
+            },
+            {
+              "question": "L'ornithologie moderne a recours à des technologies avancées pour étudier les oiseaux. Laquelle de ces méthodes est couramment utilisée pour suivre les migrations ?",
+              "options": [
+                "La dissection des plumes pour analyser leur composition chimique",
+                "Le marquage par bagues et la géolocalisation par balises GPS",
+                "L'élevage en captivité pour observer les comportements migratoires",
+                "L'analyse des chants enregistrés pour déduire les routes empruntées"
+              ],
+              "correctAnswer": "Le marquage par bagues et la géolocalisation par balises GPS",
+              "isSpecial": false
+            },
+            {
+              "question": "Chez les rapaces nocturnes comme le hibou grand-duc, les deux yeux sont orientés vers l'avant du visage. Quel avantage fonctionnel majeur cela procure-t-il par rapport à des yeux situés sur les côtés de la tête ?",
+              "options": [
+                "Un champ de vision panoramique de 360 degres permettant de détecter tout mouvement environnant",
+                "Une vision binoculaire qui améliore la perception de la profondeur et l'estimation précise des distances",
+                "Une capacité à percevoir les infrarouges émis par les proies à sang chaud",
+                "Une meilleure résistance à l'éblouissement causé par la lumière de la lune"
+              ],
+              "correctAnswer": "Une vision binoculaire qui améliore la perception de la profondeur et l'estimation précise des distances",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "ornithology-gen-l5-difficile",
+          "title": "Leçon Découverte",
+          "emoji": "💨",
+          "themeColor": "amber",
+          "badgeId": "ornithology-badge-l5-difficile",
+          "badgeName": "Explorateur L5",
+          "badgeEmoji": "💨",
+          "cards": [
+            {
+              "title": "Découverte : Leçon Découverte",
+              "text": "Cette leçon traite de Leçon Découverte. Lis attentivement pour réussir le quiz !",
+              "emoji": "💨"
+            },
+            {
+              "title": "Le savais-tu ?",
+              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
+              "emoji": "💡"
+            },
+            {
+              "title": "La découverte du chant",
+              "text": "As-tu déjà écouté un oiseau chanter ? Chaque oiseau a sa propre mélodie pour dire 'bonjour' ou pour appeler ses amis !",
+              "emoji": "🎵"
+            },
+            {
+              "title": "Le vol des oiseaux",
+              "text": "Pour voler, les oiseaux battent des ailes. Leurs os sont très légers, ce qui les aide à s'envoler facilement !",
+              "emoji": "🦅"
+            },
+            {
+              "title": "La descente",
+              "text": "Pour atterrir, l'oiseau ouvre grand ses ailes comme un parachute pour ralentir.",
+              "emoji": "🪂"
+            },
+            {
+              "title": "Une vision extraordinaire",
+              "text": "La vue est le sens le plus développé chez l'oiseau. Les rapaces ont une acuité visuelle bien supérieure à celle des humains.",
+              "emoji": "👁️"
+            },
+            {
+              "title": "Voir l'invisible",
+              "text": "De nombreux oiseaux peuvent percevoir la lumière ultraviolette. Cela les aide à repérer des fruits mûrs ou des traces laissées par leurs proies.",
+              "emoji": "✨"
+            },
+            {
+              "title": "L'Œuf Magique",
+              "text": "Tous les oiseaux naissent dans un œuf. Au début, le bébé oiseau casse la coquille avec son petit bec pour sortir.",
+              "emoji": "🥚"
+            },
+            {
+              "title": "La Symphonie des Oiseaux",
+              "text": "Chaque matin au printemps, les oiseaux offrent un magnifique concert appelé le 'chœur de l'aube' pour délimiter leur territoire.",
+              "emoji": "🎶"
+            },
+            {
+              "title": "Le rôle écologique",
+              "text": "Les oiseaux jouent un rôle crucial dans la nature : ils pollinisent les fleurs, dispersent les graines et contrôlent les populations d'insectes.",
+              "emoji": "🌱"
+            },
+            {
+              "title": "Où dorment les oiseaux ?",
+              "text": "Beaucoup d'oiseaux dorment dans les arbres, bien cachés dans les branches pour être en sécurité.",
+              "emoji": "🌳"
+            },
+            {
+              "title": "L'incroyable réalité : La découverte du chant",
+              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
+              "emoji": "🦅"
+            },
+            {
+              "title": "En savoir plus : La découverte du chant",
+              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
+              "emoji": "🌳"
+            },
+            {
+              "title": "Analyse profonde : La découverte du chant",
+              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
+              "emoji": "🔬"
+            },
+            {
+              "title": "Pour aller plus loin : La découverte du chant",
+              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
+              "emoji": "📡"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Pourquoi les os des oiseaux sont-ils adaptés au vol ?",
+              "options": [
+                "Ils sont creux et très légers",
+                "Ils sont remplis de moelle rouge pour produire de l'énergie",
+                "Ils sont plus denses que ceux des mammifères pour assurer la stabilité",
+                "Ils sont recouverts de cartilage pour amortir les chocs"
+              ],
+              "correctAnswer": "Ils sont creux et très légers",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment un oiseau ralentit-il pour atterrir en toute sécurité ?",
+              "options": [
+                "Il replie ses ailes contre son corps pour augmenter la vitesse de descente",
+                "Il ouvre grand ses ailes comme un parachute pour freiner",
+                "Il utilise ses pattes comme gouvernail pour dévier sa trajectoire",
+                "Il bat des ailes vers le haut pour créer une portance négative"
+              ],
+              "correctAnswer": "Il ouvre grand ses ailes comme un parachute pour freiner",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel sens est le plus développé chez la plupart des oiseaux ?",
+              "options": [
+                "L'odorat",
+                "L'ouïe",
+                "La vue",
+                "Le toucher"
+              ],
+              "correctAnswer": "La vue",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle capacité visuelle particulière possèdent de nombreux oiseaux, absente chez l'humain ?",
+              "options": [
+                "Voir dans le noir complet sans aucune source de lumière",
+                "Percevoir la lumière ultraviolette",
+                "Distinguer les objets à plus de 10 kilomètres de distance",
+                "Voir simultanément à 360 degrés sans tourner la tête"
+              ],
+              "correctAnswer": "Percevoir la lumière ultraviolette",
+              "isSpecial": false
+            },
+            {
+              "question": "A quoi sert concrètement la perception de la lumière ultraviolette chez les oiseaux ?",
+              "options": [
+                "A naviguer uniquement la nuit grâce aux étoiles ultraviolettes",
+                "A repérer des fruits mûrs ou des traces laissées par leurs proies",
+                "A communiquer en silence avec d'autres individus de la même espèce",
+                "A mesurer l'intensité du vent avant de prendre leur envol"
+              ],
+              "correctAnswer": "A repérer des fruits mûrs ou des traces laissées par leurs proies",
+              "isSpecial": false
+            },
+            {
+              "question": "Qu'est-ce que le 'choeur de l'aube' produit par les oiseaux chaque matin au printemps ?",
+              "options": [
+                "Un signal d'alarme collectif pour signaler un prédateur proche",
+                "Un concert de chants destiné principalement à délimiter leur territoire",
+                "Une parade nuptiale synchronisée pour attirer les partenaires",
+                "Un rituel de groupe pour guider les jeunes oiseaux vers les sources d'eau"
+              ],
+              "correctAnswer": "Un concert de chants destiné principalement à délimiter leur territoire",
+              "isSpecial": false
+            },
+            {
+              "question": "Lequel de ces rôles écologiques est assuré par les oiseaux dans la nature ?",
+              "options": [
+                "La filtration de l'eau douce dans les zones humides",
+                "La décomposition des roches pour enrichir le sol",
+                "La dispersion des graines de nombreuses plantes",
+                "La production d'oxygène par photosynthèse"
+              ],
+              "correctAnswer": "La dispersion des graines de nombreuses plantes",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment le bébé oiseau sort-il de son oeuf ?",
+              "options": [
+                "La coquille se dissout progressivement grâce à une enzyme produite par le poussin",
+                "Il casse la coquille avec son petit bec",
+                "La femelle déchire délicatement la coquille de l'extérieur avec ses serres",
+                "La chaleur du nid fait craquer la coquille naturellement sans intervention du poussin"
+              ],
+              "correctAnswer": "Il casse la coquille avec son petit bec",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi les rapaces ont-ils une acuité visuelle bien supérieure à celle des humains ?",
+              "options": [
+                "Parce qu'ils ont deux paires d'yeux disposées en cercle autour de la tête",
+                "Parce que leur retine contient une zone centrale très dense en photorécepteurs appelée fovéa, particulièrement développée",
+                "Parce que leurs yeux produisent un liquide spécial amplifiant la lumière ambiante",
+                "Parce qu'ils possèdent une troisième paupière transparente qui agit comme un télescope naturel"
+              ],
+              "correctAnswer": "Parce que leur retine contient une zone centrale très dense en photorécepteurs appelée fovéa, particulièrement développée",
+              "isSpecial": false
+            },
+            {
+              "question": "L'ornithologie moderne utilise des technologies avancées pour étudier les oiseaux. Laquelle de ces méthodes est réellement employée pour suivre la migration des oiseaux sur de longues distances ?",
+              "options": [
+                "Des drones autonomes qui suivent les vols en formation pendant plusieurs mois",
+                "La bague ou la balise GPS fixée sur l'oiseau pour enregistrer ses déplacements en temps réel",
+                "Des satellites à infrarouge capables de détecter la chaleur corporelle des oiseaux en vol",
+                "Des réseaux de microphones sous-marins installés le long des côtes migratoires"
+              ],
+              "correctAnswer": "La bague ou la balise GPS fixée sur l'oiseau pour enregistrer ses déplacements en temps réel",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "ornithology-gen-l6-difficile",
+          "title": "Leçon Nature",
+          "emoji": "⛰️",
+          "themeColor": "amber",
+          "badgeId": "ornithology-badge-l6-difficile",
+          "badgeName": "Explorateur L6",
+          "badgeEmoji": "⛰️",
+          "cards": [
+            {
+              "title": "Découverte : Leçon Nature",
+              "text": "Cette leçon traite de Leçon Nature. Lis attentivement pour réussir le quiz !",
+              "emoji": "⛰️"
+            },
+            {
+              "title": "Le savais-tu ?",
+              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
+              "emoji": "💡"
+            },
+            {
+              "title": "La nature des oiseaux",
+              "text": "Les oiseaux adorent la nature. Ils construisent des nids douillets avec des brindilles et des feuilles pour protéger leurs bébés.",
+              "emoji": "🌳"
+            },
+            {
+              "title": "Le chant merveilleux",
+              "text": "Les oiseaux chantent pour se parler. Chaque espèce a sa propre mélodie !",
+              "emoji": "🎶"
+            },
+            {
+              "title": "Le matin au réveil",
+              "text": "C'est souvent très tôt le matin, à l'aube, qu'on entend le plus d'oiseaux chanter.",
+              "emoji": "🌅"
+            },
+            {
+              "title": "Les records du monde",
+              "text": "Le Colibri d'Elena est le plus petit oiseau du monde, pesant moins de 2 grammes ! À l'inverse, l'autruche est le plus grand et le plus lourd.",
+              "emoji": "🏆"
+            },
+            {
+              "title": "Le vol sur place",
+              "text": "Le colibri est le seul oiseau capable de voler en arrière et de faire du vol stationnaire parfait pour boire le nectar des fleurs.",
+              "emoji": "🌺"
+            },
+            {
+              "title": "Le Grand Vol",
+              "text": "Quand ils sont grands, les oiseaux ouvrent très grand leurs ailes et sautent dans le vide pour apprendre à voler. C'est magique !",
+              "emoji": "🦅"
+            },
+            {
+              "title": "Le nid douillet",
+              "text": "Les oiseaux construisent des nids avec des brindilles, de la boue et même des toiles d'araignée pour garder leurs œufs bien au chaud.",
+              "emoji": "🪹"
+            },
+            {
+              "title": "Le système respiratoire",
+              "text": "Le système respiratoire des oiseaux est unique. Grâce à des sacs aériens, l'air frais circule dans leurs poumons même quand ils expirent !",
+              "emoji": "🫁"
+            },
+            {
+              "title": "Où dorment les oiseaux ?",
+              "text": "Beaucoup d'oiseaux dorment dans les arbres, bien cachés dans les branches pour être en sécurité.",
+              "emoji": "🌳"
+            },
+            {
+              "title": "L'incroyable réalité : La nature des oiseaux",
+              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
+              "emoji": "🦅"
+            },
+            {
+              "title": "En savoir plus : La nature des oiseaux",
+              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
+              "emoji": "🌳"
+            },
+            {
+              "title": "Analyse profonde : La nature des oiseaux",
+              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
+              "emoji": "🔬"
+            },
+            {
+              "title": "Pour aller plus loin : La nature des oiseaux",
+              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
+              "emoji": "📡"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Quel matériau insolite les oiseaux utilisent-ils parfois pour renforcer la cohésion de leur nid, en plus des brindilles et de la boue ?",
+              "options": [
+                "Des plumes d'autres espèces",
+                "Des toiles d'araignee",
+                "De la resine d'arbre",
+                "Des epines de cactus"
+              ],
+              "correctAnswer": "Des toiles d'araignee",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi les oiseaux chantent-ils particulierement a l'aube plutot qu'en pleine journee ?",
+              "options": [
+                "Parce que les insectes font moins de bruit le matin",
+                "Parce que l'air frais amplifie mieux les sons",
+                "Parce que la lumiere du matin stimule leur cerveau a produire des hormones de chant",
+                "Parce qu'ils ont faim et cherchent a attirer des partenaires avant de chasser"
+              ],
+              "correctAnswer": "Parce que la lumiere du matin stimule leur cerveau a produire des hormones de chant",
+              "isSpecial": false
+            },
+            {
+              "question": "Le Colibri d'Elena est le plus petit oiseau du monde. Quelle est approximativement sa masse ?",
+              "options": [
+                "Moins de 2 grammes",
+                "Environ 5 grammes",
+                "Environ 10 grammes",
+                "Moins de 1 gramme"
+              ],
+              "correctAnswer": "Moins de 2 grammes",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle capacite de vol rend le colibri unique parmi tous les oiseaux ?",
+              "options": [
+                "Il peut planer pendant plus d'une heure sans bouger les ailes",
+                "Il peut voler en arriere et faire du vol stationnaire",
+                "Il peut atteindre une vitesse de 200 km/h en pique",
+                "Il peut voler sans s'arreter pendant plusieurs jours"
+              ],
+              "correctAnswer": "Il peut voler en arriere et faire du vol stationnaire",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel avantage le systeme de sacs aeriens des oiseaux leur procure-t-il par rapport aux mammiferes ?",
+              "options": [
+                "Leurs poumons sont plus grands proportionnellement",
+                "L'air frais circule dans leurs poumons meme lors de l'expiration",
+                "Ils peuvent retenir leur souffle plus longtemps sous l'eau",
+                "Leurs globules rouges transportent deux fois plus d'oxygene"
+              ],
+              "correctAnswer": "L'air frais circule dans leurs poumons meme lors de l'expiration",
+              "isSpecial": false
+            },
+            {
+              "question": "L'autruche est le plus grand et le plus lourd des oiseaux. Quelle autre caracteristique la distingue des autres oiseaux ?",
+              "options": [
+                "Elle est incapable de voler",
+                "Elle pond les plus petits oeufs du monde",
+                "Elle peut vivre plus de 100 ans",
+                "Elle n'a pas de plumes sur le ventre"
+              ],
+              "correctAnswer": "Elle est incapable de voler",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi la plupart des oiseaux choisissent-ils de dormir dans les branches d'arbres plutot qu'au sol ?",
+              "options": [
+                "La temperature est plus elevee en hauteur durant la nuit",
+                "Ils se mettent a l'abri des predateurs terrestres",
+                "Les branches emettent des substances qui les aident a dormir",
+                "Ils ont besoin de sentir le vent pour reguier leur temperature"
+              ],
+              "correctAnswer": "Ils se mettent a l'abri des predateurs terrestres",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment appelle-t-on la discipline scientifique qui etudie les oiseaux, leur comportement et leur migration ?",
+              "options": [
+                "La zoologie aviaire",
+                "L'ornithologie",
+                "L'ethologie",
+                "La biologie comportementale"
+              ],
+              "correctAnswer": "L'ornithologie",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi les jeunes oiseaux doivent-ils sauter dans le vide pour apprendre a voler, plutot que de s'entrainer dans le nid ?",
+              "options": [
+                "Le nid est trop petit pour battre des ailes correctement",
+                "Ils ont besoin du flux d'air ascendant pour stabiliser leur vol",
+                "Leurs muscles pectoraux ne se developpent pleinement qu'avec la chute libre",
+                "Le nid est trop fragile pour supporter les battements d'ailes"
+              ],
+              "correctAnswer": "Le nid est trop petit pour battre des ailes correctement",
+              "isSpecial": false
+            },
+            {
+              "question": "L'ornithologie moderne utilise des technologies avancees pour etudier la migration des oiseaux. Laquelle de ces methodes est la plus couramment utilisee pour suivre les trajets migratoires sur de longues distances ?",
+              "options": [
+                "La bague metallique attachee a la patte",
+                "Le ballon-sonde meteorologique fixe sur le dos",
+                "La balise GPS ou geolocalisation par satellite",
+                "L'implant electronique sous-cutane emettant des ultrasons"
+              ],
+              "correctAnswer": "La balise GPS ou geolocalisation par satellite",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "ornithology-gen-l7-difficile",
+          "title": "Leçon Monde",
+          "emoji": "🧭",
+          "themeColor": "amber",
+          "badgeId": "ornithology-badge-l7-difficile",
+          "badgeName": "Explorateur L7",
+          "badgeEmoji": "🧭",
+          "cards": [
+            {
+              "title": "Découverte : Leçon Monde",
+              "text": "Cette leçon traite de Leçon Monde. Lis attentivement pour réussir le quiz !",
+              "emoji": "🧭"
+            },
+            {
+              "title": "Le savais-tu ?",
+              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
+              "emoji": "💡"
+            },
+            {
+              "title": "Les oiseaux du monde",
+              "text": "Il existe des oiseaux partout dans le monde ! Le manchot vit dans le froid, tandis que le toucan préfère la chaleur de la jungle.",
+              "emoji": "🐧"
+            },
+            {
+              "title": "Le grand voyage",
+              "text": "En hiver, quand il fait froid, beaucoup d'oiseaux voyagent vers les pays chauds. C'est la migration !",
+              "emoji": "🌍"
+            },
+            {
+              "title": "Voler en groupe",
+              "text": "Pour moins se fatiguer, ils volent souvent en forme de 'V' avec tous leurs amis.",
+              "emoji": "🪿"
+            },
+            {
+              "title": "La parade nuptiale",
+              "text": "Pour attirer une femelle, le mâle réalise souvent une danse ou exhibe de magnifiques couleurs. C'est la parade nuptiale.",
+              "emoji": "🦚"
+            },
+            {
+              "title": "L'oiseau jardinier",
+              "text": "En Australie, l'oiseau jardinier construit un berceau de branches qu'il décore avec des objets bleus (fleurs, cailloux, bouchons) pour séduire sa partenaire !",
+              "emoji": "💙"
+            },
+            {
+              "title": "L'Oiseau qui Parle",
+              "text": "Certains oiseaux, comme le perroquet, sont très rigolos. Ils peuvent imiter les mots que nous disons et parler avec nous !",
+              "emoji": "🦜"
+            },
+            {
+              "title": "Le chant des oiseaux",
+              "text": "Chaque espèce d'oiseau a son propre chant. Ils chantent pour marquer leur territoire ou pour appeler leurs amis !",
+              "emoji": "🎶"
+            },
+            {
+              "title": "L'intelligence des corvidés",
+              "text": "Les corbeaux et les pies sont extrêmement intelligents. Ils sont capables de fabriquer des outils et de résoudre des énigmes complexes.",
+              "emoji": "🐦‍⬛"
+            },
+            {
+              "title": "Où dorment les oiseaux ?",
+              "text": "Beaucoup d'oiseaux dorment dans les arbres, bien cachés dans les branches pour être en sécurité.",
+              "emoji": "🌳"
+            },
+            {
+              "title": "L'incroyable réalité : Les oiseaux du monde",
+              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
+              "emoji": "🦅"
+            },
+            {
+              "title": "En savoir plus : Les oiseaux du monde",
+              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
+              "emoji": "🌳"
+            },
+            {
+              "title": "Analyse profonde : Les oiseaux du monde",
+              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
+              "emoji": "🔬"
+            },
+            {
+              "title": "Pour aller plus loin : Les oiseaux du monde",
+              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
+              "emoji": "📡"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Quel avantage principal la formation en V procure-t-elle aux oiseaux migrateurs qui volent en groupe ?",
+              "options": [
+                "Elle leur permet de mieux repérer les prédateurs",
+                "Elle réduit la résistance de l'air pour les oiseaux suiveurs",
+                "Elle maintient une température corporelle plus élevée",
+                "Elle synchronise le rythme cardiaque de chaque individu"
+              ],
+              "correctAnswer": "Elle réduit la résistance de l'air pour les oiseaux suiveurs",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi l'oiseau jardinier d'Australie collectionne-t-il principalement des objets de couleur bleue ?",
+              "options": [
+                "Pour effrayer les prédateurs qui craignent cette couleur",
+                "Pour rendre son berceau imperméable à la pluie",
+                "Pour impressionner la femelle lors de la parade nuptiale",
+                "Pour délimiter son territoire face aux mâles rivaux"
+              ],
+              "correctAnswer": "Pour impressionner la femelle lors de la parade nuptiale",
+              "isSpecial": false
+            },
+            {
+              "question": "La migration des oiseaux est principalement déclenchée par quel facteur environnemental ?",
+              "options": [
+                "La baisse des températures hivernales",
+                "La diminution de la durée du jour (photopériode)",
+                "L'épuisement des réserves de nourriture locales",
+                "Les variations de pression atmosphérique"
+              ],
+              "correctAnswer": "La diminution de la durée du jour (photopériode)",
+              "isSpecial": false
+            },
+            {
+              "question": "Les corvidés, comme les corbeaux et les pies, sont réputés pour fabriquer des outils. Quel groupe d'oiseaux tropicaux partage également cette capacité rare ?",
+              "options": [
+                "Les flamants roses",
+                "Les perroquets cacatoès",
+                "Les pics",
+                "Les cigognes blanches"
+              ],
+              "correctAnswer": "Les pics",
+              "isSpecial": false
+            },
+            {
+              "question": "Chez les oiseaux, le chant territorial sert principalement à quoi ?",
+              "options": [
+                "Avertir les membres du groupe d'un danger imminent",
+                "Signaler la présence du mâle et repousser les concurrents",
+                "Guider les femelles vers les sources de nourriture",
+                "Coordonner les mouvements pendant la migration"
+              ],
+              "correctAnswer": "Signaler la présence du mâle et repousser les concurrents",
+              "isSpecial": false
+            },
+            {
+              "question": "Le toucan vit dans les forêts tropicales d'Amérique, tandis que le manchot vit dans les régions froides. Comment nomme-t-on cette adaptation d'un être vivant à son environnement spécifique ?",
+              "options": [
+                "La convergence évolutive",
+                "La niche écologique",
+                "La sélection naturelle",
+                "La spéciation géographique"
+              ],
+              "correctAnswer": "La niche écologique",
+              "isSpecial": false
+            },
+            {
+              "question": "Parmi ces comportements, lequel constitue un exemple de parade nuptiale chez les oiseaux ?",
+              "options": [
+                "Un corbeau qui utilise un bâton pour extraire des larves",
+                "Un perroquet qui imite la voix de son propriétaire",
+                "Un paon qui déploie son plumage coloré devant une femelle",
+                "Une grue qui plonge vers une proie depuis les airs"
+              ],
+              "correctAnswer": "Un paon qui déploie son plumage coloré devant une femelle",
+              "isSpecial": false
+            },
+            {
+              "question": "La discipline scientifique qui étudie les oiseaux s'appelle l'ornithologie. Quel outil technologique moderne est aujourd'hui indispensable pour suivre les routes migratoires sur de longues distances ?",
+              "options": [
+                "Le microscope électronique",
+                "La balise GPS ou la bague électronique",
+                "Le sonar ultrasonique",
+                "La camera thermique infrarouge"
+              ],
+              "correctAnswer": "La balise GPS ou la bague électronique",
+              "isSpecial": false
+            },
+            {
+              "question": "La capacité des perroquets à imiter la parole humaine repose sur quelle caractéristique anatomique particulière ?",
+              "options": [
+                "La présence de cordes vocales semblables à celles des mammifères",
+                "Un syrinx musculaire très développé permettant de moduler les sons",
+                "Une langue charnue et mobile identique à celle de l'être humain",
+                "Un cerveau dont le lobe frontal est proportionnellement plus grand"
+              ],
+              "correctAnswer": "Un syrinx musculaire très développé permettant de moduler les sons",
+              "isSpecial": false
+            },
+            {
+              "question": "Les chercheurs ont démontré que certains corbeaux résolvent des problèmes en plusieurs étapes séquentielles. Cette capacité de planification à court terme est souvent comparée à celle d'un enfant humain de quel âge approximatif ?",
+              "options": [
+                "2 à 3 ans",
+                "4 à 5 ans",
+                "7 à 10 ans",
+                "12 à 14 ans"
+              ],
+              "correctAnswer": "4 à 5 ans",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "ornithology-gen-l8-difficile",
+          "title": "Leçon Science",
+          "emoji": "🛡️",
+          "themeColor": "amber",
+          "badgeId": "ornithology-badge-l8-difficile",
+          "badgeName": "Explorateur L8",
+          "badgeEmoji": "🛡️",
+          "cards": [
+            {
+              "title": "Découverte : Leçon Science",
+              "text": "Cette leçon traite de Leçon Science. Lis attentivement pour réussir le quiz !",
+              "emoji": "🛡️"
+            },
+            {
+              "title": "Le savais-tu ?",
+              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
+              "emoji": "💡"
+            },
+            {
+              "title": "La science des plumes",
+              "text": "Les plumes des oiseaux sont incroyables ! Elles les aident à voler, mais aussi à rester bien au chaud, comme un gros manteau.",
+              "emoji": "🪶"
+            },
+            {
+              "title": "Les oiseaux nageurs",
+              "text": "Les canards et les cygnes adorent l'eau. Leurs plumes ne se mouillent pas grâce à une huile spéciale.",
+              "emoji": "🦆"
+            },
+            {
+              "title": "Des pattes comme des rames",
+              "text": "Ils ont des pattes palmées qui les aident à nager très vite, comme des palmes de plongée.",
+              "emoji": "🌊"
+            },
+            {
+              "title": "Les menaces sur la nature",
+              "text": "De nombreuses espèces d'oiseaux sont en danger. La destruction de leurs habitats, comme la déforestation, est la plus grande menace pour eux.",
+              "emoji": "⚠️"
+            },
+            {
+              "title": "Comment les protéger",
+              "text": "Installer des nichoirs, réduire l'utilisation de pesticides et protéger les forêts aide les oiseaux à survivre et à se reproduire.",
+              "emoji": "🌳"
+            },
+            {
+              "title": "Les Graines Délicieuses",
+              "text": "En hiver, on peut donner des petites graines aux oiseaux pour les aider à avoir le ventre bien rempli.",
+              "emoji": "🌻"
+            },
+            {
+              "title": "Les plumes colorées",
+              "text": "Les plumes des oiseaux ne servent pas seulement à voler, elles les aident aussi à se cacher ou à attirer l'attention !",
+              "emoji": "🦚"
+            },
+            {
+              "title": "Les plumes de contour",
+              "text": "Les plumes de contour donnent à l'oiseau sa forme lisse, tandis que le duvet, situé en dessous, le protège du froid.",
+              "emoji": "🪶"
+            },
+            {
+              "title": "Découverte magique : La science des plumes",
+              "text": "Regarde bien les petits oiseaux ! Sais-tu qu'ils aiment beaucoup explorer et jouer dans la nature ? C'est fascinant de voir comment ils vivent.",
+              "emoji": "✨"
+            },
+            {
+              "title": "Le secret de : La science des plumes",
+              "text": "Chut, c'est un secret ! Les oiseaux ont des pouvoirs cachés dans leurs plumes et leur façon de chanter.",
+              "emoji": "🤫"
+            },
+            {
+              "title": "L'incroyable réalité : La science des plumes",
+              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
+              "emoji": "🦅"
+            },
+            {
+              "title": "En savoir plus : La science des plumes",
+              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
+              "emoji": "🌳"
+            },
+            {
+              "title": "Analyse profonde : La science des plumes",
+              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
+              "emoji": "🔬"
+            },
+            {
+              "title": "Pour aller plus loin : La science des plumes",
+              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
+              "emoji": "📡"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Quel type de plumes assure le maintien de la forme aérodynamique d'un oiseau en recouvrant sa surface extérieure ?",
+              "options": [
+                "Les plumes de duvet",
+                "Les plumes de contour",
+                "Les plumes tertiaires",
+                "Les plumes filoplumes"
+              ],
+              "correctAnswer": "Les plumes de contour",
+              "isSpecial": false
+            },
+            {
+              "question": "Grâce à quelle substance les canards et les cygnes empêchent-ils leurs plumes de se mouiller ?",
+              "options": [
+                "Une cire sécrétée par les écailles",
+                "Une huile produite par leur glande uropygiale",
+                "Un mucus issu de leur bec",
+                "Une résine absorbée via leur nourriture"
+              ],
+              "correctAnswer": "Une huile produite par leur glande uropygiale",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment appelle-t-on la morphologie des pattes des canards qui leur permet de nager efficacement ?",
+              "options": [
+                "Des pattes zygodactyles",
+                "Des pattes anisodactyles",
+                "Des pattes palmées",
+                "Des pattes totipalmes"
+              ],
+              "correctAnswer": "Des pattes palmées",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est la principale menace identifiée pour les espèces d'oiseaux en danger selon les données ornithologiques actuelles ?",
+              "options": [
+                "La prédation par les chats domestiques",
+                "La destruction et la fragmentation de leurs habitats naturels",
+                "Les collisions avec les vitres de bâtiments",
+                "La pollution lumineuse nocturne"
+              ],
+              "correctAnswer": "La destruction et la fragmentation de leurs habitats naturels",
+              "isSpecial": false
+            },
+            {
+              "question": "Parmi ces actions, laquelle contribue directement à soutenir la reproduction des oiseaux sauvages en milieu urbain ?",
+              "options": [
+                "Distribuer du pain rassis près des plans d'eau",
+                "Installer des nichoirs adaptés à chaque espèce",
+                "Planter des espèces végétales exotiques ornementales",
+                "Augmenter l'éclairage public dans les parcs"
+              ],
+              "correctAnswer": "Installer des nichoirs adaptés à chaque espèce",
+              "isSpecial": false
+            },
+            {
+              "question": "Le duvet des oiseaux remplit principalement quelle fonction physiologique ?",
+              "options": [
+                "Faciliter le vol en réduisant la masse corporelle",
+                "Permettre la communication visuelle avec les congénères",
+                "Assurer l'isolation thermique contre le froid",
+                "Imperméabiliser le plumage lors de la baignade"
+              ],
+              "correctAnswer": "Assurer l'isolation thermique contre le froid",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi la réduction des pesticides dans l'agriculture est-elle bénéfique pour les populations d'oiseaux ?",
+              "options": [
+                "Elle augmente la quantité de graines disponibles en hiver",
+                "Elle limite l'empoisonnement des insectes dont de nombreux oiseaux se nourrissent",
+                "Elle favorise la croissance des arbres utilisés pour nicher",
+                "Elle réduit la turbulence de l'air près des champs cultivés"
+              ],
+              "correctAnswer": "Elle limite l'empoisonnement des insectes dont de nombreux oiseaux se nourrissent",
+              "isSpecial": false
+            },
+            {
+              "question": "Les couleurs vives des plumes de certains oiseaux mâles remplissent avant tout quelle fonction dans leur comportement ?",
+              "options": [
+                "Améliorer leur camouflage en milieu forestier dense",
+                "Attirer les partenaires lors de la période de reproduction",
+                "Réguler leur température corporelle au soleil",
+                "Signaler leur toxicité aux prédateurs potentiels"
+              ],
+              "correctAnswer": "Attirer les partenaires lors de la période de reproduction",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle technologie l'ornithologie moderne utilise-t-elle pour suivre les déplacements migratoires des oiseaux sur de longues distances ?",
+              "options": [
+                "L'analyse acoustique des chants enregistrés en forêt",
+                "Le comptage visuel depuis des postes d'observation fixes",
+                "La télémétrie par balises GPS ou satellites",
+                "L'étude des anneaux de croissance osseux"
+              ],
+              "correctAnswer": "La télémétrie par balises GPS ou satellites",
+              "isSpecial": false
+            },
+            {
+              "question": "Un ornithologue observe que chez une espèce aquatique, le plumage ne repousse plus l'eau correctement après un déversement de pétrole. Quel mécanisme biologique est principalement perturbé, et quelle conséquence directe cela entraîne-t-il pour l'oiseau ?",
+              "options": [
+                "La structure des barbules est détruite, empêchant la plume de former une surface cohérente et provoquant une hypothermie",
+                "La glande uropygiale est obstruée, supprimant l'imperméabilisation et entraînant une surcharge pondérale par absorption d'eau",
+                "Les cellules mélanocytes sont endommagées, rendant le plumage moins coloré et l'oiseau plus vulnérable aux prédateurs",
+                "Les pattes palmées perdent leur élasticité, réduisant la capacité de nage et causant un déficit alimentaire"
+              ],
+              "correctAnswer": "La glande uropygiale est obstruée, supprimant l'imperméabilisation et entraînant une surcharge pondérale par absorption d'eau",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "ornithology-gen-l9-difficile",
+          "title": "Leçon Espace",
+          "emoji": "🔮",
+          "themeColor": "amber",
+          "badgeId": "ornithology-badge-l9-difficile",
+          "badgeName": "Explorateur L9",
+          "badgeEmoji": "🔮",
+          "cards": [
+            {
+              "title": "Découverte : Leçon Espace",
+              "text": "Cette leçon traite de Leçon Espace. Lis attentivement pour réussir le quiz !",
+              "emoji": "🔮"
+            },
+            {
+              "title": "Le savais-tu ?",
+              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
+              "emoji": "💡"
+            },
+            {
+              "title": "Dans l'espace du ciel",
+              "text": "Les oiseaux sont les rois du ciel ! Certains, comme l'aigle, peuvent voler très haut pour observer tout ce qui se passe en bas.",
+              "emoji": "🦅"
+            },
+            {
+              "title": "Les grands rapaces",
+              "text": "Les aigles et les faucons sont des rapaces. Ils volent très haut pour chercher leur nourriture.",
+              "emoji": "🦅"
+            },
+            {
+              "title": "Des yeux de lynx",
+              "text": "Les rapaces ont une vue incroyable. Ils peuvent voir une petite souris depuis le ciel !",
+              "emoji": "👀"
+            },
+            {
+              "title": "Un outil sur mesure",
+              "text": "Le bec de l'oiseau est adapté à son régime alimentaire. Le pivert a un bec puissant comme un burin pour creuser le bois.",
+              "emoji": "🪵"
+            },
+            {
+              "title": "Filtrer l'eau",
+              "text": "Le flamant rose possède un bec courbé qui fonctionne comme une passoire. Il filtre l'eau pour retenir les petites crevettes dont il se nourrit.",
+              "emoji": "🦩"
+            },
+            {
+              "title": "Le Pic-vert",
+              "text": "Le pic-vert tape très fort son bec contre le tronc des arbres pour trouver des insectes. Toc toc toc !",
+              "emoji": "🪵"
+            },
+            {
+              "title": "Les becs utiles",
+              "text": "La forme du bec d'un oiseau dépend de ce qu'il mange. Un bec crochu est parfait pour la viande, et un bec fin pour les insectes.",
+              "emoji": "🦅"
+            },
+            {
+              "title": "La parade nuptiale",
+              "text": "Pour séduire une partenaire, beaucoup de mâles effectuent des danses incroyables ou construisent des structures complexes pour impressionner.",
+              "emoji": "💃"
+            },
+            {
+              "title": "Découverte magique : Dans l'espace du ciel",
+              "text": "Regarde bien les petits oiseaux ! Sais-tu qu'ils aiment beaucoup explorer et jouer dans la nature ? C'est fascinant de voir comment ils vivent.",
+              "emoji": "✨"
+            },
+            {
+              "title": "Le secret de : Dans l'espace du ciel",
+              "text": "Chut, c'est un secret ! Les oiseaux ont des pouvoirs cachés dans leurs plumes et leur façon de chanter.",
+              "emoji": "🤫"
+            },
+            {
+              "title": "L'incroyable réalité : Dans l'espace du ciel",
+              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
+              "emoji": "🦅"
+            },
+            {
+              "title": "En savoir plus : Dans l'espace du ciel",
+              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
+              "emoji": "🌳"
+            },
+            {
+              "title": "Analyse profonde : Dans l'espace du ciel",
+              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
+              "emoji": "🔬"
+            },
+            {
+              "title": "Pour aller plus loin : Dans l'espace du ciel",
+              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
+              "emoji": "📡"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Quel terme scientifique désigne le groupe auquel appartiennent les aigles et les faucons, caractérisés par un bec crochu et de puissantes serres ?",
+              "options": [
+                "Les passereaux",
+                "Les rapaces",
+                "Les échassiers",
+                "Les palmipèdes"
+              ],
+              "correctAnswer": "Les rapaces",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi le flamant rose possède-t-il un bec courbé et lamellé plutôt qu'un bec droit et pointu ?",
+              "options": [
+                "Pour attraper des poissons rapides dans les rivières",
+                "Pour filtrer l'eau et retenir les petites crevettes dont il se nourrit",
+                "Pour creuser le sol à la recherche de larves",
+                "Pour déchiqueter la viande de ses proies"
+              ],
+              "correctAnswer": "Pour filtrer l'eau et retenir les petites crevettes dont il se nourrit",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel type de bec est le mieux adapté à un régime insectivore, où l'oiseau doit extraire des larves dans des fissures étroites ?",
+              "options": [
+                "Un bec court et épais",
+                "Un bec crochu et recourbé",
+                "Un bec fin et allongé",
+                "Un bec large et plat"
+              ],
+              "correctAnswer": "Un bec fin et allongé",
+              "isSpecial": false
+            },
+            {
+              "question": "Le bec du pivert est comparé à un burin. Quelle propriété mécanique de cet outil correspond à la fonction du bec du pivert ?",
+              "options": [
+                "Sa capacité à filtrer des matières",
+                "Sa rigidité qui permet de fragmenter des matériaux durs",
+                "Sa forme courbée pour attraper les proies",
+                "Sa longueur pour atteindre les insectes à distance"
+              ],
+              "correctAnswer": "Sa rigidité qui permet de fragmenter des matériaux durs",
+              "isSpecial": false
+            },
+            {
+              "question": "Les rapaces repèrent leurs proies depuis de grandes altitudes. Quelle adaptation visuelle leur permet de distinguer un petit rongeur au sol à plusieurs centaines de mètres ?",
+              "options": [
+                "Un champ visuel réduit mais très précis en avant",
+                "Une densité de photorécepteurs dans la fovéa bien supérieure à celle des mammifères",
+                "Des yeux mobiles dans l'orbite comme chez les humains",
+                "Une vision nocturne exclusivement grâce aux bâtonnets"
+              ],
+              "correctAnswer": "Une densité de photorécepteurs dans la fovéa bien supérieure à celle des mammifères",
+              "isSpecial": false
+            },
+            {
+              "question": "Lors de la parade nuptiale, certains mâles construisent des structures complexes pour séduire la femelle. Quel oiseau australien est particulièrement célèbre pour construire des berceaux décorés d'objets colorés ?",
+              "options": [
+                "Le paon indien",
+                "L'oiseau-lyre",
+                "L'oiseau à berceaux (bowerbird)",
+                "Le paradisier royal"
+              ],
+              "correctAnswer": "L'oiseau à berceaux (bowerbird)",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi l'ornithologie moderne a-t-elle recours à des technologies de suivi satellitaire pour étudier la migration des oiseaux ?",
+              "options": [
+                "Parce que les oiseaux migrateurs volent trop haut pour être observés à l'oeil nu",
+                "Parce que les routes migratoires couvrent des milliers de kilomètres impossibles à surveiller par observation directe",
+                "Parce que les oiseaux migrent uniquement la nuit et sont invisibles",
+                "Parce que les radars météorologiques brouillent les observations au sol"
+              ],
+              "correctAnswer": "Parce que les routes migratoires couvrent des milliers de kilomètres impossibles à surveiller par observation directe",
+              "isSpecial": false
+            },
+            {
+              "question": "Un bec crochu est parfait pour déchirer la viande. Quel autre rôle joue ce type de bec chez les rapaces lors de la capture d'une proie vivante ?",
+              "options": [
+                "Il sert à creuser des terriers pour stocker la nourriture",
+                "Il permet de maintenir fermement la proie tout en la tuant",
+                "Il filtre l'eau pour repérer les petits poissons",
+                "Il amplifie les cris pour communiquer avec la meute"
+              ],
+              "correctAnswer": "Il permet de maintenir fermement la proie tout en la tuant",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel principe évolutif explique que des espèces d'oiseaux vivant dans des environnements très différents aient développé des morphologies de bec radicalement distinctes ?",
+              "options": [
+                "La dérive génétique aléatoire sans lien avec l'environnement",
+                "La sélection naturelle favorisant les individus dont le bec est le mieux adapté à la ressource alimentaire disponible",
+                "L'hérédité exclusive des caractères acquis par apprentissage",
+                "La fixation de mutations neutres par effet fondateur"
+              ],
+              "correctAnswer": "La sélection naturelle favorisant les individus dont le bec est le mieux adapté à la ressource alimentaire disponible",
+              "isSpecial": false
+            },
+            {
+              "question": "Le pic-vert frappe le bois jusqu'à 20 fois par seconde sans se blesser. Quelle combinaison d'adaptations anatomiques lui permet d'absorber ces chocs répétés sans traumatisme crânien ?",
+              "options": [
+                "Un crâne épaissi uniformément et un bec entièrement calcifié",
+                "Un cerveau positionné asymétriquement, un os hyoïde amortisseur enroulant le crâne et une langue longue servant d'amortisseur",
+                "Des vertèbres cervicales fusionnées et une membrane nictitante protégeant les yeux",
+                "Des plumes crâniennes kératinisées et des sinus frontaux remplis d'air comprimé"
+              ],
+              "correctAnswer": "Un cerveau positionné asymétriquement, un os hyoïde amortisseur enroulant le crâne et une langue longue servant d'amortisseur",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "ornithology-gen-l10-difficile",
+          "title": "Leçon Défi",
+          "emoji": "🏆",
+          "themeColor": "amber",
+          "badgeId": "ornithology-badge-l10-difficile",
+          "badgeName": "Explorateur L10",
+          "badgeEmoji": "🏆",
+          "cards": [
+            {
+              "title": "Découverte : Leçon Défi",
+              "text": "Cette leçon traite de Leçon Défi. Lis attentivement pour réussir le quiz !",
+              "emoji": "🏆"
+            },
+            {
+              "title": "Le savais-tu ?",
+              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
+              "emoji": "💡"
+            },
+            {
+              "title": "Le défi du vol",
+              "text": "Apprendre à voler est un grand défi pour les bébés oiseaux. Au début, ils sautent de branche en branche avant de prendre leur envol.",
+              "emoji": "🐥"
+            },
+            {
+              "title": "Les oiseaux de la nuit",
+              "text": "La chouette et le hibou dorment le jour et se réveillent la nuit. On dit qu'ils sont nocturnes.",
+              "emoji": "🦉"
+            },
+            {
+              "title": "Un vol silencieux",
+              "text": "Les chouettes volent sans faire aucun bruit pour surprendre leur repas !",
+              "emoji": "🤫"
+            },
+            {
+              "title": "L'orientation magnétique",
+              "text": "Les oiseaux migrateurs accomplissent des voyages de milliers de kilomètres. Pour ne pas se perdre, ils utilisent le champ magnétique de la Terre !",
+              "emoji": "🧲"
+            },
+            {
+              "title": "Une boussole interne",
+              "text": "Grâce à des capteurs spéciaux, c'est comme s'ils avaient une boussole dans la tête qui leur indique toujours où se trouve le Nord ou le Sud.",
+              "emoji": "🧭"
+            },
+            {
+              "title": "Dormir sur une Patte",
+              "text": "Savais-tu que certains oiseaux aiment dormir en se tenant debout sur une seule de leurs pattes ? C'est très amusant à voir !",
+              "emoji": "🦩"
+            },
+            {
+              "title": "Les petits poussins",
+              "text": "Quand ils sortent de l'œuf, les oisillons ont très faim. Leurs parents font de nombreux allers-retours pour les nourrir.",
+              "emoji": "🐣"
+            },
+            {
+              "title": "Les oiseaux marins",
+              "text": "Certains oiseaux, comme les albatros, passent la majorité de leur vie en mer et peuvent boire de l'eau salée grâce à une glande spéciale.",
+              "emoji": "🌊"
+            },
+            {
+              "title": "Découverte magique : Le défi du vol",
+              "text": "Regarde bien les petits oiseaux ! Sais-tu qu'ils aiment beaucoup explorer et jouer dans la nature ? C'est fascinant de voir comment ils vivent.",
+              "emoji": "✨"
+            },
+            {
+              "title": "Le secret de : Le défi du vol",
+              "text": "Chut, c'est un secret ! Les oiseaux ont des pouvoirs cachés dans leurs plumes et leur façon de chanter.",
+              "emoji": "🤫"
+            },
+            {
+              "title": "L'incroyable réalité : Le défi du vol",
+              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
+              "emoji": "🦅"
+            },
+            {
+              "title": "En savoir plus : Le défi du vol",
+              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
+              "emoji": "🌳"
+            },
+            {
+              "title": "Analyse profonde : Le défi du vol",
+              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
+              "emoji": "🔬"
+            },
+            {
+              "title": "Pour aller plus loin : Le défi du vol",
+              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
+              "emoji": "📡"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Quel terme scientifique désigne les animaux qui sont actifs la nuit et dorment le jour, comme la chouette et le hibou ?",
+              "options": [
+                "Diurnes",
+                "Nocturnes",
+                "Crépusculaires",
+                "Sédentaires"
+              ],
+              "correctAnswer": "Nocturnes",
+              "isSpecial": false
+            },
+            {
+              "question": "Grâce à quel mécanisme les oiseaux migrateurs parviennent-ils à s'orienter sur de très longues distances sans se perdre ?",
+              "options": [
+                "La mémorisation des étoiles uniquement",
+                "La détection du champ magnétique terrestre",
+                "La reconnaissance des odeurs portées par le vent",
+                "L'observation des courants marins"
+              ],
+              "correctAnswer": "La détection du champ magnétique terrestre",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi les chouettes volent-elles sans produire de bruit perceptible ?",
+              "options": [
+                "Parce qu'elles volent très lentement",
+                "Parce que leurs plumes sont structurées pour absorber les turbulences sonores",
+                "Parce qu'elles n'ont pas de plumes sur les ailes",
+                "Parce qu'elles évitent de battre des ailes en vol"
+              ],
+              "correctAnswer": "Parce que leurs plumes sont structurées pour absorber les turbulences sonores",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel organe permet à certains oiseaux marins, comme les albatros, de boire de l'eau salée sans en subir les effets toxiques ?",
+              "options": [
+                "Un foie surdimensionné",
+                "Une glande spéciale qui filtre le sel",
+                "Un estomac à deux chambres",
+                "Des reins capables d'éliminer tout le sel directement"
+              ],
+              "correctAnswer": "Une glande spéciale qui filtre le sel",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment appelle-t-on le jeune oiseau qui vient de sortir de l'oeuf et est encore nourri par ses parents ?",
+              "options": [
+                "Un poussin sauvage",
+                "Un oisillon",
+                "Un envol",
+                "Un nichon"
+              ],
+              "correctAnswer": "Un oisillon",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle étape précède généralement le véritable vol chez les jeunes oiseaux en train d'apprendre ?",
+              "options": [
+                "Ils plongent depuis le sommet d'un arbre",
+                "Ils sautent de branche en branche",
+                "Ils rampent au sol pour prendre de la vitesse",
+                "Ils imitent immédiatement les adultes en migration"
+              ],
+              "correctAnswer": "Ils sautent de branche en branche",
+              "isSpecial": false
+            },
+            {
+              "question": "L'albatros est connu pour passer la majorité de sa vie en mer. Lequel de ces comportements lui est caractéristique ?",
+              "options": [
+                "Il construit son nid sur les récifs coralliens sous-marins",
+                "Il peut rester en vol planant des semaines sans se poser à terre",
+                "Il chasse exclusivement la nuit comme les chouettes",
+                "Il utilise le champ magnétique pour localiser les bancs de poissons"
+              ],
+              "correctAnswer": "Il peut rester en vol planant des semaines sans se poser à terre",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi certains oiseaux dorment-ils sur une seule patte ?",
+              "options": [
+                "Pour économiser de la chaleur corporelle en limitant les pertes thermiques",
+                "Parce que leur autre patte est trop lourde à soutenir",
+                "Pour se préparer à s'envoler plus rapidement",
+                "Par imitation d'un comportement appris des parents"
+              ],
+              "correctAnswer": "Pour économiser de la chaleur corporelle en limitant les pertes thermiques",
+              "isSpecial": false
+            },
+            {
+              "question": "L'ornithologie moderne fait appel à des technologies avancées pour étudier les oiseaux. Laquelle de ces méthodes est effectivement utilisée pour suivre leurs migrations ?",
+              "options": [
+                "La pose de balises GPS légères sur les oiseaux",
+                "L'implantation de puces électroniques dans les plumes",
+                "L'analyse de leur chant pour détecter leur position",
+                "L'utilisation de drones qui suivent les vols en continu"
+              ],
+              "correctAnswer": "La pose de balises GPS légères sur les oiseaux",
+              "isSpecial": false
+            },
+            {
+              "question": "Chez les oiseaux migrateurs, les cristaux de magnétite présents dans certaines cellules jouent un rôle dans la navigation. Quelle propriété physique de la Terre détectent-ils précisément ?",
+              "options": [
+                "La gravité terrestre selon la latitude",
+                "Les variations de pression atmosphérique liées à l'altitude",
+                "Les lignes du champ magnétique terrestre indiquant le Nord et le Sud",
+                "La rotation de la Terre perceptible par l'oreille interne"
+              ],
+              "correctAnswer": "Les lignes du champ magnétique terrestre indiquant le Nord et le Sud",
               "isSpecial": true
             }
           ]
@@ -46390,2000 +50370,154 @@ export const UNIVERSES: Record<string, Universe> = {
       ]
     }
   },
-  "ornithology": {
-    "id": "ornithology",
-    "name": "Ornithologie",
-    "emoji": "🦅",
-    "description": "Observe le vol des rapaces, écoute les chants et perce les secrets des oiseaux !",
+  "mythology": {
+    "id": "mythology",
+    "name": "Mythologie & Légendes",
+    "emoji": "🔮",
+    "description": "Dieux, héros et créatures fantastiques : perce les mystères des grandes légendes du monde !",
     "themeColor": "violet",
+    "secret": true,
     "lessons": {
       "facile": [
         {
-          "id": "ornithology-gen-l1",
-          "title": "Leçon",
-          "emoji": "🌟",
-          "themeColor": "amber",
-          "badgeId": "ornithology-badge-l1",
-          "badgeName": "Explorateur L1",
-          "badgeEmoji": "🌟",
+          "id": "myth-olympus",
+          "title": "Les dieux de l'Olympe",
+          "emoji": "⚡",
+          "themeColor": "violet",
+          "badgeId": "myth-olympian",
+          "badgeName": "Ami des Dieux",
+          "badgeEmoji": "⚡",
           "cards": [
             {
-              "title": "Découverte : Leçon",
-              "text": "Cette leçon traite de Leçon. Lis attentivement pour réussir le quiz !",
-              "emoji": "🌟"
+              "title": "Zeus, roi des dieux",
+              "text": "Zeus est le roi des dieux grecs. Il règne sur le ciel depuis le mont Olympe et lance la foudre quand il est en colère.",
+              "emoji": "⚡"
             },
             {
-              "title": "Le savais-tu ?",
-              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
-              "emoji": "💡"
+              "title": "Poséidon, dieu de la mer",
+              "text": "Poséidon est le dieu de la mer et des océans. Il tient un trident à trois pointes et provoque les tempêtes.",
+              "emoji": "🔱"
             },
             {
-              "title": "Qui sont les oiseaux ?",
-              "text": "Un oiseau est un animal qui a des plumes, un bec et deux ailes. La plupart aiment s'envoler très haut dans le ciel bleu !",
-              "emoji": "🕊️"
+              "title": "Athéna, la sagesse",
+              "text": "Athéna est la déesse de la sagesse et de la stratégie. Son animal préféré est la chouette, symbole d'intelligence.",
+              "emoji": "🦉"
             },
             {
-              "title": "L'anatomie pour le vol",
-              "text": "Pour voler, un oiseau a besoin d'être léger. C'est pourquoi la plupart de ses os sont creux, on les appelle des os pneumatisés.",
-              "emoji": "🦴"
-            },
-            {
-              "title": "Des muscles puissants",
-              "text": "Le bréchet est un os spécial sur le torse de l'oiseau où s'attachent de gros muscles pectoraux, essentiels pour battre des ailes.",
-              "emoji": "💪"
-            },
-            {
-              "title": "Le Nid Douillet",
-              "text": "L'oiseau fabrique une petite maison avec des branches et de l'herbe. C'est son nid ! Il y dépose ses petits œufs fragiles.",
-              "emoji": "🪹"
-            },
-            {
-              "title": "L'Étude des Oiseaux",
-              "text": "L'ornithologie est la science qui étudie les oiseaux. Les personnes qui observent et protègent les oiseaux s'appellent des ornithologues.",
-              "emoji": "🔭"
-            },
-            {
-              "title": "L'aérodynamisme",
-              "text": "La forme du corps des oiseaux est profilée pour fendre l'air, réduisant la résistance et leur permettant de voler très vite.",
-              "emoji": "💨"
-            },
-            {
-              "title": "Le plumage impermable",
-              "text": "Les canards ont une glande spciale qui produit de l'huile. Ils en recouvrent leurs plumes pour flotter sans tre mouills.",
-              "emoji": "🦆"
-            },
-            {
-              "title": "Où dorment les oiseaux ?",
-              "text": "Beaucoup d'oiseaux dorment dans les arbres, bien cachés dans les branches pour être en sécurité.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "L'incroyable réalité : Qui sont les oiseaux ?",
-              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "En savoir plus : Qui sont les oiseaux ?",
-              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "Analyse profonde : Qui sont les oiseaux ?",
-              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
-              "emoji": "🔬"
-            },
-            {
-              "title": "Pour aller plus loin : Qui sont les oiseaux ?",
-              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
-              "emoji": "📡"
-            }
-          ],
-          "quiz": [
-            {
-              "question": "Quelles sont les trois caractéristiques qui définissent un oiseau ?",
-              "options": [
-                "Des plumes, un bec et deux ailes",
-                "Des écailles, un bec et quatre pattes",
-                "Des plumes, des dents et deux ailes",
-                "Une queue, des griffes et un bec"
-              ],
-              "correctAnswer": "Des plumes, un bec et deux ailes",
-              "isSpecial": false
-            },
-            {
-              "question": "Comment appelle-t-on les os creux des oiseaux qui les aident à voler ?",
-              "options": [
-                "Os pectoraux",
-                "Os pneumatisés",
-                "Os aériens",
-                "Os cartilagineux"
-              ],
-              "correctAnswer": "Os pneumatisés",
-              "isSpecial": false
-            },
-            {
-              "question": "Quel os du torse de l'oiseau permet l'attachement des muscles nécessaires pour battre des ailes ?",
-              "options": [
-                "Le sternum plat",
-                "La clavicule",
-                "Le bréchet",
-                "L'omoplate"
-              ],
-              "correctAnswer": "Le bréchet",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi les os des oiseaux sont-ils creux plutôt que pleins ?",
-              "options": [
-                "Pour stocker de l'air lors des plongées sous-marines",
-                "Pour être plus légers et faciliter le vol",
-                "Pour mieux résister aux chocs en cas de chute",
-                "Pour permettre une croissance plus rapide"
-              ],
-              "correctAnswer": "Pour être plus légers et faciliter le vol",
-              "isSpecial": false
-            },
-            {
-              "question": "Comment s'appelle la science qui étudie les oiseaux ?",
-              "options": [
-                "La zoologie",
-                "L'entomologie",
-                "L'ornithologie",
-                "La biologie aviaire"
-              ],
-              "correctAnswer": "L'ornithologie",
-              "isSpecial": false
-            },
-            {
-              "question": "Avec quels matériaux un oiseau construit-il généralement son nid ?",
-              "options": [
-                "De la boue et de la paille",
-                "Des branches et de l'herbe",
-                "Des pierres et de la mousse",
-                "Des feuilles et de l'argile"
-              ],
-              "correctAnswer": "Des branches et de l'herbe",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi la forme du corps des oiseaux est-elle profilée ?",
-              "options": [
-                "Pour mieux nager sous l'eau",
-                "Pour réduire la résistance de l'air et voler plus vite",
-                "Pour se camoufler entre les branches",
-                "Pour conserver la chaleur par temps froid"
-              ],
-              "correctAnswer": "Pour réduire la résistance de l'air et voler plus vite",
-              "isSpecial": false
-            },
-            {
-              "question": "Grâce à quelle glande spéciale les canards peuvent-ils imperméabiliser leurs plumes ?",
-              "options": [
-                "La glande salivaire",
-                "La glande uropygienne qui produit de l'huile",
-                "La glande thyroïde",
-                "La glande sébacée nasale"
-              ],
-              "correctAnswer": "La glande uropygienne qui produit de l'huile",
-              "isSpecial": false
-            },
-            {
-              "question": "Où la plupart des oiseaux dorment-ils pour se protéger des prédateurs ?",
-              "options": [
-                "Dans des terriers creusés dans le sol",
-                "Dans des cavernes au bord de l'eau",
-                "Dans les arbres, cachés dans les branches",
-                "Dans leur nid toute l'année"
-              ],
-              "correctAnswer": "Dans les arbres, cachés dans les branches",
-              "isSpecial": false
-            },
-            {
-              "question": "Un ornithologiste observe que les plumes d'un canard restent sèches même après une plongée. Quel mécanisme précis explique ce phénomène, et quel autre avantage cela apporte-t-il à l'oiseau en plus de l'imperméabilité ?",
-              "options": [
-                "Les plumes sont recouvertes d'huile produite par une glande spéciale, ce qui imperméabilise le plumage et permet à l'oiseau de flotter sur l'eau",
-                "Les plumes sont creuses et remplies d'air, ce qui repousse l'eau et aide l'oiseau à voler plus vite",
-                "Les plumes sont composées d'une protéine hydrophobe naturelle qui se renforce au contact de l'eau froide",
-                "Les oiseaux agitent leurs plumes très rapidement pour expulser l'eau avant qu'elle ne pénètre"
-              ],
-              "correctAnswer": "Les plumes sont recouvertes d'huile produite par une glande spéciale, ce qui imperméabilise le plumage et permet à l'oiseau de flotter sur l'eau",
-              "isSpecial": true
-            }
-          ]
-        },
-        {
-          "id": "ornithology-gen-l2",
-          "title": "Leçon Intermédiaire",
-          "emoji": "🌱",
-          "themeColor": "amber",
-          "badgeId": "ornithology-badge-l2",
-          "badgeName": "Explorateur L2",
-          "badgeEmoji": "🌱",
-          "cards": [
-            {
-              "title": "Découverte : Leçon Intermédiaire",
-              "text": "Cette leçon traite de Leçon Intermédiaire. Lis attentivement pour réussir le quiz !",
-              "emoji": "🌱"
-            },
-            {
-              "title": "Le savais-tu ?",
-              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
-              "emoji": "💡"
-            },
-            {
-              "title": "Les couleurs des oiseaux",
-              "text": "Les oiseaux peuvent avoir plein de couleurs magnifiques ! Le flamant rose est rose parce qu'il mange beaucoup de petites crevettes.",
-              "emoji": "🦩"
-            },
-            {
-              "title": "Le bec des oiseaux",
-              "text": "Chaque oiseau a un bec différent ! Les becs pointus servent à attraper des insectes, et les becs épais à casser des petites graines.",
-              "emoji": "🦤"
-            },
-            {
-              "title": "Pas de dents !",
-              "text": "Sais-tu que les oiseaux n'ont pas de dents ? Ils avalent leur nourriture toute entière sans la mâcher.",
-              "emoji": "😲"
-            },
-            {
-              "title": "Le secret du plumage",
-              "text": "Les oiseaux passent beaucoup de temps à lisser leurs plumes. Ils utilisent une glande spéciale à la base de leur queue qui produit de l'huile pour les imperméabiliser.",
-              "emoji": "🪶"
-            },
-            {
-              "title": "Les différentes plumes",
-              "text": "Les grandes plumes des ailes sont les rémiges pour le vol, alors que le duvet, très doux, garde l'oiseau bien au chaud.",
-              "emoji": "🧥"
-            },
-            {
-              "title": "Le Bain des Oiseaux",
-              "text": "Les petits oiseaux adorent prendre des bains dans les flaques d'eau. Cela les aide à nettoyer leurs belles plumes pour bien voler !",
-              "emoji": "💦"
-            },
-            {
-              "title": "Les Plumes Imperméables",
-              "text": "Les canards ont des plumes spéciales sur lesquelles l'eau glisse sans jamais les mouiller. C'est très pratique pour nager longtemps !",
-              "emoji": "🦆"
-            },
-            {
-              "title": "Les os pneumatisés",
-              "text": "Pour être plus légers en vol, beaucoup d'oiseaux possèdent des os creux remplis d'air, appelés os pneumatisés.",
-              "emoji": "🦴"
-            },
-            {
-              "title": "Où dorment les oiseaux ?",
-              "text": "Beaucoup d'oiseaux dorment dans les arbres, bien cachés dans les branches pour être en sécurité.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "L'incroyable réalité : Les couleurs des oiseaux",
-              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "En savoir plus : Les couleurs des oiseaux",
-              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "Analyse profonde : Les couleurs des oiseaux",
-              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
-              "emoji": "🔬"
-            },
-            {
-              "title": "Pour aller plus loin : Les couleurs des oiseaux",
-              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
-              "emoji": "📡"
-            }
-          ],
-          "quiz": [
-            {
-              "question": "Pourquoi le flamant rose a-t-il une couleur rose ?",
-              "options": [
-                "Il naît avec cette couleur naturellement",
-                "Il mange beaucoup de petites crevettes",
-                "Ses plumes reflètent la lumière du soleil",
-                "Il vit dans des eaux riches en algues rouges"
-              ],
-              "correctAnswer": "Il mange beaucoup de petites crevettes",
-              "isSpecial": false
-            },
-            {
-              "question": "A quoi servent les becs pointus chez les oiseaux ?",
-              "options": [
-                "A casser des graines dures",
-                "A filtrer l'eau des rivières",
-                "A attraper des insectes",
-                "A creuser des terriers"
-              ],
-              "correctAnswer": "A attraper des insectes",
-              "isSpecial": false
-            },
-            {
-              "question": "Comment les oiseaux digèrent-ils leur nourriture, puisqu'ils n'ont pas de dents ?",
-              "options": [
-                "Ils mastiquent avec leur langue musculeuse",
-                "Ils avalent leur nourriture toute entière sans la mâcher",
-                "Ils déchirent les aliments avec leurs griffes avant de les avaler",
-                "Ils dissolvent la nourriture avec leur salive avant d'avaler"
-              ],
-              "correctAnswer": "Ils avalent leur nourriture toute entière sans la mâcher",
-              "isSpecial": false
-            },
-            {
-              "question": "Quel nom donne-t-on aux grandes plumes des ailes qui permettent le vol ?",
-              "options": [
-                "Les duvetines",
-                "Les rectrices",
-                "Les rémiges",
-                "Les tectrices"
-              ],
-              "correctAnswer": "Les rémiges",
-              "isSpecial": false
-            },
-            {
-              "question": "Quelle partie du corps de l'oiseau produit une huile pour imperméabiliser les plumes ?",
-              "options": [
-                "Une glande située à la base de la queue",
-                "Les follicules situés à la racine des plumes",
-                "Une glande dans le bec de l'oiseau",
-                "Les glandes sudoripares sous les ailes"
-              ],
-              "correctAnswer": "Une glande située à la base de la queue",
-              "isSpecial": false
-            },
-            {
-              "question": "Quel est le rôle principal du duvet chez les oiseaux ?",
-              "options": [
-                "Permettre un vol silencieux",
-                "Garder l'oiseau bien au chaud",
-                "Attirer les partenaires lors de la reproduction",
-                "Protéger l'oiseau des chocs"
-              ],
-              "correctAnswer": "Garder l'oiseau bien au chaud",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi les oiseaux prennent-ils des bains dans les flaques d'eau ?",
-              "options": [
-                "Pour réguler leur température corporelle",
-                "Pour nettoyer leurs plumes afin de bien voler",
-                "Pour se désaltérer plus facilement",
-                "Pour se débarrasser des parasites uniquement"
-              ],
-              "correctAnswer": "Pour nettoyer leurs plumes afin de bien voler",
-              "isSpecial": false
-            },
-            {
-              "question": "Comment les plumes des canards leur permettent-elles de nager longtemps ?",
-              "options": [
-                "Elles stockent de l'air pour les aider à flotter",
-                "L'eau glisse dessus sans jamais les mouiller",
-                "Elles sont plus épaisses que celles des autres oiseaux",
-                "Elles absorbent l'eau puis la rejettent rapidement"
-              ],
-              "correctAnswer": "L'eau glisse dessus sans jamais les mouiller",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi beaucoup d'oiseaux choisissent-ils de dormir dans les branches des arbres ?",
-              "options": [
-                "Parce que la chaleur monte et les arbres sont plus chauds la nuit",
-                "Pour être bien cachés et en sécurité",
-                "Pour surveiller leurs proies depuis une hauteur",
-                "Parce que le sol est trop humide la nuit"
-              ],
-              "correctAnswer": "Pour être bien cachés et en sécurité",
-              "isSpecial": false
-            },
-            {
-              "question": "Les os pneumatisés des oiseaux sont creux et remplis d'air. Quel avantage cela leur procure-t-il, et quel inconvénient potentiel cela pourrait-il représenter ?",
-              "options": [
-                "Avantage : plus légers en vol ; inconvénient : os plus fragiles et risque de fractures",
-                "Avantage : meilleure flottabilité dans l'eau ; inconvénient : difficulté à plonger en profondeur",
-                "Avantage : meilleure isolation thermique ; inconvénient : ralentissement lors de la course",
-                "Avantage : réserve d'oxygène pendant le vol ; inconvénient : poids supplémentaire à basse altitude"
-              ],
-              "correctAnswer": "Avantage : plus légers en vol ; inconvénient : os plus fragiles et risque de fractures",
-              "isSpecial": true
-            }
-          ]
-        },
-        {
-          "id": "ornithology-gen-l3",
-          "title": "Leçon Avancée",
-          "emoji": "💧",
-          "themeColor": "amber",
-          "badgeId": "ornithology-badge-l3",
-          "badgeName": "Explorateur L3",
-          "badgeEmoji": "💧",
-          "cards": [
-            {
-              "title": "Découverte : Leçon Avancée",
-              "text": "Cette leçon traite de Leçon Avancée. Lis attentivement pour réussir le quiz !",
-              "emoji": "💧"
-            },
-            {
-              "title": "Le savais-tu ?",
-              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
-              "emoji": "💡"
-            },
-            {
-              "title": "Le voyage des oiseaux",
-              "text": "Quand il fait trop froid, certains oiseaux font un très long voyage appelé migration. Ils volent ensemble vers des pays chauds !",
-              "emoji": "🌅"
-            },
-            {
-              "title": "Les nids douillets",
-              "text": "Les oiseaux construisent des nids pour y pondre leurs œufs. Ils utilisent des brindilles, de la boue et même de la mousse !",
-              "emoji": "🪹"
-            },
-            {
-              "title": "Les petits oisillons",
-              "text": "Quand les œufs éclosent, de petits bébés oiseaux sortent. On les appelle des oisillons.",
-              "emoji": "🐣"
-            },
-            {
-              "title": "Les descendants des dinosaures",
-              "text": "Les oiseaux sont les seuls survivants de la grande famille des dinosaures ! Les paléontologues ont trouvé des fossiles de dinosaures avec des plumes.",
-              "emoji": "🦖"
-            },
-            {
-              "title": "L'Archaeopteryx",
-              "text": "L'Archaeopteryx est l'un des plus célèbres fossiles. Il avait des plumes comme un oiseau mais des dents et une longue queue comme un reptile.",
-              "emoji": "🦴"
-            },
-            {
-              "title": "Le Petit Ver de Terre",
-              "text": "Beaucoup d'oiseaux aiment picorer la terre pour trouver des petits vers très bons à manger. C'est leur repas préféré !",
-              "emoji": "🪱"
-            },
-            {
-              "title": "L'Œil du Faucon",
-              "text": "Le faucon possède une vision si perçante qu'il peut repérer une petite proie depuis très haut dans les nuages.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "La migration incroyable",
-              "text": "Certains oiseaux, comme la Sterne arctique, parcourent des dizaines de milliers de kilomètres chaque année pour trouver un climat favorable.",
-              "emoji": "🌍"
-            },
-            {
-              "title": "Où dorment les oiseaux ?",
-              "text": "Beaucoup d'oiseaux dorment dans les arbres, bien cachés dans les branches pour être en sécurité.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "L'incroyable réalité : Le voyage des oiseaux",
-              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "En savoir plus : Le voyage des oiseaux",
-              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "Analyse profonde : Le voyage des oiseaux",
-              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
-              "emoji": "🔬"
-            },
-            {
-              "title": "Pour aller plus loin : Le voyage des oiseaux",
-              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
-              "emoji": "📡"
-            }
-          ],
-          "quiz": [
-            {
-              "question": "Pourquoi certains oiseaux migrent-ils vers des pays chauds en hiver ?",
-              "options": [
-                "Pour trouver de nouveaux nids",
-                "Parce qu'il fait trop froid dans leur pays d'origine",
-                "Pour fuir leurs prédateurs",
-                "Parce qu'ils cherchent de l'eau"
-              ],
-              "correctAnswer": "Parce qu'il fait trop froid dans leur pays d'origine",
-              "isSpecial": false
-            },
-            {
-              "question": "Quels matériaux les oiseaux utilisent-ils pour construire leur nid ?",
-              "options": [
-                "Des feuilles, du sable et du plastique",
-                "Des brindilles, de la boue et de la mousse",
-                "Des pierres, des coquillages et de la terre",
-                "Des plumes, du coton et du fil"
-              ],
-              "correctAnswer": "Des brindilles, de la boue et de la mousse",
-              "isSpecial": false
-            },
-            {
-              "question": "Comment appelle-t-on les bébés oiseaux qui viennent de sortir de l'oeuf ?",
-              "options": [
-                "Des poussins",
-                "Des aiglons",
-                "Des oisillons",
-                "Des nichons"
-              ],
-              "correctAnswer": "Des oisillons",
-              "isSpecial": false
-            },
-            {
-              "question": "De quel groupe d'animaux disparus les oiseaux sont-ils les descendants survivants ?",
-              "options": [
-                "Des mammouths",
-                "Des reptiles marins",
-                "Des dinosaures",
-                "Des amphibiens préhistoriques"
-              ],
-              "correctAnswer": "Des dinosaures",
-              "isSpecial": false
-            },
-            {
-              "question": "Quelle preuve les paléontologues ont-ils trouvée pour relier les oiseaux aux dinosaures ?",
-              "options": [
-                "Des fossiles de dinosaures avec des plumes",
-                "Des empreintes de pattes semblables à celles des oiseaux",
-                "Des oeufs de dinosaures identiques aux oeufs d'oiseaux",
-                "Des dents de dinosaures retrouvées chez certains oiseaux modernes"
-              ],
-              "correctAnswer": "Des fossiles de dinosaures avec des plumes",
-              "isSpecial": false
-            },
-            {
-              "question": "Qu'est-ce qui rend l'Archaeopteryx différent d'un oiseau moderne ?",
-              "options": [
-                "Il n'avait pas de plumes",
-                "Il avait des dents et une longue queue comme un reptile",
-                "Il ne pouvait pas voler",
-                "Il vivait uniquement dans l'eau"
-              ],
-              "correctAnswer": "Il avait des dents et une longue queue comme un reptile",
-              "isSpecial": false
-            },
-            {
-              "question": "Quelle capacite visuelle remarquable possede le faucon ?",
-              "options": [
-                "Il voit parfaitement dans le noir complet",
-                "Il peut reperer une petite proie depuis tres haut dans les nuages",
-                "Il distingue les couleurs invisibles pour les humains",
-                "Il peut voir derriere lui sans tourner la tete"
-              ],
-              "correctAnswer": "Il peut reperer une petite proie depuis tres haut dans les nuages",
-              "isSpecial": false
-            },
-            {
-              "question": "Quel oiseau est connu pour effectuer l'une des plus longues migrations du monde chaque annee ?",
-              "options": [
-                "L'aigle royal",
-                "Le pingouin",
-                "La Sterne arctique",
-                "Le perroquet"
-              ],
-              "correctAnswer": "La Sterne arctique",
-              "isSpecial": false
-            },
-            {
-              "question": "Ou la plupart des oiseaux dorment-ils pour etre en securite ?",
-              "options": [
-                "Dans des terriers creuses dans le sol",
-                "Au bord de l'eau",
-                "Dans les arbres, bien caches dans les branches",
-                "Dans des grottes rocheuses"
-              ],
-              "correctAnswer": "Dans les arbres, bien caches dans les branches",
-              "isSpecial": false
-            },
-            {
-              "question": "L'Archaeopteryx est considere comme un fossile de transition entre les reptiles et les oiseaux. Quelle caracteristique possedait-il en commun avec les oiseaux modernes, tout en gardant des traits reptiliens ?",
-              "options": [
-                "Il avait des plumes mais aussi des dents et une longue queue osseuse",
-                "Il avait des ailes mais ses pattes etaient recouvertes d'ecailles uniquement",
-                "Il pondait des oeufs comme les reptiles mais avait un bec sans dents",
-                "Il avait un squelette creux comme les oiseaux mais aucune plume"
-              ],
-              "correctAnswer": "Il avait des plumes mais aussi des dents et une longue queue osseuse",
-              "isSpecial": true
-            }
-          ]
-        },
-        {
-          "id": "ornithology-gen-l4",
-          "title": "Leçon Générale",
-          "emoji": "🔥",
-          "themeColor": "amber",
-          "badgeId": "ornithology-badge-l4",
-          "badgeName": "Explorateur L4",
-          "badgeEmoji": "🔥",
-          "cards": [
-            {
-              "title": "Découverte : Leçon Générale",
-              "text": "Cette leçon traite de Leçon Générale. Lis attentivement pour réussir le quiz !",
+              "title": "Hadès, les Enfers",
+              "text": "Hadès est le dieu des Enfers, le royaume des morts. C'est le frère de Zeus et de Poséidon.",
               "emoji": "🔥"
-            },
-            {
-              "title": "Le savais-tu ?",
-              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
-              "emoji": "💡"
-            },
-            {
-              "title": "Généralités sur les becs",
-              "text": "Le bec des oiseaux est magique. Un bec fin aide à attraper des insectes, et un bec court et fort sert à casser des graines.",
-              "emoji": "🦆"
-            },
-            {
-              "title": "Les belles plumes",
-              "text": "Le corps des oiseaux est recouvert de plumes. Elles les protègent du froid et de la pluie.",
-              "emoji": "🪶"
-            },
-            {
-              "title": "De toutes les couleurs",
-              "text": "Certains oiseaux ont des plumes très colorées pour attirer l'attention ou pour se cacher dans la nature.",
-              "emoji": "🌈"
-            },
-            {
-              "title": "L'intelligence des corvidés",
-              "text": "Les corbeaux et les corneilles font partie des corvidés. Ce sont parmi les oiseaux les plus intelligents au monde !",
-              "emoji": "🐦‍⬛"
-            },
-            {
-              "title": "Utiliser des outils",
-              "text": "Certains corbeaux sont capables d'utiliser des brindilles comme outils pour attraper des insectes cachés dans l'écorce des arbres.",
-              "emoji": "🛠️"
-            },
-            {
-              "title": "Cache-cache dans les Arbres",
-              "text": "Les oiseaux se cachent dans les grandes feuilles des arbres pour se protéger de la pluie et des grands animaux.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "Les Migrateurs",
-              "text": "La sterne arctique est une incroyable voyageuse. Elle parcourt des milliers de kilomètres chaque année pour passer de l'Arctique à l'Antarctique !",
-              "emoji": "🌍"
-            },
-            {
-              "title": "Les rapaces nocturnes",
-              "text": "Les chouettes et les hiboux sont des prédateurs redoutables la nuit grâce à leur vision perçante et leur vol totalement silencieux.",
-              "emoji": "🦉"
-            },
-            {
-              "title": "Où dorment les oiseaux ?",
-              "text": "Beaucoup d'oiseaux dorment dans les arbres, bien cachés dans les branches pour être en sécurité.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "L'incroyable réalité : Généralités sur les becs",
-              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "En savoir plus : Généralités sur les becs",
-              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "Analyse profonde : Généralités sur les becs",
-              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
-              "emoji": "🔬"
-            },
-            {
-              "title": "Pour aller plus loin : Généralités sur les becs",
-              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
-              "emoji": "📡"
             }
           ],
           "quiz": [
             {
-              "question": "A quoi sert un bec court et fort chez un oiseau ?",
+              "question": "Quel dieu grec est le roi de l'Olympe et lance la foudre ?",
               "options": [
-                "Attraper des poissons dans l'eau",
-                "Casser des graines",
-                "Attraper des insectes dans l'écorce",
-                "Filtrer l'eau des mares"
+                "Zeus",
+                "Poséidon",
+                "Hadès",
+                "Arès"
               ],
-              "correctAnswer": "Casser des graines",
+              "correctAnswer": "Zeus",
               "isSpecial": false
             },
             {
-              "question": "Quel est le principal rôle des plumes chez les oiseaux ?",
+              "question": "Quel dieu règne sur la mer avec un trident ?",
               "options": [
-                "Permettre à l'oiseau de respirer sous l'eau",
-                "Servir uniquement de décoration pour attirer un partenaire",
-                "Protéger l'oiseau du froid et de la pluie",
-                "Aider l'oiseau à nager plus vite"
+                "Hermès",
+                "Poséidon",
+                "Apollon",
+                "Hadès"
               ],
-              "correctAnswer": "Protéger l'oiseau du froid et de la pluie",
+              "correctAnswer": "Poséidon",
               "isSpecial": false
             },
             {
-              "question": "Pourquoi certains oiseaux ont-ils des plumes très colorées ?",
+              "question": "Quelle déesse représente la sagesse et la stratégie ?",
               "options": [
-                "Pour voler plus vite grâce aux couleurs vives",
-                "Pour attirer l'attention ou se camoufler dans la nature",
-                "Pour effrayer tous les prédateurs sans exception",
-                "Pour mieux résister aux fortes pluies tropicales"
+                "Aphrodite",
+                "Héra",
+                "Athéna",
+                "Artémis"
               ],
-              "correctAnswer": "Pour attirer l'attention ou se camoufler dans la nature",
+              "correctAnswer": "Athéna",
               "isSpecial": false
             },
             {
-              "question": "Quels oiseaux appartiennent à la famille des corvidés ?",
+              "question": "Quel dieu règne sur les Enfers, le royaume des morts ?",
               "options": [
-                "Les chouettes et les hiboux",
-                "Les aigles et les faucons",
-                "Les corbeaux et les corneilles",
-                "Les perroquets et les perruches"
+                "Hadès",
+                "Zeus",
+                "Dionysos",
+                "Hermès"
               ],
-              "correctAnswer": "Les corbeaux et les corneilles",
+              "correctAnswer": "Hadès",
               "isSpecial": false
             },
             {
-              "question": "Comment certains corbeaux parviennent-ils à attraper des insectes cachés dans l'écorce des arbres ?",
+              "question": "Sur quelle montagne vivent les dieux grecs ?",
               "options": [
-                "En creusant l'écorce avec leur bec très puissant",
-                "En utilisant des brindilles comme outils",
-                "En restant immobiles et en attendant que les insectes sortent",
-                "En tapant fort sur le tronc pour faire tomber les insectes"
+                "Le mont Everest",
+                "Le mont Olympe",
+                "Le mont Etna",
+                "Le mont Sinaï"
               ],
-              "correctAnswer": "En utilisant des brindilles comme outils",
+              "correctAnswer": "Le mont Olympe",
               "isSpecial": false
             },
             {
-              "question": "Pourquoi les oiseaux se cachent-ils dans les grandes feuilles des arbres ?",
+              "question": "Quel animal est le symbole de la déesse Athéna ?",
               "options": [
-                "Pour se protéger de la pluie et des grands animaux",
-                "Pour construire leur nid loin du sol",
-                "Pour trouver plus facilement des insectes à manger",
-                "Pour surveiller leur territoire depuis les hauteurs"
+                "L'aigle",
+                "Le paon",
+                "La chouette",
+                "Le cheval"
               ],
-              "correctAnswer": "Pour se protéger de la pluie et des grands animaux",
+              "correctAnswer": "La chouette",
               "isSpecial": false
             },
             {
-              "question": "Quel trajet exceptionnel accomplit la sterne arctique chaque année ?",
+              "question": "Qui est le messager des dieux, avec des sandales ailées ?",
               "options": [
-                "Elle vole de l'Europe vers l'Afrique du Nord",
-                "Elle traverse l'océan Pacifique d'est en ouest",
-                "Elle migre de l'Arctique jusqu'en Antarctique",
-                "Elle effectue le tour complet de la Méditerranée"
+                "Apollon",
+                "Hermès",
+                "Arès",
+                "Héphaïstos"
               ],
-              "correctAnswer": "Elle migre de l'Arctique jusqu'en Antarctique",
+              "correctAnswer": "Hermès",
               "isSpecial": false
             },
             {
-              "question": "Quelle caracteristique permet aux chouettes et hiboux de chasser efficacement la nuit ?",
+              "question": "Quelle déesse est l'épouse de Zeus et la reine des dieux ?",
               "options": [
-                "Leur plumage très coloré qui effraie les proies",
-                "Leur vision perçante et leur vol totalement silencieux",
-                "Leur capacité à utiliser des outils pour débusquer les proies",
-                "Leur bec très long adapté pour attraper les poissons de nuit"
+                "Héra",
+                "Aphrodite",
+                "Déméter",
+                "Perséphone"
               ],
-              "correctAnswer": "Leur vision perçante et leur vol totalement silencieux",
+              "correctAnswer": "Héra",
               "isSpecial": false
             },
             {
-              "question": "Ou dorment la plupart des oiseaux pour rester en securite ?",
+              "question": "Quel objet est l'attribut (l'arme) de Zeus ?",
               "options": [
-                "Sur le sol, enfouis sous les feuilles mortes",
-                "Dans des terriers creusés dans la terre",
-                "Bien cachés dans les branches des arbres",
-                "Flottant sur l'eau des lacs et rivières"
+                "Le trident",
+                "L'arc",
+                "La foudre",
+                "Le marteau"
               ],
-              "correctAnswer": "Bien cachés dans les branches des arbres",
+              "correctAnswer": "La foudre",
               "isSpecial": false
             },
             {
-              "question": "Un scientifique observe qu'un oiseau a un bec fin et allongé. Quelle conclusion peut-il tirer sur le regime alimentaire de cet oiseau ?",
+              "question": "Zeus, Poséidon et Hadès sont frères et se sont partagé le monde. Lequel a reçu le ciel ?",
               "options": [
-                "Il se nourrit principalement de grosses graines dures",
-                "Il est probablement adapté pour capturer des insectes ou du nectar",
-                "Il chasse surtout de petits mammifères et des reptiles",
-                "Il se nourrit exclusivement de poissons en eau profonde"
+                "Zeus",
+                "Poséidon",
+                "Hadès",
+                "Arès"
               ],
-              "correctAnswer": "Il est probablement adapté pour capturer des insectes ou du nectar",
-              "isSpecial": true
-            }
-          ]
-        },
-        {
-          "id": "ornithology-gen-l5",
-          "title": "Leçon Découverte",
-          "emoji": "💨",
-          "themeColor": "amber",
-          "badgeId": "ornithology-badge-l5",
-          "badgeName": "Explorateur L5",
-          "badgeEmoji": "💨",
-          "cards": [
-            {
-              "title": "Découverte : Leçon Découverte",
-              "text": "Cette leçon traite de Leçon Découverte. Lis attentivement pour réussir le quiz !",
-              "emoji": "💨"
-            },
-            {
-              "title": "Le savais-tu ?",
-              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
-              "emoji": "💡"
-            },
-            {
-              "title": "La découverte du chant",
-              "text": "As-tu déjà écouté un oiseau chanter ? Chaque oiseau a sa propre mélodie pour dire 'bonjour' ou pour appeler ses amis !",
-              "emoji": "🎵"
-            },
-            {
-              "title": "Le vol des oiseaux",
-              "text": "Pour voler, les oiseaux battent des ailes. Leurs os sont très légers, ce qui les aide à s'envoler facilement !",
-              "emoji": "🦅"
-            },
-            {
-              "title": "La descente",
-              "text": "Pour atterrir, l'oiseau ouvre grand ses ailes comme un parachute pour ralentir.",
-              "emoji": "🪂"
-            },
-            {
-              "title": "Une vision extraordinaire",
-              "text": "La vue est le sens le plus développé chez l'oiseau. Les rapaces ont une acuité visuelle bien supérieure à celle des humains.",
-              "emoji": "👁️"
-            },
-            {
-              "title": "Voir l'invisible",
-              "text": "De nombreux oiseaux peuvent percevoir la lumière ultraviolette. Cela les aide à repérer des fruits mûrs ou des traces laissées par leurs proies.",
-              "emoji": "✨"
-            },
-            {
-              "title": "L'Œuf Magique",
-              "text": "Tous les oiseaux naissent dans un œuf. Au début, le bébé oiseau casse la coquille avec son petit bec pour sortir.",
-              "emoji": "🥚"
-            },
-            {
-              "title": "La Symphonie des Oiseaux",
-              "text": "Chaque matin au printemps, les oiseaux offrent un magnifique concert appelé le 'chœur de l'aube' pour délimiter leur territoire.",
-              "emoji": "🎶"
-            },
-            {
-              "title": "Le rôle écologique",
-              "text": "Les oiseaux jouent un rôle crucial dans la nature : ils pollinisent les fleurs, dispersent les graines et contrôlent les populations d'insectes.",
-              "emoji": "🌱"
-            },
-            {
-              "title": "Où dorment les oiseaux ?",
-              "text": "Beaucoup d'oiseaux dorment dans les arbres, bien cachés dans les branches pour être en sécurité.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "L'incroyable réalité : La découverte du chant",
-              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "En savoir plus : La découverte du chant",
-              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "Analyse profonde : La découverte du chant",
-              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
-              "emoji": "🔬"
-            },
-            {
-              "title": "Pour aller plus loin : La découverte du chant",
-              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
-              "emoji": "📡"
-            }
-          ],
-          "quiz": [
-            {
-              "question": "Pourquoi les oiseaux ont-ils des os très légers ?",
-              "options": [
-                "Pour mieux nager sous l'eau",
-                "Pour s'envoler plus facilement",
-                "Pour résister au froid",
-                "Pour pondre des oeufs plus solides"
-              ],
-              "correctAnswer": "Pour s'envoler plus facilement",
-              "isSpecial": false
-            },
-            {
-              "question": "Comment un oiseau ralentit-il avant d'atterrir ?",
-              "options": [
-                "Il bat très vite des ailes",
-                "Il ferme complètement les ailes",
-                "Il ouvre grand ses ailes comme un parachute",
-                "Il plonge la tête vers le bas"
-              ],
-              "correctAnswer": "Il ouvre grand ses ailes comme un parachute",
-              "isSpecial": false
-            },
-            {
-              "question": "Quel est le sens le plus développé chez les oiseaux ?",
-              "options": [
-                "L'ouie",
-                "L'odorat",
-                "Le toucher",
-                "La vue"
-              ],
-              "correctAnswer": "La vue",
-              "isSpecial": false
-            },
-            {
-              "question": "Comment s'appelle le concert matinal que font les oiseaux au printemps ?",
-              "options": [
-                "La symphonie du soir",
-                "Le chant des migrations",
-                "Le choeur de l'aube",
-                "La serenade forestiere"
-              ],
-              "correctAnswer": "Le choeur de l'aube",
-              "isSpecial": false
-            },
-            {
-              "question": "Dans quel but les oiseaux chantent-ils le matin au printemps ?",
-              "options": [
-                "Pour se rechauffer",
-                "Pour delimitier leur territoire",
-                "Pour attirer des insectes",
-                "Pour annoncer la pluie"
-              ],
-              "correctAnswer": "Pour delimitier leur territoire",
-              "isSpecial": false
-            },
-            {
-              "question": "Lequel de ces roles ecologiques est assure par les oiseaux ?",
-              "options": [
-                "Purifier l'eau des rivieres",
-                "Disperser les graines",
-                "Produire de l'oxygene",
-                "Decomposer les roches"
-              ],
-              "correctAnswer": "Disperser les graines",
-              "isSpecial": false
-            },
-            {
-              "question": "Comment le bebe oiseau sort-il de son oeuf ?",
-              "options": [
-                "La coquille se ramollit dans l'eau",
-                "La mere la casse de l'exterieur",
-                "Il casse la coquille avec son bec",
-                "Elle eclate sous la chaleur du nid"
-              ],
-              "correctAnswer": "Il casse la coquille avec son bec",
-              "isSpecial": false
-            },
-            {
-              "question": "Ou la plupart des oiseaux dorment-ils la nuit ?",
-              "options": [
-                "Dans des terriers souterrains",
-                "Sur le sol entre les herbes",
-                "Bien caches dans les branches des arbres",
-                "A la surface de l'eau"
-              ],
-              "correctAnswer": "Bien caches dans les branches des arbres",
-              "isSpecial": false
-            },
-            {
-              "question": "A quoi sert la capacite de voir la lumiere ultraviolette chez certains oiseaux ?",
-              "options": [
-                "A voir la nuit comme en plein jour",
-                "A reperer des fruits murs ou des traces de proies",
-                "A communiquer en silence entre eux",
-                "A se proteger des rayons du soleil"
-              ],
-              "correctAnswer": "A reperer des fruits murs ou des traces de proies",
-              "isSpecial": false
-            },
-            {
-              "question": "Les rapaces ont une acuite visuelle superieure a celle des humains. Qu'est-ce que cela signifie concretement pour leur survie ?",
-              "options": [
-                "Ils peuvent voler plus vite grace a de meilleurs reflexes visuels",
-                "Ils repèrent leurs proies a de tres grandes distances avec precision",
-                "Ils voient uniquement les couleurs vives pour choisir leurs aliments",
-                "Ils sont capables de voir derriere eux sans tourner la tete"
-              ],
-              "correctAnswer": "Ils repèrent leurs proies a de tres grandes distances avec precision",
-              "isSpecial": true
-            }
-          ]
-        },
-        {
-          "id": "ornithology-gen-l6",
-          "title": "Leçon Nature",
-          "emoji": "⛰️",
-          "themeColor": "amber",
-          "badgeId": "ornithology-badge-l6",
-          "badgeName": "Explorateur L6",
-          "badgeEmoji": "⛰️",
-          "cards": [
-            {
-              "title": "Découverte : Leçon Nature",
-              "text": "Cette leçon traite de Leçon Nature. Lis attentivement pour réussir le quiz !",
-              "emoji": "⛰️"
-            },
-            {
-              "title": "Le savais-tu ?",
-              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
-              "emoji": "💡"
-            },
-            {
-              "title": "La nature des oiseaux",
-              "text": "Les oiseaux adorent la nature. Ils construisent des nids douillets avec des brindilles et des feuilles pour protéger leurs bébés.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "Le chant merveilleux",
-              "text": "Les oiseaux chantent pour se parler. Chaque espèce a sa propre mélodie !",
-              "emoji": "🎶"
-            },
-            {
-              "title": "Le matin au réveil",
-              "text": "C'est souvent très tôt le matin, à l'aube, qu'on entend le plus d'oiseaux chanter.",
-              "emoji": "🌅"
-            },
-            {
-              "title": "Les records du monde",
-              "text": "Le Colibri d'Elena est le plus petit oiseau du monde, pesant moins de 2 grammes ! À l'inverse, l'autruche est le plus grand et le plus lourd.",
-              "emoji": "🏆"
-            },
-            {
-              "title": "Le vol sur place",
-              "text": "Le colibri est le seul oiseau capable de voler en arrière et de faire du vol stationnaire parfait pour boire le nectar des fleurs.",
-              "emoji": "🌺"
-            },
-            {
-              "title": "Le Grand Vol",
-              "text": "Quand ils sont grands, les oiseaux ouvrent très grand leurs ailes et sautent dans le vide pour apprendre à voler. C'est magique !",
-              "emoji": "🦅"
-            },
-            {
-              "title": "Le nid douillet",
-              "text": "Les oiseaux construisent des nids avec des brindilles, de la boue et même des toiles d'araignée pour garder leurs œufs bien au chaud.",
-              "emoji": "🪹"
-            },
-            {
-              "title": "Le système respiratoire",
-              "text": "Le système respiratoire des oiseaux est unique. Grâce à des sacs aériens, l'air frais circule dans leurs poumons même quand ils expirent !",
-              "emoji": "🫁"
-            },
-            {
-              "title": "Où dorment les oiseaux ?",
-              "text": "Beaucoup d'oiseaux dorment dans les arbres, bien cachés dans les branches pour être en sécurité.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "L'incroyable réalité : La nature des oiseaux",
-              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "En savoir plus : La nature des oiseaux",
-              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "Analyse profonde : La nature des oiseaux",
-              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
-              "emoji": "🔬"
-            },
-            {
-              "title": "Pour aller plus loin : La nature des oiseaux",
-              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
-              "emoji": "📡"
-            }
-          ],
-          "quiz": [
-            {
-              "question": "Quel est le plus petit oiseau du monde ?",
-              "options": [
-                "Le moineau domestique",
-                "Le colibri d'Elena",
-                "Le roitelet huppé",
-                "Le troglodyte mignon"
-              ],
-              "correctAnswer": "Le colibri d'Elena",
-              "isSpecial": false
-            },
-            {
-              "question": "Combien pèse approximativement le plus petit oiseau du monde ?",
-              "options": [
-                "Moins de 2 grammes",
-                "Environ 10 grammes",
-                "Entre 5 et 8 grammes",
-                "Moins de 20 grammes"
-              ],
-              "correctAnswer": "Moins de 2 grammes",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi le colibri est-il un oiseau exceptionnel parmi tous les oiseaux ?",
-              "options": [
-                "Il est le seul à construire des nids avec de la boue",
-                "Il est le seul capable de voler en arrière et de faire du vol stationnaire",
-                "Il est le seul à chanter la nuit",
-                "Il est le seul à ne pas avoir de plumes"
-              ],
-              "correctAnswer": "Il est le seul capable de voler en arrière et de faire du vol stationnaire",
-              "isSpecial": false
-            },
-            {
-              "question": "Quel moment de la journée est le meilleur pour entendre le plus d'oiseaux chanter ?",
-              "options": [
-                "En milieu d'après-midi",
-                "Le soir au coucher du soleil",
-                "La nuit à minuit",
-                "Tôt le matin, à l'aube"
-              ],
-              "correctAnswer": "Tôt le matin, à l'aube",
-              "isSpecial": false
-            },
-            {
-              "question": "Avec quels matériaux les oiseaux construisent-ils principalement leurs nids ?",
-              "options": [
-                "Du sable, des pierres et de l'herbe sèche",
-                "Des brindilles, de la boue et des toiles d'araignée",
-                "Des feuilles mortes, de la mousse et du coton",
-                "De l'écorce, des graines et des plumes"
-              ],
-              "correctAnswer": "Des brindilles, de la boue et des toiles d'araignée",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi les oiseaux chantent-ils ?",
-              "options": [
-                "Pour attirer les insectes vers eux",
-                "Pour se repérer dans le noir",
-                "Pour communiquer entre eux",
-                "Pour effrayer les prédateurs uniquement"
-              ],
-              "correctAnswer": "Pour communiquer entre eux",
-              "isSpecial": false
-            },
-            {
-              "question": "Quel est le plus grand et le plus lourd oiseau du monde ?",
-              "options": [
-                "L'albatros hurleur",
-                "L'autruche",
-                "Le condor des Andes",
-                "L'émeu"
-              ],
-              "correctAnswer": "L'autruche",
-              "isSpecial": false
-            },
-            {
-              "question": "Comment les jeunes oiseaux apprennent-ils à voler ?",
-              "options": [
-                "Leurs parents les portent sur leur dos pendant plusieurs semaines",
-                "Ils imitent d'autres espèces d'oiseaux au sol",
-                "Ils ouvrent grand leurs ailes et sautent dans le vide",
-                "Ils glissent le long des branches sans jamais quitter l'arbre"
-              ],
-              "correctAnswer": "Ils ouvrent grand leurs ailes et sautent dans le vide",
-              "isSpecial": false
-            },
-            {
-              "question": "Où la plupart des oiseaux choisissent-ils de dormir pour rester en sécurité ?",
-              "options": [
-                "Dans des terriers creusés dans le sol",
-                "Dans les arbres, cachés dans les branches",
-                "Sur les bords des rivières",
-                "Dans des grottes ou des rochers"
-              ],
-              "correctAnswer": "Dans les arbres, cachés dans les branches",
-              "isSpecial": false
-            },
-            {
-              "question": "Quelle particularité unique possede le systeme respiratoire des oiseaux par rapport aux autres animaux ?",
-              "options": [
-                "Leurs poumons sont deux fois plus grands que ceux des mammiferes de taille equivalente",
-                "Ils possedent des sacs aeriens qui font circuler l'air frais dans leurs poumons meme pendant l'expiration",
-                "Ils peuvent retenir leur souffle pendant plus de dix minutes en vol",
-                "Leur trachee se divise en quatre conduits distincts pour filtrer l'air"
-              ],
-              "correctAnswer": "Ils possedent des sacs aeriens qui font circuler l'air frais dans leurs poumons meme pendant l'expiration",
-              "isSpecial": true
-            }
-          ]
-        },
-        {
-          "id": "ornithology-gen-l7",
-          "title": "Leçon Monde",
-          "emoji": "🧭",
-          "themeColor": "amber",
-          "badgeId": "ornithology-badge-l7",
-          "badgeName": "Explorateur L7",
-          "badgeEmoji": "🧭",
-          "cards": [
-            {
-              "title": "Découverte : Leçon Monde",
-              "text": "Cette leçon traite de Leçon Monde. Lis attentivement pour réussir le quiz !",
-              "emoji": "🧭"
-            },
-            {
-              "title": "Le savais-tu ?",
-              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
-              "emoji": "💡"
-            },
-            {
-              "title": "Les oiseaux du monde",
-              "text": "Il existe des oiseaux partout dans le monde ! Le manchot vit dans le froid, tandis que le toucan préfère la chaleur de la jungle.",
-              "emoji": "🐧"
-            },
-            {
-              "title": "Le grand voyage",
-              "text": "En hiver, quand il fait froid, beaucoup d'oiseaux voyagent vers les pays chauds. C'est la migration !",
-              "emoji": "🌍"
-            },
-            {
-              "title": "Voler en groupe",
-              "text": "Pour moins se fatiguer, ils volent souvent en forme de 'V' avec tous leurs amis.",
-              "emoji": "🪿"
-            },
-            {
-              "title": "La parade nuptiale",
-              "text": "Pour attirer une femelle, le mâle réalise souvent une danse ou exhibe de magnifiques couleurs. C'est la parade nuptiale.",
-              "emoji": "🦚"
-            },
-            {
-              "title": "L'oiseau jardinier",
-              "text": "En Australie, l'oiseau jardinier construit un berceau de branches qu'il décore avec des objets bleus (fleurs, cailloux, bouchons) pour séduire sa partenaire !",
-              "emoji": "💙"
-            },
-            {
-              "title": "L'Oiseau qui Parle",
-              "text": "Certains oiseaux, comme le perroquet, sont très rigolos. Ils peuvent imiter les mots que nous disons et parler avec nous !",
-              "emoji": "🦜"
-            },
-            {
-              "title": "Le chant des oiseaux",
-              "text": "Chaque espèce d'oiseau a son propre chant. Ils chantent pour marquer leur territoire ou pour appeler leurs amis !",
-              "emoji": "🎶"
-            },
-            {
-              "title": "L'intelligence des corvidés",
-              "text": "Les corbeaux et les pies sont extrêmement intelligents. Ils sont capables de fabriquer des outils et de résoudre des énigmes complexes.",
-              "emoji": "🐦‍⬛"
-            },
-            {
-              "title": "Où dorment les oiseaux ?",
-              "text": "Beaucoup d'oiseaux dorment dans les arbres, bien cachés dans les branches pour être en sécurité.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "L'incroyable réalité : Les oiseaux du monde",
-              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "En savoir plus : Les oiseaux du monde",
-              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "Analyse profonde : Les oiseaux du monde",
-              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
-              "emoji": "🔬"
-            },
-            {
-              "title": "Pour aller plus loin : Les oiseaux du monde",
-              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
-              "emoji": "📡"
-            }
-          ],
-          "quiz": [
-            {
-              "question": "Pourquoi beaucoup d'oiseaux migrent-ils en hiver ?",
-              "options": [
-                "Pour trouver un partenaire",
-                "Pour fuir les prédateurs",
-                "Pour rejoindre des régions plus chaudes",
-                "Pour apprendre de nouveaux chants"
-              ],
-              "correctAnswer": "Pour rejoindre des régions plus chaudes",
-              "isSpecial": false
-            },
-            {
-              "question": "En quelle forme les oiseaux migrateurs volent-ils souvent en groupe ?",
-              "options": [
-                "En cercle",
-                "En ligne droite",
-                "En forme de V",
-                "En zigzag"
-              ],
-              "correctAnswer": "En forme de V",
-              "isSpecial": false
-            },
-            {
-              "question": "Quel oiseau vit dans les environnements froids, contrairement au toucan qui préfère la jungle ?",
-              "options": [
-                "Le perroquet",
-                "Le manchot",
-                "La pie",
-                "Le corbeau"
-              ],
-              "correctAnswer": "Le manchot",
-              "isSpecial": false
-            },
-            {
-              "question": "Comment appelle-t-on le comportement du mâle qui danse ou montre ses couleurs pour attirer une femelle ?",
-              "options": [
-                "La migration",
-                "Le marquage territorial",
-                "La parade nuptiale",
-                "L'imitation"
-              ],
-              "correctAnswer": "La parade nuptiale",
-              "isSpecial": false
-            },
-            {
-              "question": "Dans quel pays vit l'oiseau jardinier, connu pour décorer son berceau d'objets bleus ?",
-              "options": [
-                "Au Brésil",
-                "En Inde",
-                "En Australie",
-                "En Afrique du Sud"
-              ],
-              "correctAnswer": "En Australie",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi les oiseaux chantent-ils selon les informations de la leçon ?",
-              "options": [
-                "Pour se nourrir plus facilement",
-                "Pour marquer leur territoire ou appeler leurs congénères",
-                "Pour imiter les humains",
-                "Pour indiquer l'heure"
-              ],
-              "correctAnswer": "Pour marquer leur territoire ou appeler leurs congénères",
-              "isSpecial": false
-            },
-            {
-              "question": "Parmi ces oiseaux, lesquels sont réputés pour leur capacité à fabriquer des outils et résoudre des énigmes ?",
-              "options": [
-                "Les perroquets et les toucans",
-                "Les manchots et les aigles",
-                "Les corbeaux et les pies",
-                "Les moineaux et les hirondelles"
-              ],
-              "correctAnswer": "Les corbeaux et les pies",
-              "isSpecial": false
-            },
-            {
-              "question": "Quelle capacité particulière possède le perroquet qui le distingue de la plupart des autres oiseaux ?",
-              "options": [
-                "Il peut voler très haut",
-                "Il peut imiter les mots humains",
-                "Il construit des nids complexes",
-                "Il migre sur de très longues distances"
-              ],
-              "correctAnswer": "Il peut imiter les mots humains",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi beaucoup d'oiseaux dorment-ils cachés dans les branches des arbres ?",
-              "options": [
-                "Pour rester au chaud grâce aux feuilles",
-                "Pour se protéger des prédateurs",
-                "Pour être proches de leur nourriture",
-                "Pour mieux entendre les autres oiseaux"
-              ],
-              "correctAnswer": "Pour se protéger des prédateurs",
-              "isSpecial": false
-            },
-            {
-              "question": "L'oiseau jardinier utilise des objets d'une couleur particulière pour décorer son berceau. Quelle est cette couleur, et pourquoi ce comportement est-il considere comme une forme d'intelligence animale ?",
-              "options": [
-                "Rouge, car cette couleur effraie les predateurs et protege le nid",
-                "Bleu, car il selectionne deliberement des objets selon un critere esthetique pour seduire",
-                "Vert, car cette teinte se confond avec la vegetation et camouffle le nid",
-                "Jaune, car les femelles voient mieux cette longueur d'onde lumineuse"
-              ],
-              "correctAnswer": "Bleu, car il selectionne deliberement des objets selon un critere esthetique pour seduire",
-              "isSpecial": true
-            }
-          ]
-        },
-        {
-          "id": "ornithology-gen-l8",
-          "title": "Leçon Science",
-          "emoji": "🛡️",
-          "themeColor": "amber",
-          "badgeId": "ornithology-badge-l8",
-          "badgeName": "Explorateur L8",
-          "badgeEmoji": "🛡️",
-          "cards": [
-            {
-              "title": "Découverte : Leçon Science",
-              "text": "Cette leçon traite de Leçon Science. Lis attentivement pour réussir le quiz !",
-              "emoji": "🛡️"
-            },
-            {
-              "title": "Le savais-tu ?",
-              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
-              "emoji": "💡"
-            },
-            {
-              "title": "La science des plumes",
-              "text": "Les plumes des oiseaux sont incroyables ! Elles les aident à voler, mais aussi à rester bien au chaud, comme un gros manteau.",
-              "emoji": "🪶"
-            },
-            {
-              "title": "Les oiseaux nageurs",
-              "text": "Les canards et les cygnes adorent l'eau. Leurs plumes ne se mouillent pas grâce à une huile spéciale.",
-              "emoji": "🦆"
-            },
-            {
-              "title": "Des pattes comme des rames",
-              "text": "Ils ont des pattes palmées qui les aident à nager très vite, comme des palmes de plongée.",
-              "emoji": "🌊"
-            },
-            {
-              "title": "Les menaces sur la nature",
-              "text": "De nombreuses espèces d'oiseaux sont en danger. La destruction de leurs habitats, comme la déforestation, est la plus grande menace pour eux.",
-              "emoji": "⚠️"
-            },
-            {
-              "title": "Comment les protéger",
-              "text": "Installer des nichoirs, réduire l'utilisation de pesticides et protéger les forêts aide les oiseaux à survivre et à se reproduire.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "Les Graines Délicieuses",
-              "text": "En hiver, on peut donner des petites graines aux oiseaux pour les aider à avoir le ventre bien rempli.",
-              "emoji": "🌻"
-            },
-            {
-              "title": "Les plumes colorées",
-              "text": "Les plumes des oiseaux ne servent pas seulement à voler, elles les aident aussi à se cacher ou à attirer l'attention !",
-              "emoji": "🦚"
-            },
-            {
-              "title": "Les plumes de contour",
-              "text": "Les plumes de contour donnent à l'oiseau sa forme lisse, tandis que le duvet, situé en dessous, le protège du froid.",
-              "emoji": "🪶"
-            },
-            {
-              "title": "Découverte magique : La science des plumes",
-              "text": "Regarde bien les petits oiseaux ! Sais-tu qu'ils aiment beaucoup explorer et jouer dans la nature ? C'est fascinant de voir comment ils vivent.",
-              "emoji": "✨"
-            },
-            {
-              "title": "Le secret de : La science des plumes",
-              "text": "Chut, c'est un secret ! Les oiseaux ont des pouvoirs cachés dans leurs plumes et leur façon de chanter.",
-              "emoji": "🤫"
-            },
-            {
-              "title": "L'incroyable réalité : La science des plumes",
-              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "En savoir plus : La science des plumes",
-              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "Analyse profonde : La science des plumes",
-              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
-              "emoji": "🔬"
-            },
-            {
-              "title": "Pour aller plus loin : La science des plumes",
-              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
-              "emoji": "📡"
-            }
-          ],
-          "quiz": [
-            {
-              "question": "A quoi servent principalement les plumes d'un oiseau ?",
-              "options": [
-                "Uniquement a voler",
-                "A voler et a conserver la chaleur du corps",
-                "A attirer les insectes pour se nourrir",
-                "A repousser les predateurs"
-              ],
-              "correctAnswer": "A voler et a conserver la chaleur du corps",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi les plumes des canards ne se mouillent-elles pas lorsqu'ils nagent ?",
-              "options": [
-                "Leurs plumes sont faites d'une matiere synthetique",
-                "Ils secouent leurs plumes tres rapidement",
-                "Une huile speciale impermeabilise leurs plumes",
-                "L'eau glisse grace a la forme aerodynamique de leurs plumes"
-              ],
-              "correctAnswer": "Une huile speciale impermeabilise leurs plumes",
-              "isSpecial": false
-            },
-            {
-              "question": "Quelle caracteristique des pattes des canards et cygnes les aide a nager efficacement ?",
-              "options": [
-                "Leurs pattes sont tres longues",
-                "Leurs pattes sont palmees",
-                "Leurs pattes ont des griffes acinees",
-                "Leurs pattes sont recouvertes de plumes impermeables"
-              ],
-              "correctAnswer": "Leurs pattes sont palmees",
-              "isSpecial": false
-            },
-            {
-              "question": "Quelle est la principale menace pour les oiseaux selon la lecon ?",
-              "options": [
-                "La chasse excessive",
-                "La destruction de leurs habitats, notamment par la deforestation",
-                "Les maladies propagees par les insectes",
-                "Le rechauffement climatique uniquement"
-              ],
-              "correctAnswer": "La destruction de leurs habitats, notamment par la deforestation",
-              "isSpecial": false
-            },
-            {
-              "question": "Lequel de ces gestes aide concretement les oiseaux a survivre et a se reproduire ?",
-              "options": [
-                "Leur donner du pain rassis en ete",
-                "Installer des nichoirs et reduire les pesticides",
-                "Laisser les chats errants en liberte",
-                "Couper les arbres morts pour degager l'espace"
-              ],
-              "correctAnswer": "Installer des nichoirs et reduire les pesticides",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi est-il utile de donner des graines aux oiseaux en hiver ?",
-              "options": [
-                "Pour les habituer a vivre pres des humains",
-                "Parce qu'ils migrent moins bien sans graines",
-                "Parce que la nourriture naturelle est plus difficile a trouver en hiver",
-                "Pour les empecher de detruire les jardins"
-              ],
-              "correctAnswer": "Parce que la nourriture naturelle est plus difficile a trouver en hiver",
-              "isSpecial": false
-            },
-            {
-              "question": "Quel role jouent les plumes colorees chez les oiseaux, en dehors du vol ?",
-              "options": [
-                "Elles servent uniquement a reguler la temperature",
-                "Elles permettent de se camoufler ou d'attirer l'attention",
-                "Elles protegent uniquement contre la pluie",
-                "Elles servent a communiquer avec les humains"
-              ],
-              "correctAnswer": "Elles permettent de se camoufler ou d'attirer l'attention",
-              "isSpecial": false
-            },
-            {
-              "question": "Quelle est la difference entre les plumes de contour et le duvet chez un oiseau ?",
-              "options": [
-                "Les plumes de contour servent a nager, le duvet a voler",
-                "Les plumes de contour donnent la forme lisse de l'oiseau, le duvet protege du froid",
-                "Le duvet est visible a l'exterieur, les plumes de contour sont cachees",
-                "Il n'y a aucune difference fonctionnelle entre les deux"
-              ],
-              "correctAnswer": "Les plumes de contour donnent la forme lisse de l'oiseau, le duvet protege du froid",
-              "isSpecial": false
-            },
-            {
-              "question": "Comment les scientifiques d'aujourd'hui etudient-ils la migration des oiseaux ?",
-              "options": [
-                "En observant uniquement les nids abandonnes",
-                "En comptant les oiseaux depuis des tours d'observation fixes",
-                "Grâce a des technologies avancees pour suivre leurs deplacements",
-                "En lisant les traces laissees sur le sol"
-              ],
-              "correctAnswer": "Grâce a des technologies avancees pour suivre leurs deplacements",
-              "isSpecial": false
-            },
-            {
-              "question": "Un oiseau aquatique comme le canard possede des pattes palmees, des plumes impermeabilisees par une huile et un corps adapte a la nage. Quel terme de biologie designe cet ensemble de caracteristiques permettant a un animal de survivre dans son milieu ?",
-              "options": [
-                "La metamorphose",
-                "L'adaptation",
-                "La symbiose",
-                "La migration"
-              ],
-              "correctAnswer": "L'adaptation",
-              "isSpecial": true
-            }
-          ]
-        },
-        {
-          "id": "ornithology-gen-l9",
-          "title": "Leçon Espace",
-          "emoji": "🔮",
-          "themeColor": "amber",
-          "badgeId": "ornithology-badge-l9",
-          "badgeName": "Explorateur L9",
-          "badgeEmoji": "🔮",
-          "cards": [
-            {
-              "title": "Découverte : Leçon Espace",
-              "text": "Cette leçon traite de Leçon Espace. Lis attentivement pour réussir le quiz !",
-              "emoji": "🔮"
-            },
-            {
-              "title": "Le savais-tu ?",
-              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
-              "emoji": "💡"
-            },
-            {
-              "title": "Dans l'espace du ciel",
-              "text": "Les oiseaux sont les rois du ciel ! Certains, comme l'aigle, peuvent voler très haut pour observer tout ce qui se passe en bas.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "Les grands rapaces",
-              "text": "Les aigles et les faucons sont des rapaces. Ils volent très haut pour chercher leur nourriture.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "Des yeux de lynx",
-              "text": "Les rapaces ont une vue incroyable. Ils peuvent voir une petite souris depuis le ciel !",
-              "emoji": "👀"
-            },
-            {
-              "title": "Un outil sur mesure",
-              "text": "Le bec de l'oiseau est adapté à son régime alimentaire. Le pivert a un bec puissant comme un burin pour creuser le bois.",
-              "emoji": "🪵"
-            },
-            {
-              "title": "Filtrer l'eau",
-              "text": "Le flamant rose possède un bec courbé qui fonctionne comme une passoire. Il filtre l'eau pour retenir les petites crevettes dont il se nourrit.",
-              "emoji": "🦩"
-            },
-            {
-              "title": "Le Pic-vert",
-              "text": "Le pic-vert tape très fort son bec contre le tronc des arbres pour trouver des insectes. Toc toc toc !",
-              "emoji": "🪵"
-            },
-            {
-              "title": "Les becs utiles",
-              "text": "La forme du bec d'un oiseau dépend de ce qu'il mange. Un bec crochu est parfait pour la viande, et un bec fin pour les insectes.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "La parade nuptiale",
-              "text": "Pour séduire une partenaire, beaucoup de mâles effectuent des danses incroyables ou construisent des structures complexes pour impressionner.",
-              "emoji": "💃"
-            },
-            {
-              "title": "Découverte magique : Dans l'espace du ciel",
-              "text": "Regarde bien les petits oiseaux ! Sais-tu qu'ils aiment beaucoup explorer et jouer dans la nature ? C'est fascinant de voir comment ils vivent.",
-              "emoji": "✨"
-            },
-            {
-              "title": "Le secret de : Dans l'espace du ciel",
-              "text": "Chut, c'est un secret ! Les oiseaux ont des pouvoirs cachés dans leurs plumes et leur façon de chanter.",
-              "emoji": "🤫"
-            },
-            {
-              "title": "L'incroyable réalité : Dans l'espace du ciel",
-              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "En savoir plus : Dans l'espace du ciel",
-              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "Analyse profonde : Dans l'espace du ciel",
-              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
-              "emoji": "🔬"
-            },
-            {
-              "title": "Pour aller plus loin : Dans l'espace du ciel",
-              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
-              "emoji": "📡"
-            }
-          ],
-          "quiz": [
-            {
-              "question": "Quel type de bec possède le flamant rose, et à quoi lui sert-il ?",
-              "options": [
-                "Un bec droit et pointu pour attraper des poissons",
-                "Un bec courbé qui filtre l'eau pour retenir les crevettes",
-                "Un bec crochu pour déchirer la viande",
-                "Un bec puissant pour creuser le bois"
-              ],
-              "correctAnswer": "Un bec courbé qui filtre l'eau pour retenir les crevettes",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi les rapaces comme l'aigle et le faucon volent-ils très haut dans le ciel ?",
-              "options": [
-                "Pour éviter les prédateurs terrestres",
-                "Pour se réchauffer près du soleil",
-                "Pour chercher leur nourriture depuis les airs",
-                "Pour migrer plus rapidement d'un pays à l'autre"
-              ],
-              "correctAnswer": "Pour chercher leur nourriture depuis les airs",
-              "isSpecial": false
-            },
-            {
-              "question": "Comment le pic-vert trouve-t-il sa nourriture ?",
-              "options": [
-                "Il plonge dans l'eau pour attraper des poissons",
-                "Il filtre le sol avec son bec",
-                "Il tape fort son bec contre les troncs d'arbres pour débusquer des insectes",
-                "Il chasse en groupe avec d'autres oiseaux"
-              ],
-              "correctAnswer": "Il tape fort son bec contre les troncs d'arbres pour débusquer des insectes",
-              "isSpecial": false
-            },
-            {
-              "question": "Quel est le principal critère qui détermine la forme du bec d'un oiseau ?",
-              "options": [
-                "La taille de l'oiseau",
-                "Le régime alimentaire de l'oiseau",
-                "La couleur de ses plumes",
-                "Le milieu dans lequel il dort"
-              ],
-              "correctAnswer": "Le régime alimentaire de l'oiseau",
-              "isSpecial": false
-            },
-            {
-              "question": "A quel outil de menuiserie compare-t-on le bec du pic-vert ?",
-              "options": [
-                "Une scie",
-                "Un marteau",
-                "Un burin",
-                "Une perceuse"
-              ],
-              "correctAnswer": "Un burin",
-              "isSpecial": false
-            },
-            {
-              "question": "Quelle capacité visuelle extraordinaire possèdent les rapaces ?",
-              "options": [
-                "Ils voient uniquement la nuit grâce à une vision infrarouge",
-                "Ils peuvent voir en couleurs que les humains ne percoivent pas",
-                "Ils peuvent reperer une petite souris depuis le ciel",
-                "Ils ont une vision a 360 degres sans tourner la tete"
-              ],
-              "correctAnswer": "Ils peuvent reperer une petite souris depuis le ciel",
-              "isSpecial": false
-            },
-            {
-              "question": "Quel type de bec est le mieux adapte pour se nourrir d'insectes ?",
-              "options": [
-                "Un bec crochu et solide",
-                "Un bec courbé comme une passoire",
-                "Un bec fin et allonge",
-                "Un bec large et plat"
-              ],
-              "correctAnswer": "Un bec fin et allonge",
-              "isSpecial": false
-            },
-            {
-              "question": "Comment beaucoup de mâles oiseaux cherchent-ils a seduire une partenaire ?",
-              "options": [
-                "En chantant uniquement la nuit pour ne pas etre entendus des predateurs",
-                "En effectuant des danses ou en construisant des structures pour impressionner",
-                "En offrant de la nourriture deja machee a la femelle",
-                "En changeant la couleur de leurs plumes selon les saisons"
-              ],
-              "correctAnswer": "En effectuant des danses ou en construisant des structures pour impressionner",
-              "isSpecial": false
-            },
-            {
-              "question": "Lequel de ces oiseaux est considere comme un rapace ?",
-              "options": [
-                "Le flamant rose",
-                "Le pic-vert",
-                "Le faucon",
-                "Le canard"
-              ],
-              "correctAnswer": "Le faucon",
-              "isSpecial": false
-            },
-            {
-              "question": "Un ornithologiste observe qu'un oiseau possede un bec crochu et de grandes serres. Quelle conclusion peut-il logiquement en tirer sur le mode de vie de cet oiseau ?",
-              "options": [
-                "C'est un oiseau filtreur qui se nourrit de plancton en eau peu profonde",
-                "C'est un granivore qui casse des graines dures avec son bec",
-                "C'est un rapace carnivore qui capture et dechire des proies animales",
-                "C'est un insectivore qui sonde l'ecorce des arbres a la recherche de larves"
-              ],
-              "correctAnswer": "C'est un rapace carnivore qui capture et dechire des proies animales",
-              "isSpecial": true
-            }
-          ]
-        },
-        {
-          "id": "ornithology-gen-l10",
-          "title": "Leçon Défi",
-          "emoji": "🏆",
-          "themeColor": "amber",
-          "badgeId": "ornithology-badge-l10",
-          "badgeName": "Explorateur L10",
-          "badgeEmoji": "🏆",
-          "cards": [
-            {
-              "title": "Découverte : Leçon Défi",
-              "text": "Cette leçon traite de Leçon Défi. Lis attentivement pour réussir le quiz !",
-              "emoji": "🏆"
-            },
-            {
-              "title": "Le savais-tu ?",
-              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
-              "emoji": "💡"
-            },
-            {
-              "title": "Le défi du vol",
-              "text": "Apprendre à voler est un grand défi pour les bébés oiseaux. Au début, ils sautent de branche en branche avant de prendre leur envol.",
-              "emoji": "🐥"
-            },
-            {
-              "title": "Les oiseaux de la nuit",
-              "text": "La chouette et le hibou dorment le jour et se réveillent la nuit. On dit qu'ils sont nocturnes.",
-              "emoji": "🦉"
-            },
-            {
-              "title": "Un vol silencieux",
-              "text": "Les chouettes volent sans faire aucun bruit pour surprendre leur repas !",
-              "emoji": "🤫"
-            },
-            {
-              "title": "L'orientation magnétique",
-              "text": "Les oiseaux migrateurs accomplissent des voyages de milliers de kilomètres. Pour ne pas se perdre, ils utilisent le champ magnétique de la Terre !",
-              "emoji": "🧲"
-            },
-            {
-              "title": "Une boussole interne",
-              "text": "Grâce à des capteurs spéciaux, c'est comme s'ils avaient une boussole dans la tête qui leur indique toujours où se trouve le Nord ou le Sud.",
-              "emoji": "🧭"
-            },
-            {
-              "title": "Dormir sur une Patte",
-              "text": "Savais-tu que certains oiseaux aiment dormir en se tenant debout sur une seule de leurs pattes ? C'est très amusant à voir !",
-              "emoji": "🦩"
-            },
-            {
-              "title": "Les petits poussins",
-              "text": "Quand ils sortent de l'œuf, les oisillons ont très faim. Leurs parents font de nombreux allers-retours pour les nourrir.",
-              "emoji": "🐣"
-            },
-            {
-              "title": "Les oiseaux marins",
-              "text": "Certains oiseaux, comme les albatros, passent la majorité de leur vie en mer et peuvent boire de l'eau salée grâce à une glande spéciale.",
-              "emoji": "🌊"
-            },
-            {
-              "title": "Découverte magique : Le défi du vol",
-              "text": "Regarde bien les petits oiseaux ! Sais-tu qu'ils aiment beaucoup explorer et jouer dans la nature ? C'est fascinant de voir comment ils vivent.",
-              "emoji": "✨"
-            },
-            {
-              "title": "Le secret de : Le défi du vol",
-              "text": "Chut, c'est un secret ! Les oiseaux ont des pouvoirs cachés dans leurs plumes et leur façon de chanter.",
-              "emoji": "🤫"
-            },
-            {
-              "title": "L'incroyable réalité : Le défi du vol",
-              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "En savoir plus : Le défi du vol",
-              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "Analyse profonde : Le défi du vol",
-              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
-              "emoji": "🔬"
-            },
-            {
-              "title": "Pour aller plus loin : Le défi du vol",
-              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
-              "emoji": "📡"
-            }
-          ],
-          "quiz": [
-            {
-              "question": "Comment les bébés oiseaux apprennent-ils à voler ?",
-              "options": [
-                "Ils sautent de branche en branche avant de prendre leur envol",
-                "Ils sont poussés hors du nid par leurs parents dès la naissance",
-                "Ils regardent les autres oiseaux voler et imitent leurs mouvements",
-                "Ils commencent par nager avant d'apprendre à voler"
-              ],
-              "correctAnswer": "Ils sautent de branche en branche avant de prendre leur envol",
-              "isSpecial": false
-            },
-            {
-              "question": "Quel terme désigne les animaux qui dorment le jour et sont actifs la nuit ?",
-              "options": [
-                "Diurnes",
-                "Migrateurs",
-                "Nocturnes",
-                "Hibernants"
-              ],
-              "correctAnswer": "Nocturnes",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi les chouettes volent-elles sans faire de bruit ?",
-              "options": [
-                "Pour ne pas réveiller leurs petits dans le nid",
-                "Pour surprendre leur proie et chasser efficacement",
-                "Pour éviter d'attirer les prédateurs pendant la nuit",
-                "Parce que leurs ailes sont trop petites pour produire du son"
-              ],
-              "correctAnswer": "Pour surprendre leur proie et chasser efficacement",
-              "isSpecial": false
-            },
-            {
-              "question": "Quel outil naturel les oiseaux migrateurs utilisent-ils pour s'orienter lors de leurs longs voyages ?",
-              "options": [
-                "Les étoiles visibles uniquement la nuit",
-                "L'odeur des fleurs selon les saisons",
-                "Le champ magnétique de la Terre",
-                "La direction des vents dominants"
-              ],
-              "correctAnswer": "Le champ magnétique de la Terre",
-              "isSpecial": false
-            },
-            {
-              "question": "Comment peut-on décrire la capacité d'orientation des oiseaux migrateurs ?",
-              "options": [
-                "Comme une carte dessinée sur leurs plumes",
-                "Comme une boussole interne qui leur indique le Nord ou le Sud",
-                "Comme une mémoire des routes apprises de leurs parents",
-                "Comme un instinct de retour au nid uniquement"
-              ],
-              "correctAnswer": "Comme une boussole interne qui leur indique le Nord ou le Sud",
-              "isSpecial": false
-            },
-            {
-              "question": "Quelle est la particularité de la façon de dormir de certains oiseaux ?",
-              "options": [
-                "Ils dorment la tête sous l'eau",
-                "Ils dorment suspendus la tête en bas",
-                "Ils dorment debout sur une seule patte",
-                "Ils dorment en formant un cercle avec leurs congénères"
-              ],
-              "correctAnswer": "Ils dorment debout sur une seule patte",
-              "isSpecial": false
-            },
-            {
-              "question": "Que font les parents oiseaux pour nourrir leurs oisillons juste après l'éclosion ?",
-              "options": [
-                "Ils enseignent aux oisillons à trouver eux-mêmes leur nourriture",
-                "Ils font de nombreux allers-retours pour leur apporter de la nourriture",
-                "Ils régurgitent une réserve constituée avant la ponte",
-                "Ils amènent les oisillons jusqu'aux sources de nourriture"
-              ],
-              "correctAnswer": "Ils font de nombreux allers-retours pour leur apporter de la nourriture",
-              "isSpecial": false
-            },
-            {
-              "question": "Quelle capacité unique permet à l'albatros de boire de l'eau de mer ?",
-              "options": [
-                "Son foie filtre automatiquement le sel de l'eau ingérée",
-                "Il possède une glande spéciale qui élimine le sel",
-                "Il transforme l'eau salée en eau douce grâce à sa salive",
-                "Il ne boit jamais directement mais absorbe l'eau par les aliments"
-              ],
-              "correctAnswer": "Il possède une glande spéciale qui élimine le sel",
-              "isSpecial": false
-            },
-            {
-              "question": "Quelle affirmation décrit le mieux l'albatros parmi les oiseaux marins ?",
-              "options": [
-                "Il migre chaque hiver vers les zones tropicales pour se reproduire",
-                "Il passe la majorité de sa vie en mer",
-                "Il niche exclusivement sur les falaises des continents polaires",
-                "Il est incapable de voler mais nage sous l'eau comme un pingouin"
-              ],
-              "correctAnswer": "Il passe la majorité de sa vie en mer",
-              "isSpecial": false
-            },
-            {
-              "question": "Les chouettes et les hiboux sont tous les deux nocturnes. Parmi leurs caractéristiques communes liées à la chasse nocturne, laquelle est mentionnée dans ce cours ?",
-              "options": [
-                "Ils possèdent une vision infrarouge pour détecter la chaleur des proies",
-                "Leurs serres sont enduites d'une substance qui paralyse les proies",
-                "Les chouettes volent en silence pour surprendre leur repas",
-                "Ils emmagasinent de la lumière pendant le jour pour voir la nuit"
-              ],
-              "correctAnswer": "Les chouettes volent en silence pour surprendre leur repas",
+              "correctAnswer": "Zeus",
               "isSpecial": true
             }
           ]
@@ -48391,1991 +50525,144 @@ export const UNIVERSES: Record<string, Universe> = {
       ],
       "difficile": [
         {
-          "id": "ornithology-gen-l1-difficile",
-          "title": "Leçon",
-          "emoji": "🌟",
-          "themeColor": "amber",
-          "badgeId": "ornithology-badge-l1-difficile",
-          "badgeName": "Explorateur L1",
-          "badgeEmoji": "🌟",
+          "id": "myth-legends",
+          "title": "Héros et créatures légendaires",
+          "emoji": "🐉",
+          "themeColor": "violet",
+          "badgeId": "myth-hero",
+          "badgeName": "Chasseur de Légendes",
+          "badgeEmoji": "🐉",
           "cards": [
             {
-              "title": "Découverte : Leçon",
-              "text": "Cette leçon traite de Leçon. Lis attentivement pour réussir le quiz !",
-              "emoji": "🌟"
+              "title": "Les héros grecs",
+              "text": "Héraclès (Hercule) a accompli douze travaux ; Thésée a vaincu le Minotaure ; Persée a tué la Méduse. Ce sont les grands héros des mythes grecs.",
+              "emoji": "🗡️"
             },
             {
-              "title": "Le savais-tu ?",
-              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
-              "emoji": "💡"
+              "title": "Les créatures grecques",
+              "text": "La Méduse changeait en pierre ceux qui la regardaient ; le Minotaure, mi-homme mi-taureau, vivait dans le Labyrinthe ; Pégase est un cheval ailé.",
+              "emoji": "🐎"
             },
             {
-              "title": "Qui sont les oiseaux ?",
-              "text": "Un oiseau est un animal qui a des plumes, un bec et deux ailes. La plupart aiment s'envoler très haut dans le ciel bleu !",
-              "emoji": "🕊️"
+              "title": "Mythologie nordique",
+              "text": "Chez les Vikings, Thor est le dieu du tonnerre et possède un marteau magique nommé Mjöllnir. Odin est le roi des dieux nordiques.",
+              "emoji": "🔨"
             },
             {
-              "title": "L'anatomie pour le vol",
-              "text": "Pour voler, un oiseau a besoin d'être léger. C'est pourquoi la plupart de ses os sont creux, on les appelle des os pneumatisés.",
-              "emoji": "🦴"
-            },
-            {
-              "title": "Des muscles puissants",
-              "text": "Le bréchet est un os spécial sur le torse de l'oiseau où s'attachent de gros muscles pectoraux, essentiels pour battre des ailes.",
-              "emoji": "💪"
-            },
-            {
-              "title": "Le Nid Douillet",
-              "text": "L'oiseau fabrique une petite maison avec des branches et de l'herbe. C'est son nid ! Il y dépose ses petits œufs fragiles.",
-              "emoji": "🪹"
-            },
-            {
-              "title": "L'Étude des Oiseaux",
-              "text": "L'ornithologie est la science qui étudie les oiseaux. Les personnes qui observent et protègent les oiseaux s'appellent des ornithologues.",
-              "emoji": "🔭"
-            },
-            {
-              "title": "L'aérodynamisme",
-              "text": "La forme du corps des oiseaux est profilée pour fendre l'air, réduisant la résistance et leur permettant de voler très vite.",
-              "emoji": "💨"
-            },
-            {
-              "title": "Le plumage impermable",
-              "text": "Les canards ont une glande spciale qui produit de l'huile. Ils en recouvrent leurs plumes pour flotter sans tre mouills.",
-              "emoji": "🦆"
-            },
-            {
-              "title": "Où dorment les oiseaux ?",
-              "text": "Beaucoup d'oiseaux dorment dans les arbres, bien cachés dans les branches pour être en sécurité.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "L'incroyable réalité : Qui sont les oiseaux ?",
-              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "En savoir plus : Qui sont les oiseaux ?",
-              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "Analyse profonde : Qui sont les oiseaux ?",
-              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
-              "emoji": "🔬"
-            },
-            {
-              "title": "Pour aller plus loin : Qui sont les oiseaux ?",
-              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
-              "emoji": "📡"
+              "title": "Légendes du monde",
+              "text": "L'Égypte a le Sphinx (corps de lion, tête humaine) ; la légende arthurienne raconte le roi Arthur et son épée Excalibur ; le Phénix renaît de ses cendres.",
+              "emoji": "🏺"
             }
           ],
           "quiz": [
             {
-              "question": "Comment appelle-t-on les os creux des oiseaux qui allègent leur squelette pour le vol ?",
+              "question": "Quel héros grec est célèbre pour avoir accompli douze travaux ?",
               "options": [
-                "Os pneumatisés",
-                "Os spongieux",
-                "Os cortical",
-                "Os trabéculaire"
+                "Thésée",
+                "Héraclès (Hercule)",
+                "Persée",
+                "Ulysse"
               ],
-              "correctAnswer": "Os pneumatisés",
+              "correctAnswer": "Héraclès (Hercule)",
               "isSpecial": false
             },
             {
-              "question": "Quel os du torse de l'oiseau sert de point d'ancrage aux muscles pectoraux nécessaires au battement des ailes ?",
+              "question": "Quelle créature change en pierre ceux qui croisent son regard ?",
               "options": [
-                "Le sternum",
-                "Le bréchet",
-                "La clavicule",
-                "L'omoplate"
+                "L'Hydre",
+                "La Méduse",
+                "Le Sphinx",
+                "La Chimère"
               ],
-              "correctAnswer": "Le bréchet",
+              "correctAnswer": "La Méduse",
               "isSpecial": false
             },
             {
-              "question": "Quelle adaptation du corps des oiseaux réduit la résistance de l'air et leur permet d'atteindre des vitesses élevées en vol ?",
+              "question": "Quel monstre mi-homme mi-taureau vivait dans le Labyrinthe de Crète ?",
               "options": [
-                "Un plumage imperméable",
-                "Une forme profilée aérodynamique",
-                "Des os pneumatisés",
-                "Un bréchet saillant"
+                "Le Centaure",
+                "Le Cyclope",
+                "Le Minotaure",
+                "Le Satyre"
               ],
-              "correctAnswer": "Une forme profilée aérodynamique",
+              "correctAnswer": "Le Minotaure",
               "isSpecial": false
             },
             {
-              "question": "Comment les canards maintiennent-ils leurs plumes imperméables pour flotter sans se mouiller ?",
+              "question": "Quel héros a tué le Minotaure grâce au fil d'Ariane ?",
               "options": [
-                "En séchant leurs plumes au soleil après chaque plongée",
-                "En se frottant contre des roches humides",
-                "En enduisant leurs plumes d'huile produite par une glande spéciale",
-                "En changeant de plumage chaque saison"
+                "Persée",
+                "Thésée",
+                "Jason",
+                "Héraclès"
               ],
-              "correctAnswer": "En enduisant leurs plumes d'huile produite par une glande spéciale",
+              "correctAnswer": "Thésée",
               "isSpecial": false
             },
             {
-              "question": "Quel est le nom de la science qui étudie les oiseaux ?",
+              "question": "Comment s'appelle le cheval ailé de la mythologie grecque ?",
               "options": [
-                "La zoologie",
-                "L'entomologie",
-                "L'ornithologie",
-                "L'herpétologie"
+                "Bucéphale",
+                "Sleipnir",
+                "Pégase",
+                "Le Centaure"
               ],
-              "correctAnswer": "L'ornithologie",
+              "correctAnswer": "Pégase",
               "isSpecial": false
             },
             {
-              "question": "Pourquoi les oiseaux ont-ils des os pneumatisés plutôt que des os denses comme la plupart des mammifères ?",
+              "question": "Dans la mythologie nordique, comment s'appelle le marteau de Thor ?",
               "options": [
-                "Pour mieux résister aux chocs lors de l'atterrissage",
-                "Pour réduire leur masse corporelle et faciliter le vol",
-                "Pour stocker des réserves d'oxygène pendant les longues migrations",
-                "Pour protéger les organes internes contre le froid"
+                "Gungnir",
+                "Mjöllnir",
+                "Excalibur",
+                "Durandal"
               ],
-              "correctAnswer": "Pour réduire leur masse corporelle et faciliter le vol",
+              "correctAnswer": "Mjöllnir",
               "isSpecial": false
             },
             {
-              "question": "Parmi ces caractéristiques, laquelle est commune à TOUS les oiseaux sans exception ?",
+              "question": "Quelle créature égyptienne a un corps de lion et une tête humaine ?",
               "options": [
-                "La capacité de voler",
-                "La présence de plumes",
-                "La construction d'un nid",
-                "Un régime alimentaire carnivore"
+                "Anubis",
+                "Le Griffon",
+                "Le Sphinx",
+                "Le Phénix"
               ],
-              "correctAnswer": "La présence de plumes",
+              "correctAnswer": "Le Sphinx",
               "isSpecial": false
             },
             {
-              "question": "Pourquoi beaucoup d'oiseaux choisissent-ils de dormir dans les branches des arbres plutôt qu'au sol ?",
+              "question": "Quel oiseau légendaire renaît de ses cendres ?",
               "options": [
-                "Pour profiter de la chaleur dégagée par les feuilles",
-                "Pour être plus proches des insectes dont ils se nourrissent la nuit",
-                "Pour être protégés des prédateurs terrestres",
-                "Pour surveiller leur territoire depuis la hauteur"
+                "Le Roc",
+                "Le Phénix",
+                "La Harpie",
+                "Le Griffon"
               ],
-              "correctAnswer": "Pour être protégés des prédateurs terrestres",
+              "correctAnswer": "Le Phénix",
               "isSpecial": false
             },
             {
-              "question": "Quelle technologie moderne les ornithologues utilisent-ils principalement pour suivre les migrations des oiseaux sur de longues distances ?",
+              "question": "Dans la légende arthurienne, comment se nomme l'épée du roi Arthur ?",
               "options": [
-                "Des caméras infrarouges fixées dans les nids",
-                "Des balises GPS ou des bagues de suivi électronique",
-                "Des drones munis de filets de capture",
-                "Des radars météorologiques classiques"
+                "Durandal",
+                "Excalibur",
+                "Gram",
+                "Mjöllnir"
               ],
-              "correctAnswer": "Des balises GPS ou des bagues de suivi électronique",
+              "correctAnswer": "Excalibur",
               "isSpecial": false
             },
             {
-              "question": "Le bréchet est particulièrement développé chez les oiseaux volants et presque absent chez les ratites comme l'autruche. Quelle conclusion logique peut-on en tirer ?",
+              "question": "À quoi servaient surtout les grands mythes (grecs, nordiques, égyptiens) ?",
               "options": [
-                "Les ratites ont des muscles pectoraux plus puissants que les oiseaux volants",
-                "L'absence de bréchet chez les ratites est liée à leur incapacité à voler, car ils n'ont pas besoin d'ancrer de gros muscles pectoraux",
-                "Les ratites utilisent leur bréchet uniquement pour la nage",
-                "Un bréchet réduit est un avantage pour courir plus vite"
+                "À expliquer le monde et les phénomènes naturels",
+                "À raconter l'histoire réelle des rois",
+                "À enseigner les mathématiques",
+                "À décrire des pays lointains"
               ],
-              "correctAnswer": "L'absence de bréchet chez les ratites est liée à leur incapacité à voler, car ils n'ont pas besoin d'ancrer de gros muscles pectoraux",
-              "isSpecial": true
-            }
-          ]
-        },
-        {
-          "id": "ornithology-gen-l2-difficile",
-          "title": "Leçon Intermédiaire",
-          "emoji": "🌱",
-          "themeColor": "amber",
-          "badgeId": "ornithology-badge-l2-difficile",
-          "badgeName": "Explorateur L2",
-          "badgeEmoji": "🌱",
-          "cards": [
-            {
-              "title": "Découverte : Leçon Intermédiaire",
-              "text": "Cette leçon traite de Leçon Intermédiaire. Lis attentivement pour réussir le quiz !",
-              "emoji": "🌱"
-            },
-            {
-              "title": "Le savais-tu ?",
-              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
-              "emoji": "💡"
-            },
-            {
-              "title": "Les couleurs des oiseaux",
-              "text": "Les oiseaux peuvent avoir plein de couleurs magnifiques ! Le flamant rose est rose parce qu'il mange beaucoup de petites crevettes.",
-              "emoji": "🦩"
-            },
-            {
-              "title": "Le bec des oiseaux",
-              "text": "Chaque oiseau a un bec différent ! Les becs pointus servent à attraper des insectes, et les becs épais à casser des petites graines.",
-              "emoji": "🦤"
-            },
-            {
-              "title": "Pas de dents !",
-              "text": "Sais-tu que les oiseaux n'ont pas de dents ? Ils avalent leur nourriture toute entière sans la mâcher.",
-              "emoji": "😲"
-            },
-            {
-              "title": "Le secret du plumage",
-              "text": "Les oiseaux passent beaucoup de temps à lisser leurs plumes. Ils utilisent une glande spéciale à la base de leur queue qui produit de l'huile pour les imperméabiliser.",
-              "emoji": "🪶"
-            },
-            {
-              "title": "Les différentes plumes",
-              "text": "Les grandes plumes des ailes sont les rémiges pour le vol, alors que le duvet, très doux, garde l'oiseau bien au chaud.",
-              "emoji": "🧥"
-            },
-            {
-              "title": "Le Bain des Oiseaux",
-              "text": "Les petits oiseaux adorent prendre des bains dans les flaques d'eau. Cela les aide à nettoyer leurs belles plumes pour bien voler !",
-              "emoji": "💦"
-            },
-            {
-              "title": "Les Plumes Imperméables",
-              "text": "Les canards ont des plumes spéciales sur lesquelles l'eau glisse sans jamais les mouiller. C'est très pratique pour nager longtemps !",
-              "emoji": "🦆"
-            },
-            {
-              "title": "Les os pneumatisés",
-              "text": "Pour être plus légers en vol, beaucoup d'oiseaux possèdent des os creux remplis d'air, appelés os pneumatisés.",
-              "emoji": "🦴"
-            },
-            {
-              "title": "Où dorment les oiseaux ?",
-              "text": "Beaucoup d'oiseaux dorment dans les arbres, bien cachés dans les branches pour être en sécurité.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "L'incroyable réalité : Les couleurs des oiseaux",
-              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "En savoir plus : Les couleurs des oiseaux",
-              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "Analyse profonde : Les couleurs des oiseaux",
-              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
-              "emoji": "🔬"
-            },
-            {
-              "title": "Pour aller plus loin : Les couleurs des oiseaux",
-              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
-              "emoji": "📡"
-            }
-          ],
-          "quiz": [
-            {
-              "question": "Quelle glande les oiseaux utilisent-ils pour imperméabiliser leurs plumes, et où est-elle située ?",
-              "options": [
-                "La glande salivaire, située sous la langue",
-                "La glande uropygiale, située à la base de la queue",
-                "La glande sébacée, située sous les ailes",
-                "La glande thyroïde, située dans le cou"
-              ],
-              "correctAnswer": "La glande uropygiale, située à la base de la queue",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi le flamant rose possède-t-il une couleur aussi caractéristique ?",
-              "options": [
-                "Il produit naturellement un pigment rose dans ses cellules cutanées",
-                "Ses plumes reflètent la lumière du soleil couchant en milieu humide",
-                "Il absorbe des caroténoïdes présents dans les crustacés et algues qu'il consomme",
-                "Ses parents lui transmettent cette couleur par hérédité génétique directe"
-              ],
-              "correctAnswer": "Il absorbe des caroténoïdes présents dans les crustacés et algues qu'il consomme",
-              "isSpecial": false
-            },
-            {
-              "question": "Comment s'appellent les grandes plumes des ailes qui permettent le vol chez les oiseaux ?",
-              "options": [
-                "Les tectricess",
-                "Les rectrices",
-                "Les rémiges",
-                "Les filoplumes"
-              ],
-              "correctAnswer": "Les rémiges",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi les oiseaux n'ont-ils pas de dents, contrairement à la plupart des vertébrés ?",
-              "options": [
-                "Leurs ancêtres ont perdu les dents au profit d'un bec plus léger, favorisant le vol",
-                "Leurs dents se transforment en bec chaque année lors de la mue",
-                "Les dents seraient trop lourdes pour leur petite taille corporelle",
-                "Les oiseaux appartiennent aux invertébrés et n'ont jamais eu de dents"
-              ],
-              "correctAnswer": "Leurs ancêtres ont perdu les dents au profit d'un bec plus léger, favorisant le vol",
-              "isSpecial": false
-            },
-            {
-              "question": "Quel type de bec est le mieux adapté pour capturer des insectes en vol ?",
-              "options": [
-                "Un bec large et plat comme celui du canard",
-                "Un bec crochu et puissant comme celui de l'aigle",
-                "Un bec fin et pointu comme celui de la mésange ou de l'hirondelle",
-                "Un bec épais et court comme celui du bouvreuil"
-              ],
-              "correctAnswer": "Un bec fin et pointu comme celui de la mésange ou de l'hirondelle",
-              "isSpecial": false
-            },
-            {
-              "question": "Comment appelle-t-on les os creux remplis d'air que possèdent de nombreux oiseaux pour alléger leur squelette ?",
-              "options": [
-                "Os trabéculaires",
-                "Os pneumatisés",
-                "Os spongieux",
-                "Os médullaires"
-              ],
-              "correctAnswer": "Os pneumatisés",
-              "isSpecial": false
-            },
-            {
-              "question": "Quel est le rôle principal du duvet chez les oiseaux, par rapport aux rémiges ?",
-              "options": [
-                "Faciliter le vol en réduisant la résistance de l'air",
-                "Produire l'huile nécessaire à l'imperméabilisation",
-                "Assurer l'isolation thermique du corps",
-                "Permettre la communication visuelle entre individus"
-              ],
-              "correctAnswer": "Assurer l'isolation thermique du corps",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi les canards peuvent-ils nager longuement sans que leurs plumes ne se gorgent d'eau ?",
-              "options": [
-                "Leurs plumes sont naturellement hydrophobes grâce à leur structure microscopique unique",
-                "Ils enduisent leurs plumes d'une huile produite par leur glande uropygiale qui repousse l'eau",
-                "Ils possèdent une couche de peau imperméable sous les plumes qui bloque l'eau",
-                "Ils battent constamment des ailes pour chasser l'eau avant qu'elle ne pénètre"
-              ],
-              "correctAnswer": "Ils enduisent leurs plumes d'une huile produite par leur glande uropygiale qui repousse l'eau",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi les petits oiseaux prennent-ils des bains dans les flaques d'eau, alors que cela pourrait sembler dangereux ?",
-              "options": [
-                "Pour réguler leur température corporelle en période de chaleur",
-                "Pour nettoyer leurs plumes et maintenir leur capacité de vol",
-                "Pour marquer leur territoire en mouillant les zones proches",
-                "Pour se débarrasser des parasites en noyant les insectes dans l'eau"
-              ],
-              "correctAnswer": "Pour nettoyer leurs plumes et maintenir leur capacité de vol",
-              "isSpecial": false
-            },
-            {
-              "question": "Un oiseau possède des os pneumatisés, une glande uropygiale fonctionnelle et des rémiges bien développées. Lequel de ces facteurs contribue LE PLUS directement a la reduction de la consommation d'energie pendant un long vol migratoire ?",
-              "options": [
-                "La glande uropygiale, car l'imperméabilisation réduit la friction avec l'air",
-                "Les os pneumatisés, car la reduction de masse diminue la force necessaire pour maintenir l'altitude",
-                "Les rémiges, car leur rigidité permet de planer sans battre des ailes sur de longues distances",
-                "Le duvet, car l'isolation thermique évite de dépenser de l'énergie pour se réchauffer en altitude"
-              ],
-              "correctAnswer": "Les rémiges, car leur rigidité permet de planer sans battre des ailes sur de longues distances",
-              "isSpecial": true
-            }
-          ]
-        },
-        {
-          "id": "ornithology-gen-l3-difficile",
-          "title": "Leçon Avancée",
-          "emoji": "💧",
-          "themeColor": "amber",
-          "badgeId": "ornithology-badge-l3-difficile",
-          "badgeName": "Explorateur L3",
-          "badgeEmoji": "💧",
-          "cards": [
-            {
-              "title": "Découverte : Leçon Avancée",
-              "text": "Cette leçon traite de Leçon Avancée. Lis attentivement pour réussir le quiz !",
-              "emoji": "💧"
-            },
-            {
-              "title": "Le savais-tu ?",
-              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
-              "emoji": "💡"
-            },
-            {
-              "title": "Le voyage des oiseaux",
-              "text": "Quand il fait trop froid, certains oiseaux font un très long voyage appelé migration. Ils volent ensemble vers des pays chauds !",
-              "emoji": "🌅"
-            },
-            {
-              "title": "Les nids douillets",
-              "text": "Les oiseaux construisent des nids pour y pondre leurs œufs. Ils utilisent des brindilles, de la boue et même de la mousse !",
-              "emoji": "🪹"
-            },
-            {
-              "title": "Les petits oisillons",
-              "text": "Quand les œufs éclosent, de petits bébés oiseaux sortent. On les appelle des oisillons.",
-              "emoji": "🐣"
-            },
-            {
-              "title": "Les descendants des dinosaures",
-              "text": "Les oiseaux sont les seuls survivants de la grande famille des dinosaures ! Les paléontologues ont trouvé des fossiles de dinosaures avec des plumes.",
-              "emoji": "🦖"
-            },
-            {
-              "title": "L'Archaeopteryx",
-              "text": "L'Archaeopteryx est l'un des plus célèbres fossiles. Il avait des plumes comme un oiseau mais des dents et une longue queue comme un reptile.",
-              "emoji": "🦴"
-            },
-            {
-              "title": "Le Petit Ver de Terre",
-              "text": "Beaucoup d'oiseaux aiment picorer la terre pour trouver des petits vers très bons à manger. C'est leur repas préféré !",
-              "emoji": "🪱"
-            },
-            {
-              "title": "L'Œil du Faucon",
-              "text": "Le faucon possède une vision si perçante qu'il peut repérer une petite proie depuis très haut dans les nuages.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "La migration incroyable",
-              "text": "Certains oiseaux, comme la Sterne arctique, parcourent des dizaines de milliers de kilomètres chaque année pour trouver un climat favorable.",
-              "emoji": "🌍"
-            },
-            {
-              "title": "Où dorment les oiseaux ?",
-              "text": "Beaucoup d'oiseaux dorment dans les arbres, bien cachés dans les branches pour être en sécurité.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "L'incroyable réalité : Le voyage des oiseaux",
-              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "En savoir plus : Le voyage des oiseaux",
-              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "Analyse profonde : Le voyage des oiseaux",
-              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
-              "emoji": "🔬"
-            },
-            {
-              "title": "Pour aller plus loin : Le voyage des oiseaux",
-              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
-              "emoji": "📡"
-            }
-          ],
-          "quiz": [
-            {
-              "question": "Quel groupe d'animaux disparus les oiseaux modernes ont-ils comme ancêtres directs ?",
-              "options": [
-                "Les reptiles marins",
-                "Les dinosaures",
-                "Les mammifères primitifs",
-                "Les amphibiens"
-              ],
-              "correctAnswer": "Les dinosaures",
-              "isSpecial": false
-            },
-            {
-              "question": "Qu'est-ce qui rend l'Archaeopteryx si particulier parmi les fossiles connus ?",
-              "options": [
-                "Il possédait des plumes mais aussi des dents et une longue queue osseuse",
-                "Il était entièrement recouvert d'écailles et ne pouvait pas voler",
-                "Il était le plus grand dinosaure à plumes jamais découvert",
-                "Il vivait exclusivement dans les milieux aquatiques"
-              ],
-              "correctAnswer": "Il possédait des plumes mais aussi des dents et une longue queue osseuse",
-              "isSpecial": false
-            },
-            {
-              "question": "La Sterne arctique est célèbre pour sa migration exceptionnelle. Quelle distance parcourt-elle environ chaque année ?",
-              "options": [
-                "Quelques centaines de kilomètres",
-                "Environ 5 000 kilomètres",
-                "Des dizaines de milliers de kilomètres",
-                "Environ 3 000 kilomètres"
-              ],
-              "correctAnswer": "Des dizaines de milliers de kilomètres",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi de nombreux oiseaux dorment-ils dans les branches des arbres plutôt qu'au sol ?",
-              "options": [
-                "Pour profiter de la chaleur dégagée par le feuillage",
-                "Parce qu'ils ne peuvent pas s'asseoir sur une surface plate",
-                "Pour être mieux cachés et protégés des prédateurs",
-                "Pour faciliter leur envol au lever du soleil"
-              ],
-              "correctAnswer": "Pour être mieux cachés et protégés des prédateurs",
-              "isSpecial": false
-            },
-            {
-              "question": "Quels matériaux les oiseaux utilisent-ils pour construire leur nid ?",
-              "options": [
-                "Uniquement des plumes et du duvet",
-                "Des brindilles, de la boue et de la mousse",
-                "Des pierres, de la résine et des feuilles sèches",
-                "De la terre argileuse et des épines"
-              ],
-              "correctAnswer": "Des brindilles, de la boue et de la mousse",
-              "isSpecial": false
-            },
-            {
-              "question": "Quel terme désigne spécifiquement les jeunes oiseaux qui viennent de sortir de l'oeuf ?",
-              "options": [
-                "Des poussins",
-                "Des oisillons",
-                "Des nidicoles",
-                "Des fledglings"
-              ],
-              "correctAnswer": "Des oisillons",
-              "isSpecial": false
-            },
-            {
-              "question": "Quelle caractéristique sensorielle du faucon lui permet de chasser avec une efficacité remarquable ?",
-              "options": [
-                "Une ouie capable de détecter les infra-sons",
-                "Une vision perçante lui permettant de repérer une proie depuis très haut",
-                "Un odorat développé pour pister les animaux au sol",
-                "Des vibrisses sensibles aux mouvements de l'air"
-              ],
-              "correctAnswer": "Une vision perçante lui permettant de repérer une proie depuis très haut",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi certains oiseaux entreprennent-ils une migration saisonnière vers des régions plus chaudes ?",
-              "options": [
-                "Pour trouver de nouveaux partenaires d'une espèce différente",
-                "Parce que leurs plumes ne résistent pas à la lumière estivale",
-                "Pour fuir les températures trop froides et trouver un climat favorable",
-                "Pour pondre leurs oeufs dans un sol plus mou"
-              ],
-              "correctAnswer": "Pour fuir les températures trop froides et trouver un climat favorable",
-              "isSpecial": false
-            },
-            {
-              "question": "Quelle discipline scientifique utilise des technologies avancées pour étudier et suivre les déplacements migratoires des oiseaux ?",
-              "options": [
-                "La zoologie comportementale",
-                "La paléontologie",
-                "L'ornithologie moderne",
-                "L'éthologie comparative"
-              ],
-              "correctAnswer": "L'ornithologie moderne",
-              "isSpecial": false
-            },
-            {
-              "question": "L'Archaeopteryx est souvent qualifié de \"chaînon manquant\" entre reptiles et oiseaux. Lequel de ces éléments prouve qu'il n'était pas encore un oiseau moderne à part entière ?",
-              "options": [
-                "L'absence totale de plumes sur son corps",
-                "La présence de dents dans sa machoire et d'une longue queue osseuse non pygostyle",
-                "Son incapacité anatomique à battre des ailes",
-                "La forme de ses pattes, identique à celle des crocodiliens actuels"
-              ],
-              "correctAnswer": "La présence de dents dans sa machoire et d'une longue queue osseuse non pygostyle",
-              "isSpecial": true
-            }
-          ]
-        },
-        {
-          "id": "ornithology-gen-l4-difficile",
-          "title": "Leçon Générale",
-          "emoji": "🔥",
-          "themeColor": "amber",
-          "badgeId": "ornithology-badge-l4-difficile",
-          "badgeName": "Explorateur L4",
-          "badgeEmoji": "🔥",
-          "cards": [
-            {
-              "title": "Découverte : Leçon Générale",
-              "text": "Cette leçon traite de Leçon Générale. Lis attentivement pour réussir le quiz !",
-              "emoji": "🔥"
-            },
-            {
-              "title": "Le savais-tu ?",
-              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
-              "emoji": "💡"
-            },
-            {
-              "title": "Généralités sur les becs",
-              "text": "Le bec des oiseaux est magique. Un bec fin aide à attraper des insectes, et un bec court et fort sert à casser des graines.",
-              "emoji": "🦆"
-            },
-            {
-              "title": "Les belles plumes",
-              "text": "Le corps des oiseaux est recouvert de plumes. Elles les protègent du froid et de la pluie.",
-              "emoji": "🪶"
-            },
-            {
-              "title": "De toutes les couleurs",
-              "text": "Certains oiseaux ont des plumes très colorées pour attirer l'attention ou pour se cacher dans la nature.",
-              "emoji": "🌈"
-            },
-            {
-              "title": "L'intelligence des corvidés",
-              "text": "Les corbeaux et les corneilles font partie des corvidés. Ce sont parmi les oiseaux les plus intelligents au monde !",
-              "emoji": "🐦‍⬛"
-            },
-            {
-              "title": "Utiliser des outils",
-              "text": "Certains corbeaux sont capables d'utiliser des brindilles comme outils pour attraper des insectes cachés dans l'écorce des arbres.",
-              "emoji": "🛠️"
-            },
-            {
-              "title": "Cache-cache dans les Arbres",
-              "text": "Les oiseaux se cachent dans les grandes feuilles des arbres pour se protéger de la pluie et des grands animaux.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "Les Migrateurs",
-              "text": "La sterne arctique est une incroyable voyageuse. Elle parcourt des milliers de kilomètres chaque année pour passer de l'Arctique à l'Antarctique !",
-              "emoji": "🌍"
-            },
-            {
-              "title": "Les rapaces nocturnes",
-              "text": "Les chouettes et les hiboux sont des prédateurs redoutables la nuit grâce à leur vision perçante et leur vol totalement silencieux.",
-              "emoji": "🦉"
-            },
-            {
-              "title": "Où dorment les oiseaux ?",
-              "text": "Beaucoup d'oiseaux dorment dans les arbres, bien cachés dans les branches pour être en sécurité.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "L'incroyable réalité : Généralités sur les becs",
-              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "En savoir plus : Généralités sur les becs",
-              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "Analyse profonde : Généralités sur les becs",
-              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
-              "emoji": "🔬"
-            },
-            {
-              "title": "Pour aller plus loin : Généralités sur les becs",
-              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
-              "emoji": "📡"
-            }
-          ],
-          "quiz": [
-            {
-              "question": "Un oiseau possède un bec fin et allongé. Quel type de régime alimentaire ce bec suggère-t-il le plus probablement ?",
-              "options": [
-                "Consommation de graines dures et résistantes",
-                "Capture d'insectes dans des fissures ou sous l'écorce",
-                "Déchirement de proies de grande taille",
-                "Filtration de l'eau pour en extraire des algues"
-              ],
-              "correctAnswer": "Capture d'insectes dans des fissures ou sous l'écorce",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi les plumes constituent-elles un avantage décisif pour les oiseaux vivant dans des environnements froids et humides ?",
-              "options": [
-                "Elles alourdissent le corps pour une meilleure stabilité au sol",
-                "Elles isolent du froid et repoussent l'eau grâce à leur structure",
-                "Elles absorbent la chaleur solaire et la restituent la nuit",
-                "Elles permettent une mue permanente sans interruption de vol"
-              ],
-              "correctAnswer": "Elles isolent du froid et repoussent l'eau grâce à leur structure",
-              "isSpecial": false
-            },
-            {
-              "question": "Chez certaines espèces d'oiseaux, le plumage vivement coloré du mâle sert principalement à quoi ?",
-              "options": [
-                "Faciliter la chasse en aveuglant les proies",
-                "Attirer les femelles lors de la parade nuptiale",
-                "Réguler la température corporelle en absorbant plus de lumière",
-                "Avertir les prédateurs de leur toxicité"
-              ],
-              "correctAnswer": "Attirer les femelles lors de la parade nuptiale",
-              "isSpecial": false
-            },
-            {
-              "question": "Les corvidés sont reconnus comme étant parmi les oiseaux les plus intelligents. Quelle famille regroupe les corbeaux et les corneilles ?",
-              "options": [
-                "Les rapaces",
-                "Les passereaux",
-                "Les corvidés",
-                "Les échassiers"
-              ],
-              "correctAnswer": "Les corvidés",
-              "isSpecial": false
-            },
-            {
-              "question": "Comment certains corbeaux obtiennent-ils des insectes dissimulés sous l'écorce des arbres ?",
-              "options": [
-                "En frappant l'écorce avec leur bec de manière répétée jusqu'à la fendre",
-                "En utilisant des brindilles comme outils pour les extraire",
-                "En inondant les galeries avec leur salive pour forcer les insectes à sortir",
-                "En s'associant avec d'autres oiseaux pour encercler l'arbre"
-              ],
-              "correctAnswer": "En utilisant des brindilles comme outils pour les extraire",
-              "isSpecial": false
-            },
-            {
-              "question": "La sterne arctique effectue chaque année une migration exceptionnelle. Quel trajet accomplit-elle ?",
-              "options": [
-                "De l'Europe occidentale vers l'Afrique subsaharienne",
-                "De l'Arctique jusqu'en Antarctique",
-                "De l'Asie centrale vers les côtes méditerranéennes",
-                "De l'Amérique du Nord vers l'Amérique du Sud en longeant les côtes"
-              ],
-              "correctAnswer": "De l'Arctique jusqu'en Antarctique",
-              "isSpecial": false
-            },
-            {
-              "question": "Quelle caractéristique du vol des chouettes et des hiboux leur permet de surprendre leurs proies la nuit sans être détectés ?",
-              "options": [
-                "Leur vol est extrêmement rapide, ne laissant pas le temps à la proie de réagir",
-                "Leur vol est totalement silencieux grâce à la structure de leurs plumes",
-                "Leur envergure réduite leur permet de voler au ras du sol",
-                "Ils émettent des ultrasons qui paralysent temporairement les proies"
-              ],
-              "correctAnswer": "Leur vol est totalement silencieux grâce à la structure de leurs plumes",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi de nombreux oiseaux choisissent-ils de dormir dans les branches d'arbres plutôt qu'au sol ?",
-              "options": [
-                "La chaleur dégagée par les feuilles les nuit les maintient au chaud",
-                "Ils sont mieux camouflés et protégés des prédateurs terrestres",
-                "Les vibrations du tronc les alertent en cas d'approche d'un prédateur",
-                "Ils profitent de l'humidité nocturne pour hydrater leurs plumes"
-              ],
-              "correctAnswer": "Ils sont mieux camouflés et protégés des prédateurs terrestres",
-              "isSpecial": false
-            },
-            {
-              "question": "L'ornithologie moderne a recours à des technologies avancées pour étudier les oiseaux. Laquelle de ces méthodes est couramment utilisée pour suivre les migrations ?",
-              "options": [
-                "La dissection des plumes pour analyser leur composition chimique",
-                "Le marquage par bagues et la géolocalisation par balises GPS",
-                "L'élevage en captivité pour observer les comportements migratoires",
-                "L'analyse des chants enregistrés pour déduire les routes empruntées"
-              ],
-              "correctAnswer": "Le marquage par bagues et la géolocalisation par balises GPS",
-              "isSpecial": false
-            },
-            {
-              "question": "Chez les rapaces nocturnes comme le hibou grand-duc, les deux yeux sont orientés vers l'avant du visage. Quel avantage fonctionnel majeur cela procure-t-il par rapport à des yeux situés sur les côtés de la tête ?",
-              "options": [
-                "Un champ de vision panoramique de 360 degres permettant de détecter tout mouvement environnant",
-                "Une vision binoculaire qui améliore la perception de la profondeur et l'estimation précise des distances",
-                "Une capacité à percevoir les infrarouges émis par les proies à sang chaud",
-                "Une meilleure résistance à l'éblouissement causé par la lumière de la lune"
-              ],
-              "correctAnswer": "Une vision binoculaire qui améliore la perception de la profondeur et l'estimation précise des distances",
-              "isSpecial": true
-            }
-          ]
-        },
-        {
-          "id": "ornithology-gen-l5-difficile",
-          "title": "Leçon Découverte",
-          "emoji": "💨",
-          "themeColor": "amber",
-          "badgeId": "ornithology-badge-l5-difficile",
-          "badgeName": "Explorateur L5",
-          "badgeEmoji": "💨",
-          "cards": [
-            {
-              "title": "Découverte : Leçon Découverte",
-              "text": "Cette leçon traite de Leçon Découverte. Lis attentivement pour réussir le quiz !",
-              "emoji": "💨"
-            },
-            {
-              "title": "Le savais-tu ?",
-              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
-              "emoji": "💡"
-            },
-            {
-              "title": "La découverte du chant",
-              "text": "As-tu déjà écouté un oiseau chanter ? Chaque oiseau a sa propre mélodie pour dire 'bonjour' ou pour appeler ses amis !",
-              "emoji": "🎵"
-            },
-            {
-              "title": "Le vol des oiseaux",
-              "text": "Pour voler, les oiseaux battent des ailes. Leurs os sont très légers, ce qui les aide à s'envoler facilement !",
-              "emoji": "🦅"
-            },
-            {
-              "title": "La descente",
-              "text": "Pour atterrir, l'oiseau ouvre grand ses ailes comme un parachute pour ralentir.",
-              "emoji": "🪂"
-            },
-            {
-              "title": "Une vision extraordinaire",
-              "text": "La vue est le sens le plus développé chez l'oiseau. Les rapaces ont une acuité visuelle bien supérieure à celle des humains.",
-              "emoji": "👁️"
-            },
-            {
-              "title": "Voir l'invisible",
-              "text": "De nombreux oiseaux peuvent percevoir la lumière ultraviolette. Cela les aide à repérer des fruits mûrs ou des traces laissées par leurs proies.",
-              "emoji": "✨"
-            },
-            {
-              "title": "L'Œuf Magique",
-              "text": "Tous les oiseaux naissent dans un œuf. Au début, le bébé oiseau casse la coquille avec son petit bec pour sortir.",
-              "emoji": "🥚"
-            },
-            {
-              "title": "La Symphonie des Oiseaux",
-              "text": "Chaque matin au printemps, les oiseaux offrent un magnifique concert appelé le 'chœur de l'aube' pour délimiter leur territoire.",
-              "emoji": "🎶"
-            },
-            {
-              "title": "Le rôle écologique",
-              "text": "Les oiseaux jouent un rôle crucial dans la nature : ils pollinisent les fleurs, dispersent les graines et contrôlent les populations d'insectes.",
-              "emoji": "🌱"
-            },
-            {
-              "title": "Où dorment les oiseaux ?",
-              "text": "Beaucoup d'oiseaux dorment dans les arbres, bien cachés dans les branches pour être en sécurité.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "L'incroyable réalité : La découverte du chant",
-              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "En savoir plus : La découverte du chant",
-              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "Analyse profonde : La découverte du chant",
-              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
-              "emoji": "🔬"
-            },
-            {
-              "title": "Pour aller plus loin : La découverte du chant",
-              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
-              "emoji": "📡"
-            }
-          ],
-          "quiz": [
-            {
-              "question": "Pourquoi les os des oiseaux sont-ils adaptés au vol ?",
-              "options": [
-                "Ils sont creux et très légers",
-                "Ils sont remplis de moelle rouge pour produire de l'énergie",
-                "Ils sont plus denses que ceux des mammifères pour assurer la stabilité",
-                "Ils sont recouverts de cartilage pour amortir les chocs"
-              ],
-              "correctAnswer": "Ils sont creux et très légers",
-              "isSpecial": false
-            },
-            {
-              "question": "Comment un oiseau ralentit-il pour atterrir en toute sécurité ?",
-              "options": [
-                "Il replie ses ailes contre son corps pour augmenter la vitesse de descente",
-                "Il ouvre grand ses ailes comme un parachute pour freiner",
-                "Il utilise ses pattes comme gouvernail pour dévier sa trajectoire",
-                "Il bat des ailes vers le haut pour créer une portance négative"
-              ],
-              "correctAnswer": "Il ouvre grand ses ailes comme un parachute pour freiner",
-              "isSpecial": false
-            },
-            {
-              "question": "Quel sens est le plus développé chez la plupart des oiseaux ?",
-              "options": [
-                "L'odorat",
-                "L'ouïe",
-                "La vue",
-                "Le toucher"
-              ],
-              "correctAnswer": "La vue",
-              "isSpecial": false
-            },
-            {
-              "question": "Quelle capacité visuelle particulière possèdent de nombreux oiseaux, absente chez l'humain ?",
-              "options": [
-                "Voir dans le noir complet sans aucune source de lumière",
-                "Percevoir la lumière ultraviolette",
-                "Distinguer les objets à plus de 10 kilomètres de distance",
-                "Voir simultanément à 360 degrés sans tourner la tête"
-              ],
-              "correctAnswer": "Percevoir la lumière ultraviolette",
-              "isSpecial": false
-            },
-            {
-              "question": "A quoi sert concrètement la perception de la lumière ultraviolette chez les oiseaux ?",
-              "options": [
-                "A naviguer uniquement la nuit grâce aux étoiles ultraviolettes",
-                "A repérer des fruits mûrs ou des traces laissées par leurs proies",
-                "A communiquer en silence avec d'autres individus de la même espèce",
-                "A mesurer l'intensité du vent avant de prendre leur envol"
-              ],
-              "correctAnswer": "A repérer des fruits mûrs ou des traces laissées par leurs proies",
-              "isSpecial": false
-            },
-            {
-              "question": "Qu'est-ce que le 'choeur de l'aube' produit par les oiseaux chaque matin au printemps ?",
-              "options": [
-                "Un signal d'alarme collectif pour signaler un prédateur proche",
-                "Un concert de chants destiné principalement à délimiter leur territoire",
-                "Une parade nuptiale synchronisée pour attirer les partenaires",
-                "Un rituel de groupe pour guider les jeunes oiseaux vers les sources d'eau"
-              ],
-              "correctAnswer": "Un concert de chants destiné principalement à délimiter leur territoire",
-              "isSpecial": false
-            },
-            {
-              "question": "Lequel de ces rôles écologiques est assuré par les oiseaux dans la nature ?",
-              "options": [
-                "La filtration de l'eau douce dans les zones humides",
-                "La décomposition des roches pour enrichir le sol",
-                "La dispersion des graines de nombreuses plantes",
-                "La production d'oxygène par photosynthèse"
-              ],
-              "correctAnswer": "La dispersion des graines de nombreuses plantes",
-              "isSpecial": false
-            },
-            {
-              "question": "Comment le bébé oiseau sort-il de son oeuf ?",
-              "options": [
-                "La coquille se dissout progressivement grâce à une enzyme produite par le poussin",
-                "Il casse la coquille avec son petit bec",
-                "La femelle déchire délicatement la coquille de l'extérieur avec ses serres",
-                "La chaleur du nid fait craquer la coquille naturellement sans intervention du poussin"
-              ],
-              "correctAnswer": "Il casse la coquille avec son petit bec",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi les rapaces ont-ils une acuité visuelle bien supérieure à celle des humains ?",
-              "options": [
-                "Parce qu'ils ont deux paires d'yeux disposées en cercle autour de la tête",
-                "Parce que leur retine contient une zone centrale très dense en photorécepteurs appelée fovéa, particulièrement développée",
-                "Parce que leurs yeux produisent un liquide spécial amplifiant la lumière ambiante",
-                "Parce qu'ils possèdent une troisième paupière transparente qui agit comme un télescope naturel"
-              ],
-              "correctAnswer": "Parce que leur retine contient une zone centrale très dense en photorécepteurs appelée fovéa, particulièrement développée",
-              "isSpecial": false
-            },
-            {
-              "question": "L'ornithologie moderne utilise des technologies avancées pour étudier les oiseaux. Laquelle de ces méthodes est réellement employée pour suivre la migration des oiseaux sur de longues distances ?",
-              "options": [
-                "Des drones autonomes qui suivent les vols en formation pendant plusieurs mois",
-                "La bague ou la balise GPS fixée sur l'oiseau pour enregistrer ses déplacements en temps réel",
-                "Des satellites à infrarouge capables de détecter la chaleur corporelle des oiseaux en vol",
-                "Des réseaux de microphones sous-marins installés le long des côtes migratoires"
-              ],
-              "correctAnswer": "La bague ou la balise GPS fixée sur l'oiseau pour enregistrer ses déplacements en temps réel",
-              "isSpecial": true
-            }
-          ]
-        },
-        {
-          "id": "ornithology-gen-l6-difficile",
-          "title": "Leçon Nature",
-          "emoji": "⛰️",
-          "themeColor": "amber",
-          "badgeId": "ornithology-badge-l6-difficile",
-          "badgeName": "Explorateur L6",
-          "badgeEmoji": "⛰️",
-          "cards": [
-            {
-              "title": "Découverte : Leçon Nature",
-              "text": "Cette leçon traite de Leçon Nature. Lis attentivement pour réussir le quiz !",
-              "emoji": "⛰️"
-            },
-            {
-              "title": "Le savais-tu ?",
-              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
-              "emoji": "💡"
-            },
-            {
-              "title": "La nature des oiseaux",
-              "text": "Les oiseaux adorent la nature. Ils construisent des nids douillets avec des brindilles et des feuilles pour protéger leurs bébés.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "Le chant merveilleux",
-              "text": "Les oiseaux chantent pour se parler. Chaque espèce a sa propre mélodie !",
-              "emoji": "🎶"
-            },
-            {
-              "title": "Le matin au réveil",
-              "text": "C'est souvent très tôt le matin, à l'aube, qu'on entend le plus d'oiseaux chanter.",
-              "emoji": "🌅"
-            },
-            {
-              "title": "Les records du monde",
-              "text": "Le Colibri d'Elena est le plus petit oiseau du monde, pesant moins de 2 grammes ! À l'inverse, l'autruche est le plus grand et le plus lourd.",
-              "emoji": "🏆"
-            },
-            {
-              "title": "Le vol sur place",
-              "text": "Le colibri est le seul oiseau capable de voler en arrière et de faire du vol stationnaire parfait pour boire le nectar des fleurs.",
-              "emoji": "🌺"
-            },
-            {
-              "title": "Le Grand Vol",
-              "text": "Quand ils sont grands, les oiseaux ouvrent très grand leurs ailes et sautent dans le vide pour apprendre à voler. C'est magique !",
-              "emoji": "🦅"
-            },
-            {
-              "title": "Le nid douillet",
-              "text": "Les oiseaux construisent des nids avec des brindilles, de la boue et même des toiles d'araignée pour garder leurs œufs bien au chaud.",
-              "emoji": "🪹"
-            },
-            {
-              "title": "Le système respiratoire",
-              "text": "Le système respiratoire des oiseaux est unique. Grâce à des sacs aériens, l'air frais circule dans leurs poumons même quand ils expirent !",
-              "emoji": "🫁"
-            },
-            {
-              "title": "Où dorment les oiseaux ?",
-              "text": "Beaucoup d'oiseaux dorment dans les arbres, bien cachés dans les branches pour être en sécurité.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "L'incroyable réalité : La nature des oiseaux",
-              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "En savoir plus : La nature des oiseaux",
-              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "Analyse profonde : La nature des oiseaux",
-              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
-              "emoji": "🔬"
-            },
-            {
-              "title": "Pour aller plus loin : La nature des oiseaux",
-              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
-              "emoji": "📡"
-            }
-          ],
-          "quiz": [
-            {
-              "question": "Quel matériau insolite les oiseaux utilisent-ils parfois pour renforcer la cohésion de leur nid, en plus des brindilles et de la boue ?",
-              "options": [
-                "Des plumes d'autres espèces",
-                "Des toiles d'araignee",
-                "De la resine d'arbre",
-                "Des epines de cactus"
-              ],
-              "correctAnswer": "Des toiles d'araignee",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi les oiseaux chantent-ils particulierement a l'aube plutot qu'en pleine journee ?",
-              "options": [
-                "Parce que les insectes font moins de bruit le matin",
-                "Parce que l'air frais amplifie mieux les sons",
-                "Parce que la lumiere du matin stimule leur cerveau a produire des hormones de chant",
-                "Parce qu'ils ont faim et cherchent a attirer des partenaires avant de chasser"
-              ],
-              "correctAnswer": "Parce que la lumiere du matin stimule leur cerveau a produire des hormones de chant",
-              "isSpecial": false
-            },
-            {
-              "question": "Le Colibri d'Elena est le plus petit oiseau du monde. Quelle est approximativement sa masse ?",
-              "options": [
-                "Moins de 2 grammes",
-                "Environ 5 grammes",
-                "Environ 10 grammes",
-                "Moins de 1 gramme"
-              ],
-              "correctAnswer": "Moins de 2 grammes",
-              "isSpecial": false
-            },
-            {
-              "question": "Quelle capacite de vol rend le colibri unique parmi tous les oiseaux ?",
-              "options": [
-                "Il peut planer pendant plus d'une heure sans bouger les ailes",
-                "Il peut voler en arriere et faire du vol stationnaire",
-                "Il peut atteindre une vitesse de 200 km/h en pique",
-                "Il peut voler sans s'arreter pendant plusieurs jours"
-              ],
-              "correctAnswer": "Il peut voler en arriere et faire du vol stationnaire",
-              "isSpecial": false
-            },
-            {
-              "question": "Quel avantage le systeme de sacs aeriens des oiseaux leur procure-t-il par rapport aux mammiferes ?",
-              "options": [
-                "Leurs poumons sont plus grands proportionnellement",
-                "L'air frais circule dans leurs poumons meme lors de l'expiration",
-                "Ils peuvent retenir leur souffle plus longtemps sous l'eau",
-                "Leurs globules rouges transportent deux fois plus d'oxygene"
-              ],
-              "correctAnswer": "L'air frais circule dans leurs poumons meme lors de l'expiration",
-              "isSpecial": false
-            },
-            {
-              "question": "L'autruche est le plus grand et le plus lourd des oiseaux. Quelle autre caracteristique la distingue des autres oiseaux ?",
-              "options": [
-                "Elle est incapable de voler",
-                "Elle pond les plus petits oeufs du monde",
-                "Elle peut vivre plus de 100 ans",
-                "Elle n'a pas de plumes sur le ventre"
-              ],
-              "correctAnswer": "Elle est incapable de voler",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi la plupart des oiseaux choisissent-ils de dormir dans les branches d'arbres plutot qu'au sol ?",
-              "options": [
-                "La temperature est plus elevee en hauteur durant la nuit",
-                "Ils se mettent a l'abri des predateurs terrestres",
-                "Les branches emettent des substances qui les aident a dormir",
-                "Ils ont besoin de sentir le vent pour reguier leur temperature"
-              ],
-              "correctAnswer": "Ils se mettent a l'abri des predateurs terrestres",
-              "isSpecial": false
-            },
-            {
-              "question": "Comment appelle-t-on la discipline scientifique qui etudie les oiseaux, leur comportement et leur migration ?",
-              "options": [
-                "La zoologie aviaire",
-                "L'ornithologie",
-                "L'ethologie",
-                "La biologie comportementale"
-              ],
-              "correctAnswer": "L'ornithologie",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi les jeunes oiseaux doivent-ils sauter dans le vide pour apprendre a voler, plutot que de s'entrainer dans le nid ?",
-              "options": [
-                "Le nid est trop petit pour battre des ailes correctement",
-                "Ils ont besoin du flux d'air ascendant pour stabiliser leur vol",
-                "Leurs muscles pectoraux ne se developpent pleinement qu'avec la chute libre",
-                "Le nid est trop fragile pour supporter les battements d'ailes"
-              ],
-              "correctAnswer": "Le nid est trop petit pour battre des ailes correctement",
-              "isSpecial": false
-            },
-            {
-              "question": "L'ornithologie moderne utilise des technologies avancees pour etudier la migration des oiseaux. Laquelle de ces methodes est la plus couramment utilisee pour suivre les trajets migratoires sur de longues distances ?",
-              "options": [
-                "La bague metallique attachee a la patte",
-                "Le ballon-sonde meteorologique fixe sur le dos",
-                "La balise GPS ou geolocalisation par satellite",
-                "L'implant electronique sous-cutane emettant des ultrasons"
-              ],
-              "correctAnswer": "La balise GPS ou geolocalisation par satellite",
-              "isSpecial": true
-            }
-          ]
-        },
-        {
-          "id": "ornithology-gen-l7-difficile",
-          "title": "Leçon Monde",
-          "emoji": "🧭",
-          "themeColor": "amber",
-          "badgeId": "ornithology-badge-l7-difficile",
-          "badgeName": "Explorateur L7",
-          "badgeEmoji": "🧭",
-          "cards": [
-            {
-              "title": "Découverte : Leçon Monde",
-              "text": "Cette leçon traite de Leçon Monde. Lis attentivement pour réussir le quiz !",
-              "emoji": "🧭"
-            },
-            {
-              "title": "Le savais-tu ?",
-              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
-              "emoji": "💡"
-            },
-            {
-              "title": "Les oiseaux du monde",
-              "text": "Il existe des oiseaux partout dans le monde ! Le manchot vit dans le froid, tandis que le toucan préfère la chaleur de la jungle.",
-              "emoji": "🐧"
-            },
-            {
-              "title": "Le grand voyage",
-              "text": "En hiver, quand il fait froid, beaucoup d'oiseaux voyagent vers les pays chauds. C'est la migration !",
-              "emoji": "🌍"
-            },
-            {
-              "title": "Voler en groupe",
-              "text": "Pour moins se fatiguer, ils volent souvent en forme de 'V' avec tous leurs amis.",
-              "emoji": "🪿"
-            },
-            {
-              "title": "La parade nuptiale",
-              "text": "Pour attirer une femelle, le mâle réalise souvent une danse ou exhibe de magnifiques couleurs. C'est la parade nuptiale.",
-              "emoji": "🦚"
-            },
-            {
-              "title": "L'oiseau jardinier",
-              "text": "En Australie, l'oiseau jardinier construit un berceau de branches qu'il décore avec des objets bleus (fleurs, cailloux, bouchons) pour séduire sa partenaire !",
-              "emoji": "💙"
-            },
-            {
-              "title": "L'Oiseau qui Parle",
-              "text": "Certains oiseaux, comme le perroquet, sont très rigolos. Ils peuvent imiter les mots que nous disons et parler avec nous !",
-              "emoji": "🦜"
-            },
-            {
-              "title": "Le chant des oiseaux",
-              "text": "Chaque espèce d'oiseau a son propre chant. Ils chantent pour marquer leur territoire ou pour appeler leurs amis !",
-              "emoji": "🎶"
-            },
-            {
-              "title": "L'intelligence des corvidés",
-              "text": "Les corbeaux et les pies sont extrêmement intelligents. Ils sont capables de fabriquer des outils et de résoudre des énigmes complexes.",
-              "emoji": "🐦‍⬛"
-            },
-            {
-              "title": "Où dorment les oiseaux ?",
-              "text": "Beaucoup d'oiseaux dorment dans les arbres, bien cachés dans les branches pour être en sécurité.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "L'incroyable réalité : Les oiseaux du monde",
-              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "En savoir plus : Les oiseaux du monde",
-              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "Analyse profonde : Les oiseaux du monde",
-              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
-              "emoji": "🔬"
-            },
-            {
-              "title": "Pour aller plus loin : Les oiseaux du monde",
-              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
-              "emoji": "📡"
-            }
-          ],
-          "quiz": [
-            {
-              "question": "Quel avantage principal la formation en V procure-t-elle aux oiseaux migrateurs qui volent en groupe ?",
-              "options": [
-                "Elle leur permet de mieux repérer les prédateurs",
-                "Elle réduit la résistance de l'air pour les oiseaux suiveurs",
-                "Elle maintient une température corporelle plus élevée",
-                "Elle synchronise le rythme cardiaque de chaque individu"
-              ],
-              "correctAnswer": "Elle réduit la résistance de l'air pour les oiseaux suiveurs",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi l'oiseau jardinier d'Australie collectionne-t-il principalement des objets de couleur bleue ?",
-              "options": [
-                "Pour effrayer les prédateurs qui craignent cette couleur",
-                "Pour rendre son berceau imperméable à la pluie",
-                "Pour impressionner la femelle lors de la parade nuptiale",
-                "Pour délimiter son territoire face aux mâles rivaux"
-              ],
-              "correctAnswer": "Pour impressionner la femelle lors de la parade nuptiale",
-              "isSpecial": false
-            },
-            {
-              "question": "La migration des oiseaux est principalement déclenchée par quel facteur environnemental ?",
-              "options": [
-                "La baisse des températures hivernales",
-                "La diminution de la durée du jour (photopériode)",
-                "L'épuisement des réserves de nourriture locales",
-                "Les variations de pression atmosphérique"
-              ],
-              "correctAnswer": "La diminution de la durée du jour (photopériode)",
-              "isSpecial": false
-            },
-            {
-              "question": "Les corvidés, comme les corbeaux et les pies, sont réputés pour fabriquer des outils. Quel groupe d'oiseaux tropicaux partage également cette capacité rare ?",
-              "options": [
-                "Les flamants roses",
-                "Les perroquets cacatoès",
-                "Les pics",
-                "Les cigognes blanches"
-              ],
-              "correctAnswer": "Les pics",
-              "isSpecial": false
-            },
-            {
-              "question": "Chez les oiseaux, le chant territorial sert principalement à quoi ?",
-              "options": [
-                "Avertir les membres du groupe d'un danger imminent",
-                "Signaler la présence du mâle et repousser les concurrents",
-                "Guider les femelles vers les sources de nourriture",
-                "Coordonner les mouvements pendant la migration"
-              ],
-              "correctAnswer": "Signaler la présence du mâle et repousser les concurrents",
-              "isSpecial": false
-            },
-            {
-              "question": "Le toucan vit dans les forêts tropicales d'Amérique, tandis que le manchot vit dans les régions froides. Comment nomme-t-on cette adaptation d'un être vivant à son environnement spécifique ?",
-              "options": [
-                "La convergence évolutive",
-                "La niche écologique",
-                "La sélection naturelle",
-                "La spéciation géographique"
-              ],
-              "correctAnswer": "La niche écologique",
-              "isSpecial": false
-            },
-            {
-              "question": "Parmi ces comportements, lequel constitue un exemple de parade nuptiale chez les oiseaux ?",
-              "options": [
-                "Un corbeau qui utilise un bâton pour extraire des larves",
-                "Un perroquet qui imite la voix de son propriétaire",
-                "Un paon qui déploie son plumage coloré devant une femelle",
-                "Une grue qui plonge vers une proie depuis les airs"
-              ],
-              "correctAnswer": "Un paon qui déploie son plumage coloré devant une femelle",
-              "isSpecial": false
-            },
-            {
-              "question": "La discipline scientifique qui étudie les oiseaux s'appelle l'ornithologie. Quel outil technologique moderne est aujourd'hui indispensable pour suivre les routes migratoires sur de longues distances ?",
-              "options": [
-                "Le microscope électronique",
-                "La balise GPS ou la bague électronique",
-                "Le sonar ultrasonique",
-                "La camera thermique infrarouge"
-              ],
-              "correctAnswer": "La balise GPS ou la bague électronique",
-              "isSpecial": false
-            },
-            {
-              "question": "La capacité des perroquets à imiter la parole humaine repose sur quelle caractéristique anatomique particulière ?",
-              "options": [
-                "La présence de cordes vocales semblables à celles des mammifères",
-                "Un syrinx musculaire très développé permettant de moduler les sons",
-                "Une langue charnue et mobile identique à celle de l'être humain",
-                "Un cerveau dont le lobe frontal est proportionnellement plus grand"
-              ],
-              "correctAnswer": "Un syrinx musculaire très développé permettant de moduler les sons",
-              "isSpecial": false
-            },
-            {
-              "question": "Les chercheurs ont démontré que certains corbeaux résolvent des problèmes en plusieurs étapes séquentielles. Cette capacité de planification à court terme est souvent comparée à celle d'un enfant humain de quel âge approximatif ?",
-              "options": [
-                "2 à 3 ans",
-                "4 à 5 ans",
-                "7 à 10 ans",
-                "12 à 14 ans"
-              ],
-              "correctAnswer": "4 à 5 ans",
-              "isSpecial": true
-            }
-          ]
-        },
-        {
-          "id": "ornithology-gen-l8-difficile",
-          "title": "Leçon Science",
-          "emoji": "🛡️",
-          "themeColor": "amber",
-          "badgeId": "ornithology-badge-l8-difficile",
-          "badgeName": "Explorateur L8",
-          "badgeEmoji": "🛡️",
-          "cards": [
-            {
-              "title": "Découverte : Leçon Science",
-              "text": "Cette leçon traite de Leçon Science. Lis attentivement pour réussir le quiz !",
-              "emoji": "🛡️"
-            },
-            {
-              "title": "Le savais-tu ?",
-              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
-              "emoji": "💡"
-            },
-            {
-              "title": "La science des plumes",
-              "text": "Les plumes des oiseaux sont incroyables ! Elles les aident à voler, mais aussi à rester bien au chaud, comme un gros manteau.",
-              "emoji": "🪶"
-            },
-            {
-              "title": "Les oiseaux nageurs",
-              "text": "Les canards et les cygnes adorent l'eau. Leurs plumes ne se mouillent pas grâce à une huile spéciale.",
-              "emoji": "🦆"
-            },
-            {
-              "title": "Des pattes comme des rames",
-              "text": "Ils ont des pattes palmées qui les aident à nager très vite, comme des palmes de plongée.",
-              "emoji": "🌊"
-            },
-            {
-              "title": "Les menaces sur la nature",
-              "text": "De nombreuses espèces d'oiseaux sont en danger. La destruction de leurs habitats, comme la déforestation, est la plus grande menace pour eux.",
-              "emoji": "⚠️"
-            },
-            {
-              "title": "Comment les protéger",
-              "text": "Installer des nichoirs, réduire l'utilisation de pesticides et protéger les forêts aide les oiseaux à survivre et à se reproduire.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "Les Graines Délicieuses",
-              "text": "En hiver, on peut donner des petites graines aux oiseaux pour les aider à avoir le ventre bien rempli.",
-              "emoji": "🌻"
-            },
-            {
-              "title": "Les plumes colorées",
-              "text": "Les plumes des oiseaux ne servent pas seulement à voler, elles les aident aussi à se cacher ou à attirer l'attention !",
-              "emoji": "🦚"
-            },
-            {
-              "title": "Les plumes de contour",
-              "text": "Les plumes de contour donnent à l'oiseau sa forme lisse, tandis que le duvet, situé en dessous, le protège du froid.",
-              "emoji": "🪶"
-            },
-            {
-              "title": "Découverte magique : La science des plumes",
-              "text": "Regarde bien les petits oiseaux ! Sais-tu qu'ils aiment beaucoup explorer et jouer dans la nature ? C'est fascinant de voir comment ils vivent.",
-              "emoji": "✨"
-            },
-            {
-              "title": "Le secret de : La science des plumes",
-              "text": "Chut, c'est un secret ! Les oiseaux ont des pouvoirs cachés dans leurs plumes et leur façon de chanter.",
-              "emoji": "🤫"
-            },
-            {
-              "title": "L'incroyable réalité : La science des plumes",
-              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "En savoir plus : La science des plumes",
-              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "Analyse profonde : La science des plumes",
-              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
-              "emoji": "🔬"
-            },
-            {
-              "title": "Pour aller plus loin : La science des plumes",
-              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
-              "emoji": "📡"
-            }
-          ],
-          "quiz": [
-            {
-              "question": "Quel type de plumes assure le maintien de la forme aérodynamique d'un oiseau en recouvrant sa surface extérieure ?",
-              "options": [
-                "Les plumes de duvet",
-                "Les plumes de contour",
-                "Les plumes tertiaires",
-                "Les plumes filoplumes"
-              ],
-              "correctAnswer": "Les plumes de contour",
-              "isSpecial": false
-            },
-            {
-              "question": "Grâce à quelle substance les canards et les cygnes empêchent-ils leurs plumes de se mouiller ?",
-              "options": [
-                "Une cire sécrétée par les écailles",
-                "Une huile produite par leur glande uropygiale",
-                "Un mucus issu de leur bec",
-                "Une résine absorbée via leur nourriture"
-              ],
-              "correctAnswer": "Une huile produite par leur glande uropygiale",
-              "isSpecial": false
-            },
-            {
-              "question": "Comment appelle-t-on la morphologie des pattes des canards qui leur permet de nager efficacement ?",
-              "options": [
-                "Des pattes zygodactyles",
-                "Des pattes anisodactyles",
-                "Des pattes palmées",
-                "Des pattes totipalmes"
-              ],
-              "correctAnswer": "Des pattes palmées",
-              "isSpecial": false
-            },
-            {
-              "question": "Quelle est la principale menace identifiée pour les espèces d'oiseaux en danger selon les données ornithologiques actuelles ?",
-              "options": [
-                "La prédation par les chats domestiques",
-                "La destruction et la fragmentation de leurs habitats naturels",
-                "Les collisions avec les vitres de bâtiments",
-                "La pollution lumineuse nocturne"
-              ],
-              "correctAnswer": "La destruction et la fragmentation de leurs habitats naturels",
-              "isSpecial": false
-            },
-            {
-              "question": "Parmi ces actions, laquelle contribue directement à soutenir la reproduction des oiseaux sauvages en milieu urbain ?",
-              "options": [
-                "Distribuer du pain rassis près des plans d'eau",
-                "Installer des nichoirs adaptés à chaque espèce",
-                "Planter des espèces végétales exotiques ornementales",
-                "Augmenter l'éclairage public dans les parcs"
-              ],
-              "correctAnswer": "Installer des nichoirs adaptés à chaque espèce",
-              "isSpecial": false
-            },
-            {
-              "question": "Le duvet des oiseaux remplit principalement quelle fonction physiologique ?",
-              "options": [
-                "Faciliter le vol en réduisant la masse corporelle",
-                "Permettre la communication visuelle avec les congénères",
-                "Assurer l'isolation thermique contre le froid",
-                "Imperméabiliser le plumage lors de la baignade"
-              ],
-              "correctAnswer": "Assurer l'isolation thermique contre le froid",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi la réduction des pesticides dans l'agriculture est-elle bénéfique pour les populations d'oiseaux ?",
-              "options": [
-                "Elle augmente la quantité de graines disponibles en hiver",
-                "Elle limite l'empoisonnement des insectes dont de nombreux oiseaux se nourrissent",
-                "Elle favorise la croissance des arbres utilisés pour nicher",
-                "Elle réduit la turbulence de l'air près des champs cultivés"
-              ],
-              "correctAnswer": "Elle limite l'empoisonnement des insectes dont de nombreux oiseaux se nourrissent",
-              "isSpecial": false
-            },
-            {
-              "question": "Les couleurs vives des plumes de certains oiseaux mâles remplissent avant tout quelle fonction dans leur comportement ?",
-              "options": [
-                "Améliorer leur camouflage en milieu forestier dense",
-                "Attirer les partenaires lors de la période de reproduction",
-                "Réguler leur température corporelle au soleil",
-                "Signaler leur toxicité aux prédateurs potentiels"
-              ],
-              "correctAnswer": "Attirer les partenaires lors de la période de reproduction",
-              "isSpecial": false
-            },
-            {
-              "question": "Quelle technologie l'ornithologie moderne utilise-t-elle pour suivre les déplacements migratoires des oiseaux sur de longues distances ?",
-              "options": [
-                "L'analyse acoustique des chants enregistrés en forêt",
-                "Le comptage visuel depuis des postes d'observation fixes",
-                "La télémétrie par balises GPS ou satellites",
-                "L'étude des anneaux de croissance osseux"
-              ],
-              "correctAnswer": "La télémétrie par balises GPS ou satellites",
-              "isSpecial": false
-            },
-            {
-              "question": "Un ornithologue observe que chez une espèce aquatique, le plumage ne repousse plus l'eau correctement après un déversement de pétrole. Quel mécanisme biologique est principalement perturbé, et quelle conséquence directe cela entraîne-t-il pour l'oiseau ?",
-              "options": [
-                "La structure des barbules est détruite, empêchant la plume de former une surface cohérente et provoquant une hypothermie",
-                "La glande uropygiale est obstruée, supprimant l'imperméabilisation et entraînant une surcharge pondérale par absorption d'eau",
-                "Les cellules mélanocytes sont endommagées, rendant le plumage moins coloré et l'oiseau plus vulnérable aux prédateurs",
-                "Les pattes palmées perdent leur élasticité, réduisant la capacité de nage et causant un déficit alimentaire"
-              ],
-              "correctAnswer": "La glande uropygiale est obstruée, supprimant l'imperméabilisation et entraînant une surcharge pondérale par absorption d'eau",
-              "isSpecial": true
-            }
-          ]
-        },
-        {
-          "id": "ornithology-gen-l9-difficile",
-          "title": "Leçon Espace",
-          "emoji": "🔮",
-          "themeColor": "amber",
-          "badgeId": "ornithology-badge-l9-difficile",
-          "badgeName": "Explorateur L9",
-          "badgeEmoji": "🔮",
-          "cards": [
-            {
-              "title": "Découverte : Leçon Espace",
-              "text": "Cette leçon traite de Leçon Espace. Lis attentivement pour réussir le quiz !",
-              "emoji": "🔮"
-            },
-            {
-              "title": "Le savais-tu ?",
-              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
-              "emoji": "💡"
-            },
-            {
-              "title": "Dans l'espace du ciel",
-              "text": "Les oiseaux sont les rois du ciel ! Certains, comme l'aigle, peuvent voler très haut pour observer tout ce qui se passe en bas.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "Les grands rapaces",
-              "text": "Les aigles et les faucons sont des rapaces. Ils volent très haut pour chercher leur nourriture.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "Des yeux de lynx",
-              "text": "Les rapaces ont une vue incroyable. Ils peuvent voir une petite souris depuis le ciel !",
-              "emoji": "👀"
-            },
-            {
-              "title": "Un outil sur mesure",
-              "text": "Le bec de l'oiseau est adapté à son régime alimentaire. Le pivert a un bec puissant comme un burin pour creuser le bois.",
-              "emoji": "🪵"
-            },
-            {
-              "title": "Filtrer l'eau",
-              "text": "Le flamant rose possède un bec courbé qui fonctionne comme une passoire. Il filtre l'eau pour retenir les petites crevettes dont il se nourrit.",
-              "emoji": "🦩"
-            },
-            {
-              "title": "Le Pic-vert",
-              "text": "Le pic-vert tape très fort son bec contre le tronc des arbres pour trouver des insectes. Toc toc toc !",
-              "emoji": "🪵"
-            },
-            {
-              "title": "Les becs utiles",
-              "text": "La forme du bec d'un oiseau dépend de ce qu'il mange. Un bec crochu est parfait pour la viande, et un bec fin pour les insectes.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "La parade nuptiale",
-              "text": "Pour séduire une partenaire, beaucoup de mâles effectuent des danses incroyables ou construisent des structures complexes pour impressionner.",
-              "emoji": "💃"
-            },
-            {
-              "title": "Découverte magique : Dans l'espace du ciel",
-              "text": "Regarde bien les petits oiseaux ! Sais-tu qu'ils aiment beaucoup explorer et jouer dans la nature ? C'est fascinant de voir comment ils vivent.",
-              "emoji": "✨"
-            },
-            {
-              "title": "Le secret de : Dans l'espace du ciel",
-              "text": "Chut, c'est un secret ! Les oiseaux ont des pouvoirs cachés dans leurs plumes et leur façon de chanter.",
-              "emoji": "🤫"
-            },
-            {
-              "title": "L'incroyable réalité : Dans l'espace du ciel",
-              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "En savoir plus : Dans l'espace du ciel",
-              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "Analyse profonde : Dans l'espace du ciel",
-              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
-              "emoji": "🔬"
-            },
-            {
-              "title": "Pour aller plus loin : Dans l'espace du ciel",
-              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
-              "emoji": "📡"
-            }
-          ],
-          "quiz": [
-            {
-              "question": "Quel terme scientifique désigne le groupe auquel appartiennent les aigles et les faucons, caractérisés par un bec crochu et de puissantes serres ?",
-              "options": [
-                "Les passereaux",
-                "Les rapaces",
-                "Les échassiers",
-                "Les palmipèdes"
-              ],
-              "correctAnswer": "Les rapaces",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi le flamant rose possède-t-il un bec courbé et lamellé plutôt qu'un bec droit et pointu ?",
-              "options": [
-                "Pour attraper des poissons rapides dans les rivières",
-                "Pour filtrer l'eau et retenir les petites crevettes dont il se nourrit",
-                "Pour creuser le sol à la recherche de larves",
-                "Pour déchiqueter la viande de ses proies"
-              ],
-              "correctAnswer": "Pour filtrer l'eau et retenir les petites crevettes dont il se nourrit",
-              "isSpecial": false
-            },
-            {
-              "question": "Quel type de bec est le mieux adapté à un régime insectivore, où l'oiseau doit extraire des larves dans des fissures étroites ?",
-              "options": [
-                "Un bec court et épais",
-                "Un bec crochu et recourbé",
-                "Un bec fin et allongé",
-                "Un bec large et plat"
-              ],
-              "correctAnswer": "Un bec fin et allongé",
-              "isSpecial": false
-            },
-            {
-              "question": "Le bec du pivert est comparé à un burin. Quelle propriété mécanique de cet outil correspond à la fonction du bec du pivert ?",
-              "options": [
-                "Sa capacité à filtrer des matières",
-                "Sa rigidité qui permet de fragmenter des matériaux durs",
-                "Sa forme courbée pour attraper les proies",
-                "Sa longueur pour atteindre les insectes à distance"
-              ],
-              "correctAnswer": "Sa rigidité qui permet de fragmenter des matériaux durs",
-              "isSpecial": false
-            },
-            {
-              "question": "Les rapaces repèrent leurs proies depuis de grandes altitudes. Quelle adaptation visuelle leur permet de distinguer un petit rongeur au sol à plusieurs centaines de mètres ?",
-              "options": [
-                "Un champ visuel réduit mais très précis en avant",
-                "Une densité de photorécepteurs dans la fovéa bien supérieure à celle des mammifères",
-                "Des yeux mobiles dans l'orbite comme chez les humains",
-                "Une vision nocturne exclusivement grâce aux bâtonnets"
-              ],
-              "correctAnswer": "Une densité de photorécepteurs dans la fovéa bien supérieure à celle des mammifères",
-              "isSpecial": false
-            },
-            {
-              "question": "Lors de la parade nuptiale, certains mâles construisent des structures complexes pour séduire la femelle. Quel oiseau australien est particulièrement célèbre pour construire des berceaux décorés d'objets colorés ?",
-              "options": [
-                "Le paon indien",
-                "L'oiseau-lyre",
-                "L'oiseau à berceaux (bowerbird)",
-                "Le paradisier royal"
-              ],
-              "correctAnswer": "L'oiseau à berceaux (bowerbird)",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi l'ornithologie moderne a-t-elle recours à des technologies de suivi satellitaire pour étudier la migration des oiseaux ?",
-              "options": [
-                "Parce que les oiseaux migrateurs volent trop haut pour être observés à l'oeil nu",
-                "Parce que les routes migratoires couvrent des milliers de kilomètres impossibles à surveiller par observation directe",
-                "Parce que les oiseaux migrent uniquement la nuit et sont invisibles",
-                "Parce que les radars météorologiques brouillent les observations au sol"
-              ],
-              "correctAnswer": "Parce que les routes migratoires couvrent des milliers de kilomètres impossibles à surveiller par observation directe",
-              "isSpecial": false
-            },
-            {
-              "question": "Un bec crochu est parfait pour déchirer la viande. Quel autre rôle joue ce type de bec chez les rapaces lors de la capture d'une proie vivante ?",
-              "options": [
-                "Il sert à creuser des terriers pour stocker la nourriture",
-                "Il permet de maintenir fermement la proie tout en la tuant",
-                "Il filtre l'eau pour repérer les petits poissons",
-                "Il amplifie les cris pour communiquer avec la meute"
-              ],
-              "correctAnswer": "Il permet de maintenir fermement la proie tout en la tuant",
-              "isSpecial": false
-            },
-            {
-              "question": "Quel principe évolutif explique que des espèces d'oiseaux vivant dans des environnements très différents aient développé des morphologies de bec radicalement distinctes ?",
-              "options": [
-                "La dérive génétique aléatoire sans lien avec l'environnement",
-                "La sélection naturelle favorisant les individus dont le bec est le mieux adapté à la ressource alimentaire disponible",
-                "L'hérédité exclusive des caractères acquis par apprentissage",
-                "La fixation de mutations neutres par effet fondateur"
-              ],
-              "correctAnswer": "La sélection naturelle favorisant les individus dont le bec est le mieux adapté à la ressource alimentaire disponible",
-              "isSpecial": false
-            },
-            {
-              "question": "Le pic-vert frappe le bois jusqu'à 20 fois par seconde sans se blesser. Quelle combinaison d'adaptations anatomiques lui permet d'absorber ces chocs répétés sans traumatisme crânien ?",
-              "options": [
-                "Un crâne épaissi uniformément et un bec entièrement calcifié",
-                "Un cerveau positionné asymétriquement, un os hyoïde amortisseur enroulant le crâne et une langue longue servant d'amortisseur",
-                "Des vertèbres cervicales fusionnées et une membrane nictitante protégeant les yeux",
-                "Des plumes crâniennes kératinisées et des sinus frontaux remplis d'air comprimé"
-              ],
-              "correctAnswer": "Un cerveau positionné asymétriquement, un os hyoïde amortisseur enroulant le crâne et une langue longue servant d'amortisseur",
-              "isSpecial": true
-            }
-          ]
-        },
-        {
-          "id": "ornithology-gen-l10-difficile",
-          "title": "Leçon Défi",
-          "emoji": "🏆",
-          "themeColor": "amber",
-          "badgeId": "ornithology-badge-l10-difficile",
-          "badgeName": "Explorateur L10",
-          "badgeEmoji": "🏆",
-          "cards": [
-            {
-              "title": "Découverte : Leçon Défi",
-              "text": "Cette leçon traite de Leçon Défi. Lis attentivement pour réussir le quiz !",
-              "emoji": "🏆"
-            },
-            {
-              "title": "Le savais-tu ?",
-              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
-              "emoji": "💡"
-            },
-            {
-              "title": "Le défi du vol",
-              "text": "Apprendre à voler est un grand défi pour les bébés oiseaux. Au début, ils sautent de branche en branche avant de prendre leur envol.",
-              "emoji": "🐥"
-            },
-            {
-              "title": "Les oiseaux de la nuit",
-              "text": "La chouette et le hibou dorment le jour et se réveillent la nuit. On dit qu'ils sont nocturnes.",
-              "emoji": "🦉"
-            },
-            {
-              "title": "Un vol silencieux",
-              "text": "Les chouettes volent sans faire aucun bruit pour surprendre leur repas !",
-              "emoji": "🤫"
-            },
-            {
-              "title": "L'orientation magnétique",
-              "text": "Les oiseaux migrateurs accomplissent des voyages de milliers de kilomètres. Pour ne pas se perdre, ils utilisent le champ magnétique de la Terre !",
-              "emoji": "🧲"
-            },
-            {
-              "title": "Une boussole interne",
-              "text": "Grâce à des capteurs spéciaux, c'est comme s'ils avaient une boussole dans la tête qui leur indique toujours où se trouve le Nord ou le Sud.",
-              "emoji": "🧭"
-            },
-            {
-              "title": "Dormir sur une Patte",
-              "text": "Savais-tu que certains oiseaux aiment dormir en se tenant debout sur une seule de leurs pattes ? C'est très amusant à voir !",
-              "emoji": "🦩"
-            },
-            {
-              "title": "Les petits poussins",
-              "text": "Quand ils sortent de l'œuf, les oisillons ont très faim. Leurs parents font de nombreux allers-retours pour les nourrir.",
-              "emoji": "🐣"
-            },
-            {
-              "title": "Les oiseaux marins",
-              "text": "Certains oiseaux, comme les albatros, passent la majorité de leur vie en mer et peuvent boire de l'eau salée grâce à une glande spéciale.",
-              "emoji": "🌊"
-            },
-            {
-              "title": "Découverte magique : Le défi du vol",
-              "text": "Regarde bien les petits oiseaux ! Sais-tu qu'ils aiment beaucoup explorer et jouer dans la nature ? C'est fascinant de voir comment ils vivent.",
-              "emoji": "✨"
-            },
-            {
-              "title": "Le secret de : Le défi du vol",
-              "text": "Chut, c'est un secret ! Les oiseaux ont des pouvoirs cachés dans leurs plumes et leur façon de chanter.",
-              "emoji": "🤫"
-            },
-            {
-              "title": "L'incroyable réalité : Le défi du vol",
-              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "En savoir plus : Le défi du vol",
-              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "Analyse profonde : Le défi du vol",
-              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
-              "emoji": "🔬"
-            },
-            {
-              "title": "Pour aller plus loin : Le défi du vol",
-              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
-              "emoji": "📡"
-            }
-          ],
-          "quiz": [
-            {
-              "question": "Quel terme scientifique désigne les animaux qui sont actifs la nuit et dorment le jour, comme la chouette et le hibou ?",
-              "options": [
-                "Diurnes",
-                "Nocturnes",
-                "Crépusculaires",
-                "Sédentaires"
-              ],
-              "correctAnswer": "Nocturnes",
-              "isSpecial": false
-            },
-            {
-              "question": "Grâce à quel mécanisme les oiseaux migrateurs parviennent-ils à s'orienter sur de très longues distances sans se perdre ?",
-              "options": [
-                "La mémorisation des étoiles uniquement",
-                "La détection du champ magnétique terrestre",
-                "La reconnaissance des odeurs portées par le vent",
-                "L'observation des courants marins"
-              ],
-              "correctAnswer": "La détection du champ magnétique terrestre",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi les chouettes volent-elles sans produire de bruit perceptible ?",
-              "options": [
-                "Parce qu'elles volent très lentement",
-                "Parce que leurs plumes sont structurées pour absorber les turbulences sonores",
-                "Parce qu'elles n'ont pas de plumes sur les ailes",
-                "Parce qu'elles évitent de battre des ailes en vol"
-              ],
-              "correctAnswer": "Parce que leurs plumes sont structurées pour absorber les turbulences sonores",
-              "isSpecial": false
-            },
-            {
-              "question": "Quel organe permet à certains oiseaux marins, comme les albatros, de boire de l'eau salée sans en subir les effets toxiques ?",
-              "options": [
-                "Un foie surdimensionné",
-                "Une glande spéciale qui filtre le sel",
-                "Un estomac à deux chambres",
-                "Des reins capables d'éliminer tout le sel directement"
-              ],
-              "correctAnswer": "Une glande spéciale qui filtre le sel",
-              "isSpecial": false
-            },
-            {
-              "question": "Comment appelle-t-on le jeune oiseau qui vient de sortir de l'oeuf et est encore nourri par ses parents ?",
-              "options": [
-                "Un poussin sauvage",
-                "Un oisillon",
-                "Un envol",
-                "Un nichon"
-              ],
-              "correctAnswer": "Un oisillon",
-              "isSpecial": false
-            },
-            {
-              "question": "Quelle étape précède généralement le véritable vol chez les jeunes oiseaux en train d'apprendre ?",
-              "options": [
-                "Ils plongent depuis le sommet d'un arbre",
-                "Ils sautent de branche en branche",
-                "Ils rampent au sol pour prendre de la vitesse",
-                "Ils imitent immédiatement les adultes en migration"
-              ],
-              "correctAnswer": "Ils sautent de branche en branche",
-              "isSpecial": false
-            },
-            {
-              "question": "L'albatros est connu pour passer la majorité de sa vie en mer. Lequel de ces comportements lui est caractéristique ?",
-              "options": [
-                "Il construit son nid sur les récifs coralliens sous-marins",
-                "Il peut rester en vol planant des semaines sans se poser à terre",
-                "Il chasse exclusivement la nuit comme les chouettes",
-                "Il utilise le champ magnétique pour localiser les bancs de poissons"
-              ],
-              "correctAnswer": "Il peut rester en vol planant des semaines sans se poser à terre",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi certains oiseaux dorment-ils sur une seule patte ?",
-              "options": [
-                "Pour économiser de la chaleur corporelle en limitant les pertes thermiques",
-                "Parce que leur autre patte est trop lourde à soutenir",
-                "Pour se préparer à s'envoler plus rapidement",
-                "Par imitation d'un comportement appris des parents"
-              ],
-              "correctAnswer": "Pour économiser de la chaleur corporelle en limitant les pertes thermiques",
-              "isSpecial": false
-            },
-            {
-              "question": "L'ornithologie moderne fait appel à des technologies avancées pour étudier les oiseaux. Laquelle de ces méthodes est effectivement utilisée pour suivre leurs migrations ?",
-              "options": [
-                "La pose de balises GPS légères sur les oiseaux",
-                "L'implantation de puces électroniques dans les plumes",
-                "L'analyse de leur chant pour détecter leur position",
-                "L'utilisation de drones qui suivent les vols en continu"
-              ],
-              "correctAnswer": "La pose de balises GPS légères sur les oiseaux",
-              "isSpecial": false
-            },
-            {
-              "question": "Chez les oiseaux migrateurs, les cristaux de magnétite présents dans certaines cellules jouent un rôle dans la navigation. Quelle propriété physique de la Terre détectent-ils précisément ?",
-              "options": [
-                "La gravité terrestre selon la latitude",
-                "Les variations de pression atmosphérique liées à l'altitude",
-                "Les lignes du champ magnétique terrestre indiquant le Nord et le Sud",
-                "La rotation de la Terre perceptible par l'oreille interne"
-              ],
-              "correctAnswer": "Les lignes du champ magnétique terrestre indiquant le Nord et le Sud",
+              "correctAnswer": "À expliquer le monde et les phénomènes naturels",
               "isSpecial": true
             }
           ]

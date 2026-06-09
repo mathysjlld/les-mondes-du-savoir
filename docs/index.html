@@ -9,18 +9,21 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
   <style>
+    /* ===== Charte graphique ExploraKids =====
+       Turquoise (exploration, confiance) + Jaune soleil (joie enfantine) + Corail (chaleur ludique).
+       Les noms de variables historiques sont conservés mais pointent vers la nouvelle palette. */
     :root {
-      --indigo: #6366f1;
-      --purple: #8b5cf6;
-      --pink: #ec4899;
-      --amber: #f59e0b;
+      --indigo: #14b8a6;   /* Turquoise — couleur principale */
+      --purple: #0d9488;   /* Sarcelle profond — secondaire */
+      --pink: #ff6b6b;     /* Corail — accent ludique */
+      --amber: #ffc53d;    /* Jaune soleil — accent énergie */
       --emerald: #10b981;
-      --ink: #1e293b;
-      --muted: #64748b;
-      --bg: #f8fafc;
+      --ink: #143a3f;      /* Bleu-nuit profond — texte */
+      --muted: #5b7a7d;
+      --bg: #f1fbf9;       /* Blanc-vert très clair — fond */
       --card: #ffffff;
-      --radius: 24px;
-      --shadow: 0 10px 30px rgba(2, 6, 23, 0.08);
+      --radius: 26px;
+      --shadow: 0 10px 30px rgba(13, 148, 136, 0.12);
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
@@ -100,7 +103,7 @@
     .stats { background: linear-gradient(135deg, var(--ink), #0b1220); color: #fff; }
     .stats .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; text-align: center; }
     .stats .num { font-family: "Baloo 2"; font-size: 2.6rem; font-weight: 800;
-      background: linear-gradient(90deg, #a5b4fc, #f0abfc); -webkit-background-clip: text; background-clip: text; color: transparent; }
+      background: linear-gradient(90deg, #5eead4, #ffd86b); -webkit-background-clip: text; background-clip: text; color: transparent; }
     .stats .lbl { color: #cbd5e1; font-weight: 700; }
     @media (max-width: 720px) { .stats .grid { grid-template-columns: repeat(2, 1fr); } }
 
@@ -158,7 +161,7 @@
 <body>
   <header>
     <div class="container nav">
-      <a href="#top" class="logo"><span class="mark">🚀</span><span class="brand">ExploraKids</span></a>
+      <a href="#top" class="logo"><span class="mark"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 2.4 L13.9 10.1 L21.6 12 L13.9 13.9 L12 21.6 L10.1 13.9 L2.4 12 L10.1 10.1 Z" fill="#ffffff"/><circle cx="12" cy="12" r="2" fill="#ffc53d"/></svg></span><span class="brand">ExploraKids</span></a>
       <nav class="links">
         <a href="#features">Fonctionnalités</a>
         <a href="#universes">Univers</a>
@@ -240,7 +243,7 @@
       <div class="container center">
         <span class="eyebrow">Les univers</span>
         <h2>12 mondes à explorer</h2>
-        <p class="lead">Des sciences à la culture, il y en a pour toutes les curiosités.</p>
+        <p class="lead">Des sciences à la culture, il y en a pour toutes les curiosités — et un <strong>thème secret</strong> à débloquer en progressant !</p>
       </div>
       <div class="container">
         <div class="uni-grid">
@@ -254,7 +257,7 @@
           <div class="uni"><div class="emo">🎨</div><div class="name">Arts</div></div>
           <div class="uni"><div class="emo">💻</div><div class="name">Informatique</div></div>
           <div class="uni"><div class="emo">🏕️</div><div class="name">Survie</div></div>
-          <div class="uni"><div class="emo">🐦</div><div class="name">Ornithologie</div></div>
+          <div class="uni" style="border-style:dashed;background:linear-gradient(135deg,#f5f0ff,#fff);"><div class="emo">🔒</div><div class="name">Thème secret</div></div>
           <div class="uni"><div class="emo">🏛️</div><div class="name">Histoire</div></div>
         </div>
       </div>
@@ -309,7 +312,7 @@
 
   <footer>
     <div class="container">
-      <div class="logo"><span class="mark">🚀</span><span class="brand">ExploraKids</span></div>
+      <div class="logo"><span class="mark"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 2.4 L13.9 10.1 L21.6 12 L13.9 13.9 L12 21.6 L10.1 13.9 L2.4 12 L10.1 10.1 Z" fill="#ffffff"/><circle cx="12" cy="12" r="2" fill="#ffc53d"/></svg></span><span class="brand">ExploraKids</span></div>
       <p>Application éducative et ludique — Projet de stage.</p>
       <p style="margin-top:6px; font-size:.85rem;">© 2026 ExploraKids. Fait avec ❤️ pour apprendre en s'amusant.</p>
     </div>

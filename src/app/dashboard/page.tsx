@@ -502,6 +502,23 @@ export default function Dashboard() {
                 const { completed, total } = getUniverseProgress(univ.id);
                 const isFinished = total > 0 && completed === total;
 
+                // Thème secret : verrouillé tant que le joueur n'a pas atteint le niveau 5
+                if (univ.secret && currentLevel < 5) {
+                  return (
+                    <button
+                      key={univ.id}
+                      onClick={() => playSound("click")}
+                      className="p-4 sm:p-5 rounded-3xl border-4 border-dashed border-violet-300 bg-gradient-to-br from-violet-100 to-purple-100 flex flex-col items-center justify-center text-center cursor-not-allowed relative overflow-hidden min-h-[150px]"
+                    >
+                      <span className="text-5xl mb-2">🔒</span>
+                      <span className="font-black text-violet-900">Thème secret</span>
+                      <span className="text-[11px] font-bold text-violet-600 mt-1 px-2">
+                        Atteins le niveau 5 pour découvrir un univers mystère ! (niveau {currentLevel}/5)
+                      </span>
+                    </button>
+                  );
+                }
+
                 // Mapper les couleurs Tailwind
                 const colorMap: Record<string, string> = {
                   amber: "from-amber-400/10 to-amber-500/20 hover:border-amber-400 border-amber-100 text-amber-800 focus:ring-amber-300",
