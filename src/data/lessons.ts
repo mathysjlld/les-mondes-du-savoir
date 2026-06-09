@@ -53286,7 +53286,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Quelle étoile de la Grande Ourse permet d'indiquer le nord ?",
+              "question": "Quelle étoile, que l'on repère grâce à la Grande Ourse, indique le nord ?",
               "options": [
                 "Sirius",
                 "Véga",
