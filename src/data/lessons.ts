@@ -2483,154 +2483,6 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "animal-classification",
-          "title": "La classification des espèces",
-          "emoji": "🦕",
-          "themeColor": "amber",
-          "badgeId": "taxonomist-expert",
-          "badgeName": "Taxonomiste Expert",
-          "badgeEmoji": "🦕",
-          "cards": [
-            {
-              "title": "L'histoire de la classification",
-              "text": "Classer le vivant permet de comprendre l'immense diversité biologique de la Terre. Le scientifique suédois Carl von Linné a inventé au 18ème siècle le système de **nomenclature binominale**, toujours utilisé aujourd'hui.\n\nChaque espèce est identifiée par un nom en latin composé de deux mots : le premier désigne le genre (avec une majuscule) et le second désigne l'espèce (en minuscules). Par exemple, le lion est *Panthera leo* et le loup est *Canis lupus*. Ce système permet aux scientifiques du monde entier d'utiliser le même langage universel sans confusion.",
-              "emoji": "📜"
-            },
-            {
-              "title": "La classification phylogénétique",
-              "text": "Aujourd'hui, les scientifiques n'utilisent plus de simples ressemblances physiques superficielles pour classer les animaux. Ils utilisent la **phylogénie**, qui étudie les relations de parenté évolutive basées sur l'analyse de l'ADN et des fossiles.\n\nLes animaux sont regroupés dans des groupes appelés **clades**. Un clade comprend un ancêtre commun et tous ses descendants. Par exemple, les oiseaux font scientifiquement partie du clade des dinosaures, car ils partagent avec eux un ancêtre commun unique caractérisé par des structures osseuses bien précises.",
-              "emoji": "🧬"
-            },
-            {
-              "title": "Le règne animal et les vertébrés",
-              "text": "Le règne animal se divise en plusieurs grands groupes. Les **vertébrés** se caractérisent par la présence d'une colonne vertébrale protégeant leur système nerveux central. Ils représentent environ 5% des espèces animales.\n\nLes vertébrés se divisent en plusieurs classes bien connues : les mammifères (qui allaitent leurs petits et ont des poils), les oiseaux (qui ont des plumes et un bec), les reptiles (ectothermes à écailles soudées), les amphibiens (à peau nue respirante) et les poissons (dotés de nageoires et de branchies).",
-              "emoji": "🦁"
-            },
-            {
-              "title": "Les invertébrés et les arthropodes",
-              "text": "La grande majorité (95%) des animaux terrestres et marins sont des **invertébrés** (sans colonne vertébrale). Le groupe le plus vaste et le plus diversifié de tous est celui des **arthropodes**.\n\nLes arthropodes possèdent un squelette externe articulé (exosquelette en chitine) et des pattes articulées. Ils regroupent les insectes (6 pattes), les arachnides (8 pattes), les crustacés (souvent 10 pattes ou plus) et les myriapodes (mille-pattes). Les insectes comptent à eux seuls plus d'un million d'espèces décrites !",
-              "emoji": "🕷"
-            },
-            {
-              "title": "La notion d'espèce biologique",
-              "text": "Qu'est-ce qu'une espèce ? La définition biologique classique énonce que deux individus font partie de la même espèce s'ils peuvent se reproduire ensemble et donner naissance à une descendance viable et **fertile** (qui pourra elle-même avoir des petits).\n\nSi un cheval et un âne s'accouplent, ils donnent naissance à un mulet. Le mulet est viable mais stérile ; le cheval et l'âne sont donc bien deux espèces distinctes. Aujourd'hui, l'analyse génétique moderne permet de préciser ces limites en comparant les génomes des populations.",
-              "emoji": "🔍"
-            }
-          ],
-          "quiz": [
-            {
-              "question": "Quel scientifique a inventé le système de nomenclature binominale encore utilisé aujourd'hui ?",
-              "options": [
-                "Charles Darwin",
-                "Carl von Linné",
-                "Louis Pasteur",
-                "Gregor Mendel"
-              ],
-              "correctAnswer": "Carl von Linné",
-              "isSpecial": false
-            },
-            {
-              "question": "Dans la nomenclature binominale, comment s'appelle scientifiquement le loup ?",
-              "options": [
-                "Leo panthera",
-                "Canis lupus",
-                "Lupus canis",
-                "Panthera leo"
-              ],
-              "correctAnswer": "Canis lupus",
-              "isSpecial": false
-            },
-            {
-              "question": "Quelle proportion des espèces animales les vertébrés représentent-ils environ ?",
-              "options": [
-                "50%",
-                "25%",
-                "5%",
-                "75%"
-              ],
-              "correctAnswer": "5%",
-              "isSpecial": false
-            },
-            {
-              "question": "Quel est le point commun à tous les arthropodes ?",
-              "options": [
-                "Ils possèdent exactement 6 pattes",
-                "Ils vivent uniquement dans l'eau",
-                "Ils ont un exosquelette articulé et des pattes articulées",
-                "Ils font partie des vertébrés"
-              ],
-              "correctAnswer": "Ils ont un exosquelette articulé et des pattes articulées",
-              "isSpecial": false
-            },
-            {
-              "question": "Combien de pattes possèdent les arachnides ?",
-              "options": [
-                "6 pattes",
-                "10 pattes",
-                "4 pattes",
-                "8 pattes"
-              ],
-              "correctAnswer": "8 pattes",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi le mulet n'est-il pas considéré comme une espèce à part entière selon la définition biologique classique ?",
-              "options": [
-                "Parce qu'il est trop petit pour survivre seul",
-                "Parce qu'il est stérile et ne peut pas se reproduire",
-                "Parce qu'il ressemble trop au cheval",
-                "Parce qu'il est né d'animaux de couleurs différentes"
-              ],
-              "correctAnswer": "Parce qu'il est stérile et ne peut pas se reproduire",
-              "isSpecial": false
-            },
-            {
-              "question": "Qu'est-ce qu'un clade en classification phylogénétique ?",
-              "options": [
-                "Un groupe de fossiles d'une même région",
-                "Un ensemble d'animaux au physique similaire",
-                "Un ancêtre commun et tous ses descendants",
-                "Une liste d'espèces classées par taille"
-              ],
-              "correctAnswer": "Un ancêtre commun et tous ses descendants",
-              "isSpecial": false
-            },
-            {
-              "question": "Quelle caractéristique distingue les amphibiens des reptiles parmi les vertébrés ?",
-              "options": [
-                "Les amphibiens ont des écailles soudées",
-                "Les amphibiens ont une peau nue respirante",
-                "Les amphibiens allaitent leurs petits",
-                "Les amphibiens possèdent des plumes"
-              ],
-              "correctAnswer": "Les amphibiens ont une peau nue respirante",
-              "isSpecial": false
-            },
-            {
-              "question": "Combien d'espèces d'insectes ont été décrites à ce jour ?",
-              "options": [
-                "Plus de 100 000 espèces",
-                "Plus d'un million d'espèces",
-                "Environ 50 000 espèces",
-                "Environ 500 000 espèces"
-              ],
-              "correctAnswer": "Plus d'un million d'espèces",
-              "isSpecial": false
-            },
-            {
-              "question": "Les oiseaux appartiennent scientifiquement au clade des dinosaures. Quelle preuve principale justifie ce classement phylogénétique ?",
-              "options": [
-                "Les oiseaux et les dinosaures vivent tous deux sur terre",
-                "Les oiseaux et les dinosaures ont tous deux des plumes colorées",
-                "Les oiseaux partagent avec les dinosaures un ancêtre commun identifiable par des structures osseuses précises",
-                "Les oiseaux pondent des oeufs, tout comme les dinosaures le faisaient"
-              ],
-              "correctAnswer": "Les oiseaux partagent avec les dinosaures un ancêtre commun identifiable par des structures osseuses précises",
-              "isSpecial": true
-            }
-          ]
-        },
-        {
           "id": "ornithology-gen-l1",
           "title": "Leçon",
           "emoji": "🌟",
@@ -2819,1803 +2671,6 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Les oiseaux agitent leurs plumes très rapidement pour expulser l'eau avant qu'elle ne pénètre"
               ],
               "correctAnswer": "Les plumes sont recouvertes d'huile produite par une glande spéciale, ce qui imperméabilise le plumage et permet à l'oiseau de flotter sur l'eau",
-              "isSpecial": true
-            }
-          ]
-        },
-        {
-          "id": "ornithology-gen-l2",
-          "title": "Leçon Intermédiaire",
-          "emoji": "🌱",
-          "themeColor": "amber",
-          "badgeId": "ornithology-badge-l2",
-          "badgeName": "Explorateur L2",
-          "badgeEmoji": "🌱",
-          "cards": [
-            {
-              "title": "Découverte : Leçon Intermédiaire",
-              "text": "Cette leçon traite de Leçon Intermédiaire. Lis attentivement pour réussir le quiz !",
-              "emoji": "🌱"
-            },
-            {
-              "title": "Le savais-tu ?",
-              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
-              "emoji": "💡"
-            },
-            {
-              "title": "Les couleurs des oiseaux",
-              "text": "Les oiseaux peuvent avoir plein de couleurs magnifiques ! Le flamant rose est rose parce qu'il mange beaucoup de petites crevettes.",
-              "emoji": "🦩"
-            },
-            {
-              "title": "Le bec des oiseaux",
-              "text": "Chaque oiseau a un bec différent ! Les becs pointus servent à attraper des insectes, et les becs épais à casser des petites graines.",
-              "emoji": "🦤"
-            },
-            {
-              "title": "Pas de dents !",
-              "text": "Sais-tu que les oiseaux n'ont pas de dents ? Ils avalent leur nourriture toute entière sans la mâcher.",
-              "emoji": "😲"
-            },
-            {
-              "title": "Le secret du plumage",
-              "text": "Les oiseaux passent beaucoup de temps à lisser leurs plumes. Ils utilisent une glande spéciale à la base de leur queue qui produit de l'huile pour les imperméabiliser.",
-              "emoji": "🪶"
-            },
-            {
-              "title": "Les différentes plumes",
-              "text": "Les grandes plumes des ailes sont les rémiges pour le vol, alors que le duvet, très doux, garde l'oiseau bien au chaud.",
-              "emoji": "🧥"
-            },
-            {
-              "title": "Le Bain des Oiseaux",
-              "text": "Les petits oiseaux adorent prendre des bains dans les flaques d'eau. Cela les aide à nettoyer leurs belles plumes pour bien voler !",
-              "emoji": "💦"
-            },
-            {
-              "title": "Les Plumes Imperméables",
-              "text": "Les canards ont des plumes spéciales sur lesquelles l'eau glisse sans jamais les mouiller. C'est très pratique pour nager longtemps !",
-              "emoji": "🦆"
-            },
-            {
-              "title": "Les os pneumatisés",
-              "text": "Pour être plus légers en vol, beaucoup d'oiseaux possèdent des os creux remplis d'air, appelés os pneumatisés.",
-              "emoji": "🦴"
-            },
-            {
-              "title": "Où dorment les oiseaux ?",
-              "text": "Beaucoup d'oiseaux dorment dans les arbres, bien cachés dans les branches pour être en sécurité.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "L'incroyable réalité : Les couleurs des oiseaux",
-              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "En savoir plus : Les couleurs des oiseaux",
-              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "Analyse profonde : Les couleurs des oiseaux",
-              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
-              "emoji": "🔬"
-            },
-            {
-              "title": "Pour aller plus loin : Les couleurs des oiseaux",
-              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
-              "emoji": "📡"
-            }
-          ],
-          "quiz": [
-            {
-              "question": "Pourquoi le flamant rose a-t-il une couleur rose ?",
-              "options": [
-                "Il naît avec cette couleur naturellement",
-                "Il mange beaucoup de petites crevettes",
-                "Ses plumes reflètent la lumière du soleil",
-                "Il vit dans des eaux riches en algues rouges"
-              ],
-              "correctAnswer": "Il mange beaucoup de petites crevettes",
-              "isSpecial": false
-            },
-            {
-              "question": "A quoi servent les becs pointus chez les oiseaux ?",
-              "options": [
-                "A casser des graines dures",
-                "A filtrer l'eau des rivières",
-                "A attraper des insectes",
-                "A creuser des terriers"
-              ],
-              "correctAnswer": "A attraper des insectes",
-              "isSpecial": false
-            },
-            {
-              "question": "Comment les oiseaux digèrent-ils leur nourriture, puisqu'ils n'ont pas de dents ?",
-              "options": [
-                "Ils mastiquent avec leur langue musculeuse",
-                "Ils avalent leur nourriture toute entière sans la mâcher",
-                "Ils déchirent les aliments avec leurs griffes avant de les avaler",
-                "Ils dissolvent la nourriture avec leur salive avant d'avaler"
-              ],
-              "correctAnswer": "Ils avalent leur nourriture toute entière sans la mâcher",
-              "isSpecial": false
-            },
-            {
-              "question": "Quel nom donne-t-on aux grandes plumes des ailes qui permettent le vol ?",
-              "options": [
-                "Les duvetines",
-                "Les rectrices",
-                "Les rémiges",
-                "Les tectrices"
-              ],
-              "correctAnswer": "Les rémiges",
-              "isSpecial": false
-            },
-            {
-              "question": "Quelle partie du corps de l'oiseau produit une huile pour imperméabiliser les plumes ?",
-              "options": [
-                "Une glande située à la base de la queue",
-                "Les follicules situés à la racine des plumes",
-                "Une glande dans le bec de l'oiseau",
-                "Les glandes sudoripares sous les ailes"
-              ],
-              "correctAnswer": "Une glande située à la base de la queue",
-              "isSpecial": false
-            },
-            {
-              "question": "Quel est le rôle principal du duvet chez les oiseaux ?",
-              "options": [
-                "Permettre un vol silencieux",
-                "Garder l'oiseau bien au chaud",
-                "Attirer les partenaires lors de la reproduction",
-                "Protéger l'oiseau des chocs"
-              ],
-              "correctAnswer": "Garder l'oiseau bien au chaud",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi les oiseaux prennent-ils des bains dans les flaques d'eau ?",
-              "options": [
-                "Pour réguler leur température corporelle",
-                "Pour nettoyer leurs plumes afin de bien voler",
-                "Pour se désaltérer plus facilement",
-                "Pour se débarrasser des parasites uniquement"
-              ],
-              "correctAnswer": "Pour nettoyer leurs plumes afin de bien voler",
-              "isSpecial": false
-            },
-            {
-              "question": "Comment les plumes des canards leur permettent-elles de nager longtemps ?",
-              "options": [
-                "Elles stockent de l'air pour les aider à flotter",
-                "L'eau glisse dessus sans jamais les mouiller",
-                "Elles sont plus épaisses que celles des autres oiseaux",
-                "Elles absorbent l'eau puis la rejettent rapidement"
-              ],
-              "correctAnswer": "L'eau glisse dessus sans jamais les mouiller",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi beaucoup d'oiseaux choisissent-ils de dormir dans les branches des arbres ?",
-              "options": [
-                "Parce que la chaleur monte et les arbres sont plus chauds la nuit",
-                "Pour être bien cachés et en sécurité",
-                "Pour surveiller leurs proies depuis une hauteur",
-                "Parce que le sol est trop humide la nuit"
-              ],
-              "correctAnswer": "Pour être bien cachés et en sécurité",
-              "isSpecial": false
-            },
-            {
-              "question": "Les os pneumatisés des oiseaux sont creux et remplis d'air. Quel avantage cela leur procure-t-il, et quel inconvénient potentiel cela pourrait-il représenter ?",
-              "options": [
-                "Avantage : plus légers en vol ; inconvénient : os plus fragiles et risque de fractures",
-                "Avantage : meilleure flottabilité dans l'eau ; inconvénient : difficulté à plonger en profondeur",
-                "Avantage : meilleure isolation thermique ; inconvénient : ralentissement lors de la course",
-                "Avantage : réserve d'oxygène pendant le vol ; inconvénient : poids supplémentaire à basse altitude"
-              ],
-              "correctAnswer": "Avantage : plus légers en vol ; inconvénient : os plus fragiles et risque de fractures",
-              "isSpecial": true
-            }
-          ]
-        },
-        {
-          "id": "ornithology-gen-l3",
-          "title": "Leçon Avancée",
-          "emoji": "💧",
-          "themeColor": "amber",
-          "badgeId": "ornithology-badge-l3",
-          "badgeName": "Explorateur L3",
-          "badgeEmoji": "💧",
-          "cards": [
-            {
-              "title": "Découverte : Leçon Avancée",
-              "text": "Cette leçon traite de Leçon Avancée. Lis attentivement pour réussir le quiz !",
-              "emoji": "💧"
-            },
-            {
-              "title": "Le savais-tu ?",
-              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
-              "emoji": "💡"
-            },
-            {
-              "title": "Le voyage des oiseaux",
-              "text": "Quand il fait trop froid, certains oiseaux font un très long voyage appelé migration. Ils volent ensemble vers des pays chauds !",
-              "emoji": "🌅"
-            },
-            {
-              "title": "Les nids douillets",
-              "text": "Les oiseaux construisent des nids pour y pondre leurs œufs. Ils utilisent des brindilles, de la boue et même de la mousse !",
-              "emoji": "🪹"
-            },
-            {
-              "title": "Les petits oisillons",
-              "text": "Quand les œufs éclosent, de petits bébés oiseaux sortent. On les appelle des oisillons.",
-              "emoji": "🐣"
-            },
-            {
-              "title": "Les descendants des dinosaures",
-              "text": "Les oiseaux sont les seuls survivants de la grande famille des dinosaures ! Les paléontologues ont trouvé des fossiles de dinosaures avec des plumes.",
-              "emoji": "🦖"
-            },
-            {
-              "title": "L'Archaeopteryx",
-              "text": "L'Archaeopteryx est l'un des plus célèbres fossiles. Il avait des plumes comme un oiseau mais des dents et une longue queue comme un reptile.",
-              "emoji": "🦴"
-            },
-            {
-              "title": "Le Petit Ver de Terre",
-              "text": "Beaucoup d'oiseaux aiment picorer la terre pour trouver des petits vers très bons à manger. C'est leur repas préféré !",
-              "emoji": "🪱"
-            },
-            {
-              "title": "L'Œil du Faucon",
-              "text": "Le faucon possède une vision si perçante qu'il peut repérer une petite proie depuis très haut dans les nuages.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "La migration incroyable",
-              "text": "Certains oiseaux, comme la Sterne arctique, parcourent des dizaines de milliers de kilomètres chaque année pour trouver un climat favorable.",
-              "emoji": "🌍"
-            },
-            {
-              "title": "Où dorment les oiseaux ?",
-              "text": "Beaucoup d'oiseaux dorment dans les arbres, bien cachés dans les branches pour être en sécurité.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "L'incroyable réalité : Le voyage des oiseaux",
-              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "En savoir plus : Le voyage des oiseaux",
-              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "Analyse profonde : Le voyage des oiseaux",
-              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
-              "emoji": "🔬"
-            },
-            {
-              "title": "Pour aller plus loin : Le voyage des oiseaux",
-              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
-              "emoji": "📡"
-            }
-          ],
-          "quiz": [
-            {
-              "question": "Pourquoi certains oiseaux migrent-ils vers des pays chauds en hiver ?",
-              "options": [
-                "Pour trouver de nouveaux nids",
-                "Parce qu'il fait trop froid dans leur pays d'origine",
-                "Pour fuir leurs prédateurs",
-                "Parce qu'ils cherchent de l'eau"
-              ],
-              "correctAnswer": "Parce qu'il fait trop froid dans leur pays d'origine",
-              "isSpecial": false
-            },
-            {
-              "question": "Quels matériaux les oiseaux utilisent-ils pour construire leur nid ?",
-              "options": [
-                "Des feuilles, du sable et du plastique",
-                "Des brindilles, de la boue et de la mousse",
-                "Des pierres, des coquillages et de la terre",
-                "Des plumes, du coton et du fil"
-              ],
-              "correctAnswer": "Des brindilles, de la boue et de la mousse",
-              "isSpecial": false
-            },
-            {
-              "question": "Comment appelle-t-on les bébés oiseaux qui viennent de sortir de l'oeuf ?",
-              "options": [
-                "Des poussins",
-                "Des aiglons",
-                "Des oisillons",
-                "Des nichons"
-              ],
-              "correctAnswer": "Des oisillons",
-              "isSpecial": false
-            },
-            {
-              "question": "De quel groupe d'animaux disparus les oiseaux sont-ils les descendants survivants ?",
-              "options": [
-                "Des mammouths",
-                "Des reptiles marins",
-                "Des dinosaures",
-                "Des amphibiens préhistoriques"
-              ],
-              "correctAnswer": "Des dinosaures",
-              "isSpecial": false
-            },
-            {
-              "question": "Quelle preuve les paléontologues ont-ils trouvée pour relier les oiseaux aux dinosaures ?",
-              "options": [
-                "Des fossiles de dinosaures avec des plumes",
-                "Des empreintes de pattes semblables à celles des oiseaux",
-                "Des oeufs de dinosaures identiques aux oeufs d'oiseaux",
-                "Des dents de dinosaures retrouvées chez certains oiseaux modernes"
-              ],
-              "correctAnswer": "Des fossiles de dinosaures avec des plumes",
-              "isSpecial": false
-            },
-            {
-              "question": "Qu'est-ce qui rend l'Archaeopteryx différent d'un oiseau moderne ?",
-              "options": [
-                "Il n'avait pas de plumes",
-                "Il avait des dents et une longue queue comme un reptile",
-                "Il ne pouvait pas voler",
-                "Il vivait uniquement dans l'eau"
-              ],
-              "correctAnswer": "Il avait des dents et une longue queue comme un reptile",
-              "isSpecial": false
-            },
-            {
-              "question": "Quelle capacite visuelle remarquable possede le faucon ?",
-              "options": [
-                "Il voit parfaitement dans le noir complet",
-                "Il peut reperer une petite proie depuis tres haut dans les nuages",
-                "Il distingue les couleurs invisibles pour les humains",
-                "Il peut voir derriere lui sans tourner la tete"
-              ],
-              "correctAnswer": "Il peut reperer une petite proie depuis tres haut dans les nuages",
-              "isSpecial": false
-            },
-            {
-              "question": "Quel oiseau est connu pour effectuer l'une des plus longues migrations du monde chaque annee ?",
-              "options": [
-                "L'aigle royal",
-                "Le pingouin",
-                "La Sterne arctique",
-                "Le perroquet"
-              ],
-              "correctAnswer": "La Sterne arctique",
-              "isSpecial": false
-            },
-            {
-              "question": "Ou la plupart des oiseaux dorment-ils pour etre en securite ?",
-              "options": [
-                "Dans des terriers creuses dans le sol",
-                "Au bord de l'eau",
-                "Dans les arbres, bien caches dans les branches",
-                "Dans des grottes rocheuses"
-              ],
-              "correctAnswer": "Dans les arbres, bien caches dans les branches",
-              "isSpecial": false
-            },
-            {
-              "question": "L'Archaeopteryx est considere comme un fossile de transition entre les reptiles et les oiseaux. Quelle caracteristique possedait-il en commun avec les oiseaux modernes, tout en gardant des traits reptiliens ?",
-              "options": [
-                "Il avait des plumes mais aussi des dents et une longue queue osseuse",
-                "Il avait des ailes mais ses pattes etaient recouvertes d'ecailles uniquement",
-                "Il pondait des oeufs comme les reptiles mais avait un bec sans dents",
-                "Il avait un squelette creux comme les oiseaux mais aucune plume"
-              ],
-              "correctAnswer": "Il avait des plumes mais aussi des dents et une longue queue osseuse",
-              "isSpecial": true
-            }
-          ]
-        },
-        {
-          "id": "ornithology-gen-l4",
-          "title": "Leçon Générale",
-          "emoji": "🔥",
-          "themeColor": "amber",
-          "badgeId": "ornithology-badge-l4",
-          "badgeName": "Explorateur L4",
-          "badgeEmoji": "🔥",
-          "cards": [
-            {
-              "title": "Découverte : Leçon Générale",
-              "text": "Cette leçon traite de Leçon Générale. Lis attentivement pour réussir le quiz !",
-              "emoji": "🔥"
-            },
-            {
-              "title": "Le savais-tu ?",
-              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
-              "emoji": "💡"
-            },
-            {
-              "title": "Généralités sur les becs",
-              "text": "Le bec des oiseaux est magique. Un bec fin aide à attraper des insectes, et un bec court et fort sert à casser des graines.",
-              "emoji": "🦆"
-            },
-            {
-              "title": "Les belles plumes",
-              "text": "Le corps des oiseaux est recouvert de plumes. Elles les protègent du froid et de la pluie.",
-              "emoji": "🪶"
-            },
-            {
-              "title": "De toutes les couleurs",
-              "text": "Certains oiseaux ont des plumes très colorées pour attirer l'attention ou pour se cacher dans la nature.",
-              "emoji": "🌈"
-            },
-            {
-              "title": "L'intelligence des corvidés",
-              "text": "Les corbeaux et les corneilles font partie des corvidés. Ce sont parmi les oiseaux les plus intelligents au monde !",
-              "emoji": "🐦‍⬛"
-            },
-            {
-              "title": "Utiliser des outils",
-              "text": "Certains corbeaux sont capables d'utiliser des brindilles comme outils pour attraper des insectes cachés dans l'écorce des arbres.",
-              "emoji": "🛠️"
-            },
-            {
-              "title": "Cache-cache dans les Arbres",
-              "text": "Les oiseaux se cachent dans les grandes feuilles des arbres pour se protéger de la pluie et des grands animaux.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "Les Migrateurs",
-              "text": "La sterne arctique est une incroyable voyageuse. Elle parcourt des milliers de kilomètres chaque année pour passer de l'Arctique à l'Antarctique !",
-              "emoji": "🌍"
-            },
-            {
-              "title": "Les rapaces nocturnes",
-              "text": "Les chouettes et les hiboux sont des prédateurs redoutables la nuit grâce à leur vision perçante et leur vol totalement silencieux.",
-              "emoji": "🦉"
-            },
-            {
-              "title": "Où dorment les oiseaux ?",
-              "text": "Beaucoup d'oiseaux dorment dans les arbres, bien cachés dans les branches pour être en sécurité.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "L'incroyable réalité : Généralités sur les becs",
-              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "En savoir plus : Généralités sur les becs",
-              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "Analyse profonde : Généralités sur les becs",
-              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
-              "emoji": "🔬"
-            },
-            {
-              "title": "Pour aller plus loin : Généralités sur les becs",
-              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
-              "emoji": "📡"
-            }
-          ],
-          "quiz": [
-            {
-              "question": "A quoi sert un bec court et fort chez un oiseau ?",
-              "options": [
-                "Attraper des poissons dans l'eau",
-                "Casser des graines",
-                "Attraper des insectes dans l'écorce",
-                "Filtrer l'eau des mares"
-              ],
-              "correctAnswer": "Casser des graines",
-              "isSpecial": false
-            },
-            {
-              "question": "Quel est le principal rôle des plumes chez les oiseaux ?",
-              "options": [
-                "Permettre à l'oiseau de respirer sous l'eau",
-                "Servir uniquement de décoration pour attirer un partenaire",
-                "Protéger l'oiseau du froid et de la pluie",
-                "Aider l'oiseau à nager plus vite"
-              ],
-              "correctAnswer": "Protéger l'oiseau du froid et de la pluie",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi certains oiseaux ont-ils des plumes très colorées ?",
-              "options": [
-                "Pour voler plus vite grâce aux couleurs vives",
-                "Pour attirer l'attention ou se camoufler dans la nature",
-                "Pour effrayer tous les prédateurs sans exception",
-                "Pour mieux résister aux fortes pluies tropicales"
-              ],
-              "correctAnswer": "Pour attirer l'attention ou se camoufler dans la nature",
-              "isSpecial": false
-            },
-            {
-              "question": "Quels oiseaux appartiennent à la famille des corvidés ?",
-              "options": [
-                "Les chouettes et les hiboux",
-                "Les aigles et les faucons",
-                "Les corbeaux et les corneilles",
-                "Les perroquets et les perruches"
-              ],
-              "correctAnswer": "Les corbeaux et les corneilles",
-              "isSpecial": false
-            },
-            {
-              "question": "Comment certains corbeaux parviennent-ils à attraper des insectes cachés dans l'écorce des arbres ?",
-              "options": [
-                "En creusant l'écorce avec leur bec très puissant",
-                "En utilisant des brindilles comme outils",
-                "En restant immobiles et en attendant que les insectes sortent",
-                "En tapant fort sur le tronc pour faire tomber les insectes"
-              ],
-              "correctAnswer": "En utilisant des brindilles comme outils",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi les oiseaux se cachent-ils dans les grandes feuilles des arbres ?",
-              "options": [
-                "Pour se protéger de la pluie et des grands animaux",
-                "Pour construire leur nid loin du sol",
-                "Pour trouver plus facilement des insectes à manger",
-                "Pour surveiller leur territoire depuis les hauteurs"
-              ],
-              "correctAnswer": "Pour se protéger de la pluie et des grands animaux",
-              "isSpecial": false
-            },
-            {
-              "question": "Quel trajet exceptionnel accomplit la sterne arctique chaque année ?",
-              "options": [
-                "Elle vole de l'Europe vers l'Afrique du Nord",
-                "Elle traverse l'océan Pacifique d'est en ouest",
-                "Elle migre de l'Arctique jusqu'en Antarctique",
-                "Elle effectue le tour complet de la Méditerranée"
-              ],
-              "correctAnswer": "Elle migre de l'Arctique jusqu'en Antarctique",
-              "isSpecial": false
-            },
-            {
-              "question": "Quelle caracteristique permet aux chouettes et hiboux de chasser efficacement la nuit ?",
-              "options": [
-                "Leur plumage très coloré qui effraie les proies",
-                "Leur vision perçante et leur vol totalement silencieux",
-                "Leur capacité à utiliser des outils pour débusquer les proies",
-                "Leur bec très long adapté pour attraper les poissons de nuit"
-              ],
-              "correctAnswer": "Leur vision perçante et leur vol totalement silencieux",
-              "isSpecial": false
-            },
-            {
-              "question": "Ou dorment la plupart des oiseaux pour rester en securite ?",
-              "options": [
-                "Sur le sol, enfouis sous les feuilles mortes",
-                "Dans des terriers creusés dans la terre",
-                "Bien cachés dans les branches des arbres",
-                "Flottant sur l'eau des lacs et rivières"
-              ],
-              "correctAnswer": "Bien cachés dans les branches des arbres",
-              "isSpecial": false
-            },
-            {
-              "question": "Un scientifique observe qu'un oiseau a un bec fin et allongé. Quelle conclusion peut-il tirer sur le regime alimentaire de cet oiseau ?",
-              "options": [
-                "Il se nourrit principalement de grosses graines dures",
-                "Il est probablement adapté pour capturer des insectes ou du nectar",
-                "Il chasse surtout de petits mammifères et des reptiles",
-                "Il se nourrit exclusivement de poissons en eau profonde"
-              ],
-              "correctAnswer": "Il est probablement adapté pour capturer des insectes ou du nectar",
-              "isSpecial": true
-            }
-          ]
-        },
-        {
-          "id": "ornithology-gen-l5",
-          "title": "Leçon Découverte",
-          "emoji": "💨",
-          "themeColor": "amber",
-          "badgeId": "ornithology-badge-l5",
-          "badgeName": "Explorateur L5",
-          "badgeEmoji": "💨",
-          "cards": [
-            {
-              "title": "Découverte : Leçon Découverte",
-              "text": "Cette leçon traite de Leçon Découverte. Lis attentivement pour réussir le quiz !",
-              "emoji": "💨"
-            },
-            {
-              "title": "Le savais-tu ?",
-              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
-              "emoji": "💡"
-            },
-            {
-              "title": "La découverte du chant",
-              "text": "As-tu déjà écouté un oiseau chanter ? Chaque oiseau a sa propre mélodie pour dire 'bonjour' ou pour appeler ses amis !",
-              "emoji": "🎵"
-            },
-            {
-              "title": "Le vol des oiseaux",
-              "text": "Pour voler, les oiseaux battent des ailes. Leurs os sont très légers, ce qui les aide à s'envoler facilement !",
-              "emoji": "🦅"
-            },
-            {
-              "title": "La descente",
-              "text": "Pour atterrir, l'oiseau ouvre grand ses ailes comme un parachute pour ralentir.",
-              "emoji": "🪂"
-            },
-            {
-              "title": "Une vision extraordinaire",
-              "text": "La vue est le sens le plus développé chez l'oiseau. Les rapaces ont une acuité visuelle bien supérieure à celle des humains.",
-              "emoji": "👁️"
-            },
-            {
-              "title": "Voir l'invisible",
-              "text": "De nombreux oiseaux peuvent percevoir la lumière ultraviolette. Cela les aide à repérer des fruits mûrs ou des traces laissées par leurs proies.",
-              "emoji": "✨"
-            },
-            {
-              "title": "L'Œuf Magique",
-              "text": "Tous les oiseaux naissent dans un œuf. Au début, le bébé oiseau casse la coquille avec son petit bec pour sortir.",
-              "emoji": "🥚"
-            },
-            {
-              "title": "La Symphonie des Oiseaux",
-              "text": "Chaque matin au printemps, les oiseaux offrent un magnifique concert appelé le 'chœur de l'aube' pour délimiter leur territoire.",
-              "emoji": "🎶"
-            },
-            {
-              "title": "Le rôle écologique",
-              "text": "Les oiseaux jouent un rôle crucial dans la nature : ils pollinisent les fleurs, dispersent les graines et contrôlent les populations d'insectes.",
-              "emoji": "🌱"
-            },
-            {
-              "title": "Où dorment les oiseaux ?",
-              "text": "Beaucoup d'oiseaux dorment dans les arbres, bien cachés dans les branches pour être en sécurité.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "L'incroyable réalité : La découverte du chant",
-              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "En savoir plus : La découverte du chant",
-              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "Analyse profonde : La découverte du chant",
-              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
-              "emoji": "🔬"
-            },
-            {
-              "title": "Pour aller plus loin : La découverte du chant",
-              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
-              "emoji": "📡"
-            }
-          ],
-          "quiz": [
-            {
-              "question": "Pourquoi les oiseaux ont-ils des os très légers ?",
-              "options": [
-                "Pour mieux nager sous l'eau",
-                "Pour s'envoler plus facilement",
-                "Pour résister au froid",
-                "Pour pondre des oeufs plus solides"
-              ],
-              "correctAnswer": "Pour s'envoler plus facilement",
-              "isSpecial": false
-            },
-            {
-              "question": "Comment un oiseau ralentit-il avant d'atterrir ?",
-              "options": [
-                "Il bat très vite des ailes",
-                "Il ferme complètement les ailes",
-                "Il ouvre grand ses ailes comme un parachute",
-                "Il plonge la tête vers le bas"
-              ],
-              "correctAnswer": "Il ouvre grand ses ailes comme un parachute",
-              "isSpecial": false
-            },
-            {
-              "question": "Quel est le sens le plus développé chez les oiseaux ?",
-              "options": [
-                "L'ouie",
-                "L'odorat",
-                "Le toucher",
-                "La vue"
-              ],
-              "correctAnswer": "La vue",
-              "isSpecial": false
-            },
-            {
-              "question": "Comment s'appelle le concert matinal que font les oiseaux au printemps ?",
-              "options": [
-                "La symphonie du soir",
-                "Le chant des migrations",
-                "Le choeur de l'aube",
-                "La serenade forestiere"
-              ],
-              "correctAnswer": "Le choeur de l'aube",
-              "isSpecial": false
-            },
-            {
-              "question": "Dans quel but les oiseaux chantent-ils le matin au printemps ?",
-              "options": [
-                "Pour se rechauffer",
-                "Pour delimitier leur territoire",
-                "Pour attirer des insectes",
-                "Pour annoncer la pluie"
-              ],
-              "correctAnswer": "Pour delimitier leur territoire",
-              "isSpecial": false
-            },
-            {
-              "question": "Lequel de ces roles ecologiques est assure par les oiseaux ?",
-              "options": [
-                "Purifier l'eau des rivieres",
-                "Disperser les graines",
-                "Produire de l'oxygene",
-                "Decomposer les roches"
-              ],
-              "correctAnswer": "Disperser les graines",
-              "isSpecial": false
-            },
-            {
-              "question": "Comment le bebe oiseau sort-il de son oeuf ?",
-              "options": [
-                "La coquille se ramollit dans l'eau",
-                "La mere la casse de l'exterieur",
-                "Il casse la coquille avec son bec",
-                "Elle eclate sous la chaleur du nid"
-              ],
-              "correctAnswer": "Il casse la coquille avec son bec",
-              "isSpecial": false
-            },
-            {
-              "question": "Ou la plupart des oiseaux dorment-ils la nuit ?",
-              "options": [
-                "Dans des terriers souterrains",
-                "Sur le sol entre les herbes",
-                "Bien caches dans les branches des arbres",
-                "A la surface de l'eau"
-              ],
-              "correctAnswer": "Bien caches dans les branches des arbres",
-              "isSpecial": false
-            },
-            {
-              "question": "A quoi sert la capacite de voir la lumiere ultraviolette chez certains oiseaux ?",
-              "options": [
-                "A voir la nuit comme en plein jour",
-                "A reperer des fruits murs ou des traces de proies",
-                "A communiquer en silence entre eux",
-                "A se proteger des rayons du soleil"
-              ],
-              "correctAnswer": "A reperer des fruits murs ou des traces de proies",
-              "isSpecial": false
-            },
-            {
-              "question": "Les rapaces ont une acuite visuelle superieure a celle des humains. Qu'est-ce que cela signifie concretement pour leur survie ?",
-              "options": [
-                "Ils peuvent voler plus vite grace a de meilleurs reflexes visuels",
-                "Ils repèrent leurs proies a de tres grandes distances avec precision",
-                "Ils voient uniquement les couleurs vives pour choisir leurs aliments",
-                "Ils sont capables de voir derriere eux sans tourner la tete"
-              ],
-              "correctAnswer": "Ils repèrent leurs proies a de tres grandes distances avec precision",
-              "isSpecial": true
-            }
-          ]
-        },
-        {
-          "id": "ornithology-gen-l6",
-          "title": "Leçon Nature",
-          "emoji": "⛰️",
-          "themeColor": "amber",
-          "badgeId": "ornithology-badge-l6",
-          "badgeName": "Explorateur L6",
-          "badgeEmoji": "⛰️",
-          "cards": [
-            {
-              "title": "Découverte : Leçon Nature",
-              "text": "Cette leçon traite de Leçon Nature. Lis attentivement pour réussir le quiz !",
-              "emoji": "⛰️"
-            },
-            {
-              "title": "Le savais-tu ?",
-              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
-              "emoji": "💡"
-            },
-            {
-              "title": "La nature des oiseaux",
-              "text": "Les oiseaux adorent la nature. Ils construisent des nids douillets avec des brindilles et des feuilles pour protéger leurs bébés.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "Le chant merveilleux",
-              "text": "Les oiseaux chantent pour se parler. Chaque espèce a sa propre mélodie !",
-              "emoji": "🎶"
-            },
-            {
-              "title": "Le matin au réveil",
-              "text": "C'est souvent très tôt le matin, à l'aube, qu'on entend le plus d'oiseaux chanter.",
-              "emoji": "🌅"
-            },
-            {
-              "title": "Les records du monde",
-              "text": "Le Colibri d'Elena est le plus petit oiseau du monde, pesant moins de 2 grammes ! À l'inverse, l'autruche est le plus grand et le plus lourd.",
-              "emoji": "🏆"
-            },
-            {
-              "title": "Le vol sur place",
-              "text": "Le colibri est le seul oiseau capable de voler en arrière et de faire du vol stationnaire parfait pour boire le nectar des fleurs.",
-              "emoji": "🌺"
-            },
-            {
-              "title": "Le Grand Vol",
-              "text": "Quand ils sont grands, les oiseaux ouvrent très grand leurs ailes et sautent dans le vide pour apprendre à voler. C'est magique !",
-              "emoji": "🦅"
-            },
-            {
-              "title": "Le nid douillet",
-              "text": "Les oiseaux construisent des nids avec des brindilles, de la boue et même des toiles d'araignée pour garder leurs œufs bien au chaud.",
-              "emoji": "🪹"
-            },
-            {
-              "title": "Le système respiratoire",
-              "text": "Le système respiratoire des oiseaux est unique. Grâce à des sacs aériens, l'air frais circule dans leurs poumons même quand ils expirent !",
-              "emoji": "🫁"
-            },
-            {
-              "title": "Où dorment les oiseaux ?",
-              "text": "Beaucoup d'oiseaux dorment dans les arbres, bien cachés dans les branches pour être en sécurité.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "L'incroyable réalité : La nature des oiseaux",
-              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "En savoir plus : La nature des oiseaux",
-              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "Analyse profonde : La nature des oiseaux",
-              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
-              "emoji": "🔬"
-            },
-            {
-              "title": "Pour aller plus loin : La nature des oiseaux",
-              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
-              "emoji": "📡"
-            }
-          ],
-          "quiz": [
-            {
-              "question": "Quel est le plus petit oiseau du monde ?",
-              "options": [
-                "Le moineau domestique",
-                "Le colibri d'Elena",
-                "Le roitelet huppé",
-                "Le troglodyte mignon"
-              ],
-              "correctAnswer": "Le colibri d'Elena",
-              "isSpecial": false
-            },
-            {
-              "question": "Combien pèse approximativement le plus petit oiseau du monde ?",
-              "options": [
-                "Moins de 2 grammes",
-                "Environ 10 grammes",
-                "Entre 5 et 8 grammes",
-                "Moins de 20 grammes"
-              ],
-              "correctAnswer": "Moins de 2 grammes",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi le colibri est-il un oiseau exceptionnel parmi tous les oiseaux ?",
-              "options": [
-                "Il est le seul à construire des nids avec de la boue",
-                "Il est le seul capable de voler en arrière et de faire du vol stationnaire",
-                "Il est le seul à chanter la nuit",
-                "Il est le seul à ne pas avoir de plumes"
-              ],
-              "correctAnswer": "Il est le seul capable de voler en arrière et de faire du vol stationnaire",
-              "isSpecial": false
-            },
-            {
-              "question": "Quel moment de la journée est le meilleur pour entendre le plus d'oiseaux chanter ?",
-              "options": [
-                "En milieu d'après-midi",
-                "Le soir au coucher du soleil",
-                "La nuit à minuit",
-                "Tôt le matin, à l'aube"
-              ],
-              "correctAnswer": "Tôt le matin, à l'aube",
-              "isSpecial": false
-            },
-            {
-              "question": "Avec quels matériaux les oiseaux construisent-ils principalement leurs nids ?",
-              "options": [
-                "Du sable, des pierres et de l'herbe sèche",
-                "Des brindilles, de la boue et des toiles d'araignée",
-                "Des feuilles mortes, de la mousse et du coton",
-                "De l'écorce, des graines et des plumes"
-              ],
-              "correctAnswer": "Des brindilles, de la boue et des toiles d'araignée",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi les oiseaux chantent-ils ?",
-              "options": [
-                "Pour attirer les insectes vers eux",
-                "Pour se repérer dans le noir",
-                "Pour communiquer entre eux",
-                "Pour effrayer les prédateurs uniquement"
-              ],
-              "correctAnswer": "Pour communiquer entre eux",
-              "isSpecial": false
-            },
-            {
-              "question": "Quel est le plus grand et le plus lourd oiseau du monde ?",
-              "options": [
-                "L'albatros hurleur",
-                "L'autruche",
-                "Le condor des Andes",
-                "L'émeu"
-              ],
-              "correctAnswer": "L'autruche",
-              "isSpecial": false
-            },
-            {
-              "question": "Comment les jeunes oiseaux apprennent-ils à voler ?",
-              "options": [
-                "Leurs parents les portent sur leur dos pendant plusieurs semaines",
-                "Ils imitent d'autres espèces d'oiseaux au sol",
-                "Ils ouvrent grand leurs ailes et sautent dans le vide",
-                "Ils glissent le long des branches sans jamais quitter l'arbre"
-              ],
-              "correctAnswer": "Ils ouvrent grand leurs ailes et sautent dans le vide",
-              "isSpecial": false
-            },
-            {
-              "question": "Où la plupart des oiseaux choisissent-ils de dormir pour rester en sécurité ?",
-              "options": [
-                "Dans des terriers creusés dans le sol",
-                "Dans les arbres, cachés dans les branches",
-                "Sur les bords des rivières",
-                "Dans des grottes ou des rochers"
-              ],
-              "correctAnswer": "Dans les arbres, cachés dans les branches",
-              "isSpecial": false
-            },
-            {
-              "question": "Quelle particularité unique possede le systeme respiratoire des oiseaux par rapport aux autres animaux ?",
-              "options": [
-                "Leurs poumons sont deux fois plus grands que ceux des mammiferes de taille equivalente",
-                "Ils possedent des sacs aeriens qui font circuler l'air frais dans leurs poumons meme pendant l'expiration",
-                "Ils peuvent retenir leur souffle pendant plus de dix minutes en vol",
-                "Leur trachee se divise en quatre conduits distincts pour filtrer l'air"
-              ],
-              "correctAnswer": "Ils possedent des sacs aeriens qui font circuler l'air frais dans leurs poumons meme pendant l'expiration",
-              "isSpecial": true
-            }
-          ]
-        },
-        {
-          "id": "ornithology-gen-l7",
-          "title": "Leçon Monde",
-          "emoji": "🧭",
-          "themeColor": "amber",
-          "badgeId": "ornithology-badge-l7",
-          "badgeName": "Explorateur L7",
-          "badgeEmoji": "🧭",
-          "cards": [
-            {
-              "title": "Découverte : Leçon Monde",
-              "text": "Cette leçon traite de Leçon Monde. Lis attentivement pour réussir le quiz !",
-              "emoji": "🧭"
-            },
-            {
-              "title": "Le savais-tu ?",
-              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
-              "emoji": "💡"
-            },
-            {
-              "title": "Les oiseaux du monde",
-              "text": "Il existe des oiseaux partout dans le monde ! Le manchot vit dans le froid, tandis que le toucan préfère la chaleur de la jungle.",
-              "emoji": "🐧"
-            },
-            {
-              "title": "Le grand voyage",
-              "text": "En hiver, quand il fait froid, beaucoup d'oiseaux voyagent vers les pays chauds. C'est la migration !",
-              "emoji": "🌍"
-            },
-            {
-              "title": "Voler en groupe",
-              "text": "Pour moins se fatiguer, ils volent souvent en forme de 'V' avec tous leurs amis.",
-              "emoji": "🪿"
-            },
-            {
-              "title": "La parade nuptiale",
-              "text": "Pour attirer une femelle, le mâle réalise souvent une danse ou exhibe de magnifiques couleurs. C'est la parade nuptiale.",
-              "emoji": "🦚"
-            },
-            {
-              "title": "L'oiseau jardinier",
-              "text": "En Australie, l'oiseau jardinier construit un berceau de branches qu'il décore avec des objets bleus (fleurs, cailloux, bouchons) pour séduire sa partenaire !",
-              "emoji": "💙"
-            },
-            {
-              "title": "L'Oiseau qui Parle",
-              "text": "Certains oiseaux, comme le perroquet, sont très rigolos. Ils peuvent imiter les mots que nous disons et parler avec nous !",
-              "emoji": "🦜"
-            },
-            {
-              "title": "Le chant des oiseaux",
-              "text": "Chaque espèce d'oiseau a son propre chant. Ils chantent pour marquer leur territoire ou pour appeler leurs amis !",
-              "emoji": "🎶"
-            },
-            {
-              "title": "L'intelligence des corvidés",
-              "text": "Les corbeaux et les pies sont extrêmement intelligents. Ils sont capables de fabriquer des outils et de résoudre des énigmes complexes.",
-              "emoji": "🐦‍⬛"
-            },
-            {
-              "title": "Où dorment les oiseaux ?",
-              "text": "Beaucoup d'oiseaux dorment dans les arbres, bien cachés dans les branches pour être en sécurité.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "L'incroyable réalité : Les oiseaux du monde",
-              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "En savoir plus : Les oiseaux du monde",
-              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "Analyse profonde : Les oiseaux du monde",
-              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
-              "emoji": "🔬"
-            },
-            {
-              "title": "Pour aller plus loin : Les oiseaux du monde",
-              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
-              "emoji": "📡"
-            }
-          ],
-          "quiz": [
-            {
-              "question": "Pourquoi beaucoup d'oiseaux migrent-ils en hiver ?",
-              "options": [
-                "Pour trouver un partenaire",
-                "Pour fuir les prédateurs",
-                "Pour rejoindre des régions plus chaudes",
-                "Pour apprendre de nouveaux chants"
-              ],
-              "correctAnswer": "Pour rejoindre des régions plus chaudes",
-              "isSpecial": false
-            },
-            {
-              "question": "En quelle forme les oiseaux migrateurs volent-ils souvent en groupe ?",
-              "options": [
-                "En cercle",
-                "En ligne droite",
-                "En forme de V",
-                "En zigzag"
-              ],
-              "correctAnswer": "En forme de V",
-              "isSpecial": false
-            },
-            {
-              "question": "Quel oiseau vit dans les environnements froids, contrairement au toucan qui préfère la jungle ?",
-              "options": [
-                "Le perroquet",
-                "Le manchot",
-                "La pie",
-                "Le corbeau"
-              ],
-              "correctAnswer": "Le manchot",
-              "isSpecial": false
-            },
-            {
-              "question": "Comment appelle-t-on le comportement du mâle qui danse ou montre ses couleurs pour attirer une femelle ?",
-              "options": [
-                "La migration",
-                "Le marquage territorial",
-                "La parade nuptiale",
-                "L'imitation"
-              ],
-              "correctAnswer": "La parade nuptiale",
-              "isSpecial": false
-            },
-            {
-              "question": "Dans quel pays vit l'oiseau jardinier, connu pour décorer son berceau d'objets bleus ?",
-              "options": [
-                "Au Brésil",
-                "En Inde",
-                "En Australie",
-                "En Afrique du Sud"
-              ],
-              "correctAnswer": "En Australie",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi les oiseaux chantent-ils selon les informations de la leçon ?",
-              "options": [
-                "Pour se nourrir plus facilement",
-                "Pour marquer leur territoire ou appeler leurs congénères",
-                "Pour imiter les humains",
-                "Pour indiquer l'heure"
-              ],
-              "correctAnswer": "Pour marquer leur territoire ou appeler leurs congénères",
-              "isSpecial": false
-            },
-            {
-              "question": "Parmi ces oiseaux, lesquels sont réputés pour leur capacité à fabriquer des outils et résoudre des énigmes ?",
-              "options": [
-                "Les perroquets et les toucans",
-                "Les manchots et les aigles",
-                "Les corbeaux et les pies",
-                "Les moineaux et les hirondelles"
-              ],
-              "correctAnswer": "Les corbeaux et les pies",
-              "isSpecial": false
-            },
-            {
-              "question": "Quelle capacité particulière possède le perroquet qui le distingue de la plupart des autres oiseaux ?",
-              "options": [
-                "Il peut voler très haut",
-                "Il peut imiter les mots humains",
-                "Il construit des nids complexes",
-                "Il migre sur de très longues distances"
-              ],
-              "correctAnswer": "Il peut imiter les mots humains",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi beaucoup d'oiseaux dorment-ils cachés dans les branches des arbres ?",
-              "options": [
-                "Pour rester au chaud grâce aux feuilles",
-                "Pour se protéger des prédateurs",
-                "Pour être proches de leur nourriture",
-                "Pour mieux entendre les autres oiseaux"
-              ],
-              "correctAnswer": "Pour se protéger des prédateurs",
-              "isSpecial": false
-            },
-            {
-              "question": "L'oiseau jardinier utilise des objets d'une couleur particulière pour décorer son berceau. Quelle est cette couleur, et pourquoi ce comportement est-il considere comme une forme d'intelligence animale ?",
-              "options": [
-                "Rouge, car cette couleur effraie les predateurs et protege le nid",
-                "Bleu, car il selectionne deliberement des objets selon un critere esthetique pour seduire",
-                "Vert, car cette teinte se confond avec la vegetation et camouffle le nid",
-                "Jaune, car les femelles voient mieux cette longueur d'onde lumineuse"
-              ],
-              "correctAnswer": "Bleu, car il selectionne deliberement des objets selon un critere esthetique pour seduire",
-              "isSpecial": true
-            }
-          ]
-        },
-        {
-          "id": "ornithology-gen-l8",
-          "title": "Leçon Science",
-          "emoji": "🛡️",
-          "themeColor": "amber",
-          "badgeId": "ornithology-badge-l8",
-          "badgeName": "Explorateur L8",
-          "badgeEmoji": "🛡️",
-          "cards": [
-            {
-              "title": "Découverte : Leçon Science",
-              "text": "Cette leçon traite de Leçon Science. Lis attentivement pour réussir le quiz !",
-              "emoji": "🛡️"
-            },
-            {
-              "title": "Le savais-tu ?",
-              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
-              "emoji": "💡"
-            },
-            {
-              "title": "La science des plumes",
-              "text": "Les plumes des oiseaux sont incroyables ! Elles les aident à voler, mais aussi à rester bien au chaud, comme un gros manteau.",
-              "emoji": "🪶"
-            },
-            {
-              "title": "Les oiseaux nageurs",
-              "text": "Les canards et les cygnes adorent l'eau. Leurs plumes ne se mouillent pas grâce à une huile spéciale.",
-              "emoji": "🦆"
-            },
-            {
-              "title": "Des pattes comme des rames",
-              "text": "Ils ont des pattes palmées qui les aident à nager très vite, comme des palmes de plongée.",
-              "emoji": "🌊"
-            },
-            {
-              "title": "Les menaces sur la nature",
-              "text": "De nombreuses espèces d'oiseaux sont en danger. La destruction de leurs habitats, comme la déforestation, est la plus grande menace pour eux.",
-              "emoji": "⚠️"
-            },
-            {
-              "title": "Comment les protéger",
-              "text": "Installer des nichoirs, réduire l'utilisation de pesticides et protéger les forêts aide les oiseaux à survivre et à se reproduire.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "Les Graines Délicieuses",
-              "text": "En hiver, on peut donner des petites graines aux oiseaux pour les aider à avoir le ventre bien rempli.",
-              "emoji": "🌻"
-            },
-            {
-              "title": "Les plumes colorées",
-              "text": "Les plumes des oiseaux ne servent pas seulement à voler, elles les aident aussi à se cacher ou à attirer l'attention !",
-              "emoji": "🦚"
-            },
-            {
-              "title": "Les plumes de contour",
-              "text": "Les plumes de contour donnent à l'oiseau sa forme lisse, tandis que le duvet, situé en dessous, le protège du froid.",
-              "emoji": "🪶"
-            },
-            {
-              "title": "Découverte magique : La science des plumes",
-              "text": "Regarde bien les petits oiseaux ! Sais-tu qu'ils aiment beaucoup explorer et jouer dans la nature ? C'est fascinant de voir comment ils vivent.",
-              "emoji": "✨"
-            },
-            {
-              "title": "Le secret de : La science des plumes",
-              "text": "Chut, c'est un secret ! Les oiseaux ont des pouvoirs cachés dans leurs plumes et leur façon de chanter.",
-              "emoji": "🤫"
-            },
-            {
-              "title": "L'incroyable réalité : La science des plumes",
-              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "En savoir plus : La science des plumes",
-              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "Analyse profonde : La science des plumes",
-              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
-              "emoji": "🔬"
-            },
-            {
-              "title": "Pour aller plus loin : La science des plumes",
-              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
-              "emoji": "📡"
-            }
-          ],
-          "quiz": [
-            {
-              "question": "A quoi servent principalement les plumes d'un oiseau ?",
-              "options": [
-                "Uniquement a voler",
-                "A voler et a conserver la chaleur du corps",
-                "A attirer les insectes pour se nourrir",
-                "A repousser les predateurs"
-              ],
-              "correctAnswer": "A voler et a conserver la chaleur du corps",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi les plumes des canards ne se mouillent-elles pas lorsqu'ils nagent ?",
-              "options": [
-                "Leurs plumes sont faites d'une matiere synthetique",
-                "Ils secouent leurs plumes tres rapidement",
-                "Une huile speciale impermeabilise leurs plumes",
-                "L'eau glisse grace a la forme aerodynamique de leurs plumes"
-              ],
-              "correctAnswer": "Une huile speciale impermeabilise leurs plumes",
-              "isSpecial": false
-            },
-            {
-              "question": "Quelle caracteristique des pattes des canards et cygnes les aide a nager efficacement ?",
-              "options": [
-                "Leurs pattes sont tres longues",
-                "Leurs pattes sont palmees",
-                "Leurs pattes ont des griffes acinees",
-                "Leurs pattes sont recouvertes de plumes impermeables"
-              ],
-              "correctAnswer": "Leurs pattes sont palmees",
-              "isSpecial": false
-            },
-            {
-              "question": "Quelle est la principale menace pour les oiseaux selon la lecon ?",
-              "options": [
-                "La chasse excessive",
-                "La destruction de leurs habitats, notamment par la deforestation",
-                "Les maladies propagees par les insectes",
-                "Le rechauffement climatique uniquement"
-              ],
-              "correctAnswer": "La destruction de leurs habitats, notamment par la deforestation",
-              "isSpecial": false
-            },
-            {
-              "question": "Lequel de ces gestes aide concretement les oiseaux a survivre et a se reproduire ?",
-              "options": [
-                "Leur donner du pain rassis en ete",
-                "Installer des nichoirs et reduire les pesticides",
-                "Laisser les chats errants en liberte",
-                "Couper les arbres morts pour degager l'espace"
-              ],
-              "correctAnswer": "Installer des nichoirs et reduire les pesticides",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi est-il utile de donner des graines aux oiseaux en hiver ?",
-              "options": [
-                "Pour les habituer a vivre pres des humains",
-                "Parce qu'ils migrent moins bien sans graines",
-                "Parce que la nourriture naturelle est plus difficile a trouver en hiver",
-                "Pour les empecher de detruire les jardins"
-              ],
-              "correctAnswer": "Parce que la nourriture naturelle est plus difficile a trouver en hiver",
-              "isSpecial": false
-            },
-            {
-              "question": "Quel role jouent les plumes colorees chez les oiseaux, en dehors du vol ?",
-              "options": [
-                "Elles servent uniquement a reguler la temperature",
-                "Elles permettent de se camoufler ou d'attirer l'attention",
-                "Elles protegent uniquement contre la pluie",
-                "Elles servent a communiquer avec les humains"
-              ],
-              "correctAnswer": "Elles permettent de se camoufler ou d'attirer l'attention",
-              "isSpecial": false
-            },
-            {
-              "question": "Quelle est la difference entre les plumes de contour et le duvet chez un oiseau ?",
-              "options": [
-                "Les plumes de contour servent a nager, le duvet a voler",
-                "Les plumes de contour donnent la forme lisse de l'oiseau, le duvet protege du froid",
-                "Le duvet est visible a l'exterieur, les plumes de contour sont cachees",
-                "Il n'y a aucune difference fonctionnelle entre les deux"
-              ],
-              "correctAnswer": "Les plumes de contour donnent la forme lisse de l'oiseau, le duvet protege du froid",
-              "isSpecial": false
-            },
-            {
-              "question": "Comment les scientifiques d'aujourd'hui etudient-ils la migration des oiseaux ?",
-              "options": [
-                "En observant uniquement les nids abandonnes",
-                "En comptant les oiseaux depuis des tours d'observation fixes",
-                "Grâce a des technologies avancees pour suivre leurs deplacements",
-                "En lisant les traces laissees sur le sol"
-              ],
-              "correctAnswer": "Grâce a des technologies avancees pour suivre leurs deplacements",
-              "isSpecial": false
-            },
-            {
-              "question": "Un oiseau aquatique comme le canard possede des pattes palmees, des plumes impermeabilisees par une huile et un corps adapte a la nage. Quel terme de biologie designe cet ensemble de caracteristiques permettant a un animal de survivre dans son milieu ?",
-              "options": [
-                "La metamorphose",
-                "L'adaptation",
-                "La symbiose",
-                "La migration"
-              ],
-              "correctAnswer": "L'adaptation",
-              "isSpecial": true
-            }
-          ]
-        },
-        {
-          "id": "ornithology-gen-l9",
-          "title": "Leçon Espace",
-          "emoji": "🔮",
-          "themeColor": "amber",
-          "badgeId": "ornithology-badge-l9",
-          "badgeName": "Explorateur L9",
-          "badgeEmoji": "🔮",
-          "cards": [
-            {
-              "title": "Découverte : Leçon Espace",
-              "text": "Cette leçon traite de Leçon Espace. Lis attentivement pour réussir le quiz !",
-              "emoji": "🔮"
-            },
-            {
-              "title": "Le savais-tu ?",
-              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
-              "emoji": "💡"
-            },
-            {
-              "title": "Dans l'espace du ciel",
-              "text": "Les oiseaux sont les rois du ciel ! Certains, comme l'aigle, peuvent voler très haut pour observer tout ce qui se passe en bas.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "Les grands rapaces",
-              "text": "Les aigles et les faucons sont des rapaces. Ils volent très haut pour chercher leur nourriture.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "Des yeux de lynx",
-              "text": "Les rapaces ont une vue incroyable. Ils peuvent voir une petite souris depuis le ciel !",
-              "emoji": "👀"
-            },
-            {
-              "title": "Un outil sur mesure",
-              "text": "Le bec de l'oiseau est adapté à son régime alimentaire. Le pivert a un bec puissant comme un burin pour creuser le bois.",
-              "emoji": "🪵"
-            },
-            {
-              "title": "Filtrer l'eau",
-              "text": "Le flamant rose possède un bec courbé qui fonctionne comme une passoire. Il filtre l'eau pour retenir les petites crevettes dont il se nourrit.",
-              "emoji": "🦩"
-            },
-            {
-              "title": "Le Pic-vert",
-              "text": "Le pic-vert tape très fort son bec contre le tronc des arbres pour trouver des insectes. Toc toc toc !",
-              "emoji": "🪵"
-            },
-            {
-              "title": "Les becs utiles",
-              "text": "La forme du bec d'un oiseau dépend de ce qu'il mange. Un bec crochu est parfait pour la viande, et un bec fin pour les insectes.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "La parade nuptiale",
-              "text": "Pour séduire une partenaire, beaucoup de mâles effectuent des danses incroyables ou construisent des structures complexes pour impressionner.",
-              "emoji": "💃"
-            },
-            {
-              "title": "Découverte magique : Dans l'espace du ciel",
-              "text": "Regarde bien les petits oiseaux ! Sais-tu qu'ils aiment beaucoup explorer et jouer dans la nature ? C'est fascinant de voir comment ils vivent.",
-              "emoji": "✨"
-            },
-            {
-              "title": "Le secret de : Dans l'espace du ciel",
-              "text": "Chut, c'est un secret ! Les oiseaux ont des pouvoirs cachés dans leurs plumes et leur façon de chanter.",
-              "emoji": "🤫"
-            },
-            {
-              "title": "L'incroyable réalité : Dans l'espace du ciel",
-              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "En savoir plus : Dans l'espace du ciel",
-              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "Analyse profonde : Dans l'espace du ciel",
-              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
-              "emoji": "🔬"
-            },
-            {
-              "title": "Pour aller plus loin : Dans l'espace du ciel",
-              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
-              "emoji": "📡"
-            }
-          ],
-          "quiz": [
-            {
-              "question": "Quel type de bec possède le flamant rose, et à quoi lui sert-il ?",
-              "options": [
-                "Un bec droit et pointu pour attraper des poissons",
-                "Un bec courbé qui filtre l'eau pour retenir les crevettes",
-                "Un bec crochu pour déchirer la viande",
-                "Un bec puissant pour creuser le bois"
-              ],
-              "correctAnswer": "Un bec courbé qui filtre l'eau pour retenir les crevettes",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi les rapaces comme l'aigle et le faucon volent-ils très haut dans le ciel ?",
-              "options": [
-                "Pour éviter les prédateurs terrestres",
-                "Pour se réchauffer près du soleil",
-                "Pour chercher leur nourriture depuis les airs",
-                "Pour migrer plus rapidement d'un pays à l'autre"
-              ],
-              "correctAnswer": "Pour chercher leur nourriture depuis les airs",
-              "isSpecial": false
-            },
-            {
-              "question": "Comment le pic-vert trouve-t-il sa nourriture ?",
-              "options": [
-                "Il plonge dans l'eau pour attraper des poissons",
-                "Il filtre le sol avec son bec",
-                "Il tape fort son bec contre les troncs d'arbres pour débusquer des insectes",
-                "Il chasse en groupe avec d'autres oiseaux"
-              ],
-              "correctAnswer": "Il tape fort son bec contre les troncs d'arbres pour débusquer des insectes",
-              "isSpecial": false
-            },
-            {
-              "question": "Quel est le principal critère qui détermine la forme du bec d'un oiseau ?",
-              "options": [
-                "La taille de l'oiseau",
-                "Le régime alimentaire de l'oiseau",
-                "La couleur de ses plumes",
-                "Le milieu dans lequel il dort"
-              ],
-              "correctAnswer": "Le régime alimentaire de l'oiseau",
-              "isSpecial": false
-            },
-            {
-              "question": "A quel outil de menuiserie compare-t-on le bec du pic-vert ?",
-              "options": [
-                "Une scie",
-                "Un marteau",
-                "Un burin",
-                "Une perceuse"
-              ],
-              "correctAnswer": "Un burin",
-              "isSpecial": false
-            },
-            {
-              "question": "Quelle capacité visuelle extraordinaire possèdent les rapaces ?",
-              "options": [
-                "Ils voient uniquement la nuit grâce à une vision infrarouge",
-                "Ils peuvent voir en couleurs que les humains ne percoivent pas",
-                "Ils peuvent reperer une petite souris depuis le ciel",
-                "Ils ont une vision a 360 degres sans tourner la tete"
-              ],
-              "correctAnswer": "Ils peuvent reperer une petite souris depuis le ciel",
-              "isSpecial": false
-            },
-            {
-              "question": "Quel type de bec est le mieux adapte pour se nourrir d'insectes ?",
-              "options": [
-                "Un bec crochu et solide",
-                "Un bec courbé comme une passoire",
-                "Un bec fin et allonge",
-                "Un bec large et plat"
-              ],
-              "correctAnswer": "Un bec fin et allonge",
-              "isSpecial": false
-            },
-            {
-              "question": "Comment beaucoup de mâles oiseaux cherchent-ils a seduire une partenaire ?",
-              "options": [
-                "En chantant uniquement la nuit pour ne pas etre entendus des predateurs",
-                "En effectuant des danses ou en construisant des structures pour impressionner",
-                "En offrant de la nourriture deja machee a la femelle",
-                "En changeant la couleur de leurs plumes selon les saisons"
-              ],
-              "correctAnswer": "En effectuant des danses ou en construisant des structures pour impressionner",
-              "isSpecial": false
-            },
-            {
-              "question": "Lequel de ces oiseaux est considere comme un rapace ?",
-              "options": [
-                "Le flamant rose",
-                "Le pic-vert",
-                "Le faucon",
-                "Le canard"
-              ],
-              "correctAnswer": "Le faucon",
-              "isSpecial": false
-            },
-            {
-              "question": "Un ornithologiste observe qu'un oiseau possede un bec crochu et de grandes serres. Quelle conclusion peut-il logiquement en tirer sur le mode de vie de cet oiseau ?",
-              "options": [
-                "C'est un oiseau filtreur qui se nourrit de plancton en eau peu profonde",
-                "C'est un granivore qui casse des graines dures avec son bec",
-                "C'est un rapace carnivore qui capture et dechire des proies animales",
-                "C'est un insectivore qui sonde l'ecorce des arbres a la recherche de larves"
-              ],
-              "correctAnswer": "C'est un rapace carnivore qui capture et dechire des proies animales",
-              "isSpecial": true
-            }
-          ]
-        },
-        {
-          "id": "ornithology-gen-l10",
-          "title": "Leçon Défi",
-          "emoji": "🏆",
-          "themeColor": "amber",
-          "badgeId": "ornithology-badge-l10",
-          "badgeName": "Explorateur L10",
-          "badgeEmoji": "🏆",
-          "cards": [
-            {
-              "title": "Découverte : Leçon Défi",
-              "text": "Cette leçon traite de Leçon Défi. Lis attentivement pour réussir le quiz !",
-              "emoji": "🏆"
-            },
-            {
-              "title": "Le savais-tu ?",
-              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
-              "emoji": "💡"
-            },
-            {
-              "title": "Le défi du vol",
-              "text": "Apprendre à voler est un grand défi pour les bébés oiseaux. Au début, ils sautent de branche en branche avant de prendre leur envol.",
-              "emoji": "🐥"
-            },
-            {
-              "title": "Les oiseaux de la nuit",
-              "text": "La chouette et le hibou dorment le jour et se réveillent la nuit. On dit qu'ils sont nocturnes.",
-              "emoji": "🦉"
-            },
-            {
-              "title": "Un vol silencieux",
-              "text": "Les chouettes volent sans faire aucun bruit pour surprendre leur repas !",
-              "emoji": "🤫"
-            },
-            {
-              "title": "L'orientation magnétique",
-              "text": "Les oiseaux migrateurs accomplissent des voyages de milliers de kilomètres. Pour ne pas se perdre, ils utilisent le champ magnétique de la Terre !",
-              "emoji": "🧲"
-            },
-            {
-              "title": "Une boussole interne",
-              "text": "Grâce à des capteurs spéciaux, c'est comme s'ils avaient une boussole dans la tête qui leur indique toujours où se trouve le Nord ou le Sud.",
-              "emoji": "🧭"
-            },
-            {
-              "title": "Dormir sur une Patte",
-              "text": "Savais-tu que certains oiseaux aiment dormir en se tenant debout sur une seule de leurs pattes ? C'est très amusant à voir !",
-              "emoji": "🦩"
-            },
-            {
-              "title": "Les petits poussins",
-              "text": "Quand ils sortent de l'œuf, les oisillons ont très faim. Leurs parents font de nombreux allers-retours pour les nourrir.",
-              "emoji": "🐣"
-            },
-            {
-              "title": "Les oiseaux marins",
-              "text": "Certains oiseaux, comme les albatros, passent la majorité de leur vie en mer et peuvent boire de l'eau salée grâce à une glande spéciale.",
-              "emoji": "🌊"
-            },
-            {
-              "title": "Découverte magique : Le défi du vol",
-              "text": "Regarde bien les petits oiseaux ! Sais-tu qu'ils aiment beaucoup explorer et jouer dans la nature ? C'est fascinant de voir comment ils vivent.",
-              "emoji": "✨"
-            },
-            {
-              "title": "Le secret de : Le défi du vol",
-              "text": "Chut, c'est un secret ! Les oiseaux ont des pouvoirs cachés dans leurs plumes et leur façon de chanter.",
-              "emoji": "🤫"
-            },
-            {
-              "title": "L'incroyable réalité : Le défi du vol",
-              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "En savoir plus : Le défi du vol",
-              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "Analyse profonde : Le défi du vol",
-              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
-              "emoji": "🔬"
-            },
-            {
-              "title": "Pour aller plus loin : Le défi du vol",
-              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
-              "emoji": "📡"
-            }
-          ],
-          "quiz": [
-            {
-              "question": "Comment les bébés oiseaux apprennent-ils à voler ?",
-              "options": [
-                "Ils sautent de branche en branche avant de prendre leur envol",
-                "Ils sont poussés hors du nid par leurs parents dès la naissance",
-                "Ils regardent les autres oiseaux voler et imitent leurs mouvements",
-                "Ils commencent par nager avant d'apprendre à voler"
-              ],
-              "correctAnswer": "Ils sautent de branche en branche avant de prendre leur envol",
-              "isSpecial": false
-            },
-            {
-              "question": "Quel terme désigne les animaux qui dorment le jour et sont actifs la nuit ?",
-              "options": [
-                "Diurnes",
-                "Migrateurs",
-                "Nocturnes",
-                "Hibernants"
-              ],
-              "correctAnswer": "Nocturnes",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi les chouettes volent-elles sans faire de bruit ?",
-              "options": [
-                "Pour ne pas réveiller leurs petits dans le nid",
-                "Pour surprendre leur proie et chasser efficacement",
-                "Pour éviter d'attirer les prédateurs pendant la nuit",
-                "Parce que leurs ailes sont trop petites pour produire du son"
-              ],
-              "correctAnswer": "Pour surprendre leur proie et chasser efficacement",
-              "isSpecial": false
-            },
-            {
-              "question": "Quel outil naturel les oiseaux migrateurs utilisent-ils pour s'orienter lors de leurs longs voyages ?",
-              "options": [
-                "Les étoiles visibles uniquement la nuit",
-                "L'odeur des fleurs selon les saisons",
-                "Le champ magnétique de la Terre",
-                "La direction des vents dominants"
-              ],
-              "correctAnswer": "Le champ magnétique de la Terre",
-              "isSpecial": false
-            },
-            {
-              "question": "Comment peut-on décrire la capacité d'orientation des oiseaux migrateurs ?",
-              "options": [
-                "Comme une carte dessinée sur leurs plumes",
-                "Comme une boussole interne qui leur indique le Nord ou le Sud",
-                "Comme une mémoire des routes apprises de leurs parents",
-                "Comme un instinct de retour au nid uniquement"
-              ],
-              "correctAnswer": "Comme une boussole interne qui leur indique le Nord ou le Sud",
-              "isSpecial": false
-            },
-            {
-              "question": "Quelle est la particularité de la façon de dormir de certains oiseaux ?",
-              "options": [
-                "Ils dorment la tête sous l'eau",
-                "Ils dorment suspendus la tête en bas",
-                "Ils dorment debout sur une seule patte",
-                "Ils dorment en formant un cercle avec leurs congénères"
-              ],
-              "correctAnswer": "Ils dorment debout sur une seule patte",
-              "isSpecial": false
-            },
-            {
-              "question": "Que font les parents oiseaux pour nourrir leurs oisillons juste après l'éclosion ?",
-              "options": [
-                "Ils enseignent aux oisillons à trouver eux-mêmes leur nourriture",
-                "Ils font de nombreux allers-retours pour leur apporter de la nourriture",
-                "Ils régurgitent une réserve constituée avant la ponte",
-                "Ils amènent les oisillons jusqu'aux sources de nourriture"
-              ],
-              "correctAnswer": "Ils font de nombreux allers-retours pour leur apporter de la nourriture",
-              "isSpecial": false
-            },
-            {
-              "question": "Quelle capacité unique permet à l'albatros de boire de l'eau de mer ?",
-              "options": [
-                "Son foie filtre automatiquement le sel de l'eau ingérée",
-                "Il possède une glande spéciale qui élimine le sel",
-                "Il transforme l'eau salée en eau douce grâce à sa salive",
-                "Il ne boit jamais directement mais absorbe l'eau par les aliments"
-              ],
-              "correctAnswer": "Il possède une glande spéciale qui élimine le sel",
-              "isSpecial": false
-            },
-            {
-              "question": "Quelle affirmation décrit le mieux l'albatros parmi les oiseaux marins ?",
-              "options": [
-                "Il migre chaque hiver vers les zones tropicales pour se reproduire",
-                "Il passe la majorité de sa vie en mer",
-                "Il niche exclusivement sur les falaises des continents polaires",
-                "Il est incapable de voler mais nage sous l'eau comme un pingouin"
-              ],
-              "correctAnswer": "Il passe la majorité de sa vie en mer",
-              "isSpecial": false
-            },
-            {
-              "question": "Les chouettes et les hiboux sont tous les deux nocturnes. Parmi leurs caractéristiques communes liées à la chasse nocturne, laquelle est mentionnée dans ce cours ?",
-              "options": [
-                "Ils possèdent une vision infrarouge pour détecter la chaleur des proies",
-                "Leurs serres sont enduites d'une substance qui paralyse les proies",
-                "Les chouettes volent en silence pour surprendre leur repas",
-                "Ils emmagasinent de la lumière pendant le jour pour voir la nuit"
-              ],
-              "correctAnswer": "Les chouettes volent en silence pour surprendre leur repas",
               "isSpecial": true
             }
           ]
@@ -7093,154 +5148,6 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         },
         {
-          "id": "animal-classification-difficile",
-          "title": "La classification des espèces",
-          "emoji": "🦕",
-          "themeColor": "amber",
-          "badgeId": "taxonomist-expert-difficile",
-          "badgeName": "Taxonomiste Expert",
-          "badgeEmoji": "🦕",
-          "cards": [
-            {
-              "title": "L'histoire de la classification",
-              "text": "Classer le vivant permet de comprendre l'immense diversité biologique de la Terre. Le scientifique suédois Carl von Linné a inventé au 18ème siècle le système de **nomenclature binominale**, toujours utilisé aujourd'hui.\n\nChaque espèce est identifiée par un nom en latin composé de deux mots : le premier désigne le genre (avec une majuscule) et le second désigne l'espèce (en minuscules). Par exemple, le lion est *Panthera leo* et le loup est *Canis lupus*. Ce système permet aux scientifiques du monde entier d'utiliser le même langage universel sans confusion.",
-              "emoji": "📜"
-            },
-            {
-              "title": "La classification phylogénétique",
-              "text": "Aujourd'hui, les scientifiques n'utilisent plus de simples ressemblances physiques superficielles pour classer les animaux. Ils utilisent la **phylogénie**, qui étudie les relations de parenté évolutive basées sur l'analyse de l'ADN et des fossiles.\n\nLes animaux sont regroupés dans des groupes appelés **clades**. Un clade comprend un ancêtre commun et tous ses descendants. Par exemple, les oiseaux font scientifiquement partie du clade des dinosaures, car ils partagent avec eux un ancêtre commun unique caractérisé par des structures osseuses bien précises.",
-              "emoji": "🧬"
-            },
-            {
-              "title": "Le règne animal et les vertébrés",
-              "text": "Le règne animal se divise en plusieurs grands groupes. Les **vertébrés** se caractérisent par la présence d'une colonne vertébrale protégeant leur système nerveux central. Ils représentent environ 5% des espèces animales.\n\nLes vertébrés se divisent en plusieurs classes bien connues : les mammifères (qui allaitent leurs petits et ont des poils), les oiseaux (qui ont des plumes et un bec), les reptiles (ectothermes à écailles soudées), les amphibiens (à peau nue respirante) et les poissons (dotés de nageoires et de branchies).",
-              "emoji": "🦁"
-            },
-            {
-              "title": "Les invertébrés et les arthropodes",
-              "text": "La grande majorité (95%) des animaux terrestres et marins sont des **invertébrés** (sans colonne vertébrale). Le groupe le plus vaste et le plus diversifié de tous est celui des **arthropodes**.\n\nLes arthropodes possèdent un squelette externe articulé (exosquelette en chitine) et des pattes articulées. Ils regroupent les insectes (6 pattes), les arachnides (8 pattes), les crustacés (souvent 10 pattes ou plus) et les myriapodes (mille-pattes). Les insectes comptent à eux seuls plus d'un million d'espèces décrites !",
-              "emoji": "🕷"
-            },
-            {
-              "title": "La notion d'espèce biologique",
-              "text": "Qu'est-ce qu'une espèce ? La définition biologique classique énonce que deux individus font partie de la même espèce s'ils peuvent se reproduire ensemble et donner naissance à une descendance viable et **fertile** (qui pourra elle-même avoir des petits).\n\nSi un cheval et un âne s'accouplent, ils donnent naissance à un mulet. Le mulet est viable mais stérile ; le cheval et l'âne sont donc bien deux espèces distinctes. Aujourd'hui, l'analyse génétique moderne permet de préciser ces limites en comparant les génomes des populations.",
-              "emoji": "🔍"
-            }
-          ],
-          "quiz": [
-            {
-              "question": "Carl von Linné a développé la nomenclature binominale au 18ème siècle. Dans le nom scientifique 'Panthera leo', que représente 'Panthera' ?",
-              "options": [
-                "Le nom de l'espèce, écrit en minuscules",
-                "Le nom du genre, écrit avec une majuscule",
-                "Le nom de la famille taxonomique",
-                "Le nom du biologiste qui a décrit l'animal"
-              ],
-              "correctAnswer": "Le nom du genre, écrit avec une majuscule",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi le mulet (né d'un cheval et d'un âne) prouve-t-il que ces deux animaux appartiennent à des espèces distinctes ?",
-              "options": [
-                "Parce que le mulet a une apparence différente de ses deux parents",
-                "Parce que le cheval et l'âne ne peuvent pas du tout s'accoupler",
-                "Parce que le mulet est viable mais stérile, donc incapable de se reproduire",
-                "Parce que le mulet possède un nombre de chromosomes différent de zéro"
-              ],
-              "correctAnswer": "Parce que le mulet est viable mais stérile, donc incapable de se reproduire",
-              "isSpecial": false
-            },
-            {
-              "question": "Quel pourcentage des espèces animales les vertébrés représentent-ils environ ?",
-              "options": [
-                "50%",
-                "25%",
-                "5%",
-                "15%"
-              ],
-              "correctAnswer": "5%",
-              "isSpecial": false
-            },
-            {
-              "question": "Quelle est la caractéristique principale qui distingue les arthropodes des autres invertébrés ?",
-              "options": [
-                "Ils possèdent une colonne vertébrale interne souple",
-                "Ils ont un exosquelette articulé en chitine et des pattes articulées",
-                "Ils respirent exclusivement par des branchies",
-                "Leur peau est nue et perméable à l'eau"
-              ],
-              "correctAnswer": "Ils ont un exosquelette articulé en chitine et des pattes articulées",
-              "isSpecial": false
-            },
-            {
-              "question": "Selon la classification phylogénétique, les oiseaux font scientifiquement partie du clade des dinosaures. Sur quoi cette affirmation est-elle fondée ?",
-              "options": [
-                "Sur le fait que les oiseaux et les dinosaures ont tous des plumes",
-                "Sur le partage d'un ancêtre commun unique caractérisé par des structures osseuses précises",
-                "Sur le fait que les oiseaux pondent des oeufs, comme les dinosaures",
-                "Sur la taille similaire entre certains oiseaux et les petits dinosaures"
-              ],
-              "correctAnswer": "Sur le partage d'un ancêtre commun unique caractérisé par des structures osseuses précises",
-              "isSpecial": false
-            },
-            {
-              "question": "Combien d'espèces d'insectes ont été décrites par les scientifiques à ce jour ?",
-              "options": [
-                "Plus d'un million",
-                "Environ 500 000",
-                "Environ 100 000",
-                "Plus de 10 millions"
-              ],
-              "correctAnswer": "Plus d'un million",
-              "isSpecial": false
-            },
-            {
-              "question": "Quelle méthode moderne a remplacé la simple comparaison des ressemblances physiques pour classer les animaux ?",
-              "options": [
-                "L'étude du comportement et des habitudes alimentaires",
-                "L'analyse de l'ADN et l'étude des fossiles via la phylogénie",
-                "La mesure des organes internes et du poids moyen des individus",
-                "L'observation du cycle de vie et des modes de reproduction"
-              ],
-              "correctAnswer": "L'analyse de l'ADN et l'étude des fossiles via la phylogénie",
-              "isSpecial": false
-            },
-            {
-              "question": "Parmi les classes de vertébrés, laquelle est qualifiée d'ectotherme et possède des écailles soudées ?",
-              "options": [
-                "Les amphibiens",
-                "Les mammifères",
-                "Les reptiles",
-                "Les poissons"
-              ],
-              "correctAnswer": "Les reptiles",
-              "isSpecial": false
-            },
-            {
-              "question": "Dans le groupe des arthropodes, combien de pattes possèdent les arachnides ?",
-              "options": [
-                "6 pattes",
-                "10 pattes",
-                "8 pattes",
-                "4 pattes"
-              ],
-              "correctAnswer": "8 pattes",
-              "isSpecial": false
-            },
-            {
-              "question": "Un scientifique découvre deux populations d'oiseaux qui se ressemblent physiquement mais dont les génomes diffèrent à 15%. Leurs hybrides en captivité naissent vivants mais ne se reproduisent jamais. Quelle conclusion taxonomique peut-on tirer, et selon quel critère ?",
-              "options": [
-                "Ce sont la même espèce, car leur ressemblance physique prime sur les données génétiques",
-                "Ce sont deux espèces distinctes, car leurs hybrides sont stériles selon le critère biologique d'espèce",
-                "Ce sont deux sous-espèces, car 15% de divergence génétique est insuffisant pour séparer des espèces",
-                "On ne peut pas conclure sans analyser leurs fossiles via la phylogénie"
-              ],
-              "correctAnswer": "Ce sont deux espèces distinctes, car leurs hybrides sont stériles selon le critère biologique d'espèce",
-              "isSpecial": true
-            }
-          ]
-        },
-        {
           "id": "ornithology-gen-l1-difficile",
           "title": "Leçon",
           "emoji": "🌟",
@@ -7429,1803 +5336,6 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Un bréchet réduit est un avantage pour courir plus vite"
               ],
               "correctAnswer": "L'absence de bréchet chez les ratites est liée à leur incapacité à voler, car ils n'ont pas besoin d'ancrer de gros muscles pectoraux",
-              "isSpecial": true
-            }
-          ]
-        },
-        {
-          "id": "ornithology-gen-l2-difficile",
-          "title": "Leçon Intermédiaire",
-          "emoji": "🌱",
-          "themeColor": "amber",
-          "badgeId": "ornithology-badge-l2-difficile",
-          "badgeName": "Explorateur L2",
-          "badgeEmoji": "🌱",
-          "cards": [
-            {
-              "title": "Découverte : Leçon Intermédiaire",
-              "text": "Cette leçon traite de Leçon Intermédiaire. Lis attentivement pour réussir le quiz !",
-              "emoji": "🌱"
-            },
-            {
-              "title": "Le savais-tu ?",
-              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
-              "emoji": "💡"
-            },
-            {
-              "title": "Les couleurs des oiseaux",
-              "text": "Les oiseaux peuvent avoir plein de couleurs magnifiques ! Le flamant rose est rose parce qu'il mange beaucoup de petites crevettes.",
-              "emoji": "🦩"
-            },
-            {
-              "title": "Le bec des oiseaux",
-              "text": "Chaque oiseau a un bec différent ! Les becs pointus servent à attraper des insectes, et les becs épais à casser des petites graines.",
-              "emoji": "🦤"
-            },
-            {
-              "title": "Pas de dents !",
-              "text": "Sais-tu que les oiseaux n'ont pas de dents ? Ils avalent leur nourriture toute entière sans la mâcher.",
-              "emoji": "😲"
-            },
-            {
-              "title": "Le secret du plumage",
-              "text": "Les oiseaux passent beaucoup de temps à lisser leurs plumes. Ils utilisent une glande spéciale à la base de leur queue qui produit de l'huile pour les imperméabiliser.",
-              "emoji": "🪶"
-            },
-            {
-              "title": "Les différentes plumes",
-              "text": "Les grandes plumes des ailes sont les rémiges pour le vol, alors que le duvet, très doux, garde l'oiseau bien au chaud.",
-              "emoji": "🧥"
-            },
-            {
-              "title": "Le Bain des Oiseaux",
-              "text": "Les petits oiseaux adorent prendre des bains dans les flaques d'eau. Cela les aide à nettoyer leurs belles plumes pour bien voler !",
-              "emoji": "💦"
-            },
-            {
-              "title": "Les Plumes Imperméables",
-              "text": "Les canards ont des plumes spéciales sur lesquelles l'eau glisse sans jamais les mouiller. C'est très pratique pour nager longtemps !",
-              "emoji": "🦆"
-            },
-            {
-              "title": "Les os pneumatisés",
-              "text": "Pour être plus légers en vol, beaucoup d'oiseaux possèdent des os creux remplis d'air, appelés os pneumatisés.",
-              "emoji": "🦴"
-            },
-            {
-              "title": "Où dorment les oiseaux ?",
-              "text": "Beaucoup d'oiseaux dorment dans les arbres, bien cachés dans les branches pour être en sécurité.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "L'incroyable réalité : Les couleurs des oiseaux",
-              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "En savoir plus : Les couleurs des oiseaux",
-              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "Analyse profonde : Les couleurs des oiseaux",
-              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
-              "emoji": "🔬"
-            },
-            {
-              "title": "Pour aller plus loin : Les couleurs des oiseaux",
-              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
-              "emoji": "📡"
-            }
-          ],
-          "quiz": [
-            {
-              "question": "Quelle glande les oiseaux utilisent-ils pour imperméabiliser leurs plumes, et où est-elle située ?",
-              "options": [
-                "La glande salivaire, située sous la langue",
-                "La glande uropygiale, située à la base de la queue",
-                "La glande sébacée, située sous les ailes",
-                "La glande thyroïde, située dans le cou"
-              ],
-              "correctAnswer": "La glande uropygiale, située à la base de la queue",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi le flamant rose possède-t-il une couleur aussi caractéristique ?",
-              "options": [
-                "Il produit naturellement un pigment rose dans ses cellules cutanées",
-                "Ses plumes reflètent la lumière du soleil couchant en milieu humide",
-                "Il absorbe des caroténoïdes présents dans les crustacés et algues qu'il consomme",
-                "Ses parents lui transmettent cette couleur par hérédité génétique directe"
-              ],
-              "correctAnswer": "Il absorbe des caroténoïdes présents dans les crustacés et algues qu'il consomme",
-              "isSpecial": false
-            },
-            {
-              "question": "Comment s'appellent les grandes plumes des ailes qui permettent le vol chez les oiseaux ?",
-              "options": [
-                "Les tectricess",
-                "Les rectrices",
-                "Les rémiges",
-                "Les filoplumes"
-              ],
-              "correctAnswer": "Les rémiges",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi les oiseaux n'ont-ils pas de dents, contrairement à la plupart des vertébrés ?",
-              "options": [
-                "Leurs ancêtres ont perdu les dents au profit d'un bec plus léger, favorisant le vol",
-                "Leurs dents se transforment en bec chaque année lors de la mue",
-                "Les dents seraient trop lourdes pour leur petite taille corporelle",
-                "Les oiseaux appartiennent aux invertébrés et n'ont jamais eu de dents"
-              ],
-              "correctAnswer": "Leurs ancêtres ont perdu les dents au profit d'un bec plus léger, favorisant le vol",
-              "isSpecial": false
-            },
-            {
-              "question": "Quel type de bec est le mieux adapté pour capturer des insectes en vol ?",
-              "options": [
-                "Un bec large et plat comme celui du canard",
-                "Un bec crochu et puissant comme celui de l'aigle",
-                "Un bec fin et pointu comme celui de la mésange ou de l'hirondelle",
-                "Un bec épais et court comme celui du bouvreuil"
-              ],
-              "correctAnswer": "Un bec fin et pointu comme celui de la mésange ou de l'hirondelle",
-              "isSpecial": false
-            },
-            {
-              "question": "Comment appelle-t-on les os creux remplis d'air que possèdent de nombreux oiseaux pour alléger leur squelette ?",
-              "options": [
-                "Os trabéculaires",
-                "Os pneumatisés",
-                "Os spongieux",
-                "Os médullaires"
-              ],
-              "correctAnswer": "Os pneumatisés",
-              "isSpecial": false
-            },
-            {
-              "question": "Quel est le rôle principal du duvet chez les oiseaux, par rapport aux rémiges ?",
-              "options": [
-                "Faciliter le vol en réduisant la résistance de l'air",
-                "Produire l'huile nécessaire à l'imperméabilisation",
-                "Assurer l'isolation thermique du corps",
-                "Permettre la communication visuelle entre individus"
-              ],
-              "correctAnswer": "Assurer l'isolation thermique du corps",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi les canards peuvent-ils nager longuement sans que leurs plumes ne se gorgent d'eau ?",
-              "options": [
-                "Leurs plumes sont naturellement hydrophobes grâce à leur structure microscopique unique",
-                "Ils enduisent leurs plumes d'une huile produite par leur glande uropygiale qui repousse l'eau",
-                "Ils possèdent une couche de peau imperméable sous les plumes qui bloque l'eau",
-                "Ils battent constamment des ailes pour chasser l'eau avant qu'elle ne pénètre"
-              ],
-              "correctAnswer": "Ils enduisent leurs plumes d'une huile produite par leur glande uropygiale qui repousse l'eau",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi les petits oiseaux prennent-ils des bains dans les flaques d'eau, alors que cela pourrait sembler dangereux ?",
-              "options": [
-                "Pour réguler leur température corporelle en période de chaleur",
-                "Pour nettoyer leurs plumes et maintenir leur capacité de vol",
-                "Pour marquer leur territoire en mouillant les zones proches",
-                "Pour se débarrasser des parasites en noyant les insectes dans l'eau"
-              ],
-              "correctAnswer": "Pour nettoyer leurs plumes et maintenir leur capacité de vol",
-              "isSpecial": false
-            },
-            {
-              "question": "Un oiseau possède des os pneumatisés, une glande uropygiale fonctionnelle et des rémiges bien développées. Lequel de ces facteurs contribue LE PLUS directement a la reduction de la consommation d'energie pendant un long vol migratoire ?",
-              "options": [
-                "La glande uropygiale, car l'imperméabilisation réduit la friction avec l'air",
-                "Les os pneumatisés, car la reduction de masse diminue la force necessaire pour maintenir l'altitude",
-                "Les rémiges, car leur rigidité permet de planer sans battre des ailes sur de longues distances",
-                "Le duvet, car l'isolation thermique évite de dépenser de l'énergie pour se réchauffer en altitude"
-              ],
-              "correctAnswer": "Les rémiges, car leur rigidité permet de planer sans battre des ailes sur de longues distances",
-              "isSpecial": true
-            }
-          ]
-        },
-        {
-          "id": "ornithology-gen-l3-difficile",
-          "title": "Leçon Avancée",
-          "emoji": "💧",
-          "themeColor": "amber",
-          "badgeId": "ornithology-badge-l3-difficile",
-          "badgeName": "Explorateur L3",
-          "badgeEmoji": "💧",
-          "cards": [
-            {
-              "title": "Découverte : Leçon Avancée",
-              "text": "Cette leçon traite de Leçon Avancée. Lis attentivement pour réussir le quiz !",
-              "emoji": "💧"
-            },
-            {
-              "title": "Le savais-tu ?",
-              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
-              "emoji": "💡"
-            },
-            {
-              "title": "Le voyage des oiseaux",
-              "text": "Quand il fait trop froid, certains oiseaux font un très long voyage appelé migration. Ils volent ensemble vers des pays chauds !",
-              "emoji": "🌅"
-            },
-            {
-              "title": "Les nids douillets",
-              "text": "Les oiseaux construisent des nids pour y pondre leurs œufs. Ils utilisent des brindilles, de la boue et même de la mousse !",
-              "emoji": "🪹"
-            },
-            {
-              "title": "Les petits oisillons",
-              "text": "Quand les œufs éclosent, de petits bébés oiseaux sortent. On les appelle des oisillons.",
-              "emoji": "🐣"
-            },
-            {
-              "title": "Les descendants des dinosaures",
-              "text": "Les oiseaux sont les seuls survivants de la grande famille des dinosaures ! Les paléontologues ont trouvé des fossiles de dinosaures avec des plumes.",
-              "emoji": "🦖"
-            },
-            {
-              "title": "L'Archaeopteryx",
-              "text": "L'Archaeopteryx est l'un des plus célèbres fossiles. Il avait des plumes comme un oiseau mais des dents et une longue queue comme un reptile.",
-              "emoji": "🦴"
-            },
-            {
-              "title": "Le Petit Ver de Terre",
-              "text": "Beaucoup d'oiseaux aiment picorer la terre pour trouver des petits vers très bons à manger. C'est leur repas préféré !",
-              "emoji": "🪱"
-            },
-            {
-              "title": "L'Œil du Faucon",
-              "text": "Le faucon possède une vision si perçante qu'il peut repérer une petite proie depuis très haut dans les nuages.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "La migration incroyable",
-              "text": "Certains oiseaux, comme la Sterne arctique, parcourent des dizaines de milliers de kilomètres chaque année pour trouver un climat favorable.",
-              "emoji": "🌍"
-            },
-            {
-              "title": "Où dorment les oiseaux ?",
-              "text": "Beaucoup d'oiseaux dorment dans les arbres, bien cachés dans les branches pour être en sécurité.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "L'incroyable réalité : Le voyage des oiseaux",
-              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "En savoir plus : Le voyage des oiseaux",
-              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "Analyse profonde : Le voyage des oiseaux",
-              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
-              "emoji": "🔬"
-            },
-            {
-              "title": "Pour aller plus loin : Le voyage des oiseaux",
-              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
-              "emoji": "📡"
-            }
-          ],
-          "quiz": [
-            {
-              "question": "Quel groupe d'animaux disparus les oiseaux modernes ont-ils comme ancêtres directs ?",
-              "options": [
-                "Les reptiles marins",
-                "Les dinosaures",
-                "Les mammifères primitifs",
-                "Les amphibiens"
-              ],
-              "correctAnswer": "Les dinosaures",
-              "isSpecial": false
-            },
-            {
-              "question": "Qu'est-ce qui rend l'Archaeopteryx si particulier parmi les fossiles connus ?",
-              "options": [
-                "Il possédait des plumes mais aussi des dents et une longue queue osseuse",
-                "Il était entièrement recouvert d'écailles et ne pouvait pas voler",
-                "Il était le plus grand dinosaure à plumes jamais découvert",
-                "Il vivait exclusivement dans les milieux aquatiques"
-              ],
-              "correctAnswer": "Il possédait des plumes mais aussi des dents et une longue queue osseuse",
-              "isSpecial": false
-            },
-            {
-              "question": "La Sterne arctique est célèbre pour sa migration exceptionnelle. Quelle distance parcourt-elle environ chaque année ?",
-              "options": [
-                "Quelques centaines de kilomètres",
-                "Environ 5 000 kilomètres",
-                "Des dizaines de milliers de kilomètres",
-                "Environ 3 000 kilomètres"
-              ],
-              "correctAnswer": "Des dizaines de milliers de kilomètres",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi de nombreux oiseaux dorment-ils dans les branches des arbres plutôt qu'au sol ?",
-              "options": [
-                "Pour profiter de la chaleur dégagée par le feuillage",
-                "Parce qu'ils ne peuvent pas s'asseoir sur une surface plate",
-                "Pour être mieux cachés et protégés des prédateurs",
-                "Pour faciliter leur envol au lever du soleil"
-              ],
-              "correctAnswer": "Pour être mieux cachés et protégés des prédateurs",
-              "isSpecial": false
-            },
-            {
-              "question": "Quels matériaux les oiseaux utilisent-ils pour construire leur nid ?",
-              "options": [
-                "Uniquement des plumes et du duvet",
-                "Des brindilles, de la boue et de la mousse",
-                "Des pierres, de la résine et des feuilles sèches",
-                "De la terre argileuse et des épines"
-              ],
-              "correctAnswer": "Des brindilles, de la boue et de la mousse",
-              "isSpecial": false
-            },
-            {
-              "question": "Quel terme désigne spécifiquement les jeunes oiseaux qui viennent de sortir de l'oeuf ?",
-              "options": [
-                "Des poussins",
-                "Des oisillons",
-                "Des nidicoles",
-                "Des fledglings"
-              ],
-              "correctAnswer": "Des oisillons",
-              "isSpecial": false
-            },
-            {
-              "question": "Quelle caractéristique sensorielle du faucon lui permet de chasser avec une efficacité remarquable ?",
-              "options": [
-                "Une ouie capable de détecter les infra-sons",
-                "Une vision perçante lui permettant de repérer une proie depuis très haut",
-                "Un odorat développé pour pister les animaux au sol",
-                "Des vibrisses sensibles aux mouvements de l'air"
-              ],
-              "correctAnswer": "Une vision perçante lui permettant de repérer une proie depuis très haut",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi certains oiseaux entreprennent-ils une migration saisonnière vers des régions plus chaudes ?",
-              "options": [
-                "Pour trouver de nouveaux partenaires d'une espèce différente",
-                "Parce que leurs plumes ne résistent pas à la lumière estivale",
-                "Pour fuir les températures trop froides et trouver un climat favorable",
-                "Pour pondre leurs oeufs dans un sol plus mou"
-              ],
-              "correctAnswer": "Pour fuir les températures trop froides et trouver un climat favorable",
-              "isSpecial": false
-            },
-            {
-              "question": "Quelle discipline scientifique utilise des technologies avancées pour étudier et suivre les déplacements migratoires des oiseaux ?",
-              "options": [
-                "La zoologie comportementale",
-                "La paléontologie",
-                "L'ornithologie moderne",
-                "L'éthologie comparative"
-              ],
-              "correctAnswer": "L'ornithologie moderne",
-              "isSpecial": false
-            },
-            {
-              "question": "L'Archaeopteryx est souvent qualifié de \"chaînon manquant\" entre reptiles et oiseaux. Lequel de ces éléments prouve qu'il n'était pas encore un oiseau moderne à part entière ?",
-              "options": [
-                "L'absence totale de plumes sur son corps",
-                "La présence de dents dans sa machoire et d'une longue queue osseuse non pygostyle",
-                "Son incapacité anatomique à battre des ailes",
-                "La forme de ses pattes, identique à celle des crocodiliens actuels"
-              ],
-              "correctAnswer": "La présence de dents dans sa machoire et d'une longue queue osseuse non pygostyle",
-              "isSpecial": true
-            }
-          ]
-        },
-        {
-          "id": "ornithology-gen-l4-difficile",
-          "title": "Leçon Générale",
-          "emoji": "🔥",
-          "themeColor": "amber",
-          "badgeId": "ornithology-badge-l4-difficile",
-          "badgeName": "Explorateur L4",
-          "badgeEmoji": "🔥",
-          "cards": [
-            {
-              "title": "Découverte : Leçon Générale",
-              "text": "Cette leçon traite de Leçon Générale. Lis attentivement pour réussir le quiz !",
-              "emoji": "🔥"
-            },
-            {
-              "title": "Le savais-tu ?",
-              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
-              "emoji": "💡"
-            },
-            {
-              "title": "Généralités sur les becs",
-              "text": "Le bec des oiseaux est magique. Un bec fin aide à attraper des insectes, et un bec court et fort sert à casser des graines.",
-              "emoji": "🦆"
-            },
-            {
-              "title": "Les belles plumes",
-              "text": "Le corps des oiseaux est recouvert de plumes. Elles les protègent du froid et de la pluie.",
-              "emoji": "🪶"
-            },
-            {
-              "title": "De toutes les couleurs",
-              "text": "Certains oiseaux ont des plumes très colorées pour attirer l'attention ou pour se cacher dans la nature.",
-              "emoji": "🌈"
-            },
-            {
-              "title": "L'intelligence des corvidés",
-              "text": "Les corbeaux et les corneilles font partie des corvidés. Ce sont parmi les oiseaux les plus intelligents au monde !",
-              "emoji": "🐦‍⬛"
-            },
-            {
-              "title": "Utiliser des outils",
-              "text": "Certains corbeaux sont capables d'utiliser des brindilles comme outils pour attraper des insectes cachés dans l'écorce des arbres.",
-              "emoji": "🛠️"
-            },
-            {
-              "title": "Cache-cache dans les Arbres",
-              "text": "Les oiseaux se cachent dans les grandes feuilles des arbres pour se protéger de la pluie et des grands animaux.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "Les Migrateurs",
-              "text": "La sterne arctique est une incroyable voyageuse. Elle parcourt des milliers de kilomètres chaque année pour passer de l'Arctique à l'Antarctique !",
-              "emoji": "🌍"
-            },
-            {
-              "title": "Les rapaces nocturnes",
-              "text": "Les chouettes et les hiboux sont des prédateurs redoutables la nuit grâce à leur vision perçante et leur vol totalement silencieux.",
-              "emoji": "🦉"
-            },
-            {
-              "title": "Où dorment les oiseaux ?",
-              "text": "Beaucoup d'oiseaux dorment dans les arbres, bien cachés dans les branches pour être en sécurité.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "L'incroyable réalité : Généralités sur les becs",
-              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "En savoir plus : Généralités sur les becs",
-              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "Analyse profonde : Généralités sur les becs",
-              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
-              "emoji": "🔬"
-            },
-            {
-              "title": "Pour aller plus loin : Généralités sur les becs",
-              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
-              "emoji": "📡"
-            }
-          ],
-          "quiz": [
-            {
-              "question": "Un oiseau possède un bec fin et allongé. Quel type de régime alimentaire ce bec suggère-t-il le plus probablement ?",
-              "options": [
-                "Consommation de graines dures et résistantes",
-                "Capture d'insectes dans des fissures ou sous l'écorce",
-                "Déchirement de proies de grande taille",
-                "Filtration de l'eau pour en extraire des algues"
-              ],
-              "correctAnswer": "Capture d'insectes dans des fissures ou sous l'écorce",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi les plumes constituent-elles un avantage décisif pour les oiseaux vivant dans des environnements froids et humides ?",
-              "options": [
-                "Elles alourdissent le corps pour une meilleure stabilité au sol",
-                "Elles isolent du froid et repoussent l'eau grâce à leur structure",
-                "Elles absorbent la chaleur solaire et la restituent la nuit",
-                "Elles permettent une mue permanente sans interruption de vol"
-              ],
-              "correctAnswer": "Elles isolent du froid et repoussent l'eau grâce à leur structure",
-              "isSpecial": false
-            },
-            {
-              "question": "Chez certaines espèces d'oiseaux, le plumage vivement coloré du mâle sert principalement à quoi ?",
-              "options": [
-                "Faciliter la chasse en aveuglant les proies",
-                "Attirer les femelles lors de la parade nuptiale",
-                "Réguler la température corporelle en absorbant plus de lumière",
-                "Avertir les prédateurs de leur toxicité"
-              ],
-              "correctAnswer": "Attirer les femelles lors de la parade nuptiale",
-              "isSpecial": false
-            },
-            {
-              "question": "Les corvidés sont reconnus comme étant parmi les oiseaux les plus intelligents. Quelle famille regroupe les corbeaux et les corneilles ?",
-              "options": [
-                "Les rapaces",
-                "Les passereaux",
-                "Les corvidés",
-                "Les échassiers"
-              ],
-              "correctAnswer": "Les corvidés",
-              "isSpecial": false
-            },
-            {
-              "question": "Comment certains corbeaux obtiennent-ils des insectes dissimulés sous l'écorce des arbres ?",
-              "options": [
-                "En frappant l'écorce avec leur bec de manière répétée jusqu'à la fendre",
-                "En utilisant des brindilles comme outils pour les extraire",
-                "En inondant les galeries avec leur salive pour forcer les insectes à sortir",
-                "En s'associant avec d'autres oiseaux pour encercler l'arbre"
-              ],
-              "correctAnswer": "En utilisant des brindilles comme outils pour les extraire",
-              "isSpecial": false
-            },
-            {
-              "question": "La sterne arctique effectue chaque année une migration exceptionnelle. Quel trajet accomplit-elle ?",
-              "options": [
-                "De l'Europe occidentale vers l'Afrique subsaharienne",
-                "De l'Arctique jusqu'en Antarctique",
-                "De l'Asie centrale vers les côtes méditerranéennes",
-                "De l'Amérique du Nord vers l'Amérique du Sud en longeant les côtes"
-              ],
-              "correctAnswer": "De l'Arctique jusqu'en Antarctique",
-              "isSpecial": false
-            },
-            {
-              "question": "Quelle caractéristique du vol des chouettes et des hiboux leur permet de surprendre leurs proies la nuit sans être détectés ?",
-              "options": [
-                "Leur vol est extrêmement rapide, ne laissant pas le temps à la proie de réagir",
-                "Leur vol est totalement silencieux grâce à la structure de leurs plumes",
-                "Leur envergure réduite leur permet de voler au ras du sol",
-                "Ils émettent des ultrasons qui paralysent temporairement les proies"
-              ],
-              "correctAnswer": "Leur vol est totalement silencieux grâce à la structure de leurs plumes",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi de nombreux oiseaux choisissent-ils de dormir dans les branches d'arbres plutôt qu'au sol ?",
-              "options": [
-                "La chaleur dégagée par les feuilles les nuit les maintient au chaud",
-                "Ils sont mieux camouflés et protégés des prédateurs terrestres",
-                "Les vibrations du tronc les alertent en cas d'approche d'un prédateur",
-                "Ils profitent de l'humidité nocturne pour hydrater leurs plumes"
-              ],
-              "correctAnswer": "Ils sont mieux camouflés et protégés des prédateurs terrestres",
-              "isSpecial": false
-            },
-            {
-              "question": "L'ornithologie moderne a recours à des technologies avancées pour étudier les oiseaux. Laquelle de ces méthodes est couramment utilisée pour suivre les migrations ?",
-              "options": [
-                "La dissection des plumes pour analyser leur composition chimique",
-                "Le marquage par bagues et la géolocalisation par balises GPS",
-                "L'élevage en captivité pour observer les comportements migratoires",
-                "L'analyse des chants enregistrés pour déduire les routes empruntées"
-              ],
-              "correctAnswer": "Le marquage par bagues et la géolocalisation par balises GPS",
-              "isSpecial": false
-            },
-            {
-              "question": "Chez les rapaces nocturnes comme le hibou grand-duc, les deux yeux sont orientés vers l'avant du visage. Quel avantage fonctionnel majeur cela procure-t-il par rapport à des yeux situés sur les côtés de la tête ?",
-              "options": [
-                "Un champ de vision panoramique de 360 degres permettant de détecter tout mouvement environnant",
-                "Une vision binoculaire qui améliore la perception de la profondeur et l'estimation précise des distances",
-                "Une capacité à percevoir les infrarouges émis par les proies à sang chaud",
-                "Une meilleure résistance à l'éblouissement causé par la lumière de la lune"
-              ],
-              "correctAnswer": "Une vision binoculaire qui améliore la perception de la profondeur et l'estimation précise des distances",
-              "isSpecial": true
-            }
-          ]
-        },
-        {
-          "id": "ornithology-gen-l5-difficile",
-          "title": "Leçon Découverte",
-          "emoji": "💨",
-          "themeColor": "amber",
-          "badgeId": "ornithology-badge-l5-difficile",
-          "badgeName": "Explorateur L5",
-          "badgeEmoji": "💨",
-          "cards": [
-            {
-              "title": "Découverte : Leçon Découverte",
-              "text": "Cette leçon traite de Leçon Découverte. Lis attentivement pour réussir le quiz !",
-              "emoji": "💨"
-            },
-            {
-              "title": "Le savais-tu ?",
-              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
-              "emoji": "💡"
-            },
-            {
-              "title": "La découverte du chant",
-              "text": "As-tu déjà écouté un oiseau chanter ? Chaque oiseau a sa propre mélodie pour dire 'bonjour' ou pour appeler ses amis !",
-              "emoji": "🎵"
-            },
-            {
-              "title": "Le vol des oiseaux",
-              "text": "Pour voler, les oiseaux battent des ailes. Leurs os sont très légers, ce qui les aide à s'envoler facilement !",
-              "emoji": "🦅"
-            },
-            {
-              "title": "La descente",
-              "text": "Pour atterrir, l'oiseau ouvre grand ses ailes comme un parachute pour ralentir.",
-              "emoji": "🪂"
-            },
-            {
-              "title": "Une vision extraordinaire",
-              "text": "La vue est le sens le plus développé chez l'oiseau. Les rapaces ont une acuité visuelle bien supérieure à celle des humains.",
-              "emoji": "👁️"
-            },
-            {
-              "title": "Voir l'invisible",
-              "text": "De nombreux oiseaux peuvent percevoir la lumière ultraviolette. Cela les aide à repérer des fruits mûrs ou des traces laissées par leurs proies.",
-              "emoji": "✨"
-            },
-            {
-              "title": "L'Œuf Magique",
-              "text": "Tous les oiseaux naissent dans un œuf. Au début, le bébé oiseau casse la coquille avec son petit bec pour sortir.",
-              "emoji": "🥚"
-            },
-            {
-              "title": "La Symphonie des Oiseaux",
-              "text": "Chaque matin au printemps, les oiseaux offrent un magnifique concert appelé le 'chœur de l'aube' pour délimiter leur territoire.",
-              "emoji": "🎶"
-            },
-            {
-              "title": "Le rôle écologique",
-              "text": "Les oiseaux jouent un rôle crucial dans la nature : ils pollinisent les fleurs, dispersent les graines et contrôlent les populations d'insectes.",
-              "emoji": "🌱"
-            },
-            {
-              "title": "Où dorment les oiseaux ?",
-              "text": "Beaucoup d'oiseaux dorment dans les arbres, bien cachés dans les branches pour être en sécurité.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "L'incroyable réalité : La découverte du chant",
-              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "En savoir plus : La découverte du chant",
-              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "Analyse profonde : La découverte du chant",
-              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
-              "emoji": "🔬"
-            },
-            {
-              "title": "Pour aller plus loin : La découverte du chant",
-              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
-              "emoji": "📡"
-            }
-          ],
-          "quiz": [
-            {
-              "question": "Pourquoi les os des oiseaux sont-ils adaptés au vol ?",
-              "options": [
-                "Ils sont creux et très légers",
-                "Ils sont remplis de moelle rouge pour produire de l'énergie",
-                "Ils sont plus denses que ceux des mammifères pour assurer la stabilité",
-                "Ils sont recouverts de cartilage pour amortir les chocs"
-              ],
-              "correctAnswer": "Ils sont creux et très légers",
-              "isSpecial": false
-            },
-            {
-              "question": "Comment un oiseau ralentit-il pour atterrir en toute sécurité ?",
-              "options": [
-                "Il replie ses ailes contre son corps pour augmenter la vitesse de descente",
-                "Il ouvre grand ses ailes comme un parachute pour freiner",
-                "Il utilise ses pattes comme gouvernail pour dévier sa trajectoire",
-                "Il bat des ailes vers le haut pour créer une portance négative"
-              ],
-              "correctAnswer": "Il ouvre grand ses ailes comme un parachute pour freiner",
-              "isSpecial": false
-            },
-            {
-              "question": "Quel sens est le plus développé chez la plupart des oiseaux ?",
-              "options": [
-                "L'odorat",
-                "L'ouïe",
-                "La vue",
-                "Le toucher"
-              ],
-              "correctAnswer": "La vue",
-              "isSpecial": false
-            },
-            {
-              "question": "Quelle capacité visuelle particulière possèdent de nombreux oiseaux, absente chez l'humain ?",
-              "options": [
-                "Voir dans le noir complet sans aucune source de lumière",
-                "Percevoir la lumière ultraviolette",
-                "Distinguer les objets à plus de 10 kilomètres de distance",
-                "Voir simultanément à 360 degrés sans tourner la tête"
-              ],
-              "correctAnswer": "Percevoir la lumière ultraviolette",
-              "isSpecial": false
-            },
-            {
-              "question": "A quoi sert concrètement la perception de la lumière ultraviolette chez les oiseaux ?",
-              "options": [
-                "A naviguer uniquement la nuit grâce aux étoiles ultraviolettes",
-                "A repérer des fruits mûrs ou des traces laissées par leurs proies",
-                "A communiquer en silence avec d'autres individus de la même espèce",
-                "A mesurer l'intensité du vent avant de prendre leur envol"
-              ],
-              "correctAnswer": "A repérer des fruits mûrs ou des traces laissées par leurs proies",
-              "isSpecial": false
-            },
-            {
-              "question": "Qu'est-ce que le 'choeur de l'aube' produit par les oiseaux chaque matin au printemps ?",
-              "options": [
-                "Un signal d'alarme collectif pour signaler un prédateur proche",
-                "Un concert de chants destiné principalement à délimiter leur territoire",
-                "Une parade nuptiale synchronisée pour attirer les partenaires",
-                "Un rituel de groupe pour guider les jeunes oiseaux vers les sources d'eau"
-              ],
-              "correctAnswer": "Un concert de chants destiné principalement à délimiter leur territoire",
-              "isSpecial": false
-            },
-            {
-              "question": "Lequel de ces rôles écologiques est assuré par les oiseaux dans la nature ?",
-              "options": [
-                "La filtration de l'eau douce dans les zones humides",
-                "La décomposition des roches pour enrichir le sol",
-                "La dispersion des graines de nombreuses plantes",
-                "La production d'oxygène par photosynthèse"
-              ],
-              "correctAnswer": "La dispersion des graines de nombreuses plantes",
-              "isSpecial": false
-            },
-            {
-              "question": "Comment le bébé oiseau sort-il de son oeuf ?",
-              "options": [
-                "La coquille se dissout progressivement grâce à une enzyme produite par le poussin",
-                "Il casse la coquille avec son petit bec",
-                "La femelle déchire délicatement la coquille de l'extérieur avec ses serres",
-                "La chaleur du nid fait craquer la coquille naturellement sans intervention du poussin"
-              ],
-              "correctAnswer": "Il casse la coquille avec son petit bec",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi les rapaces ont-ils une acuité visuelle bien supérieure à celle des humains ?",
-              "options": [
-                "Parce qu'ils ont deux paires d'yeux disposées en cercle autour de la tête",
-                "Parce que leur retine contient une zone centrale très dense en photorécepteurs appelée fovéa, particulièrement développée",
-                "Parce que leurs yeux produisent un liquide spécial amplifiant la lumière ambiante",
-                "Parce qu'ils possèdent une troisième paupière transparente qui agit comme un télescope naturel"
-              ],
-              "correctAnswer": "Parce que leur retine contient une zone centrale très dense en photorécepteurs appelée fovéa, particulièrement développée",
-              "isSpecial": false
-            },
-            {
-              "question": "L'ornithologie moderne utilise des technologies avancées pour étudier les oiseaux. Laquelle de ces méthodes est réellement employée pour suivre la migration des oiseaux sur de longues distances ?",
-              "options": [
-                "Des drones autonomes qui suivent les vols en formation pendant plusieurs mois",
-                "La bague ou la balise GPS fixée sur l'oiseau pour enregistrer ses déplacements en temps réel",
-                "Des satellites à infrarouge capables de détecter la chaleur corporelle des oiseaux en vol",
-                "Des réseaux de microphones sous-marins installés le long des côtes migratoires"
-              ],
-              "correctAnswer": "La bague ou la balise GPS fixée sur l'oiseau pour enregistrer ses déplacements en temps réel",
-              "isSpecial": true
-            }
-          ]
-        },
-        {
-          "id": "ornithology-gen-l6-difficile",
-          "title": "Leçon Nature",
-          "emoji": "⛰️",
-          "themeColor": "amber",
-          "badgeId": "ornithology-badge-l6-difficile",
-          "badgeName": "Explorateur L6",
-          "badgeEmoji": "⛰️",
-          "cards": [
-            {
-              "title": "Découverte : Leçon Nature",
-              "text": "Cette leçon traite de Leçon Nature. Lis attentivement pour réussir le quiz !",
-              "emoji": "⛰️"
-            },
-            {
-              "title": "Le savais-tu ?",
-              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
-              "emoji": "💡"
-            },
-            {
-              "title": "La nature des oiseaux",
-              "text": "Les oiseaux adorent la nature. Ils construisent des nids douillets avec des brindilles et des feuilles pour protéger leurs bébés.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "Le chant merveilleux",
-              "text": "Les oiseaux chantent pour se parler. Chaque espèce a sa propre mélodie !",
-              "emoji": "🎶"
-            },
-            {
-              "title": "Le matin au réveil",
-              "text": "C'est souvent très tôt le matin, à l'aube, qu'on entend le plus d'oiseaux chanter.",
-              "emoji": "🌅"
-            },
-            {
-              "title": "Les records du monde",
-              "text": "Le Colibri d'Elena est le plus petit oiseau du monde, pesant moins de 2 grammes ! À l'inverse, l'autruche est le plus grand et le plus lourd.",
-              "emoji": "🏆"
-            },
-            {
-              "title": "Le vol sur place",
-              "text": "Le colibri est le seul oiseau capable de voler en arrière et de faire du vol stationnaire parfait pour boire le nectar des fleurs.",
-              "emoji": "🌺"
-            },
-            {
-              "title": "Le Grand Vol",
-              "text": "Quand ils sont grands, les oiseaux ouvrent très grand leurs ailes et sautent dans le vide pour apprendre à voler. C'est magique !",
-              "emoji": "🦅"
-            },
-            {
-              "title": "Le nid douillet",
-              "text": "Les oiseaux construisent des nids avec des brindilles, de la boue et même des toiles d'araignée pour garder leurs œufs bien au chaud.",
-              "emoji": "🪹"
-            },
-            {
-              "title": "Le système respiratoire",
-              "text": "Le système respiratoire des oiseaux est unique. Grâce à des sacs aériens, l'air frais circule dans leurs poumons même quand ils expirent !",
-              "emoji": "🫁"
-            },
-            {
-              "title": "Où dorment les oiseaux ?",
-              "text": "Beaucoup d'oiseaux dorment dans les arbres, bien cachés dans les branches pour être en sécurité.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "L'incroyable réalité : La nature des oiseaux",
-              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "En savoir plus : La nature des oiseaux",
-              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "Analyse profonde : La nature des oiseaux",
-              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
-              "emoji": "🔬"
-            },
-            {
-              "title": "Pour aller plus loin : La nature des oiseaux",
-              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
-              "emoji": "📡"
-            }
-          ],
-          "quiz": [
-            {
-              "question": "Quel matériau insolite les oiseaux utilisent-ils parfois pour renforcer la cohésion de leur nid, en plus des brindilles et de la boue ?",
-              "options": [
-                "Des plumes d'autres espèces",
-                "Des toiles d'araignee",
-                "De la resine d'arbre",
-                "Des epines de cactus"
-              ],
-              "correctAnswer": "Des toiles d'araignee",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi les oiseaux chantent-ils particulierement a l'aube plutot qu'en pleine journee ?",
-              "options": [
-                "Parce que les insectes font moins de bruit le matin",
-                "Parce que l'air frais amplifie mieux les sons",
-                "Parce que la lumiere du matin stimule leur cerveau a produire des hormones de chant",
-                "Parce qu'ils ont faim et cherchent a attirer des partenaires avant de chasser"
-              ],
-              "correctAnswer": "Parce que la lumiere du matin stimule leur cerveau a produire des hormones de chant",
-              "isSpecial": false
-            },
-            {
-              "question": "Le Colibri d'Elena est le plus petit oiseau du monde. Quelle est approximativement sa masse ?",
-              "options": [
-                "Moins de 2 grammes",
-                "Environ 5 grammes",
-                "Environ 10 grammes",
-                "Moins de 1 gramme"
-              ],
-              "correctAnswer": "Moins de 2 grammes",
-              "isSpecial": false
-            },
-            {
-              "question": "Quelle capacite de vol rend le colibri unique parmi tous les oiseaux ?",
-              "options": [
-                "Il peut planer pendant plus d'une heure sans bouger les ailes",
-                "Il peut voler en arriere et faire du vol stationnaire",
-                "Il peut atteindre une vitesse de 200 km/h en pique",
-                "Il peut voler sans s'arreter pendant plusieurs jours"
-              ],
-              "correctAnswer": "Il peut voler en arriere et faire du vol stationnaire",
-              "isSpecial": false
-            },
-            {
-              "question": "Quel avantage le systeme de sacs aeriens des oiseaux leur procure-t-il par rapport aux mammiferes ?",
-              "options": [
-                "Leurs poumons sont plus grands proportionnellement",
-                "L'air frais circule dans leurs poumons meme lors de l'expiration",
-                "Ils peuvent retenir leur souffle plus longtemps sous l'eau",
-                "Leurs globules rouges transportent deux fois plus d'oxygene"
-              ],
-              "correctAnswer": "L'air frais circule dans leurs poumons meme lors de l'expiration",
-              "isSpecial": false
-            },
-            {
-              "question": "L'autruche est le plus grand et le plus lourd des oiseaux. Quelle autre caracteristique la distingue des autres oiseaux ?",
-              "options": [
-                "Elle est incapable de voler",
-                "Elle pond les plus petits oeufs du monde",
-                "Elle peut vivre plus de 100 ans",
-                "Elle n'a pas de plumes sur le ventre"
-              ],
-              "correctAnswer": "Elle est incapable de voler",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi la plupart des oiseaux choisissent-ils de dormir dans les branches d'arbres plutot qu'au sol ?",
-              "options": [
-                "La temperature est plus elevee en hauteur durant la nuit",
-                "Ils se mettent a l'abri des predateurs terrestres",
-                "Les branches emettent des substances qui les aident a dormir",
-                "Ils ont besoin de sentir le vent pour reguier leur temperature"
-              ],
-              "correctAnswer": "Ils se mettent a l'abri des predateurs terrestres",
-              "isSpecial": false
-            },
-            {
-              "question": "Comment appelle-t-on la discipline scientifique qui etudie les oiseaux, leur comportement et leur migration ?",
-              "options": [
-                "La zoologie aviaire",
-                "L'ornithologie",
-                "L'ethologie",
-                "La biologie comportementale"
-              ],
-              "correctAnswer": "L'ornithologie",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi les jeunes oiseaux doivent-ils sauter dans le vide pour apprendre a voler, plutot que de s'entrainer dans le nid ?",
-              "options": [
-                "Le nid est trop petit pour battre des ailes correctement",
-                "Ils ont besoin du flux d'air ascendant pour stabiliser leur vol",
-                "Leurs muscles pectoraux ne se developpent pleinement qu'avec la chute libre",
-                "Le nid est trop fragile pour supporter les battements d'ailes"
-              ],
-              "correctAnswer": "Le nid est trop petit pour battre des ailes correctement",
-              "isSpecial": false
-            },
-            {
-              "question": "L'ornithologie moderne utilise des technologies avancees pour etudier la migration des oiseaux. Laquelle de ces methodes est la plus couramment utilisee pour suivre les trajets migratoires sur de longues distances ?",
-              "options": [
-                "La bague metallique attachee a la patte",
-                "Le ballon-sonde meteorologique fixe sur le dos",
-                "La balise GPS ou geolocalisation par satellite",
-                "L'implant electronique sous-cutane emettant des ultrasons"
-              ],
-              "correctAnswer": "La balise GPS ou geolocalisation par satellite",
-              "isSpecial": true
-            }
-          ]
-        },
-        {
-          "id": "ornithology-gen-l7-difficile",
-          "title": "Leçon Monde",
-          "emoji": "🧭",
-          "themeColor": "amber",
-          "badgeId": "ornithology-badge-l7-difficile",
-          "badgeName": "Explorateur L7",
-          "badgeEmoji": "🧭",
-          "cards": [
-            {
-              "title": "Découverte : Leçon Monde",
-              "text": "Cette leçon traite de Leçon Monde. Lis attentivement pour réussir le quiz !",
-              "emoji": "🧭"
-            },
-            {
-              "title": "Le savais-tu ?",
-              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
-              "emoji": "💡"
-            },
-            {
-              "title": "Les oiseaux du monde",
-              "text": "Il existe des oiseaux partout dans le monde ! Le manchot vit dans le froid, tandis que le toucan préfère la chaleur de la jungle.",
-              "emoji": "🐧"
-            },
-            {
-              "title": "Le grand voyage",
-              "text": "En hiver, quand il fait froid, beaucoup d'oiseaux voyagent vers les pays chauds. C'est la migration !",
-              "emoji": "🌍"
-            },
-            {
-              "title": "Voler en groupe",
-              "text": "Pour moins se fatiguer, ils volent souvent en forme de 'V' avec tous leurs amis.",
-              "emoji": "🪿"
-            },
-            {
-              "title": "La parade nuptiale",
-              "text": "Pour attirer une femelle, le mâle réalise souvent une danse ou exhibe de magnifiques couleurs. C'est la parade nuptiale.",
-              "emoji": "🦚"
-            },
-            {
-              "title": "L'oiseau jardinier",
-              "text": "En Australie, l'oiseau jardinier construit un berceau de branches qu'il décore avec des objets bleus (fleurs, cailloux, bouchons) pour séduire sa partenaire !",
-              "emoji": "💙"
-            },
-            {
-              "title": "L'Oiseau qui Parle",
-              "text": "Certains oiseaux, comme le perroquet, sont très rigolos. Ils peuvent imiter les mots que nous disons et parler avec nous !",
-              "emoji": "🦜"
-            },
-            {
-              "title": "Le chant des oiseaux",
-              "text": "Chaque espèce d'oiseau a son propre chant. Ils chantent pour marquer leur territoire ou pour appeler leurs amis !",
-              "emoji": "🎶"
-            },
-            {
-              "title": "L'intelligence des corvidés",
-              "text": "Les corbeaux et les pies sont extrêmement intelligents. Ils sont capables de fabriquer des outils et de résoudre des énigmes complexes.",
-              "emoji": "🐦‍⬛"
-            },
-            {
-              "title": "Où dorment les oiseaux ?",
-              "text": "Beaucoup d'oiseaux dorment dans les arbres, bien cachés dans les branches pour être en sécurité.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "L'incroyable réalité : Les oiseaux du monde",
-              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "En savoir plus : Les oiseaux du monde",
-              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "Analyse profonde : Les oiseaux du monde",
-              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
-              "emoji": "🔬"
-            },
-            {
-              "title": "Pour aller plus loin : Les oiseaux du monde",
-              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
-              "emoji": "📡"
-            }
-          ],
-          "quiz": [
-            {
-              "question": "Quel avantage principal la formation en V procure-t-elle aux oiseaux migrateurs qui volent en groupe ?",
-              "options": [
-                "Elle leur permet de mieux repérer les prédateurs",
-                "Elle réduit la résistance de l'air pour les oiseaux suiveurs",
-                "Elle maintient une température corporelle plus élevée",
-                "Elle synchronise le rythme cardiaque de chaque individu"
-              ],
-              "correctAnswer": "Elle réduit la résistance de l'air pour les oiseaux suiveurs",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi l'oiseau jardinier d'Australie collectionne-t-il principalement des objets de couleur bleue ?",
-              "options": [
-                "Pour effrayer les prédateurs qui craignent cette couleur",
-                "Pour rendre son berceau imperméable à la pluie",
-                "Pour impressionner la femelle lors de la parade nuptiale",
-                "Pour délimiter son territoire face aux mâles rivaux"
-              ],
-              "correctAnswer": "Pour impressionner la femelle lors de la parade nuptiale",
-              "isSpecial": false
-            },
-            {
-              "question": "La migration des oiseaux est principalement déclenchée par quel facteur environnemental ?",
-              "options": [
-                "La baisse des températures hivernales",
-                "La diminution de la durée du jour (photopériode)",
-                "L'épuisement des réserves de nourriture locales",
-                "Les variations de pression atmosphérique"
-              ],
-              "correctAnswer": "La diminution de la durée du jour (photopériode)",
-              "isSpecial": false
-            },
-            {
-              "question": "Les corvidés, comme les corbeaux et les pies, sont réputés pour fabriquer des outils. Quel groupe d'oiseaux tropicaux partage également cette capacité rare ?",
-              "options": [
-                "Les flamants roses",
-                "Les perroquets cacatoès",
-                "Les pics",
-                "Les cigognes blanches"
-              ],
-              "correctAnswer": "Les pics",
-              "isSpecial": false
-            },
-            {
-              "question": "Chez les oiseaux, le chant territorial sert principalement à quoi ?",
-              "options": [
-                "Avertir les membres du groupe d'un danger imminent",
-                "Signaler la présence du mâle et repousser les concurrents",
-                "Guider les femelles vers les sources de nourriture",
-                "Coordonner les mouvements pendant la migration"
-              ],
-              "correctAnswer": "Signaler la présence du mâle et repousser les concurrents",
-              "isSpecial": false
-            },
-            {
-              "question": "Le toucan vit dans les forêts tropicales d'Amérique, tandis que le manchot vit dans les régions froides. Comment nomme-t-on cette adaptation d'un être vivant à son environnement spécifique ?",
-              "options": [
-                "La convergence évolutive",
-                "La niche écologique",
-                "La sélection naturelle",
-                "La spéciation géographique"
-              ],
-              "correctAnswer": "La niche écologique",
-              "isSpecial": false
-            },
-            {
-              "question": "Parmi ces comportements, lequel constitue un exemple de parade nuptiale chez les oiseaux ?",
-              "options": [
-                "Un corbeau qui utilise un bâton pour extraire des larves",
-                "Un perroquet qui imite la voix de son propriétaire",
-                "Un paon qui déploie son plumage coloré devant une femelle",
-                "Une grue qui plonge vers une proie depuis les airs"
-              ],
-              "correctAnswer": "Un paon qui déploie son plumage coloré devant une femelle",
-              "isSpecial": false
-            },
-            {
-              "question": "La discipline scientifique qui étudie les oiseaux s'appelle l'ornithologie. Quel outil technologique moderne est aujourd'hui indispensable pour suivre les routes migratoires sur de longues distances ?",
-              "options": [
-                "Le microscope électronique",
-                "La balise GPS ou la bague électronique",
-                "Le sonar ultrasonique",
-                "La camera thermique infrarouge"
-              ],
-              "correctAnswer": "La balise GPS ou la bague électronique",
-              "isSpecial": false
-            },
-            {
-              "question": "La capacité des perroquets à imiter la parole humaine repose sur quelle caractéristique anatomique particulière ?",
-              "options": [
-                "La présence de cordes vocales semblables à celles des mammifères",
-                "Un syrinx musculaire très développé permettant de moduler les sons",
-                "Une langue charnue et mobile identique à celle de l'être humain",
-                "Un cerveau dont le lobe frontal est proportionnellement plus grand"
-              ],
-              "correctAnswer": "Un syrinx musculaire très développé permettant de moduler les sons",
-              "isSpecial": false
-            },
-            {
-              "question": "Les chercheurs ont démontré que certains corbeaux résolvent des problèmes en plusieurs étapes séquentielles. Cette capacité de planification à court terme est souvent comparée à celle d'un enfant humain de quel âge approximatif ?",
-              "options": [
-                "2 à 3 ans",
-                "4 à 5 ans",
-                "7 à 10 ans",
-                "12 à 14 ans"
-              ],
-              "correctAnswer": "4 à 5 ans",
-              "isSpecial": true
-            }
-          ]
-        },
-        {
-          "id": "ornithology-gen-l8-difficile",
-          "title": "Leçon Science",
-          "emoji": "🛡️",
-          "themeColor": "amber",
-          "badgeId": "ornithology-badge-l8-difficile",
-          "badgeName": "Explorateur L8",
-          "badgeEmoji": "🛡️",
-          "cards": [
-            {
-              "title": "Découverte : Leçon Science",
-              "text": "Cette leçon traite de Leçon Science. Lis attentivement pour réussir le quiz !",
-              "emoji": "🛡️"
-            },
-            {
-              "title": "Le savais-tu ?",
-              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
-              "emoji": "💡"
-            },
-            {
-              "title": "La science des plumes",
-              "text": "Les plumes des oiseaux sont incroyables ! Elles les aident à voler, mais aussi à rester bien au chaud, comme un gros manteau.",
-              "emoji": "🪶"
-            },
-            {
-              "title": "Les oiseaux nageurs",
-              "text": "Les canards et les cygnes adorent l'eau. Leurs plumes ne se mouillent pas grâce à une huile spéciale.",
-              "emoji": "🦆"
-            },
-            {
-              "title": "Des pattes comme des rames",
-              "text": "Ils ont des pattes palmées qui les aident à nager très vite, comme des palmes de plongée.",
-              "emoji": "🌊"
-            },
-            {
-              "title": "Les menaces sur la nature",
-              "text": "De nombreuses espèces d'oiseaux sont en danger. La destruction de leurs habitats, comme la déforestation, est la plus grande menace pour eux.",
-              "emoji": "⚠️"
-            },
-            {
-              "title": "Comment les protéger",
-              "text": "Installer des nichoirs, réduire l'utilisation de pesticides et protéger les forêts aide les oiseaux à survivre et à se reproduire.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "Les Graines Délicieuses",
-              "text": "En hiver, on peut donner des petites graines aux oiseaux pour les aider à avoir le ventre bien rempli.",
-              "emoji": "🌻"
-            },
-            {
-              "title": "Les plumes colorées",
-              "text": "Les plumes des oiseaux ne servent pas seulement à voler, elles les aident aussi à se cacher ou à attirer l'attention !",
-              "emoji": "🦚"
-            },
-            {
-              "title": "Les plumes de contour",
-              "text": "Les plumes de contour donnent à l'oiseau sa forme lisse, tandis que le duvet, situé en dessous, le protège du froid.",
-              "emoji": "🪶"
-            },
-            {
-              "title": "Découverte magique : La science des plumes",
-              "text": "Regarde bien les petits oiseaux ! Sais-tu qu'ils aiment beaucoup explorer et jouer dans la nature ? C'est fascinant de voir comment ils vivent.",
-              "emoji": "✨"
-            },
-            {
-              "title": "Le secret de : La science des plumes",
-              "text": "Chut, c'est un secret ! Les oiseaux ont des pouvoirs cachés dans leurs plumes et leur façon de chanter.",
-              "emoji": "🤫"
-            },
-            {
-              "title": "L'incroyable réalité : La science des plumes",
-              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "En savoir plus : La science des plumes",
-              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "Analyse profonde : La science des plumes",
-              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
-              "emoji": "🔬"
-            },
-            {
-              "title": "Pour aller plus loin : La science des plumes",
-              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
-              "emoji": "📡"
-            }
-          ],
-          "quiz": [
-            {
-              "question": "Quel type de plumes assure le maintien de la forme aérodynamique d'un oiseau en recouvrant sa surface extérieure ?",
-              "options": [
-                "Les plumes de duvet",
-                "Les plumes de contour",
-                "Les plumes tertiaires",
-                "Les plumes filoplumes"
-              ],
-              "correctAnswer": "Les plumes de contour",
-              "isSpecial": false
-            },
-            {
-              "question": "Grâce à quelle substance les canards et les cygnes empêchent-ils leurs plumes de se mouiller ?",
-              "options": [
-                "Une cire sécrétée par les écailles",
-                "Une huile produite par leur glande uropygiale",
-                "Un mucus issu de leur bec",
-                "Une résine absorbée via leur nourriture"
-              ],
-              "correctAnswer": "Une huile produite par leur glande uropygiale",
-              "isSpecial": false
-            },
-            {
-              "question": "Comment appelle-t-on la morphologie des pattes des canards qui leur permet de nager efficacement ?",
-              "options": [
-                "Des pattes zygodactyles",
-                "Des pattes anisodactyles",
-                "Des pattes palmées",
-                "Des pattes totipalmes"
-              ],
-              "correctAnswer": "Des pattes palmées",
-              "isSpecial": false
-            },
-            {
-              "question": "Quelle est la principale menace identifiée pour les espèces d'oiseaux en danger selon les données ornithologiques actuelles ?",
-              "options": [
-                "La prédation par les chats domestiques",
-                "La destruction et la fragmentation de leurs habitats naturels",
-                "Les collisions avec les vitres de bâtiments",
-                "La pollution lumineuse nocturne"
-              ],
-              "correctAnswer": "La destruction et la fragmentation de leurs habitats naturels",
-              "isSpecial": false
-            },
-            {
-              "question": "Parmi ces actions, laquelle contribue directement à soutenir la reproduction des oiseaux sauvages en milieu urbain ?",
-              "options": [
-                "Distribuer du pain rassis près des plans d'eau",
-                "Installer des nichoirs adaptés à chaque espèce",
-                "Planter des espèces végétales exotiques ornementales",
-                "Augmenter l'éclairage public dans les parcs"
-              ],
-              "correctAnswer": "Installer des nichoirs adaptés à chaque espèce",
-              "isSpecial": false
-            },
-            {
-              "question": "Le duvet des oiseaux remplit principalement quelle fonction physiologique ?",
-              "options": [
-                "Faciliter le vol en réduisant la masse corporelle",
-                "Permettre la communication visuelle avec les congénères",
-                "Assurer l'isolation thermique contre le froid",
-                "Imperméabiliser le plumage lors de la baignade"
-              ],
-              "correctAnswer": "Assurer l'isolation thermique contre le froid",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi la réduction des pesticides dans l'agriculture est-elle bénéfique pour les populations d'oiseaux ?",
-              "options": [
-                "Elle augmente la quantité de graines disponibles en hiver",
-                "Elle limite l'empoisonnement des insectes dont de nombreux oiseaux se nourrissent",
-                "Elle favorise la croissance des arbres utilisés pour nicher",
-                "Elle réduit la turbulence de l'air près des champs cultivés"
-              ],
-              "correctAnswer": "Elle limite l'empoisonnement des insectes dont de nombreux oiseaux se nourrissent",
-              "isSpecial": false
-            },
-            {
-              "question": "Les couleurs vives des plumes de certains oiseaux mâles remplissent avant tout quelle fonction dans leur comportement ?",
-              "options": [
-                "Améliorer leur camouflage en milieu forestier dense",
-                "Attirer les partenaires lors de la période de reproduction",
-                "Réguler leur température corporelle au soleil",
-                "Signaler leur toxicité aux prédateurs potentiels"
-              ],
-              "correctAnswer": "Attirer les partenaires lors de la période de reproduction",
-              "isSpecial": false
-            },
-            {
-              "question": "Quelle technologie l'ornithologie moderne utilise-t-elle pour suivre les déplacements migratoires des oiseaux sur de longues distances ?",
-              "options": [
-                "L'analyse acoustique des chants enregistrés en forêt",
-                "Le comptage visuel depuis des postes d'observation fixes",
-                "La télémétrie par balises GPS ou satellites",
-                "L'étude des anneaux de croissance osseux"
-              ],
-              "correctAnswer": "La télémétrie par balises GPS ou satellites",
-              "isSpecial": false
-            },
-            {
-              "question": "Un ornithologue observe que chez une espèce aquatique, le plumage ne repousse plus l'eau correctement après un déversement de pétrole. Quel mécanisme biologique est principalement perturbé, et quelle conséquence directe cela entraîne-t-il pour l'oiseau ?",
-              "options": [
-                "La structure des barbules est détruite, empêchant la plume de former une surface cohérente et provoquant une hypothermie",
-                "La glande uropygiale est obstruée, supprimant l'imperméabilisation et entraînant une surcharge pondérale par absorption d'eau",
-                "Les cellules mélanocytes sont endommagées, rendant le plumage moins coloré et l'oiseau plus vulnérable aux prédateurs",
-                "Les pattes palmées perdent leur élasticité, réduisant la capacité de nage et causant un déficit alimentaire"
-              ],
-              "correctAnswer": "La glande uropygiale est obstruée, supprimant l'imperméabilisation et entraînant une surcharge pondérale par absorption d'eau",
-              "isSpecial": true
-            }
-          ]
-        },
-        {
-          "id": "ornithology-gen-l9-difficile",
-          "title": "Leçon Espace",
-          "emoji": "🔮",
-          "themeColor": "amber",
-          "badgeId": "ornithology-badge-l9-difficile",
-          "badgeName": "Explorateur L9",
-          "badgeEmoji": "🔮",
-          "cards": [
-            {
-              "title": "Découverte : Leçon Espace",
-              "text": "Cette leçon traite de Leçon Espace. Lis attentivement pour réussir le quiz !",
-              "emoji": "🔮"
-            },
-            {
-              "title": "Le savais-tu ?",
-              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
-              "emoji": "💡"
-            },
-            {
-              "title": "Dans l'espace du ciel",
-              "text": "Les oiseaux sont les rois du ciel ! Certains, comme l'aigle, peuvent voler très haut pour observer tout ce qui se passe en bas.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "Les grands rapaces",
-              "text": "Les aigles et les faucons sont des rapaces. Ils volent très haut pour chercher leur nourriture.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "Des yeux de lynx",
-              "text": "Les rapaces ont une vue incroyable. Ils peuvent voir une petite souris depuis le ciel !",
-              "emoji": "👀"
-            },
-            {
-              "title": "Un outil sur mesure",
-              "text": "Le bec de l'oiseau est adapté à son régime alimentaire. Le pivert a un bec puissant comme un burin pour creuser le bois.",
-              "emoji": "🪵"
-            },
-            {
-              "title": "Filtrer l'eau",
-              "text": "Le flamant rose possède un bec courbé qui fonctionne comme une passoire. Il filtre l'eau pour retenir les petites crevettes dont il se nourrit.",
-              "emoji": "🦩"
-            },
-            {
-              "title": "Le Pic-vert",
-              "text": "Le pic-vert tape très fort son bec contre le tronc des arbres pour trouver des insectes. Toc toc toc !",
-              "emoji": "🪵"
-            },
-            {
-              "title": "Les becs utiles",
-              "text": "La forme du bec d'un oiseau dépend de ce qu'il mange. Un bec crochu est parfait pour la viande, et un bec fin pour les insectes.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "La parade nuptiale",
-              "text": "Pour séduire une partenaire, beaucoup de mâles effectuent des danses incroyables ou construisent des structures complexes pour impressionner.",
-              "emoji": "💃"
-            },
-            {
-              "title": "Découverte magique : Dans l'espace du ciel",
-              "text": "Regarde bien les petits oiseaux ! Sais-tu qu'ils aiment beaucoup explorer et jouer dans la nature ? C'est fascinant de voir comment ils vivent.",
-              "emoji": "✨"
-            },
-            {
-              "title": "Le secret de : Dans l'espace du ciel",
-              "text": "Chut, c'est un secret ! Les oiseaux ont des pouvoirs cachés dans leurs plumes et leur façon de chanter.",
-              "emoji": "🤫"
-            },
-            {
-              "title": "L'incroyable réalité : Dans l'espace du ciel",
-              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "En savoir plus : Dans l'espace du ciel",
-              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "Analyse profonde : Dans l'espace du ciel",
-              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
-              "emoji": "🔬"
-            },
-            {
-              "title": "Pour aller plus loin : Dans l'espace du ciel",
-              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
-              "emoji": "📡"
-            }
-          ],
-          "quiz": [
-            {
-              "question": "Quel terme scientifique désigne le groupe auquel appartiennent les aigles et les faucons, caractérisés par un bec crochu et de puissantes serres ?",
-              "options": [
-                "Les passereaux",
-                "Les rapaces",
-                "Les échassiers",
-                "Les palmipèdes"
-              ],
-              "correctAnswer": "Les rapaces",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi le flamant rose possède-t-il un bec courbé et lamellé plutôt qu'un bec droit et pointu ?",
-              "options": [
-                "Pour attraper des poissons rapides dans les rivières",
-                "Pour filtrer l'eau et retenir les petites crevettes dont il se nourrit",
-                "Pour creuser le sol à la recherche de larves",
-                "Pour déchiqueter la viande de ses proies"
-              ],
-              "correctAnswer": "Pour filtrer l'eau et retenir les petites crevettes dont il se nourrit",
-              "isSpecial": false
-            },
-            {
-              "question": "Quel type de bec est le mieux adapté à un régime insectivore, où l'oiseau doit extraire des larves dans des fissures étroites ?",
-              "options": [
-                "Un bec court et épais",
-                "Un bec crochu et recourbé",
-                "Un bec fin et allongé",
-                "Un bec large et plat"
-              ],
-              "correctAnswer": "Un bec fin et allongé",
-              "isSpecial": false
-            },
-            {
-              "question": "Le bec du pivert est comparé à un burin. Quelle propriété mécanique de cet outil correspond à la fonction du bec du pivert ?",
-              "options": [
-                "Sa capacité à filtrer des matières",
-                "Sa rigidité qui permet de fragmenter des matériaux durs",
-                "Sa forme courbée pour attraper les proies",
-                "Sa longueur pour atteindre les insectes à distance"
-              ],
-              "correctAnswer": "Sa rigidité qui permet de fragmenter des matériaux durs",
-              "isSpecial": false
-            },
-            {
-              "question": "Les rapaces repèrent leurs proies depuis de grandes altitudes. Quelle adaptation visuelle leur permet de distinguer un petit rongeur au sol à plusieurs centaines de mètres ?",
-              "options": [
-                "Un champ visuel réduit mais très précis en avant",
-                "Une densité de photorécepteurs dans la fovéa bien supérieure à celle des mammifères",
-                "Des yeux mobiles dans l'orbite comme chez les humains",
-                "Une vision nocturne exclusivement grâce aux bâtonnets"
-              ],
-              "correctAnswer": "Une densité de photorécepteurs dans la fovéa bien supérieure à celle des mammifères",
-              "isSpecial": false
-            },
-            {
-              "question": "Lors de la parade nuptiale, certains mâles construisent des structures complexes pour séduire la femelle. Quel oiseau australien est particulièrement célèbre pour construire des berceaux décorés d'objets colorés ?",
-              "options": [
-                "Le paon indien",
-                "L'oiseau-lyre",
-                "L'oiseau à berceaux (bowerbird)",
-                "Le paradisier royal"
-              ],
-              "correctAnswer": "L'oiseau à berceaux (bowerbird)",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi l'ornithologie moderne a-t-elle recours à des technologies de suivi satellitaire pour étudier la migration des oiseaux ?",
-              "options": [
-                "Parce que les oiseaux migrateurs volent trop haut pour être observés à l'oeil nu",
-                "Parce que les routes migratoires couvrent des milliers de kilomètres impossibles à surveiller par observation directe",
-                "Parce que les oiseaux migrent uniquement la nuit et sont invisibles",
-                "Parce que les radars météorologiques brouillent les observations au sol"
-              ],
-              "correctAnswer": "Parce que les routes migratoires couvrent des milliers de kilomètres impossibles à surveiller par observation directe",
-              "isSpecial": false
-            },
-            {
-              "question": "Un bec crochu est parfait pour déchirer la viande. Quel autre rôle joue ce type de bec chez les rapaces lors de la capture d'une proie vivante ?",
-              "options": [
-                "Il sert à creuser des terriers pour stocker la nourriture",
-                "Il permet de maintenir fermement la proie tout en la tuant",
-                "Il filtre l'eau pour repérer les petits poissons",
-                "Il amplifie les cris pour communiquer avec la meute"
-              ],
-              "correctAnswer": "Il permet de maintenir fermement la proie tout en la tuant",
-              "isSpecial": false
-            },
-            {
-              "question": "Quel principe évolutif explique que des espèces d'oiseaux vivant dans des environnements très différents aient développé des morphologies de bec radicalement distinctes ?",
-              "options": [
-                "La dérive génétique aléatoire sans lien avec l'environnement",
-                "La sélection naturelle favorisant les individus dont le bec est le mieux adapté à la ressource alimentaire disponible",
-                "L'hérédité exclusive des caractères acquis par apprentissage",
-                "La fixation de mutations neutres par effet fondateur"
-              ],
-              "correctAnswer": "La sélection naturelle favorisant les individus dont le bec est le mieux adapté à la ressource alimentaire disponible",
-              "isSpecial": false
-            },
-            {
-              "question": "Le pic-vert frappe le bois jusqu'à 20 fois par seconde sans se blesser. Quelle combinaison d'adaptations anatomiques lui permet d'absorber ces chocs répétés sans traumatisme crânien ?",
-              "options": [
-                "Un crâne épaissi uniformément et un bec entièrement calcifié",
-                "Un cerveau positionné asymétriquement, un os hyoïde amortisseur enroulant le crâne et une langue longue servant d'amortisseur",
-                "Des vertèbres cervicales fusionnées et une membrane nictitante protégeant les yeux",
-                "Des plumes crâniennes kératinisées et des sinus frontaux remplis d'air comprimé"
-              ],
-              "correctAnswer": "Un cerveau positionné asymétriquement, un os hyoïde amortisseur enroulant le crâne et une langue longue servant d'amortisseur",
-              "isSpecial": true
-            }
-          ]
-        },
-        {
-          "id": "ornithology-gen-l10-difficile",
-          "title": "Leçon Défi",
-          "emoji": "🏆",
-          "themeColor": "amber",
-          "badgeId": "ornithology-badge-l10-difficile",
-          "badgeName": "Explorateur L10",
-          "badgeEmoji": "🏆",
-          "cards": [
-            {
-              "title": "Découverte : Leçon Défi",
-              "text": "Cette leçon traite de Leçon Défi. Lis attentivement pour réussir le quiz !",
-              "emoji": "🏆"
-            },
-            {
-              "title": "Le savais-tu ?",
-              "text": "L'univers de cet apprentissage regorge de secrets fascinants. Continue pour débloquer de nouveaux badges !",
-              "emoji": "💡"
-            },
-            {
-              "title": "Le défi du vol",
-              "text": "Apprendre à voler est un grand défi pour les bébés oiseaux. Au début, ils sautent de branche en branche avant de prendre leur envol.",
-              "emoji": "🐥"
-            },
-            {
-              "title": "Les oiseaux de la nuit",
-              "text": "La chouette et le hibou dorment le jour et se réveillent la nuit. On dit qu'ils sont nocturnes.",
-              "emoji": "🦉"
-            },
-            {
-              "title": "Un vol silencieux",
-              "text": "Les chouettes volent sans faire aucun bruit pour surprendre leur repas !",
-              "emoji": "🤫"
-            },
-            {
-              "title": "L'orientation magnétique",
-              "text": "Les oiseaux migrateurs accomplissent des voyages de milliers de kilomètres. Pour ne pas se perdre, ils utilisent le champ magnétique de la Terre !",
-              "emoji": "🧲"
-            },
-            {
-              "title": "Une boussole interne",
-              "text": "Grâce à des capteurs spéciaux, c'est comme s'ils avaient une boussole dans la tête qui leur indique toujours où se trouve le Nord ou le Sud.",
-              "emoji": "🧭"
-            },
-            {
-              "title": "Dormir sur une Patte",
-              "text": "Savais-tu que certains oiseaux aiment dormir en se tenant debout sur une seule de leurs pattes ? C'est très amusant à voir !",
-              "emoji": "🦩"
-            },
-            {
-              "title": "Les petits poussins",
-              "text": "Quand ils sortent de l'œuf, les oisillons ont très faim. Leurs parents font de nombreux allers-retours pour les nourrir.",
-              "emoji": "🐣"
-            },
-            {
-              "title": "Les oiseaux marins",
-              "text": "Certains oiseaux, comme les albatros, passent la majorité de leur vie en mer et peuvent boire de l'eau salée grâce à une glande spéciale.",
-              "emoji": "🌊"
-            },
-            {
-              "title": "Découverte magique : Le défi du vol",
-              "text": "Regarde bien les petits oiseaux ! Sais-tu qu'ils aiment beaucoup explorer et jouer dans la nature ? C'est fascinant de voir comment ils vivent.",
-              "emoji": "✨"
-            },
-            {
-              "title": "Le secret de : Le défi du vol",
-              "text": "Chut, c'est un secret ! Les oiseaux ont des pouvoirs cachés dans leurs plumes et leur façon de chanter.",
-              "emoji": "🤫"
-            },
-            {
-              "title": "L'incroyable réalité : Le défi du vol",
-              "text": "Les oiseaux ont des capacités incroyables. Leur corps est parfaitement adapté à leur environnement, que ce soit pour voler, nager ou chasser.",
-              "emoji": "🦅"
-            },
-            {
-              "title": "En savoir plus : Le défi du vol",
-              "text": "Savais-tu que chaque espèce d'oiseau a sa propre particularité ? C'est la belle diversité de la nature à protéger.",
-              "emoji": "🌳"
-            },
-            {
-              "title": "Analyse profonde : Le défi du vol",
-              "text": "L'étude approfondie des oiseaux nous révèle des mécanismes biologiques fascinants. L'évolution a doté ces animaux de caractéristiques uniques pour survivre.",
-              "emoji": "🔬"
-            },
-            {
-              "title": "Pour aller plus loin : Le défi du vol",
-              "text": "L'ornithologie moderne utilise des technologies avancées pour suivre la migration et étudier le comportement des oiseaux dans le monde entier.",
-              "emoji": "📡"
-            }
-          ],
-          "quiz": [
-            {
-              "question": "Quel terme scientifique désigne les animaux qui sont actifs la nuit et dorment le jour, comme la chouette et le hibou ?",
-              "options": [
-                "Diurnes",
-                "Nocturnes",
-                "Crépusculaires",
-                "Sédentaires"
-              ],
-              "correctAnswer": "Nocturnes",
-              "isSpecial": false
-            },
-            {
-              "question": "Grâce à quel mécanisme les oiseaux migrateurs parviennent-ils à s'orienter sur de très longues distances sans se perdre ?",
-              "options": [
-                "La mémorisation des étoiles uniquement",
-                "La détection du champ magnétique terrestre",
-                "La reconnaissance des odeurs portées par le vent",
-                "L'observation des courants marins"
-              ],
-              "correctAnswer": "La détection du champ magnétique terrestre",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi les chouettes volent-elles sans produire de bruit perceptible ?",
-              "options": [
-                "Parce qu'elles volent très lentement",
-                "Parce que leurs plumes sont structurées pour absorber les turbulences sonores",
-                "Parce qu'elles n'ont pas de plumes sur les ailes",
-                "Parce qu'elles évitent de battre des ailes en vol"
-              ],
-              "correctAnswer": "Parce que leurs plumes sont structurées pour absorber les turbulences sonores",
-              "isSpecial": false
-            },
-            {
-              "question": "Quel organe permet à certains oiseaux marins, comme les albatros, de boire de l'eau salée sans en subir les effets toxiques ?",
-              "options": [
-                "Un foie surdimensionné",
-                "Une glande spéciale qui filtre le sel",
-                "Un estomac à deux chambres",
-                "Des reins capables d'éliminer tout le sel directement"
-              ],
-              "correctAnswer": "Une glande spéciale qui filtre le sel",
-              "isSpecial": false
-            },
-            {
-              "question": "Comment appelle-t-on le jeune oiseau qui vient de sortir de l'oeuf et est encore nourri par ses parents ?",
-              "options": [
-                "Un poussin sauvage",
-                "Un oisillon",
-                "Un envol",
-                "Un nichon"
-              ],
-              "correctAnswer": "Un oisillon",
-              "isSpecial": false
-            },
-            {
-              "question": "Quelle étape précède généralement le véritable vol chez les jeunes oiseaux en train d'apprendre ?",
-              "options": [
-                "Ils plongent depuis le sommet d'un arbre",
-                "Ils sautent de branche en branche",
-                "Ils rampent au sol pour prendre de la vitesse",
-                "Ils imitent immédiatement les adultes en migration"
-              ],
-              "correctAnswer": "Ils sautent de branche en branche",
-              "isSpecial": false
-            },
-            {
-              "question": "L'albatros est connu pour passer la majorité de sa vie en mer. Lequel de ces comportements lui est caractéristique ?",
-              "options": [
-                "Il construit son nid sur les récifs coralliens sous-marins",
-                "Il peut rester en vol planant des semaines sans se poser à terre",
-                "Il chasse exclusivement la nuit comme les chouettes",
-                "Il utilise le champ magnétique pour localiser les bancs de poissons"
-              ],
-              "correctAnswer": "Il peut rester en vol planant des semaines sans se poser à terre",
-              "isSpecial": false
-            },
-            {
-              "question": "Pourquoi certains oiseaux dorment-ils sur une seule patte ?",
-              "options": [
-                "Pour économiser de la chaleur corporelle en limitant les pertes thermiques",
-                "Parce que leur autre patte est trop lourde à soutenir",
-                "Pour se préparer à s'envoler plus rapidement",
-                "Par imitation d'un comportement appris des parents"
-              ],
-              "correctAnswer": "Pour économiser de la chaleur corporelle en limitant les pertes thermiques",
-              "isSpecial": false
-            },
-            {
-              "question": "L'ornithologie moderne fait appel à des technologies avancées pour étudier les oiseaux. Laquelle de ces méthodes est effectivement utilisée pour suivre leurs migrations ?",
-              "options": [
-                "La pose de balises GPS légères sur les oiseaux",
-                "L'implantation de puces électroniques dans les plumes",
-                "L'analyse de leur chant pour détecter leur position",
-                "L'utilisation de drones qui suivent les vols en continu"
-              ],
-              "correctAnswer": "La pose de balises GPS légères sur les oiseaux",
-              "isSpecial": false
-            },
-            {
-              "question": "Chez les oiseaux migrateurs, les cristaux de magnétite présents dans certaines cellules jouent un rôle dans la navigation. Quelle propriété physique de la Terre détectent-ils précisément ?",
-              "options": [
-                "La gravité terrestre selon la latitude",
-                "Les variations de pression atmosphérique liées à l'altitude",
-                "Les lignes du champ magnétique terrestre indiquant le Nord et le Sud",
-                "La rotation de la Terre perceptible par l'oreille interne"
-              ],
-              "correctAnswer": "Les lignes du champ magnétique terrestre indiquant le Nord et le Sud",
               "isSpecial": true
             }
           ]
@@ -17134,6 +13244,149 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": true
             }
           ]
+        },
+        {
+          "id": "body-gen-0",
+          "title": "Le Système Nerveux",
+          "emoji": "⚡",
+          "themeColor": "rose",
+          "badgeId": "body-badge-0",
+          "badgeName": "Expert des Nerfs",
+          "badgeEmoji": "🧠",
+          "cards": [
+            {
+              "title": "Le chef d'orchestre du corps",
+              "text": "Le cerveau est l'organe principal du système nerveux. Il reçoit des informations de tout le corps, les analyse et envoie des ordres aux muscles et aux organes. Il pèse environ 1,4 kg chez un adulte et consomme énormément d'énergie.",
+              "emoji": "🧠"
+            },
+            {
+              "title": "Les neurones, messagers électriques",
+              "text": "Le cerveau est composé de milliards de cellules appelées neurones. Ces cellules transmettent des messages sous forme de signaux électriques à grande vitesse, parfois jusqu'à 430 km/h. Les neurones communiquent entre eux grâce à des jonctions appelées synapses.",
+              "emoji": "⚡"
+            },
+            {
+              "title": "La moelle épinière, autoroute des nerfs",
+              "text": "La moelle épinière est un long cordon nerveux qui descend à l'intérieur de la colonne vertébrale. Elle relie le cerveau au reste du corps en transportant les messages dans les deux sens. Elle est aussi responsable de certains réflexes automatiques très rapides.",
+              "emoji": "🦴"
+            },
+            {
+              "title": "Les réflexes et les sens",
+              "text": "Quand tu poses la main sur quelque chose de chaud, tu la retires immédiatement sans même y penser : c'est un réflexe. Le système nerveux contrôle aussi les cinq sens — la vue, l'ouïe, le toucher, le goût et l'odorat — pour que le cerveau comprenne le monde autour de toi.",
+              "emoji": "👁️"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Quel est le rôle principal du cerveau ?",
+              "options": [
+                "Pomper le sang dans le corps",
+                "Recevoir des informations et envoyer des ordres",
+                "Digérer les aliments",
+                "Produire des globules rouges"
+              ],
+              "correctAnswer": "Recevoir des informations et envoyer des ordres",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment s'appellent les cellules qui composent le cerveau ?",
+              "options": [
+                "Les globules",
+                "Les neurones",
+                "Les chromosomes",
+                "Les alvéoles"
+              ],
+              "correctAnswer": "Les neurones",
+              "isSpecial": false
+            },
+            {
+              "question": "À quelle vitesse environ les signaux nerveux peuvent-ils voyager ?",
+              "options": [
+                "10 km/h",
+                "100 km/h",
+                "430 km/h",
+                "1000 km/h"
+              ],
+              "correctAnswer": "430 km/h",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment s'appelle la jonction entre deux neurones ?",
+              "options": [
+                "Une synapse",
+                "Une enzyme",
+                "Une veine",
+                "Une valve"
+              ],
+              "correctAnswer": "Une synapse",
+              "isSpecial": false
+            },
+            {
+              "question": "Où se trouve la moelle épinière ?",
+              "options": [
+                "Dans le crâne",
+                "Dans la poitrine",
+                "À l'intérieur de la colonne vertébrale",
+                "Dans le ventre"
+              ],
+              "correctAnswer": "À l'intérieur de la colonne vertébrale",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le rôle de la moelle épinière ?",
+              "options": [
+                "Produire du sang",
+                "Relier le cerveau au reste du corps",
+                "Stocker de l'énergie",
+                "Filtrer l'air respiré"
+              ],
+              "correctAnswer": "Relier le cerveau au reste du corps",
+              "isSpecial": false
+            },
+            {
+              "question": "Qu'est-ce qu'un réflexe ?",
+              "options": [
+                "Une action que l'on décide consciemment",
+                "Un mouvement automatique et très rapide",
+                "Un message envoyé lentement au cerveau",
+                "Une émotion ressentie par le cerveau"
+              ],
+              "correctAnswer": "Un mouvement automatique et très rapide",
+              "isSpecial": false
+            },
+            {
+              "question": "Combien de sens le système nerveux contrôle-t-il selon la leçon ?",
+              "options": [
+                "Trois",
+                "Quatre",
+                "Cinq",
+                "Six"
+              ],
+              "correctAnswer": "Cinq",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel organe protège la moelle épinière ?",
+              "options": [
+                "Le crâne",
+                "Les côtes",
+                "La colonne vertébrale",
+                "Le sternum"
+              ],
+              "correctAnswer": "La colonne vertébrale",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi le cerveau consomme-t-il beaucoup d'énergie malgré son poids modeste ?",
+              "options": [
+                "Parce qu'il chauffe le corps",
+                "Parce qu'il traite en permanence une quantité énorme d'informations électriques",
+                "Parce qu'il fabrique du sang",
+                "Parce qu'il contrôle uniquement la digestion"
+              ],
+              "correctAnswer": "Parce qu'il traite en permanence une quantité énorme d'informations électriques",
+              "isSpecial": true
+            }
+          ]
         }
       ],
       "difficile": [
@@ -19581,6 +15834,149 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": true
             }
           ]
+        },
+        {
+          "id": "body-gen-1",
+          "title": "Le Système Nerveux",
+          "emoji": "🧠",
+          "themeColor": "rose",
+          "badgeId": "body-badge-1",
+          "badgeName": "Expert en neurosciences",
+          "badgeEmoji": "⚡",
+          "cards": [
+            {
+              "title": "Organisation du système nerveux",
+              "text": "Le système nerveux se divise en deux grandes parties : le système nerveux central (SNC), composé du cerveau et de la moelle épinière, et le système nerveux périphérique (SNP), formé de l'ensemble des nerfs qui relient le SNC aux organes et aux muscles. Cette organisation permet de collecter les informations sensorielles, de les traiter, puis d'envoyer des réponses motrices adaptées.",
+              "emoji": "🔬"
+            },
+            {
+              "title": "Le neurone, unité de base",
+              "text": "Le neurone est la cellule spécialisée dans la transmission de l'information nerveuse. Il est constitué d'un corps cellulaire, de dendrites qui reçoivent les signaux entrants, et d'un axone qui transmet l'influx nerveux vers d'autres neurones ou vers les effecteurs. La communication entre deux neurones se fait au niveau d'une synapse, grâce à des molécules chimiques appelées neurotransmetteurs.",
+              "emoji": "⚡"
+            },
+            {
+              "title": "Les grandes régions du cerveau",
+              "text": "Le cerveau humain est divisé en plusieurs zones aux fonctions distinctes : le cortex cérébral traite les informations sensorielles et motrices, gère le langage et la pensée abstraite ; le cervelet coordonne les mouvements et l'équilibre ; le tronc cérébral régule les fonctions vitales automatiques comme la respiration et le rythme cardiaque. Les deux hémisphères cérébraux sont reliés par le corps calleux, qui assure leur communication.",
+              "emoji": "🧩"
+            },
+            {
+              "title": "Système nerveux autonome et réflexes",
+              "text": "Le système nerveux autonome contrôle les fonctions involontaires de l'organisme via deux sous-systèmes antagonistes : le système sympathique, qui prépare le corps à l'action en accélérant le cœur et en dilatant les pupilles, et le système parasympathique, qui favorise le repos et la digestion. Les réflexes sont des réponses rapides et automatiques ne passant pas par le cerveau, mais par la moelle épinière, ce qui réduit le temps de réaction en cas de danger.",
+              "emoji": "🔄"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Quelles sont les deux grandes divisions du système nerveux ?",
+              "options": [
+                "Système central et système autonome",
+                "Système nerveux central et système nerveux périphérique",
+                "Système sensoriel et système moteur",
+                "Système cérébral et système médullaire"
+              ],
+              "correctAnswer": "Système nerveux central et système nerveux périphérique",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le rôle principal des dendrites d'un neurone ?",
+              "options": [
+                "Transmettre l'influx nerveux vers les autres neurones",
+                "Produire les neurotransmetteurs",
+                "Recevoir les signaux nerveux entrants",
+                "Isoler électriquement le neurone"
+              ],
+              "correctAnswer": "Recevoir les signaux nerveux entrants",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment s'appelle la zone de communication entre deux neurones ?",
+              "options": [
+                "Axone",
+                "Synapse",
+                "Dendrite",
+                "Corps calleux"
+              ],
+              "correctAnswer": "Synapse",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel rôle joue le cervelet ?",
+              "options": [
+                "Réguler la respiration et le rythme cardiaque",
+                "Traiter le langage et la pensée abstraite",
+                "Coordonner les mouvements et l'équilibre",
+                "Contrôler les émotions et la mémoire"
+              ],
+              "correctAnswer": "Coordonner les mouvements et l'équilibre",
+              "isSpecial": false
+            },
+            {
+              "question": "Qu'est-ce qu'un neurotransmetteur ?",
+              "options": [
+                "Une cellule gliale qui nourrit les neurones",
+                "Une molécule chimique assurant la communication entre neurones",
+                "Un type d'onde électrique parcourant la moelle épinière",
+                "Une gaine protégeant l'axone"
+              ],
+              "correctAnswer": "Une molécule chimique assurant la communication entre neurones",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle structure relie les deux hémisphères cérébraux ?",
+              "options": [
+                "Le tronc cérébral",
+                "Le cervelet",
+                "Le corps calleux",
+                "La moelle épinière"
+              ],
+              "correctAnswer": "Le corps calleux",
+              "isSpecial": false
+            },
+            {
+              "question": "Lequel de ces effets est caractéristique de l'activation du système nerveux sympathique ?",
+              "options": [
+                "Ralentissement du rythme cardiaque",
+                "Stimulation de la digestion",
+                "Dilatation des pupilles",
+                "Réduction de la pression artérielle"
+              ],
+              "correctAnswer": "Dilatation des pupilles",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi un réflexe est-il plus rapide qu'une réaction volontaire ?",
+              "options": [
+                "Parce que les nerfs réflexes conduisent l'influx plus vite",
+                "Parce que la réponse est traitée par la moelle épinière sans passer par le cerveau",
+                "Parce que le cervelet intervient directement",
+                "Parce que le cortex moteur est activé en priorité"
+              ],
+              "correctAnswer": "Parce que la réponse est traitée par la moelle épinière sans passer par le cerveau",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle région du cerveau régule les fonctions vitales automatiques comme la respiration ?",
+              "options": [
+                "Le cortex préfrontal",
+                "Le cervelet",
+                "Le tronc cérébral",
+                "L'hippocampe"
+              ],
+              "correctAnswer": "Le tronc cérébral",
+              "isSpecial": false
+            },
+            {
+              "question": "La gaine de myéline qui entoure certains axones a pour effet principal de :",
+              "options": [
+                "Augmenter la production de neurotransmetteurs",
+                "Accélérer la vitesse de propagation de l'influx nerveux",
+                "Connecter le neurone au système endocrinien",
+                "Permettre la division cellulaire du neurone"
+              ],
+              "correctAnswer": "Accélérer la vitesse de propagation de l'influx nerveux",
+              "isSpecial": true
+            }
+          ]
         }
       ]
     }
@@ -21957,6 +18353,149 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": true
             }
           ]
+        },
+        {
+          "id": "space-gen-2",
+          "title": "Étoiles et Galaxies",
+          "emoji": "🌌",
+          "themeColor": "indigo",
+          "badgeId": "space-badge-2",
+          "badgeName": "Explorateur des Étoiles",
+          "badgeEmoji": "⭐",
+          "cards": [
+            {
+              "title": "Qu'est-ce qu'une étoile ?",
+              "text": "Une étoile est une gigantesque boule de gaz très chaud qui produit de la lumière et de la chaleur grâce à des réactions nucléaires en son centre. Le Soleil est l'étoile la plus proche de la Terre, à environ 150 millions de kilomètres. Il existe des milliards d'étoiles dans l'univers, de tailles et de couleurs très variées.",
+              "emoji": "⭐"
+            },
+            {
+              "title": "La couleur des étoiles",
+              "text": "La couleur d'une étoile dépend de sa température de surface : les étoiles bleues sont les plus chaudes, autour de 30 000 °C, tandis que les étoiles rouges sont les plus froides, autour de 3 000 °C. Le Soleil est une étoile jaune avec une température d'environ 5 500 °C en surface. Cette couleur nous donne donc une information directe sur la chaleur de l'étoile.",
+              "emoji": "🔵"
+            },
+            {
+              "title": "Qu'est-ce qu'une galaxie ?",
+              "text": "Une galaxie est un immense regroupement de milliards d'étoiles, de gaz, de poussières et de matière noire, maintenus ensemble par la gravité. La Voie lactée est la galaxie dans laquelle se trouve notre Soleil, et elle contient environ 200 milliards d'étoiles. Il existe des centaines de milliards de galaxies dans l'univers observable.",
+              "emoji": "🌌"
+            },
+            {
+              "title": "Les formes de galaxies",
+              "text": "Les galaxies existent sous plusieurs formes : spirales (comme la Voie lactée), elliptiques et irrégulières. Les galaxies spirales ont des bras qui s'enroulent autour d'un centre brillant, alors que les galaxies elliptiques sont rondes ou ovales sans structure particulière. La galaxie la plus proche de la Voie lactée est Andromède, visible à l'œil nu par nuit claire.",
+              "emoji": "🌀"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Comment une étoile produit-elle sa lumière et sa chaleur ?",
+              "options": [
+                "Par des réactions nucléaires en son centre",
+                "En brûlant de l'oxygène comme une flamme",
+                "En absorbant la chaleur du Soleil",
+                "En tournant très vite sur elle-même"
+              ],
+              "correctAnswer": "Par des réactions nucléaires en son centre",
+              "isSpecial": false
+            },
+            {
+              "question": "À quelle distance se trouve le Soleil de la Terre ?",
+              "options": [
+                "Environ 150 millions de kilomètres",
+                "Environ 1 million de kilomètres",
+                "Environ 150 000 kilomètres",
+                "Environ 150 milliards de kilomètres"
+              ],
+              "correctAnswer": "Environ 150 millions de kilomètres",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est la couleur des étoiles les plus chaudes ?",
+              "options": [
+                "Bleue",
+                "Rouge",
+                "Jaune",
+                "Blanche"
+              ],
+              "correctAnswer": "Bleue",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est la température approximative de la surface du Soleil ?",
+              "options": [
+                "5 500 °C",
+                "30 000 °C",
+                "3 000 °C",
+                "1 000 °C"
+              ],
+              "correctAnswer": "5 500 °C",
+              "isSpecial": false
+            },
+            {
+              "question": "Qu'est-ce que la Voie lactée ?",
+              "options": [
+                "La galaxie qui contient notre Soleil",
+                "Une nébuleuse proche de la Terre",
+                "Un amas d'étoiles sans galaxie",
+                "Le nom d'une constellation"
+              ],
+              "correctAnswer": "La galaxie qui contient notre Soleil",
+              "isSpecial": false
+            },
+            {
+              "question": "Combien d'étoiles contient approximativement la Voie lactée ?",
+              "options": [
+                "200 milliards d'étoiles",
+                "1 million d'étoiles",
+                "2 milliards d'étoiles",
+                "1 000 milliards d'étoiles"
+              ],
+              "correctAnswer": "200 milliards d'étoiles",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est la galaxie la plus proche de la Voie lactée ?",
+              "options": [
+                "Andromède",
+                "La galaxie du Triangle",
+                "Le Grand Nuage de Magellan",
+                "Messier 87"
+              ],
+              "correctAnswer": "Andromède",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle force maintient les étoiles ensemble au sein d'une galaxie ?",
+              "options": [
+                "La gravité",
+                "Le magnétisme",
+                "La pression nucléaire",
+                "L'électricité"
+              ],
+              "correctAnswer": "La gravité",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment appelle-t-on une galaxie qui possède des bras enroulés autour d'un centre brillant ?",
+              "options": [
+                "Une galaxie spirale",
+                "Une galaxie elliptique",
+                "Une galaxie irrégulière",
+                "Une galaxie naine"
+              ],
+              "correctAnswer": "Une galaxie spirale",
+              "isSpecial": false
+            },
+            {
+              "question": "Combien de galaxies estime-t-on dans l'univers observable ?",
+              "options": [
+                "Des centaines de milliards",
+                "Environ 200",
+                "Quelques millions",
+                "Une dizaine de milliards"
+              ],
+              "correctAnswer": "Des centaines de milliards",
+              "isSpecial": true
+            }
+          ]
         }
       ],
       "difficile": [
@@ -24324,6 +20863,149 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": true
             }
           ]
+        },
+        {
+          "id": "space-gen-3",
+          "title": "Étoiles et Galaxies",
+          "emoji": "🌌",
+          "themeColor": "indigo",
+          "badgeId": "space-badge-3",
+          "badgeName": "Explorateur Galactique",
+          "badgeEmoji": "🔭",
+          "cards": [
+            {
+              "title": "La naissance des étoiles",
+              "text": "Les étoiles se forment dans des nébuleuses, d'immenses nuages de gaz et de poussière qui s'effondrent sous l'effet de la gravité. Quand la densité et la température au centre atteignent des valeurs extrêmes, la fusion nucléaire s'enclenche : c'est la naissance d'une étoile. Cette fusion transforme l'hydrogène en hélium en libérant une quantité colossale d'énergie sous forme de lumière et de chaleur.",
+              "emoji": "✨"
+            },
+            {
+              "title": "La vie et la mort des étoiles",
+              "text": "La durée de vie d'une étoile dépend de sa masse : plus elle est massive, plus elle brûle vite et meurt jeune. Une étoile comme le Soleil dure environ 10 milliards d'années avant de se dilater en géante rouge, puis de se contracter en naine blanche. Les étoiles très massives finissent leur vie en une explosion spectaculaire appelée supernova, pouvant donner naissance à une étoile à neutrons ou à un trou noir.",
+              "emoji": "💥"
+            },
+            {
+              "title": "Classification et couleur des étoiles",
+              "text": "Les astronomes classent les étoiles selon leur température de surface, en utilisant la séquence spectrale O, B, A, F, G, K, M. Les étoiles bleues et blanches, de type O et B, sont les plus chaudes (plus de 10 000 °C) et les plus lumineuses. Les étoiles oranges et rouges, de type K et M, sont les plus froides et les plus nombreuses de l'univers.",
+              "emoji": "🌡️"
+            },
+            {
+              "title": "Les galaxies : structures de l'univers",
+              "text": "Une galaxie est un ensemble de milliards d'étoiles, de gaz, de poussières et de matière noire liés par la gravité. Il existe plusieurs types de galaxies : spirales (comme la Voie lactée), elliptiques et irrégulières. La Voie lactée contient entre 200 et 400 milliards d'étoiles, et l'univers observable en renferme lui-même plusieurs centaines de milliards de galaxies.",
+              "emoji": "🌀"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Quel phénomène physique produit l'énergie d'une étoile ?",
+              "options": [
+                "La combustion chimique de l'hydrogène",
+                "La fusion nucléaire de l'hydrogène en hélium",
+                "La fission nucléaire de l'uranium",
+                "La collision de nuages de poussière interstellaire"
+              ],
+              "correctAnswer": "La fusion nucléaire de l'hydrogène en hélium",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment s'appelle le nuage de gaz et de poussière où se forment les étoiles ?",
+              "options": [
+                "Une comète",
+                "Une nébuleuse",
+                "Une pulsar",
+                "Une naine blanche"
+              ],
+              "correctAnswer": "Une nébuleuse",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le destin final d'une étoile de masse similaire à celle du Soleil ?",
+              "options": [
+                "Une supernova puis un trou noir",
+                "Une géante rouge puis une naine blanche",
+                "Une étoile à neutrons puis un pulsar",
+                "Une naine brune puis une planète gazeuse"
+              ],
+              "correctAnswer": "Une géante rouge puis une naine blanche",
+              "isSpecial": false
+            },
+            {
+              "question": "Que produit l'explosion d'une étoile très massive en fin de vie ?",
+              "options": [
+                "Une planète rocheuse",
+                "Une nébuleuse planétaire uniquement",
+                "Une supernova pouvant donner un trou noir ou une étoile à neutrons",
+                "Une géante rouge stable"
+              ],
+              "correctAnswer": "Une supernova pouvant donner un trou noir ou une étoile à neutrons",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle couleur ont les étoiles les plus chaudes ?",
+              "options": [
+                "Rouge",
+                "Jaune",
+                "Orange",
+                "Bleue ou blanche"
+              ],
+              "correctAnswer": "Bleue ou blanche",
+              "isSpecial": false
+            },
+            {
+              "question": "À quel type spectral appartient le Soleil ?",
+              "options": [
+                "Type O",
+                "Type G",
+                "Type M",
+                "Type B"
+              ],
+              "correctAnswer": "Type G",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le nom de notre galaxie ?",
+              "options": [
+                "Andromède",
+                "Le Grand Nuage de Magellan",
+                "La Voie lactée",
+                "Le Triangle"
+              ],
+              "correctAnswer": "La Voie lactée",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel facteur détermine principalement la durée de vie d'une étoile ?",
+              "options": [
+                "Sa couleur",
+                "Sa distance par rapport à la Terre",
+                "Sa masse",
+                "La composition de la nébuleuse dont elle est issue"
+              ],
+              "correctAnswer": "Sa masse",
+              "isSpecial": false
+            },
+            {
+              "question": "Combien d'étoiles la Voie lactée contient-elle approximativement ?",
+              "options": [
+                "Entre 1 et 10 millions",
+                "Entre 1 et 10 milliards",
+                "Entre 200 et 400 milliards",
+                "Plus de 1 000 milliards"
+              ],
+              "correctAnswer": "Entre 200 et 400 milliards",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans la séquence spectrale des étoiles (O, B, A, F, G, K, M), quel type regroupe les étoiles les plus froides et les plus nombreuses de l'univers ?",
+              "options": [
+                "Type O",
+                "Type A",
+                "Type F",
+                "Type M"
+              ],
+              "correctAnswer": "Type M",
+              "isSpecial": true
+            }
+          ]
         }
       ]
     }
@@ -26475,6 +23157,149 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": true
             }
           ]
+        },
+        {
+          "id": "maths-gen-4",
+          "title": "Aires et Périmètres",
+          "emoji": "📐",
+          "themeColor": "orange",
+          "badgeId": "maths-badge-4",
+          "badgeName": "Géomètre en herbe",
+          "badgeEmoji": "📏",
+          "cards": [
+            {
+              "title": "Le périmètre, c'est le tour !",
+              "text": "Le périmètre d'une figure est la longueur totale de son contour. Pour le calculer, on additionne la longueur de tous les côtés. Par exemple, un rectangle de 5 cm de long et 3 cm de large a un périmètre de 5+3+5+3 = 16 cm.",
+              "emoji": "🔄"
+            },
+            {
+              "title": "L'aire, c'est la surface",
+              "text": "L'aire mesure la surface intérieure d'une figure, c'est-à-dire la place qu'elle occupe. On l'exprime en unités carrées : cm², m², km²... Pour un rectangle, on multiplie la longueur par la largeur : Aire = longueur × largeur.",
+              "emoji": "🟦"
+            },
+            {
+              "title": "Carré et triangle",
+              "text": "Le périmètre d'un carré de côté c vaut 4×c, et son aire vaut c×c (ou c²). Pour un triangle, le périmètre est la somme de ses 3 côtés. L'aire d'un triangle se calcule avec : base × hauteur ÷ 2.",
+              "emoji": "🔺"
+            },
+            {
+              "title": "Le cercle : tour et surface",
+              "text": "Pour un cercle, le périmètre s'appelle la circonférence et se calcule avec la formule 2×π×r, où r est le rayon (environ 3,14 pour π). L'aire d'un cercle vaut π×r². Par exemple, un cercle de rayon 3 cm a une aire d'environ 28,3 cm².",
+              "emoji": "⭕"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Un rectangle mesure 8 cm de long et 4 cm de large. Quel est son périmètre ?",
+              "options": [
+                "32 cm",
+                "24 cm",
+                "12 cm",
+                "16 cm"
+              ],
+              "correctAnswer": "24 cm",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est l'aire d'un carré dont le côté mesure 6 cm ?",
+              "options": [
+                "24 cm²",
+                "12 cm²",
+                "36 cm²",
+                "30 cm²"
+              ],
+              "correctAnswer": "36 cm²",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment s'appelle la distance totale autour d'une figure ?",
+              "options": [
+                "L'aire",
+                "La hauteur",
+                "Le périmètre",
+                "La diagonale"
+              ],
+              "correctAnswer": "Le périmètre",
+              "isSpecial": false
+            },
+            {
+              "question": "Un triangle a des côtés de 5 cm, 7 cm et 9 cm. Quel est son périmètre ?",
+              "options": [
+                "21 cm",
+                "22 cm",
+                "20 cm",
+                "19 cm"
+              ],
+              "correctAnswer": "21 cm",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle formule permet de calculer l'aire d'un rectangle ?",
+              "options": [
+                "longueur + largeur",
+                "2 × (longueur + largeur)",
+                "longueur × largeur",
+                "longueur × largeur × 2"
+              ],
+              "correctAnswer": "longueur × largeur",
+              "isSpecial": false
+            },
+            {
+              "question": "Avec quelle unité exprime-t-on une aire ?",
+              "options": [
+                "cm",
+                "m",
+                "km",
+                "cm²"
+              ],
+              "correctAnswer": "cm²",
+              "isSpecial": false
+            },
+            {
+              "question": "Un triangle a une base de 10 cm et une hauteur de 6 cm. Quelle est son aire ?",
+              "options": [
+                "60 cm²",
+                "30 cm²",
+                "16 cm²",
+                "20 cm²"
+              ],
+              "correctAnswer": "30 cm²",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment appelle-t-on le périmètre d'un cercle ?",
+              "options": [
+                "Le rayon",
+                "Le diamètre",
+                "La circonférence",
+                "L'arc"
+              ],
+              "correctAnswer": "La circonférence",
+              "isSpecial": false
+            },
+            {
+              "question": "Un carré a un périmètre de 28 cm. Quelle est la longueur de son côté ?",
+              "options": [
+                "4 cm",
+                "7 cm",
+                "14 cm",
+                "8 cm"
+              ],
+              "correctAnswer": "7 cm",
+              "isSpecial": false
+            },
+            {
+              "question": "Un cercle a un rayon de 5 cm. Quelle est approximativement son aire (π ≈ 3,14) ?",
+              "options": [
+                "15,7 cm²",
+                "31,4 cm²",
+                "78,5 cm²",
+                "25 cm²"
+              ],
+              "correctAnswer": "78,5 cm²",
+              "isSpecial": true
+            }
+          ]
         }
       ],
       "difficile": [
@@ -28614,6 +25439,149 @@ export const UNIVERSES: Record<string, Universe> = {
                 "11 cm"
               ],
               "correctAnswer": "12 cm",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "maths-gen-5",
+          "title": "Aires et Périmètres",
+          "emoji": "📐",
+          "themeColor": "orange",
+          "badgeId": "maths-badge-5",
+          "badgeName": "Géomètre Expert",
+          "badgeEmoji": "📏",
+          "cards": [
+            {
+              "title": "Le périmètre d'une figure",
+              "text": "Le périmètre est la longueur totale du contour d'une figure plane. Pour un rectangle de longueur L et de largeur l, le périmètre vaut P = 2 × (L + l). Pour un carré de côté a, on obtient P = 4 × a.",
+              "emoji": "🔲"
+            },
+            {
+              "title": "L'aire d'une figure",
+              "text": "L'aire mesure la surface occupée par une figure, exprimée en unités carrées (cm², m², etc.). L'aire d'un rectangle est A = L × l, et l'aire d'un carré est A = a². Pour un triangle de base b et de hauteur h, l'aire vaut A = (b × h) / 2.",
+              "emoji": "🟦"
+            },
+            {
+              "title": "Le cercle : circonférence et aire",
+              "text": "Pour un cercle de rayon r, la circonférence (périmètre) est C = 2 × π × r, et l'aire est A = π × r². Le nombre π vaut environ 3,14. Si le diamètre d est donné, le rayon est r = d / 2.",
+              "emoji": "⭕"
+            },
+            {
+              "title": "Figures composées et conversions d'unités",
+              "text": "Une figure composée se décompose en formes simples dont on additionne les aires. Il faut aussi maîtriser les conversions : 1 m² = 10 000 cm², et 1 cm² = 100 mm². Attention à toujours utiliser la même unité dans tous les calculs.",
+              "emoji": "🔷"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Un rectangle a une longueur de 8 cm et une largeur de 5 cm. Quel est son périmètre ?",
+              "options": [
+                "40 cm",
+                "26 cm",
+                "13 cm",
+                "20 cm"
+              ],
+              "correctAnswer": "26 cm",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est l'aire d'un carré dont le côté mesure 7 m ?",
+              "options": [
+                "49 m²",
+                "28 m²",
+                "14 m²",
+                "21 m²"
+              ],
+              "correctAnswer": "49 m²",
+              "isSpecial": false
+            },
+            {
+              "question": "Un triangle a une base de 10 cm et une hauteur de 6 cm. Quelle est son aire ?",
+              "options": [
+                "60 cm²",
+                "30 cm²",
+                "16 cm²",
+                "120 cm²"
+              ],
+              "correctAnswer": "30 cm²",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le périmètre d'un cercle de rayon 5 cm ? (π ≈ 3,14)",
+              "options": [
+                "31,4 cm",
+                "15,7 cm",
+                "78,5 cm",
+                "10 cm"
+              ],
+              "correctAnswer": "31,4 cm",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est l'aire d'un cercle de diamètre 6 cm ? (π ≈ 3,14)",
+              "options": [
+                "18,84 cm²",
+                "28,26 cm²",
+                "113,04 cm²",
+                "37,68 cm²"
+              ],
+              "correctAnswer": "28,26 cm²",
+              "isSpecial": false
+            },
+            {
+              "question": "Combien vaut 3 m² en cm² ?",
+              "options": [
+                "300 cm²",
+                "3 000 cm²",
+                "30 000 cm²",
+                "300 000 cm²"
+              ],
+              "correctAnswer": "30 000 cm²",
+              "isSpecial": false
+            },
+            {
+              "question": "Une figure est composée d'un rectangle de 6 cm × 4 cm et d'un carré de 3 cm de côté. Quelle est l'aire totale de cette figure ?",
+              "options": [
+                "33 cm²",
+                "27 cm²",
+                "30 cm²",
+                "36 cm²"
+              ],
+              "correctAnswer": "33 cm²",
+              "isSpecial": false
+            },
+            {
+              "question": "Le périmètre d'un carré est 36 cm. Quelle est son aire ?",
+              "options": [
+                "81 cm²",
+                "144 cm²",
+                "36 cm²",
+                "18 cm²"
+              ],
+              "correctAnswer": "81 cm²",
+              "isSpecial": false
+            },
+            {
+              "question": "Pour doubler l'aire d'un carré de côté a, par quel facteur faut-il multiplier son côté ?",
+              "options": [
+                "Par 2",
+                "Par 4",
+                "Par la racine carrée de 2",
+                "Par 2 au carré"
+              ],
+              "correctAnswer": "Par la racine carrée de 2",
+              "isSpecial": false
+            },
+            {
+              "question": "Un terrain rectangulaire a un périmètre de 60 m et une largeur de 12 m. Quelle est son aire ?",
+              "options": [
+                "216 m²",
+                "360 m²",
+                "720 m²",
+                "180 m²"
+              ],
+              "correctAnswer": "216 m²",
               "isSpecial": true
             }
           ]
@@ -30990,6 +27958,292 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": true
             }
           ]
+        },
+        {
+          "id": "geography-gen-6",
+          "title": "Fleuves et Montagnes du Monde",
+          "emoji": "🏔️",
+          "themeColor": "cyan",
+          "badgeId": "geography-badge-6",
+          "badgeName": "Explorateur Terrestre",
+          "badgeEmoji": "🌍",
+          "cards": [
+            {
+              "title": "Les grands fleuves du monde",
+              "text": "Un fleuve est un cours d'eau qui se jette dans la mer ou l'océan. L'Amazone en Amérique du Sud est le plus grand fleuve du monde en volume d'eau, tandis que le Nil en Afrique est souvent considéré comme le plus long, avec environ 6 650 km.",
+              "emoji": "🌊"
+            },
+            {
+              "title": "Les fleuves en Europe et en Asie",
+              "text": "En Europe, le Danube traverse 10 pays et se jette dans la mer Noire, ce qui en fait le fleuve qui passe par le plus de pays au monde. En Asie, le Yangtsé en Chine est le plus long fleuve du continent avec plus de 6 300 km.",
+              "emoji": "🚣"
+            },
+            {
+              "title": "Les grandes chaînes de montagnes",
+              "text": "Les montagnes se regroupent souvent en longues chaînes. L'Himalaya en Asie abrite les plus hauts sommets de la planète, dont l'Everest (8 849 m). En Amérique du Sud, les Andes forment la plus longue chaîne de montagnes du monde avec plus de 7 000 km.",
+              "emoji": "⛰️"
+            },
+            {
+              "title": "Les montagnes en Europe et ailleurs",
+              "text": "En Europe, les Alpes séparent la France, la Suisse et l'Italie, avec le mont Blanc comme point culminant à 4 808 m. En Amérique du Nord, les Rocheuses s'étendent du Canada jusqu'au Mexique sur plus de 4 800 km de longueur.",
+              "emoji": "🏕️"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Quel est le fleuve considéré comme le plus long d'Afrique ?",
+              "options": [
+                "Le Congo",
+                "Le Nil",
+                "Le Niger",
+                "Le Zambèze"
+              ],
+              "correctAnswer": "Le Nil",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans quel continent se trouve le fleuve Amazone ?",
+              "options": [
+                "Afrique",
+                "Asie",
+                "Amérique du Nord",
+                "Amérique du Sud"
+              ],
+              "correctAnswer": "Amérique du Sud",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le plus haut sommet du monde ?",
+              "options": [
+                "Le mont Blanc",
+                "Le K2",
+                "L'Everest",
+                "L'Aconcagua"
+              ],
+              "correctAnswer": "L'Everest",
+              "isSpecial": false
+            },
+            {
+              "question": "Combien de pays le Danube traverse-t-il ?",
+              "options": [
+                "5",
+                "7",
+                "10",
+                "14"
+              ],
+              "correctAnswer": "10",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans quelle mer ou quel océan se jette le Danube ?",
+              "options": [
+                "La mer Méditerranée",
+                "La mer Noire",
+                "L'océan Atlantique",
+                "La mer du Nord"
+              ],
+              "correctAnswer": "La mer Noire",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est la plus longue chaîne de montagnes du monde ?",
+              "options": [
+                "Les Alpes",
+                "Les Rocheuses",
+                "Les Andes",
+                "L'Himalaya"
+              ],
+              "correctAnswer": "Les Andes",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le point culminant des Alpes ?",
+              "options": [
+                "Le mont Blanc",
+                "L'Everest",
+                "Le Cervin",
+                "Le mont Rose"
+              ],
+              "correctAnswer": "Le mont Blanc",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans quel pays asiatique se trouve le fleuve Yangtsé ?",
+              "options": [
+                "Inde",
+                "Japon",
+                "Chine",
+                "Corée du Sud"
+              ],
+              "correctAnswer": "Chine",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle caractéristique principale définit un fleuve (par opposition à une rivière) ?",
+              "options": [
+                "Sa longueur supérieure à 1 000 km",
+                "Son débit très important",
+                "Il se jette dans la mer ou l'océan",
+                "Il traverse plusieurs pays"
+              ],
+              "correctAnswer": "Il se jette dans la mer ou l'océan",
+              "isSpecial": false
+            },
+            {
+              "question": "À quelle altitude se trouve le sommet de l'Everest ?",
+              "options": [
+                "7 542 m",
+                "8 187 m",
+                "8 849 m",
+                "9 012 m"
+              ],
+              "correctAnswer": "8 849 m",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "geography-gen-7",
+          "title": "Climats et Milieux du Monde",
+          "emoji": "🌍",
+          "themeColor": "cyan",
+          "badgeId": "geography-badge-7",
+          "badgeName": "Explorateur des Milieux",
+          "badgeEmoji": "🌿",
+          "cards": [
+            {
+              "title": "Qu'est-ce que le climat ?",
+              "text": "Le climat, c'est l'ensemble des conditions météorologiques (température, pluie, vent) observées dans une région sur de longues années. Il ne faut pas confondre le climat avec la météo : la météo indique ce qu'il fait aujourd'hui, le climat décrit ce qui est habituel sur des décennies.",
+              "emoji": "🌡️"
+            },
+            {
+              "title": "Les grands types de climat",
+              "text": "On distingue plusieurs grandes zones climatiques sur Terre : le climat équatorial (chaud et très humide toute l'année), le climat tropical (saison sèche et saison des pluies), le climat tempéré (quatre saisons distinctes) et le climat polaire (froid extrême toute l'année). L'altitude et la proximité de la mer influencent aussi le climat d'une région.",
+              "emoji": "🗺️"
+            },
+            {
+              "title": "Les milieux naturels",
+              "text": "Chaque type de climat correspond à un milieu naturel particulier, c'est-à-dire un paysage avec une végétation et des animaux adaptés. Par exemple, la forêt équatoriale dense pousse dans les zones chaudes et humides, tandis que la toundra, un milieu quasi désertique très froid, se trouve près des pôles.",
+              "emoji": "🌳"
+            },
+            {
+              "title": "Zones arides et désertiques",
+              "text": "Les déserts chauds, comme le Sahara, se forment dans des régions où les précipitations sont très rares, souvent moins de 250 mm par an. Les plantes et animaux qui y vivent ont développé des adaptations remarquables, comme le chameau qui stocke l'énergie dans sa bosse, ou les cactus qui retiennent l'eau dans leurs tiges.",
+              "emoji": "🏜️"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Quelle est la différence principale entre le climat et la météo ?",
+              "options": [
+                "La météo concerne toute la planète, le climat une seule ville",
+                "Le climat décrit les conditions habituelles sur de longues années, la météo indique ce qu'il fait aujourd'hui",
+                "La météo est plus précise que le climat",
+                "Le climat change chaque jour, la météo reste stable"
+              ],
+              "correctAnswer": "Le climat décrit les conditions habituelles sur de longues années, la météo indique ce qu'il fait aujourd'hui",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel climat est caractérisé par une saison sèche et une saison des pluies ?",
+              "options": [
+                "Le climat polaire",
+                "Le climat équatorial",
+                "Le climat tropical",
+                "Le climat tempéré"
+              ],
+              "correctAnswer": "Le climat tropical",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans quel type de milieu naturel pousse la forêt équatoriale dense ?",
+              "options": [
+                "Dans les régions froides et sèches",
+                "Dans les régions chaudes et humides toute l'année",
+                "Dans les régions tempérées aux quatre saisons",
+                "Dans les régions désertiques"
+              ],
+              "correctAnswer": "Dans les régions chaudes et humides toute l'année",
+              "isSpecial": false
+            },
+            {
+              "question": "Combien de saisons distinctes compte le climat tempéré ?",
+              "options": [
+                "Deux saisons",
+                "Trois saisons",
+                "Quatre saisons",
+                "Une seule saison"
+              ],
+              "correctAnswer": "Quatre saisons",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel désert chaud est mentionné comme exemple de zone aride ?",
+              "options": [
+                "Le désert d'Atacama",
+                "Le désert de Gobi",
+                "Le Sahara",
+                "Le désert de Namib"
+              ],
+              "correctAnswer": "Le Sahara",
+              "isSpecial": false
+            },
+            {
+              "question": "Où se situe la toundra, ce milieu naturel quasi désertique et très froid ?",
+              "options": [
+                "Près de l'équateur",
+                "Dans les zones tropicales",
+                "Dans les régions tempérées",
+                "Près des pôles"
+              ],
+              "correctAnswer": "Près des pôles",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le seuil habituel de précipitations annuelles en dessous duquel une région est considérée comme désertique ?",
+              "options": [
+                "Moins de 100 mm par an",
+                "Moins de 250 mm par an",
+                "Moins de 500 mm par an",
+                "Moins de 750 mm par an"
+              ],
+              "correctAnswer": "Moins de 250 mm par an",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle adaptation du chameau lui permet de survivre dans le désert ?",
+              "options": [
+                "Il transpire beaucoup pour se rafraîchir",
+                "Il stocke de l'eau dans ses poumons",
+                "Il stocke de l'énergie dans sa bosse",
+                "Il hiberne pendant les périodes les plus chaudes"
+              ],
+              "correctAnswer": "Il stocke de l'énergie dans sa bosse",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel facteur, en plus de la latitude, peut influencer le climat d'une région ?",
+              "options": [
+                "La couleur du sol",
+                "La densité de population",
+                "L'altitude et la proximité de la mer",
+                "La superficie du pays"
+              ],
+              "correctAnswer": "L'altitude et la proximité de la mer",
+              "isSpecial": false
+            },
+            {
+              "question": "Le climat équatorial se distingue des autres par une caractéristique très précise : laquelle ?",
+              "options": [
+                "Il alterne une longue saison froide et une courte saison chaude",
+                "Il est chaud et très humide toute l'année, sans saison sèche",
+                "Il présente de fortes amplitudes thermiques entre le jour et la nuit uniquement",
+                "Il est froid et sec toute l'année avec peu de précipitations"
+              ],
+              "correctAnswer": "Il est chaud et très humide toute l'année, sans saison sèche",
+              "isSpecial": true
+            }
+          ]
         }
       ],
       "difficile": [
@@ -33351,6 +30605,292 @@ export const UNIVERSES: Record<string, Universe> = {
                 "La formation des cyclones tropicaux et la stabilite climatique des zones arctiques"
               ],
               "correctAnswer": "Les pluies intenses des forets tropicales equatoriales et la formation des grands deserts chauds aux tropiques",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "geography-gen-8",
+          "title": "Fleuves et Montagnes du Monde",
+          "emoji": "🏔️",
+          "themeColor": "cyan",
+          "badgeId": "geography-badge-8",
+          "badgeName": "Explorateur des Reliefs",
+          "badgeEmoji": "🗻",
+          "cards": [
+            {
+              "title": "Les plus grands fleuves",
+              "text": "Le Nil (6 650 km) et l'Amazone (6 400 km) se disputent le titre de plus long fleuve du monde, mais c'est l'Amazone qui détient le plus grand débit, représentant à lui seul 20 % des eaux douces déversées dans les océans. Le fleuve Yangtsé (6 300 km) est le plus long d'Asie et traverse la Chine d'ouest en est.",
+              "emoji": "🌊"
+            },
+            {
+              "title": "Les grandes chaînes de montagnes",
+              "text": "L'Himalaya, en Asie, abrite les 14 sommets dépassant 8 000 mètres, dont l'Everest (8 849 m), le point culminant de la planète. Les Andes, en Amérique du Sud, forment la plus longue chaîne de montagnes du monde avec environ 7 000 km de longueur. En Europe, les Alpes séparent l'Europe du Nord de la Méditerranée et culminent au mont Blanc (4 808 m).",
+              "emoji": "⛰️"
+            },
+            {
+              "title": "Fleuves et civilisations",
+              "text": "De nombreuses grandes civilisations se sont développées le long des fleuves : l'Égypte ancienne au bord du Nil, la Mésopotamie entre le Tigre et l'Euphrate, et la civilisation de l'Indus au Pakistan actuel. Ces fleuves assuraient l'irrigation des champs, le transport et la communication entre les populations. Aujourd'hui encore, le Congo, le Mississippi et le Gange sont des artères vitales pour des centaines de millions de personnes.",
+              "emoji": "🏛️"
+            },
+            {
+              "title": "Reliefs et records géographiques",
+              "text": "La fosse des Mariannes (−10 994 m) est le point le plus bas de la croûte terrestre, tandis que l'Everest en est le point le plus haut, soit un écart de près de 20 km. Le Kilimandjaro (5 895 m) est le plus haut sommet d'Afrique et se trouve en Tanzanie, isolé dans la savane. Le fleuve Volga (3 530 km) est le plus long d'Europe et se jette dans la mer Caspienne, non dans un océan.",
+              "emoji": "📏"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Quel fleuve possède le plus grand débit d'eau au monde ?",
+              "options": [
+                "Le Nil",
+                "Le Mississippi",
+                "L'Amazone",
+                "Le Congo"
+              ],
+              "correctAnswer": "L'Amazone",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est la plus longue chaîne de montagnes du monde ?",
+              "options": [
+                "L'Himalaya",
+                "Les Andes",
+                "Les Rocheuses",
+                "Les Alpes"
+              ],
+              "correctAnswer": "Les Andes",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans quelle mer ou océan se jette le fleuve Volga ?",
+              "options": [
+                "La mer Noire",
+                "La mer Baltique",
+                "L'océan Arctique",
+                "La mer Caspienne"
+              ],
+              "correctAnswer": "La mer Caspienne",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est l'altitude officielle du mont Everest ?",
+              "options": [
+                "8 611 m",
+                "8 849 m",
+                "8 516 m",
+                "9 002 m"
+              ],
+              "correctAnswer": "8 849 m",
+              "isSpecial": false
+            },
+            {
+              "question": "Entre quels deux fleuves la civilisation mésopotamienne s'est-elle développée ?",
+              "options": [
+                "Le Nil et l'Indus",
+                "Le Gange et le Brahmapoutre",
+                "Le Tigre et l'Euphrate",
+                "Le Jourdain et le Jourdain"
+              ],
+              "correctAnswer": "Le Tigre et l'Euphrate",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le plus haut sommet d'Afrique ?",
+              "options": [
+                "Le mont Kenya",
+                "Le Kilimandjaro",
+                "Le mont Atlas",
+                "Le Ras Dashen"
+              ],
+              "correctAnswer": "Le Kilimandjaro",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle proportion des eaux douces mondiales l'Amazone déverse-t-il dans l'océan ?",
+              "options": [
+                "5 %",
+                "10 %",
+                "20 %",
+                "35 %"
+              ],
+              "correctAnswer": "20 %",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le plus long fleuve d'Asie ?",
+              "options": [
+                "Le Gange",
+                "L'Ob",
+                "Le Mékong",
+                "Le Yangtsé"
+              ],
+              "correctAnswer": "Le Yangtsé",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans quel pays se trouve le Kilimandjaro ?",
+              "options": [
+                "Kenya",
+                "Éthiopie",
+                "Tanzanie",
+                "Ouganda"
+              ],
+              "correctAnswer": "Tanzanie",
+              "isSpecial": false
+            },
+            {
+              "question": "Combien de sommets dépassent 8 000 mètres d'altitude dans le monde, tous situés en Himalaya et Karakoram ?",
+              "options": [
+                "8",
+                "11",
+                "14",
+                "17"
+              ],
+              "correctAnswer": "14",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "geography-gen-9",
+          "title": "Zones Climatiques et Milieux Naturels",
+          "emoji": "🌍",
+          "themeColor": "cyan",
+          "badgeId": "geography-badge-9",
+          "badgeName": "Expert Climatique",
+          "badgeEmoji": "🌦️",
+          "cards": [
+            {
+              "title": "Les grandes zones climatiques",
+              "text": "La Terre est divisée en trois grandes zones climatiques : la zone intertropicale (chaude et humide autour de l'équateur), les zones tempérées (saisons marquées entre les tropiques et les cercles polaires), et les zones polaires (froid extrême toute l'année). La répartition de ces zones dépend principalement de l'angle d'incidence des rayons solaires selon la latitude.",
+              "emoji": "🌐"
+            },
+            {
+              "title": "Le climat équatorial et tropical",
+              "text": "Le climat équatorial, centré sur l'équateur, se caractérise par des températures élevées constantes (25–28 °C) et des précipitations abondantes toute l'année, favorisant la forêt dense. Le climat tropical, légèrement plus éloigné de l'équateur, alterne entre une saison sèche et une saison des pluies, donnant naissance aux savanes et aux forêts claires.",
+              "emoji": "🌴"
+            },
+            {
+              "title": "Aridité, froid et altitude",
+              "text": "Les déserts chauds (comme le Sahara) résultent d'une aridité extrême due à la subsidence de l'air sec sous les hautes pressions subtropicales. Les milieux froids (toundra, taïga) occupent les hautes latitudes où les hivers sont longs et rigoureux ; la végétation y est rare ou constituée de conifères. L'altitude crée également des étages climatiques : plus on monte, plus la température chute et la végétation se clairsème.",
+              "emoji": "🏔️"
+            },
+            {
+              "title": "Interactions climat-biomes",
+              "text": "Un biome est un grand ensemble naturel défini par son climat et sa végétation caractéristique, comme la forêt tropicale humide, la steppe, ou la forêt tempérée. Le changement climatique actuel déplace les limites des biomes : la désertification progresse vers le nord en Afrique sahélienne, et la toundra recule face au réchauffement arctique. Ces déplacements bouleversent les écosystèmes et les populations qui en dépendent.",
+              "emoji": "🌿"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Quelle zone climatique reçoit les rayons solaires avec l'angle d'incidence le plus direct tout au long de l'année ?",
+              "options": [
+                "La zone tempérée",
+                "La zone polaire",
+                "La zone intertropicale",
+                "La zone boréale"
+              ],
+              "correctAnswer": "La zone intertropicale",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est la principale différence entre le climat équatorial et le climat tropical ?",
+              "options": [
+                "Le climat tropical est plus froid que le climat équatorial",
+                "Le climat tropical présente une saison sèche, absente du climat équatorial",
+                "Le climat équatorial n'a pas de précipitations",
+                "Le climat tropical est uniquement présent en Amérique du Sud"
+              ],
+              "correctAnswer": "Le climat tropical présente une saison sèche, absente du climat équatorial",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel type de végétation est caractéristique du climat tropical avec saison sèche ?",
+              "options": [
+                "La forêt dense équatoriale",
+                "La toundra",
+                "La savane",
+                "La taïga"
+              ],
+              "correctAnswer": "La savane",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est la cause principale de l'aridité des grands déserts chauds subtropicaux comme le Sahara ?",
+              "options": [
+                "La proximité de l'équateur",
+                "La subsidence de l'air sec sous les hautes pressions subtropicales",
+                "La grande distance aux océans",
+                "Les vents polaires descendant vers les tropiques"
+              ],
+              "correctAnswer": "La subsidence de l'air sec sous les hautes pressions subtropicales",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment s'appelle la vaste forêt de conifères qui s'étend en Sibérie, au Canada et en Scandinavie ?",
+              "options": [
+                "La toundra",
+                "La steppe",
+                "La taïga",
+                "La pampa"
+              ],
+              "correctAnswer": "La taïga",
+              "isSpecial": false
+            },
+            {
+              "question": "Qu'est-ce qu'un biome ?",
+              "options": [
+                "Une carte météorologique à grande échelle",
+                "Un ensemble naturel défini par son climat et sa végétation caractéristique",
+                "Un phénomène de précipitation extrême",
+                "Une zone protégée par l'UNESCO"
+              ],
+              "correctAnswer": "Un ensemble naturel défini par son climat et sa végétation caractéristique",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est la conséquence directe de l'augmentation de l'altitude sur le climat ?",
+              "options": [
+                "Les précipitations augmentent et les températures restent stables",
+                "Les températures augmentent et la végétation s'enrichit",
+                "Les températures chutent et la végétation se clairsème",
+                "L'humidité de l'air augmente fortement"
+              ],
+              "correctAnswer": "Les températures chutent et la végétation se clairsème",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel phénomène climatique désigne l'avancée du désert sur des terres autrefois végétalisées ?",
+              "options": [
+                "L'albédo",
+                "La désertification",
+                "La convection thermique",
+                "La déforestation"
+              ],
+              "correctAnswer": "La désertification",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans quel type de milieu naturel retrouve-t-on essentiellement la toundra ?",
+              "options": [
+                "Autour de l'équateur dans les zones très humides",
+                "Dans les régions tempérées à quatre saisons",
+                "Aux hautes latitudes proches des cercles polaires",
+                "Dans les régions arides subtropicales"
+              ],
+              "correctAnswer": "Aux hautes latitudes proches des cercles polaires",
+              "isSpecial": false
+            },
+            {
+              "question": "En géographie climatique, qu'est-ce que l'isotherme 10 °C de juillet permet de délimiter approximativement ?",
+              "options": [
+                "La frontière entre les zones désertiques chaudes et les savanes",
+                "La limite nord de la forêt boréale (taïga) et le début de la toundra",
+                "La zone de convergence intertropicale",
+                "La frontière entre les climat méditerranéens et océaniques"
+              ],
+              "correctAnswer": "La limite nord de la forêt boréale (taïga) et le début de la toundra",
               "isSpecial": true
             }
           ]
@@ -35870,6 +33410,149 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": true
             }
           ]
+        },
+        {
+          "id": "french-gen-10",
+          "title": "Les Figures de Style",
+          "emoji": "✍️",
+          "themeColor": "violet",
+          "badgeId": "french-badge-10",
+          "badgeName": "Maître des Mots",
+          "badgeEmoji": "🖊️",
+          "cards": [
+            {
+              "title": "La comparaison",
+              "text": "La comparaison rapproche deux éléments à l'aide d'un mot outil comme « comme », « tel » ou « pareil à ». Par exemple : « Il court comme le vent » montre une ressemblance entre la vitesse d'une personne et celle du vent. C'est la figure de style la plus facile à repérer grâce à ces petits mots.",
+              "emoji": "🔍"
+            },
+            {
+              "title": "La métaphore",
+              "text": "La métaphore compare deux choses sans utiliser de mot outil : elle dit directement qu'une chose EN EST une autre. Par exemple : « Ce lion de rugbyman a gagné le match » signifie que le joueur est fort et courageux comme un lion. La métaphore rend le texte plus expressif et plus imagé.",
+              "emoji": "🦁"
+            },
+            {
+              "title": "La personnification et l'hyperbole",
+              "text": "La personnification donne des actions ou des sentiments humains à un objet ou un animal : « Le vent chuchotait entre les arbres ». L'hyperbole, elle, exagère volontairement pour frapper les esprits : « J'ai une faim de loup » ou « Je te l'ai dit mille fois ». Ces deux figures rendent le langage plus vivant et expressif.",
+              "emoji": "🌬️"
+            },
+            {
+              "title": "L'anaphore et l'allitération",
+              "text": "L'anaphore consiste à répéter un même mot ou groupe de mots au début de plusieurs phrases ou vers, pour créer un effet de rythme et d'insistance. L'allitération est la répétition d'un même son consonantique dans une suite de mots proches, comme « Pour qui sont ces serpents qui sifflent sur vos têtes ». Ces figures jouent sur la musicalité du langage.",
+              "emoji": "🎵"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Quelle figure de style utilise un mot outil comme « comme » ou « tel » pour rapprocher deux éléments ?",
+              "options": [
+                "La métaphore",
+                "La comparaison",
+                "L'anaphore",
+                "La personnification"
+              ],
+              "correctAnswer": "La comparaison",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans la phrase « Ses yeux sont des étoiles », quelle figure de style est utilisée ?",
+              "options": [
+                "La comparaison",
+                "L'hyperbole",
+                "La métaphore",
+                "L'allitération"
+              ],
+              "correctAnswer": "La métaphore",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est la différence principale entre la comparaison et la métaphore ?",
+              "options": [
+                "La métaphore est toujours plus longue",
+                "La comparaison utilise un mot outil, la métaphore non",
+                "La métaphore ne concerne que les animaux",
+                "La comparaison ne peut pas parler de personnes"
+              ],
+              "correctAnswer": "La comparaison utilise un mot outil, la métaphore non",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans la phrase « Le soleil se levait et souriait sur la ville », quelle figure de style reconnaît-on ?",
+              "options": [
+                "L'hyperbole",
+                "La comparaison",
+                "L'allitération",
+                "La personnification"
+              ],
+              "correctAnswer": "La personnification",
+              "isSpecial": false
+            },
+            {
+              "question": "L'hyperbole est une figure qui consiste à...",
+              "options": [
+                "répéter un mot en début de phrase",
+                "comparer deux choses avec un mot outil",
+                "exagérer volontairement pour frapper les esprits",
+                "donner des sentiments à un objet"
+              ],
+              "correctAnswer": "exagérer volontairement pour frapper les esprits",
+              "isSpecial": false
+            },
+            {
+              "question": "Laquelle de ces phrases contient une hyperbole ?",
+              "options": [
+                "Il court comme une gazelle",
+                "Le vent murmurait doucement",
+                "J'ai attendu une éternité à la caisse",
+                "Les feuilles dorées tombaient une à une"
+              ],
+              "correctAnswer": "J'ai attendu une éternité à la caisse",
+              "isSpecial": false
+            },
+            {
+              "question": "L'anaphore repose sur la répétition...",
+              "options": [
+                "d'un même son à la fin des mots",
+                "d'un mot ou groupe de mots en début de plusieurs phrases",
+                "d'une même image tout au long du texte",
+                "d'une exagération dans chaque phrase"
+              ],
+              "correctAnswer": "d'un mot ou groupe de mots en début de plusieurs phrases",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans le vers « Pour qui sont ces serpents qui sifflent sur vos têtes », quel son est répété pour créer une allitération ?",
+              "options": [
+                "Le son « p »",
+                "Le son « s »",
+                "Le son « t »",
+                "Le son « r »"
+              ],
+              "correctAnswer": "Le son « s »",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle figure de style donne des caractéristiques humaines à un élément non humain ?",
+              "options": [
+                "L'hyperbole",
+                "La métaphore",
+                "La personnification",
+                "La comparaison"
+              ],
+              "correctAnswer": "La personnification",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans le poème « Rome, l'unique objet de mon ressentiment ! / Rome, à qui vient ton bras d'immoler mon amant ! », quelle figure de style est clairement utilisée ?",
+              "options": [
+                "L'allitération",
+                "La métaphore",
+                "L'anaphore",
+                "L'hyperbole"
+              ],
+              "correctAnswer": "L'anaphore",
+              "isSpecial": true
+            }
+          ]
         }
       ],
       "difficile": [
@@ -38377,6 +36060,149 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": true
             }
           ]
+        },
+        {
+          "id": "french-gen-11",
+          "title": "Les Figures de Style",
+          "emoji": "🎭",
+          "themeColor": "violet",
+          "badgeId": "french-badge-11",
+          "badgeName": "Maître du Langage",
+          "badgeEmoji": "✍️",
+          "cards": [
+            {
+              "title": "La comparaison et la métaphore",
+              "text": "La comparaison établit un lien explicite entre deux éléments à l'aide d'un outil comparatif (comme, tel, ainsi que) : « Il est fort comme un lion ». La métaphore fait la même chose mais de façon implicite, sans outil comparatif : « C'est un lion sur le terrain » suggère la force sans la nommer directement.",
+              "emoji": "🦁"
+            },
+            {
+              "title": "La personnification et l'allégorie",
+              "text": "La personnification attribue des caractéristiques humaines à un objet ou un animal : « Le vent murmure entre les arbres ». L'allégorie est une figure plus étendue qui représente une idée abstraite sous une forme concrète ou humaine, comme peindre la Mort sous les traits d'un squelette à la faux.",
+              "emoji": "🌬️"
+            },
+            {
+              "title": "L'hyperbole et la litote",
+              "text": "L'hyperbole consiste à exagérer volontairement pour renforcer l'effet : « Je t'ai attendu une éternité ! » L'antithèse entre l'hyperbole et la litote est frappante : la litote dit moins pour suggérer plus, en atténuant l'expression pour en renforcer le sens — « Ce n'est pas mal » pour dire que c'est excellent.",
+              "emoji": "📢"
+            },
+            {
+              "title": "L'anaphore, l'antithèse et l'oxymore",
+              "text": "L'anaphore répète un mot ou un groupe de mots en début de phrases ou de vers pour créer un effet rythmique et insistant, comme dans « Je veux, je veux… ». L'antithèse oppose deux idées contraires dans la même phrase : « L'homme est un loup pour l'homme ». L'oxymore réunit deux termes contradictoires en une seule expression : « une obscure clarté ».",
+              "emoji": "🔄"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Dans la phrase « Ses yeux sont deux étoiles brillantes », quelle figure de style est utilisée ?",
+              "options": [
+                "Une hyperbole",
+                "Une comparaison",
+                "Une métaphore",
+                "Une anaphore"
+              ],
+              "correctAnswer": "Une métaphore",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel outil grammatical distingue la comparaison de la métaphore ?",
+              "options": [
+                "Un adverbe de manière",
+                "Un outil comparatif (comme, tel…)",
+                "Un verbe à l'infinitif",
+                "Un pronom relatif"
+              ],
+              "correctAnswer": "Un outil comparatif (comme, tel…)",
+              "isSpecial": false
+            },
+            {
+              "question": "« Le vent hurle dans la nuit » est un exemple de quelle figure de style ?",
+              "options": [
+                "Une litote",
+                "Une allégorie",
+                "Une personnification",
+                "Un oxymore"
+              ],
+              "correctAnswer": "Une personnification",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est la différence entre la personnification et l'allégorie ?",
+              "options": [
+                "La personnification porte sur un seul mot, l'allégorie est une représentation étendue d'une idée abstraite",
+                "La personnification est réservée aux animaux, l'allégorie aux objets",
+                "L'allégorie est une forme d'hyperbole, la personnification non",
+                "Elles sont synonymes et interchangeables"
+              ],
+              "correctAnswer": "La personnification porte sur un seul mot, l'allégorie est une représentation étendue d'une idée abstraite",
+              "isSpecial": false
+            },
+            {
+              "question": "Laquelle de ces phrases contient une hyperbole ?",
+              "options": [
+                "Il marche lentement",
+                "Je suis un peu fatigué",
+                "J'ai un million de choses à faire ce soir",
+                "Il pleut dehors"
+              ],
+              "correctAnswer": "J'ai un million de choses à faire ce soir",
+              "isSpecial": false
+            },
+            {
+              "question": "« Ce n'est pas mal du tout » pour exprimer une grande admiration est un exemple de :",
+              "options": [
+                "Métaphore",
+                "Litote",
+                "Hyperbole",
+                "Anaphore"
+              ],
+              "correctAnswer": "Litote",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans quelle figure de style répète-t-on un même mot ou groupe de mots en début de plusieurs phrases ou vers ?",
+              "options": [
+                "L'antithèse",
+                "L'oxymore",
+                "L'anaphore",
+                "La comparaison"
+              ],
+              "correctAnswer": "L'anaphore",
+              "isSpecial": false
+            },
+            {
+              "question": "Laquelle de ces expressions est un oxymore ?",
+              "options": [
+                "Doux comme un agneau",
+                "Une douce violence",
+                "Il criait très fort",
+                "Aussi grand que la tour"
+              ],
+              "correctAnswer": "Une douce violence",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans la phrase « Demain, dès l'aube… je partirai. Demain, je te verrai. Demain, tout changera. », quelle figure de style est principalement utilisée ?",
+              "options": [
+                "La litote",
+                "L'anaphore",
+                "La métaphore",
+                "La personnification"
+              ],
+              "correctAnswer": "L'anaphore",
+              "isSpecial": false
+            },
+            {
+              "question": "L'antithèse et l'oxymore rapprochent tous deux des contraires. Quelle est leur différence fondamentale ?",
+              "options": [
+                "L'antithèse oppose deux idées dans des propositions séparées, l'oxymore fusionne deux termes contradictoires en une seule expression",
+                "L'oxymore est une forme de comparaison, l'antithèse non",
+                "L'antithèse est une figure de son, l'oxymore une figure de sens",
+                "L'oxymore ne s'utilise qu'en poésie, l'antithèse qu'en prose"
+              ],
+              "correctAnswer": "L'antithèse oppose deux idées dans des propositions séparées, l'oxymore fusionne deux termes contradictoires en une seule expression",
+              "isSpecial": true
+            }
+          ]
         }
       ]
     }
@@ -40778,6 +38604,149 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": true
             }
           ]
+        },
+        {
+          "id": "arts-gen-12",
+          "title": "Courants de Peinture",
+          "emoji": "🖼️",
+          "themeColor": "pink",
+          "badgeId": "arts-badge-12",
+          "badgeName": "Connaisseur d'Art",
+          "badgeEmoji": "🎨",
+          "cards": [
+            {
+              "title": "La Renaissance",
+              "text": "La Renaissance (XVe-XVIe siècle) est un courant né en Italie où les artistes redécouvrent les idéaux de l'Antiquité. Des peintres comme Léonard de Vinci et Raphaël cherchent à représenter le monde de façon réaliste, en utilisant la perspective et en étudiant le corps humain.",
+              "emoji": "🏛️"
+            },
+            {
+              "title": "Le Baroque et le Classicisme",
+              "text": "Au XVIIe siècle, le Baroque se caractérise par des compositions dramatiques, des jeux de lumière intenses et des émotions exagérées, comme dans les œuvres du Caravage. Le Classicisme, lui, préfère l'ordre, l'équilibre et la clarté, en s'inspirant de la mythologie et de l'histoire.",
+              "emoji": "🕯️"
+            },
+            {
+              "title": "Le Romantisme et le Réalisme",
+              "text": "Au XIXe siècle, le Romantisme exprime les sentiments forts, la nature sauvage et les événements héroïques, comme dans les tableaux de Delacroix. Le Réalisme, apparu ensuite, représente la vie quotidienne des gens ordinaires telle qu'elle est vraiment, sans idéalisation.",
+              "emoji": "⛵"
+            },
+            {
+              "title": "L'Art Moderne : Fauvisme et Cubisme",
+              "text": "Au début du XXe siècle, les artistes osent s'éloigner de la réalité. Les Fauves, comme Matisse, utilisent des couleurs vives et non naturelles pour exprimer des émotions. Le Cubisme, inventé par Picasso et Braque, décompose les objets en formes géométriques vus sous plusieurs angles à la fois.",
+              "emoji": "🔷"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Dans quel pays est né le courant de la Renaissance ?",
+              "options": [
+                "En France",
+                "En Espagne",
+                "En Italie",
+                "En Allemagne"
+              ],
+              "correctAnswer": "En Italie",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel peintre célèbre est associé à la Renaissance italienne ?",
+              "options": [
+                "Pablo Picasso",
+                "Léonard de Vinci",
+                "Claude Monet",
+                "Eugène Delacroix"
+              ],
+              "correctAnswer": "Léonard de Vinci",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est une caractéristique principale du style Baroque ?",
+              "options": [
+                "Des couleurs pastel très douces",
+                "Des formes géométriques simples",
+                "Des jeux de lumière intenses et des émotions dramatiques",
+                "Des paysages calmes et équilibrés"
+              ],
+              "correctAnswer": "Des jeux de lumière intenses et des émotions dramatiques",
+              "isSpecial": false
+            },
+            {
+              "question": "Le Classicisme du XVIIe siècle s'inspire principalement de :",
+              "options": [
+                "La vie des paysans",
+                "La mythologie et l'histoire antique",
+                "La nature sauvage",
+                "Les formes géométriques modernes"
+              ],
+              "correctAnswer": "La mythologie et l'histoire antique",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel courant artistique du XIXe siècle exprime des sentiments forts et des scènes héroïques ?",
+              "options": [
+                "Le Cubisme",
+                "Le Réalisme",
+                "Le Romantisme",
+                "Le Fauvisme"
+              ],
+              "correctAnswer": "Le Romantisme",
+              "isSpecial": false
+            },
+            {
+              "question": "Eugène Delacroix est un représentant célèbre de quel courant ?",
+              "options": [
+                "La Renaissance",
+                "Le Baroque",
+                "Le Romantisme",
+                "Le Cubisme"
+              ],
+              "correctAnswer": "Le Romantisme",
+              "isSpecial": false
+            },
+            {
+              "question": "Que représente le courant Réaliste apparu au XIXe siècle ?",
+              "options": [
+                "Des scènes mythologiques idéalisées",
+                "La vie quotidienne des gens ordinaires sans idéalisation",
+                "Des paysages imaginaires et féeriques",
+                "Des formes abstraites sans sujet reconnaissable"
+              ],
+              "correctAnswer": "La vie quotidienne des gens ordinaires sans idéalisation",
+              "isSpecial": false
+            },
+            {
+              "question": "Les peintres Fauves, comme Henri Matisse, sont connus pour :",
+              "options": [
+                "Peindre uniquement en noir et blanc",
+                "Utiliser des couleurs vives et non naturelles pour exprimer des émotions",
+                "Découper les objets en formes géométriques",
+                "Reproduire la réalité de façon très précise"
+              ],
+              "correctAnswer": "Utiliser des couleurs vives et non naturelles pour exprimer des émotions",
+              "isSpecial": false
+            },
+            {
+              "question": "Qui a inventé le Cubisme avec Georges Braque au début du XXe siècle ?",
+              "options": [
+                "Claude Monet",
+                "Le Caravage",
+                "Pablo Picasso",
+                "Raphaël"
+              ],
+              "correctAnswer": "Pablo Picasso",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle technique, redécouverte à la Renaissance, permet de représenter la profondeur sur une surface plane en donnant l'illusion du volume et de la distance ?",
+              "options": [
+                "Le sfumato",
+                "La perspective",
+                "Le clair-obscur",
+                "Le pointillisme"
+              ],
+              "correctAnswer": "La perspective",
+              "isSpecial": true
+            }
+          ]
         }
       ],
       "difficile": [
@@ -43170,6 +41139,149 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": true
             }
           ]
+        },
+        {
+          "id": "arts-gen-13",
+          "title": "Courants Picturaux",
+          "emoji": "🖼️",
+          "themeColor": "pink",
+          "badgeId": "arts-badge-13",
+          "badgeName": "Historien de l'Art",
+          "badgeEmoji": "🎨",
+          "cards": [
+            {
+              "title": "La Renaissance et le Baroque",
+              "text": "La Renaissance (XVe-XVIe siècle) renoue avec l'Antiquité et introduit la perspective, donnant l'illusion de profondeur — Léonard de Vinci et Raphaël en sont les maîtres. Le Baroque (XVIIe siècle) lui succède avec des compositions dramatiques, des contrastes violents de lumière et d'ombre appelés clair-obscur, comme chez Caravage.",
+              "emoji": "🕯️"
+            },
+            {
+              "title": "Néoclassicisme et Romantisme",
+              "text": "Le Néoclassicisme (fin XVIIIe siècle) revient à la rigueur des formes antiques en réaction aux excès du baroque, avec David ou Ingres valorisant la ligne et la raison. Le Romantisme lui répond en privilégiant l'émotion, la nature sauvage et le mouvement, comme en témoigne La Liberté guidant le peuple de Delacroix.",
+              "emoji": "⚡"
+            },
+            {
+              "title": "Réalisme et Impressionnisme",
+              "text": "Le Réalisme (milieu XIXe siècle) peint le monde ordinaire tel qu'il est, sans idéalisation — Courbet représente des paysans et des ouvriers avec une franchise brute. L'Impressionnisme, initié par Monet, Renoir et Degas vers 1870, capture les effets fugitifs de la lumière en plein air par de petites touches de couleur pure, rompant avec le dessin académique.",
+              "emoji": "☀️"
+            },
+            {
+              "title": "Post-Impressionnisme et Avant-gardes",
+              "text": "Après l'Impressionnisme, Cézanne structure la toile en volumes géométriques, Van Gogh exprime l'émotion par des coups de pinceau tourbillonnants et Gauguin cherche le primitif en Polynésie. Ces recherches ouvrent la voie aux avant-gardes du XXe siècle : le Cubisme de Picasso déconstruit la forme, le Surréalisme de Dalí explore l'inconscient, et l'Abstraction renonce totalement à toute représentation du réel.",
+              "emoji": "🔷"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Quel procédé pictural, caractéristique du Baroque, joue sur les contrastes forts entre zones éclairées et zones sombres ?",
+              "options": [
+                "La perspective linéaire",
+                "Le clair-obscur",
+                "Le sfumato",
+                "La grisaille"
+              ],
+              "correctAnswer": "Le clair-obscur",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel peintre baroque est particulièrement célèbre pour l'intensité dramatique de son clair-obscur ?",
+              "options": [
+                "Raphaël",
+                "Ingres",
+                "Caravage",
+                "Monet"
+              ],
+              "correctAnswer": "Caravage",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle innovation majeure la Renaissance a-t-elle apportée à la peinture ?",
+              "options": [
+                "L'utilisation de l'acrylique",
+                "La représentation de la perspective en profondeur",
+                "L'abandon du dessin au profit de la couleur pure",
+                "La peinture en plein air"
+              ],
+              "correctAnswer": "La représentation de la perspective en profondeur",
+              "isSpecial": false
+            },
+            {
+              "question": "Le tableau La Liberté guidant le peuple est associé à quel courant artistique ?",
+              "options": [
+                "Le Réalisme",
+                "L'Impressionnisme",
+                "Le Romantisme",
+                "Le Néoclassicisme"
+              ],
+              "correctAnswer": "Le Romantisme",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est la caractéristique principale de la technique impressionniste ?",
+              "options": [
+                "Des aplats de couleurs vives sans modélé",
+                "Des petites touches de couleur pure pour capter la lumière",
+                "Un dessin rigoureux au trait noir",
+                "Des formes géométriques simplifiées"
+              ],
+              "correctAnswer": "Des petites touches de couleur pure pour capter la lumière",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel peintre réaliste du XIXe siècle représentait des scènes de la vie paysanne et ouvrière sans idéalisation ?",
+              "options": [
+                "Gustave Courbet",
+                "Edgar Degas",
+                "Paul Cézanne",
+                "Jacques-Louis David"
+              ],
+              "correctAnswer": "Gustave Courbet",
+              "isSpecial": false
+            },
+            {
+              "question": "Le Néoclassicisme se développe en réaction à quel courant qui l'avait précédé ?",
+              "options": [
+                "Le Romantisme",
+                "Le Réalisme",
+                "Le Baroque",
+                "Le Cubisme"
+              ],
+              "correctAnswer": "Le Baroque",
+              "isSpecial": false
+            },
+            {
+              "question": "Paul Cézanne est souvent considéré comme un précurseur du Cubisme. Pourquoi ?",
+              "options": [
+                "Il peignait en plein air comme les impressionnistes",
+                "Il structurait ses toiles en formes géométriques et volumes",
+                "Il utilisait des couleurs irréelles inspirées de l'inconscient",
+                "Il représentait des scènes mythologiques antiques"
+              ],
+              "correctAnswer": "Il structurait ses toiles en formes géométriques et volumes",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel courant du XXe siècle renonce totalement à la représentation du monde visible ?",
+              "options": [
+                "Le Surréalisme",
+                "Le Cubisme",
+                "Le Fauvisme",
+                "L'Abstraction"
+              ],
+              "correctAnswer": "L'Abstraction",
+              "isSpecial": false
+            },
+            {
+              "question": "En chronologie de l'histoire de l'art, dans quel ordre ces courants se succèdent-ils correctement ?",
+              "options": [
+                "Baroque, Renaissance, Impressionnisme, Romantisme",
+                "Renaissance, Baroque, Néoclassicisme, Impressionnisme",
+                "Impressionnisme, Réalisme, Baroque, Renaissance",
+                "Romantisme, Renaissance, Baroque, Cubisme"
+              ],
+              "correctAnswer": "Renaissance, Baroque, Néoclassicisme, Impressionnisme",
+              "isSpecial": true
+            }
+          ]
         }
       ]
     }
@@ -45011,6 +43123,864 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": true
             }
           ]
+        },
+        {
+          "id": "computer-gen-14",
+          "title": "Le matériel informatique",
+          "emoji": "🖥️",
+          "themeColor": "indigo",
+          "badgeId": "computer-badge-14",
+          "badgeName": "Expert en matériel",
+          "badgeEmoji": "🔧",
+          "cards": [
+            {
+              "title": "Le processeur et la mémoire",
+              "text": "Le processeur (ou CPU) est le cerveau de l'ordinateur : il effectue tous les calculs et exécute les programmes. La mémoire vive (RAM) stocke temporairement les données en cours d'utilisation, ce qui permet à l'ordinateur de travailler rapidement.",
+              "emoji": "🧠"
+            },
+            {
+              "title": "Le disque dur et le stockage",
+              "text": "Le disque dur (HDD) ou le disque SSD conservent tes fichiers, tes photos et tes programmes même quand l'ordinateur est éteint. Le SSD est beaucoup plus rapide que le disque dur classique car il n'a pas de pièces mécaniques qui tournent.",
+              "emoji": "💾"
+            },
+            {
+              "title": "La carte mère et les composants internes",
+              "text": "La carte mère est une grande plaque électronique qui relie tous les composants de l'ordinateur entre eux. C'est grâce à elle que le processeur, la RAM, le disque et les autres pièces peuvent communiquer et fonctionner ensemble.",
+              "emoji": "🔌"
+            },
+            {
+              "title": "Les périphériques d'entrée et de sortie",
+              "text": "Les périphériques d'entrée, comme le clavier ou la webcam, permettent d'envoyer des informations vers l'ordinateur. Les périphériques de sortie, comme l'écran ou les haut-parleurs, permettent à l'ordinateur de nous transmettre des informations.",
+              "emoji": "🖨️"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Quel composant est souvent appelé le \"cerveau\" de l'ordinateur ?",
+              "options": [
+                "Le disque dur",
+                "La carte mère",
+                "Le processeur",
+                "La RAM"
+              ],
+              "correctAnswer": "Le processeur",
+              "isSpecial": false
+            },
+            {
+              "question": "Que signifie l'abréviation RAM ?",
+              "options": [
+                "Rapid Access Memory",
+                "Random Access Memory",
+                "Read And Memorize",
+                "Registered Artificial Memory"
+              ],
+              "correctAnswer": "Random Access Memory",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est la principale différence entre un disque dur (HDD) et un SSD ?",
+              "options": [
+                "Le SSD est plus lent mais moins cher",
+                "Le HDD n'a pas de pièces mécaniques",
+                "Le SSD est plus rapide car il n'a pas de pièces mécaniques",
+                "Le HDD stocke plus de données que le SSD"
+              ],
+              "correctAnswer": "Le SSD est plus rapide car il n'a pas de pièces mécaniques",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel composant relie tous les autres composants de l'ordinateur entre eux ?",
+              "options": [
+                "Le processeur",
+                "La carte mère",
+                "Le disque dur",
+                "L'alimentation"
+              ],
+              "correctAnswer": "La carte mère",
+              "isSpecial": false
+            },
+            {
+              "question": "Que se passe-t-il avec les données stockées dans la RAM quand on éteint l'ordinateur ?",
+              "options": [
+                "Elles sont sauvegardées automatiquement",
+                "Elles sont copiées sur le disque dur",
+                "Elles sont effacées",
+                "Elles restent en mémoire"
+              ],
+              "correctAnswer": "Elles sont effacées",
+              "isSpecial": false
+            },
+            {
+              "question": "Lequel de ces appareils est un périphérique d'entrée ?",
+              "options": [
+                "L'écran",
+                "Les haut-parleurs",
+                "L'imprimante",
+                "La webcam"
+              ],
+              "correctAnswer": "La webcam",
+              "isSpecial": false
+            },
+            {
+              "question": "Lequel de ces appareils est un périphérique de sortie ?",
+              "options": [
+                "Le clavier",
+                "La souris",
+                "Les haut-parleurs",
+                "Le microphone"
+              ],
+              "correctAnswer": "Les haut-parleurs",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel composant conserve tes fichiers même quand l'ordinateur est éteint ?",
+              "options": [
+                "La RAM",
+                "Le processeur",
+                "Le disque dur",
+                "La carte mère"
+              ],
+              "correctAnswer": "Le disque dur",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le rôle principal du processeur ?",
+              "options": [
+                "Stocker les fichiers en permanence",
+                "Afficher les images sur l'écran",
+                "Effectuer les calculs et exécuter les programmes",
+                "Relier les composants entre eux"
+              ],
+              "correctAnswer": "Effectuer les calculs et exécuter les programmes",
+              "isSpecial": false
+            },
+            {
+              "question": "Si un ordinateur a beaucoup de RAM, quel avantage cela lui procure-t-il ?",
+              "options": [
+                "Il stocke davantage de fichiers de façon permanente",
+                "Il peut faire tourner plus de programmes en même temps sans ralentir",
+                "Son écran affiche des images plus nettes",
+                "Il consomme moins d'électricité"
+              ],
+              "correctAnswer": "Il peut faire tourner plus de programmes en même temps sans ralentir",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "computer-gen-15",
+          "title": "Les logiciels et les programmes",
+          "emoji": "💾",
+          "themeColor": "indigo",
+          "badgeId": "computer-badge-15",
+          "badgeName": "Expert en logiciels",
+          "badgeEmoji": "🖥️",
+          "cards": [
+            {
+              "title": "Qu'est-ce qu'un logiciel ?",
+              "text": "Un logiciel est un ensemble d'instructions écrites pour dire à l'ordinateur quoi faire. Sans logiciels, un ordinateur ne pourrait rien faire d'utile. On appelle aussi les logiciels des « programmes ».",
+              "emoji": "💾"
+            },
+            {
+              "title": "Les types de logiciels",
+              "text": "Il existe deux grandes catégories : les logiciels système, comme Windows ou macOS, qui font fonctionner l'ordinateur, et les logiciels applicatifs, comme Word ou Chrome, que tu utilises pour des tâches précises. Chaque logiciel est conçu pour un besoin particulier.",
+              "emoji": "📂"
+            },
+            {
+              "title": "Comment fonctionne un programme ?",
+              "text": "Un programme est écrit par des développeurs dans un langage de programmation, comme Python ou Java. L'ordinateur lit ces instructions une par une et les exécute dans l'ordre. Si une instruction est fausse ou manquante, le programme peut ne pas fonctionner correctement.",
+              "emoji": "⚙️"
+            },
+            {
+              "title": "Installer et mettre à jour un logiciel",
+              "text": "Pour utiliser un logiciel, on doit d'abord l'installer sur l'ordinateur ou le télécharger depuis une boutique en ligne comme l'App Store. Les mises à jour permettent de corriger des erreurs et d'ajouter de nouvelles fonctionnalités. Il est important de mettre ses logiciels à jour pour rester en sécurité.",
+              "emoji": "🔄"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Qu'est-ce qu'un logiciel ?",
+              "options": [
+                "Un composant physique de l'ordinateur",
+                "Un ensemble d'instructions données à l'ordinateur",
+                "Un câble qui relie deux appareils",
+                "Un type d'écran d'ordinateur"
+              ],
+              "correctAnswer": "Un ensemble d'instructions données à l'ordinateur",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel autre nom peut-on donner à un logiciel ?",
+              "options": [
+                "Un pixel",
+                "Un réseau",
+                "Un programme",
+                "Un processeur"
+              ],
+              "correctAnswer": "Un programme",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le rôle d'un logiciel système comme Windows ?",
+              "options": [
+                "Jouer de la musique automatiquement",
+                "Faire fonctionner l'ordinateur",
+                "Envoyer des emails",
+                "Dessiner des images"
+              ],
+              "correctAnswer": "Faire fonctionner l'ordinateur",
+              "isSpecial": false
+            },
+            {
+              "question": "Lequel de ces logiciels est un logiciel applicatif ?",
+              "options": [
+                "Windows",
+                "macOS",
+                "Linux",
+                "Google Chrome"
+              ],
+              "correctAnswer": "Google Chrome",
+              "isSpecial": false
+            },
+            {
+              "question": "Qui écrit les programmes informatiques ?",
+              "options": [
+                "Les électriciens",
+                "Les développeurs",
+                "Les graphistes",
+                "Les mathématiciens"
+              ],
+              "correctAnswer": "Les développeurs",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment l'ordinateur exécute-t-il un programme ?",
+              "options": [
+                "Il lit toutes les instructions en même temps",
+                "Il choisit les instructions au hasard",
+                "Il lit les instructions une par une dans l'ordre",
+                "Il ignore les instructions inutiles"
+              ],
+              "correctAnswer": "Il lit les instructions une par une dans l'ordre",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi est-il important de mettre à jour ses logiciels ?",
+              "options": [
+                "Pour changer la couleur de l'écran",
+                "Pour corriger des erreurs et rester en sécurité",
+                "Pour accélérer la connexion internet",
+                "Pour augmenter la mémoire de l'ordinateur"
+              ],
+              "correctAnswer": "Pour corriger des erreurs et rester en sécurité",
+              "isSpecial": false
+            },
+            {
+              "question": "Où peut-on télécharger des logiciels de façon officielle ?",
+              "options": [
+                "Sur n'importe quel site inconnu",
+                "Dans les paramètres de l'écran",
+                "Dans une boutique en ligne comme l'App Store",
+                "En demandant à un autre ordinateur"
+              ],
+              "correctAnswer": "Dans une boutique en ligne comme l'App Store",
+              "isSpecial": false
+            },
+            {
+              "question": "Que se passe-t-il si une instruction d'un programme est incorrecte ?",
+              "options": [
+                "L'ordinateur la corrige tout seul",
+                "Le programme peut ne pas fonctionner correctement",
+                "L'écran s'éteint immédiatement",
+                "Le logiciel se met à jour automatiquement"
+              ],
+              "correctAnswer": "Le programme peut ne pas fonctionner correctement",
+              "isSpecial": false
+            },
+            {
+              "question": "Parmi ces exemples, lequel est à la fois un langage de programmation utilisé pour écrire des logiciels ?",
+              "options": [
+                "HTML uniquement",
+                "Python",
+                "Excel",
+                "Wi-Fi"
+              ],
+              "correctAnswer": "Python",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "computer-gen-16",
+          "title": "Comment fonctionne Internet",
+          "emoji": "🌐",
+          "themeColor": "indigo",
+          "badgeId": "computer-badge-16",
+          "badgeName": "Explorateur du Web",
+          "badgeEmoji": "🕸️",
+          "cards": [
+            {
+              "title": "Qu'est-ce qu'Internet ?",
+              "text": "Internet est un immense réseau qui relie des millions d'ordinateurs, de tablettes et de téléphones dans le monde entier. Grâce à des câbles sous-marins et des signaux sans fil, ces appareils peuvent s'échanger des informations en quelques secondes.",
+              "emoji": "🌍"
+            },
+            {
+              "title": "Le web et les navigateurs",
+              "text": "Le web (ou World Wide Web) est l'ensemble des pages et des sites que l'on consulte sur Internet. Pour les afficher, on utilise un navigateur comme Chrome, Firefox ou Safari, qui traduit le code des pages en textes et images que tu peux lire.",
+              "emoji": "🖥️"
+            },
+            {
+              "title": "Les adresses web (URL)",
+              "text": "Chaque page web a une adresse unique appelée URL, par exemple 'https://www.wikipedia.org'. Le 'https' signifie que la connexion est sécurisée, et le nom de domaine (comme 'wikipedia.org') indique quel site tu veux visiter.",
+              "emoji": "🔗"
+            },
+            {
+              "title": "Envoyer et recevoir des données",
+              "text": "Quand tu demandes une page web, ton appareil envoie une requête à un serveur, qui est un ordinateur très puissant toujours connecté. Le serveur répond en envoyant les données de la page, qui voyagent en petits paquets réassemblés à l'arrivée.",
+              "emoji": "📦"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Qu'est-ce qu'Internet ?",
+              "options": [
+                "Un réseau reliant des millions d'appareils dans le monde",
+                "Un logiciel installé uniquement sur les ordinateurs Apple",
+                "Une marque de navigateur web",
+                "Un câble qui relie uniquement deux ordinateurs"
+              ],
+              "correctAnswer": "Un réseau reliant des millions d'appareils dans le monde",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le rôle d'un navigateur web ?",
+              "options": [
+                "Afficher les pages web en traduisant leur code",
+                "Stocker les fichiers sur un serveur",
+                "Envoyer des e-mails automatiquement",
+                "Protéger l'ordinateur contre les virus"
+              ],
+              "correctAnswer": "Afficher les pages web en traduisant leur code",
+              "isSpecial": false
+            },
+            {
+              "question": "Que signifie 'WWW' dans une adresse web ?",
+              "options": [
+                "World Wide Web",
+                "World Wire Wireless",
+                "Wide Web World",
+                "Worldwide Webmaster Works"
+              ],
+              "correctAnswer": "World Wide Web",
+              "isSpecial": false
+            },
+            {
+              "question": "Qu'est-ce qu'une URL ?",
+              "options": [
+                "L'adresse unique d'une page web",
+                "Le mot de passe d'un site",
+                "Le nom du navigateur utilisé",
+                "La vitesse de la connexion Internet"
+              ],
+              "correctAnswer": "L'adresse unique d'une page web",
+              "isSpecial": false
+            },
+            {
+              "question": "Que signifie 'https' au début d'une adresse web ?",
+              "options": [
+                "La connexion est sécurisée",
+                "La page est en haute résolution",
+                "Le site est réservé aux adultes",
+                "Le fichier est téléchargeable"
+              ],
+              "correctAnswer": "La connexion est sécurisée",
+              "isSpecial": false
+            },
+            {
+              "question": "Qu'est-ce qu'un serveur web ?",
+              "options": [
+                "Un ordinateur puissant toujours connecté qui répond aux demandes de pages",
+                "Un câble reliant deux continents sous la mer",
+                "Un programme qui bloque les publicités",
+                "Un type de souris sans fil"
+              ],
+              "correctAnswer": "Un ordinateur puissant toujours connecté qui répond aux demandes de pages",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment les données voyagent-elles sur Internet ?",
+              "options": [
+                "En petits paquets réassemblés à l'arrivée",
+                "En un seul gros fichier envoyé d'un coup",
+                "Par satellite uniquement",
+                "Via des disques durs transportés physiquement"
+              ],
+              "correctAnswer": "En petits paquets réassemblés à l'arrivée",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel exemple est un navigateur web ?",
+              "options": [
+                "Firefox",
+                "Wikipedia",
+                "Google Drive",
+                "Minecraft"
+              ],
+              "correctAnswer": "Firefox",
+              "isSpecial": false
+            },
+            {
+              "question": "Par quoi les ordinateurs sont-ils reliés à Internet à travers les océans ?",
+              "options": [
+                "Des câbles sous-marins",
+                "Des ballons stratosphériques",
+                "Des satellites géostationnaires fixes",
+                "Des câbles électriques ordinaires"
+              ],
+              "correctAnswer": "Des câbles sous-marins",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle partie de l'URL 'https://www.wikipedia.org' s'appelle le nom de domaine ?",
+              "options": [
+                "wikipedia.org",
+                "https",
+                "www",
+                "Le texte après le point final"
+              ],
+              "correctAnswer": "wikipedia.org",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "computer-gen-17",
+          "title": "Coder : les bases",
+          "emoji": "💻",
+          "themeColor": "indigo",
+          "badgeId": "computer-badge-17",
+          "badgeName": "Apprenti Codeur",
+          "badgeEmoji": "🖥️",
+          "cards": [
+            {
+              "title": "Qu'est-ce que coder ?",
+              "text": "Coder, c'est écrire des instructions que l'ordinateur va lire et exécuter. Ces instructions sont écrites dans un langage de programmation, comme Scratch ou Python. Grâce au code, on peut créer des jeux, des applications ou des sites web.",
+              "emoji": "✍️"
+            },
+            {
+              "title": "Les instructions et l'ordre",
+              "text": "Un programme est une suite d'instructions exécutées dans l'ordre, de haut en bas. Si on change l'ordre des instructions, le résultat peut être complètement différent. L'ordinateur fait exactement ce qu'on lui dit, sans jamais deviner notre intention.",
+              "emoji": "📋"
+            },
+            {
+              "title": "Les variables",
+              "text": "Une variable est une boîte dans laquelle on range une valeur, comme un nombre ou un mot. On lui donne un nom pour pouvoir la retrouver et l'utiliser plus tard dans le programme. Par exemple, on peut créer une variable \"score\" qui commence à 0 et augmente quand le joueur gagne des points.",
+              "emoji": "📦"
+            },
+            {
+              "title": "Les boucles et les conditions",
+              "text": "Une boucle permet de répéter une instruction plusieurs fois sans la réécrire. Une condition (avec le mot \"si\") permet au programme de choisir quoi faire selon la situation. Par exemple : si le joueur perd toutes ses vies, alors afficher \"Partie terminée\".",
+              "emoji": "🔄"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Que fait un programme informatique ?",
+              "options": [
+                "Il exécute une suite d'instructions dans l'ordre",
+                "Il dessine automatiquement des images",
+                "Il répare les erreurs de l'ordinateur",
+                "Il connecte l'ordinateur à Internet"
+              ],
+              "correctAnswer": "Il exécute une suite d'instructions dans l'ordre",
+              "isSpecial": false
+            },
+            {
+              "question": "Lequel de ces langages est utilisé pour coder ?",
+              "options": [
+                "Python",
+                "Espagnol",
+                "Morse",
+                "Latin"
+              ],
+              "correctAnswer": "Python",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans quel ordre un ordinateur lit-il les instructions d'un programme ?",
+              "options": [
+                "De haut en bas",
+                "Dans le désordre",
+                "De bas en haut",
+                "Au hasard"
+              ],
+              "correctAnswer": "De haut en bas",
+              "isSpecial": false
+            },
+            {
+              "question": "Que se passe-t-il si on change l'ordre des instructions dans un programme ?",
+              "options": [
+                "Le résultat peut être complètement différent",
+                "Rien ne change",
+                "Le programme s'arrête définitivement",
+                "L'ordinateur redémarre"
+              ],
+              "correctAnswer": "Le résultat peut être complètement différent",
+              "isSpecial": false
+            },
+            {
+              "question": "Qu'est-ce qu'une variable en programmation ?",
+              "options": [
+                "Une boîte qui stocke une valeur",
+                "Une boucle qui se répète",
+                "Une erreur dans le code",
+                "Un type de langage de programmation"
+              ],
+              "correctAnswer": "Une boîte qui stocke une valeur",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle valeur peut-on stocker dans une variable ?",
+              "options": [
+                "Un nombre ou un mot",
+                "Uniquement des images",
+                "Seulement des couleurs",
+                "Des sons uniquement"
+              ],
+              "correctAnswer": "Un nombre ou un mot",
+              "isSpecial": false
+            },
+            {
+              "question": "À quoi sert une boucle dans un programme ?",
+              "options": [
+                "À répéter une instruction plusieurs fois",
+                "À corriger les fautes de frappe",
+                "À connecter deux ordinateurs",
+                "À sauvegarder un fichier"
+              ],
+              "correctAnswer": "À répéter une instruction plusieurs fois",
+              "isSpecial": false
+            },
+            {
+              "question": "Que permet une condition dans un programme ?",
+              "options": [
+                "De choisir quoi faire selon la situation",
+                "De répéter toujours la même action",
+                "De stocker des données",
+                "D'afficher des images"
+              ],
+              "correctAnswer": "De choisir quoi faire selon la situation",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans cet exemple : \"si le joueur perd toutes ses vies, afficher Partie terminée\", quel mot introduit la condition ?",
+              "options": [
+                "Si",
+                "Alors",
+                "Toutes",
+                "Afficher"
+              ],
+              "correctAnswer": "Si",
+              "isSpecial": false
+            },
+            {
+              "question": "Un programme contient ces instructions dans l'ordre : 1) score = 0, 2) score = score + 5, 3) score = score + 5. Quelle est la valeur finale de score ?",
+              "options": [
+                "10",
+                "5",
+                "0",
+                "15"
+              ],
+              "correctAnswer": "10",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "computer-gen-18",
+          "title": "Le binaire et les données",
+          "emoji": "💾",
+          "themeColor": "indigo",
+          "badgeId": "computer-badge-18",
+          "badgeName": "Explorateur du Binaire",
+          "badgeEmoji": "🔢",
+          "cards": [
+            {
+              "title": "Le langage des ordinateurs",
+              "text": "Les ordinateurs ne comprennent pas les mots comme nous. Ils utilisent uniquement deux chiffres : le 0 et le 1. On appelle ce langage le binaire, et chaque 0 ou 1 s'appelle un bit.",
+              "emoji": "🖥️"
+            },
+            {
+              "title": "Des bits aux octets",
+              "text": "Un seul bit ne peut stocker que très peu d'information. C'est pourquoi on regroupe 8 bits ensemble pour former un octet. Un octet peut représenter 256 valeurs différentes, ce qui permet de coder des lettres, des chiffres ou des couleurs.",
+              "emoji": "🧩"
+            },
+            {
+              "title": "Comment coder un nombre en binaire",
+              "text": "En binaire, chaque position a une valeur double de la précédente : 1, 2, 4, 8, 16… Pour écrire le nombre 5, on utilise 101 en binaire (4 + 0 + 1). Pour écrire 10, on écrit 1010 (8 + 0 + 2 + 0).",
+              "emoji": "🔢"
+            },
+            {
+              "title": "Les données dans la vie numérique",
+              "text": "Tout ce qu'un ordinateur enregistre — textes, images, vidéos, sons — est stocké sous forme de suites de 0 et de 1. Plus un fichier contient de bits, plus il prend de place en mémoire. Un document texte pèse quelques kilo-octets, une vidéo HD peut peser plusieurs giga-octets.",
+              "emoji": "📦"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Combien de chiffres différents utilise le système binaire ?",
+              "options": [
+                "2",
+                "8",
+                "10",
+                "16"
+              ],
+              "correctAnswer": "2",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment appelle-t-on chaque chiffre (0 ou 1) dans le système binaire ?",
+              "options": [
+                "Un bit",
+                "Un octet",
+                "Un pixel",
+                "Un byte"
+              ],
+              "correctAnswer": "Un bit",
+              "isSpecial": false
+            },
+            {
+              "question": "Combien de bits composent un octet ?",
+              "options": [
+                "4",
+                "8",
+                "16",
+                "32"
+              ],
+              "correctAnswer": "8",
+              "isSpecial": false
+            },
+            {
+              "question": "Combien de valeurs différentes un octet peut-il représenter ?",
+              "options": [
+                "8",
+                "16",
+                "128",
+                "256"
+              ],
+              "correctAnswer": "256",
+              "isSpecial": false
+            },
+            {
+              "question": "Que représente le nombre binaire 101 en chiffres ordinaires (décimaux) ?",
+              "options": [
+                "3",
+                "5",
+                "7",
+                "10"
+              ],
+              "correctAnswer": "5",
+              "isSpecial": false
+            },
+            {
+              "question": "Lequel de ces éléments est stocké sous forme de 0 et de 1 dans un ordinateur ?",
+              "options": [
+                "Une image numérique",
+                "Un livre papier",
+                "Un dessin au crayon",
+                "Une conversation orale"
+              ],
+              "correctAnswer": "Une image numérique",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel fichier prend le plus de place en mémoire ?",
+              "options": [
+                "Un document texte d'une page",
+                "Une photo haute résolution",
+                "Un fichier son de 3 minutes",
+                "Une vidéo HD d'une heure"
+              ],
+              "correctAnswer": "Une vidéo HD d'une heure",
+              "isSpecial": false
+            },
+            {
+              "question": "Que représente le nombre binaire 1010 en chiffres ordinaires (décimaux) ?",
+              "options": [
+                "4",
+                "8",
+                "10",
+                "12"
+              ],
+              "correctAnswer": "10",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel préfixe désigne environ un milliard d'octets ?",
+              "options": [
+                "Kilo-octet",
+                "Méga-octet",
+                "Giga-octet",
+                "Bit"
+              ],
+              "correctAnswer": "Giga-octet",
+              "isSpecial": false
+            },
+            {
+              "question": "En binaire, quelle est la valeur de position du 4e chiffre en partant de la droite ?",
+              "options": [
+                "4",
+                "6",
+                "8",
+                "16"
+              ],
+              "correctAnswer": "8",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "computer-gen-19",
+          "title": "La cybersécurité",
+          "emoji": "🔒",
+          "themeColor": "indigo",
+          "badgeId": "computer-badge-19",
+          "badgeName": "Gardien du numérique",
+          "badgeEmoji": "🛡️",
+          "cards": [
+            {
+              "title": "Qu'est-ce que la cybersécurité ?",
+              "text": "La cybersécurité, c'est l'ensemble des méthodes utilisées pour protéger les ordinateurs, les téléphones et les données personnelles contre les pirates informatiques. Sans ces protections, des personnes malveillantes pourraient voler tes informations ou abîmer tes appareils. C'est comme mettre un cadenas sur ta maison, mais dans le monde numérique.",
+              "emoji": "🔒"
+            },
+            {
+              "title": "Les mots de passe",
+              "text": "Un mot de passe solide est la première défense contre les pirates. Il doit contenir au moins 8 caractères, mélanger des lettres majuscules, des chiffres et des symboles, et ne pas être un mot du dictionnaire. Il ne faut jamais partager son mot de passe, même avec un ami, et utiliser un mot de passe différent pour chaque compte.",
+              "emoji": "🔑"
+            },
+            {
+              "title": "Les virus et les arnaques",
+              "text": "Un virus informatique est un programme malveillant qui s'installe sans ta permission et peut voler tes données ou bloquer ton ordinateur. Les arnaques en ligne, comme le phishing, consistent à te faire croire qu'un message vient d'une vraie entreprise pour te piéger et voler tes informations. Il faut toujours vérifier l'adresse de l'expéditeur avant de cliquer sur un lien.",
+              "emoji": "🦠"
+            },
+            {
+              "title": "Se protéger en ligne",
+              "text": "Pour rester en sécurité sur Internet, il faut installer un antivirus qui détecte les programmes dangereux et mettre à jour régulièrement ses applications. Il est aussi important de ne jamais donner ses informations personnelles (nom, adresse, numéro de téléphone) à des inconnus sur Internet. En cas de doute, il faut toujours en parler à un adulte de confiance.",
+              "emoji": "🛡️"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "À quoi sert la cybersécurité ?",
+              "options": [
+                "À accélérer la connexion Internet",
+                "À protéger les appareils et les données contre les pirates",
+                "À créer de nouveaux logiciels",
+                "À réparer les ordinateurs cassés"
+              ],
+              "correctAnswer": "À protéger les appareils et les données contre les pirates",
+              "isSpecial": false
+            },
+            {
+              "question": "Combien de caractères minimum doit avoir un mot de passe solide ?",
+              "options": [
+                "4 caractères",
+                "6 caractères",
+                "8 caractères",
+                "12 caractères"
+              ],
+              "correctAnswer": "8 caractères",
+              "isSpecial": false
+            },
+            {
+              "question": "Que faut-il inclure dans un mot de passe solide ?",
+              "options": [
+                "Uniquement des chiffres",
+                "Son prénom et sa date de naissance",
+                "Un mélange de lettres majuscules, chiffres et symboles",
+                "Un mot facile à retenir du dictionnaire"
+              ],
+              "correctAnswer": "Un mélange de lettres majuscules, chiffres et symboles",
+              "isSpecial": false
+            },
+            {
+              "question": "Qu'est-ce qu'un virus informatique ?",
+              "options": [
+                "Un programme malveillant qui s'installe sans permission",
+                "Un logiciel qui protège ton ordinateur",
+                "Une mise à jour automatique du système",
+                "Un fichier qui ralentit la connexion Internet"
+              ],
+              "correctAnswer": "Un programme malveillant qui s'installe sans permission",
+              "isSpecial": false
+            },
+            {
+              "question": "Qu'est-ce que le phishing ?",
+              "options": [
+                "Un jeu en ligne multijoueur",
+                "Une technique pour accélérer un ordinateur",
+                "Une arnaque qui imite un vrai message pour voler des informations",
+                "Un antivirus gratuit"
+              ],
+              "correctAnswer": "Une arnaque qui imite un vrai message pour voler des informations",
+              "isSpecial": false
+            },
+            {
+              "question": "Que faut-il faire avant de cliquer sur un lien reçu par message ?",
+              "options": [
+                "Cliquer immédiatement si le message semble urgent",
+                "Vérifier l'adresse de l'expéditeur",
+                "Partager le lien avec ses amis",
+                "Télécharger le fichier joint"
+              ],
+              "correctAnswer": "Vérifier l'adresse de l'expéditeur",
+              "isSpecial": false
+            },
+            {
+              "question": "Peut-on utiliser le même mot de passe pour tous ses comptes ?",
+              "options": [
+                "Oui, c'est plus facile à retenir",
+                "Oui, si le mot de passe est très long",
+                "Non, il faut un mot de passe différent pour chaque compte",
+                "Oui, tant qu'on ne le partage pas"
+              ],
+              "correctAnswer": "Non, il faut un mot de passe différent pour chaque compte",
+              "isSpecial": false
+            },
+            {
+              "question": "À qui peut-on partager son mot de passe ?",
+              "options": [
+                "À son meilleur ami",
+                "À personne, même pas à un ami",
+                "À ses parents uniquement",
+                "À tous ses camarades de classe"
+              ],
+              "correctAnswer": "À personne, même pas à un ami",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel outil installe-t-on pour détecter les programmes dangereux ?",
+              "options": [
+                "Un moteur de recherche",
+                "Un navigateur Internet",
+                "Un antivirus",
+                "Un traitement de texte"
+              ],
+              "correctAnswer": "Un antivirus",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi est-il important de mettre à jour ses applications régulièrement ?",
+              "options": [
+                "Pour avoir une interface plus jolie",
+                "Pour corriger les failles de sécurité que les pirates pourraient exploiter",
+                "Pour télécharger de nouveaux jeux",
+                "Pour libérer de l'espace sur le disque dur"
+              ],
+              "correctAnswer": "Pour corriger les failles de sécurité que les pirates pourraient exploiter",
+              "isSpecial": true
+            }
+          ]
         }
       ],
       "difficile": [
@@ -46843,6 +45813,864 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": true
             }
           ]
+        },
+        {
+          "id": "computer-gen-20",
+          "title": "Architecture matérielle d'un ordinateur",
+          "emoji": "🖥️",
+          "themeColor": "indigo",
+          "badgeId": "computer-badge-20",
+          "badgeName": "Expert Hardware",
+          "badgeEmoji": "🔧",
+          "cards": [
+            {
+              "title": "Le processeur (CPU)",
+              "text": "Le processeur, ou CPU (Central Processing Unit), est le composant qui exécute toutes les instructions d'un programme. Sa vitesse se mesure en gigahertz (GHz) et son efficacité dépend aussi du nombre de cœurs, chaque cœur pouvant traiter des tâches indépendantes en parallèle.",
+              "emoji": "⚡"
+            },
+            {
+              "title": "La mémoire : RAM et stockage",
+              "text": "La RAM (Random Access Memory) est une mémoire volatile qui conserve les données des programmes en cours d'utilisation ; elle se vide à l'extinction. Le disque dur (HDD) ou le SSD constitue le stockage permanent : le SSD est bien plus rapide car il n'a aucune pièce mécanique en mouvement.",
+              "emoji": "💾"
+            },
+            {
+              "title": "La carte mère et les bus",
+              "text": "La carte mère est le circuit imprimé principal qui relie tous les composants entre eux via des connexions appelées bus. Elle intègre notamment le chipset, qui gère les échanges de données entre le CPU, la RAM, les ports et les périphériques de stockage.",
+              "emoji": "🔌"
+            },
+            {
+              "title": "La carte graphique (GPU) et les périphériques",
+              "text": "La carte graphique (GPU) est spécialisée dans le calcul parallèle pour afficher les images à l'écran ; elle possède sa propre mémoire appelée VRAM. Les périphériques d'entrée (clavier, souris, webcam) envoient des données vers l'ordinateur, tandis que les périphériques de sortie (écran, haut-parleurs, imprimante) reçoivent et restituent ces données.",
+              "emoji": "🎮"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Que signifie l'acronyme CPU ?",
+              "options": [
+                "Central Processing Unit",
+                "Core Power Unit",
+                "Computer Processing Utility",
+                "Central Program Uploader"
+              ],
+              "correctAnswer": "Central Processing Unit",
+              "isSpecial": false
+            },
+            {
+              "question": "En quelle unité mesure-t-on la fréquence d'horloge d'un processeur moderne ?",
+              "options": [
+                "Mégaoctets (Mo)",
+                "Gigahertz (GHz)",
+                "Téraflops (TFLOPS)",
+                "Nanomètres (nm)"
+              ],
+              "correctAnswer": "Gigahertz (GHz)",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est la principale différence entre la RAM et le stockage SSD ?",
+              "options": [
+                "La RAM est permanente, le SSD est temporaire",
+                "La RAM est volatile et se vide à l'extinction, le SSD conserve les données",
+                "La RAM stocke les films, le SSD stocke les programmes",
+                "La RAM est plus rapide que le SSD pour tout type de tâche"
+              ],
+              "correctAnswer": "La RAM est volatile et se vide à l'extinction, le SSD conserve les données",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi un SSD est-il généralement plus rapide qu'un HDD ?",
+              "options": [
+                "Il utilise une connexion Wi-Fi interne",
+                "Il possède un processeur dédié plus puissant",
+                "Il n'a pas de pièces mécaniques en mouvement",
+                "Il est refroidi par un ventilateur spécial"
+              ],
+              "correctAnswer": "Il n'a pas de pièces mécaniques en mouvement",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le rôle de la carte mère dans un ordinateur ?",
+              "options": [
+                "Afficher les images sur l'écran",
+                "Relier et faire communiquer tous les composants entre eux",
+                "Alimenter uniquement le processeur en électricité",
+                "Stocker le système d'exploitation"
+              ],
+              "correctAnswer": "Relier et faire communiquer tous les composants entre eux",
+              "isSpecial": false
+            },
+            {
+              "question": "Qu'appelle-t-on un \"cœur\" dans un processeur multicœur ?",
+              "options": [
+                "Un ventilateur intégré au CPU",
+                "Une unité de traitement indépendante capable d'exécuter des tâches en parallèle",
+                "Le circuit qui gère la mémoire RAM",
+                "Un connecteur physique sur la carte mère"
+              ],
+              "correctAnswer": "Une unité de traitement indépendante capable d'exécuter des tâches en parallèle",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle mémoire est propre à la carte graphique (GPU) ?",
+              "options": [
+                "La ROM",
+                "La RAM système",
+                "La VRAM",
+                "Le cache L3"
+              ],
+              "correctAnswer": "La VRAM",
+              "isSpecial": false
+            },
+            {
+              "question": "Parmi ces exemples, lequel est un périphérique de sortie ?",
+              "options": [
+                "Clavier",
+                "Webcam",
+                "Microphone",
+                "Haut-parleurs"
+              ],
+              "correctAnswer": "Haut-parleurs",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel composant de la carte mère gère les échanges de données entre le CPU, la RAM et les périphériques ?",
+              "options": [
+                "Le GPU",
+                "Le chipset",
+                "La VRAM",
+                "Le BIOS"
+              ],
+              "correctAnswer": "Le chipset",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi le GPU est-il particulièrement adapté au rendu graphique et à l'intelligence artificielle, comparé au CPU ?",
+              "options": [
+                "Parce qu'il fonctionne à une fréquence d'horloge beaucoup plus élevée que le CPU",
+                "Parce qu'il est directement soudé sur la carte mère, réduisant la latence",
+                "Parce qu'il est conçu pour exécuter un très grand nombre de calculs simples en parallèle",
+                "Parce qu'il dispose d'une mémoire RAM plus grande que le reste du système"
+              ],
+              "correctAnswer": "Parce qu'il est conçu pour exécuter un très grand nombre de calculs simples en parallèle",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "computer-gen-21",
+          "title": "Les logiciels et les programmes",
+          "emoji": "💾",
+          "themeColor": "indigo",
+          "badgeId": "computer-badge-21",
+          "badgeName": "Expert en logiciels",
+          "badgeEmoji": "🖥️",
+          "cards": [
+            {
+              "title": "Qu'est-ce qu'un logiciel ?",
+              "text": "Un logiciel est un ensemble d'instructions écrites dans un langage de programmation que le processeur exécute pour accomplir une tâche précise. On distingue les logiciels système, comme le système d'exploitation, des logiciels applicatifs destinés à l'utilisateur. Sans logiciel, le matériel informatique ne peut effectuer aucune opération utile.",
+              "emoji": "📦"
+            },
+            {
+              "title": "Comment un programme est-il créé ?",
+              "text": "Un programmeur rédige du code source dans un langage de haut niveau tel que Python, Java ou C++, puis ce code est transformé en instructions compréhensibles par le processeur grâce à un compilateur ou un interpréteur. Le processus inclut aussi des phases de débogage pour détecter et corriger les erreurs, appelées bugs. Un programme peut représenter des milliers, voire des millions de lignes de code.",
+              "emoji": "⌨️"
+            },
+            {
+              "title": "Logiciel libre, propriétaire et open source",
+              "text": "Un logiciel propriétaire appartient à une entreprise qui en contrôle l'accès et interdit la modification de son code source (exemple : Microsoft Office). Un logiciel libre ou open source permet à quiconque de consulter, modifier et redistribuer son code (exemple : LibreOffice, Linux). Cette distinction a des implications importantes sur la sécurité, le coût et la transparence des outils numériques.",
+              "emoji": "🔓"
+            },
+            {
+              "title": "Le système d'exploitation : le chef d'orchestre",
+              "text": "Le système d'exploitation (Windows, macOS, Linux, Android) est le logiciel fondamental qui gère toutes les ressources matérielles de l'ordinateur : processeur, mémoire vive, stockage et périphériques. Il fournit une interface entre les logiciels applicatifs et le matériel, permettant à plusieurs programmes de s'exécuter simultanément grâce à la gestion des processus. Sans système d'exploitation, aucun autre logiciel ne pourrait fonctionner.",
+              "emoji": "🎛️"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Quel outil transforme le code source écrit par un programmeur en instructions directement exécutables par le processeur ?",
+              "options": [
+                "Un débogueur",
+                "Un compilateur",
+                "Un navigateur",
+                "Un système de fichiers"
+              ],
+              "correctAnswer": "Un compilateur",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est la principale différence entre un logiciel propriétaire et un logiciel open source ?",
+              "options": [
+                "Le logiciel open source est toujours gratuit, le propriétaire est toujours payant",
+                "Le logiciel propriétaire interdit l'accès et la modification du code source, l'open source l'autorise",
+                "Le logiciel open source ne peut fonctionner que sur Linux",
+                "Le logiciel propriétaire est forcément plus sécurisé que l'open source"
+              ],
+              "correctAnswer": "Le logiciel propriétaire interdit l'accès et la modification du code source, l'open source l'autorise",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le rôle principal du système d'exploitation ?",
+              "options": [
+                "Permettre de naviguer sur Internet",
+                "Créer des fichiers texte et des images",
+                "Gérer les ressources matérielles et faire l'interface entre logiciels et matériel",
+                "Protéger l'ordinateur contre les virus"
+              ],
+              "correctAnswer": "Gérer les ressources matérielles et faire l'interface entre logiciels et matériel",
+              "isSpecial": false
+            },
+            {
+              "question": "Lequel de ces exemples est un logiciel libre (open source) ?",
+              "options": [
+                "Microsoft Word",
+                "Adobe Photoshop",
+                "LibreOffice",
+                "macOS"
+              ],
+              "correctAnswer": "LibreOffice",
+              "isSpecial": false
+            },
+            {
+              "question": "Qu'appelle-t-on un \"bug\" dans un programme informatique ?",
+              "options": [
+                "Une fonctionnalité avancée du logiciel",
+                "Une erreur dans le code qui provoque un comportement inattendu",
+                "Un fichier compressé utilisé par le programme",
+                "Un type de virus informatique"
+              ],
+              "correctAnswer": "Une erreur dans le code qui provoque un comportement inattendu",
+              "isSpecial": false
+            },
+            {
+              "question": "Parmi ces langages de programmation, lequel est utilisé pour créer des logiciels applicatifs ?",
+              "options": [
+                "HTML",
+                "CSS",
+                "Python",
+                "SQL"
+              ],
+              "correctAnswer": "Python",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est la différence entre un compilateur et un interpréteur ?",
+              "options": [
+                "Le compilateur traduit tout le code avant exécution, l'interpréteur le traduit et l'exécute ligne par ligne",
+                "Le compilateur fonctionne uniquement sur Windows, l'interpréteur sur Linux",
+                "Le compilateur corrige les bugs automatiquement, l'interpréteur non",
+                "Il n'y a aucune différence, ce sont deux mots pour la même chose"
+              ],
+              "correctAnswer": "Le compilateur traduit tout le code avant exécution, l'interpréteur le traduit et l'exécute ligne par ligne",
+              "isSpecial": false
+            },
+            {
+              "question": "Lequel de ces systèmes d'exploitation est open source ?",
+              "options": [
+                "Windows 11",
+                "macOS Ventura",
+                "iOS",
+                "Linux"
+              ],
+              "correctAnswer": "Linux",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi le système d'exploitation est-il indispensable à l'utilisation d'un ordinateur ?",
+              "options": [
+                "Parce qu'il stocke tous les fichiers personnels de l'utilisateur",
+                "Parce qu'il gère les processus et permet aux autres logiciels d'interagir avec le matériel",
+                "Parce qu'il fournit une connexion à Internet",
+                "Parce qu'il protège l'ordinateur des surtensions électriques"
+              ],
+              "correctAnswer": "Parce qu'il gère les processus et permet aux autres logiciels d'interagir avec le matériel",
+              "isSpecial": false
+            },
+            {
+              "question": "Un programme est dit \"multi-thread\" lorsqu'il peut exécuter plusieurs tâches simultanément. Quelle partie du système informatique est chargée de gérer ces threads en parallèle ?",
+              "options": [
+                "Le disque dur",
+                "La carte graphique",
+                "Le système d'exploitation via le gestionnaire de processus",
+                "Le compilateur du langage utilisé"
+              ],
+              "correctAnswer": "Le système d'exploitation via le gestionnaire de processus",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "computer-gen-22",
+          "title": "Fonctionnement d'Internet et du Web",
+          "emoji": "🌐",
+          "themeColor": "indigo",
+          "badgeId": "computer-badge-22",
+          "badgeName": "Architecte du Web",
+          "badgeEmoji": "🕸️",
+          "cards": [
+            {
+              "title": "Internet vs le Web",
+              "text": "Internet est l'infrastructure physique mondiale : câbles, routeurs et serveurs interconnectés qui permettent aux appareils de communiquer. Le Web (World Wide Web) est un service qui fonctionne sur Internet : c'est l'ensemble des pages et ressources accessibles via un navigateur grâce au protocole HTTP/HTTPS.",
+              "emoji": "🌐"
+            },
+            {
+              "title": "Adresses IP et noms de domaine",
+              "text": "Chaque appareil connecté à Internet possède une adresse IP (ex. 192.168.1.1), un identifiant numérique unique. Comme ces chiffres sont difficiles à retenir, le DNS (Domain Name System) traduit les noms de domaine lisibles comme « wikipedia.org » en adresses IP, jouant le rôle d'un annuaire mondial.",
+              "emoji": "📡"
+            },
+            {
+              "title": "Protocoles et transfert de données",
+              "text": "Un protocole est un ensemble de règles communes qui permet à deux machines de se comprendre. HTTP (HyperText Transfer Protocol) régit les échanges de pages web, tandis que HTTPS ajoute un chiffrement SSL/TLS qui protège les données transmises contre les interceptions.",
+              "emoji": "🔒"
+            },
+            {
+              "title": "Clients, serveurs et navigateurs",
+              "text": "Quand tu saisis une URL, ton navigateur (client) envoie une requête HTTP à un serveur web distant ; celui-ci répond en envoyant le code HTML, CSS et JavaScript de la page. Le navigateur interprète ensuite ce code pour afficher la page, en suivant les standards définis par le W3C.",
+              "emoji": "💻"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Quelle est la différence fondamentale entre Internet et le Web ?",
+              "options": [
+                "Internet est le réseau physique mondial, le Web est un service qui l'utilise",
+                "Le Web est le réseau physique mondial, Internet est le service de pages",
+                "Ce sont deux noms différents pour la même chose",
+                "Internet fonctionne uniquement par satellite, le Web par câbles"
+              ],
+              "correctAnswer": "Internet est le réseau physique mondial, le Web est un service qui l'utilise",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel système traduit un nom de domaine (ex. « google.com ») en adresse IP ?",
+              "options": [
+                "HTTP",
+                "DNS",
+                "SSL",
+                "HTML"
+              ],
+              "correctAnswer": "DNS",
+              "isSpecial": false
+            },
+            {
+              "question": "Que signifie l'acronyme HTTP ?",
+              "options": [
+                "HyperText Transfer Protocol",
+                "High Tech Transfer Process",
+                "HyperText Transmission Program",
+                "Hosting Tool for Text Pages"
+              ],
+              "correctAnswer": "HyperText Transfer Protocol",
+              "isSpecial": false
+            },
+            {
+              "question": "Qu'est-ce qu'une adresse IP ?",
+              "options": [
+                "Le nom commercial d'un site web",
+                "Un identifiant numérique unique attribué à chaque appareil sur un réseau",
+                "Le mot de passe d'un réseau Wi-Fi",
+                "Le nom d'un serveur de messagerie"
+              ],
+              "correctAnswer": "Un identifiant numérique unique attribué à chaque appareil sur un réseau",
+              "isSpecial": false
+            },
+            {
+              "question": "Que signifie le « S » dans HTTPS ?",
+              "options": [
+                "Speed (vitesse accrue)",
+                "Server (serveur dédié)",
+                "Secure (communication chiffrée)",
+                "Standard (protocole normalisé)"
+              ],
+              "correctAnswer": "Secure (communication chiffrée)",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans un échange web, quel est le rôle du navigateur ?",
+              "options": [
+                "Stocker les données des sites web",
+                "Envoyer des requêtes à un serveur et afficher les réponses HTML/CSS/JS",
+                "Attribuer les adresses IP aux utilisateurs",
+                "Gérer les câbles sous-marins d'Internet"
+              ],
+              "correctAnswer": "Envoyer des requêtes à un serveur et afficher les réponses HTML/CSS/JS",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel organisme définit les standards officiels du Web ?",
+              "options": [
+                "Google",
+                "W3C (World Wide Web Consortium)",
+                "NASA",
+                "ISO (Organisation internationale de normalisation)"
+              ],
+              "correctAnswer": "W3C (World Wide Web Consortium)",
+              "isSpecial": false
+            },
+            {
+              "question": "Que fournit le chiffrement SSL/TLS dans une connexion HTTPS ?",
+              "options": [
+                "Une vitesse de chargement plus rapide",
+                "Un accès sans mot de passe aux sites",
+                "La protection des données contre les interceptions pendant leur transmission",
+                "L'hébergement gratuit des pages web"
+              ],
+              "correctAnswer": "La protection des données contre les interceptions pendant leur transmission",
+              "isSpecial": false
+            },
+            {
+              "question": "À quoi correspond le rôle d'un serveur web ?",
+              "options": [
+                "Afficher les pages sur l'écran de l'utilisateur",
+                "Stocker et transmettre les ressources d'un site aux clients qui les demandent",
+                "Bloquer les virus sur le réseau",
+                "Créer automatiquement des adresses IP"
+              ],
+              "correctAnswer": "Stocker et transmettre les ressources d'un site aux clients qui les demandent",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi le DNS est-il souvent comparé à un « annuaire » d'Internet ?",
+              "options": [
+                "Parce qu'il liste tous les utilisateurs connectés en temps réel",
+                "Parce qu'il associe des noms lisibles (domaines) à des adresses numériques (IP), comme un annuaire associe noms et numéros de téléphone",
+                "Parce qu'il classe les sites web par ordre alphabétique pour les moteurs de recherche",
+                "Parce qu'il stocke une copie de chaque page web visitée dans le monde"
+              ],
+              "correctAnswer": "Parce qu'il associe des noms lisibles (domaines) à des adresses numériques (IP), comme un annuaire associe noms et numéros de téléphone",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "computer-gen-23",
+          "title": "Coder : les bases",
+          "emoji": "💻",
+          "themeColor": "indigo",
+          "badgeId": "computer-badge-23",
+          "badgeName": "Apprenti Développeur",
+          "badgeEmoji": "🧑‍💻",
+          "cards": [
+            {
+              "title": "Qu'est-ce qu'un algorithme ?",
+              "text": "Un algorithme est une suite d'instructions précises et ordonnées permettant de résoudre un problème ou d'accomplir une tâche. C'est la base de tout programme : avant d'écrire du code, on conçoit l'algorithme qui décrit la logique à suivre étape par étape.",
+              "emoji": "📋"
+            },
+            {
+              "title": "Variables et types de données",
+              "text": "Une variable est un espace mémoire nommé qui stocke une valeur pouvant changer au cours du programme. Les données ont des types différents : entier (int), décimal (float), texte (string) et booléen (bool, vrai ou faux) ; choisir le bon type est essentiel pour éviter les erreurs.",
+              "emoji": "📦"
+            },
+            {
+              "title": "Conditions et boucles",
+              "text": "Une condition (if / else) permet d'exécuter un bloc de code uniquement si une expression est vraie, offrant ainsi des chemins différents selon les situations. Une boucle (for, while) répète un bloc d'instructions un certain nombre de fois ou tant qu'une condition est vérifiée, évitant la répétition manuelle du code.",
+              "emoji": "🔁"
+            },
+            {
+              "title": "Fonctions et débogage",
+              "text": "Une fonction est un bloc de code réutilisable qui reçoit des paramètres, effectue un traitement et peut retourner un résultat ; elle permet de structurer le programme et d'éviter les duplications. Le débogage consiste à identifier et corriger les erreurs (bugs) dans le code, en utilisant des messages d'affichage, des points d'arrêt ou des outils spécialisés appelés débogueurs.",
+              "emoji": "🐛"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Qu'est-ce qu'un algorithme ?",
+              "options": [
+                "Un langage de programmation inventé dans les années 1980",
+                "Une suite d'instructions ordonnées pour résoudre un problème",
+                "Un type de variable qui stocke des nombres entiers",
+                "Un outil graphique pour dessiner des programmes"
+              ],
+              "correctAnswer": "Une suite d'instructions ordonnées pour résoudre un problème",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel type de donnée est adapté pour stocker la phrase « Bonjour le monde » ?",
+              "options": [
+                "int",
+                "bool",
+                "float",
+                "string"
+              ],
+              "correctAnswer": "string",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est la valeur possible d'un booléen (bool) ?",
+              "options": [
+                "0, 1 ou 2",
+                "Uniquement des lettres de l'alphabet",
+                "Vrai ou Faux",
+                "N'importe quel nombre décimal"
+              ],
+              "correctAnswer": "Vrai ou Faux",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle structure permet d'exécuter un bloc de code seulement si une condition est vraie ?",
+              "options": [
+                "Une boucle while",
+                "Une fonction",
+                "Une variable",
+                "Une condition if"
+              ],
+              "correctAnswer": "Une condition if",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est la principale différence entre une boucle for et une boucle while ?",
+              "options": [
+                "La boucle for ne peut pas utiliser de variables",
+                "La boucle for s'exécute un nombre défini de fois, la boucle while s'exécute tant qu'une condition est vraie",
+                "La boucle while est plus rapide que la boucle for",
+                "La boucle for est réservée aux chaînes de caractères"
+              ],
+              "correctAnswer": "La boucle for s'exécute un nombre défini de fois, la boucle while s'exécute tant qu'une condition est vraie",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est l'avantage principal d'utiliser une fonction dans un programme ?",
+              "options": [
+                "Elle supprime automatiquement les bugs",
+                "Elle permet de réutiliser un bloc de code sans le réécrire",
+                "Elle remplace toutes les boucles du programme",
+                "Elle convertit les variables en booléens"
+              ],
+              "correctAnswer": "Elle permet de réutiliser un bloc de code sans le réécrire",
+              "isSpecial": false
+            },
+            {
+              "question": "Qu'appelle-t-on un « bug » en programmation ?",
+              "options": [
+                "Un commentaire laissé dans le code source",
+                "Une erreur dans le code qui provoque un comportement inattendu",
+                "Un type de boucle infinie volontaire",
+                "Une fonction qui retourne une valeur nulle"
+              ],
+              "correctAnswer": "Une erreur dans le code qui provoque un comportement inattendu",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle action réalise un débogueur (debugger) ?",
+              "options": [
+                "Il traduit le code source en langage machine",
+                "Il compresse les fichiers du programme",
+                "Il aide à identifier et corriger les erreurs dans le code",
+                "Il convertit automatiquement les types de variables"
+              ],
+              "correctAnswer": "Il aide à identifier et corriger les erreurs dans le code",
+              "isSpecial": false
+            },
+            {
+              "question": "Que se passe-t-il si on oublie la condition d'arrêt d'une boucle while ?",
+              "options": [
+                "Le programme s'arrête immédiatement sans exécuter la boucle",
+                "La boucle s'exécute exactement une seule fois",
+                "La boucle devient une boucle infinie et le programme se bloque",
+                "Le compilateur corrige automatiquement l'erreur"
+              ],
+              "correctAnswer": "La boucle devient une boucle infinie et le programme se bloque",
+              "isSpecial": false
+            },
+            {
+              "question": "Lors de l'appel d'une fonction, un « paramètre » désigne :",
+              "options": [
+                "Le nom donné à la fonction dans le programme",
+                "Une valeur transmise à la fonction pour qu'elle l'utilise dans son traitement",
+                "Le nombre de lignes de code contenues dans la fonction",
+                "L'endroit du programme où la fonction est définie"
+              ],
+              "correctAnswer": "Une valeur transmise à la fonction pour qu'elle l'utilise dans son traitement",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "computer-gen-24",
+          "title": "Le binaire et les données",
+          "emoji": "🔢",
+          "themeColor": "indigo",
+          "badgeId": "computer-badge-24",
+          "badgeName": "Expert Binaire",
+          "badgeEmoji": "💾",
+          "cards": [
+            {
+              "title": "Le système binaire",
+              "text": "Le binaire est un système de numération en base 2, utilisant uniquement les chiffres 0 et 1, appelés bits. Contrairement au système décimal (base 10) que nous utilisons au quotidien, chaque position en binaire représente une puissance de 2 (1, 2, 4, 8, 16...).",
+              "emoji": "🔢"
+            },
+            {
+              "title": "Convertir du décimal en binaire",
+              "text": "Pour convertir un nombre décimal en binaire, on divise successivement par 2 en notant les restes : par exemple, 13 en décimal donne 1101 en binaire (8+4+0+1). En sens inverse, pour lire un nombre binaire, on additionne les puissances de 2 correspondant aux positions valant 1.",
+              "emoji": "🔄"
+            },
+            {
+              "title": "L'octet et la capacité de stockage",
+              "text": "Un octet (byte) regroupe 8 bits et peut représenter 256 valeurs différentes (de 0 à 255). Les capacités de stockage s'expriment en kilooctets (1 Ko = 1024 octets), mégaoctets, gigaoctets, etc., chaque unité étant 1024 fois plus grande que la précédente.",
+              "emoji": "💽"
+            },
+            {
+              "title": "Encoder les données en binaire",
+              "text": "Toute donnée numérique — texte, image, son — est ultimement stockée en binaire. Le standard ASCII associe un code binaire à chaque caractère (ex. : la lettre 'A' = 65 en décimal = 01000001 en binaire), tandis que les images stockent la couleur de chaque pixel sous forme de valeurs binaires.",
+              "emoji": "🖥️"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Combien de symboles différents utilise le système binaire ?",
+              "options": [
+                "2",
+                "8",
+                "10",
+                "16"
+              ],
+              "correctAnswer": "2",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est la valeur décimale du nombre binaire 1010 ?",
+              "options": [
+                "10",
+                "8",
+                "12",
+                "6"
+              ],
+              "correctAnswer": "10",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment s'appelle l'unité de base de l'information en informatique ?",
+              "options": [
+                "Le bit",
+                "L'octet",
+                "Le pixel",
+                "Le byte"
+              ],
+              "correctAnswer": "Le bit",
+              "isSpecial": false
+            },
+            {
+              "question": "Combien de bits contient un octet ?",
+              "options": [
+                "8",
+                "4",
+                "16",
+                "2"
+              ],
+              "correctAnswer": "8",
+              "isSpecial": false
+            },
+            {
+              "question": "Combien de valeurs différentes peut représenter un octet ?",
+              "options": [
+                "256",
+                "128",
+                "512",
+                "64"
+              ],
+              "correctAnswer": "256",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est la valeur décimale du nombre binaire 11111111 ?",
+              "options": [
+                "255",
+                "256",
+                "127",
+                "128"
+              ],
+              "correctAnswer": "255",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est la représentation binaire du nombre décimal 7 ?",
+              "options": [
+                "111",
+                "110",
+                "101",
+                "011"
+              ],
+              "correctAnswer": "111",
+              "isSpecial": false
+            },
+            {
+              "question": "Combien d'octets contient 1 kilooctet (Ko) ?",
+              "options": [
+                "1024",
+                "1000",
+                "2048",
+                "512"
+              ],
+              "correctAnswer": "1024",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel code décimal correspond à la lettre 'A' dans le standard ASCII ?",
+              "options": [
+                "65",
+                "97",
+                "48",
+                "32"
+              ],
+              "correctAnswer": "65",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est la représentation binaire du nombre décimal 25 ?",
+              "options": [
+                "11001",
+                "10110",
+                "11010",
+                "10011"
+              ],
+              "correctAnswer": "11001",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "computer-gen-25",
+          "title": "La cybersécurité",
+          "emoji": "🔐",
+          "themeColor": "indigo",
+          "badgeId": "computer-badge-25",
+          "badgeName": "Gardien du Net",
+          "badgeEmoji": "🛡️",
+          "cards": [
+            {
+              "title": "Qu'est-ce que la cybersécurité ?",
+              "text": "La cybersécurité désigne l'ensemble des techniques et pratiques visant à protéger les systèmes informatiques, les réseaux et les données contre les attaques malveillantes. Elle concerne aussi bien les particuliers que les entreprises et les gouvernements. Sans elle, des informations sensibles comme les mots de passe ou les données bancaires peuvent être volées ou modifiées.",
+              "emoji": "🔐"
+            },
+            {
+              "title": "Les types d'attaques informatiques",
+              "text": "Un virus est un programme malveillant qui se copie dans d'autres fichiers pour se propager, tandis qu'un ransomware chiffre les données de la victime et exige une rançon pour les débloquer. Le phishing, lui, consiste à tromper un utilisateur via un faux email ou un faux site pour lui soutirer ses identifiants. Ces attaques exploitent souvent des failles logicielles ou des erreurs humaines.",
+              "emoji": "🦠"
+            },
+            {
+              "title": "Les bonnes pratiques de protection",
+              "text": "Un mot de passe solide doit comporter au moins 12 caractères mêlant majuscules, minuscules, chiffres et symboles, et être unique pour chaque service. L'authentification à deux facteurs (2FA) ajoute une couche de sécurité en demandant une confirmation supplémentaire, comme un code envoyé par SMS. Il est également essentiel de maintenir ses logiciels à jour pour corriger les failles connues.",
+              "emoji": "🔑"
+            },
+            {
+              "title": "Chiffrement et vie privée",
+              "text": "Le chiffrement transforme des données lisibles en données illisibles sans la clé appropriée, garantissant que seul le destinataire légitime peut les lire. Le protocole HTTPS, visible dans la barre d'adresse d'un navigateur, indique que la connexion entre le navigateur et le serveur est chiffrée. La vie privée en ligne peut aussi être protégée en limitant les informations personnelles partagées sur les réseaux sociaux et en utilisant des réseaux privés virtuels (VPN).",
+              "emoji": "🔒"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Que désigne le terme « phishing » ?",
+              "options": [
+                "Une technique pour accélérer une connexion internet",
+                "Une attaque qui trompe l'utilisateur pour lui voler ses identifiants",
+                "Un logiciel qui chiffre les fichiers contre une rançon",
+                "Un virus qui efface les données du disque dur"
+              ],
+              "correctAnswer": "Une attaque qui trompe l'utilisateur pour lui voler ses identifiants",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le rôle principal d'un ransomware ?",
+              "options": [
+                "Surveiller l'activité d'un utilisateur à son insu",
+                "Bloquer l'accès aux données en les chiffrant pour exiger une rançon",
+                "Voler les mots de passe en enregistrant les frappes clavier",
+                "Afficher des publicités indésirables sur l'écran"
+              ],
+              "correctAnswer": "Bloquer l'accès aux données en les chiffrant pour exiger une rançon",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi est-il important d'utiliser un mot de passe différent pour chaque service ?",
+              "options": [
+                "Pour que les mots de passe soient plus faciles à mémoriser",
+                "Pour éviter qu'une seule fuite de données compromette tous ses comptes",
+                "Parce que les sites web l'exigent légalement",
+                "Pour réduire la vitesse de connexion aux serveurs"
+              ],
+              "correctAnswer": "Pour éviter qu'une seule fuite de données compromette tous ses comptes",
+              "isSpecial": false
+            },
+            {
+              "question": "Que signifie le protocole HTTPS dans la barre d'adresse d'un navigateur ?",
+              "options": [
+                "Le site est gratuit et accessible à tous",
+                "La connexion entre le navigateur et le serveur est chiffrée",
+                "Le site a été vérifié par une autorité gouvernementale",
+                "L'ordinateur est protégé contre les virus"
+              ],
+              "correctAnswer": "La connexion entre le navigateur et le serveur est chiffrée",
+              "isSpecial": false
+            },
+            {
+              "question": "Qu'est-ce que l'authentification à deux facteurs (2FA) ?",
+              "options": [
+                "Un système nécessitant deux mots de passe identiques",
+                "Une méthode ajoutant une vérification supplémentaire après le mot de passe",
+                "Un antivirus qui scanne deux fois les fichiers téléchargés",
+                "Un protocole qui double la vitesse de chiffrement"
+              ],
+              "correctAnswer": "Une méthode ajoutant une vérification supplémentaire après le mot de passe",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi faut-il mettre à jour régulièrement ses logiciels ?",
+              "options": [
+                "Pour bénéficier de nouvelles couleurs d'interface",
+                "Pour corriger des failles de sécurité connues et exploitables",
+                "Pour libérer de l'espace sur le disque dur",
+                "Pour augmenter la résolution de l'écran"
+              ],
+              "correctAnswer": "Pour corriger des failles de sécurité connues et exploitables",
+              "isSpecial": false
+            },
+            {
+              "question": "Qu'est-ce qu'un VPN (réseau privé virtuel) ?",
+              "options": [
+                "Un antivirus installé directement sur le routeur",
+                "Un outil qui masque l'adresse IP et chiffre le trafic internet",
+                "Un protocole permettant d'augmenter la bande passante",
+                "Un logiciel de contrôle parental"
+              ],
+              "correctAnswer": "Un outil qui masque l'adresse IP et chiffre le trafic internet",
+              "isSpecial": false
+            },
+            {
+              "question": "Lequel de ces mots de passe est le plus sécurisé ?",
+              "options": [
+                "password123",
+                "azerty",
+                "Tr0ub4dor&3!Kx",
+                "monprenom2010"
+              ],
+              "correctAnswer": "Tr0ub4dor&3!Kx",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel type de donnée un virus informatique cherche-t-il principalement à exploiter ou à altérer ?",
+              "options": [
+                "La luminosité de l'écran",
+                "Les fichiers et données stockés sur le système",
+                "La résolution de la carte graphique",
+                "La vitesse du ventilateur du processeur"
+              ],
+              "correctAnswer": "Les fichiers et données stockés sur le système",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans un système de chiffrement asymétrique, à quoi sert la clé publique ?",
+              "options": [
+                "À déchiffrer les messages reçus",
+                "À chiffrer les données envoyées à un destinataire",
+                "À stocker les mots de passe en toute sécurité",
+                "À signer numériquement des documents pour en certifier l'authenticité"
+              ],
+              "correctAnswer": "À chiffrer les données envoyées à un destinataire",
+              "isSpecial": true
+            }
+          ]
         }
       ]
     }
@@ -48609,6 +48437,864 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": true
             }
           ]
+        },
+        {
+          "id": "survival-gen-26",
+          "title": "L'Eau en Survie",
+          "emoji": "💧",
+          "themeColor": "orange",
+          "badgeId": "survival-badge-26",
+          "badgeName": "Trouveur d'eau",
+          "badgeEmoji": "🚰",
+          "cards": [
+            {
+              "title": "Pourquoi l'eau est indispensable",
+              "text": "Le corps humain est composé d'environ 60 % d'eau et ne peut pas survivre plus de 3 jours sans en boire. En situation de survie, trouver de l'eau devient donc la priorité absolue, avant même la nourriture.",
+              "emoji": "🧍"
+            },
+            {
+              "title": "Où chercher de l'eau dans la nature",
+              "text": "Les ruisseaux, rivières et sources sont les meilleures sources d'eau en pleine nature. On peut aussi collecter l'eau de pluie ou la rosée du matin en posant un tissu propre sur l'herbe et en le pressant ensuite.",
+              "emoji": "🌿"
+            },
+            {
+              "title": "Purifier l'eau avant de la boire",
+              "text": "Même une eau qui semble claire peut contenir des bactéries ou des parasites dangereux. Pour la rendre potable, on peut la faire bouillir pendant au moins 1 minute, utiliser des pastilles de purification, ou la filtrer à travers du sable et du charbon.",
+              "emoji": "🔥"
+            },
+            {
+              "title": "Les signes d'une eau à éviter",
+              "text": "Une eau de couleur brunâtre, qui sent mauvais, ou qui se trouve près d'animaux morts est très probablement contaminée. L'eau stagnante (sans courant) est aussi plus risquée car les microbes s'y développent facilement.",
+              "emoji": "⚠️"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Combien de jours maximum peut-on survivre sans eau ?",
+              "options": [
+                "1 jour",
+                "3 jours",
+                "7 jours",
+                "10 jours"
+              ],
+              "correctAnswer": "3 jours",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est la priorité absolue en situation de survie ?",
+              "options": [
+                "Trouver de la nourriture",
+                "Construire un abri",
+                "Trouver de l'eau",
+                "Allumer un feu"
+              ],
+              "correctAnswer": "Trouver de l'eau",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle source d'eau est la plus sûre en pleine nature ?",
+              "options": [
+                "Un lac stagnant",
+                "Une flaque de boue",
+                "Un ruisseau ou une source",
+                "De l'eau de mer"
+              ],
+              "correctAnswer": "Un ruisseau ou une source",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment peut-on collecter de la rosée le matin ?",
+              "options": [
+                "En creusant un trou dans le sol",
+                "En posant un tissu sur l'herbe puis en le pressant",
+                "En faisant bouillir des feuilles",
+                "En attendant la pluie"
+              ],
+              "correctAnswer": "En posant un tissu sur l'herbe puis en le pressant",
+              "isSpecial": false
+            },
+            {
+              "question": "Combien de temps faut-il faire bouillir l'eau pour la purifier ?",
+              "options": [
+                "10 secondes",
+                "30 secondes",
+                "Au moins 1 minute",
+                "Au moins 10 minutes"
+              ],
+              "correctAnswer": "Au moins 1 minute",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle méthode permet de purifier l'eau sans la faire bouillir ?",
+              "options": [
+                "La mélanger avec du sel",
+                "Utiliser des pastilles de purification",
+                "La laisser reposer 1 heure",
+                "La filtrer à travers du coton humide"
+              ],
+              "correctAnswer": "Utiliser des pastilles de purification",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi l'eau stagnante est-elle plus dangereuse ?",
+              "options": [
+                "Elle est trop froide pour être bue",
+                "Elle contient trop de sel",
+                "Les microbes s'y développent plus facilement",
+                "Elle n'hydrate pas le corps"
+              ],
+              "correctAnswer": "Les microbes s'y développent plus facilement",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel signe indique qu'une eau est probablement contaminée ?",
+              "options": [
+                "Elle est très froide",
+                "Elle coule rapidement",
+                "Elle a une mauvaise odeur",
+                "Elle est transparente"
+              ],
+              "correctAnswer": "Elle a une mauvaise odeur",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel pourcentage du corps humain est composé d'eau ?",
+              "options": [
+                "Environ 30 %",
+                "Environ 45 %",
+                "Environ 60 %",
+                "Environ 80 %"
+              ],
+              "correctAnswer": "Environ 60 %",
+              "isSpecial": false
+            },
+            {
+              "question": "Si tu n'as ni feu ni pastilles, comment peux-tu améliorer la qualité d'une eau trouble avant de la boire ?",
+              "options": [
+                "La boire immédiatement avant qu'elle ne se détériore",
+                "La filtrer à travers du sable et du charbon de bois",
+                "Y ajouter des feuilles d'arbre pour neutraliser les bactéries",
+                "La secouer énergiquement dans une gourde"
+              ],
+              "correctAnswer": "La filtrer à travers du sable et du charbon de bois",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "survival-gen-27",
+          "title": "Allumer le Feu",
+          "emoji": "🔥",
+          "themeColor": "orange",
+          "badgeId": "survival-badge-27",
+          "badgeName": "Maître du Feu",
+          "badgeEmoji": "🔥",
+          "cards": [
+            {
+              "title": "Pourquoi le frottement crée du feu",
+              "text": "Quand deux matières se frottent rapidement, la friction produit de la chaleur. Si cette chaleur est assez intense et qu'un matériau sec est présent, une braise peut s'enflammer. C'est ce principe que les humains utilisent depuis des milliers d'années pour allumer du feu.",
+              "emoji": "🌡️"
+            },
+            {
+              "title": "La méthode arc-et-foret",
+              "text": "Cette technique utilise un bâton appelé foret que l'on fait tourner rapidement grâce à un arc tendu d'une corde. La rotation contre une planchette en bois tendre crée de la poudre chaude qui se transforme en braise. On dépose cette braise dans un nid d'herbes sèches et on souffle doucement pour obtenir une flamme.",
+              "emoji": "🪵"
+            },
+            {
+              "title": "Le silex et la marcassite",
+              "text": "Frapper un morceau de silex contre de la marcassite (une roche métallique) produit des étincelles très chaudes. Ces étincelles peuvent enflammer un amadou, c'est-à-dire un matériau très sec et spongieux comme du champignon séché ou de la mousse. Cette méthode était courante à la préhistoire.",
+              "emoji": "🪨"
+            },
+            {
+              "title": "Préparer son feu correctement",
+              "text": "Un bon feu nécessite trois éléments : combustible (bois), comburant (oxygène) et chaleur. On commence toujours par de l'amadou très fin et sec, puis on ajoute des brindilles, ensuite des bûches plus grosses. Souffler doucement sur la braise apporte l'oxygène nécessaire pour alimenter la flamme.",
+              "emoji": "💨"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Quel phénomène physique permet de créer de la chaleur en frottant deux matières ?",
+              "options": [
+                "La condensation",
+                "La friction",
+                "L'évaporation",
+                "La gravitation"
+              ],
+              "correctAnswer": "La friction",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans la méthode arc-et-foret, quel rôle joue l'arc ?",
+              "options": [
+                "Il protège du vent",
+                "Il taille le bois",
+                "Il fait tourner le foret rapidement",
+                "Il retient la braise"
+              ],
+              "correctAnswer": "Il fait tourner le foret rapidement",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel matériau est utilisé comme planchette dans la technique arc-et-foret ?",
+              "options": [
+                "Du métal",
+                "De la pierre",
+                "Du bois tendre sec",
+                "Du plastique"
+              ],
+              "correctAnswer": "Du bois tendre sec",
+              "isSpecial": false
+            },
+            {
+              "question": "Qu'est-ce que l'amadou ?",
+              "options": [
+                "Un type de pierre volcanique",
+                "Un matériau très sec et facilement inflammable",
+                "Un outil pour souffler sur la braise",
+                "Un bois dur utilisé pour faire des étincelles"
+              ],
+              "correctAnswer": "Un matériau très sec et facilement inflammable",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle roche produit des étincelles lorsqu'on la frappe avec du silex ?",
+              "options": [
+                "Le granite",
+                "Le calcaire",
+                "La marcassite",
+                "L'ardoise"
+              ],
+              "correctAnswer": "La marcassite",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans quel ordre doit-on ajouter les matériaux pour construire un feu ?",
+              "options": [
+                "Grosses bûches, puis brindilles, puis amadou",
+                "Amadou fin, puis brindilles, puis grosses bûches",
+                "Brindilles, puis amadou, puis grosses bûches",
+                "Grosses bûches, puis amadou, puis brindilles"
+              ],
+              "correctAnswer": "Amadou fin, puis brindilles, puis grosses bûches",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi souffle-t-on doucement sur une braise pour l'allumer ?",
+              "options": [
+                "Pour la refroidir progressivement",
+                "Pour apporter l'oxygène nécessaire à la combustion",
+                "Pour éteindre les flammes trop fortes",
+                "Pour humidifier le bois"
+              ],
+              "correctAnswer": "Pour apporter l'oxygène nécessaire à la combustion",
+              "isSpecial": false
+            },
+            {
+              "question": "Quels sont les trois éléments indispensables pour qu'un feu brûle ?",
+              "options": [
+                "Eau, air, pierre",
+                "Combustible, comburant et chaleur",
+                "Silex, amadou et vent",
+                "Bois humide, braise et fumée"
+              ],
+              "correctAnswer": "Combustible, comburant et chaleur",
+              "isSpecial": false
+            },
+            {
+              "question": "La méthode arc-et-foret est utilisée depuis combien de temps environ par les êtres humains ?",
+              "options": [
+                "Quelques centaines d'années",
+                "Des milliers d'années",
+                "Depuis le Moyen Âge seulement",
+                "Depuis le XIXe siècle"
+              ],
+              "correctAnswer": "Des milliers d'années",
+              "isSpecial": false
+            },
+            {
+              "question": "Si l'amadou est humide, que se passe-t-il lorsqu'on essaie de l'enflammer avec des étincelles ?",
+              "options": [
+                "Il brûle plus vite grâce à l'humidité",
+                "Il ne s'enflamme pas car l'eau empêche la combustion",
+                "Il produit des étincelles supplémentaires",
+                "Il se transforme en charbon immédiatement"
+              ],
+              "correctAnswer": "Il ne s'enflamme pas car l'eau empêche la combustion",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "survival-gen-28",
+          "title": "Construire un Abri",
+          "emoji": "🏕️",
+          "themeColor": "orange",
+          "badgeId": "survival-badge-28",
+          "badgeName": "Constructeur de Survie",
+          "badgeEmoji": "🪵",
+          "cards": [
+            {
+              "title": "Pourquoi construire un abri ?",
+              "text": "En situation de survie, l'abri est souvent la priorité absolue car il protège du vent, de la pluie et du froid. Sans abri, le corps peut perdre sa chaleur très rapidement, ce qui provoque l'hypothermie. Un bon emplacement fait toute la différence : on choisit un terrain plat, à l'abri du vent et loin des zones inondables.",
+              "emoji": "🌧️"
+            },
+            {
+              "title": "Les types d'abris naturels",
+              "text": "La nature offre parfois des abris tout faits : creux dans un rocher, espace sous un arbre tombé ou grotte peu profonde. Ces abris naturels demandent peu d'énergie à aménager, ce qui est précieux en survie. Il faut toutefois vérifier qu'ils ne sont pas occupés par des animaux et qu'ils ne risquent pas de s'effondrer.",
+              "emoji": "🪨"
+            },
+            {
+              "title": "Construire un abri avec des branches",
+              "text": "L'abri en branches le plus courant est le lean-to (toit à une pente) : on appuie de longues branches sur un support horizontal entre deux arbres, puis on les recouvre de feuilles et de mousse pour imperméabiliser. Pour une meilleure protection, on peut construire un abri en A (deux côtés inclinés) qui retient mieux la chaleur. L'épaisseur de la couverture végétale doit être d'au moins 30 cm pour réellement bloquer la pluie.",
+              "emoji": "🌿"
+            },
+            {
+              "title": "Isolation et finitions",
+              "text": "Le sol est la principale source de perte de chaleur : il faut absolument poser une litière épaisse de feuilles mortes, d'herbes sèches ou de branches de sapin entre soi et la terre. L'ouverture de l'abri doit être la plus petite possible et orientée à l'opposé du vent dominant pour garder la chaleur à l'intérieur. Un abri bien isolé permet de survivre à des nuits froides même sans feu.",
+              "emoji": "🍂"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Quelle est la priorité absolue en situation de survie, avant même de chercher de la nourriture ?",
+              "options": [
+                "Trouver de l'eau potable",
+                "Construire un abri",
+                "Allumer un feu",
+                "Envoyer un signal de détresse"
+              ],
+              "correctAnswer": "Construire un abri",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel danger provoque la perte rapide de chaleur corporelle sans abri ?",
+              "options": [
+                "La déshydratation",
+                "La fatigue musculaire",
+                "L'hypothermie",
+                "L'insolation"
+              ],
+              "correctAnswer": "L'hypothermie",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel critère est essentiel pour choisir l'emplacement d'un abri de survie ?",
+              "options": [
+                "Être proche d'un cours d'eau",
+                "Être sur un terrain plat et à l'abri du vent",
+                "Être face au soleil levant",
+                "Être visible de loin pour les secours"
+              ],
+              "correctAnswer": "Être sur un terrain plat et à l'abri du vent",
+              "isSpecial": false
+            },
+            {
+              "question": "Qu'est-ce qu'un abri en lean-to ?",
+              "options": [
+                "Un abri creusé dans le sol",
+                "Un abri avec un toit à une seule pente fait de branches",
+                "Un abri en forme de dôme recouvert de terre",
+                "Un abri construit uniquement avec des pierres"
+              ],
+              "correctAnswer": "Un abri avec un toit à une seule pente fait de branches",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle épaisseur minimale de couverture végétale faut-il pour bloquer la pluie sur un abri de branches ?",
+              "options": [
+                "5 cm",
+                "10 cm",
+                "30 cm",
+                "1 mètre"
+              ],
+              "correctAnswer": "30 cm",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi doit-on vérifier une grotte avant de s'y installer comme abri ?",
+              "options": [
+                "Pour mesurer sa profondeur exacte",
+                "Pour vérifier qu'elle n'est pas occupée par des animaux",
+                "Pour s'assurer qu'elle est orientée vers le sud",
+                "Pour calculer la quantité de bois nécessaire"
+              ],
+              "correctAnswer": "Pour vérifier qu'elle n'est pas occupée par des animaux",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est la principale source de perte de chaleur dans un abri de survie ?",
+              "options": [
+                "Les parois latérales",
+                "L'ouverture de l'entrée",
+                "Le sol froid sous le corps",
+                "Le toit insuffisamment épais"
+              ],
+              "correctAnswer": "Le sol froid sous le corps",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel matériau naturel est idéal pour fabriquer une litière isolante sur le sol d'un abri ?",
+              "options": [
+                "Des cailloux plats",
+                "Des feuilles mortes et des herbes sèches",
+                "De la terre humide tassée",
+                "Des troncs d'arbres coupés"
+              ],
+              "correctAnswer": "Des feuilles mortes et des herbes sèches",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans quelle direction faut-il orienter l'ouverture d'un abri pour conserver la chaleur ?",
+              "options": [
+                "Face au soleil pour se réchauffer",
+                "Dans le sens du vent dominant",
+                "À l'opposé du vent dominant",
+                "Vers le nord magnétique"
+              ],
+              "correctAnswer": "À l'opposé du vent dominant",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi un abri en forme de A est-il plus efficace qu'un lean-to par temps froid ?",
+              "options": [
+                "Il est plus rapide à construire avec moins de branches",
+                "Ses deux côtés inclinés retiennent mieux la chaleur corporelle",
+                "Il permet de faire un feu à l'intérieur sans danger",
+                "Il résiste mieux au vent car il est plus haut"
+              ],
+              "correctAnswer": "Ses deux côtés inclinés retiennent mieux la chaleur corporelle",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "survival-gen-29",
+          "title": "Se nourrir dans la nature",
+          "emoji": "🌿",
+          "themeColor": "orange",
+          "badgeId": "survival-badge-29",
+          "badgeName": "Cueilleur Aguerri",
+          "badgeEmoji": "🍄",
+          "cards": [
+            {
+              "title": "Les plantes comestibles",
+              "text": "De nombreuses plantes sauvages sont comestibles et peuvent te nourrir en cas de survie. Les orties, les pissenlits et les plantains sont faciles à reconnaître et très nutritifs. Cependant, il ne faut jamais manger une plante si tu n'es pas sûr de l'identifier correctement.",
+              "emoji": "🌱"
+            },
+            {
+              "title": "Les dangers des plantes toxiques",
+              "text": "Certaines plantes sauvages sont extrêmement dangereuses, comme la ciguë ou la belladone, qui peuvent être mortelles. Une règle de base : si tu n'es pas certain à 100 % de l'identité d'une plante, ne la mange jamais. Beaucoup de baies rouges ou blanches sont toxiques, même si elles semblent appétissantes.",
+              "emoji": "☠️"
+            },
+            {
+              "title": "Les insectes et autres petites proies",
+              "text": "Les insectes sont l'une des meilleures sources de protéines en milieu sauvage. Les grillons, les vers de terre et les larves sont consommés dans de nombreuses cultures et sont relativement faciles à trouver sous les pierres ou dans le sol. Il faut toujours les cuire avant de les manger pour éviter les maladies.",
+              "emoji": "🐛"
+            },
+            {
+              "title": "Trouver de la nourriture près de l'eau",
+              "text": "Les abords des rivières et des étangs regorgent de ressources alimentaires : poissons, écrevisses, grenouilles et plantes aquatiques comme le cresson. Le cresson d'eau est comestible et riche en vitamines, mais il doit être lavé soigneusement. Pêcher sans matériel est possible en construisant un piège simple avec des branches.",
+              "emoji": "🐟"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Parmi ces plantes, laquelle est comestible et facile à trouver en milieu sauvage ?",
+              "options": [
+                "La belladone",
+                "Le pissenlit",
+                "La ciguë",
+                "Le muguet"
+              ],
+              "correctAnswer": "Le pissenlit",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est la règle d'or avant de manger une plante sauvage inconnue ?",
+              "options": [
+                "La goûter en petite quantité d'abord",
+                "Ne jamais la consommer si on ne l'identifie pas avec certitude",
+                "La faire bouillir pour éliminer les toxines",
+                "Demander à un animal s'il la mange"
+              ],
+              "correctAnswer": "Ne jamais la consommer si on ne l'identifie pas avec certitude",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi les insectes sont-ils utiles en situation de survie ?",
+              "options": [
+                "Ils servent uniquement à faire du feu",
+                "Ce sont une bonne source de protéines",
+                "Ils indiquent la direction du nord",
+                "Ils servent à purifier l'eau"
+              ],
+              "correctAnswer": "Ce sont une bonne source de protéines",
+              "isSpecial": false
+            },
+            {
+              "question": "Que doit-on faire avant de manger des insectes trouvés dans la nature ?",
+              "options": [
+                "Les manger crus pour garder les nutriments",
+                "Les conserver vivants jusqu'au repas",
+                "Les cuire pour éviter les maladies",
+                "Les faire sécher au soleil pendant une semaine"
+              ],
+              "correctAnswer": "Les cuire pour éviter les maladies",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle plante aquatique comestible peut être trouvée près des rivières ?",
+              "options": [
+                "Le nénuphar",
+                "La prêle des champs",
+                "Le cresson",
+                "La jacinthe d'eau"
+              ],
+              "correctAnswer": "Le cresson",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel type de baies faut-il éviter en priorité dans la nature ?",
+              "options": [
+                "Les baies bleues et noires",
+                "Les baies rouges et blanches qui sont souvent toxiques",
+                "Les baies qui tombent à l'automne",
+                "Les baies situées en hauteur dans les arbres"
+              ],
+              "correctAnswer": "Les baies rouges et blanches qui sont souvent toxiques",
+              "isSpecial": false
+            },
+            {
+              "question": "Où peut-on trouver des vers de terre en milieu sauvage ?",
+              "options": [
+                "Au sommet des arbres",
+                "Dans les eaux des rivières",
+                "Sous les pierres ou dans le sol",
+                "Sur les feuilles des arbustes"
+              ],
+              "correctAnswer": "Sous les pierres ou dans le sol",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle plante sauvage très commune est à la fois comestible et riche en nutriments ?",
+              "options": [
+                "La ciguë",
+                "L'ortie",
+                "La belladone",
+                "Le thuya"
+              ],
+              "correctAnswer": "L'ortie",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle ressource alimentaire peut-on trouver dans un étang ou une rivière ?",
+              "options": [
+                "Des champignons",
+                "Des baies sauvages",
+                "Des écrevisses",
+                "Des insectes venimeux"
+              ],
+              "correctAnswer": "Des écrevisses",
+              "isSpecial": false
+            },
+            {
+              "question": "La ciguë est une plante mortelle. À quelle autre plante comestible ressemble-t-elle dangereusement ?",
+              "options": [
+                "Au pissenlit",
+                "Au persil sauvage",
+                "À l'ortie",
+                "Au plantain"
+              ],
+              "correctAnswer": "Au persil sauvage",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "survival-gen-30",
+          "title": "La Boussole et l'Orientation",
+          "emoji": "🧭",
+          "themeColor": "orange",
+          "badgeId": "survival-badge-30",
+          "badgeName": "Explorateur de l'Orientation",
+          "badgeEmoji": "🧭",
+          "cards": [
+            {
+              "title": "Comment fonctionne une boussole ?",
+              "text": "Une boussole contient une aiguille aimantée qui s'aligne toujours avec le champ magnétique de la Terre. L'extrémité colorée (souvent rouge) pointe vers le nord magnétique. C'est un outil fiable même sans électricité ni réseau.",
+              "emoji": "🧲"
+            },
+            {
+              "title": "Les quatre points cardinaux",
+              "text": "Les quatre directions principales s'appellent les points cardinaux : Nord, Sud, Est et Ouest. En regardant vers le nord, l'est se trouve à ta droite et l'ouest à ta gauche. Pour se souvenir de l'ordre, on peut utiliser la phrase : Ne Suivez Pas Oubli (N, S, E, O... attends, plutôt : Nord-Est-Sud-Ouest dans le sens des aiguilles d'une montre : N, E, S, O).",
+              "emoji": "🗺️"
+            },
+            {
+              "title": "Lire et utiliser une boussole",
+              "text": "Pour utiliser une boussole, tiens-la à plat dans ta main et oriente la boîtier jusqu'à ce que la flèche du cadran pointe dans la même direction que l'aiguille nord. Tu peux alors lire l'azimut, un angle en degrés entre 0° et 360° qui indique ta direction. Le nord vaut 0°, l'est 90°, le sud 180° et l'ouest 270°.",
+              "emoji": "📐"
+            },
+            {
+              "title": "Boussole et carte ensemble",
+              "text": "Associer une boussole à une carte topographique permet de se repérer avec précision. On oriente d'abord la carte vers le nord en la faisant correspondre avec la boussole, puis on identifie les reliefs ou les repères autour de soi. Cette technique s'appelle l'orientation de carte et est indispensable en randonnée ou en survie.",
+              "emoji": "🗾"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Vers quelle direction pointe l'aiguille aimantée d'une boussole ?",
+              "options": [
+                "Le sud géographique",
+                "Le nord magnétique",
+                "L'est",
+                "L'ouest"
+              ],
+              "correctAnswer": "Le nord magnétique",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel angle indique le nord sur une boussole exprimée en degrés ?",
+              "options": [
+                "90°",
+                "180°",
+                "270°",
+                "0°"
+              ],
+              "correctAnswer": "0°",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans le sens des aiguilles d'une montre, quel est l'ordre correct des points cardinaux ?",
+              "options": [
+                "Nord, Sud, Est, Ouest",
+                "Nord, Est, Sud, Ouest",
+                "Nord, Ouest, Sud, Est",
+                "Est, Nord, Sud, Ouest"
+              ],
+              "correctAnswer": "Nord, Est, Sud, Ouest",
+              "isSpecial": false
+            },
+            {
+              "question": "Quand on regarde vers le nord, où se trouve l'ouest ?",
+              "options": [
+                "Devant soi",
+                "À droite",
+                "À gauche",
+                "Derrière soi"
+              ],
+              "correctAnswer": "À gauche",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel angle correspond à la direction est sur une boussole ?",
+              "options": [
+                "45°",
+                "90°",
+                "180°",
+                "270°"
+              ],
+              "correctAnswer": "90°",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi la boussole est-elle utile en situation de survie ?",
+              "options": [
+                "Elle fonctionne sans électricité ni réseau",
+                "Elle indique toujours le chemin le plus court",
+                "Elle prédit la météo",
+                "Elle mesure la distance parcourue"
+              ],
+              "correctAnswer": "Elle fonctionne sans électricité ni réseau",
+              "isSpecial": false
+            },
+            {
+              "question": "Qu'est-ce qu'un azimut ?",
+              "options": [
+                "Un type de boussole ancienne",
+                "Un angle en degrés qui indique une direction",
+                "Le nom de l'aiguille aimantée",
+                "Une carte topographique"
+              ],
+              "correctAnswer": "Un angle en degrés qui indique une direction",
+              "isSpecial": false
+            },
+            {
+              "question": "Que doit-on faire en premier pour orienter une carte avec une boussole ?",
+              "options": [
+                "Trouver un repère visible au loin",
+                "Orienter la carte vers le nord",
+                "Calculer la distance jusqu'à destination",
+                "Mémoriser les points cardinaux"
+              ],
+              "correctAnswer": "Orienter la carte vers le nord",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle valeur en degrés correspond au sud sur une boussole ?",
+              "options": [
+                "90°",
+                "270°",
+                "180°",
+                "360°"
+              ],
+              "correctAnswer": "180°",
+              "isSpecial": false
+            },
+            {
+              "question": "Un randonneur relève un azimut de 270° sur sa boussole. Dans quelle direction marche-t-il ?",
+              "options": [
+                "Nord",
+                "Est",
+                "Sud",
+                "Ouest"
+              ],
+              "correctAnswer": "Ouest",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "survival-gen-31",
+          "title": "Premiers Secours",
+          "emoji": "🚑",
+          "themeColor": "orange",
+          "badgeId": "survival-badge-31",
+          "badgeName": "Secouriste en herbe",
+          "badgeEmoji": "🩹",
+          "cards": [
+            {
+              "title": "Appeler les secours",
+              "text": "En cas d'urgence, le premier geste est d'appeler les secours. En France, tu peux composer le 15 (SAMU), le 18 (pompiers) ou le 112 (numéro d'urgence européen). Il faut rester calme et indiquer clairement le lieu, ce qui s'est passé et l'état de la victime.",
+              "emoji": "📞"
+            },
+            {
+              "title": "La position latérale de sécurité",
+              "text": "Quand une personne est inconsciente mais respire, on la place en position latérale de sécurité (PLS) pour éviter qu'elle s'étouffe. On la couche sur le côté, la jambe du dessus pliée pour stabiliser la position et la tête légèrement inclinée en arrière pour libérer les voies respiratoires.",
+              "emoji": "🛌"
+            },
+            {
+              "title": "Le massage cardiaque",
+              "text": "Si une personne ne respire plus et est inconsciente, il faut pratiquer le massage cardiaque : on appuie fort et régulièrement sur le centre de la poitrine, environ 100 à 120 fois par minute. Ce geste permet de faire circuler le sang dans le corps en attendant les secours.",
+              "emoji": "❤️"
+            },
+            {
+              "title": "Les petits accidents du quotidien",
+              "text": "Pour une coupure, on nettoie la plaie à l'eau propre et on applique un pansement propre. En cas de brûlure légère, on refroidit la zone sous de l'eau froide pendant 10 à 15 minutes sans jamais percer les cloques. En cas de saignement du nez, on se penche en avant et on pince le nez pendant quelques minutes.",
+              "emoji": "🩹"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Quel numéro appelles-tu en France pour contacter le SAMU ?",
+              "options": [
+                "15",
+                "17",
+                "18",
+                "112"
+              ],
+              "correctAnswer": "15",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le numéro d'urgence commun à toute l'Europe ?",
+              "options": [
+                "15",
+                "17",
+                "18",
+                "112"
+              ],
+              "correctAnswer": "112",
+              "isSpecial": false
+            },
+            {
+              "question": "À quelle fréquence faut-il appuyer sur la poitrine lors d'un massage cardiaque ?",
+              "options": [
+                "40 à 60 fois par minute",
+                "70 à 90 fois par minute",
+                "100 à 120 fois par minute",
+                "150 à 180 fois par minute"
+              ],
+              "correctAnswer": "100 à 120 fois par minute",
+              "isSpecial": false
+            },
+            {
+              "question": "Que signifie l'abréviation PLS ?",
+              "options": [
+                "Position de Libre Sécurité",
+                "Position Latérale de Sécurité",
+                "Posture Légère de Soin",
+                "Placement de Longue Stabilité"
+              ],
+              "correctAnswer": "Position Latérale de Sécurité",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans quelle situation place-t-on une victime en PLS ?",
+              "options": [
+                "Quand elle a une coupure profonde",
+                "Quand elle est inconsciente et respire encore",
+                "Quand elle ne respire plus du tout",
+                "Quand elle souffre d'une brûlure grave"
+              ],
+              "correctAnswer": "Quand elle est inconsciente et respire encore",
+              "isSpecial": false
+            },
+            {
+              "question": "Combien de temps faut-il refroidir une brûlure légère sous l'eau froide ?",
+              "options": [
+                "2 à 3 minutes",
+                "5 à 7 minutes",
+                "10 à 15 minutes",
+                "20 à 30 minutes"
+              ],
+              "correctAnswer": "10 à 15 minutes",
+              "isSpecial": false
+            },
+            {
+              "question": "Où faut-il appuyer pour pratiquer le massage cardiaque ?",
+              "options": [
+                "Sur l'estomac",
+                "Sur le côté gauche de la poitrine",
+                "Au centre de la poitrine",
+                "Dans le dos"
+              ],
+              "correctAnswer": "Au centre de la poitrine",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est la bonne attitude en cas de saignement du nez ?",
+              "options": [
+                "Se pencher en arrière et boucher le nez",
+                "Se pencher en avant et pincer le nez",
+                "Allonger la personne sur le dos",
+                "Appliquer de la glace directement dans la narine"
+              ],
+              "correctAnswer": "Se pencher en avant et pincer le nez",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi ne faut-il jamais percer les cloques d'une brûlure ?",
+              "options": [
+                "Parce que cela ferait trop mal",
+                "Parce que cela risque d'introduire des microbes et d'aggraver la blessure",
+                "Parce que le liquide à l'intérieur est toxique",
+                "Parce que cela arrêterait la guérison définitivement"
+              ],
+              "correctAnswer": "Parce que cela risque d'introduire des microbes et d'aggraver la blessure",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le rôle principal du massage cardiaque en attendant les secours ?",
+              "options": [
+                "Réchauffer le corps de la victime",
+                "Faire circuler le sang dans le corps",
+                "Réveiller la victime rapidement",
+                "Libérer les voies respiratoires"
+              ],
+              "correctAnswer": "Faire circuler le sang dans le corps",
+              "isSpecial": true
+            }
+          ]
         }
       ],
       "difficile": [
@@ -50366,6 +51052,864 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": true
             }
           ]
+        },
+        {
+          "id": "survival-gen-32",
+          "title": "Eau Potable en Survie",
+          "emoji": "💧",
+          "themeColor": "orange",
+          "badgeId": "survival-badge-32",
+          "badgeName": "Hydro-Survivant",
+          "badgeEmoji": "🚰",
+          "cards": [
+            {
+              "title": "Pourquoi l'eau est vitale",
+              "text": "Le corps humain peut survivre plusieurs semaines sans nourriture, mais seulement 3 à 5 jours sans eau dans des conditions normales, et encore moins par forte chaleur ou effort physique intense. La déshydratation altère rapidement les fonctions cognitives et musculaires, rendant toute décision de survie bien plus difficile.",
+              "emoji": "🧠"
+            },
+            {
+              "title": "Localiser une source d'eau",
+              "text": "En terrain naturel, l'eau s'écoule vers les points bas : suivre une vallée, un lit de rivière à sec ou la végétation dense (saules, roseaux) conduit souvent vers une source. Les animaux et les insectes se dirigent vers l'eau à l'aube et au crépuscule, et les pistes de gibier convergent généralement vers des points d'eau.",
+              "emoji": "🗺️"
+            },
+            {
+              "title": "Collecter l'eau",
+              "text": "La pluie, la rosée et la condensation sont des sources précieuses : des feuilles larges ou une bâche inclinée peuvent recueillir l'eau de pluie, et des tissus noués autour des herbes le matin absorbent la rosée. La neige et la glace doivent être fondues avant consommation, car les manger directement abaisse la température corporelle et aggrave la déshydratation.",
+              "emoji": "🌧️"
+            },
+            {
+              "title": "Purifier l'eau",
+              "text": "Même une eau d'apparence claire peut contenir des bactéries, des virus ou des parasites dangereux. L'ébullition pendant au moins 1 minute (3 minutes en altitude) élimine la plupart des agents pathogènes biologiques, mais ne supprime pas les contaminants chimiques. La filtration à travers du sable, du charbon de bois et des galets améliore la clarté, mais doit toujours être combinée à une désinfection thermique ou chimique pour être vraiment sûre.",
+              "emoji": "🔥"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Combien de jours environ un être humain peut-il survivre sans eau dans des conditions normales ?",
+              "options": [
+                "1 à 2 jours",
+                "3 à 5 jours",
+                "7 à 10 jours",
+                "2 à 3 semaines"
+              ],
+              "correctAnswer": "3 à 5 jours",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel effet immédiat la déshydratation provoque-t-elle sur l'organisme en situation de survie ?",
+              "options": [
+                "Elle augmente la force musculaire",
+                "Elle améliore la concentration",
+                "Elle altère les fonctions cognitives et musculaires",
+                "Elle réduit la sensation de faim"
+              ],
+              "correctAnswer": "Elle altère les fonctions cognitives et musculaires",
+              "isSpecial": false
+            },
+            {
+              "question": "Vers quel type de terrain faut-il se diriger pour trouver de l'eau en milieu naturel ?",
+              "options": [
+                "Les crêtes et sommets exposés",
+                "Les zones rocheuses arides",
+                "Les points bas et les vallées",
+                "Les pentes orientées au nord"
+              ],
+              "correctAnswer": "Les points bas et les vallées",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle végétation indique généralement la présence d'eau souterraine ou de surface ?",
+              "options": [
+                "Les cactus et les lichens",
+                "Les saules et les roseaux",
+                "Les pins et les genévriers",
+                "Les fougères et les mousses sèches"
+              ],
+              "correctAnswer": "Les saules et les roseaux",
+              "isSpecial": false
+            },
+            {
+              "question": "À quel moment de la journée les animaux se dirigent-ils typiquement vers les points d'eau ?",
+              "options": [
+                "En milieu de journée",
+                "À l'aube et au crépuscule",
+                "La nuit uniquement",
+                "En fin d'après-midi seulement"
+              ],
+              "correctAnswer": "À l'aube et au crépuscule",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi est-il déconseillé de manger directement de la neige pour s'hydrater ?",
+              "options": [
+                "La neige contient toujours des bactéries mortelles",
+                "Cela abaisse la température corporelle et aggrave la déshydratation",
+                "La neige ne contient pas d'eau utilisable par l'organisme",
+                "Cela provoque des hallucinations"
+              ],
+              "correctAnswer": "Cela abaisse la température corporelle et aggrave la déshydratation",
+              "isSpecial": false
+            },
+            {
+              "question": "Combien de temps faut-il faire bouillir l'eau pour éliminer les agents pathogènes biologiques au niveau de la mer ?",
+              "options": [
+                "30 secondes",
+                "Au moins 1 minute",
+                "Au moins 10 minutes",
+                "Au moins 20 minutes"
+              ],
+              "correctAnswer": "Au moins 1 minute",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle technique permet de recueillir la rosée du matin en survie ?",
+              "options": [
+                "Creuser un trou dans le sol argileux",
+                "Nouer des tissus autour des herbes et les essorer",
+                "Chauffer des pierres et recueillir la condensation",
+                "Distiller l'urine avec une bâche"
+              ],
+              "correctAnswer": "Nouer des tissus autour des herbes et les essorer",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le principal problème d'une eau d'apparence claire trouvée dans la nature ?",
+              "options": [
+                "Elle est toujours trop froide pour être bue",
+                "Elle peut contenir des bactéries, virus ou parasites invisibles",
+                "Elle manque systématiquement de minéraux essentiels",
+                "Sa couleur transparente indique une trop forte acidité"
+              ],
+              "correctAnswer": "Elle peut contenir des bactéries, virus ou parasites invisibles",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi la filtration seule (sable, charbon, galets) ne suffit-elle pas à rendre l'eau potable ?",
+              "options": [
+                "Elle modifie le pH de l'eau et la rend acide",
+                "Elle élimine les agents pathogènes biologiques mais pas les sédiments",
+                "Elle améliore la clarté mais ne détruit pas les micro-organismes pathogènes",
+                "Elle est inefficace sans membrane synthétique"
+              ],
+              "correctAnswer": "Elle améliore la clarté mais ne détruit pas les micro-organismes pathogènes",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "survival-gen-33",
+          "title": "L'Art du Feu Primitif",
+          "emoji": "🔥",
+          "themeColor": "orange",
+          "badgeId": "survival-badge-33",
+          "badgeName": "Maître du Feu",
+          "badgeEmoji": "🪵",
+          "cards": [
+            {
+              "title": "Le principe de la friction",
+              "text": "Faire du feu par friction consiste à transformer l'énergie mécanique en chaleur en frottant deux morceaux de bois sec l'un contre l'autre. La chaleur produite permet d'atteindre environ 300 à 400 °C, température nécessaire pour enflammer la poudre de bois (appelée « braise noire ») qui se forme au point de contact.",
+              "emoji": "🌡️"
+            },
+            {
+              "title": "La technique de l'arc à feu",
+              "text": "L'arc à feu est la méthode par friction la plus efficace : une corde tendue sur un arc enroulée autour d'un foret en bois dur fait tourner celui-ci rapidement contre une planchette de bois tendre, creusée d'une encoche où la braise noire tombe dans un récipient. Le bois foret doit être plus dur que la planchette pour optimiser l'abrasion.",
+              "emoji": "🏹"
+            },
+            {
+              "title": "Le silex et la pierre à feu",
+              "text": "La technique par percussion consiste à frapper un silex (roche siliceuse très dure) contre une pyrite de fer ou un acier : l'impact arrache des éclats de métal qui s'oxydent instantanément et produisent des étincelles à plus de 1 000 °C. Ces étincelles sont dirigées vers un amadou (champignon, écorce ou fibres végétales séchées) pour démarrer une combustion.",
+              "emoji": "🪨"
+            },
+            {
+              "title": "Construire et alimenter le feu",
+              "text": "Une fois la braise obtenue, elle est transférée dans un « nid d'amadou » (boule de fibres sèches) que l'on souffle doucement pour l'activer par oxygénation avant de la déposer dans un foyer préparé. Le foyer est construit en trois couches : d'abord des allume-feux fins (aiguilles, herbes sèches), puis des brindilles de taille croissante, et enfin des bûches qui maintiennent la combustion.",
+              "emoji": "🪺"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Quelle transformation physique est à l'origine du feu par friction ?",
+              "options": [
+                "L'énergie mécanique convertie en chaleur",
+                "L'énergie chimique convertie en lumière",
+                "L'énergie électrique convertie en chaleur",
+                "L'énergie solaire concentrée par une loupe"
+              ],
+              "correctAnswer": "L'énergie mécanique convertie en chaleur",
+              "isSpecial": false
+            },
+            {
+              "question": "À quelle température approximative la poudre de bois s'enflamme-t-elle lors d'une friction ?",
+              "options": [
+                "Entre 100 et 150 °C",
+                "Entre 300 et 400 °C",
+                "Entre 600 et 700 °C",
+                "Entre 1 000 et 1 200 °C"
+              ],
+              "correctAnswer": "Entre 300 et 400 °C",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans la technique de l'arc à feu, quel est le rôle de l'encoche taillée dans la planchette ?",
+              "options": [
+                "Maintenir le foret en position verticale",
+                "Permettre à la braise noire de tomber dans un récipient",
+                "Empêcher le foret de glisser latéralement",
+                "Augmenter la surface de frottement entre les bois"
+              ],
+              "correctAnswer": "Permettre à la braise noire de tomber dans un récipient",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle doit être la dureté relative du bois foret par rapport à la planchette dans un arc à feu ?",
+              "options": [
+                "Le foret doit être plus tendre que la planchette",
+                "Le foret et la planchette doivent être de même dureté",
+                "Le foret doit être plus dur que la planchette",
+                "La dureté relative n'a aucune importance"
+              ],
+              "correctAnswer": "Le foret doit être plus dur que la planchette",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle roche est utilisée dans la technique de la percussion avec une pyrite de fer ?",
+              "options": [
+                "Le granite",
+                "Le calcaire",
+                "Le silex",
+                "Le basalte"
+              ],
+              "correctAnswer": "Le silex",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi les éclats de métal arrachés par la percussion du silex produisent-ils des étincelles ?",
+              "options": [
+                "Ils subissent une oxydation rapide qui dégage de la chaleur",
+                "Ils entrent en fusion au contact du silex",
+                "Ils absorbent l'humidité ambiante et réagissent",
+                "Ils libèrent de l'hydrogène sous pression"
+              ],
+              "correctAnswer": "Ils subissent une oxydation rapide qui dégage de la chaleur",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est la température approximative des étincelles produites par la percussion du silex contre l'acier ?",
+              "options": [
+                "Environ 300 °C",
+                "Environ 600 °C",
+                "Environ 1 000 °C",
+                "Environ 2 500 °C"
+              ],
+              "correctAnswer": "Environ 1 000 °C",
+              "isSpecial": false
+            },
+            {
+              "question": "Qu'est-ce qu'un amadou dans le contexte de la survie ?",
+              "options": [
+                "Un type de pierre produisant des étincelles",
+                "Une matière très sèche et combustible servant à recevoir une braise",
+                "Un outil en bois utilisé pour activer la friction",
+                "Un type de bois dur utilisé comme foret"
+              ],
+              "correctAnswer": "Une matière très sèche et combustible servant à recevoir une braise",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est l'ordre correct des trois couches dans un foyer bien construit ?",
+              "options": [
+                "Bûches, brindilles, allume-feux fins",
+                "Brindilles, allume-feux fins, bûches",
+                "Allume-feux fins, brindilles de taille croissante, bûches",
+                "Amadou, silex, bûches"
+              ],
+              "correctAnswer": "Allume-feux fins, brindilles de taille croissante, bûches",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi souffle-t-on doucement sur le nid d'amadou après y avoir déposé la braise noire ?",
+              "options": [
+                "Pour refroidir la braise et éviter qu'elle ne s'éteigne trop vite",
+                "Pour apporter l'oxygène nécessaire à l'activation de la combustion",
+                "Pour disperser la fumée produite par la braise",
+                "Pour augmenter la température de la braise par convection forcée"
+              ],
+              "correctAnswer": "Pour apporter l'oxygène nécessaire à l'activation de la combustion",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "survival-gen-34",
+          "title": "Construire un abri de survie",
+          "emoji": "🏕️",
+          "themeColor": "orange",
+          "badgeId": "survival-badge-34",
+          "badgeName": "Architecte de l'extrême",
+          "badgeEmoji": "🛖",
+          "cards": [
+            {
+              "title": "Choisir l'emplacement",
+              "text": "Un bon abri commence par un emplacement stratégique : il doit être protégé du vent dominant, à l'abri des crues (jamais dans un lit de rivière asséché) et à proximité de ressources en eau et en bois. Il faut également éviter les zones exposées aux chutes de pierres, aux arbres morts (widowmakers) et aux repaires d'animaux dangereux.",
+              "emoji": "📍"
+            },
+            {
+              "title": "Les types d'abris selon l'environnement",
+              "text": "Le choix du type d'abri dépend du terrain et des matériaux disponibles : le lean-to (toit à une pente) est idéal en forêt pour une construction rapide, le quinzhee est une caverne creusée dans un tas de neige tassée par temps hivernal, et la hutte en A-frame offre une bonne isolation grâce à sa forme triangulaire. Chaque structure répond à un compromis entre vitesse de construction, isolation thermique et discrétion.",
+              "emoji": "🌲"
+            },
+            {
+              "title": "Isolation et étanchéité",
+              "text": "L'isolation est la fonction première d'un abri de survie : une couche de feuilles mortes, de mousse ou de branchages de 30 à 45 cm d'épaisseur sur les parois et le sol réduit drastiquement les pertes de chaleur par conduction et convection. L'étanchéité s'obtient en superposant les matériaux naturels comme des tuiles (de bas en haut) ou en utilisant un tarp tendu en angle pour dévier l'eau de pluie.",
+              "emoji": "🌡️"
+            },
+            {
+              "title": "Construction et priorités",
+              "text": "La règle des priorités de survie place l'abri avant la nourriture car l'hypothermie peut tuer en quelques heures : un adulte peut survivre 3 semaines sans nourriture, mais seulement quelques heures exposé au froid et à l'humidité. La construction doit être dimensionnée au minimum vital — un espace trop grand est impossible à chauffer avec la seule chaleur corporelle — et renforcée si les conditions météorologiques doivent durer.",
+              "emoji": "🔨"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Pourquoi faut-il éviter de construire un abri dans un lit de rivière asséché ?",
+              "options": [
+                "Le sol est trop dur pour planter des piquets",
+                "Le risque de crue soudaine est élevé même par temps sec",
+                "L'humidité du sol empêche de faire du feu",
+                "Les matériaux végétaux y sont rares"
+              ],
+              "correctAnswer": "Le risque de crue soudaine est élevé même par temps sec",
+              "isSpecial": false
+            },
+            {
+              "question": "Qu'est-ce qu'un \"widowmaker\" dans le contexte du choix d'emplacement ?",
+              "options": [
+                "Un vent latéral très violent",
+                "Un arbre mort ou une branche susceptible de tomber",
+                "Un tourbillon de neige en altitude",
+                "Un sol argileux instable sous la pluie"
+              ],
+              "correctAnswer": "Un arbre mort ou une branche susceptible de tomber",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle épaisseur de matériaux isolants naturels est recommandée pour les parois d'un abri de survie ?",
+              "options": [
+                "5 à 10 cm",
+                "15 à 20 cm",
+                "30 à 45 cm",
+                "60 à 80 cm"
+              ],
+              "correctAnswer": "30 à 45 cm",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans quel type d'environnement le quinzhee est-il particulièrement adapté ?",
+              "options": [
+                "En forêt tropicale humide",
+                "En zone désertique rocailleuse",
+                "En condition hivernale avec de la neige disponible",
+                "En zone côtière venteuse"
+              ],
+              "correctAnswer": "En condition hivernale avec de la neige disponible",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est la caractéristique principale du lean-to qui le rend intéressant en forêt ?",
+              "options": [
+                "Il est totalement étanche à la pluie",
+                "Il s'adapte à tous les types de terrain sans matériaux",
+                "Il est rapide à construire avec une seule pente",
+                "Il conserve mieux la chaleur que les autres abris"
+              ],
+              "correctAnswer": "Il est rapide à construire avec une seule pente",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi un abri de survie doit-il être dimensionné au minimum vital ?",
+              "options": [
+                "Pour économiser les matériaux de construction",
+                "Un espace trop grand ne peut pas être chauffé par la seule chaleur corporelle",
+                "Pour être plus discret dans la nature",
+                "Les grands abris attirent les prédateurs"
+              ],
+              "correctAnswer": "Un espace trop grand ne peut pas être chauffé par la seule chaleur corporelle",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment doit-on disposer les matériaux naturels pour assurer l'étanchéité d'un abri ?",
+              "options": [
+                "De haut en bas, comme des écailles de poisson inversées",
+                "De bas en haut, comme des tuiles superposées",
+                "En couches horizontales alternées",
+                "En vrac tassé uniformément"
+              ],
+              "correctAnswer": "De bas en haut, comme des tuiles superposées",
+              "isSpecial": false
+            },
+            {
+              "question": "Selon la règle des priorités de survie, pourquoi l'abri passe-t-il avant la nourriture ?",
+              "options": [
+                "La nourriture est facile à trouver dans la nature",
+                "L'hypothermie peut tuer en quelques heures alors qu'on peut survivre des semaines sans manger",
+                "L'abri permet de stocker et de conserver la nourriture",
+                "Construire un abri donne faim et épuise les réserves"
+              ],
+              "correctAnswer": "L'hypothermie peut tuer en quelques heures alors qu'on peut survivre des semaines sans manger",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle forme d'abri correspond au A-frame ?",
+              "options": [
+                "Un toit plat posé sur quatre poteaux",
+                "Une structure triangulaire avec deux pentes se rejoignant au sommet",
+                "Une cavité creusée dans la terre",
+                "Un cylindre de branches entrelacées"
+              ],
+              "correctAnswer": "Une structure triangulaire avec deux pentes se rejoignant au sommet",
+              "isSpecial": false
+            },
+            {
+              "question": "Un randonneur isolé en montagne dispose d'un tarp rectangulaire, de cordes et d'arbres proches. Quelle configuration maximise à la fois l'étanchéité et la protection contre un vent venant du nord ?",
+              "options": [
+                "Tendre le tarp à l'horizontale au-dessus de lui comme un baldaquin",
+                "Orienter la pente vers le nord, fixer le bord bas au sol côté vent et surélever le côté sous le vent",
+                "Fixer les quatre coins à la même hauteur pour former un carré",
+                "Plier le tarp en deux et l'appuyer verticalement contre un arbre côté nord"
+              ],
+              "correctAnswer": "Orienter la pente vers le nord, fixer le bord bas au sol côté vent et surélever le côté sous le vent",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "survival-gen-35",
+          "title": "Se nourrir dans la nature",
+          "emoji": "🌿",
+          "themeColor": "orange",
+          "badgeId": "survival-badge-35",
+          "badgeName": "Chasseur-Cueilleur",
+          "badgeEmoji": "🍄",
+          "cards": [
+            {
+              "title": "La cueillette : abondance et danger",
+              "text": "La nature offre de nombreuses ressources comestibles : baies, champignons, racines, jeunes pousses et feuilles. Cependant, de nombreuses plantes sauvages sont toxiques et peuvent ressembler à des espèces comestibles — une identification rigoureuse est indispensable avant toute consommation. La règle d'or est de ne consommer que ce qu'on identifie avec certitude absolue.",
+              "emoji": "🍃"
+            },
+            {
+              "title": "Chasse, pêche et pièges",
+              "text": "En situation de survie, les protéines animales sont essentielles pour maintenir l'énergie. La pêche est souvent plus efficace que la chasse car elle demande moins d'énergie dépensée ; fabriquer un hameçon avec une épine ou un os est une technique primitive éprouvée. Les collets (pièges à lacets) tendus sur des pistes d'animaux permettent de capturer du petit gibier sans surveillance constante.",
+              "emoji": "🎣"
+            },
+            {
+              "title": "Préparer et conserver les aliments",
+              "text": "Cuire les aliments au feu détruit les parasites, bactéries et certaines toxines présentes dans la viande, le poisson et même certains végétaux comme les fèves sauvages. Pour conserver la nourriture, le fumage est une méthode ancestrale efficace : la fumée déshydrate et protège la chair contre les micro-organismes. Le séchage au soleil ou près d'un feu est également utilisé pour les végétaux et les champignons.",
+              "emoji": "🔥"
+            },
+            {
+              "title": "Gestion de l'énergie et priorités alimentaires",
+              "text": "Le corps humain peut survivre plusieurs semaines sans nourriture mais seulement quelques jours sans eau — s'hydrater reste la première priorité absolue. Les aliments riches en graisses et en glucides fournissent l'énergie la plus rapide ; les noix, graines et larves d'insectes sont des sources caloriques concentrées souvent sous-estimées. En survie, il faut éviter de dépenser plus d'énergie à chercher de la nourriture qu'on n'en ingèrerait : c'est le calcul coût-bénéfice alimentaire.",
+              "emoji": "⚡"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Quelle est la règle fondamentale avant de consommer une plante sauvage en situation de survie ?",
+              "options": [
+                "Goûter une petite quantité et attendre 30 minutes",
+                "Ne consommer que ce qu'on identifie avec une certitude absolue",
+                "Faire confiance à son instinct si la plante semble appétissante",
+                "Vérifier que les animaux autour la mangent aussi"
+              ],
+              "correctAnswer": "Ne consommer que ce qu'on identifie avec une certitude absolue",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi la pêche est-elle souvent préférée à la chasse en situation de survie ?",
+              "options": [
+                "Le poisson est plus nutritif que le gibier terrestre",
+                "La pêche ne nécessite pas de feu pour consommer le produit",
+                "Elle demande moins d'énergie dépensée par rapport aux calories obtenues",
+                "Les outils de pêche sont plus faciles à fabriquer que des armes"
+              ],
+              "correctAnswer": "Elle demande moins d'énergie dépensée par rapport aux calories obtenues",
+              "isSpecial": false
+            },
+            {
+              "question": "Qu'est-ce qu'un collet en techniques de survie ?",
+              "options": [
+                "Un type de champignon comestible courant en forêt",
+                "Un piège à lacet tendu sur une piste d'animal",
+                "Une technique de fumage pour conserver la viande",
+                "Un récipient tressé pour collecter l'eau de pluie"
+              ],
+              "correctAnswer": "Un piège à lacet tendu sur une piste d'animal",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le principal avantage du fumage pour conserver les aliments ?",
+              "options": [
+                "Il améliore considérablement le goût des aliments sauvages",
+                "Il permet de cuire la viande sans avoir de braises vives",
+                "Il déshydrate et protège la chair contre les micro-organismes",
+                "Il neutralise tous les venins présents dans les plantes toxiques"
+              ],
+              "correctAnswer": "Il déshydrate et protège la chair contre les micro-organismes",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi est-il important de cuire la viande et le poisson en survie ?",
+              "options": [
+                "Pour augmenter leur valeur calorique",
+                "Pour détruire les parasites, bactéries et certaines toxines",
+                "Uniquement pour améliorer leur digestibilité",
+                "Pour faciliter leur conservation à température ambiante"
+              ],
+              "correctAnswer": "Pour détruire les parasites, bactéries et certaines toxines",
+              "isSpecial": false
+            },
+            {
+              "question": "En situation de survie, quelle est la toute première priorité absolue pour le corps humain ?",
+              "options": [
+                "Trouver des glucides pour reconstituer les réserves d'énergie",
+                "Construire un abri pour éviter l'hypothermie",
+                "S'hydrater car le corps ne peut survivre que quelques jours sans eau",
+                "Trouver des protéines animales pour maintenir la masse musculaire"
+              ],
+              "correctAnswer": "S'hydrater car le corps ne peut survivre que quelques jours sans eau",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi les larves d'insectes sont-elles une ressource précieuse en survie ?",
+              "options": [
+                "Elles peuvent être consommées crues sans aucun risque sanitaire",
+                "Elles constituent une source calorique concentrée souvent sous-estimée",
+                "Elles permettent d'attirer d'autres animaux plus gros comme proies",
+                "Elles contiennent autant de vitamines que les végétaux verts"
+              ],
+              "correctAnswer": "Elles constituent une source calorique concentrée souvent sous-estimée",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment peut-on fabriquer un hameçon de fortune en pleine nature ?",
+              "options": [
+                "En taillant une branche de pin en forme de crochet",
+                "En utilisant une épine ou un os taillé en forme de crochet",
+                "En pliant une feuille de métal trouvée en forêt",
+                "En tressant des fibres végétales résistantes"
+              ],
+              "correctAnswer": "En utilisant une épine ou un os taillé en forme de crochet",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le calcul coût-bénéfice alimentaire dont doit tenir compte un survivant ?",
+              "options": [
+                "Comparer la durée de conservation des aliments trouvés",
+                "Évaluer si l'énergie dépensée pour chercher la nourriture est inférieure aux calories qu'elle apportera",
+                "Calculer le ratio protéines-glucides pour équilibrer son alimentation",
+                "Mesurer la distance maximale à parcourir pour trouver de la nourriture"
+              ],
+              "correctAnswer": "Évaluer si l'énergie dépensée pour chercher la nourriture est inférieure aux calories qu'elle apportera",
+              "isSpecial": false
+            },
+            {
+              "question": "Parmi ces quatre plantes, laquelle est connue pour être comestible en milieu tempéré européen mais possède un sosie toxique dangereux à ne pas confondre ?",
+              "options": [
+                "L'ail des ours, que l'on peut confondre avec le muguet ou le colchique",
+                "La fougère aigle, dont toutes les variétés sont comestibles à tous les stades",
+                "La bardane, dont les racines sont indifférenciables de celles de la belladone",
+                "Le pissenlit, qui est totalement identique visuellement à la ciguë"
+              ],
+              "correctAnswer": "L'ail des ours, que l'on peut confondre avec le muguet ou le colchique",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "survival-gen-36",
+          "title": "Navigation à la boussole",
+          "emoji": "🧭",
+          "themeColor": "orange",
+          "badgeId": "survival-badge-36",
+          "badgeName": "Expert Orientation",
+          "badgeEmoji": "🧭",
+          "cards": [
+            {
+              "title": "Comment fonctionne une boussole",
+              "text": "Une boussole contient une aiguille aimantée qui s'aligne avec le champ magnétique terrestre. L'extrémité rouge de l'aiguille pointe toujours vers le nord magnétique, ce qui permet de s'orienter dans n'importe quel environnement. Le boîtier est souvent rempli de liquide pour stabiliser l'aiguille et réduire les oscillations.",
+              "emoji": "🧲"
+            },
+            {
+              "title": "Nord magnétique vs Nord géographique",
+              "text": "Le nord magnétique, vers lequel pointe la boussole, ne coïncide pas exactement avec le nord géographique (le pôle Nord). L'angle entre ces deux directions s'appelle la déclinaison magnétique, et elle varie selon l'endroit du globe où l'on se trouve. Lors d'une navigation précise sur carte, il faut corriger cet écart pour ne pas se tromper de direction.",
+              "emoji": "🌍"
+            },
+            {
+              "title": "Lire un azimut et suivre un cap",
+              "text": "Un azimut est un angle exprimé en degrés (de 0° à 360°) mesuré dans le sens des aiguilles d'une montre depuis le nord. Pour suivre un cap, on oriente la boussole de façon que l'aiguille et la flèche de direction soient alignées avec la valeur en degrés souhaitée. Cette technique permet de marcher en ligne droite vers un objectif même sans repère visuel direct.",
+              "emoji": "📐"
+            },
+            {
+              "title": "Triangulation et recoupement",
+              "text": "La triangulation consiste à relever l'azimut de deux ou trois points de repère identifiables sur la carte (sommet, tour, croisement), puis à tracer les lignes correspondantes depuis ces points. Le point où ces lignes se croisent indique votre position exacte sur la carte. Cette méthode est indispensable lorsque vous ne connaissez pas précisément votre position de départ.",
+              "emoji": "📍"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Vers quoi pointe l'extrémité rouge de l'aiguille d'une boussole ?",
+              "options": [
+                "Le nord géographique",
+                "Le nord magnétique",
+                "Le sud magnétique",
+                "Le soleil levant"
+              ],
+              "correctAnswer": "Le nord magnétique",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi le boîtier d'une boussole de qualité est-il souvent rempli de liquide ?",
+              "options": [
+                "Pour empêcher la rouille de l'aiguille",
+                "Pour stabiliser l'aiguille et réduire ses oscillations",
+                "Pour améliorer la lisibilité du cadran",
+                "Pour protéger l'aimant de la chaleur"
+              ],
+              "correctAnswer": "Pour stabiliser l'aiguille et réduire ses oscillations",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment s'appelle l'angle entre le nord magnétique et le nord géographique ?",
+              "options": [
+                "L'azimut",
+                "La déclinaison magnétique",
+                "Le cap vrai",
+                "La déviation polaire"
+              ],
+              "correctAnswer": "La déclinaison magnétique",
+              "isSpecial": false
+            },
+            {
+              "question": "Un azimut est mesuré en degrés depuis le nord. Dans quel sens se fait cette mesure ?",
+              "options": [
+                "Dans le sens inverse des aiguilles d'une montre",
+                "Dans le sens des aiguilles d'une montre",
+                "En partant du sud vers le nord",
+                "Alternativement selon l'hémisphère"
+              ],
+              "correctAnswer": "Dans le sens des aiguilles d'une montre",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel azimut correspond à la direction plein est ?",
+              "options": [
+                "45°",
+                "90°",
+                "180°",
+                "270°"
+              ],
+              "correctAnswer": "90°",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel azimut correspond à la direction plein sud ?",
+              "options": [
+                "90°",
+                "135°",
+                "180°",
+                "270°"
+              ],
+              "correctAnswer": "180°",
+              "isSpecial": false
+            },
+            {
+              "question": "En quoi consiste la triangulation lors d'une navigation à la carte ?",
+              "options": [
+                "Calculer la distance entre deux points en degrés",
+                "Relever l'azimut de plusieurs repères pour déterminer sa position",
+                "Dessiner un triangle sur la carte pour estimer l'altitude",
+                "Diviser l'itinéraire en trois tronçons égaux"
+              ],
+              "correctAnswer": "Relever l'azimut de plusieurs repères pour déterminer sa position",
+              "isSpecial": false
+            },
+            {
+              "question": "Combien de repères au minimum faut-il pour effectuer une triangulation fiable ?",
+              "options": [
+                "Un seul repère suffit",
+                "Deux repères",
+                "Cinq repères",
+                "Dix repères"
+              ],
+              "correctAnswer": "Deux repères",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi doit-on corriger la déclinaison magnétique lors d'une navigation précise ?",
+              "options": [
+                "Parce que la boussole s'use avec le temps",
+                "Parce que le nord magnétique et le nord géographique ne coïncident pas exactement",
+                "Parce que les cartes sont dessinées en fonction du soleil",
+                "Parce que la boussole dévie à cause de l'altitude"
+              ],
+              "correctAnswer": "Parce que le nord magnétique et le nord géographique ne coïncident pas exactement",
+              "isSpecial": false
+            },
+            {
+              "question": "Vous marchez selon un azimut de 315°. Dans quelle direction générale vous déplacez-vous ?",
+              "options": [
+                "Sud-est",
+                "Nord-est",
+                "Sud-ouest",
+                "Nord-ouest"
+              ],
+              "correctAnswer": "Nord-ouest",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "survival-gen-37",
+          "title": "Premiers Secours",
+          "emoji": "🚑",
+          "themeColor": "orange",
+          "badgeId": "survival-badge-37",
+          "badgeName": "Secouriste",
+          "badgeEmoji": "🩺",
+          "cards": [
+            {
+              "title": "La chaîne de survie",
+              "text": "En cas d'urgence, la chaîne de survie regroupe les actions essentielles : alerter les secours, pratiquer la réanimation cardio-pulmonaire (RCP), utiliser un défibrillateur et assurer une prise en charge médicale rapide. Chaque maillon compte : briser l'un d'eux réduit considérablement les chances de survie. En France, on appelle le 15 (SAMU), le 18 (pompiers) ou le 112 (numéro européen).",
+              "emoji": "⛓️"
+            },
+            {
+              "title": "La réanimation cardio-pulmonaire (RCP)",
+              "text": "Lorsqu'une personne est inconsciente et ne respire plus, la RCP s'impose immédiatement. Elle consiste à effectuer 30 compressions thoraciques profondes (5 à 6 cm) et rapides (100 à 120 par minute), suivies de 2 insufflations bouche-à-bouche, en répétant ce cycle sans interruption. Chez l'enfant, on utilise une seule main ou deux doigts selon la taille, et le rapport reste 30/2.",
+              "emoji": "❤️"
+            },
+            {
+              "title": "La position latérale de sécurité (PLS)",
+              "text": "La PLS est indiquée pour une victime inconsciente qui respire encore, afin d'éviter l'obstruction des voies aériennes par la langue ou les vomissements. On bascule délicatement la personne sur le côté, la tête en arrière pour dégager les voies respiratoires, et on surveille sa respiration en attendant les secours. Il ne faut jamais bouger une victime si l'on suspecte un traumatisme de la colonne vertébrale, sauf danger immédiat.",
+              "emoji": "🛌"
+            },
+            {
+              "title": "Hémorragies, brûlures et étouffement",
+              "text": "Face à une hémorragie sévère, il faut comprimer la plaie fermement et sans relâche avec un linge propre, sans jamais retirer le garrot naturel formé. Pour une brûlure, on refroidit la zone à l'eau froide (15°C) pendant au moins 15 minutes, sans appliquer de corps gras. En cas d'étouffement chez l'adulte, la manœuvre de Heimlich consiste à exercer des pressions abdominales sèches et vers le haut pour expulser le corps étranger.",
+              "emoji": "🩹"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Quel est le numéro européen unique à appeler en cas d'urgence ?",
+              "options": [
+                "15",
+                "17",
+                "112",
+                "18"
+              ],
+              "correctAnswer": "112",
+              "isSpecial": false
+            },
+            {
+              "question": "Lors d'une RCP adulte, quelle est la profondeur recommandée des compressions thoraciques ?",
+              "options": [
+                "2 à 3 cm",
+                "5 à 6 cm",
+                "8 à 10 cm",
+                "1 à 2 cm"
+              ],
+              "correctAnswer": "5 à 6 cm",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel rythme de compressions par minute faut-il respecter lors d'une RCP ?",
+              "options": [
+                "60 à 80 par minute",
+                "40 à 60 par minute",
+                "100 à 120 par minute",
+                "130 à 150 par minute"
+              ],
+              "correctAnswer": "100 à 120 par minute",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le rapport compressions/insufflations lors d'une RCP standard ?",
+              "options": [
+                "15/2",
+                "30/2",
+                "20/4",
+                "10/1"
+              ],
+              "correctAnswer": "30/2",
+              "isSpecial": false
+            },
+            {
+              "question": "À quelle condition la position latérale de sécurité (PLS) est-elle indiquée ?",
+              "options": [
+                "Victime inconsciente qui ne respire plus",
+                "Victime consciente qui saigne",
+                "Victime inconsciente qui respire encore",
+                "Victime qui a des convulsions et est consciente"
+              ],
+              "correctAnswer": "Victime inconsciente qui respire encore",
+              "isSpecial": false
+            },
+            {
+              "question": "Combien de temps faut-il refroidir une brûlure à l'eau froide ?",
+              "options": [
+                "5 minutes",
+                "Au moins 15 minutes",
+                "30 secondes",
+                "2 minutes"
+              ],
+              "correctAnswer": "Au moins 15 minutes",
+              "isSpecial": false
+            },
+            {
+              "question": "Que signifie l'acronyme SAMU ?",
+              "options": [
+                "Service d'Aide Médicale d'Urgence",
+                "Secours Ambulanciers et Médicaux Urgents",
+                "Système d'Alerte et de Médecine d'Urgence",
+                "Sécurité et Assistance Médicale Universelle"
+              ],
+              "correctAnswer": "Service d'Aide Médicale d'Urgence",
+              "isSpecial": false
+            },
+            {
+              "question": "En cas d'étouffement chez un adulte, quelle manœuvre permet d'expulser un corps étranger ?",
+              "options": [
+                "Manœuvre de Trendelenburg",
+                "Manœuvre de Heimlich",
+                "Manœuvre de Valsalva",
+                "Manœuvre de Miller"
+              ],
+              "correctAnswer": "Manœuvre de Heimlich",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi ne doit-on pas retirer un objet planté dans une plaie lors d'une hémorragie ?",
+              "options": [
+                "Il est stérile et protège la plaie",
+                "Il agit comme un bouchon naturel limitant le saignement",
+                "Il est trop douloureux à enlever",
+                "Les secours en ont besoin pour le diagnostic"
+              ],
+              "correctAnswer": "Il agit comme un bouchon naturel limitant le saignement",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans quel cas précis doit-on différer la mise en PLS d'une victime inconsciente qui respire ?",
+              "options": [
+                "Lorsque la victime est âgée de plus de 65 ans",
+                "Lorsqu'un traumatisme de la colonne vertébrale est suspecté, sauf danger immédiat",
+                "Lorsque la victime présente une hémorragie au membre supérieur",
+                "Lorsque la victime a vomi avant de perdre connaissance"
+              ],
+              "correctAnswer": "Lorsqu'un traumatisme de la colonne vertébrale est suspecté, sauf danger immédiat",
+              "isSpecial": true
+            }
+          ]
         }
       ]
     }
@@ -50521,6 +52065,2151 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": true
             }
           ]
+        },
+        {
+          "id": "mythology-gen-38",
+          "title": "Les héros de la mythologie grecque",
+          "emoji": "⚔️",
+          "themeColor": "violet",
+          "badgeId": "mythology-badge-38",
+          "badgeName": "Héros Légendaire",
+          "badgeEmoji": "🏆",
+          "cards": [
+            {
+              "title": "Qui sont les héros grecs ?",
+              "text": "Les héros grecs sont des personnages extraordinaires, souvent fils d'un dieu et d'un humain. Ils accomplissent des exploits impossibles pour les hommes ordinaires, comme tuer des monstres ou sauver des cités. Leurs aventures sont racontées dans des récits appelés mythes.",
+              "emoji": "⚔️"
+            },
+            {
+              "title": "Héraclès, le plus fort des héros",
+              "text": "Héraclès (Hercule en latin) est le héros le plus célèbre de la mythologie grecque. Il est le fils de Zeus et d'une mortelle nommée Alcmène. Il doit accomplir douze travaux impossibles, comme tuer le lion de Némée ou capturer le taureau de Crète, pour prouver sa valeur.",
+              "emoji": "💪"
+            },
+            {
+              "title": "Persée et la Méduse",
+              "text": "Persée est le fils de Zeus et de Danaé. Il reçoit des objets magiques des dieux : des sandales ailées, un bouclier poli comme un miroir et une épée. Grâce à eux, il parvient à couper la tête de Méduse, un monstre dont le regard transformait en pierre.",
+              "emoji": "🛡️"
+            },
+            {
+              "title": "Ulysse, le héros rusé",
+              "text": "Ulysse est le roi d'Ithaque, réputé pour son intelligence plutôt que sa force. C'est lui qui invente le célèbre cheval de Troie pour entrer dans la ville ennemie. Après la guerre, il met dix longues années à rentrer chez lui, affrontant cyclopes et sirènes pendant son voyage.",
+              "emoji": "🌊"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Qu'est-ce qu'un héros dans la mythologie grecque ?",
+              "options": [
+                "Un dieu qui vit sur l'Olympe",
+                "Un être né d'un dieu et d'un humain qui accomplit des exploits",
+                "Un roi élu par le peuple grec",
+                "Un prêtre chargé d'honorer les dieux"
+              ],
+              "correctAnswer": "Un être né d'un dieu et d'un humain qui accomplit des exploits",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le père d'Héraclès ?",
+              "options": [
+                "Poséidon",
+                "Hadès",
+                "Zeus",
+                "Arès"
+              ],
+              "correctAnswer": "Zeus",
+              "isSpecial": false
+            },
+            {
+              "question": "Combien de travaux Héraclès doit-il accomplir ?",
+              "options": [
+                "Sept",
+                "Dix",
+                "Douze",
+                "Quinze"
+              ],
+              "correctAnswer": "Douze",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel animal Héraclès doit-il tuer lors de son premier travail ?",
+              "options": [
+                "Le taureau de Crète",
+                "L'hydre de Lerne",
+                "Le sanglier d'Érymanthe",
+                "Le lion de Némée"
+              ],
+              "correctAnswer": "Le lion de Némée",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel objet Persée utilise-t-il pour éviter le regard de Méduse ?",
+              "options": [
+                "Un casque magique",
+                "Un bouclier poli comme un miroir",
+                "Une cape d'invisibilité",
+                "Un anneau enchanté"
+              ],
+              "correctAnswer": "Un bouclier poli comme un miroir",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est la mère de Persée ?",
+              "options": [
+                "Héra",
+                "Athéna",
+                "Danaé",
+                "Ariane"
+              ],
+              "correctAnswer": "Danaé",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le pouvoir du regard de Méduse ?",
+              "options": [
+                "Rendre invisible",
+                "Transformer en pierre",
+                "Endormir pour toujours",
+                "Faire perdre la mémoire"
+              ],
+              "correctAnswer": "Transformer en pierre",
+              "isSpecial": false
+            },
+            {
+              "question": "De quelle cité Ulysse est-il le roi ?",
+              "options": [
+                "Athènes",
+                "Sparte",
+                "Ithaque",
+                "Troie"
+              ],
+              "correctAnswer": "Ithaque",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle ruse Ulysse invente-t-il pour entrer dans Troie ?",
+              "options": [
+                "Un tunnel secret sous les remparts",
+                "Un déguisement de marchand",
+                "Un cheval de bois géant",
+                "Une fausse capitulation de nuit"
+              ],
+              "correctAnswer": "Un cheval de bois géant",
+              "isSpecial": false
+            },
+            {
+              "question": "Combien d'années dure le voyage de retour d'Ulysse après la guerre de Troie ?",
+              "options": [
+                "Trois ans",
+                "Cinq ans",
+                "Sept ans",
+                "Dix ans"
+              ],
+              "correctAnswer": "Dix ans",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "mythology-gen-39",
+          "title": "Les monstres de la mythologie grecque",
+          "emoji": "🐉",
+          "themeColor": "violet",
+          "badgeId": "mythology-badge-39",
+          "badgeName": "Chasseur de monstres",
+          "badgeEmoji": "🛡️",
+          "cards": [
+            {
+              "title": "La Méduse et les Gorgones",
+              "text": "La Méduse est l'une des trois Gorgones, des créatures terrifiantes avec des serpents à la place des cheveux. Son regard transformait quiconque la regardait directement en statue de pierre. Le héros Persée réussit à la vaincre en utilisant un bouclier poli comme miroir pour ne pas la regarder en face.",
+              "emoji": "🐍"
+            },
+            {
+              "title": "Le Minotaure et le Labyrinthe",
+              "text": "Le Minotaure était une créature mi-homme mi-taureau, enfermée dans un immense labyrinthe construit par l'architecte Dédale sur l'île de Crète. Chaque année, la cité d'Athènes envoyait sept jeunes hommes et sept jeunes femmes en sacrifice au monstre. Le héros Thésée mit fin à ce calvaire en tuant le Minotaure grâce à l'aide d'Ariane, qui lui donna un fil pour retrouver son chemin.",
+              "emoji": "🐂"
+            },
+            {
+              "title": "L'Hydre de Lerne et la Chimère",
+              "text": "L'Hydre de Lerne était un serpent géant à plusieurs têtes : chaque fois qu'on en coupait une, deux nouvelles repoussaient à sa place. Héraclès parvint à la vaincre en cautérisant chaque plaie avec du feu pour empêcher les têtes de repousser. La Chimère, elle, était un monstre qui crachait des flammes, avec une tête de lion, un corps de chèvre et une queue de serpent.",
+              "emoji": "🔥"
+            },
+            {
+              "title": "Charybde, Scylla et le Cyclope",
+              "text": "Charybde était un gigantesque tourbillon qui engloutissait les navires, tandis que Scylla était un monstre à six têtes posté sur un rocher en face, dévorant les marins qui passaient trop près. Ulysse dut naviguer entre ces deux dangers lors de son voyage de retour à Ithaque. Le Cyclope Polyphème, lui, était un géant borgne et cruel, fils de Poséidon, qu'Ulysse trompa en se faisant appeler « Personne ».",
+              "emoji": "🌊"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Quel objet Persée utilisa-t-il pour éviter le regard pétrifiant de la Méduse ?",
+              "options": [
+                "Un casque magique qui le rendait invisible",
+                "Un bouclier poli comme un miroir",
+                "Une torche aveuglante",
+                "Un voile enchanté offert par Athéna"
+              ],
+              "correctAnswer": "Un bouclier poli comme un miroir",
+              "isSpecial": false
+            },
+            {
+              "question": "Qu'avaient les Gorgones à la place des cheveux ?",
+              "options": [
+                "Des flammes de feu",
+                "Des tentacules de pieuvre",
+                "Des serpents",
+                "Des épines de métal"
+              ],
+              "correctAnswer": "Des serpents",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel était le corps du Minotaure ?",
+              "options": [
+                "Tête de taureau et corps d'homme",
+                "Tête d'homme et corps de taureau",
+                "Tête de lion et corps de taureau",
+                "Tête de taureau et corps de cheval"
+              ],
+              "correctAnswer": "Tête de taureau et corps d'homme",
+              "isSpecial": false
+            },
+            {
+              "question": "Qui aida Thésée à s'échapper du Labyrinthe après avoir tué le Minotaure ?",
+              "options": [
+                "Dédale",
+                "Médée",
+                "Ariane",
+                "Circé"
+              ],
+              "correctAnswer": "Ariane",
+              "isSpecial": false
+            },
+            {
+              "question": "Que se passait-il quand on coupait une tête de l'Hydre de Lerne ?",
+              "options": [
+                "Le monstre mourait aussitôt",
+                "La tête repoussait seule",
+                "Deux nouvelles têtes repoussaient à sa place",
+                "Le monstre perdait ses pouvoirs"
+              ],
+              "correctAnswer": "Deux nouvelles têtes repoussaient à sa place",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment Héraclès empêcha-t-il les têtes de l'Hydre de repousser ?",
+              "options": [
+                "En les plongeant dans l'eau glacée",
+                "En cautérisant chaque plaie avec du feu",
+                "En les enfouissant sous terre",
+                "En les tranchant avec une épée en or"
+              ],
+              "correctAnswer": "En cautérisant chaque plaie avec du feu",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelles parties du corps composaient la Chimère ?",
+              "options": [
+                "Tête de dragon, corps d'aigle, queue de scorpion",
+                "Tête de lion, corps de chèvre, queue de serpent",
+                "Tête de taureau, corps de lion, queue de cheval",
+                "Tête de loup, corps de chèvre, queue de poisson"
+              ],
+              "correctAnswer": "Tête de lion, corps de chèvre, queue de serpent",
+              "isSpecial": false
+            },
+            {
+              "question": "Que représentait Charybde dans la mythologie grecque ?",
+              "options": [
+                "Un monstre à six têtes dévorant les marins",
+                "Un gigantesque tourbillon engloutissant les navires",
+                "Un rocher ensorcelé qui attirait les bateaux",
+                "Une sirène qui endormait les marins"
+              ],
+              "correctAnswer": "Un gigantesque tourbillon engloutissant les navires",
+              "isSpecial": false
+            },
+            {
+              "question": "De quel dieu le Cyclope Polyphème était-il le fils ?",
+              "options": [
+                "Zeus",
+                "Hadès",
+                "Arès",
+                "Poséidon"
+              ],
+              "correctAnswer": "Poséidon",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel architecte construisit le Labyrinthe où était enfermé le Minotaure ?",
+              "options": [
+                "Icare",
+                "Dédale",
+                "Héphaïstos",
+                "Prométhée"
+              ],
+              "correctAnswer": "Dédale",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "mythology-gen-40",
+          "title": "La mythologie nordique",
+          "emoji": "⚡",
+          "themeColor": "violet",
+          "badgeId": "mythology-badge-40",
+          "badgeName": "Explorateur des Vikings",
+          "badgeEmoji": "🪓",
+          "cards": [
+            {
+              "title": "Les dieux nordiques",
+              "text": "Dans la mythologie nordique, les dieux vivent dans un royaume appelé Asgard. Les principaux dieux sont Odin, le père de tous les dieux, Thor, le dieu du tonnerre, et Loki, le dieu rusé et facétieux.",
+              "emoji": "⚡"
+            },
+            {
+              "title": "Les neuf mondes",
+              "text": "La mythologie nordique décrit neuf mondes reliés entre eux par un immense arbre appelé Yggdrasil. Parmi ces mondes, on trouve Midgard (le monde des humains), Asgard (le monde des dieux) et Jotunheim (le monde des géants).",
+              "emoji": "🌳"
+            },
+            {
+              "title": "Les créatures mythiques",
+              "text": "Les Vikings croyaient en de nombreuses créatures fantastiques, comme les dragons, les géants de glace appelés les Jotuns, et les Valkyries, des guerrières qui choisissaient les soldats morts au combat pour les emmener au Valhalla. Le Valhalla est la grande salle d'Odin où reposent les guerriers tombés au combat.",
+              "emoji": "🐉"
+            },
+            {
+              "title": "La fin du monde : Ragnarok",
+              "text": "Selon les Vikings, le monde aura une fin appelée le Ragnarok, une gigantesque bataille entre les dieux et les forces du mal. Lors de ce cataclysme, des dieux comme Thor et Odin mourront, mais un nouveau monde plus paisible renaîtra ensuite.",
+              "emoji": "🌋"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Comment s'appelle le royaume où vivent les dieux nordiques ?",
+              "options": [
+                "Midgard",
+                "Asgard",
+                "Jotunheim",
+                "Valhalla"
+              ],
+              "correctAnswer": "Asgard",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel dieu nordique est considéré comme le père de tous les dieux ?",
+              "options": [
+                "Thor",
+                "Loki",
+                "Odin",
+                "Freyr"
+              ],
+              "correctAnswer": "Odin",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le nom du gigantesque arbre qui relie les neuf mondes dans la mythologie nordique ?",
+              "options": [
+                "Yggdrasil",
+                "Bifrost",
+                "Asgard",
+                "Mjolnir"
+              ],
+              "correctAnswer": "Yggdrasil",
+              "isSpecial": false
+            },
+            {
+              "question": "Thor est le dieu de quoi dans la mythologie nordique ?",
+              "options": [
+                "La guerre",
+                "La sagesse",
+                "Le tonnerre",
+                "La mer"
+              ],
+              "correctAnswer": "Le tonnerre",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment appelle-t-on le monde des humains dans la mythologie nordique ?",
+              "options": [
+                "Asgard",
+                "Midgard",
+                "Jotunheim",
+                "Niflheim"
+              ],
+              "correctAnswer": "Midgard",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le rôle des Valkyries dans la mythologie nordique ?",
+              "options": [
+                "Garder les portes d'Asgard",
+                "Choisir les guerriers morts pour les emmener au Valhalla",
+                "Combattre les géants",
+                "Forger les armes des dieux"
+              ],
+              "correctAnswer": "Choisir les guerriers morts pour les emmener au Valhalla",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment s'appelle le monde des géants dans la mythologie nordique ?",
+              "options": [
+                "Midgard",
+                "Asgard",
+                "Jotunheim",
+                "Valhalla"
+              ],
+              "correctAnswer": "Jotunheim",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment les Vikings appellent-ils la fin du monde, la grande bataille finale ?",
+              "options": [
+                "Valhalla",
+                "Ragnarok",
+                "Bifrost",
+                "Niflheim"
+              ],
+              "correctAnswer": "Ragnarok",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel dieu nordique est connu pour être rusé et facétieux ?",
+              "options": [
+                "Thor",
+                "Odin",
+                "Freyr",
+                "Loki"
+              ],
+              "correctAnswer": "Loki",
+              "isSpecial": false
+            },
+            {
+              "question": "Combien de mondes compte l'univers dans la mythologie nordique ?",
+              "options": [
+                "Sept",
+                "Huit",
+                "Neuf",
+                "Douze"
+              ],
+              "correctAnswer": "Neuf",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "mythology-gen-41",
+          "title": "Les dieux de l'Égypte ancienne",
+          "emoji": "𓂀",
+          "themeColor": "violet",
+          "badgeId": "mythology-badge-41",
+          "badgeName": "Gardien des Dieux",
+          "badgeEmoji": "𓂀",
+          "cards": [
+            {
+              "title": "Un peuple de dieux",
+              "text": "Les anciens Égyptiens adoraient des centaines de dieux et de déesses qui gouvernaient chaque aspect de la vie : le soleil, la mort, la magie ou encore la sagesse. Ces divinités pouvaient avoir une forme humaine, animale, ou un mélange des deux, comme un homme à tête de faucon.",
+              "emoji": "🏛️"
+            },
+            {
+              "title": "Rê et Osiris, les plus puissants",
+              "text": "Rê était le dieu du soleil, considéré comme le roi des dieux et père de la création. Osiris, son frère mythique, régnait sur le royaume des morts et représentait la résurrection et la justice après la mort.",
+              "emoji": "☀️"
+            },
+            {
+              "title": "Isis, Horus et Seth",
+              "text": "Isis était la déesse de la magie et de la maternité, épouse d'Osiris. Horus, leur fils représenté avec une tête de faucon, était le dieu du ciel et protecteur du pharaon. Seth, dieu du chaos et du désert, était l'ennemi d'Horus dans une grande rivalité mythologique.",
+              "emoji": "🦅"
+            },
+            {
+              "title": "Les dieux et la vie quotidienne",
+              "text": "Les Égyptiens construisaient d'immenses temples pour honorer leurs dieux et y effectuaient des rituels chaque jour. Les prêtres étaient les intermédiaires entre les humains et les divinités, et certains dieux comme Anubis, à tête de chacal, guidaient les âmes des morts dans l'au-delà.",
+              "emoji": "📜"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Quel dieu égyptien était associé au soleil et considéré comme le roi des dieux ?",
+              "options": [
+                "Osiris",
+                "Rê",
+                "Horus",
+                "Anubis"
+              ],
+              "correctAnswer": "Rê",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle était la particularité des dieux égyptiens dans leur représentation ?",
+              "options": [
+                "Ils étaient toujours représentés en armure",
+                "Ils pouvaient avoir une forme mi-humaine, mi-animale",
+                "Ils étaient toujours représentés sous forme de chat",
+                "Ils portaient tous une couronne dorée"
+              ],
+              "correctAnswer": "Ils pouvaient avoir une forme mi-humaine, mi-animale",
+              "isSpecial": false
+            },
+            {
+              "question": "Osiris était le dieu de quel domaine ?",
+              "options": [
+                "La guerre et la conquête",
+                "Le soleil et la lumière",
+                "Le royaume des morts et la résurrection",
+                "La mer et les tempêtes"
+              ],
+              "correctAnswer": "Le royaume des morts et la résurrection",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel animal représentait la tête du dieu Horus ?",
+              "options": [
+                "Un chacal",
+                "Un ibis",
+                "Un serpent",
+                "Un faucon"
+              ],
+              "correctAnswer": "Un faucon",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle déesse égyptienne était connue pour ses pouvoirs de magie et de maternité ?",
+              "options": [
+                "Isis",
+                "Hathor",
+                "Nout",
+                "Sekhmet"
+              ],
+              "correctAnswer": "Isis",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel rôle jouaient les prêtres dans la religion égyptienne ?",
+              "options": [
+                "Ils construisaient les pyramides",
+                "Ils étaient des intermédiaires entre les humains et les dieux",
+                "Ils menaient les armées à la guerre",
+                "Ils gouvernaient les villes à la place du pharaon"
+              ],
+              "correctAnswer": "Ils étaient des intermédiaires entre les humains et les dieux",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel dieu égyptien était représenté avec une tête de chacal et guidait les âmes des morts ?",
+              "options": [
+                "Seth",
+                "Thot",
+                "Anubis",
+                "Ptah"
+              ],
+              "correctAnswer": "Anubis",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est la relation entre Osiris et Horus ?",
+              "options": [
+                "Osiris est le frère de Horus",
+                "Osiris est le fils de Horus",
+                "Osiris est le père de Horus",
+                "Osiris est l'ennemi de Horus"
+              ],
+              "correctAnswer": "Osiris est le père de Horus",
+              "isSpecial": false
+            },
+            {
+              "question": "Qui était Seth dans la mythologie égyptienne ?",
+              "options": [
+                "Le dieu de la sagesse et de l'écriture",
+                "Le dieu du chaos et du désert, ennemi d'Horus",
+                "Le dieu de la médecine et des guérisons",
+                "Le dieu de la rivière Nil"
+              ],
+              "correctAnswer": "Le dieu du chaos et du désert, ennemi d'Horus",
+              "isSpecial": false
+            },
+            {
+              "question": "Combien de dieux les anciens Égyptiens adoraient-ils environ, et quel lien existait-il entre le pharaon et les dieux ?",
+              "options": [
+                "Une dizaine de dieux seulement ; le pharaon était leur esclave",
+                "Des centaines de dieux ; le pharaon était considéré comme le représentant des dieux sur Terre",
+                "Trois dieux principaux ; le pharaon choisissait son dieu préféré",
+                "Une cinquantaine de dieux ; le pharaon n'avait aucun lien avec eux"
+              ],
+              "correctAnswer": "Des centaines de dieux ; le pharaon était considéré comme le représentant des dieux sur Terre",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "mythology-gen-42",
+          "title": "La mythologie romaine",
+          "emoji": "🏛️",
+          "themeColor": "violet",
+          "badgeId": "mythology-badge-42",
+          "badgeName": "Citoyen de Rome",
+          "badgeEmoji": "⚡",
+          "cards": [
+            {
+              "title": "Les dieux romains",
+              "text": "Les Romains adoraient de nombreux dieux qui gouvernaient les forces de la nature et les activités humaines. Ces dieux vivaient sur le mont Olympe et intervenaient souvent dans les affaires des hommes. Le plus puissant d'entre eux était Jupiter, maître du ciel et de la foudre.",
+              "emoji": "⚡"
+            },
+            {
+              "title": "Les grands dieux de Rome",
+              "text": "Jupiter régnait sur tous les dieux, tandis que sa femme Junon protégeait les femmes et le mariage. Mars était le dieu de la guerre, très respecté car Rome était un peuple de guerriers. Vénus incarnait l'amour et la beauté, et Mercure servait de messager des dieux.",
+              "emoji": "🏺"
+            },
+            {
+              "title": "Les mythes et les héros",
+              "text": "Les Romains racontaient des récits appelés mythes pour expliquer la création du monde et les phénomènes naturels. Énée, fils de Vénus, était le grand héros fondateur selon la légende romaine. Romulus et Rémus, élevés par une louve, auraient quant à eux fondé la ville de Rome.",
+              "emoji": "🐺"
+            },
+            {
+              "title": "Religion et vie quotidienne",
+              "text": "La religion occupait une place centrale dans la vie des Romains : ils célébraient de nombreuses fêtes en l'honneur des dieux et leur offraient des sacrifices dans des temples. Les prêtres et prêtresses, comme les Vestales gardiennes du feu sacré, jouaient un rôle essentiel. Chaque famille honorait aussi ses propres dieux domestiques appelés les Lares.",
+              "emoji": "🔥"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Qui est le dieu le plus puissant de la mythologie romaine ?",
+              "options": [
+                "Mars",
+                "Jupiter",
+                "Mercure",
+                "Neptune"
+              ],
+              "correctAnswer": "Jupiter",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel dieu romain est associé à la guerre ?",
+              "options": [
+                "Vulcain",
+                "Pluton",
+                "Mars",
+                "Janus"
+              ],
+              "correctAnswer": "Mars",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle déesse romaine représente l'amour et la beauté ?",
+              "options": [
+                "Junon",
+                "Diane",
+                "Minerve",
+                "Vénus"
+              ],
+              "correctAnswer": "Vénus",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le rôle de Mercure dans la mythologie romaine ?",
+              "options": [
+                "Dieu de la mer",
+                "Messager des dieux",
+                "Dieu du feu",
+                "Gardien des enfers"
+              ],
+              "correctAnswer": "Messager des dieux",
+              "isSpecial": false
+            },
+            {
+              "question": "Selon la légende, qui a fondé la ville de Rome après avoir été élevé par une louve ?",
+              "options": [
+                "Énée",
+                "Jupiter",
+                "Romulus",
+                "Hercule"
+              ],
+              "correctAnswer": "Romulus",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel héros romain était le fils de la déesse Vénus ?",
+              "options": [
+                "Romulus",
+                "Rémus",
+                "Mars",
+                "Énée"
+              ],
+              "correctAnswer": "Énée",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment appelle-t-on les récits qui expliquent la création du monde dans la Rome antique ?",
+              "options": [
+                "Des fables",
+                "Des mythes",
+                "Des chroniques",
+                "Des épopées"
+              ],
+              "correctAnswer": "Des mythes",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle était la fonction des Vestales dans la religion romaine ?",
+              "options": [
+                "Elles dirigeaient les sacrifices d'animaux",
+                "Elles gardaient le feu sacré",
+                "Elles construisaient les temples",
+                "Elles transmettaient les messages des dieux"
+              ],
+              "correctAnswer": "Elles gardaient le feu sacré",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment s'appelaient les dieux domestiques que chaque famille romaine honorait ?",
+              "options": [
+                "Les Pénates",
+                "Les Lares",
+                "Les Furies",
+                "Les Muses"
+              ],
+              "correctAnswer": "Les Lares",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle déesse romaine était l'épouse de Jupiter et protectrice des femmes ?",
+              "options": [
+                "Cérès",
+                "Diane",
+                "Junon",
+                "Proserpine"
+              ],
+              "correctAnswer": "Junon",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "mythology-gen-43",
+          "title": "Les légendes du roi Arthur",
+          "emoji": "⚔️",
+          "themeColor": "violet",
+          "badgeId": "mythology-badge-43",
+          "badgeName": "Chevalier de la Table Ronde",
+          "badgeEmoji": "🏰",
+          "cards": [
+            {
+              "title": "Arthur, le roi légendaire",
+              "text": "Arthur est un roi légendaire breton dont les récits ont traversé le Moyen Âge. Selon la légende, il prouva sa valeur en retirant l'épée Excalibur d'un rocher, ce qu'aucun autre homme n'avait réussi à faire. Son royaume s'appelait Camelot, un lieu idéal de justice et de chevalerie.",
+              "emoji": "👑"
+            },
+            {
+              "title": "La Table Ronde et ses chevaliers",
+              "text": "Arthur réunit ses meilleurs guerriers autour d'une table ronde pour éviter tout sentiment d'inégalité : sans angle ni bout de table, aucun chevalier ne pouvait se prétendre supérieur aux autres. Parmi les plus célèbres figuraient Lancelot, Perceval et Gauvain. Ils avaient pour mission de défendre les faibles et de respecter un code d'honneur strict.",
+              "emoji": "🛡️"
+            },
+            {
+              "title": "Merlin l'enchanteur et la magie",
+              "text": "Merlin est le puissant sorcier et conseiller d'Arthur. Il guida le jeune roi dès son enfance et usa de sa magie pour protéger Camelot. On lui attribue notamment la construction de Stonehenge et la création d'Excalibur, l'épée magique d'Arthur.",
+              "emoji": "🧙"
+            },
+            {
+              "title": "La quête du Graal et la fin de Camelot",
+              "text": "La quête du Saint-Graal, le calice ayant servi lors du dernier repas du Christ, est l'une des aventures les plus célèbres des chevaliers. La trahison de Lancelot et la révolte de Mordred, neveu d'Arthur, entraînèrent la chute de Camelot. Arthur, blessé lors de la bataille finale, fut emmené sur l'île d'Avalon où, selon la légende, il attend de revenir un jour.",
+              "emoji": "🏆"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Comment Arthur prouva-t-il qu'il était le vrai roi d'Angleterre ?",
+              "options": [
+                "En gagnant un tournoi de chevalerie",
+                "En retirant l'épée Excalibur d'un rocher",
+                "En construisant le château de Camelot",
+                "En vainquant le dragon de Bretagne"
+              ],
+              "correctAnswer": "En retirant l'épée Excalibur d'un rocher",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi les chevaliers d'Arthur se réunissaient-ils autour d'une table ronde ?",
+              "options": [
+                "Parce que c'était la seule table disponible à Camelot",
+                "Pour pouvoir se battre plus facilement",
+                "Pour qu'aucun chevalier ne se sente supérieur aux autres",
+                "Parce qu'Arthur aimait la forme ronde"
+              ],
+              "correctAnswer": "Pour qu'aucun chevalier ne se sente supérieur aux autres",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le nom du royaume idéal gouverné par le roi Arthur ?",
+              "options": [
+                "Avalon",
+                "Bretagne",
+                "Camelot",
+                "Stonehenge"
+              ],
+              "correctAnswer": "Camelot",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel était le rôle de Merlin auprès du roi Arthur ?",
+              "options": [
+                "Général de son armée",
+                "Sorcier et conseiller",
+                "Gardien de la Table Ronde",
+                "Messager du pape"
+              ],
+              "correctAnswer": "Sorcier et conseiller",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel objet mythique les chevaliers de la Table Ronde cherchaient-ils lors de leur grande quête ?",
+              "options": [
+                "La couronne d'or d'Uther",
+                "Le bouclier de Lancelot",
+                "L'anneau de Merlin",
+                "Le Saint-Graal"
+              ],
+              "correctAnswer": "Le Saint-Graal",
+              "isSpecial": false
+            },
+            {
+              "question": "Qui est Lancelot dans la légende arthurienne ?",
+              "options": [
+                "Le neveu traître d'Arthur",
+                "L'un des chevaliers les plus célèbres de la Table Ronde",
+                "Le père adoptif d'Arthur",
+                "L'ennemi juré de Merlin"
+              ],
+              "correctAnswer": "L'un des chevaliers les plus célèbres de la Table Ronde",
+              "isSpecial": false
+            },
+            {
+              "question": "Sur quelle île mystérieuse Arthur aurait-il été emmené après sa dernière bataille ?",
+              "options": [
+                "L'île de Bretagne",
+                "L'île d'Avalon",
+                "L'île de Stonehenge",
+                "L'île de Merlin"
+              ],
+              "correctAnswer": "L'île d'Avalon",
+              "isSpecial": false
+            },
+            {
+              "question": "Qui est Mordred dans la légende du roi Arthur ?",
+              "options": [
+                "Le fidèle ami d'Arthur",
+                "Le fils de Merlin",
+                "Le neveu d'Arthur qui se révolta contre lui",
+                "Le forgeron qui créa Excalibur"
+              ],
+              "correctAnswer": "Le neveu d'Arthur qui se révolta contre lui",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle grande construction légendaire est attribuée à Merlin ?",
+              "options": [
+                "Le château de Camelot",
+                "La Table Ronde",
+                "Stonehenge",
+                "Le pont de Londres"
+              ],
+              "correctAnswer": "Stonehenge",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est la particularité du Saint-Graal selon la légende arthurienne ?",
+              "options": [
+                "C'est l'épée avec laquelle Arthur fut couronné",
+                "C'est le calice utilisé lors du dernier repas du Christ",
+                "C'est le bouclier magique de Lancelot",
+                "C'est la coupe forgée par Merlin pour guérir les blessures"
+              ],
+              "correctAnswer": "C'est le calice utilisé lors du dernier repas du Christ",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "mythology-gen-44",
+          "title": "Les créatures fantastiques du monde",
+          "emoji": "🐉",
+          "themeColor": "violet",
+          "badgeId": "mythology-badge-44",
+          "badgeName": "Chasseur de créatures",
+          "badgeEmoji": "🦄",
+          "cards": [
+            {
+              "title": "Les dragons",
+              "text": "Le dragon est l'une des créatures fantastiques les plus connues au monde. En Europe, il est souvent représenté comme un monstre cracheur de feu gardant un trésor, tandis qu'en Chine, il symbolise la sagesse et la chance.",
+              "emoji": "🐉"
+            },
+            {
+              "title": "Les créatures marines",
+              "text": "Les océans ont toujours inspiré des légendes de créatures gigantesques. La sirène, mi-femme mi-poisson, attire les marins dans les profondeurs selon les mythes nordiques et méditerranéens. Le Kraken, immense pieuvre des mers nordiques, était censé pouvoir couler des navires entiers.",
+              "emoji": "🧜"
+            },
+            {
+              "title": "Les créatures des forêts et des montagnes",
+              "text": "De nombreuses cultures parlent de créatures vivant dans la nature sauvage. La licorne, cheval blanc à corne unique, représentait la pureté dans les légendes européennes. Le Yeti des montagnes himalayennes et le Bigfoot américain sont des créatures mi-humaines mi-animales dont l'existence reste mystérieuse.",
+              "emoji": "🦄"
+            },
+            {
+              "title": "Les créatures de la nuit",
+              "text": "Certaines créatures fantastiques sont associées aux ténèbres et à la nuit. La licorne noire et le loup-garou — homme qui se transforme en loup lors de la pleine lune — appartiennent aux traditions européennes. Les vampires, êtres immortels se nourrissant de sang, proviennent des légendes d'Europe centrale et orientale.",
+              "emoji": "🧛"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Que symbolise le dragon dans la culture chinoise ?",
+              "options": [
+                "La destruction et le chaos",
+                "La sagesse et la chance",
+                "La mort et les ténèbres",
+                "La guerre et la conquête"
+              ],
+              "correctAnswer": "La sagesse et la chance",
+              "isSpecial": false
+            },
+            {
+              "question": "Qu'est-ce qu'une sirène selon les mythes ?",
+              "options": [
+                "Un dragon marin cracheur de feu",
+                "Un géant gardien des océans",
+                "Une créature mi-femme mi-poisson",
+                "Une pieuvre géante des profondeurs"
+              ],
+              "correctAnswer": "Une créature mi-femme mi-poisson",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment le dragon européen est-il généralement représenté ?",
+              "options": [
+                "Comme un symbole de chance et de bonheur",
+                "Comme un monstre cracheur de feu gardant un trésor",
+                "Comme un guide spirituel bienveillant",
+                "Comme un cheval ailé porteur de lumière"
+              ],
+              "correctAnswer": "Comme un monstre cracheur de feu gardant un trésor",
+              "isSpecial": false
+            },
+            {
+              "question": "Qu'est-ce que le Kraken dans les légendes nordiques ?",
+              "options": [
+                "Un dragon des mers du nord",
+                "Un géant de glace",
+                "Un loup marin féroce",
+                "Une immense pieuvre pouvant couler des navires"
+              ],
+              "correctAnswer": "Une immense pieuvre pouvant couler des navires",
+              "isSpecial": false
+            },
+            {
+              "question": "Que représente la licorne dans les légendes européennes ?",
+              "options": [
+                "La force et le courage",
+                "La pureté",
+                "La richesse et l'abondance",
+                "La mort et le renouveau"
+              ],
+              "correctAnswer": "La pureté",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans quelle région du monde situe-t-on la légende du Yeti ?",
+              "options": [
+                "Les forêts amazoniennes",
+                "Les plaines africaines",
+                "Les montagnes himalayennes",
+                "Les îles du Pacifique"
+              ],
+              "correctAnswer": "Les montagnes himalayennes",
+              "isSpecial": false
+            },
+            {
+              "question": "Qu'est-ce qu'un loup-garou selon les traditions européennes ?",
+              "options": [
+                "Un loup géant vivant dans les forêts profondes",
+                "Un homme qui se transforme en loup lors de la pleine lune",
+                "Un esprit de loup protecteur des villages",
+                "Un chien magique capable de parler"
+              ],
+              "correctAnswer": "Un homme qui se transforme en loup lors de la pleine lune",
+              "isSpecial": false
+            },
+            {
+              "question": "De quelle région provient la légende des vampires ?",
+              "options": [
+                "De l'Afrique du Nord",
+                "De l'Asie du Sud-Est",
+                "D'Europe centrale et orientale",
+                "De l'Amérique du Sud"
+              ],
+              "correctAnswer": "D'Europe centrale et orientale",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est la caractéristique principale des vampires dans les légendes ?",
+              "options": [
+                "Ils transforment les pierres en or",
+                "Ils sont immortels et se nourrissent de sang",
+                "Ils peuvent contrôler les tempêtes",
+                "Ils vivent sous les océans"
+              ],
+              "correctAnswer": "Ils sont immortels et se nourrissent de sang",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel point commun y a-t-il entre le Yeti et le Bigfoot ?",
+              "options": [
+                "Ce sont deux noms du même dragon européen",
+                "Tous deux vivent dans les océans selon les légendes",
+                "Ce sont des créatures mi-humaines mi-animales dont l'existence reste mystérieuse",
+                "Ils symbolisent tous les deux la pureté et la sagesse"
+              ],
+              "correctAnswer": "Ce sont des créatures mi-humaines mi-animales dont l'existence reste mystérieuse",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "mythology-gen-45",
+          "title": "Les mythes de la création du monde",
+          "emoji": "🌍",
+          "themeColor": "violet",
+          "badgeId": "mythology-badge-45",
+          "badgeName": "Conteur des origines",
+          "badgeEmoji": "📖",
+          "cards": [
+            {
+              "title": "Qu'est-ce qu'un mythe de création ?",
+              "text": "Un mythe de création est une histoire imaginée par un peuple pour expliquer comment le monde, les humains et les dieux sont apparus. Ces récits sont transmis de génération en génération et reflètent les croyances d'une civilisation.",
+              "emoji": "✨"
+            },
+            {
+              "title": "La création selon les Grecs",
+              "text": "Dans la mythologie grecque, au début il n'y avait que le Chaos, un vide immense. De ce vide naquirent Gaïa (la Terre), Tartare (les profondeurs) et Éros (l'amour), puis les Titans et enfin les dieux de l'Olympe comme Zeus.",
+              "emoji": "🏛️"
+            },
+            {
+              "title": "La création selon les Égyptiens",
+              "text": "Pour les anciens Égyptiens, le dieu Atoum émergea des eaux primordiales appelées le Noun. Il créa ensuite les premiers dieux par la parole ou par son souffle, et le monde s'organisa peu à peu autour du Nil.",
+              "emoji": "🌅"
+            },
+            {
+              "title": "La création dans d'autres cultures",
+              "text": "Les Amérindiens, les Nordiques ou les Mésopotamiens ont aussi leurs propres mythes : en Mésopotamie, le dieu Mardouk tua le monstre Tiamat et créa la Terre avec son corps. Chaque culture a une façon unique d'imaginer les origines.",
+              "emoji": "🌐"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Qu'est-ce que le Chaos dans la mythologie grecque ?",
+              "options": [
+                "Un dieu de la guerre",
+                "Un vide immense qui existait avant la création",
+                "Une montagne sacrée",
+                "Un fleuve souterrain"
+              ],
+              "correctAnswer": "Un vide immense qui existait avant la création",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel dieu grec est né en premier du Chaos selon la mythologie ?",
+              "options": [
+                "Zeus",
+                "Poséidon",
+                "Gaïa",
+                "Apollon"
+              ],
+              "correctAnswer": "Gaïa",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans la mythologie égyptienne, comment s'appellent les eaux primordiales d'où émergea Atoum ?",
+              "options": [
+                "Le Nil",
+                "Le Noun",
+                "Le Styx",
+                "Le Tartare"
+              ],
+              "correctAnswer": "Le Noun",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le rôle d'Éros dans la mythologie grecque de la création ?",
+              "options": [
+                "Il est le dieu du tonnerre",
+                "Il est la personnification de l'amour, né du Chaos",
+                "Il est le gardien des enfers",
+                "Il est le fils de Zeus"
+              ],
+              "correctAnswer": "Il est la personnification de l'amour, né du Chaos",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans quel mythe de création un dieu tue un monstre pour former la Terre ?",
+              "options": [
+                "La mythologie grecque",
+                "La mythologie nordique",
+                "La mythologie mésopotamienne",
+                "La mythologie égyptienne"
+              ],
+              "correctAnswer": "La mythologie mésopotamienne",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment s'appelle le monstre tué par Mardouk dans la mythologie mésopotamienne ?",
+              "options": [
+                "Gaïa",
+                "Tiamat",
+                "Tartare",
+                "Isfet"
+              ],
+              "correctAnswer": "Tiamat",
+              "isSpecial": false
+            },
+            {
+              "question": "À quoi servent principalement les mythes de création ?",
+              "options": [
+                "À raconter des guerres entre nations",
+                "À expliquer les origines du monde selon les croyances d'un peuple",
+                "À décrire des recettes de cuisine ancienne",
+                "À enseigner les mathématiques"
+              ],
+              "correctAnswer": "À expliquer les origines du monde selon les croyances d'un peuple",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel dieu égyptien aurait créé les premiers autres dieux par sa parole ou son souffle ?",
+              "options": [
+                "Osiris",
+                "Rê",
+                "Atoum",
+                "Horus"
+              ],
+              "correctAnswer": "Atoum",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel élément la mythologie égyptienne place-t-il au centre de l'organisation du monde ?",
+              "options": [
+                "La mer Méditerranée",
+                "Le désert du Sahara",
+                "Le Nil",
+                "La pyramide de Gizeh"
+              ],
+              "correctAnswer": "Le Nil",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans la mythologie grecque, qui sont les Titans ?",
+              "options": [
+                "Les premiers humains créés par Zeus",
+                "Les descendants de Gaïa et Ouranos, avant les dieux de l'Olympe",
+                "Les monstres des profondeurs marines",
+                "Les soldats du dieu Arès"
+              ],
+              "correctAnswer": "Les descendants de Gaïa et Ouranos, avant les dieux de l'Olympe",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "mythology-gen-46",
+          "title": "Les constellations et leurs légendes",
+          "emoji": "✨",
+          "themeColor": "violet",
+          "badgeId": "mythology-badge-46",
+          "badgeName": "Gardien des étoiles",
+          "badgeEmoji": "🌟",
+          "cards": [
+            {
+              "title": "Qu'est-ce qu'une constellation ?",
+              "text": "Une constellation est un groupe d'étoiles que les Anciens ont relié par des lignes imaginaires pour former des dessins dans le ciel. Il existe 88 constellations officielles reconnues dans le monde entier. Chacune porte un nom souvent inspiré de la mythologie grecque ou romaine.",
+              "emoji": "🌌"
+            },
+            {
+              "title": "Orion, le grand chasseur",
+              "text": "Orion est l'une des constellations les plus célèbres : selon la légende grecque, c'était un chasseur gigantesque et invincible, fils du dieu Poséidon. Il fut tué par un scorpion envoyé par la déesse Artémis, et Zeus le plaça parmi les étoiles pour l'honorer. On le reconnaît facilement grâce à ses trois étoiles alignées qui forment sa ceinture.",
+              "emoji": "🏹"
+            },
+            {
+              "title": "La Grande Ourse et ses légendes",
+              "text": "La Grande Ourse (Ursa Major) représente une ourse dans la mythologie grecque : Zeus transforma la nymphe Callisto en ourse pour la protéger, puis la plaça dans le ciel. Cette constellation contient la célèbre Petite Casserole, dont l'étoile du bout, Polaris, indique le nord. Les marins de l'Antiquité s'en servaient pour naviguer en mer.",
+              "emoji": "🐻"
+            },
+            {
+              "title": "Cassiopée et Persée : une légende de héros",
+              "text": "Cassiopée était une reine vaniteuse qui se vantait d'être plus belle que les nymphes de la mer, ce qui mit les dieux en colère. Pour la punir, un monstre marin fut envoyé ravager son royaume, et sa fille Andromède fut enchaînée comme sacrifice. Le héros Persée la sauva grâce à la tête de la Méduse, et tous trois furent immortalisés en constellations dans le ciel.",
+              "emoji": "⚔️"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Combien de constellations officielles existe-t-il dans le ciel ?",
+              "options": [
+                "48",
+                "88",
+                "100",
+                "12"
+              ],
+              "correctAnswer": "88",
+              "isSpecial": false
+            },
+            {
+              "question": "De quelle mythologie proviennent la plupart des noms de constellations ?",
+              "options": [
+                "Égyptienne",
+                "Nordique",
+                "Grecque et romaine",
+                "Chinoise"
+              ],
+              "correctAnswer": "Grecque et romaine",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment reconnaît-on facilement la constellation d'Orion ?",
+              "options": [
+                "Par ses sept étoiles en arc",
+                "Par ses trois étoiles alignées formant une ceinture",
+                "Par son étoile la plus brillante au centre",
+                "Par sa forme de croix"
+              ],
+              "correctAnswer": "Par ses trois étoiles alignées formant une ceinture",
+              "isSpecial": false
+            },
+            {
+              "question": "Qui était Orion selon la mythologie grecque ?",
+              "options": [
+                "Un dieu de la mer",
+                "Un roi de Troie",
+                "Un chasseur gigantesque fils de Poséidon",
+                "Un héros qui tua la Méduse"
+              ],
+              "correctAnswer": "Un chasseur gigantesque fils de Poséidon",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle étoile de la Grande Ourse permet d'indiquer le nord ?",
+              "options": [
+                "Sirius",
+                "Véga",
+                "Polaris",
+                "Bételgeuse"
+              ],
+              "correctAnswer": "Polaris",
+              "isSpecial": false
+            },
+            {
+              "question": "En quoi Zeus transforma-t-il la nymphe Callisto pour la protéger ?",
+              "options": [
+                "En aigle",
+                "En ourse",
+                "En dauphin",
+                "En colombe"
+              ],
+              "correctAnswer": "En ourse",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi Cassiopée fut-elle punie par les dieux ?",
+              "options": [
+                "Elle avait volé le feu sacré",
+                "Elle se vantait d'être plus belle que les nymphes de la mer",
+                "Elle avait refusé d'honorer Zeus",
+                "Elle avait tué un animal sacré"
+              ],
+              "correctAnswer": "Elle se vantait d'être plus belle que les nymphes de la mer",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel monstre fut envoyé pour ravager le royaume de Cassiopée ?",
+              "options": [
+                "Un dragon cracheur de feu",
+                "Un taureau divin",
+                "Un monstre marin",
+                "Un géant de pierre"
+              ],
+              "correctAnswer": "Un monstre marin",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel objet Persée utilisa-t-il pour sauver Andromède ?",
+              "options": [
+                "Son bouclier en bronze",
+                "La tête de la Méduse",
+                "La foudre de Zeus",
+                "Un arc magique"
+              ],
+              "correctAnswer": "La tête de la Méduse",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle utilité pratique avaient les constellations pour les marins de l'Antiquité ?",
+              "options": [
+                "Ils les utilisaient pour prévoir la météo",
+                "Ils les utilisaient pour se repérer et naviguer en mer",
+                "Ils les utilisaient pour calculer l'heure de la journée",
+                "Ils les utilisaient pour communiquer entre navires"
+              ],
+              "correctAnswer": "Ils les utilisaient pour se repérer et naviguer en mer",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "mythology-gen-47",
+          "title": "La mythologie japonaise",
+          "emoji": "⛩️",
+          "themeColor": "violet",
+          "badgeId": "mythology-badge-47",
+          "badgeName": "Gardien des Kamis",
+          "badgeEmoji": "🌸",
+          "cards": [
+            {
+              "title": "Les kamis, esprits de la nature",
+              "text": "Dans la mythologie japonaise, les kamis sont des divinités ou esprits présents dans tous les éléments de la nature : les montagnes, les rivières, les arbres et même les objets. Le shintoïsme, la religion traditionnelle du Japon, repose entièrement sur leur vénération. On les honore dans des sanctuaires appelés jinja.",
+              "emoji": "🌿"
+            },
+            {
+              "title": "Izanagi et Izanami, les créateurs du monde",
+              "text": "Selon le mythe japonais de la création, Izanagi (le dieu mâle) et Izanami (la déesse femelle) agitèrent une lance magique dans l'océan primordial pour créer les premières îles du Japon. Ensemble, ils donnèrent naissance à de nombreux dieux et à la terre japonaise. Izanami mourut en donnant naissance au dieu du feu, Kagutsuchi.",
+              "emoji": "🏝️"
+            },
+            {
+              "title": "Amaterasu, déesse du Soleil",
+              "text": "Amaterasu est la déesse du soleil et l'une des divinités les plus importantes de la mythologie japonaise. Elle est née de l'œil gauche d'Izanagi lorsqu'il se purifia après son voyage aux Enfers. Selon la légende, les empereurs du Japon seraient ses descendants directs.",
+              "emoji": "☀️"
+            },
+            {
+              "title": "Susanoo et la grotte céleste",
+              "text": "Susanoo est le dieu des tempêtes et le frère turbulent d'Amaterasu. Après avoir provoqué la colère de sa sœur avec ses frasques, celle-ci se réfugia dans une grotte, plongeant le monde dans l'obscurité. Les autres dieux durent ruser pour la faire sortir, et Susanoo fut finalement banni du ciel.",
+              "emoji": "⛈️"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Comment appelle-t-on les esprits et divinités de la mythologie japonaise ?",
+              "options": [
+                "Les esprits",
+                "Les kamis",
+                "Les yokaïs",
+                "Les shinobis"
+              ],
+              "correctAnswer": "Les kamis",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le nom de la religion traditionnelle japonaise fondée sur le culte des kamis ?",
+              "options": [
+                "Le bouddhisme",
+                "Le taoïsme",
+                "Le shintoïsme",
+                "Le confucianisme"
+              ],
+              "correctAnswer": "Le shintoïsme",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment s'appelle un sanctuaire shinto au Japon ?",
+              "options": [
+                "Un temple",
+                "Une pagode",
+                "Un jinja",
+                "Un torii"
+              ],
+              "correctAnswer": "Un jinja",
+              "isSpecial": false
+            },
+            {
+              "question": "Que firent Izanagi et Izanami pour créer les premières îles du Japon ?",
+              "options": [
+                "Ils soufflèrent sur l'eau",
+                "Ils lancèrent des rochers dans la mer",
+                "Ils agitèrent une lance magique dans l'océan",
+                "Ils prièrent les dieux du ciel"
+              ],
+              "correctAnswer": "Ils agitèrent une lance magique dans l'océan",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment Izanami, la déesse créatrice, est-elle morte ?",
+              "options": [
+                "Tuée par Susanoo lors d'une tempête",
+                "En donnant naissance au dieu du feu",
+                "Noyée dans l'océan primordial",
+                "Frappée par la foudre divine"
+              ],
+              "correctAnswer": "En donnant naissance au dieu du feu",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le nom du dieu du feu né d'Izanami ?",
+              "options": [
+                "Raijin",
+                "Susanoo",
+                "Kagutsuchi",
+                "Fujin"
+              ],
+              "correctAnswer": "Kagutsuchi",
+              "isSpecial": false
+            },
+            {
+              "question": "De quelle partie du corps d'Izanagi est née la déesse Amaterasu ?",
+              "options": [
+                "De sa bouche",
+                "De son oreille droite",
+                "De sa main gauche",
+                "De son œil gauche"
+              ],
+              "correctAnswer": "De son œil gauche",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le domaine dont Amaterasu est la déesse ?",
+              "options": [
+                "La mer",
+                "La lune",
+                "Le soleil",
+                "Le vent"
+              ],
+              "correctAnswer": "Le soleil",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est la relation entre Susanoo et Amaterasu ?",
+              "options": [
+                "Il est son fils",
+                "Il est son mari",
+                "Il est son frère",
+                "Il est son ennemi venu des enfers"
+              ],
+              "correctAnswer": "Il est son frère",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi Amaterasu se réfugia-t-elle dans une grotte, plongeant le monde dans l'obscurité ?",
+              "options": [
+                "Elle fuyait un monstre marin venu des profondeurs",
+                "Elle était épuisée et avait besoin de se reposer",
+                "Elle fut provoquée et mise en colère par les agissements de Susanoo",
+                "Elle cherchait un trésor caché par les dieux anciens"
+              ],
+              "correctAnswer": "Elle fut provoquée et mise en colère par les agissements de Susanoo",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "mythology-gen-48",
+          "title": "Les dragons à travers le monde",
+          "emoji": "🐉",
+          "themeColor": "violet",
+          "badgeId": "mythology-badge-48",
+          "badgeName": "Maître des Dragons",
+          "badgeEmoji": "🐉",
+          "cards": [
+            {
+              "title": "Le dragon en Europe",
+              "text": "Dans les légendes européennes, le dragon est une créature terrifiante qui crache du feu et garde un trésor dans sa caverne. Les chevaliers partaient souvent en quête pour tuer ces monstres et sauver des prisonniers. Saint Georges, patron de l'Angleterre, est célèbre pour avoir combattu un dragon.",
+              "emoji": "⚔️"
+            },
+            {
+              "title": "Le dragon en Chine et en Asie",
+              "text": "En Chine, au Japon et dans toute l'Asie, le dragon est un symbole de chance, de sagesse et de puissance. Il n'est pas mauvais : il est lié à l'eau, à la pluie et à la prospérité. Les empereurs chinois utilisaient le dragon comme emblème royal pour montrer leur autorité.",
+              "emoji": "🏯"
+            },
+            {
+              "title": "Les différentes formes du dragon",
+              "text": "Les dragons n'ont pas tous le même aspect selon les cultures. Le dragon européen a quatre pattes et deux grandes ailes. Le dragon chinois (long) est un long serpent avec des griffes et pas d'ailes. Certains dragons, comme le wyvern anglais, n'ont que deux pattes et des ailes en guise de bras.",
+              "emoji": "🦎"
+            },
+            {
+              "title": "Les dragons dans d'autres cultures",
+              "text": "Le Quetzalcoatl des Aztèques est un serpent couvert de plumes qui vole, souvent comparé à un dragon. En Scandinavie, les Vikings ornaient leurs bateaux de têtes de dragons pour effrayer leurs ennemis. Dans la mythologie nordique, le serpent géant Fáfnir fut transformé en dragon par la cupidité.",
+              "emoji": "🌍"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Dans les légendes européennes, que gardent généralement les dragons ?",
+              "options": [
+                "Un trésor",
+                "Une forêt sacrée",
+                "Un puits magique",
+                "Une bibliothèque ancienne"
+              ],
+              "correctAnswer": "Un trésor",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel saint est célèbre pour avoir combattu un dragon en Europe ?",
+              "options": [
+                "Saint Nicolas",
+                "Saint Georges",
+                "Saint Patrick",
+                "Saint Michel"
+              ],
+              "correctAnswer": "Saint Georges",
+              "isSpecial": false
+            },
+            {
+              "question": "En Chine, que symbolise le dragon ?",
+              "options": [
+                "La destruction et la guerre",
+                "La chance, la sagesse et la puissance",
+                "La mort et les ténèbres",
+                "La solitude et le silence"
+              ],
+              "correctAnswer": "La chance, la sagesse et la puissance",
+              "isSpecial": false
+            },
+            {
+              "question": "À quoi le dragon est-il lié dans la culture asiatique ?",
+              "options": [
+                "Au feu et aux volcans",
+                "À l'air et aux tempêtes",
+                "À l'eau, à la pluie et à la prospérité",
+                "À la terre et aux séismes"
+              ],
+              "correctAnswer": "À l'eau, à la pluie et à la prospérité",
+              "isSpecial": false
+            },
+            {
+              "question": "Combien de pattes possède un dragon européen traditionnel ?",
+              "options": [
+                "Deux",
+                "Six",
+                "Huit",
+                "Quatre"
+              ],
+              "correctAnswer": "Quatre",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est la particularité du dragon chinois par rapport au dragon européen ?",
+              "options": [
+                "Il possède trois têtes",
+                "Il est en forme de long serpent et n'a pas d'ailes",
+                "Il crache de la glace",
+                "Il est minuscule et invisible"
+              ],
+              "correctAnswer": "Il est en forme de long serpent et n'a pas d'ailes",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment s'appelle le type de dragon qui n'a que deux pattes et des ailes en guise de bras ?",
+              "options": [
+                "Le wyrm",
+                "Le drake",
+                "Le wyvern",
+                "Le guivre"
+              ],
+              "correctAnswer": "Le wyvern",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel peuple ornait ses bateaux de têtes de dragons ?",
+              "options": [
+                "Les Romains",
+                "Les Vikings",
+                "Les Aztèques",
+                "Les Grecs"
+              ],
+              "correctAnswer": "Les Vikings",
+              "isSpecial": false
+            },
+            {
+              "question": "Le Quetzalcoatl, parfois comparé à un dragon, appartient à quelle civilisation ?",
+              "options": [
+                "Aztèque",
+                "Égyptienne",
+                "Japonaise",
+                "Celte"
+              ],
+              "correctAnswer": "Aztèque",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans la mythologie nordique, comment Fáfnir est-il devenu un dragon ?",
+              "options": [
+                "Il fut maudit par un dieu",
+                "Il but une potion magique",
+                "Il fut transformé par la cupidité",
+                "Il fut mordu par un autre dragon"
+              ],
+              "correctAnswer": "Il fut transformé par la cupidité",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "mythology-gen-49",
+          "title": "Le Royaume des Morts",
+          "emoji": "💀",
+          "themeColor": "violet",
+          "badgeId": "mythology-badge-49",
+          "badgeName": "Gardien des Enfers",
+          "badgeEmoji": "🏺",
+          "cards": [
+            {
+              "title": "Les Enfers grecs : le royaume d'Hadès",
+              "text": "Dans la mythologie grecque, les morts descendent dans un royaume souterrain dirigé par le dieu Hadès. Pour y entrer, les âmes doivent traverser le fleuve Styx sur la barque du passeur Charon, qui demande une pièce de monnaie en échange du voyage.",
+              "emoji": "⛵"
+            },
+            {
+              "title": "Les différentes zones des Enfers",
+              "text": "Les Enfers grecs sont divisés en plusieurs endroits selon les actes du défunt. Les héros et les vertueux vont aux Champs Élysées, un paradis paisible, tandis que les grands criminels sont punis dans le Tartare, une prison des profondeurs. Les âmes ordinaires errent dans les Asphodèles.",
+              "emoji": "🗺️"
+            },
+            {
+              "title": "L'Osiris égyptien et la pesée de l'âme",
+              "text": "Dans la mythologie égyptienne, le dieu Osiris préside le jugement des morts. Le cœur du défunt est pesé sur une balance contre une plume de la déesse Maât : si le cœur est trop lourd de mauvaises actions, le monstre Ammit le dévore et l'âme disparaît à jamais.",
+              "emoji": "⚖️"
+            },
+            {
+              "title": "D'autres royaumes des morts à travers le monde",
+              "text": "Les Nordiques croyaient en Niflheim, un monde glacé où les morts ordinaires séjournent, et en Hel, sa souveraine à l'apparence mi-vivante, mi-morte. Dans la mythologie aztèque, les morts devaient traverser neuf niveaux du Mictlan avant d'atteindre le repos éternel, accompagnés d'un chien comme guide.",
+              "emoji": "🌍"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Quel dieu grec gouverne le royaume des morts ?",
+              "options": [
+                "Zeus",
+                "Poséidon",
+                "Hadès",
+                "Arès"
+              ],
+              "correctAnswer": "Hadès",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment s'appelle le passeur qui transporte les âmes dans les Enfers grecs ?",
+              "options": [
+                "Hermès",
+                "Charon",
+                "Cerbère",
+                "Hadès"
+              ],
+              "correctAnswer": "Charon",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel fleuve les âmes doivent-elles traverser pour entrer dans les Enfers grecs ?",
+              "options": [
+                "Le Léthé",
+                "Le Nil",
+                "Le Styx",
+                "L'Éridan"
+              ],
+              "correctAnswer": "Le Styx",
+              "isSpecial": false
+            },
+            {
+              "question": "Où vont les héros et les vertueux dans les Enfers grecs ?",
+              "options": [
+                "Dans le Tartare",
+                "Dans les Asphodèles",
+                "Dans le Styx",
+                "Aux Champs Élysées"
+              ],
+              "correctAnswer": "Aux Champs Élysées",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans la mythologie grecque, quel endroit sert de prison pour les grands criminels ?",
+              "options": [
+                "Les Asphodèles",
+                "Le Tartare",
+                "Les Champs Élysées",
+                "L'Olympe"
+              ],
+              "correctAnswer": "Le Tartare",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel dieu égyptien préside le jugement des morts ?",
+              "options": [
+                "Râ",
+                "Anubis",
+                "Osiris",
+                "Horus"
+              ],
+              "correctAnswer": "Osiris",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans la mythologie égyptienne, contre quoi le cœur du défunt est-il pesé lors du jugement ?",
+              "options": [
+                "Une pièce d'or",
+                "Un sablier",
+                "Une plume de Maât",
+                "Une épée"
+              ],
+              "correctAnswer": "Une plume de Maât",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel monstre égyptien dévore le cœur des défunts jugés mauvais ?",
+              "options": [
+                "Sphinx",
+                "Ammit",
+                "Sobek",
+                "Apophis"
+              ],
+              "correctAnswer": "Ammit",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans la mythologie nordique, comment s'appelle la souveraine du royaume des morts ordinaires ?",
+              "options": [
+                "Freya",
+                "Hel",
+                "Skadi",
+                "Nerthus"
+              ],
+              "correctAnswer": "Hel",
+              "isSpecial": false
+            },
+            {
+              "question": "Combien de niveaux les morts devaient-ils traverser dans le Mictlan aztèque avant d'atteindre le repos éternel ?",
+              "options": [
+                "Trois",
+                "Cinq",
+                "Sept",
+                "Neuf"
+              ],
+              "correctAnswer": "Neuf",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "mythology-gen-50",
+          "title": "Les objets magiques légendaires",
+          "emoji": "⚡",
+          "themeColor": "violet",
+          "badgeId": "mythology-badge-50",
+          "badgeName": "Gardien des Reliques",
+          "badgeEmoji": "🏺",
+          "cards": [
+            {
+              "title": "Le trident de Poséidon",
+              "text": "Poséidon, dieu grec des mers, possédait un trident capable de provoquer des tremblements de terre et de déchaîner les tempêtes. Cet objet symbolisait son pouvoir absolu sur les océans et les eaux du monde.",
+              "emoji": "🔱"
+            },
+            {
+              "title": "Mjöllnir, le marteau de Thor",
+              "text": "Dans la mythologie nordique, Thor brandissait Mjöllnir, un marteau forgé par des nains, pour combattre les géants et protéger les humains. Il avait la particularité de toujours revenir dans la main de son maître après avoir été lancé.",
+              "emoji": "🔨"
+            },
+            {
+              "title": "La toison d'or",
+              "text": "La toison d'or est la peau d'un bélier aux poils en or, gardée par un dragon dans la région de Colchide. Jason et les Argonautes ont accompli un long et périlleux voyage pour la conquérir et ramener la prospérité dans leur royaume.",
+              "emoji": "🐑"
+            },
+            {
+              "title": "Le caducée d'Hermès et le casque d'Hadès",
+              "text": "Hermès portait un caducée, un bâton entouré de deux serpents qui lui permettait de guider les âmes des défunts vers les Enfers. Hadès, lui, possédait un casque d'invisibilité qui le rendait totalement impossible à voir.",
+              "emoji": "🪄"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "À quel dieu grec appartient le trident légendaire ?",
+              "options": [
+                "Zeus",
+                "Arès",
+                "Poséidon",
+                "Hermès"
+              ],
+              "correctAnswer": "Poséidon",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le nom du marteau de Thor dans la mythologie nordique ?",
+              "options": [
+                "Gungnir",
+                "Mjöllnir",
+                "Excalibur",
+                "Durandal"
+              ],
+              "correctAnswer": "Mjöllnir",
+              "isSpecial": false
+            },
+            {
+              "question": "Par qui le marteau Mjöllnir a-t-il été forgé ?",
+              "options": [
+                "Par des elfes",
+                "Par des géants",
+                "Par des nains",
+                "Par les dieux"
+              ],
+              "correctAnswer": "Par des nains",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle propriété remarquable possède le marteau de Thor ?",
+              "options": [
+                "Il peut voler tout seul",
+                "Il revient toujours dans la main de son maître",
+                "Il peut parler",
+                "Il devient invisible la nuit"
+              ],
+              "correctAnswer": "Il revient toujours dans la main de son maître",
+              "isSpecial": false
+            },
+            {
+              "question": "Qu'est-ce que la toison d'or ?",
+              "options": [
+                "Une épée enchantée",
+                "Une couronne en or pur",
+                "La peau d'un bélier aux poils en or",
+                "Un bouclier magique"
+              ],
+              "correctAnswer": "La peau d'un bélier aux poils en or",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment s'appelle le héros qui part à la conquête de la toison d'or ?",
+              "options": [
+                "Ulysse",
+                "Hercule",
+                "Persée",
+                "Jason"
+              ],
+              "correctAnswer": "Jason",
+              "isSpecial": false
+            },
+            {
+              "question": "Où était gardée la toison d'or ?",
+              "options": [
+                "En Grèce",
+                "En Colchide",
+                "En Égypte",
+                "À Troie"
+              ],
+              "correctAnswer": "En Colchide",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel animal gardait la toison d'or ?",
+              "options": [
+                "Un lion",
+                "Un minotaure",
+                "Un dragon",
+                "Un cyclope"
+              ],
+              "correctAnswer": "Un dragon",
+              "isSpecial": false
+            },
+            {
+              "question": "À quoi servait le caducée d'Hermès ?",
+              "options": [
+                "À lancer des éclairs",
+                "À guider les âmes des défunts vers les Enfers",
+                "À contrôler les tempêtes",
+                "À rendre invisible son porteur"
+              ],
+              "correctAnswer": "À guider les âmes des défunts vers les Enfers",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel objet magique permettait à Hadès de devenir totalement invisible ?",
+              "options": [
+                "Un anneau enchanté",
+                "Une cape de brume",
+                "Un casque d'invisibilité",
+                "Un bouclier réfléchissant"
+              ],
+              "correctAnswer": "Un casque d'invisibilité",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "mythology-gen-51",
+          "title": "Les géants et les titans",
+          "emoji": "🏔️",
+          "themeColor": "violet",
+          "badgeId": "mythology-badge-51",
+          "badgeName": "Gardien des Titans",
+          "badgeEmoji": "⛰️",
+          "cards": [
+            {
+              "title": "Qui sont les Titans ?",
+              "text": "Les Titans sont une race de divinités gigantesques qui régnaient sur le monde avant les dieux de l'Olympe. Ils étaient les enfants d'Ouranos (le Ciel) et de Gaïa (la Terre), et formaient douze grands Titans. Kronos, leur chef, renversa son propre père pour prendre le pouvoir.",
+              "emoji": "👑"
+            },
+            {
+              "title": "La Titanomachie : la guerre des dieux",
+              "text": "La Titanomachie est le nom donné à la grande guerre qui opposa les Titans aux jeunes dieux olympiens, menés par Zeus. Ce conflit dura dix ans avant que Zeus et ses frères ne triomphent. Les Titans vaincus furent alors emprisonnés dans le Tartare, un abîme situé sous les Enfers.",
+              "emoji": "⚔️"
+            },
+            {
+              "title": "Atlas et Prométhée, deux Titans célèbres",
+              "text": "Atlas fut condamné par Zeus à porter le ciel sur ses épaules pour l'éternité, comme punition pour avoir combattu contre les Olympiens. Prométhée, lui, avait dérobé le feu aux dieux pour l'offrir aux humains ; Zeus le punit en le faisant enchaîner à un rocher où un aigle lui dévorait le foie chaque jour.",
+              "emoji": "🔥"
+            },
+            {
+              "title": "Les Géants et la Gigantomachie",
+              "text": "Les Géants étaient différents des Titans : nés du sang d'Ouranos tombé sur la Terre, ils avaient souvent des jambes de serpent et une force colossale. Ils se révoltèrent à leur tour contre les dieux de l'Olympe lors de la Gigantomachie, mais furent défaits grâce à l'aide du héros Héraclès, car une prophétie disait que les dieux ne pouvaient vaincre seuls.",
+              "emoji": "🐍"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Comment s'appellent les parents des Titans ?",
+              "options": [
+                "Zeus et Héra",
+                "Ouranos et Gaïa",
+                "Poséidon et Amphitrite",
+                "Kronos et Rhéa"
+              ],
+              "correctAnswer": "Ouranos et Gaïa",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel Titan était le chef des Titans et renversa son propre père ?",
+              "options": [
+                "Atlas",
+                "Prométhée",
+                "Kronos",
+                "Hypérion"
+              ],
+              "correctAnswer": "Kronos",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le nom de la guerre entre les Titans et les dieux olympiens ?",
+              "options": [
+                "La Gigantomachie",
+                "La Titanomachie",
+                "La Théomachie",
+                "La Olympomachie"
+              ],
+              "correctAnswer": "La Titanomachie",
+              "isSpecial": false
+            },
+            {
+              "question": "Combien de temps dura la guerre entre les Titans et les Olympiens ?",
+              "options": [
+                "Un an",
+                "Cinq ans",
+                "Dix ans",
+                "Cent ans"
+              ],
+              "correctAnswer": "Dix ans",
+              "isSpecial": false
+            },
+            {
+              "question": "Où furent emprisonnés les Titans après leur défaite ?",
+              "options": [
+                "Sur l'Olympe",
+                "Dans la mer",
+                "Dans le Tartare",
+                "Sur la Lune"
+              ],
+              "correctAnswer": "Dans le Tartare",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle punition Zeus infligea-t-il à Atlas ?",
+              "options": [
+                "Porter le ciel sur ses épaules",
+                "Rouler un rocher jusqu'en haut d'une colline",
+                "Être transformé en pierre",
+                "Garder les portes des Enfers"
+              ],
+              "correctAnswer": "Porter le ciel sur ses épaules",
+              "isSpecial": false
+            },
+            {
+              "question": "Qu'est-ce que Prométhée vola aux dieux pour le donner aux humains ?",
+              "options": [
+                "L'ambroisie",
+                "La foudre",
+                "Le feu",
+                "L'eau de la vie"
+              ],
+              "correctAnswer": "Le feu",
+              "isSpecial": false
+            },
+            {
+              "question": "De quoi les Géants étaient-ils nés, selon la mythologie grecque ?",
+              "options": [
+                "Des larmes de Zeus",
+                "Du sang d'Ouranos tombé sur la Terre",
+                "De la mousse des mers",
+                "Des cendres des Titans"
+              ],
+              "correctAnswer": "Du sang d'Ouranos tombé sur la Terre",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel héros aida les dieux à vaincre les Géants lors de la Gigantomachie ?",
+              "options": [
+                "Achille",
+                "Ulysse",
+                "Persée",
+                "Héraclès"
+              ],
+              "correctAnswer": "Héraclès",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi les dieux ne pouvaient-ils pas vaincre les Géants sans l'aide d'un mortel ?",
+              "options": [
+                "Parce que les Géants étaient immortels face aux dieux seuls",
+                "Parce qu'une prophétie le disait",
+                "Parce que Zeus était trop faible",
+                "Parce que les Géants vivaient sous la mer"
+              ],
+              "correctAnswer": "Parce qu'une prophétie le disait",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "mythology-gen-52",
+          "title": "Les mythes des peuples amérindiens",
+          "emoji": "🪶",
+          "themeColor": "violet",
+          "badgeId": "mythology-badge-52",
+          "badgeName": "Gardien des légendes",
+          "badgeEmoji": "🦅",
+          "cards": [
+            {
+              "title": "Un monde de récits vivants",
+              "text": "Les peuples amérindiens ont créé des milliers de mythes pour expliquer l'origine du monde, des animaux et des phénomènes naturels. Ces récits se transmettaient oralement de génération en génération, souvent lors de cérémonies ou de veillées autour du feu. Chaque peuple, comme les Lakota, les Aztèques ou les Iroquois, possédait ses propres histoires et croyances.",
+              "emoji": "🌍"
+            },
+            {
+              "title": "La Tortue et la Terre-Île",
+              "text": "Dans de nombreux mythes amérindiens d'Amérique du Nord, la Terre est posée sur le dos d'une immense tortue qui flotte sur un océan infini. Selon la légende iroquoise, une femme céleste tomba du ciel et des animaux plongèrent pour ramener de la boue du fond de l'eau pour créer la terre sur la tortue. Cette image symbolise l'idée que la nature entière est vivante et mérite respect.",
+              "emoji": "🐢"
+            },
+            {
+              "title": "Coyote, l'esprit trompeur",
+              "text": "Dans de nombreuses tribus de l'Ouest américain, Coyote est un personnage central des mythes : à la fois créateur, farceur et trompeur. Il apporte parfois le feu aux humains ou modifie le monde par ses ruses, mais il cause aussi des problèmes par son manque de sagesse. Ce type de personnage s'appelle un \"trickster\" et il sert à enseigner des leçons morales de façon amusante.",
+              "emoji": "🐺"
+            },
+            {
+              "title": "Les esprits et le lien avec la nature",
+              "text": "Pour la plupart des peuples amérindiens, les animaux, les arbres, les rivières et les montagnes sont habités par des esprits. Les chamans, des personnages spirituels importants, communiquaient avec ces esprits pour guérir les malades ou demander de bonnes chasses. Cette vision du monde, où tout est relié et sacré, est très différente de la manière dont les sociétés européennes pensaient la nature.",
+              "emoji": "🌿"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Comment les mythes amérindiens se transmettaient-ils principalement ?",
+              "options": [
+                "Par des livres enluminés",
+                "Par des inscriptions sur des murs de pierre",
+                "Par la tradition orale, de génération en génération",
+                "Par des manuscrits conservés dans des temples"
+              ],
+              "correctAnswer": "Par la tradition orale, de génération en génération",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel animal porte la Terre sur son dos dans certains mythes amérindiens ?",
+              "options": [
+                "L'aigle",
+                "La tortue",
+                "Le bison",
+                "Le serpent"
+              ],
+              "correctAnswer": "La tortue",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans la légende iroquoise de la création, qui tomba du ciel pour commencer à former la Terre ?",
+              "options": [
+                "Un dieu guerrier",
+                "Un grand aigle",
+                "Une femme céleste",
+                "Un enfant soleil"
+              ],
+              "correctAnswer": "Une femme céleste",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le rôle du personnage Coyote dans les mythes amérindiens ?",
+              "options": [
+                "Il est un dieu de la guerre tout-puissant",
+                "Il est un farceur et trompeur qui enseigne des leçons",
+                "Il est le gardien du monde souterrain",
+                "Il est le créateur du soleil et de la lune uniquement"
+              ],
+              "correctAnswer": "Il est un farceur et trompeur qui enseigne des leçons",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment appelle-t-on un personnage de mythe qui est à la fois rusé, farceur et parfois créateur ?",
+              "options": [
+                "Un oracle",
+                "Un trickster",
+                "Un chaman",
+                "Un totem"
+              ],
+              "correctAnswer": "Un trickster",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le rôle du chaman dans les sociétés amérindiennes ?",
+              "options": [
+                "Il dirige les armées lors des batailles",
+                "Il communique avec les esprits pour guérir ou aider la communauté",
+                "Il écrit les lois et les règles du peuple",
+                "Il construit les temples et les habitations sacrées"
+              ],
+              "correctAnswer": "Il communique avec les esprits pour guérir ou aider la communauté",
+              "isSpecial": false
+            },
+            {
+              "question": "Lequel de ces peuples est mentionné comme ayant des mythes sur la Terre posée sur une tortue ?",
+              "options": [
+                "Les Aztèques",
+                "Les Mayas",
+                "Les Iroquois",
+                "Les Incas"
+              ],
+              "correctAnswer": "Les Iroquois",
+              "isSpecial": false
+            },
+            {
+              "question": "Selon les croyances amérindiennes, qu'est-ce qui habite les arbres, les rivières et les montagnes ?",
+              "options": [
+                "Des démons malfaisants",
+                "Des esprits",
+                "Des dieux grecs exilés",
+                "Des âmes humaines perdues"
+              ],
+              "correctAnswer": "Des esprits",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans quel type de société retrouve-t-on souvent le personnage Coyote comme trickster ?",
+              "options": [
+                "Les tribus côtières d'Amérique du Sud",
+                "Les peuples de l'Ouest américain",
+                "Les peuples des Caraïbes",
+                "Les peuples des Andes"
+              ],
+              "correctAnswer": "Les peuples de l'Ouest américain",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle grande différence existe entre la vision amérindienne de la nature et celle des sociétés européennes traditionnelles ?",
+              "options": [
+                "Les Amérindiens pensaient que la nature était hostile et dangereuse",
+                "Les Amérindiens considéraient que tout dans la nature est relié et sacré, habité par des esprits",
+                "Les Amérindiens croyaient que seuls les humains avaient une âme",
+                "Les Amérindiens refusaient d'utiliser les ressources naturelles de toute sorte"
+              ],
+              "correctAnswer": "Les Amérindiens considéraient que tout dans la nature est relié et sacré, habité par des esprits",
+              "isSpecial": true
+            }
+          ]
         }
       ],
       "difficile": [
@@ -50663,6 +54352,2151 @@ export const UNIVERSES: Record<string, Universe> = {
                 "À décrire des pays lointains"
               ],
               "correctAnswer": "À expliquer le monde et les phénomènes naturels",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "mythology-gen-53",
+          "title": "Les héros de la mythologie grecque",
+          "emoji": "⚔️",
+          "themeColor": "violet",
+          "badgeId": "mythology-badge-53",
+          "badgeName": "Héros de l'Olympe",
+          "badgeEmoji": "🏛️",
+          "cards": [
+            {
+              "title": "Héraclès, le demi-dieu aux douze travaux",
+              "text": "Héraclès, fils de Zeus et de la mortelle Alcmène, est le héros grec par excellence. Condamné par Héra à accomplir douze travaux impossibles — dont tuer l'Hydre de Lerne et capturer le chien Cerbère —, il devint immortel à sa mort et rejoignit les dieux sur l'Olympe.",
+              "emoji": "💪"
+            },
+            {
+              "title": "Achille et Ulysse, deux visions du héros",
+              "text": "Achille incarne la bravoure guerrière : invincible sauf au talon, il choisit une vie courte mais glorieuse lors de la guerre de Troie. Ulysse, lui, représente la ruse et l'intelligence : il conçoit le stratagème du cheval de Troie et met dix ans à rentrer chez lui, affrontant cyclopes, sirènes et dieux.",
+              "emoji": "🏹"
+            },
+            {
+              "title": "Persée et Thésée, tueurs de monstres",
+              "text": "Persée décapita la Gorgone Méduse grâce aux dons des dieux — sandales ailées, bouclier poli et épée — puis sauva Andromède du monstre marin Cétos. Thésée, prince d'Athènes, tua le Minotaure dans le Labyrinthe de Crète en se guidant grâce au fil d'Ariane, sauvant ainsi les jeunes Athéniens sacrifiés au monstre.",
+              "emoji": "🛡️"
+            },
+            {
+              "title": "Jason et Orphée, héros de l'aventure et des arts",
+              "text": "Jason conduisit les Argonautes jusqu'en Colchide pour conquérir la Toison d'or, grâce à l'aide magique de Médée. Orphée, musicien prodigieux dont la lyre charmait bêtes et pierres, descendit aux Enfers pour ramener Eurydice, mais la perdit à jamais en se retournant, désobéissant à la condition imposée par Hadès.",
+              "emoji": "🎵"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Qui est le père divin d'Héraclès ?",
+              "options": [
+                "Poséidon",
+                "Zeus",
+                "Arès",
+                "Hadès"
+              ],
+              "correctAnswer": "Zeus",
+              "isSpecial": false
+            },
+            {
+              "question": "Combien de travaux Héraclès devait-il accomplir pour obtenir son pardon ?",
+              "options": [
+                "Dix",
+                "Sept",
+                "Douze",
+                "Quinze"
+              ],
+              "correctAnswer": "Douze",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le point vulnérable d'Achille ?",
+              "options": [
+                "Son épaule",
+                "Son talon",
+                "Son poignet",
+                "Son genou"
+              ],
+              "correctAnswer": "Son talon",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel stratagème Ulysse utilise-t-il pour faire tomber Troie ?",
+              "options": [
+                "Un tunnel creusé sous les murs",
+                "Une catapulte géante",
+                "Le cheval de Troie",
+                "Un incendie des réserves ennemies"
+              ],
+              "correctAnswer": "Le cheval de Troie",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel objet Persée utilise-t-il pour regarder Méduse sans être pétrifié ?",
+              "options": [
+                "Un masque en or",
+                "Un bouclier poli comme un miroir",
+                "Des lunettes enchantées",
+                "Un voile magique d'Athéna"
+              ],
+              "correctAnswer": "Un bouclier poli comme un miroir",
+              "isSpecial": false
+            },
+            {
+              "question": "Qui aide Thésée à sortir du Labyrinthe après avoir tué le Minotaure ?",
+              "options": [
+                "Phèdre",
+                "Calypso",
+                "Ariane",
+                "Circé"
+              ],
+              "correctAnswer": "Ariane",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel était l'objectif de la quête de Jason et des Argonautes ?",
+              "options": [
+                "Trouver le trident de Poséidon",
+                "Conquérir la Toison d'or",
+                "Capturer Pégase",
+                "Rapporter le feu de l'Olympe"
+              ],
+              "correctAnswer": "Conquérir la Toison d'or",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi Orphée perd-il Eurydice lors de son retour des Enfers ?",
+              "options": [
+                "Il oublie de payer le passeur Charon",
+                "Il prononce le nom d'Hadès à voix haute",
+                "Il se retourne pour la regarder avant d'atteindre la surface",
+                "Il joue une note fausse avec sa lyre"
+              ],
+              "correctAnswer": "Il se retourne pour la regarder avant d'atteindre la surface",
+              "isSpecial": false
+            },
+            {
+              "question": "Qu'arrive-t-il à Héraclès après sa mort ?",
+              "options": [
+                "Il est condamné à errer dans les Enfers",
+                "Il devient un astre dans le ciel nocturne",
+                "Il est accueilli sur l'Olympe et rejoint les dieux",
+                "Il se réincarne en un nouveau héros mortel"
+              ],
+              "correctAnswer": "Il est accueilli sur l'Olympe et rejoint les dieux",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle déesse nourrit une haine particulière contre Héraclès, le poussant à accomplir ses travaux, et pour quelle raison ?",
+              "options": [
+                "Athéna, car il avait détruit un temple en son honneur",
+                "Héra, jalouse qu'il soit le fils illégitime de Zeus né d'une mortelle",
+                "Artémis, car il avait chassé dans sa forêt sacrée",
+                "Perséphone, car il avait osé descendre aux Enfers"
+              ],
+              "correctAnswer": "Héra, jalouse qu'il soit le fils illégitime de Zeus né d'une mortelle",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "mythology-gen-54",
+          "title": "Les monstres de la mythologie grecque",
+          "emoji": "🐉",
+          "themeColor": "violet",
+          "badgeId": "mythology-badge-54",
+          "badgeName": "Chasseur de monstres",
+          "badgeEmoji": "⚔️",
+          "cards": [
+            {
+              "title": "Les monstres hybrides",
+              "text": "La mythologie grecque regorge de créatures hybrides, mêlant traits humains et animaux. La Chimère est un exemple emblématique : tête de lion, corps de chèvre et queue de serpent, elle crachait du feu et fut vaincue par Bellérophon monté sur Pégase. Ces êtres symbolisaient souvent le chaos et les forces incontrôlables de la nature.",
+              "emoji": "🦁"
+            },
+            {
+              "title": "Les créatures gardiennes",
+              "text": "Certains monstres avaient pour rôle de garder des lieux sacrés ou des êtres précieux. Cerbère, le chien à trois têtes, surveillait l'entrée des Enfers pour empêcher les vivants d'entrer et les morts de fuir. L'Hydre de Lerne, serpent à multiples têtes qui repoussaient quand on les coupait, gardait une source sacrée du Péloponnèse.",
+              "emoji": "🐕"
+            },
+            {
+              "title": "Les Gorgones et les géants",
+              "text": "Les Gorgones étaient trois sœurs — Sthéno, Euryale et Méduse — dont le regard pétrifiant transformait en pierre quiconque les regardait en face. Méduse, la seule mortelle des trois, fut décapitée par Persée à l'aide d'un bouclier poli comme miroir. Les Géants, quant à eux, étaient des fils de Gaïa qui tentèrent de renverser les dieux de l'Olympe lors de la Gigantomachie.",
+              "emoji": "👁️"
+            },
+            {
+              "title": "Les monstres marins et autres créatures",
+              "text": "La mer grecque était peuplée de dangers redoutables : Charybde était un gigantesque tourbillon qui engloutissait les navires, tandis que Scylla, mi-femme mi-monstre à six têtes, dévorait les marins. Le Minotaure, né des amours contre-nature de Pasiphaé et d'un taureau divin, était enfermé dans le Labyrinthe de Dédale en Crète et tué par Thésée.",
+              "emoji": "🌊"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Quel héros grec a vaincu la Chimère en la combattant depuis les airs ?",
+              "options": [
+                "Thésée",
+                "Persée",
+                "Bellérophon",
+                "Héraclès"
+              ],
+              "correctAnswer": "Bellérophon",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel animal de monture a permis à Bellérophon de terrasser la Chimère ?",
+              "options": [
+                "Pégase",
+                "Arion",
+                "Bucéphale",
+                "Xanthe"
+              ],
+              "correctAnswer": "Pégase",
+              "isSpecial": false
+            },
+            {
+              "question": "Combien de têtes possède Cerbère, le gardien des Enfers ?",
+              "options": [
+                "Deux",
+                "Trois",
+                "Cinq",
+                "Sept"
+              ],
+              "correctAnswer": "Trois",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est la particularité biologique de l'Hydre de Lerne qui la rendait si difficile à tuer ?",
+              "options": [
+                "Elle était immortelle et invulnérable aux armes",
+                "Ses têtes repoussaient dès qu'on les coupait",
+                "Elle pouvait se régénérer entièrement depuis sa queue",
+                "Elle changeait de forme selon son adversaire"
+              ],
+              "correctAnswer": "Ses têtes repoussaient dès qu'on les coupait",
+              "isSpecial": false
+            },
+            {
+              "question": "Parmi les trois Gorgones, laquelle était la seule créature mortelle ?",
+              "options": [
+                "Sthéno",
+                "Euryale",
+                "Méduse",
+                "Échidna"
+              ],
+              "correctAnswer": "Méduse",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle ruse technique Persée utilisa-t-il pour décapiter Méduse sans se transformer en pierre ?",
+              "options": [
+                "Il portait un casque qui le rendait invisible",
+                "Il se servit de son bouclier poli comme d'un miroir",
+                "Il ferma les yeux et se laissa guider par Athéna",
+                "Il attendit que Méduse soit endormie"
+              ],
+              "correctAnswer": "Il se servit de son bouclier poli comme d'un miroir",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment s'appelle la bataille mythologique opposant les dieux de l'Olympe aux Géants enfants de Gaïa ?",
+              "options": [
+                "La Titanomachie",
+                "La Gigantomachie",
+                "La Théomachie",
+                "La Créatomachie"
+              ],
+              "correctAnswer": "La Gigantomachie",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel architecte légendaire construisit le Labyrinthe destiné à enfermer le Minotaure en Crète ?",
+              "options": [
+                "Héphaïstos",
+                "Icare",
+                "Dédale",
+                "Prométhée"
+              ],
+              "correctAnswer": "Dédale",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans l'Odyssée, entre Charybde et Scylla, quelle différence fondamentale les distingue ?",
+              "options": [
+                "Charybde est un tourbillon engloutissant tandis que Scylla est un monstre à six têtes",
+                "Charybde attaque les équipages et Scylla détruit les coques des navires",
+                "Charybde vit dans les profondeurs et Scylla sur les hauteurs rocheuses",
+                "Charybde est immortelle et Scylla peut être tuée"
+              ],
+              "correctAnswer": "Charybde est un tourbillon engloutissant tandis que Scylla est un monstre à six têtes",
+              "isSpecial": false
+            },
+            {
+              "question": "Quels parents insolites donna naissance au Minotaure, et quel dieu divin fut à l'origine de cette union monstrueuse ?",
+              "options": [
+                "La reine Pasiphaé et un taureau envoyé par Poséidon en punition du roi Minos",
+                "La nymphe Pasiphaé et Zeus transformé en taureau blanc",
+                "La déesse Artémis et un taureau de bronze créé par Héphaïstos",
+                "La princesse Ariane et un taureau de Crète sauvage capturé par Héraclès"
+              ],
+              "correctAnswer": "La reine Pasiphaé et un taureau envoyé par Poséidon en punition du roi Minos",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "mythology-gen-55",
+          "title": "La mythologie nordique",
+          "emoji": "⚡",
+          "themeColor": "violet",
+          "badgeId": "mythology-badge-55",
+          "badgeName": "Gardien des Runes",
+          "badgeEmoji": "🪄",
+          "cards": [
+            {
+              "title": "Les neuf mondes et Yggdrasil",
+              "text": "Dans la cosmologie nordique, l'univers est structuré autour de Yggdrasil, un frêne gigantesque dont les racines et les branches relient neuf mondes distincts. Parmi eux, on trouve Asgard (demeure des dieux Ases), Midgard (le monde des humains), Jotunheim (royaume des géants) et Niflheim (le royaume des morts glacé). Trois sources alimentent Yggdrasil : celle de la sagesse (gardée par Mimir), celle du destin (près des Nornes) et celle de Niflheim.",
+              "emoji": "🌳"
+            },
+            {
+              "title": "Odin, Thor et les dieux Ases",
+              "text": "Le panthéon nordique est dominé par les Ases, dont Odin est le chef suprême : dieu de la sagesse, de la guerre et de la mort, il a sacrifié un œil pour boire à la source de Mimir et acquérir la connaissance des runes. Thor, son fils, manie le marteau Mjöllnir et protège Midgard des géants ; il est associé à l'orage et à la fertilité. Loki, dieu rusé et ambivalent, oscille entre aide aux dieux et trahison, jouant un rôle central dans de nombreux mythes.",
+              "emoji": "🔨"
+            },
+            {
+              "title": "Le Ragnarök : la fin des dieux",
+              "text": "Le Ragnarök désigne la bataille apocalyptique finale qui marquera la destruction du monde et la mort de la majorité des dieux nordiques. Odin sera dévoré par le loup Fenrir, Thor tuera le serpent Jörmungandr mais succombera à son venin, et Loki combattra contre les dieux après s'être libéré de ses chaînes. Après cette destruction totale, un nouveau monde émergera des eaux, fertile et renouvelé, habité par les survivants et une nouvelle génération de dieux.",
+              "emoji": "🌊"
+            },
+            {
+              "title": "Les créatures et les Nornes",
+              "text": "La mythologie nordique peuple ses mondes de créatures extraordinaires : les Valkyries choisissent les guerriers morts au combat pour les conduire au Valhalla, salle de festin d'Odin où ils s'entraînent en vue du Ragnarök. Les Nornes — Urd, Verdandi et Skuld — tissent la toile du destin de chaque être vivant au pied de Yggdrasil. D'autres entités comme les elfes (Ljósálfar et Dökkálfar), les nains forgeurs de trésors divins, et les géants de givre (Hrímþursar) peuplent les différents mondes.",
+              "emoji": "🌺"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Quel arbre cosmique relie les neuf mondes dans la mythologie nordique ?",
+              "options": [
+                "Mjöllnir",
+                "Yggdrasil",
+                "Asgard",
+                "Bifrost"
+              ],
+              "correctAnswer": "Yggdrasil",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel sacrifice Odin a-t-il consenti pour acquérir la sagesse des runes ?",
+              "options": [
+                "Il a sacrifié sa main droite",
+                "Il a abandonné son marteau",
+                "Il a sacrifié un de ses yeux",
+                "Il a renoncé à sa place à Asgard"
+              ],
+              "correctAnswer": "Il a sacrifié un de ses yeux",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment s'appelle le marteau de Thor ?",
+              "options": [
+                "Gungnir",
+                "Gleipnir",
+                "Mjöllnir",
+                "Draupnir"
+              ],
+              "correctAnswer": "Mjöllnir",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le nom du monde des humains dans la cosmologie nordique ?",
+              "options": [
+                "Jotunheim",
+                "Midgard",
+                "Niflheim",
+                "Vanaheim"
+              ],
+              "correctAnswer": "Midgard",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel dieu nordique est décrit comme rusé et ambivalent, oscillant entre aide et trahison ?",
+              "options": [
+                "Freyr",
+                "Tyr",
+                "Baldr",
+                "Loki"
+              ],
+              "correctAnswer": "Loki",
+              "isSpecial": false
+            },
+            {
+              "question": "Que sont les Valkyries dans la mythologie nordique ?",
+              "options": [
+                "Des géantes gardiennes de Jotunheim",
+                "Des tisseuses du destin au pied de Yggdrasil",
+                "Des guerrières qui choisissent les morts au combat pour les conduire au Valhalla",
+                "Des elfes messagères d'Odin"
+              ],
+              "correctAnswer": "Des guerrières qui choisissent les morts au combat pour les conduire au Valhalla",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le rôle des Nornes Urd, Verdandi et Skuld ?",
+              "options": [
+                "Elles gardent les portes d'Asgard",
+                "Elles forment la garde personnelle d'Odin",
+                "Elles tissent la toile du destin de chaque être vivant",
+                "Elles soignent les guerriers blessés au Valhalla"
+              ],
+              "correctAnswer": "Elles tissent la toile du destin de chaque être vivant",
+              "isSpecial": false
+            },
+            {
+              "question": "Par quel être Odin est-il destiné à être tué lors du Ragnarök ?",
+              "options": [
+                "Le serpent Jörmungandr",
+                "Le loup Fenrir",
+                "Le géant Surtr",
+                "Loki lui-même"
+              ],
+              "correctAnswer": "Le loup Fenrir",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle source, gardée par Mimir, permet d'acquérir la sagesse dans la cosmologie nordique ?",
+              "options": [
+                "La source de Niflheim",
+                "La source des Nornes",
+                "La source de la sagesse au pied de Yggdrasil",
+                "La source du Valhalla"
+              ],
+              "correctAnswer": "La source de la sagesse au pied de Yggdrasil",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans la mythologie nordique, les dieux se divisent en deux familles principales : les Ases et les Vanes. Quel conflit a précédé leur alliance, et quelle pratique a scellé la paix entre eux ?",
+              "options": [
+                "Une guerre pour le contrôle de Yggdrasil, scellée par le partage des runes",
+                "Une guerre entre les deux clans, scellée par un échange d'otages dont Njord, Freyr et Freya",
+                "Un duel entre Odin et Njord, scellé par le mariage de Thor et Freya",
+                "Un combat pour Midgard, scellé par la forge de Mjöllnir offerte aux Vanes"
+              ],
+              "correctAnswer": "Une guerre entre les deux clans, scellée par un échange d'otages dont Njord, Freyr et Freya",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "mythology-gen-56",
+          "title": "Les dieux de l'Égypte ancienne",
+          "emoji": "𓂀",
+          "themeColor": "violet",
+          "badgeId": "mythology-badge-56",
+          "badgeName": "Gardien du Panthéon",
+          "badgeEmoji": "𓂀",
+          "cards": [
+            {
+              "title": "Un panthéon foisonnant",
+              "text": "L'Égypte ancienne comptait plusieurs centaines de divinités, chacune incarnant des forces naturelles, des concepts abstraits ou des aspects de la vie humaine. Les dieux pouvaient fusionner entre eux, comme Rê-Horakhty, combinaison du dieu solaire Rê et du faucon céleste Horus, illustrant la complexité du polythéisme égyptien. Cette plasticité divine permettait aux croyances d'évoluer au fil des dynasties sans remettre en cause l'ensemble du système religieux.",
+              "emoji": "🏛️"
+            },
+            {
+              "title": "Les grandes figures du panthéon",
+              "text": "Osiris, dieu des morts et de la résurrection, et sa sœur-épouse Isis, déesse de la magie et de la protection, occupent une place centrale dans la mythologie égyptienne. Seth, dieu du chaos et des tempêtes, assassina Osiris avant d'être vaincu par Horus, fils d'Osiris, qui devint le dieu royal incarné par chaque pharaon. Thot, à tête d'ibis, régissait la sagesse, l'écriture et les sciences, tandis qu'Anubis, à tête de chacal, guidait les âmes vers l'au-delà.",
+              "emoji": "⚖️"
+            },
+            {
+              "title": "Le culte solaire et Rê",
+              "text": "Rê, le dieu soleil, était considéré comme la divinité suprême de nombreuses périodes de l'histoire égyptienne ; il traversait le ciel dans sa barque diurne et les enfers dans sa barque nocturne pour renaître chaque matin. Sous l'Ancien Empire, les pharaons se proclamaient fils de Rê, associant ainsi leur légitimité politique à la puissance solaire. Aton, le disque solaire, fut brièvement élevé au rang de dieu unique par Akhenaton au XIVe siècle avant J.-C., dans une tentative de monothéisme qui fut effacée après sa mort.",
+              "emoji": "☀️"
+            },
+            {
+              "title": "Les dieux et le jugement des morts",
+              "text": "Selon la religion égyptienne, après la mort, l'âme du défunt comparaissait devant le tribunal d'Osiris dans la Salle des Deux Vérités. Le cœur du mort était pesé sur une balance face à la plume de Maât, déesse de la vérité et de la justice, en présence de 42 assesseurs divins. Si le cœur était alourdi par les fautes, la créature Ammout le dévorait, condamnant le défunt à la seconde mort ; sinon, il accédait au paradis égyptien, le Champ des Roseaux.",
+              "emoji": "🪶"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Quel dieu égyptien était représenté avec une tête de faucon et incarnait la royauté pharaonique ?",
+              "options": [
+                "Seth",
+                "Osiris",
+                "Horus",
+                "Thot"
+              ],
+              "correctAnswer": "Horus",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel pharaon tenta d'imposer le culte exclusif d'Aton, le disque solaire, en Égypte ?",
+              "options": [
+                "Ramsès II",
+                "Toutânkhamon",
+                "Akhenaton",
+                "Thoutmosis III"
+              ],
+              "correctAnswer": "Akhenaton",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans le jugement des morts égyptien, contre quoi le cœur du défunt était-il pesé ?",
+              "options": [
+                "Une statuette d'Osiris",
+                "La plume de Maât",
+                "Un scarabée sacré",
+                "Le sceptre d'Anubis"
+              ],
+              "correctAnswer": "La plume de Maât",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel dieu égyptien était associé à l'écriture, à la sagesse et représenté avec une tête d'ibis ?",
+              "options": [
+                "Thot",
+                "Ptah",
+                "Sékhmet",
+                "Bastet"
+              ],
+              "correctAnswer": "Thot",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle créature dévorait le cœur des défunts jugés indignes dans la mythologie égyptienne ?",
+              "options": [
+                "Apophis",
+                "Ammout",
+                "Sobek",
+                "Sphinx"
+              ],
+              "correctAnswer": "Ammout",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment se nomme le paradis des âmes vertueuses dans la religion de l'Égypte ancienne ?",
+              "options": [
+                "Le Duat",
+                "La Douat inférieure",
+                "Le Champ des Roseaux",
+                "La Salle des Deux Vérités"
+              ],
+              "correctAnswer": "Le Champ des Roseaux",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel lien unissait Osiris et Isis dans la mythologie égyptienne ?",
+              "options": [
+                "Père et fille",
+                "Frère et sœur, et époux",
+                "Mère et fils",
+                "Oncle et nièce"
+              ],
+              "correctAnswer": "Frère et sœur, et époux",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle divinité égyptienne guidait les âmes des défunts vers l'au-delà et était représentée avec une tête de chacal ?",
+              "options": [
+                "Seth",
+                "Anubis",
+                "Nout",
+                "Geb"
+              ],
+              "correctAnswer": "Anubis",
+              "isSpecial": false
+            },
+            {
+              "question": "Qui tua Osiris selon le mythe égyptien ?",
+              "options": [
+                "Horus",
+                "Rê",
+                "Seth",
+                "Thot"
+              ],
+              "correctAnswer": "Seth",
+              "isSpecial": false
+            },
+            {
+              "question": "La fusion de deux divinités en une seule entité dans le polythéisme égyptien, comme Rê-Horakhty, est désignée par quel terme savant ?",
+              "options": [
+                "Syncrétisme",
+                "Animisme",
+                "Hénothéisme",
+                "Totémisme"
+              ],
+              "correctAnswer": "Syncrétisme",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "mythology-gen-57",
+          "title": "La mythologie romaine",
+          "emoji": "🏛️",
+          "themeColor": "violet",
+          "badgeId": "mythology-badge-57",
+          "badgeName": "Héritier de Rome",
+          "badgeEmoji": "⚡",
+          "cards": [
+            {
+              "title": "Les dieux du panthéon romain",
+              "text": "La religion romaine repose sur un panthéon de divinités reprises en grande partie de la mythologie grecque, mais adaptées à la culture romaine. Jupiter, roi des dieux, correspond au Zeus grec, tandis que Mars, dieu de la guerre, est l'équivalent d'Arès. Ces dieux étaient vénérés dans des temples et honorés par des rituels officiels appelés les sacra.",
+              "emoji": "⚡"
+            },
+            {
+              "title": "Les origines légendaires de Rome",
+              "text": "Selon la tradition romaine, la cité fut fondée en 753 av. J.-C. par Romulus, descendant du héros troyen Énée et du dieu Mars. Le mythe des jumeaux Romulus et Rémus, allaités par une louve sur le Palatin, symbolise la fondation brutale et guerrière de Rome. Énée est lui-même le héros de l'Énéide, épopée rédigée par Virgile pour légitimer la grandeur de Rome.",
+              "emoji": "🐺"
+            },
+            {
+              "title": "Les divinités romaines et leurs fonctions",
+              "text": "Chaque dieu romain possédait une sphère d'influence précise : Vénus présidait à l'amour et à la beauté, Mercure aux voyageurs et au commerce, Minerve à la sagesse et aux arts. La triade capitoline — Jupiter, Junon et Minerve — occupait la place la plus éminente et était célébrée au temple de Jupiter Capitolin. Les Romains pratiquaient aussi le culte des Lares, génies protecteurs du foyer familial.",
+              "emoji": "🏺"
+            },
+            {
+              "title": "Mythes, héros et épopées romaines",
+              "text": "Contrairement aux Grecs, les Romains produisirent peu de mythes originaux, préférant adapter et latiniser les récits grecs. L'Énéide de Virgile et les Métamorphoses d'Ovide sont les deux grandes œuvres qui transmettent la mythologie romaine. Des figures comme Hercule (Héraklès) ou Ulysse (Odysseus) furent intégrées au panthéon romain en conservant leurs attributs héroïques.",
+              "emoji": "📜"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Quel dieu romain correspond au Zeus de la mythologie grecque ?",
+              "options": [
+                "Neptune",
+                "Jupiter",
+                "Mars",
+                "Saturne"
+              ],
+              "correctAnswer": "Jupiter",
+              "isSpecial": false
+            },
+            {
+              "question": "Selon la légende, qui fonda la ville de Rome en 753 av. J.-C. ?",
+              "options": [
+                "Énée",
+                "Rémus",
+                "Romulus",
+                "Numa Pompilius"
+              ],
+              "correctAnswer": "Romulus",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel animal légendaire allaita Romulus et Rémus selon le mythe romain ?",
+              "options": [
+                "Une aigle",
+                "Une louve",
+                "Une truie",
+                "Une biche"
+              ],
+              "correctAnswer": "Une louve",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est la triade capitoline adorée au temple de Jupiter à Rome ?",
+              "options": [
+                "Jupiter, Mars et Vénus",
+                "Jupiter, Junon et Minerve",
+                "Jupiter, Neptune et Pluton",
+                "Junon, Minerve et Diane"
+              ],
+              "correctAnswer": "Jupiter, Junon et Minerve",
+              "isSpecial": false
+            },
+            {
+              "question": "De quelle origine est le héros Énée, ancêtre mythique des Romains ?",
+              "options": [
+                "Carthaginoise",
+                "Étrusque",
+                "Troyenne",
+                "Grecque"
+              ],
+              "correctAnswer": "Troyenne",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel poète romain écrivit l'Énéide pour célébrer les origines légendaires de Rome ?",
+              "options": [
+                "Ovide",
+                "Horace",
+                "Virgile",
+                "Cicéron"
+              ],
+              "correctAnswer": "Virgile",
+              "isSpecial": false
+            },
+            {
+              "question": "À quelle divinité grecque le dieu romain Mars correspond-il ?",
+              "options": [
+                "Apollon",
+                "Poséidon",
+                "Arès",
+                "Héphaïstos"
+              ],
+              "correctAnswer": "Arès",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle fonction divine Mercure exerçait-il dans la religion romaine ?",
+              "options": [
+                "Dieu de la mer et des tempêtes",
+                "Dieu des voyageurs et du commerce",
+                "Dieu du feu et de la forge",
+                "Dieu de la guerre et de la victoire"
+              ],
+              "correctAnswer": "Dieu des voyageurs et du commerce",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel auteur romain est notamment connu pour ses Métamorphoses, recueil de mythes transformés ?",
+              "options": [
+                "Tite-Live",
+                "Virgile",
+                "Ovide",
+                "Lucain"
+              ],
+              "correctAnswer": "Ovide",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel terme désignait les génies protecteurs du foyer familial dans la religion romaine ?",
+              "options": [
+                "Les Pénates",
+                "Les Lares",
+                "Les Mânes",
+                "Les Furies"
+              ],
+              "correctAnswer": "Les Lares",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "mythology-gen-58",
+          "title": "Les légendes du roi Arthur",
+          "emoji": "⚔️",
+          "themeColor": "violet",
+          "badgeId": "mythology-badge-58",
+          "badgeName": "Chevalier de la Table Ronde",
+          "badgeEmoji": "🛡️",
+          "cards": [
+            {
+              "title": "Arthur et l'épée Excalibur",
+              "text": "Selon la légende, Arthur prouva sa légitimité royale en retirant l'épée Excalibur d'un rocher où elle était fichée, acte que nul autre n'avait réussi. Certaines versions distinguent cette épée du rocher de l'Excalibur offerte par la Dame du Lac, remise à Arthur par une main surgissant des eaux. Excalibur symbolise à la fois le pouvoir légitime et la protection divine accordée au roi.",
+              "emoji": "⚔️"
+            },
+            {
+              "title": "La Table Ronde et la chevalerie",
+              "text": "Arthur fonda la Table Ronde à Camelot pour rassembler les meilleurs chevaliers du royaume, comme Lancelot, Perceval, Gauvain et Galaad. Sa forme circulaire était délibérée : sans bout ni tête, elle symbolisait l'égalité entre tous les chevaliers, effaçant toute hiérarchie. Les chevaliers s'y engageaient à respecter un code de conduite fondé sur la bravoure, la loyauté et la protection des faibles.",
+              "emoji": "🔵"
+            },
+            {
+              "title": "Merlin l'Enchanteur et Morgane",
+              "text": "Merlin est le conseiller magique d'Arthur : devin et magicien, il guide le roi depuis sa naissance en orchestrant même sa conception à Tintagel grâce à ses sortilèges. Morgane le Fay, demi-sœur d'Arthur, est souvent présentée comme son adversaire principale, complotant pour s'emparer du pouvoir de Camelot. Ces deux figures incarnent les forces opposées du destin qui entourent le roi.",
+              "emoji": "🧙"
+            },
+            {
+              "title": "La quête du Graal et le crépuscule de Camelot",
+              "text": "Le Saint-Graal — la coupe utilisée lors de la Cène et ayant recueilli le sang du Christ — est l'objet de la grande quête des chevaliers ; seul Galaad, parfait en vertu, parvient à l'atteindre dans la plupart des récits. La trahison de Lancelot avec la reine Guenièvre et les complots de Mordred, neveu d'Arthur, précipitent la chute de Camelot et la bataille fatale de Camlann. Mortellement blessé, Arthur est emmené à l'île d'Avalon, laissant ouverte la promesse de son retour.",
+              "emoji": "🏆"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Comment Arthur prouve-t-il sa légitimité royale selon la version la plus répandue de la légende ?",
+              "options": [
+                "En tuant un dragon qui terrorisait le royaume",
+                "En retirant l'épée Excalibur d'un rocher",
+                "En recevant la couronne des mains de Merlin",
+                "En remportant un tournoi de chevalerie"
+              ],
+              "correctAnswer": "En retirant l'épée Excalibur d'un rocher",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est la signification symbolique de la forme circulaire de la Table Ronde ?",
+              "options": [
+                "Elle représente le soleil, divinité protectrice de Camelot",
+                "Elle permet d'accueillir un plus grand nombre de chevaliers",
+                "Elle signifie l'égalité entre tous les chevaliers, sans hiérarchie",
+                "Elle rappelle la forme du Saint-Graal"
+              ],
+              "correctAnswer": "Elle signifie l'égalité entre tous les chevaliers, sans hiérarchie",
+              "isSpecial": false
+            },
+            {
+              "question": "Qui est Morgane le Fay dans la légende arthurienne ?",
+              "options": [
+                "La fée marraine d'Arthur, chargée de le protéger",
+                "La reine de Camelot, épouse d'Arthur",
+                "La Dame du Lac qui remet Excalibur à Arthur",
+                "La demi-sœur d'Arthur, souvent présentée comme son adversaire"
+              ],
+              "correctAnswer": "La demi-sœur d'Arthur, souvent présentée comme son adversaire",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel chevalier parvient à atteindre le Saint-Graal dans la plupart des récits arturiens ?",
+              "options": [
+                "Lancelot",
+                "Gauvain",
+                "Galaad",
+                "Perceval"
+              ],
+              "correctAnswer": "Galaad",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle trahison contribue principalement à la chute de Camelot ?",
+              "options": [
+                "La trahison de Merlin qui rejoint les ennemis d'Arthur",
+                "La relation secrète entre Lancelot et la reine Guenièvre",
+                "La fuite de Gauvain avec le trésor royal",
+                "L'alliance de Perceval avec les Saxons"
+              ],
+              "correctAnswer": "La relation secrète entre Lancelot et la reine Guenièvre",
+              "isSpecial": false
+            },
+            {
+              "question": "Qu'est-ce que le Saint-Graal dans la tradition arthurienne ?",
+              "options": [
+                "L'épée enchantée forgée par les elfes de la forêt de Brocéliande",
+                "Le trône en or de Camelot, symbole du pouvoir royal",
+                "La coupe de la Cène ayant recueilli le sang du Christ",
+                "Un bouclier magique offert par la Dame du Lac"
+              ],
+              "correctAnswer": "La coupe de la Cène ayant recueilli le sang du Christ",
+              "isSpecial": false
+            },
+            {
+              "question": "Où Arthur est-il emmené après la bataille de Camlann, selon la légende ?",
+              "options": [
+                "À Camelot, pour y être enterré sous la grande salle",
+                "À Tintagel, le château de sa naissance",
+                "Dans la forêt de Brocéliande, gardée par Merlin",
+                "À l'île d'Avalon"
+              ],
+              "correctAnswer": "À l'île d'Avalon",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel personnage est décrit comme le conseiller magique d'Arthur, présent dès sa naissance ?",
+              "options": [
+                "Morgane le Fay",
+                "La Dame du Lac",
+                "Merlin",
+                "Mordred"
+              ],
+              "correctAnswer": "Merlin",
+              "isSpecial": false
+            },
+            {
+              "question": "Qui est Mordred dans la légende arthurienne et quel rôle joue-t-il ?",
+              "options": [
+                "Le meilleur chevalier d'Arthur, mort en défendant Camelot",
+                "Le neveu d'Arthur dont les complots précipitent la chute du royaume",
+                "Le fils adoptif de Merlin, gardien du Graal",
+                "Le seigneur ennemi venu de Saxe pour envahir Camelot"
+              ],
+              "correctAnswer": "Le neveu d'Arthur dont les complots précipitent la chute du royaume",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans certaines versions de la légende, la naissance d'Arthur à Tintagel est rendue possible grâce à l'intervention de Merlin. Quelle distinction importante certains auteurs font-ils entre les deux épées d'Arthur ?",
+              "options": [
+                "L'une est forgée par les nains, l'autre par les géants ; elles ont des pouvoirs opposés",
+                "L'épée du rocher et Excalibur sont la même arme, simplement renommée après la quête du Graal",
+                "L'épée retirée du rocher prouve la royauté d'Arthur, tandis qu'Excalibur est une épée distincte offerte par la Dame du Lac",
+                "Excalibur est l'épée du rocher brisée et reforgée par Merlin après la première bataille d'Arthur"
+              ],
+              "correctAnswer": "L'épée retirée du rocher prouve la royauté d'Arthur, tandis qu'Excalibur est une épée distincte offerte par la Dame du Lac",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "mythology-gen-59",
+          "title": "Créatures Fantastiques du Monde",
+          "emoji": "🐉",
+          "themeColor": "violet",
+          "badgeId": "mythology-badge-59",
+          "badgeName": "Maître des Créatures",
+          "badgeEmoji": "🦄",
+          "cards": [
+            {
+              "title": "Les dragons : serpents ailés ou gardiens du feu ?",
+              "text": "En Europe médiévale, le dragon est une bête maléfique crachant du feu, symbole du chaos que le héros doit terrasser. En Chine et au Japon, il est au contraire une créature bienveillante liée à l'eau, à la sagesse et à la prospérité, souvent vénérée comme un ancêtre divin.",
+              "emoji": "🐉"
+            },
+            {
+              "title": "Les hybrides : humains et animaux confondus",
+              "text": "De nombreuses mythologies mêlent corps humain et corps animal pour symboliser une force ou un vice. Le Minotaure grec (tête de taureau, corps d'homme) représente la brutalité enfermée dans le labyrinthe de Crète ; la Méduse, dont le regard pétrifie, incarne le danger de la démesure. En Égypte, le Sphinx (corps de lion, tête humaine) symbolise la royauté et l'énigme.",
+              "emoji": "🦁"
+            },
+            {
+              "title": "Les créatures des eaux et des forêts",
+              "text": "Les Krakens scandinaves sont des pieuvres géantes capables d'engloutir des navires entiers, reflétant la terreur des marins face à l'océan. Dans les forêts japonaises, les Tengu, êtres à bec d'oiseau et ailes, sont des maîtres des arts martiaux et de la stratégie. Les Rusalki slaves, esprits féminins des rivières, attirent les hommes dans les profondeurs pour se venger.",
+              "emoji": "🌊"
+            },
+            {
+              "title": "Signification culturelle des créatures fantastiques",
+              "text": "Les créatures fantastiques ne sont pas de simples inventions : elles matérialisent les peurs, les espoirs ou les valeurs d'une société. La licorne européenne, symbole de pureté et d'inaccessibilité, ne pouvait être capturée que par une personne au cœur pur. Le Phoenix, oiseau renaissant de ses cendres, illustre le cycle de mort et de renaissance présent dans des cultures aussi diverses que l'Égypte ancienne, la Grèce et la Chine.",
+              "emoji": "🔥"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Quelle est la principale différence entre le dragon européen médiéval et le dragon chinois ?",
+              "options": [
+                "Le dragon européen est bienveillant, le dragon chinois est maléfique",
+                "Le dragon européen crache du feu et est symbole du mal, le dragon chinois est lié à l'eau et à la sagesse",
+                "Le dragon européen est sans ailes, contrairement au dragon chinois",
+                "Le dragon européen est vénéré, le dragon chinois est chassé par les héros"
+              ],
+              "correctAnswer": "Le dragon européen crache du feu et est symbole du mal, le dragon chinois est lié à l'eau et à la sagesse",
+              "isSpecial": false
+            },
+            {
+              "question": "Le Minotaure de la mythologie grecque était enfermé dans quel lieu ?",
+              "options": [
+                "Les Enfers",
+                "L'Olympe",
+                "Le labyrinthe de Crète",
+                "Les écuries d'Augias"
+              ],
+              "correctAnswer": "Le labyrinthe de Crète",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans la mythologie grecque, quel pouvoir particulier possédait la Méduse ?",
+              "options": [
+                "Elle crachait du venin mortel",
+                "Son regard transformait les personnes en pierre",
+                "Elle pouvait prédire l'avenir",
+                "Elle commandait aux tempêtes marines"
+              ],
+              "correctAnswer": "Son regard transformait les personnes en pierre",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle culture a imaginé le Sphinx comme une créature à corps de lion et tête humaine ?",
+              "options": [
+                "La Grèce antique",
+                "La Mésopotamie",
+                "L'Égypte ancienne",
+                "La Rome antique"
+              ],
+              "correctAnswer": "L'Égypte ancienne",
+              "isSpecial": false
+            },
+            {
+              "question": "Le Kraken est une créature légendaire issue de quelle tradition mythologique ?",
+              "options": [
+                "La mythologie japonaise",
+                "La mythologie scandinave",
+                "La mythologie celtique",
+                "La mythologie aztèque"
+              ],
+              "correctAnswer": "La mythologie scandinave",
+              "isSpecial": false
+            },
+            {
+              "question": "Les Tengu, dans la mythologie japonaise, sont associés à quelles compétences ?",
+              "options": [
+                "La pêche miraculeuse et la navigation",
+                "La guérison et la médecine naturelle",
+                "Les arts martiaux et la stratégie",
+                "La magie des métaux et la forge"
+              ],
+              "correctAnswer": "Les arts martiaux et la stratégie",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est la caractéristique principale des Rusalki dans la mythologie slave ?",
+              "options": [
+                "Elles protègent les voyageurs égarés dans les forêts",
+                "Ce sont des esprits féminins des rivières qui attirent les hommes dans les profondeurs",
+                "Elles apportent la pluie aux agriculteurs en période de sécheresse",
+                "Ce sont des guerrières immortelles gardant les frontières du royaume des morts"
+              ],
+              "correctAnswer": "Ce sont des esprits féminins des rivières qui attirent les hommes dans les profondeurs",
+              "isSpecial": false
+            },
+            {
+              "question": "Selon la légende européenne, quelle condition permettait de capturer une licorne ?",
+              "options": [
+                "Posséder une épée en argent pur",
+                "Lui offrir du miel sauvage recueilli au clair de lune",
+                "Être une personne au cœur pur",
+                "Se présenter à elle sans aucune arme"
+              ],
+              "correctAnswer": "Être une personne au cœur pur",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel concept universel le Phoenix illustre-t-il dans les cultures qui l'ont adopté ?",
+              "options": [
+                "La victoire de la lumière sur les ténèbres",
+                "Le cycle de mort et de renaissance",
+                "La puissance destructrice du feu",
+                "L'orgueil des créatures immortelles"
+              ],
+              "correctAnswer": "Le cycle de mort et de renaissance",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi les sociétés humaines inventent-elles des créatures fantastiques selon les analyses culturelles ?",
+              "options": [
+                "Pour expliquer des phénomènes astronomiques que la science ne comprenait pas encore",
+                "Pour divertir les enfants lors des fêtes religieuses annuelles",
+                "Pour matérialiser leurs peurs, espoirs ou valeurs et donner un sens au monde",
+                "Pour justifier la conquête de nouveaux territoires face aux peuples voisins"
+              ],
+              "correctAnswer": "Pour matérialiser leurs peurs, espoirs ou valeurs et donner un sens au monde",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "mythology-gen-60",
+          "title": "Les mythes de la création du monde",
+          "emoji": "🌍",
+          "themeColor": "violet",
+          "badgeId": "mythology-badge-60",
+          "badgeName": "Cosmogoniste",
+          "badgeEmoji": "🌌",
+          "cards": [
+            {
+              "title": "Qu'est-ce qu'un mythe cosmogonique ?",
+              "text": "Un mythe cosmogonique est un récit fondateur qui explique l'origine de l'univers, de la Terre et de l'humanité. Ces récits ne prétendent pas être scientifiques : ils répondent à des questions existentielles en utilisant des symboles, des dieux et des forces primordiales. Chaque civilisation a développé sa propre cosmogonie, révélant ses valeurs et sa vision du monde.",
+              "emoji": "📖"
+            },
+            {
+              "title": "La création dans la mythologie grecque",
+              "text": "Pour les Grecs, au commencement existait le Chaos, un vide primordial indifférencié. De lui émergèrent Gaïa (la Terre), Éros (le désir) et Érébe (les ténèbres). Gaïa enfanta Ouranos (le Ciel), avec qui elle engendra les Titans, dont Cronos, avant que Zeus ne s'impose comme maître de l'Olympe après une guerre titanesque appelée la Titanomachie.",
+              "emoji": "⚡"
+            },
+            {
+              "title": "Ennéade égyptienne et mythe nordique",
+              "text": "Dans la mythologie égyptienne d'Héliopolis, le dieu Atoum surgit des eaux primordiales du Noun et créa le premier couple divin, Shou et Tefnout, par crachat ou masturbation — selon les versions. Dans la mythologie nordique, le géant primordial Ymir naît de la rencontre du feu et de la glace, et son corps démembré par Odin et ses frères forme les différentes parties du monde.",
+              "emoji": "🏺"
+            },
+            {
+              "title": "Récits de création en Mésoamérique et en Mésopotamie",
+              "text": "Le Popol Vuh maya décrit plusieurs tentatives de création : les dieux façonnent d'abord des humains en boue, puis en bois, avant de réussir avec du maïs. En Mésopotamie, l'Enuma Elish babylonien raconte que Mardouk tue la déesse-dragon Tiamat et utilise son corps pour créer le ciel et la terre, puis façonne l'humanité à partir du sang du dieu Qingu pour qu'elle serve les dieux.",
+              "emoji": "🐍"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Que désigne le terme 'cosmogonie' ?",
+              "options": [
+                "Un récit décrivant la fin du monde et le Jugement dernier",
+                "Un récit mythique expliquant l'origine et la formation de l'univers",
+                "Une carte astronomique des constellations antiques",
+                "Une théorie scientifique sur l'évolution des espèces"
+              ],
+              "correctAnswer": "Un récit mythique expliquant l'origine et la formation de l'univers",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans la mythologie grecque, quel est le premier état de l'univers avant toute création ?",
+              "options": [
+                "L'Olympe",
+                "Le Tartare",
+                "Le Chaos",
+                "L'Éther"
+              ],
+              "correctAnswer": "Le Chaos",
+              "isSpecial": false
+            },
+            {
+              "question": "Qui est Gaïa dans la mythologie grecque ?",
+              "options": [
+                "La déesse de la mer et des océans",
+                "La personnification de la Terre primordiale",
+                "La mère des dieux de l'Olympe",
+                "La déesse de la nuit et des rêves"
+              ],
+              "correctAnswer": "La personnification de la Terre primordiale",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans la mythologie nordique, de quoi naît le géant primordial Ymir ?",
+              "options": [
+                "Du tonnerre et de la foudre d'Odin",
+                "Des eaux primordiales de l'océan Midgard",
+                "De la rencontre entre le feu et la glace",
+                "Du sang du dragon Nidhogg"
+              ],
+              "correctAnswer": "De la rencontre entre le feu et la glace",
+              "isSpecial": false
+            },
+            {
+              "question": "Que font Odin et ses frères avec le corps du géant Ymir ?",
+              "options": [
+                "Ils l'enterrent pour former les montagnes souterraines",
+                "Ils le démembrent pour former les différentes parties du monde",
+                "Ils le brûlent pour allumer le soleil et la lune",
+                "Ils le plongent dans la mer pour créer les continents"
+              ],
+              "correctAnswer": "Ils le démembrent pour former les différentes parties du monde",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans le mythe égyptien d'Héliopolis, de quel état primordial surgit le dieu Atoum ?",
+              "options": [
+                "Du désert infini et du sable originel",
+                "Du ciel vide avant l'apparition du soleil",
+                "Des eaux primordiales appelées le Noun",
+                "Du vent chaud soufflant sur la terre noire"
+              ],
+              "correctAnswer": "Des eaux primordiales appelées le Noun",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans le Popol Vuh maya, avec quelle matière les dieux réussissent-ils définitivement à créer l'être humain ?",
+              "options": [
+                "La boue du fond des lacs sacrés",
+                "Le bois des arbres primordiaux",
+                "Le maïs",
+                "L'argile mélangée au sang divin"
+              ],
+              "correctAnswer": "Le maïs",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans l'Enuma Elish babylonien, pourquoi Mardouk tue-t-il la déesse Tiamat ?",
+              "options": [
+                "Pour venger la mort de son père Ea",
+                "Pour s'emparer de son pouvoir sur les eaux salées",
+                "Afin d'utiliser son corps pour créer le ciel et la terre",
+                "Pour punir sa révolte contre l'assemblée des dieux"
+              ],
+              "correctAnswer": "Afin d'utiliser son corps pour créer le ciel et la terre",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel conflit mythologique marque la prise de pouvoir de Zeus sur l'Olympe dans la cosmogonie grecque ?",
+              "options": [
+                "La Gigantomachie",
+                "La Titanomachie",
+                "La Théomachie",
+                "La Nékyia"
+              ],
+              "correctAnswer": "La Titanomachie",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel point commun structurel peut-on dégager entre le mythe babylonien d'Enuma Elish et le mythe nordique du démembrement d'Ymir ?",
+              "options": [
+                "Dans les deux cas, la création nécessite un sacrifice humain volontaire",
+                "Dans les deux cas, le monde est façonné à partir du corps d'un être primordial vaincu ou tué",
+                "Dans les deux cas, les dieux créateurs disparaissent après avoir achevé leur oeuvre",
+                "Dans les deux cas, l'humanité est créée avant la terre et le ciel"
+              ],
+              "correctAnswer": "Dans les deux cas, le monde est façonné à partir du corps d'un être primordial vaincu ou tué",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "mythology-gen-61",
+          "title": "Les constellations et leurs légendes",
+          "emoji": "✨",
+          "themeColor": "violet",
+          "badgeId": "mythology-badge-61",
+          "badgeName": "Gardien des Étoiles",
+          "badgeEmoji": "🌟",
+          "cards": [
+            {
+              "title": "Naissance des constellations",
+              "text": "Les Grecs anciens ont regroupé les étoiles en figures imaginaires pour cartographier le ciel nocturne et transmettre leurs mythes. Ces regroupements, appelés constellations, servaient aussi à repérer les saisons et à guider les navigateurs en mer.",
+              "emoji": "🗺️"
+            },
+            {
+              "title": "Orion, le chasseur céleste",
+              "text": "Orion est l'une des constellations les plus reconnaissables : selon le mythe grec, c'était un gigantesque chasseur fils de Poséidon, si arrogant qu'il prétendait pouvoir tuer tous les animaux de la Terre. Artémis ou Zeus le foudroya, et il fut placé dans le ciel avec son baudrier de trois étoiles alignées.",
+              "emoji": "🏹"
+            },
+            {
+              "title": "La Grande Ourse et Callisto",
+              "text": "La Grande Ourse (Ursa Major) tire son origine du mythe de Callisto, une nymphe transformée en ourse par Héra jalouse de l'attention que Zeus lui portait. Zeus la plaça ensuite dans le ciel, ainsi que son fils Arcas transformé en Petite Ourse, afin de les protéger pour l'éternité.",
+              "emoji": "🐻"
+            },
+            {
+              "title": "Les Pléiades et les sept sœurs",
+              "text": "Les Pléiades sont un amas d'étoiles dans la constellation du Taureau, identifiées dans la mythologie grecque aux sept filles du titan Atlas et de l'Océanide Pléioné. Poursuivies par Orion, Zeus les aurait transformées en étoiles pour les mettre à l'abri, ce qui expliquerait pourquoi Orion semble encore les chasser dans le ciel.",
+              "emoji": "💫"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "À quoi servaient principalement les constellations pour les navigateurs de l'Antiquité ?",
+              "options": [
+                "À décorer les cartes maritimes",
+                "À se repérer en mer grâce aux étoiles",
+                "À prévoir les tempêtes avec précision",
+                "À calculer la vitesse des navires"
+              ],
+              "correctAnswer": "À se repérer en mer grâce aux étoiles",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle divinité grecque était associée à la chasse, tout comme Orion ?",
+              "options": [
+                "Aphrodite",
+                "Athéna",
+                "Artémis",
+                "Déméter"
+              ],
+              "correctAnswer": "Artémis",
+              "isSpecial": false
+            },
+            {
+              "question": "Selon le mythe, quelle était la faute principale d'Orion qui causa sa mort ?",
+              "options": [
+                "Il avait volé le feu aux dieux",
+                "Il avait défié Zeus en combat",
+                "Il prétendait pouvoir tuer tous les animaux de la Terre",
+                "Il avait séduit Héra"
+              ],
+              "correctAnswer": "Il prétendait pouvoir tuer tous les animaux de la Terre",
+              "isSpecial": false
+            },
+            {
+              "question": "Combien d'étoiles forment le célèbre baudrier d'Orion ?",
+              "options": [
+                "Deux",
+                "Trois",
+                "Quatre",
+                "Sept"
+              ],
+              "correctAnswer": "Trois",
+              "isSpecial": false
+            },
+            {
+              "question": "Qui a transformé Callisto en ourse selon le mythe grec ?",
+              "options": [
+                "Zeus",
+                "Poséidon",
+                "Artémis",
+                "Héra"
+              ],
+              "correctAnswer": "Héra",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans quelle constellation se trouve l'amas d'étoiles des Pléiades ?",
+              "options": [
+                "Orion",
+                "Persée",
+                "Le Taureau",
+                "La Balance"
+              ],
+              "correctAnswer": "Le Taureau",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel titan est le père des sept sœurs des Pléiades dans la mythologie grecque ?",
+              "options": [
+                "Cronos",
+                "Prométhée",
+                "Atlas",
+                "Hypérion"
+              ],
+              "correctAnswer": "Atlas",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le nom latin de la Grande Ourse ?",
+              "options": [
+                "Ursa Minor",
+                "Ursa Major",
+                "Canis Major",
+                "Aquila"
+              ],
+              "correctAnswer": "Ursa Major",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi Zeus plaça-t-il Callisto et son fils Arcas dans le ciel ?",
+              "options": [
+                "Pour les punir de leur désobéissance",
+                "Pour les récompenser de leur bravoure",
+                "Pour les protéger pour l'éternité",
+                "Pour servir de guides aux navigateurs"
+              ],
+              "correctAnswer": "Pour les protéger pour l'éternité",
+              "isSpecial": false
+            },
+            {
+              "question": "Selon la mythologie grecque, quel est le nom de la mère des Pléiades, épouse du titan Atlas ?",
+              "options": [
+                "Thémis",
+                "Mnémosyne",
+                "Pléioné",
+                "Téthys"
+              ],
+              "correctAnswer": "Pléioné",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "mythology-gen-62",
+          "title": "La mythologie japonaise",
+          "emoji": "⛩️",
+          "themeColor": "violet",
+          "badgeId": "mythology-badge-62",
+          "badgeName": "Gardien des Kami",
+          "badgeEmoji": "🌸",
+          "cards": [
+            {
+              "title": "Les kami et la création du monde",
+              "text": "Dans la mythologie japonaise, les kami sont des esprits divins qui habitent toutes choses : la nature, les ancêtres, les phénomènes naturels. Selon le Kojiki (720 apr. J.-C.), les deux divinités créatrices Izanagi et Izanami ont fait surgir le Japon en remuant l'océan primordial avec une lance ornée de joyaux.",
+              "emoji": "🌊"
+            },
+            {
+              "title": "Amaterasu, déesse du soleil",
+              "text": "Amaterasu est la divinité solaire et l'ancêtre mythique des empereurs du Japon, ce qui légitime leur pouvoir. Lorsque son frère Susanoo, dieu des tempêtes, se déchaîna, elle se cacha dans une grotte céleste plongeant le monde dans les ténèbres ; les autres dieux durent la faire sortir par la ruse et le bruit.",
+              "emoji": "☀️"
+            },
+            {
+              "title": "Susanoo et le serpent à huit têtes",
+              "text": "Susanoo, banni du ciel après ses querelles avec Amaterasu, descendit sur terre et affronta Yamata no Orochi, un serpent géant à huit têtes et huit queues qui terrorisait la région d'Izumo. Il l'enivra avec du saké placé dans huit cuves, puis le tua, trouvant dans l'une de ses queues l'épée légendaire Kusanagi.",
+              "emoji": "🐉"
+            },
+            {
+              "title": "Les textes sacrés et les grandes divinités",
+              "text": "La mythologie japonaise est consignée dans deux textes fondamentaux : le Kojiki (712) et le Nihon Shoki (720), commandés par la cour impériale. Parmi les grandes figures, on trouve Inari (dieu du riz et de la prospérité), Raijin (dieu du tonnerre), Fujin (dieu du vent) et Emma-O, juge des morts dans le royaume souterrain.",
+              "emoji": "📜"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Comment s'appellent les esprits divins qui, dans la mythologie japonaise, habitent la nature et les phénomènes du monde ?",
+              "options": [
+                "Les kami",
+                "Les yokai",
+                "Les oni",
+                "Les tengu"
+              ],
+              "correctAnswer": "Les kami",
+              "isSpecial": false
+            },
+            {
+              "question": "Quels sont les deux divinités créatrices qui, selon le Kojiki, ont formé les îles du Japon ?",
+              "options": [
+                "Izanagi et Izanami",
+                "Amaterasu et Tsukuyomi",
+                "Susanoo et Inari",
+                "Raijin et Fujin"
+              ],
+              "correctAnswer": "Izanagi et Izanami",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel objet Izanagi et Izanami ont-ils utilisé pour faire surgir les terres de l'océan primordial ?",
+              "options": [
+                "Une lance ornée de joyaux",
+                "Une épée en bronze",
+                "Un miroir magique",
+                "Une corde tressée de soie"
+              ],
+              "correctAnswer": "Une lance ornée de joyaux",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi la lignée impériale japonaise est-elle considérée comme d'origine divine dans la mythologie ?",
+              "options": [
+                "Parce qu'elle descend d'Amaterasu, déesse du soleil",
+                "Parce qu'elle descend de Susanoo, dieu des tempêtes",
+                "Parce qu'elle est issue d'Inari, dieu du riz",
+                "Parce qu'elle provient de l'union d'Izanagi et d'Emma-O"
+              ],
+              "correctAnswer": "Parce qu'elle descend d'Amaterasu, déesse du soleil",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est la raison pour laquelle Amaterasu se cacha dans une grotte céleste ?",
+              "options": [
+                "Son frère Susanoo se déchaîna et la terrifia",
+                "Tsukuyomi, dieu de la lune, l'avait offensée",
+                "Les mortels avaient refusé de lui offrir des sacrifices",
+                "Elle voulait punir les autres dieux de leur désobéissance"
+              ],
+              "correctAnswer": "Son frère Susanoo se déchaîna et la terrifia",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel était le nom du serpent géant à huit têtes tué par Susanoo ?",
+              "options": [
+                "Yamata no Orochi",
+                "Ryujin no Tatsu",
+                "Kappa no Yasha",
+                "Nue no Mizuchi"
+              ],
+              "correctAnswer": "Yamata no Orochi",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment Susanoo a-t-il réussi à vaincre le serpent géant Yamata no Orochi ?",
+              "options": [
+                "En l'enivrant avec du saké placé dans huit cuves",
+                "En le pétrифiant avec un miroir sacré",
+                "En appelant Amaterasu à l'aide depuis le ciel",
+                "En l'enfermant dans une grotte à l'aide d'une corde magique"
+              ],
+              "correctAnswer": "En l'enivrant avec du saké placé dans huit cuves",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle épée légendaire Susanoo découvrit-il dans la queue du serpent Yamata no Orochi ?",
+              "options": [
+                "Kusanagi",
+                "Excalibur",
+                "Durandal",
+                "Tyrfing"
+              ],
+              "correctAnswer": "Kusanagi",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel texte mythologique japonais a été rédigé en 712 sur ordre de la cour impériale ?",
+              "options": [
+                "Le Kojiki",
+                "Le Nihon Shoki",
+                "Le Genji Monogatari",
+                "Le Man'yoshu"
+              ],
+              "correctAnswer": "Le Kojiki",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans la mythologie japonaise, Inari est associé à la prospérité et à quelle autre domaine essentiel à la civilisation agricole du Japon ?",
+              "options": [
+                "Le riz",
+                "La pêche",
+                "La forge des métaux",
+                "La soie"
+              ],
+              "correctAnswer": "Le riz",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "mythology-gen-63",
+          "title": "Les dragons à travers le monde",
+          "emoji": "🐉",
+          "themeColor": "violet",
+          "badgeId": "mythology-badge-63",
+          "badgeName": "Maître des Dragons",
+          "badgeEmoji": "🐲",
+          "cards": [
+            {
+              "title": "Le dragon en Orient : symbole de pouvoir",
+              "text": "En Chine, au Japon et dans toute l'Asie de l'Est, le dragon est une créature bienveillante associée à l'eau, la prospérité et l'autorité impériale. Contrairement à la représentation occidentale, il n'a généralement pas d'ailes et son corps serpentin symbolise la sagesse et la chance. L'Empereur de Chine était même surnommé « Fils du Dragon ».",
+              "emoji": "🏯"
+            },
+            {
+              "title": "Le dragon en Occident : monstre ou gardien ?",
+              "text": "Dans les mythologies européennes — grecque, nordique, médiévale — le dragon est le plus souvent une créature redoutable crachant le feu, gardant trésors et princesses. Des héros comme Siegfried (germanique) ou saint Georges (chrétien) acquièrent gloire et pouvoir en le tuant. Cette vision reflète une lutte symbolique entre l'ordre civilisé et le chaos sauvage.",
+              "emoji": "⚔️"
+            },
+            {
+              "title": "Dragons des Amériques et d'Afrique",
+              "text": "Quetzalcóatl, le « serpent à plumes » des Aztèques, est une divinité créatrice mi-dragon mi-oiseau, représentant le vent et la connaissance. En Afrique, des créatures serpentiformes géantes appelées Ninki Nanka (Gambie) ou Inkanyamba (Zoulou) évoquent des dragons des fleuves et tempêtes. Ces figures montrent que presque toutes les cultures ont imaginé un grand reptile mythique.",
+              "emoji": "🌿"
+            },
+            {
+              "title": "Pourquoi autant de similitudes ?",
+              "text": "L'universalité du mythe du dragon s'explique par plusieurs théories : la peur ancestrale des grands reptiles (crocodiles, pythons), la découverte de fossiles de dinosaures interprétés comme des ossements de monstres, et la nécessité de symboliser des forces naturelles incontrôlables comme la foudre, les inondations ou les éruptions volcaniques. Le dragon est ainsi une métaphore de la puissance de la nature.",
+              "emoji": "🔬"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Dans la mythologie chinoise, que symbolise principalement le dragon ?",
+              "options": [
+                "La mort et la destruction",
+                "La prospérité, l'eau et le pouvoir impérial",
+                "Le feu et la guerre",
+                "Le chaos et les ténèbres"
+              ],
+              "correctAnswer": "La prospérité, l'eau et le pouvoir impérial",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel titre honorifique lié aux dragons portait l'Empereur de Chine ?",
+              "options": [
+                "Maître du Feu",
+                "Seigneur des Mers",
+                "Fils du Dragon",
+                "Gardien du Ciel"
+              ],
+              "correctAnswer": "Fils du Dragon",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est la principale différence entre le dragon oriental et le dragon occidental ?",
+              "options": [
+                "Le dragon oriental est plus grand",
+                "Le dragon oriental est bienveillant et sans ailes, tandis que l'occidental est malveillant et ailé",
+                "Le dragon occidental vit dans l'eau",
+                "Le dragon oriental crache du feu"
+              ],
+              "correctAnswer": "Le dragon oriental est bienveillant et sans ailes, tandis que l'occidental est malveillant et ailé",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel héros de la mythologie germanique acquiert la gloire en tuant un dragon ?",
+              "options": [
+                "Beowulf",
+                "Thor",
+                "Siegfried",
+                "Lancelot"
+              ],
+              "correctAnswer": "Siegfried",
+              "isSpecial": false
+            },
+            {
+              "question": "Qu'est-ce que Quetzalcóatl dans la mythologie aztèque ?",
+              "options": [
+                "Un guerrier légendaire",
+                "Un dieu serpent à plumes représentant le vent et la connaissance",
+                "Une déesse de la lune",
+                "Un dragon cracheur de feu gardant un trésor"
+              ],
+              "correctAnswer": "Un dieu serpent à plumes représentant le vent et la connaissance",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel saint chrétien est célèbre pour avoir terrassé un dragon selon la légende ?",
+              "options": [
+                "Saint Pierre",
+                "Saint Nicolas",
+                "Saint Michel",
+                "Saint Georges"
+              ],
+              "correctAnswer": "Saint Georges",
+              "isSpecial": false
+            },
+            {
+              "question": "Le Ninki Nanka est une créature draconique issue de quelle région du monde ?",
+              "options": [
+                "Asie du Sud-Est",
+                "Europe du Nord",
+                "Afrique de l'Ouest",
+                "Amérique du Sud"
+              ],
+              "correctAnswer": "Afrique de l'Ouest",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle découverte scientifique aurait pu alimenter les mythes de dragons selon les historiens ?",
+              "options": [
+                "Des traces de météorites",
+                "Des fossiles de dinosaures interprétés comme des ossements de monstres",
+                "Des grottes aux parois striées",
+                "Des squelettes de baleines échoués"
+              ],
+              "correctAnswer": "Des fossiles de dinosaures interprétés comme des ossements de monstres",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans la symbolique européenne médiévale, que représente le héros qui tue le dragon ?",
+              "options": [
+                "La victoire de l'homme sur la nature",
+                "La lutte de l'ordre civilisé contre le chaos sauvage",
+                "La conquête d'un trésor interdit",
+                "Le passage de l'enfance à l'âge adulte"
+              ],
+              "correctAnswer": "La lutte de l'ordre civilisé contre le chaos sauvage",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle théorie explique le mieux pourquoi presque toutes les cultures humaines ont développé un mythe de dragon similaire ?",
+              "options": [
+                "Les dragons ont réellement existé et ont été observés par toutes les civilisations",
+                "Un peuple ancien a diffusé le mythe par le commerce et la conquête",
+                "La peur instinctive des grands reptiles, les fossiles inexpliqués et le besoin de symboliser les forces naturelles ont convergé indépendamment",
+                "Le mythe du dragon a été inventé par les Grecs et copié par les autres cultures"
+              ],
+              "correctAnswer": "La peur instinctive des grands reptiles, les fossiles inexpliqués et le besoin de symboliser les forces naturelles ont convergé indépendamment",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "mythology-gen-64",
+          "title": "Le royaume des morts dans les mythes",
+          "emoji": "💀",
+          "themeColor": "violet",
+          "badgeId": "mythology-badge-64",
+          "badgeName": "Gardien des Enfers",
+          "badgeEmoji": "⚰️",
+          "cards": [
+            {
+              "title": "L'Hadès grec : un monde structuré",
+              "text": "Dans la mythologie grecque, le royaume des morts est gouverné par Hadès et son épouse Perséphone. Les âmes des défunts traversent le Styx grâce au passeur Charon, moyennant une pièce de monnaie placée dans la bouche ou sur les yeux du mort. Le monde souterrain est divisé en plusieurs zones : les Champs Élysées pour les héros vertueux, l'Asphodèle pour les âmes ordinaires, et le Tartare pour les grands criminels.",
+              "emoji": "🏛️"
+            },
+            {
+              "title": "Le jugement des âmes",
+              "text": "Avant d'être orientées vers leur destination finale, les âmes des défunts étaient jugées par trois juges : Minos, Éaque et Rhadamanthe, tous trois anciens rois réputés pour leur justice. Les gardiens de l'ordre aux Enfers incluent notamment les Érinyes, déesses de la vengeance, et Cerbère, le chien à trois têtes qui empêche les morts de repartir et les vivants d'entrer. Ce système reflète une conception grecque de la justice applicable même après la mort.",
+              "emoji": "⚖️"
+            },
+            {
+              "title": "L'Au-delà dans d'autres mythologies",
+              "text": "De nombreuses cultures ont imaginé leur propre monde des morts. Dans la mythologie égyptienne, le défunt doit traverser la Douat et subir la pesée de l'âme face au dieu Osiris : son cœur est comparé à la plume de Maât, symbole de justice. Dans la mythologie nordique, les guerriers morts au combat rejoignent le Valhalla d'Odin, tandis que les autres âmes vont à Hel, un royaume froid et sombre gouverné par la déesse du même nom.",
+              "emoji": "🌍"
+            },
+            {
+              "title": "Les vivants aux Enfers : les catabase",
+              "text": "La catabase désigne, dans les mythes, la descente d'un vivant aux Enfers. Orphée y descendit pour récupérer son épouse Eurydice, charmant Cerbère avec sa musique, mais échoua en se retournant avant d'atteindre la surface. Héraclès accomplit lui aussi une catabase lors de son douzième travail, capturant Cerbère vivant. Énée, dans l'Énéide de Virgile, visite les Enfers guidé par la Sibylle de Cumes pour y retrouver son père Anchise. Ces récits servent à explorer les limites entre vie et mort.",
+              "emoji": "🎶"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Quel est le nom du passeur qui transporte les âmes des morts dans la mythologie grecque ?",
+              "options": [
+                "Charon",
+                "Hermès",
+                "Cerbère",
+                "Morphée"
+              ],
+              "correctAnswer": "Charon",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle pièce de monnaie était traditionnellement placée sur le mort pour payer Charon ?",
+              "options": [
+                "Une obole",
+                "Un denier",
+                "Un talent",
+                "Une drachme d'or"
+              ],
+              "correctAnswer": "Une obole",
+              "isSpecial": false
+            },
+            {
+              "question": "Quels sont les trois juges des Enfers dans la mythologie grecque ?",
+              "options": [
+                "Minos, Éaque et Rhadamanthe",
+                "Hadès, Poséidon et Zeus",
+                "Tantale, Sisyphe et Ixion",
+                "Prométhée, Atlas et Cronos"
+              ],
+              "correctAnswer": "Minos, Éaque et Rhadamanthe",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans la mythologie nordique, comment s'appelle le paradis des guerriers morts au combat ?",
+              "options": [
+                "Le Valhalla",
+                "Niflheim",
+                "Hel",
+                "Asgard"
+              ],
+              "correctAnswer": "Le Valhalla",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel symbole est utilisé comme référence de justice lors de la pesée de l'âme dans la mythologie égyptienne ?",
+              "options": [
+                "La plume de Maât",
+                "Le sceptre d'Osiris",
+                "La balance de Thot",
+                "L'oeil d'Horus"
+              ],
+              "correctAnswer": "La plume de Maât",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi Orphée échoue-t-il à ramener Eurydice des Enfers ?",
+              "options": [
+                "Il se retourne avant d'atteindre la surface",
+                "Il refuse de payer Charon",
+                "Cerbère le dévore",
+                "Perséphone refuse de la libérer"
+              ],
+              "correctAnswer": "Il se retourne avant d'atteindre la surface",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le nom du dieu qui gouverne les Enfers dans la mythologie nordique ?",
+              "options": [
+                "Hel",
+                "Loki",
+                "Odin",
+                "Freyr"
+              ],
+              "correctAnswer": "Hel",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel terme mythologique désigne la descente d'un vivant aux Enfers ?",
+              "options": [
+                "La catabase",
+                "L'anabase",
+                "L'apothéose",
+                "La métamorphose"
+              ],
+              "correctAnswer": "La catabase",
+              "isSpecial": false
+            },
+            {
+              "question": "Lors de quel travail Héraclès descend-il aux Enfers ?",
+              "options": [
+                "Son douzième travail",
+                "Son sixième travail",
+                "Son neuvième travail",
+                "Son dernier travail"
+              ],
+              "correctAnswer": "Son douzième travail",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans l'Énéide de Virgile, qui guide Énée lors de sa descente aux Enfers ?",
+              "options": [
+                "La Sibylle de Cumes",
+                "Mercure",
+                "Son père Anchise",
+                "La déesse Vénus"
+              ],
+              "correctAnswer": "La Sibylle de Cumes",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "mythology-gen-65",
+          "title": "Les objets magiques légendaires",
+          "emoji": "⚡",
+          "themeColor": "violet",
+          "badgeId": "mythology-badge-65",
+          "badgeName": "Gardien des Reliques",
+          "badgeEmoji": "🏺",
+          "cards": [
+            {
+              "title": "Armes divines des dieux",
+              "text": "Certains objets légendaires sont des armes forgées par les dieux eux-mêmes. Le trident de Poséidon peut déchaîner les tempêtes et provoquer des tremblements de terre, tandis que la foudre de Zeus, forgée par les Cyclopes, est l'arme absolue de l'Olympe.",
+              "emoji": "⚡"
+            },
+            {
+              "title": "Objets de ruse et d'illusion",
+              "text": "La mythologie regorge d'objets qui confèrent des pouvoirs de tromperie ou d'invisibilité. Le casque d'Hadès rend invisible quiconque le porte, et Hermès portait des sandales ailées lui permettant de se déplacer à une vitesse surnaturelle entre les mondes des mortels et des dieux.",
+              "emoji": "🪄"
+            },
+            {
+              "title": "Reliques nordiques et celtiques",
+              "text": "Dans la mythologie nordique, Mjolnir, le marteau du dieu Thor, est capable de détruire des montagnes et revient toujours dans la main de son maître. Chez les Celtes, la lance Gáe Dearg du héros Diarmuid était réputée pour ne jamais manquer sa cible et infliger des blessures mortelles impossibles à guérir.",
+              "emoji": "🔨"
+            },
+            {
+              "title": "Objets de protection et de destin",
+              "text": "Certaines reliques servent à protéger ou à lier le destin d'un héros. L'égide d'Athéna, souvent représentée comme un bouclier ou une cuirasse ornée de la tête de Méduse, pétrifiait les ennemis. L'anneau de Gyges, mentionné par Platon, rendait son porteur invisible et soulevait la question philosophique du pouvoir et de la morale.",
+              "emoji": "🛡️"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Quelle divinité grecque possédait un trident capable de provoquer des tremblements de terre ?",
+              "options": [
+                "Zeus",
+                "Poséidon",
+                "Hadès",
+                "Héphaïstos"
+              ],
+              "correctAnswer": "Poséidon",
+              "isSpecial": false
+            },
+            {
+              "question": "Par qui la foudre de Zeus fut-elle forgée selon la mythologie grecque ?",
+              "options": [
+                "Les Titans",
+                "Les Cyclopes",
+                "Les Harpies",
+                "Les Géants"
+              ],
+              "correctAnswer": "Les Cyclopes",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel effet le casque d'Hadès procurait-il à celui qui le portait ?",
+              "options": [
+                "La force surhumaine",
+                "L'invisibilité",
+                "L'immortalité",
+                "La capacité de voler"
+              ],
+              "correctAnswer": "L'invisibilité",
+              "isSpecial": false
+            },
+            {
+              "question": "À quel dieu grec appartiennent les sandales ailées permettant de voyager entre les mondes ?",
+              "options": [
+                "Apollon",
+                "Arès",
+                "Hermès",
+                "Dionysos"
+              ],
+              "correctAnswer": "Hermès",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment s'appelle le marteau du dieu Thor dans la mythologie nordique ?",
+              "options": [
+                "Gungnir",
+                "Mjolnir",
+                "Excalibur",
+                "Durandal"
+              ],
+              "correctAnswer": "Mjolnir",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle propriété remarquable possédait Mjolnir selon la mythologie nordique ?",
+              "options": [
+                "Il rendait invisible",
+                "Il revenait toujours dans la main de Thor",
+                "Il transformait les ennemis en pierre",
+                "Il pouvait diviser les mers"
+              ],
+              "correctAnswer": "Il revenait toujours dans la main de Thor",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle était la particularité de la lance Gáe Dearg dans la mythologie celtique ?",
+              "options": [
+                "Elle brûlait sans jamais s'éteindre",
+                "Elle ne manquait jamais sa cible et infligeait des blessures incurables",
+                "Elle pouvait parler et conseiller son porteur",
+                "Elle se multipliait à chaque lancer"
+              ],
+              "correctAnswer": "Elle ne manquait jamais sa cible et infligeait des blessures incurables",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel élément ornait l'égide d'Athéna et pétrifiait ses ennemis ?",
+              "options": [
+                "La tête de Méduse",
+                "Un oeil de Cyclope",
+                "Une plume de Phénix",
+                "Le serpent Python"
+              ],
+              "correctAnswer": "La tête de Méduse",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel philosophe grec mentionne l'anneau de Gyges dans ses écrits ?",
+              "options": [
+                "Aristote",
+                "Socrate",
+                "Platon",
+                "Épicure"
+              ],
+              "correctAnswer": "Platon",
+              "isSpecial": false
+            },
+            {
+              "question": "L'anneau de Gyges soulève une question philosophique sur le rapport entre pouvoir et morale. Quelle thèse illustre-t-il principalement ?",
+              "options": [
+                "Sans la peur des punitions, les hommes agiraient toujours de façon injuste",
+                "Le pouvoir absolu corrompt nécessairement le caractère vertueux",
+                "L'invisibilité est la forme ultime de la liberté individuelle",
+                "Les dieux protègent ceux qui respectent les lois morales"
+              ],
+              "correctAnswer": "Sans la peur des punitions, les hommes agiraient toujours de façon injuste",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "mythology-gen-66",
+          "title": "Les géants et les titans",
+          "emoji": "⚡",
+          "themeColor": "violet",
+          "badgeId": "mythology-badge-66",
+          "badgeName": "Maître des Titans",
+          "badgeEmoji": "🏔️",
+          "cards": [
+            {
+              "title": "Les Titans, premiers maîtres du cosmos",
+              "text": "Les Titans sont les enfants de Gaïa (la Terre) et d'Ouranos (le Ciel), nés avant les dieux olympiens. Ils régnaient sur le monde durant l'Âge d'Or, une période de paix et d'abondance, avant d'être renversés par Zeus lors de la Titanomachie.",
+              "emoji": "🌌"
+            },
+            {
+              "title": "La Titanomachie : la guerre des dieux",
+              "text": "La Titanomachie est le conflit épique qui opposa les Titans, menés par Cronos, aux dieux olympiens, conduits par Zeus. Cette guerre dura dix ans et se conclut par la victoire de Zeus, qui précipita les Titans vaincus dans le Tartare, un abîme situé sous les Enfers.",
+              "emoji": "⚔️"
+            },
+            {
+              "title": "Les Géants et la Gigantomachie",
+              "text": "Nés du sang d'Ouranos versé sur Gaïa, les Géants étaient des êtres d'une puissance colossale, mi-humains mi-serpents selon certaines sources. Leur révolte contre les dieux olympiens, la Gigantomachie, fut repoussée grâce à l'aide d'Héraclès, dont le sang mortel était nécessaire pour les vaincre définitivement.",
+              "emoji": "🐍"
+            },
+            {
+              "title": "Titans célèbres : Prométhée et Atlas",
+              "text": "Prométhée, titan bienfaiteur de l'humanité, déroba le feu sacré à Zeus pour l'offrir aux hommes, ce qui lui valut un châtiment éternel : enchaîné sur un rocher, son foie était dévoré chaque jour par un aigle. Atlas, condamné après la Titanomachie, porta le poids du ciel sur ses épaules pour l'éternité.",
+              "emoji": "🔥"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Qui sont les parents des Titans dans la mythologie grecque ?",
+              "options": [
+                "Zeus et Héra",
+                "Gaïa et Ouranos",
+                "Cronos et Rhéa",
+                "Poséidon et Amphitrite"
+              ],
+              "correctAnswer": "Gaïa et Ouranos",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment s'appelle la guerre entre les Titans et les dieux olympiens ?",
+              "options": [
+                "La Gigantomachie",
+                "La Théomachie",
+                "La Titanomachie",
+                "L'Olympomachie"
+              ],
+              "correctAnswer": "La Titanomachie",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel Titan menait les forces des Titans contre Zeus lors de la grande guerre ?",
+              "options": [
+                "Prométhée",
+                "Atlas",
+                "Cronos",
+                "Hypérion"
+              ],
+              "correctAnswer": "Cronos",
+              "isSpecial": false
+            },
+            {
+              "question": "Où Zeus précipita-t-il les Titans vaincus après la Titanomachie ?",
+              "options": [
+                "Dans l'Olympe",
+                "Dans le Tartare",
+                "Dans l'Érèbe",
+                "Sur les îles des Bienheureux"
+              ],
+              "correctAnswer": "Dans le Tartare",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi Prométhée fut-il condamné par Zeus ?",
+              "options": [
+                "Il avait trahi les Titans",
+                "Il avait volé le nectar des dieux",
+                "Il avait dérobé le feu sacré pour le donner aux hommes",
+                "Il avait refusé de combattre lors de la Titanomachie"
+              ],
+              "correctAnswer": "Il avait dérobé le feu sacré pour le donner aux hommes",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel était le châtiment infligé à Prométhée ?",
+              "options": [
+                "Porter le ciel sur ses épaules",
+                "Rouler un rocher éternellement",
+                "Avoir le foie dévoré chaque jour par un aigle",
+                "Errer sans repos dans les Enfers"
+              ],
+              "correctAnswer": "Avoir le foie dévoré chaque jour par un aigle",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est l'origine des Géants selon la mythologie grecque ?",
+              "options": [
+                "Ils naquirent du sang d'Ouranos versé sur Gaïa",
+                "Ils furent créés par Zeus pour garder l'Olympe",
+                "Ils descendirent des Titans après la Titanomachie",
+                "Ils émergèrent des profondeurs du Tartare"
+              ],
+              "correctAnswer": "Ils naquirent du sang d'Ouranos versé sur Gaïa",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi Héraclès était-il indispensable pour vaincre les Géants lors de la Gigantomachie ?",
+              "options": [
+                "Il possédait une arme forgée par Héphaïstos",
+                "Son sang mortel était nécessaire pour les tuer définitivement",
+                "Il connaissait leur point faible secret",
+                "Il était le seul à pouvoir les enchaîner"
+              ],
+              "correctAnswer": "Son sang mortel était nécessaire pour les tuer définitivement",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel châtiment Atlas reçut-il après la Titanomachie ?",
+              "options": [
+                "Être enchaîné dans le Tartare",
+                "Porter le poids du ciel sur ses épaules",
+                "Être transformé en montagne",
+                "Servir éternellement les dieux de l'Olympe"
+              ],
+              "correctAnswer": "Porter le poids du ciel sur ses épaules",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle ère mythologique précède la domination de Zeus et des Olympiens, associée au règne des Titans ?",
+              "options": [
+                "L'Âge d'Argent",
+                "L'Âge de Bronze",
+                "L'Âge de Fer",
+                "L'Âge d'Or"
+              ],
+              "correctAnswer": "L'Âge d'Or",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "mythology-gen-67",
+          "title": "Les mythes des peuples amérindiens",
+          "emoji": "🪶",
+          "themeColor": "violet",
+          "badgeId": "mythology-badge-67",
+          "badgeName": "Gardien des Légendes",
+          "badgeEmoji": "🦅",
+          "cards": [
+            {
+              "title": "Des cosmogonies multiples et singulières",
+              "text": "Chaque peuple amérindien possède sa propre vision de la création du monde. Les Lakota parlent d'un univers né du chaos originel façonné par Wakan Tanka, le Grand Esprit, tandis que les Hopis décrivent une émergence progressive de l'humanité à travers plusieurs mondes souterrains. Ces récits ne sont pas de simples histoires, mais des cadres spirituels qui structurent le rapport au territoire, aux ancêtres et au vivant.",
+              "emoji": "🌍"
+            },
+            {
+              "title": "Le rôle central de l'Esprit animal",
+              "text": "Dans de nombreuses traditions amérindiennes, les animaux sont des êtres spirituels dotés d'une sagesse propre, souvent antérieure à celle de l'humanité. Le Corbeau est un trickster créateur chez les peuples du Nord-Ouest Pacifique : il aurait volé la lumière pour l'offrir au monde. Le Coyote joue un rôle similaire dans les mythologies des Plaines et du Sud-Ouest, à la fois sage et facétieux, agent du désordre nécessaire à l'équilibre cosmique.",
+              "emoji": "🐦‍⬛"
+            },
+            {
+              "title": "La Terre-Mère et le cycle sacré",
+              "text": "Le concept de Terre-Mère (Pachamama chez les peuples andins, Nokomis chez les Anishinaabe) est fondamental dans la plupart des cosmologies amérindiennes. La nature n'est pas une ressource mais un ensemble d'êtres vivants avec lesquels les humains entretiennent des relations de réciprocité. Les cérémonies saisonnières, comme la danse du soleil chez les Lakota, réaffirment ce lien sacré et garantissent la continuité des cycles naturels.",
+              "emoji": "🌿"
+            },
+            {
+              "title": "Héros culturels et transmission orale",
+              "text": "Les mythes amérindiens mettent souvent en scène des héros culturels qui apportent aux humains des techniques essentielles : le feu, l'agriculture, la médecine. Chez les Iroquois, le Peacemaker et Hiawatha sont des figures semi-mythiques qui auraient fondé la Confédération des Cinq Nations en s'appuyant sur un récit de réconciliation. Ces mythes sont transmis oralement, parfois accompagnés de chants, de masques ou de peintures rituelles, et leur interprétation évolue selon les contextes cérémoniels.",
+              "emoji": "🎭"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Quel est le nom du Grand Esprit dans la cosmologie Lakota ?",
+              "options": [
+                "Manitou",
+                "Wakan Tanka",
+                "Pachamama",
+                "Gitche Manitou"
+              ],
+              "correctAnswer": "Wakan Tanka",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans la mythologie des peuples du Nord-Ouest Pacifique, quel animal est considéré comme un trickster créateur ayant offert la lumière au monde ?",
+              "options": [
+                "Le Coyote",
+                "L'Aigle",
+                "Le Corbeau",
+                "Le Loup"
+              ],
+              "correctAnswer": "Le Corbeau",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment les Hopis décrivent-ils l'origine de l'humanité dans leur cosmogonie ?",
+              "options": [
+                "Une création ex nihilo par un dieu unique",
+                "Une émergence progressive à travers plusieurs mondes souterrains",
+                "Un combat entre deux forces opposées",
+                "Une naissance depuis les étoiles"
+              ],
+              "correctAnswer": "Une émergence progressive à travers plusieurs mondes souterrains",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le rôle principal du Coyote dans les mythologies des Plaines et du Sud-Ouest amérindien ?",
+              "options": [
+                "Gardien des morts et guide des âmes",
+                "Trickster générant un désordre nécessaire à l'équilibre cosmique",
+                "Dieu de la guerre et de la chasse",
+                "Ancêtre fondateur de l'humanité"
+              ],
+              "correctAnswer": "Trickster générant un désordre nécessaire à l'équilibre cosmique",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel terme désigne la Terre-Mère dans la tradition des peuples Anishinaabe ?",
+              "options": [
+                "Pachamama",
+                "Wakan Tanka",
+                "Nokomis",
+                "Iktomi"
+              ],
+              "correctAnswer": "Nokomis",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel type de cérémonie les Lakota pratiquent-ils pour réaffirmer leur lien sacré avec les cycles naturels ?",
+              "options": [
+                "La cérémonie du calumet",
+                "La danse du soleil",
+                "Le potlatch",
+                "Le kachina"
+              ],
+              "correctAnswer": "La danse du soleil",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle institution politique les figures mythiques du Peacemaker et Hiawatha sont-elles censées avoir fondée ?",
+              "options": [
+                "Le Grand Conseil des Plaines",
+                "La Confédération des Cinq Nations",
+                "L'Alliance des Pueblos",
+                "La Ligue des Algonquins"
+              ],
+              "correctAnswer": "La Confédération des Cinq Nations",
+              "isSpecial": false
+            },
+            {
+              "question": "Qu'est-ce qu'un héros culturel dans les mythologies amérindiennes ?",
+              "options": [
+                "Un guerrier qui défend son peuple contre les envahisseurs",
+                "Un personnage qui transmet aux humains des techniques ou connaissances essentielles",
+                "Un ancêtre divinisé après sa mort",
+                "Un chaman capable de communiquer avec les esprits"
+              ],
+              "correctAnswer": "Un personnage qui transmet aux humains des techniques ou connaissances essentielles",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi la transmission orale est-elle fondamentale dans les traditions mythologiques amérindiennes ?",
+              "options": [
+                "Parce que les peuples amérindiens ne possédaient aucun système d'écriture",
+                "Parce qu'elle permet une interprétation évolutive selon les contextes cérémoniels",
+                "Parce que les mythes écrits sont considérés comme sacrés et interdits au commun",
+                "Parce que la mémoire collective est jugée plus fiable que l'écrit"
+              ],
+              "correctAnswer": "Parce qu'elle permet une interprétation évolutive selon les contextes cérémoniels",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans les cosmologies amérindiennes, quelle vision du rapport à la nature se distingue fondamentalement de la conception occidentale moderne ?",
+              "options": [
+                "La nature est perçue comme un espace à domestiquer par la technique",
+                "La nature est un ensemble d'êtres vivants avec lesquels les humains entretiennent des relations de réciprocité",
+                "La nature est un danger permanent dont l'humanité doit se protéger",
+                "La nature est indifférente aux activités humaines et suit ses propres lois"
+              ],
+              "correctAnswer": "La nature est un ensemble d'êtres vivants avec lesquels les humains entretiennent des relations de réciprocité",
               "isSpecial": true
             }
           ]
@@ -52572,6 +58406,864 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": true
             }
           ]
+        },
+        {
+          "id": "history-gen-68",
+          "title": "La Préhistoire",
+          "emoji": "🦴",
+          "themeColor": "pink",
+          "badgeId": "history-badge-68",
+          "badgeName": "Explorateur du Passé",
+          "badgeEmoji": "🦴",
+          "cards": [
+            {
+              "title": "Quand commence la Préhistoire ?",
+              "text": "La Préhistoire désigne la période qui commence avec l'apparition des premiers êtres humains, il y a environ 3 millions d'années. Elle se termine avec l'invention de l'écriture, vers 3300 avant J.-C. C'est la plus longue période de l'histoire humaine.",
+              "emoji": "⏳"
+            },
+            {
+              "title": "Les outils en pierre taillée",
+              "text": "Les hommes préhistoriques fabriquaient leurs outils en taillant des pierres comme le silex pour créer des tranchants. Ces outils servaient à chasser, couper de la viande ou racler des peaux d'animaux. La fabrication d'outils de pierre s'appelle la taille du silex.",
+              "emoji": "🪨"
+            },
+            {
+              "title": "La maîtrise du feu",
+              "text": "L'Homo erectus a appris à maîtriser le feu il y a environ 400 000 ans. Le feu permettait de se chauffer, de cuire les aliments et d'éloigner les animaux dangereux. C'est l'une des grandes avancées de l'humanité préhistorique.",
+              "emoji": "🔥"
+            },
+            {
+              "title": "Les peintures rupestres",
+              "text": "Les hommes du Paléolithique ont peint des animaux et des scènes de chasse sur les parois de grottes. La grotte de Lascaux, en France, et celle d'Altamira, en Espagne, contiennent certaines des plus belles peintures rupestres connues. Ces œuvres ont été réalisées il y a plus de 15 000 ans.",
+              "emoji": "🎨"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Quand la Préhistoire prend-elle fin ?",
+              "options": [
+                "Avec la disparition des dinosaures",
+                "Avec l'invention de l'écriture",
+                "Avec la construction des pyramides",
+                "Avec l'apparition de l'Homo sapiens"
+              ],
+              "correctAnswer": "Avec l'invention de l'écriture",
+              "isSpecial": false
+            },
+            {
+              "question": "Depuis combien de temps environ les premiers êtres humains existent-ils ?",
+              "options": [
+                "500 000 ans",
+                "1 million d'années",
+                "3 millions d'années",
+                "10 millions d'années"
+              ],
+              "correctAnswer": "3 millions d'années",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle roche les hommes préhistoriques utilisaient-ils principalement pour tailler leurs outils ?",
+              "options": [
+                "Le granit",
+                "Le marbre",
+                "Le silex",
+                "Le calcaire"
+              ],
+              "correctAnswer": "Le silex",
+              "isSpecial": false
+            },
+            {
+              "question": "À quoi servaient les outils en pierre taillée ?",
+              "options": [
+                "À construire des maisons",
+                "À chasser et couper de la viande",
+                "À écrire des messages",
+                "À naviguer sur les rivières"
+              ],
+              "correctAnswer": "À chasser et couper de la viande",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel être humain préhistorique a appris à maîtriser le feu ?",
+              "options": [
+                "L'Homo sapiens",
+                "L'Homo habilis",
+                "L'Homo erectus",
+                "Le Néandertal"
+              ],
+              "correctAnswer": "L'Homo erectus",
+              "isSpecial": false
+            },
+            {
+              "question": "Il y a environ combien d'années l'Homo erectus a-t-il maîtrisé le feu ?",
+              "options": [
+                "10 000 ans",
+                "100 000 ans",
+                "400 000 ans",
+                "1 million d'années"
+              ],
+              "correctAnswer": "400 000 ans",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans quelle grotte française trouve-t-on de célèbres peintures rupestres ?",
+              "options": [
+                "La grotte de Chauvet",
+                "La grotte de Lascaux",
+                "La grotte d'Altamira",
+                "La grotte de Font-de-Gaume"
+              ],
+              "correctAnswer": "La grotte de Lascaux",
+              "isSpecial": false
+            },
+            {
+              "question": "Que représentent principalement les peintures rupestres du Paléolithique ?",
+              "options": [
+                "Des paysages et des fleuves",
+                "Des portraits de chefs de tribu",
+                "Des animaux et des scènes de chasse",
+                "Des cartes de territoires"
+              ],
+              "correctAnswer": "Des animaux et des scènes de chasse",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans quel pays se trouve la grotte d'Altamira, connue pour ses peintures préhistoriques ?",
+              "options": [
+                "En France",
+                "En Italie",
+                "En Espagne",
+                "Au Portugal"
+              ],
+              "correctAnswer": "En Espagne",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment appelle-t-on la technique de fabrication des outils en pierre pendant la Préhistoire ?",
+              "options": [
+                "La fonte du métal",
+                "La taille du silex",
+                "Le polissage de l'os",
+                "Le moulage de l'argile"
+              ],
+              "correctAnswer": "La taille du silex",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "history-gen-69",
+          "title": "L'Égypte ancienne",
+          "emoji": "🏺",
+          "themeColor": "pink",
+          "badgeId": "history-badge-69",
+          "badgeName": "Explorateur du Nil",
+          "badgeEmoji": "🌊",
+          "cards": [
+            {
+              "title": "Le pays du Nil",
+              "text": "L'Égypte ancienne est une civilisation qui a duré plus de 3 000 ans, le long du fleuve Nil en Afrique du Nord. Le Nil était essentiel : chaque année, ses crues déposaient une terre fertile qui permettait aux Égyptiens de cultiver leurs champs dans le désert.",
+              "emoji": "🌾"
+            },
+            {
+              "title": "Les pharaons et leur pouvoir",
+              "text": "Le pharaon était le roi d'Égypte, considéré comme un dieu vivant sur Terre. Il dirigeait tout le pays, commandait l'armée et décidait des lois. Parmi les pharaons célèbres, on trouve Ramsès II, qui régna pendant 66 ans, et Toutânkhamon, dont la tombe dorée fut découverte en 1922.",
+              "emoji": "👑"
+            },
+            {
+              "title": "Les pyramides et les momies",
+              "text": "Les pyramides sont d'immenses monuments funéraires construits pour abriter les tombes des pharaons. La Grande Pyramide de Gizeh, construite pour le pharaon Khéops, est l'une des sept merveilles du monde antique. Les Égyptiens momifiaient leurs morts pour préserver le corps, car ils croyaient en une vie après la mort.",
+              "emoji": "🔺"
+            },
+            {
+              "title": "L'écriture et les dieux",
+              "text": "Les Égyptiens utilisaient un système d'écriture en images appelé les hiéroglyphes, gravés sur les murs des temples et des tombes. Ils croyaient en de nombreux dieux : Râ était le dieu du soleil, Osiris le dieu des morts, et Isis la déesse de la magie. Les temples étaient construits pour honorer ces divinités.",
+              "emoji": "📜"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Sur les rives de quel fleuve s'est développée la civilisation égyptienne ?",
+              "options": [
+                "Le Nil",
+                "Le Congo",
+                "Le Tigre",
+                "Le Jourdain"
+              ],
+              "correctAnswer": "Le Nil",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment appelait-on le roi de l'Égypte ancienne ?",
+              "options": [
+                "L'Empereur",
+                "Le Sultan",
+                "Le Pharaon",
+                "Le Calife"
+              ],
+              "correctAnswer": "Le Pharaon",
+              "isSpecial": false
+            },
+            {
+              "question": "À quoi servaient les pyramides en Égypte ancienne ?",
+              "options": [
+                "À observer les étoiles",
+                "À stocker les récoltes",
+                "À abriter les tombes des pharaons",
+                "À surveiller les frontières"
+              ],
+              "correctAnswer": "À abriter les tombes des pharaons",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment s'appelle le système d'écriture en images utilisé par les Égyptiens ?",
+              "options": [
+                "Les cunéiformes",
+                "Les hiéroglyphes",
+                "Les idéogrammes",
+                "Les runes"
+              ],
+              "correctAnswer": "Les hiéroglyphes",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle était la particularité du Nil chaque année ?",
+              "options": [
+                "Il se gelait en hiver",
+                "Ses crues déposaient une terre fertile",
+                "Il changeait de direction",
+                "Il disparaissait en été"
+              ],
+              "correctAnswer": "Ses crues déposaient une terre fertile",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel pharaon est célèbre pour sa tombe découverte en 1922 ?",
+              "options": [
+                "Ramsès II",
+                "Cléopâtre",
+                "Toutânkhamon",
+                "Khéops"
+              ],
+              "correctAnswer": "Toutânkhamon",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel dieu égyptien était associé au soleil ?",
+              "options": [
+                "Osiris",
+                "Isis",
+                "Anubis",
+                "Râ"
+              ],
+              "correctAnswer": "Râ",
+              "isSpecial": false
+            },
+            {
+              "question": "Pourquoi les Égyptiens momifiaient-ils leurs morts ?",
+              "options": [
+                "Pour économiser la place",
+                "Pour préserver le corps en vue de la vie après la mort",
+                "Pour honorer les dieux",
+                "Pour montrer leur richesse"
+              ],
+              "correctAnswer": "Pour préserver le corps en vue de la vie après la mort",
+              "isSpecial": false
+            },
+            {
+              "question": "Pour quel pharaon la Grande Pyramide de Gizeh a-t-elle été construite ?",
+              "options": [
+                "Ramsès II",
+                "Toutânkhamon",
+                "Khéops",
+                "Aménophis"
+              ],
+              "correctAnswer": "Khéops",
+              "isSpecial": false
+            },
+            {
+              "question": "Combien d'années environ a duré la civilisation de l'Égypte ancienne ?",
+              "options": [
+                "Environ 500 ans",
+                "Environ 1 000 ans",
+                "Environ 2 000 ans",
+                "Plus de 3 000 ans"
+              ],
+              "correctAnswer": "Plus de 3 000 ans",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "history-gen-70",
+          "title": "La Grèce antique",
+          "emoji": "🏛️",
+          "themeColor": "pink",
+          "badgeId": "history-badge-70",
+          "badgeName": "Explorateur grec",
+          "badgeEmoji": "🏺",
+          "cards": [
+            {
+              "title": "Une civilisation pionnière",
+              "text": "La Grèce antique s'est épanouie entre environ 800 et 146 av. J.-C. sur la péninsule grecque et les îles de la mer Égée. Elle a donné naissance à la démocratie, à la philosophie et aux Jeux olympiques, des idées qui influencent encore notre monde aujourd'hui.",
+              "emoji": "🌍"
+            },
+            {
+              "title": "La cité-État, au cœur de la Grèce",
+              "text": "Les Grecs vivaient dans des cités-États indépendantes appelées poleis, comme Athènes, Sparte ou Corinthe. Chaque cité avait ses propres lois, son armée et ses dieux protecteurs. Athènes est célèbre pour avoir inventé la démocratie : les citoyens mâles libres votaient directement les lois.",
+              "emoji": "🏙️"
+            },
+            {
+              "title": "Les dieux et la mythologie",
+              "text": "Les Grecs croyaient en de nombreux dieux qui vivaient sur le mont Olympe, dirigés par Zeus. Ces dieux avaient des pouvoirs et des personnalités humaines : Athéna était la déesse de la sagesse, Poséidon le dieu des mers, et Arès le dieu de la guerre. La mythologie grecque racontait leurs aventures dans des récits transmis de génération en génération.",
+              "emoji": "⚡"
+            },
+            {
+              "title": "Arts, sciences et héritage",
+              "text": "Les Grecs ont construit des temples magnifiques comme le Parthénon à Athènes. Des philosophes comme Socrate, Platon et Aristote posaient des questions sur la vie et la justice. Les Grecs ont aussi inventé les Jeux olympiques en 776 av. J.-C. pour honorer Zeus, réunissant des athlètes de toutes les cités.",
+              "emoji": "🎭"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Comment appelle-t-on les cités indépendantes de la Grèce antique ?",
+              "options": [
+                "Des provinces",
+                "Des poleis",
+                "Des empires",
+                "Des cantons"
+              ],
+              "correctAnswer": "Des poleis",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle cité grecque est connue pour avoir inventé la démocratie ?",
+              "options": [
+                "Sparte",
+                "Corinthe",
+                "Athènes",
+                "Thèbes"
+              ],
+              "correctAnswer": "Athènes",
+              "isSpecial": false
+            },
+            {
+              "question": "Sur quelle montagne les dieux grecs étaient-ils censés vivre ?",
+              "options": [
+                "Le mont Parnasse",
+                "Le mont Olympe",
+                "Le mont Ida",
+                "Le mont Athos"
+              ],
+              "correctAnswer": "Le mont Olympe",
+              "isSpecial": false
+            },
+            {
+              "question": "Qui était Zeus dans la mythologie grecque ?",
+              "options": [
+                "Le dieu des mers",
+                "Le dieu du soleil",
+                "Le roi des dieux de l'Olympe",
+                "Le dieu de la guerre"
+              ],
+              "correctAnswer": "Le roi des dieux de l'Olympe",
+              "isSpecial": false
+            },
+            {
+              "question": "En quelle année les premiers Jeux olympiques ont-ils eu lieu ?",
+              "options": [
+                "776 av. J.-C.",
+                "500 av. J.-C.",
+                "1200 av. J.-C.",
+                "146 av. J.-C."
+              ],
+              "correctAnswer": "776 av. J.-C.",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel célèbre temple se trouve sur l'Acropole d'Athènes ?",
+              "options": [
+                "Le Colisée",
+                "Le Parthénon",
+                "Le Panthéon",
+                "L'Érechthéion"
+              ],
+              "correctAnswer": "Le Parthénon",
+              "isSpecial": false
+            },
+            {
+              "question": "Athéna était la déesse de quoi dans la mythologie grecque ?",
+              "options": [
+                "La guerre",
+                "L'amour",
+                "La sagesse",
+                "La mer"
+              ],
+              "correctAnswer": "La sagesse",
+              "isSpecial": false
+            },
+            {
+              "question": "Lequel de ces personnages était un philosophe de la Grèce antique ?",
+              "options": [
+                "César",
+                "Socrate",
+                "Hannibal",
+                "Ramsès"
+              ],
+              "correctAnswer": "Socrate",
+              "isSpecial": false
+            },
+            {
+              "question": "À quelle époque la Grèce antique a-t-elle surtout prospéré ?",
+              "options": [
+                "Entre 800 et 146 av. J.-C.",
+                "Entre 1500 et 500 av. J.-C.",
+                "Entre 100 et 400 apr. J.-C.",
+                "Entre 300 et 50 av. J.-C."
+              ],
+              "correctAnswer": "Entre 800 et 146 av. J.-C.",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans la démocratie athénienne antique, qui avait le droit de voter directement les lois ?",
+              "options": [
+                "Tous les habitants d'Athènes",
+                "Les femmes et les hommes libres",
+                "Les citoyens mâles libres uniquement",
+                "Uniquement les philosophes et les généraux"
+              ],
+              "correctAnswer": "Les citoyens mâles libres uniquement",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "history-gen-71",
+          "title": "La Rome Antique",
+          "emoji": "🏛️",
+          "themeColor": "pink",
+          "badgeId": "history-badge-71",
+          "badgeName": "Citoyen Romain",
+          "badgeEmoji": "⚔️",
+          "cards": [
+            {
+              "title": "La naissance de Rome",
+              "text": "Selon la légende, Rome a été fondée en 753 avant J.-C. par Romulus et Rémus, deux jumeaux élevés par une louve. En réalité, Rome est née d'un petit village au bord du Tibre, en Italie, qui a grandi pour devenir une puissance mondiale.",
+              "emoji": "🐺"
+            },
+            {
+              "title": "La République et l'Empire",
+              "text": "D'abord gouvernée par des rois, Rome est devenue une République en 509 av. J.-C., dirigée par deux consuls élus chaque année. En 27 av. J.-C., Auguste est devenu le premier empereur, transformant Rome en un immense empire qui s'étendait de l'Angleterre à l'Égypte.",
+              "emoji": "🏛️"
+            },
+            {
+              "title": "La vie quotidienne à Rome",
+              "text": "Les Romains vivaient dans des maisons appelées domus pour les riches, ou dans des immeubles appelés insulae pour les pauvres. Ils aimaient se retrouver aux thermes (bains publics), au forum (place publique) et au Colisée pour assister à des spectacles.",
+              "emoji": "🍞"
+            },
+            {
+              "title": "L'armée et la culture romaines",
+              "text": "L'armée romaine, composée de légionnaires très bien entraînés, a permis à Rome de conquérir un vaste territoire. Les Romains ont laissé un immense héritage : leur langue le latin a donné naissance au français, ils ont construit des routes, des aqueducs et des monuments encore visibles aujourd'hui.",
+              "emoji": "⚔️"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Selon la légende, qui a fondé Rome ?",
+              "options": [
+                "Jules César et Auguste",
+                "Romulus et Rémus",
+                "Brutus et Cassius",
+                "Pompée et Cicéron"
+              ],
+              "correctAnswer": "Romulus et Rémus",
+              "isSpecial": false
+            },
+            {
+              "question": "Sur quel fleuve la ville de Rome est-elle construite ?",
+              "options": [
+                "Le Pô",
+                "L'Arno",
+                "Le Tibre",
+                "Le Rhône"
+              ],
+              "correctAnswer": "Le Tibre",
+              "isSpecial": false
+            },
+            {
+              "question": "En quelle année Rome aurait-elle été fondée selon la tradition ?",
+              "options": [
+                "753 avant J.-C.",
+                "509 avant J.-C.",
+                "27 avant J.-C.",
+                "44 avant J.-C."
+              ],
+              "correctAnswer": "753 avant J.-C.",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment s'appelait le régime politique de Rome avant l'Empire ?",
+              "options": [
+                "La démocratie",
+                "La monarchie",
+                "La République",
+                "L'oligarchie"
+              ],
+              "correctAnswer": "La République",
+              "isSpecial": false
+            },
+            {
+              "question": "Qui est devenu le premier empereur romain ?",
+              "options": [
+                "Jules César",
+                "Néron",
+                "Auguste",
+                "Trajan"
+              ],
+              "correctAnswer": "Auguste",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment s'appelaient les bains publics chez les Romains ?",
+              "options": [
+                "Les forums",
+                "Les thermes",
+                "Les insulae",
+                "Les basiliques"
+              ],
+              "correctAnswer": "Les thermes",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment s'appelait l'immeuble où vivaient les Romains pauvres ?",
+              "options": [
+                "La domus",
+                "Le forum",
+                "L'insula",
+                "La villa"
+              ],
+              "correctAnswer": "L'insula",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel célèbre monument romain servait à organiser des spectacles et des combats ?",
+              "options": [
+                "Le Panthéon",
+                "Le Colisée",
+                "Le forum",
+                "L'arc de triomphe"
+              ],
+              "correctAnswer": "Le Colisée",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle langue parlaient les Romains, qui est à l'origine du français ?",
+              "options": [
+                "Le grec",
+                "L'étrusque",
+                "Le latin",
+                "L'araméen"
+              ],
+              "correctAnswer": "Le latin",
+              "isSpecial": false
+            },
+            {
+              "question": "En quelle année Auguste est-il devenu le premier empereur romain ?",
+              "options": [
+                "753 avant J.-C.",
+                "509 avant J.-C.",
+                "44 avant J.-C.",
+                "27 avant J.-C."
+              ],
+              "correctAnswer": "27 avant J.-C.",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "history-gen-72",
+          "title": "Le Moyen Âge",
+          "emoji": "🏰",
+          "themeColor": "pink",
+          "badgeId": "history-badge-72",
+          "badgeName": "Chevalier du Savoir",
+          "badgeEmoji": "⚔️",
+          "cards": [
+            {
+              "title": "Une époque entre deux mondes",
+              "text": "Le Moyen Âge est une grande période de l'histoire qui s'étend d'environ 476 après J.-C. (chute de l'Empire romain d'Occident) jusqu'en 1492 (découverte de l'Amérique). Elle dure donc plus de mille ans et est souvent divisée en Haut Moyen Âge et Bas Moyen Âge.",
+              "emoji": "📜"
+            },
+            {
+              "title": "Seigneurs, chevaliers et paysans",
+              "text": "La société médiévale est organisée en trois grands groupes : ceux qui prient (les clercs et moines), ceux qui combattent (les nobles et chevaliers) et ceux qui travaillent (les paysans, appelés serfs ou vilains). Les seigneurs possèdent de vastes terres, appelées fiefs, et les paysans doivent leur payer des impôts en travail ou en récoltes.",
+              "emoji": "🛡️"
+            },
+            {
+              "title": "L'Église au cœur de la vie",
+              "text": "Au Moyen Âge, l'Église catholique joue un rôle énorme dans la vie quotidienne : elle baptise, marie et enterre les gens, elle gère les hôpitaux et les écoles, et le Pape à Rome est une figure de pouvoir presque aussi importante que les rois. Les cathédrales gothiques, avec leurs grandes fenêtres en vitraux colorés, sont les monuments les plus impressionnants de cette époque.",
+              "emoji": "⛪"
+            },
+            {
+              "title": "Châteaux forts, croisades et fin du Moyen Âge",
+              "text": "Pour se protéger, les seigneurs construisent des châteaux forts dotés de tours, de douves et de ponts-levis. Les croisades sont des expéditions militaires lancées par les chrétiens d'Europe pour reprendre Jérusalem aux musulmans (à partir de 1096). Le Moyen Âge se termine avec de grands bouleversements : la peste noire (1347-1351), l'invention de l'imprimerie vers 1450 et la découverte de l'Amérique en 1492.",
+              "emoji": "🏰"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "En quelle année débute le Moyen Âge, selon la chute de l'Empire romain d'Occident ?",
+              "options": [
+                "476",
+                "1492",
+                "1066",
+                "800"
+              ],
+              "correctAnswer": "476",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel événement marque traditionnellement la fin du Moyen Âge en 1492 ?",
+              "options": [
+                "La découverte de l'Amérique",
+                "La chute de Rome",
+                "La mort de Charlemagne",
+                "L'invention de l'imprimerie"
+              ],
+              "correctAnswer": "La découverte de l'Amérique",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment appelle-t-on le domaine terrien qu'un seigneur possède et gouverne au Moyen Âge ?",
+              "options": [
+                "Un fief",
+                "Une paroisse",
+                "Une guilde",
+                "Un monastère"
+              ],
+              "correctAnswer": "Un fief",
+              "isSpecial": false
+            },
+            {
+              "question": "Lequel de ces groupes appartient à la catégorie de ceux qui 'travaillent' dans la société médiévale ?",
+              "options": [
+                "Les paysans",
+                "Les chevaliers",
+                "Les moines",
+                "Les évêques"
+              ],
+              "correctAnswer": "Les paysans",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle institution gère les hôpitaux et les écoles au Moyen Âge ?",
+              "options": [
+                "L'Église catholique",
+                "La noblesse",
+                "Les guildes de marchands",
+                "Le roi de France"
+              ],
+              "correctAnswer": "L'Église catholique",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel style architectural médiéval est caractérisé par de grandes fenêtres en vitraux colorés ?",
+              "options": [
+                "Le gothique",
+                "Le roman",
+                "Le baroque",
+                "Le Renaissance"
+              ],
+              "correctAnswer": "Le gothique",
+              "isSpecial": false
+            },
+            {
+              "question": "En quelle année la première croisade est-elle lancée vers Jérusalem ?",
+              "options": [
+                "1096",
+                "1204",
+                "1347",
+                "1066"
+              ],
+              "correctAnswer": "1096",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel élément défensif d'un château fort permet de bloquer l'accès au-dessus des douves ?",
+              "options": [
+                "Le pont-levis",
+                "Le donjon",
+                "Le mâchicoulis",
+                "Le rempart"
+              ],
+              "correctAnswer": "Le pont-levis",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle terrible épidémie ravage l'Europe entre 1347 et 1351 ?",
+              "options": [
+                "La peste noire",
+                "La lèpre",
+                "Le choléra",
+                "La variole"
+              ],
+              "correctAnswer": "La peste noire",
+              "isSpecial": false
+            },
+            {
+              "question": "Vers quelle année Gutenberg invente-t-il l'imprimerie à caractères mobiles, contribuant à la fin du Moyen Âge ?",
+              "options": [
+                "1450",
+                "1350",
+                "1550",
+                "1250"
+              ],
+              "correctAnswer": "1450",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "history-gen-73",
+          "title": "La Renaissance",
+          "emoji": "🎨",
+          "themeColor": "pink",
+          "badgeId": "history-badge-73",
+          "badgeName": "Humaniste en herbe",
+          "badgeEmoji": "🖌️",
+          "cards": [
+            {
+              "title": "Qu'est-ce que la Renaissance ?",
+              "text": "La Renaissance est une grande période culturelle et artistique qui débute en Italie au XIVe siècle, puis se répand en Europe jusqu'au XVIe siècle. Elle marque un retour à l'étude des textes et des arts de l'Antiquité grecque et romaine, après la période médiévale.",
+              "emoji": "🌅"
+            },
+            {
+              "title": "Les arts et les artistes",
+              "text": "La Renaissance voit naître des artistes extraordinaires comme Léonard de Vinci, Michel-Ange et Raphaël, qui renouvellent la peinture, la sculpture et l'architecture. Léonard de Vinci peint la célèbre Joconde, tandis que Michel-Ange réalise les fresques de la chapelle Sixtine à Rome.",
+              "emoji": "🖼️"
+            },
+            {
+              "title": "L'humanisme et les sciences",
+              "text": "L'humanisme est le courant de pensée central de la Renaissance : il place l'être humain au cœur de la réflexion, valorisant la raison, l'éducation et la curiosité. Des savants comme Copernic bouleversent la vision du monde en affirmant que la Terre tourne autour du Soleil.",
+              "emoji": "🔭"
+            },
+            {
+              "title": "L'imprimerie, une révolution",
+              "text": "Vers 1450, Johannes Gutenberg invente l'imprimerie à caractères mobiles, ce qui permet de reproduire des livres en grande quantité et à moindre coût. Cette invention transforme la diffusion du savoir en Europe et favorise la propagation des idées de la Renaissance.",
+              "emoji": "📖"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Dans quel pays la Renaissance a-t-elle débuté ?",
+              "options": [
+                "En France",
+                "En Espagne",
+                "En Italie",
+                "En Allemagne"
+              ],
+              "correctAnswer": "En Italie",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel célèbre tableau Léonard de Vinci a-t-il peint ?",
+              "options": [
+                "La Naissance de Vénus",
+                "La Joconde",
+                "La Cène de Michel-Ange",
+                "Le Jugement Dernier"
+              ],
+              "correctAnswer": "La Joconde",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel artiste de la Renaissance a peint les fresques de la chapelle Sixtine ?",
+              "options": [
+                "Raphaël",
+                "Léonard de Vinci",
+                "Michel-Ange",
+                "Botticelli"
+              ],
+              "correctAnswer": "Michel-Ange",
+              "isSpecial": false
+            },
+            {
+              "question": "Que signifie le courant de pensée appelé « humanisme » ?",
+              "options": [
+                "Croire uniquement en Dieu",
+                "Placer l'être humain au centre de la réflexion",
+                "Refuser toute science",
+                "Imiter les animaux de la nature"
+              ],
+              "correctAnswer": "Placer l'être humain au centre de la réflexion",
+              "isSpecial": false
+            },
+            {
+              "question": "Qui a inventé l'imprimerie à caractères mobiles vers 1450 ?",
+              "options": [
+                "Copernic",
+                "Léonard de Vinci",
+                "Johannes Gutenberg",
+                "Galilée"
+              ],
+              "correctAnswer": "Johannes Gutenberg",
+              "isSpecial": false
+            },
+            {
+              "question": "À quelle période correspond environ la Renaissance ?",
+              "options": [
+                "Du IXe au XIe siècle",
+                "Du XIVe au XVIe siècle",
+                "Du XVIIe au XIXe siècle",
+                "Du IVe au VIIe siècle"
+              ],
+              "correctAnswer": "Du XIVe au XVIe siècle",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle grande idée scientifique Copernic a-t-il défendue pendant la Renaissance ?",
+              "options": [
+                "La Terre est plate",
+                "La Lune tourne autour de Mars",
+                "La Terre tourne autour du Soleil",
+                "Le Soleil tourne autour de la Lune"
+              ],
+              "correctAnswer": "La Terre tourne autour du Soleil",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel effet principal l'invention de l'imprimerie a-t-elle eu en Europe ?",
+              "options": [
+                "Elle a ralenti la diffusion des idées",
+                "Elle a permis de reproduire des livres en grande quantité",
+                "Elle a supprimé les manuscrits enluminés",
+                "Elle a interdit la lecture aux femmes"
+              ],
+              "correctAnswer": "Elle a permis de reproduire des livres en grande quantité",
+              "isSpecial": false
+            },
+            {
+              "question": "Quels modèles culturels les hommes de la Renaissance cherchaient-ils à retrouver ?",
+              "options": [
+                "Les traditions vikings",
+                "Les œuvres de la Chine ancienne",
+                "Les textes et arts de l'Antiquité grecque et romaine",
+                "Les récits des croisades médiévales"
+              ],
+              "correctAnswer": "Les textes et arts de l'Antiquité grecque et romaine",
+              "isSpecial": false
+            },
+            {
+              "question": "Léonard de Vinci est surtout connu pour être à la fois peintre, sculpteur et… ?",
+              "options": [
+                "Navigateur et explorateur",
+                "Savant, ingénieur et inventeur",
+                "Poète et musicien uniquement",
+                "Pape et théologien"
+              ],
+              "correctAnswer": "Savant, ingénieur et inventeur",
+              "isSpecial": true
+            }
+          ]
         }
       ],
       "difficile": [
@@ -54466,6 +61158,864 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Un empire, en 1992"
               ],
               "correctAnswer": "La République, en 1990",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "history-gen-74",
+          "title": "La Préhistoire",
+          "emoji": "🦴",
+          "themeColor": "pink",
+          "badgeId": "history-badge-74",
+          "badgeName": "Explorateur du Passé",
+          "badgeEmoji": "🪨",
+          "cards": [
+            {
+              "title": "Les grandes périodes de la Préhistoire",
+              "text": "La Préhistoire couvre la période allant de l'apparition des premiers hominidés, il y a environ 3,3 millions d'années, jusqu'à l'invention de l'écriture vers 3200 av. J.-C. Elle se divise en deux grandes ères : le Paléolithique (pierre taillée) et le Néolithique (pierre polie), séparés par le Mésolithique, une période de transition d'environ 3000 ans.",
+              "emoji": "⏳"
+            },
+            {
+              "title": "L'évolution humaine et les espèces",
+              "text": "Plusieurs espèces d'hominidés ont coexisté au fil du temps : Homo habilis, le premier fabricant d'outils connu, Homo erectus qui maîtrisait le feu, et Homo sapiens apparu il y a environ 300 000 ans en Afrique. L'Homme de Néandertal (Homo neanderthalensis) a vécu en Europe et au Moyen-Orient jusqu'à environ 40 000 av. J.-C., avant de disparaître, possiblement à cause de la concurrence avec Homo sapiens.",
+              "emoji": "🧬"
+            },
+            {
+              "title": "Les outils et les techniques",
+              "text": "Au Paléolithique, les hommes taillaient des pierres (silex, obsidienne) pour fabriquer des bifaces, des grattoirs et des pointes de flèches. La maîtrise du feu, conquise par Homo erectus il y a environ 400 000 ans, fut une révolution majeure permettant de se chauffer, de cuire les aliments et de repousser les prédateurs. Au Néolithique, l'invention de la poterie et du tissage accompagna la sédentarisation.",
+              "emoji": "🪓"
+            },
+            {
+              "title": "La révolution néolithique",
+              "text": "Il y a environ 10 000 ans, la révolution néolithique transforma profondément les sociétés humaines : les chasseurs-cueilleurs nomades devinrent progressivement agriculteurs et éleveurs sédentaires. Cette transition, apparue indépendamment en plusieurs régions (Proche-Orient, Chine, Amérique), entraîna la formation des premiers villages, l'accumulation de surplus alimentaires et l'émergence de nouvelles inégalités sociales.",
+              "emoji": "🌾"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "À quelle période de la Préhistoire correspond l'usage de la pierre taillée ?",
+              "options": [
+                "Le Néolithique",
+                "Le Paléolithique",
+                "Le Mésolithique",
+                "Le Chalcolithique"
+              ],
+              "correctAnswer": "Le Paléolithique",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle espèce humaine est la première à avoir fabriqué des outils de pierre de manière systématique ?",
+              "options": [
+                "Homo sapiens",
+                "Homo erectus",
+                "Homo habilis",
+                "Homo neanderthalensis"
+              ],
+              "correctAnswer": "Homo habilis",
+              "isSpecial": false
+            },
+            {
+              "question": "Vers quelle date les historiens estiment-ils l'apparition de l'écriture, qui marque la fin de la Préhistoire ?",
+              "options": [
+                "10 000 av. J.-C.",
+                "5000 av. J.-C.",
+                "3200 av. J.-C.",
+                "1000 av. J.-C."
+              ],
+              "correctAnswer": "3200 av. J.-C.",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est la principale caractéristique qui distingue le Néolithique du Paléolithique en matière de mode de vie ?",
+              "options": [
+                "L'usage du feu",
+                "La sédentarisation et l'agriculture",
+                "La fabrication d'outils en pierre",
+                "La pratique de l'art rupestre"
+              ],
+              "correctAnswer": "La sédentarisation et l'agriculture",
+              "isSpecial": false
+            },
+            {
+              "question": "Il y a environ combien d'années Homo sapiens est-il apparu en Afrique ?",
+              "options": [
+                "100 000 ans",
+                "200 000 ans",
+                "300 000 ans",
+                "500 000 ans"
+              ],
+              "correctAnswer": "300 000 ans",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle espèce humaine a disparu il y a environ 40 000 ans en Europe ?",
+              "options": [
+                "Homo habilis",
+                "Homo erectus",
+                "Homo heidelbergensis",
+                "Homo neanderthalensis"
+              ],
+              "correctAnswer": "Homo neanderthalensis",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle invention du Néolithique accompagna la sédentarisation des populations ?",
+              "options": [
+                "Le biface en silex",
+                "La poterie et le tissage",
+                "La maîtrise du feu",
+                "Les pointes de flèches"
+              ],
+              "correctAnswer": "La poterie et le tissage",
+              "isSpecial": false
+            },
+            {
+              "question": "La révolution néolithique est-elle apparue dans une seule région du monde ?",
+              "options": [
+                "Oui, uniquement au Proche-Orient",
+                "Oui, uniquement en Afrique",
+                "Non, elle est apparue indépendamment en plusieurs régions",
+                "Non, elle s'est diffusée depuis l'Égypte vers le reste du monde"
+              ],
+              "correctAnswer": "Non, elle est apparue indépendamment en plusieurs régions",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle matière première était principalement utilisée pour tailler des outils au Paléolithique ?",
+              "options": [
+                "Le bronze",
+                "L'obsidienne et le silex",
+                "Le cuivre",
+                "Le calcaire"
+              ],
+              "correctAnswer": "L'obsidienne et le silex",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel impact social majeur la révolution néolithique a-t-elle engendré, en plus de la sédentarisation ?",
+              "options": [
+                "La disparition des croyances religieuses",
+                "L'émergence de nouvelles inégalités sociales liées aux surplus",
+                "L'abandon de la chasse comme activité",
+                "L'unification des populations sous un seul chef mondial"
+              ],
+              "correctAnswer": "L'émergence de nouvelles inégalités sociales liées aux surplus",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "history-gen-75",
+          "title": "L'Égypte ancienne",
+          "emoji": "𓂀",
+          "themeColor": "pink",
+          "badgeId": "history-badge-75",
+          "badgeName": "Explorateur du Nil",
+          "badgeEmoji": "🏛️",
+          "cards": [
+            {
+              "title": "Une civilisation millénaire",
+              "text": "L'Égypte ancienne est l'une des plus vieilles civilisations du monde, née vers 3100 av. J.-C. lorsque le roi Narmer unifia la Haute et la Basse-Égypte. Elle dura plus de trois millénaires, structurée en trente et une dynasties, avant d'être intégrée à l'Empire romain en 30 av. J.-C.",
+              "emoji": "⏳"
+            },
+            {
+              "title": "Le pharaon et la société égyptienne",
+              "text": "Le pharaon était à la fois roi et dieu vivant, garant de l'ordre cosmique appelé Maât. La société était strictement hiérarchisée : au-dessous du pharaon se trouvaient les prêtres et les scribes, puis les artisans, les agriculteurs et enfin les esclaves, qui représentaient une minorité.",
+              "emoji": "👑"
+            },
+            {
+              "title": "Religion, mythologie et au-delà",
+              "text": "Les Égyptiens croyaient en une vie après la mort et pratiquaient la momification pour préserver le corps en vue du voyage dans l'au-delà. Parmi leurs divinités majeures figuraient Rê (dieu du soleil), Osiris (dieu des morts), Isis (déesse de la magie) et Horus (dieu du ciel), dont le pharaon était la manifestation terrestre.",
+              "emoji": "𓁹"
+            },
+            {
+              "title": "Sciences, écriture et monuments",
+              "text": "Les Égyptiens inventèrent l'hiéroglyphique, un système d'écriture combinant pictogrammes et phonèmes, déchiffré en 1822 par Jean-François Champollion grâce à la Pierre de Rosette. Ils excellèrent en architecture — les pyramides de Gizeh, construites vers 2500 av. J.-C., restent l'une des sept merveilles du monde antique — et développèrent des connaissances avancées en astronomie, médecine et mathématiques.",
+              "emoji": "📐"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Vers quelle date le roi Narmer unifia-t-il la Haute et la Basse-Égypte, marquant la naissance de l'État égyptien ?",
+              "options": [
+                "3100 av. J.-C.",
+                "2500 av. J.-C.",
+                "1500 av. J.-C.",
+                "1000 av. J.-C."
+              ],
+              "correctAnswer": "3100 av. J.-C.",
+              "isSpecial": false
+            },
+            {
+              "question": "Combien de dynasties a-t-on recensé dans l'histoire de l'Égypte ancienne ?",
+              "options": [
+                "Vingt dynasties",
+                "Vingt-cinq dynasties",
+                "Trente et une dynasties",
+                "Quarante dynasties"
+              ],
+              "correctAnswer": "Trente et une dynasties",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel concept désigne l'ordre cosmique et la justice que le pharaon devait maintenir sur terre ?",
+              "options": [
+                "Ka",
+                "Maât",
+                "Ba",
+                "Djed"
+              ],
+              "correctAnswer": "Maât",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel dieu égyptien était associé au soleil et occupait une place centrale dans le panthéon ?",
+              "options": [
+                "Osiris",
+                "Horus",
+                "Anubis",
+                "Rê"
+              ],
+              "correctAnswer": "Rê",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel était le but principal de la momification dans la religion égyptienne ?",
+              "options": [
+                "Effrayer les ennemis du pharaon",
+                "Préserver le corps pour la vie après la mort",
+                "Honorer le dieu Anubis lors des fêtes",
+                "Transmettre les maladies aux divinités maléfiques"
+              ],
+              "correctAnswer": "Préserver le corps pour la vie après la mort",
+              "isSpecial": false
+            },
+            {
+              "question": "Qui déchiffra les hiéroglyphes égyptiens en 1822 ?",
+              "options": [
+                "Napoléon Bonaparte",
+                "Thomas Young",
+                "Jean-François Champollion",
+                "Howard Carter"
+              ],
+              "correctAnswer": "Jean-François Champollion",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel objet archéologique permit à Champollion de déchiffrer les hiéroglyphes ?",
+              "options": [
+                "La tablette de Narmer",
+                "Le papyrus d'Ani",
+                "La Pierre de Rosette",
+                "Le livre des morts de Turin"
+              ],
+              "correctAnswer": "La Pierre de Rosette",
+              "isSpecial": false
+            },
+            {
+              "question": "Vers quelle date les grandes pyramides de Gizeh furent-elles construites ?",
+              "options": [
+                "3100 av. J.-C.",
+                "2500 av. J.-C.",
+                "1900 av. J.-C.",
+                "500 av. J.-C."
+              ],
+              "correctAnswer": "2500 av. J.-C.",
+              "isSpecial": false
+            },
+            {
+              "question": "En quelle année l'Égypte ancienne fut-elle intégrée à l'Empire romain, mettant fin à la civilisation pharaonique ?",
+              "options": [
+                "30 av. J.-C.",
+                "100 apr. J.-C.",
+                "323 av. J.-C.",
+                "476 apr. J.-C."
+              ],
+              "correctAnswer": "30 av. J.-C.",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans la hiérarchie sociale égyptienne, quelle affirmation est exacte concernant les esclaves ?",
+              "options": [
+                "Ils formaient la majorité de la population et construisaient seuls les pyramides",
+                "Ils étaient absents de la société égyptienne, remplacés par des serfs",
+                "Ils représentaient une minorité et leur rôle dans la construction des pyramides est débattu par les historiens",
+                "Ils occupaient un rang supérieur à celui des artisans"
+              ],
+              "correctAnswer": "Ils représentaient une minorité et leur rôle dans la construction des pyramides est débattu par les historiens",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "history-gen-76",
+          "title": "La Grèce antique",
+          "emoji": "🏛️",
+          "themeColor": "pink",
+          "badgeId": "history-badge-76",
+          "badgeName": "Helléniste",
+          "badgeEmoji": "🏺",
+          "cards": [
+            {
+              "title": "La cité-État grecque (polis)",
+              "text": "La Grèce antique n'était pas un État unifié mais un ensemble de cités-États indépendantes, appelées poleis. Chaque polis possédait ses propres lois, institutions et divinités protectrices, ce qui engendrait des rivalités mais aussi des alliances stratégiques.",
+              "emoji": "🏛️"
+            },
+            {
+              "title": "Athènes et la démocratie",
+              "text": "Athènes est reconnue comme le berceau de la démocratie : sous Clisthène (508 av. J.-C.), les citoyens mâles libres participaient directement aux décisions de l'Assemblée (Ecclésia). Cependant, les femmes, les esclaves et les métèques (étrangers résidents) en étaient totalement exclus.",
+              "emoji": "⚖️"
+            },
+            {
+              "title": "Sparte et le modèle militaire",
+              "text": "Sparte se distinguait par son régime oligarchique et son éducation militaire intensive, l'agôgé, qui formait les jeunes Spartiates dès l'âge de 7 ans. L'économie spartiate reposait sur l'exploitation des hilotes, une population réduite en servitude collective.",
+              "emoji": "⚔️"
+            },
+            {
+              "title": "Héritage culturel et scientifique",
+              "text": "Les Grecs anciens ont posé les bases de la philosophie occidentale avec Socrate, Platon et Aristote, mais aussi des mathématiques avec Pythagore et Euclide, et de la médecine avec Hippocrate. Les Jeux olympiques, créés en 776 av. J.-C. en l'honneur de Zeus à Olympie, rassemblaient toutes les cités dans une trêve sacrée.",
+              "emoji": "🔭"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Comment appelle-t-on une cité-État grecque indépendante ?",
+              "options": [
+                "Une polis",
+                "Une région",
+                "Une satrapie",
+                "Une province"
+              ],
+              "correctAnswer": "Une polis",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel réformateur athénien est à l'origine de la démocratie à Athènes en 508 av. J.-C. ?",
+              "options": [
+                "Périclès",
+                "Solon",
+                "Clisthène",
+                "Thémistocle"
+              ],
+              "correctAnswer": "Clisthène",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment se nommait l'assemblée des citoyens athéniens qui votait les lois ?",
+              "options": [
+                "L'Agora",
+                "L'Ecclésia",
+                "Le Sénat",
+                "Le Bouleutérion"
+              ],
+              "correctAnswer": "L'Ecclésia",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle population était réduite en servitude collective au profit de Sparte ?",
+              "options": [
+                "Les métèques",
+                "Les périèques",
+                "Les hilotes",
+                "Les esclaves privés"
+              ],
+              "correctAnswer": "Les hilotes",
+              "isSpecial": false
+            },
+            {
+              "question": "À quel âge les jeunes Spartiates intégraient-ils l'éducation militaire appelée agôgé ?",
+              "options": [
+                "5 ans",
+                "7 ans",
+                "10 ans",
+                "12 ans"
+              ],
+              "correctAnswer": "7 ans",
+              "isSpecial": false
+            },
+            {
+              "question": "En quelle année les premiers Jeux olympiques de l'Antiquité ont-ils été célébrés ?",
+              "options": [
+                "776 av. J.-C.",
+                "490 av. J.-C.",
+                "336 av. J.-C.",
+                "431 av. J.-C."
+              ],
+              "correctAnswer": "776 av. J.-C.",
+              "isSpecial": false
+            },
+            {
+              "question": "En quel honneur les Jeux olympiques antiques étaient-ils organisés ?",
+              "options": [
+                "En l'honneur d'Apollon",
+                "En l'honneur d'Athéna",
+                "En l'honneur de Zeus",
+                "En l'honneur d'Héra"
+              ],
+              "correctAnswer": "En l'honneur de Zeus",
+              "isSpecial": false
+            },
+            {
+              "question": "Lequel de ces penseurs est considéré comme le fondateur de la médecine grecque antique ?",
+              "options": [
+                "Aristote",
+                "Hippocrate",
+                "Pythagore",
+                "Euclide"
+              ],
+              "correctAnswer": "Hippocrate",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle catégorie de personnes était exclue de la démocratie athénienne parmi les suivantes ?",
+              "options": [
+                "Les citoyens mâles adultes",
+                "Les métèques",
+                "Les archontes",
+                "Les stratèges"
+              ],
+              "correctAnswer": "Les métèques",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle différence fondamentale distingue le régime politique d'Athènes de celui de Sparte au Ve siècle av. J.-C. ?",
+              "options": [
+                "Athènes est une oligarchie militaire, Sparte une démocratie directe",
+                "Athènes est une démocratie directe, Sparte une oligarchie militaire",
+                "Les deux cités sont des monarchies héréditaires",
+                "Les deux cités pratiquent la démocratie représentative"
+              ],
+              "correctAnswer": "Athènes est une démocratie directe, Sparte une oligarchie militaire",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "history-gen-77",
+          "title": "La Rome antique",
+          "emoji": "🏛️",
+          "themeColor": "pink",
+          "badgeId": "history-badge-77",
+          "badgeName": "Citoyen romain",
+          "badgeEmoji": "⚔️",
+          "cards": [
+            {
+              "title": "Des rois à la République",
+              "text": "Rome fut d'abord gouvernée par des rois, selon la tradition fondée par Romulus en 753 av. J.-C. En 509 av. J.-C., les Romains chassèrent le roi Tarquin le Superbe et instaurèrent la République, un système où le pouvoir était partagé entre deux consuls élus chaque année et le Sénat.",
+              "emoji": "🏺"
+            },
+            {
+              "title": "L'Empire et ses empereurs",
+              "text": "Après un siècle de guerres civiles, Jules César puis Auguste transformèrent Rome en Empire en 27 av. J.-C. L'empereur concentrait les pouvoirs militaire, religieux et politique, même si les institutions républicaines comme le Sénat subsistaient en apparence. À son apogée, l'Empire romain gouvernait environ 70 millions de personnes.",
+              "emoji": "👑"
+            },
+            {
+              "title": "L'armée romaine et les légions",
+              "text": "La légion romaine, composée d'environ 5 000 soldats citoyens, était l'unité de base de l'armée. Les légionnaires étaient disciplinés, équipés d'un pilum (javelot), d'un glaive et d'un bouclier rectangulaire appelé scutum. Les conquêtes militaires permirent à Rome d'étendre son territoire de la Bretagne à la Mésopotamie.",
+              "emoji": "⚔️"
+            },
+            {
+              "title": "Société, droit et héritage",
+              "text": "La société romaine était hiérarchisée entre patriciens (aristocrates), plébéiens (citoyens ordinaires), affranchis et esclaves. Les Romains développèrent un système juridique sophistiqué dont le droit civil moderne s'inspire encore. Leur ingénierie (aqueducs, routes, arènes) et leur langue latine ont profondément marqué la civilisation occidentale.",
+              "emoji": "📜"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "En quelle année la République romaine a-t-elle été fondée ?",
+              "options": [
+                "753 av. J.-C.",
+                "509 av. J.-C.",
+                "264 av. J.-C.",
+                "27 av. J.-C."
+              ],
+              "correctAnswer": "509 av. J.-C.",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel roi légendaire est considéré comme le fondateur de Rome selon la tradition ?",
+              "options": [
+                "Rémus",
+                "Tarquin le Superbe",
+                "Romulus",
+                "Jules César"
+              ],
+              "correctAnswer": "Romulus",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment s'appelait le javelot utilisé par les légionnaires romains ?",
+              "options": [
+                "Gladius",
+                "Scutum",
+                "Pilum",
+                "Hasta"
+              ],
+              "correctAnswer": "Pilum",
+              "isSpecial": false
+            },
+            {
+              "question": "Combien de consuls dirigeaient la République romaine chaque année ?",
+              "options": [
+                "Un seul",
+                "Deux",
+                "Quatre",
+                "Dix"
+              ],
+              "correctAnswer": "Deux",
+              "isSpecial": false
+            },
+            {
+              "question": "En quelle année Auguste a-t-il officiellement fondé l'Empire romain ?",
+              "options": [
+                "44 av. J.-C.",
+                "31 av. J.-C.",
+                "27 av. J.-C.",
+                "14 apr. J.-C."
+              ],
+              "correctAnswer": "27 av. J.-C.",
+              "isSpecial": false
+            },
+            {
+              "question": "Combien de soldats comptait approximativement une légion romaine ?",
+              "options": [
+                "1 000",
+                "3 000",
+                "5 000",
+                "10 000"
+              ],
+              "correctAnswer": "5 000",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment s'appelait le bouclier rectangulaire des légionnaires romains ?",
+              "options": [
+                "Pilum",
+                "Scutum",
+                "Lorica",
+                "Clipeus"
+              ],
+              "correctAnswer": "Scutum",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle catégorie sociale désignait les aristocrates dans la société romaine ?",
+              "options": [
+                "Plébéiens",
+                "Affranchis",
+                "Patriciens",
+                "Clients"
+              ],
+              "correctAnswer": "Patriciens",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est l'estimation de la population gouvernée par l'Empire romain à son apogée ?",
+              "options": [
+                "10 millions",
+                "30 millions",
+                "70 millions",
+                "120 millions"
+              ],
+              "correctAnswer": "70 millions",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel roi fut chassé de Rome lors de l'établissement de la République en 509 av. J.-C. ?",
+              "options": [
+                "Romulus",
+                "Numa Pompilius",
+                "Servius Tullius",
+                "Tarquin le Superbe"
+              ],
+              "correctAnswer": "Tarquin le Superbe",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "history-gen-78",
+          "title": "Le Moyen Âge",
+          "emoji": "🏰",
+          "themeColor": "pink",
+          "badgeId": "history-badge-78",
+          "badgeName": "Chevalier du Savoir",
+          "badgeEmoji": "⚔️",
+          "cards": [
+            {
+              "title": "Une époque charnière de l'histoire",
+              "text": "Le Moyen Âge s'étend conventionnellement de 476 apr. J.-C., chute de l'Empire romain d'Occident, jusqu'en 1492, date de la découverte des Amériques par Christophe Colomb. Cette période millénaire voit l'émergence de nouvelles structures politiques, religieuses et culturelles en Europe occidentale. Elle est souvent subdivisée en Haut Moyen Âge (Ve-Xe siècle) et Bas Moyen Âge (XIe-XVe siècle).",
+              "emoji": "📅"
+            },
+            {
+              "title": "La société féodale",
+              "text": "La société médiévale repose sur le système féodal : le roi concède des terres (fiefs) à ses vassaux en échange de services militaires et d'une promesse de loyauté appelée l'hommage. Cette hiérarchie pyramidale place le clergé et la noblesse au sommet, les serfs et paysans à la base. Ces derniers, liés à la terre du seigneur, constituent la grande majorité de la population et assurent la production agricole.",
+              "emoji": "🏟️"
+            },
+            {
+              "title": "L'Église, pouvoir central",
+              "text": "L'Église catholique romaine joue un rôle capital au Moyen Âge : elle encadre la vie spirituelle, possède d'immenses domaines fonciers et dispute parfois le pouvoir aux rois (querelle des Investitures). Les croisades, lancées à partir de 1095 par le pape Urbain II, sont des expéditions militaires visant à reprendre Jérusalem aux musulmans. Ces guerres favorisent les échanges culturels et commerciaux entre Orient et Occident.",
+              "emoji": "✝️"
+            },
+            {
+              "title": "Villes, commerce et renaissance intellectuelle",
+              "text": "À partir du XIe siècle, les villes se développent, les foires commerciales (comme celles de Champagne) dynamisent l'économie, et les premières universités européennes voient le jour (Bologne, Paris, Oxford). L'architecture gothique, avec ses cathédrales aux arcs-boutants et vitraux lumineux, témoigne du dynamisme artistique de la période. La Peste noire (1347-1352) emporte entre un tiers et la moitié de la population européenne, bouleversant profondément la société médiévale.",
+              "emoji": "🏛️"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Quelle date conventionnelle marque le début du Moyen Âge ?",
+              "options": [
+                "476 apr. J.-C., chute de l'Empire romain d'Occident",
+                "800 apr. J.-C., couronnement de Charlemagne",
+                "395 apr. J.-C., partage de l'Empire romain",
+                "330 apr. J.-C., fondation de Constantinople"
+              ],
+              "correctAnswer": "476 apr. J.-C., chute de l'Empire romain d'Occident",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans le système féodal, qu'est-ce qu'un fief ?",
+              "options": [
+                "Une taxe prélevée par l'Église sur les récoltes",
+                "Une terre concédée par le seigneur à son vassal en échange de services",
+                "Un traité d'alliance entre deux royaumes",
+                "Un tribunal chargé de rendre la justice au nom du roi"
+              ],
+              "correctAnswer": "Une terre concédée par le seigneur à son vassal en échange de services",
+              "isSpecial": false
+            },
+            {
+              "question": "Qui a lancé la première croisade en 1095 ?",
+              "options": [
+                "Le roi de France Philippe Ier",
+                "L'empereur byzantin Alexis Ier Comnène",
+                "Le pape Urbain II",
+                "Godefroy de Bouillon"
+              ],
+              "correctAnswer": "Le pape Urbain II",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle date est traditionnellement retenue comme fin du Moyen Âge ?",
+              "options": [
+                "1453, prise de Constantinople par les Ottomans",
+                "1492, découverte des Amériques",
+                "1517, début de la Réforme protestante",
+                "1337, début de la guerre de Cent Ans"
+              ],
+              "correctAnswer": "1492, découverte des Amériques",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est la caractéristique architecturale propre aux cathédrales gothiques ?",
+              "options": [
+                "Des murs épais et des petites fenêtres pour résister aux assauts",
+                "Des coupoles dorées inspirées de l'architecture byzantine",
+                "Des arcs-boutants permettant d'alléger les murs et d'agrandir les fenêtres",
+                "Des colonnes de marbre blanc à chapiteaux sculptés"
+              ],
+              "correctAnswer": "Des arcs-boutants permettant d'alléger les murs et d'agrandir les fenêtres",
+              "isSpecial": false
+            },
+            {
+              "question": "Que désigne la Peste noire dans l'Europe du XIVe siècle ?",
+              "options": [
+                "Une famine qui frappe l'Europe du Nord entre 1315 et 1322",
+                "Une épidémie de peste qui ravage l'Europe entre 1347 et 1352",
+                "Une série de guerres civiles opposant nobles et bourgeois",
+                "Un mouvement hérétique réprimé par l'Inquisition"
+              ],
+              "correctAnswer": "Une épidémie de peste qui ravage l'Europe entre 1347 et 1352",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel groupe social se trouvait à la base de la pyramide féodale ?",
+              "options": [
+                "Les marchands des villes",
+                "Les chevaliers sans terre",
+                "Les serfs et paysans",
+                "Les moines et religieux"
+              ],
+              "correctAnswer": "Les serfs et paysans",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle fut la grande dispute entre la papauté et les empereurs germaniques aux XIe-XIIe siècles ?",
+              "options": [
+                "La querelle des Investitures, portant sur la nomination des évêques",
+                "Le Grand Schisme, opposant Rome à Constantinople",
+                "La controverse de Worms sur le paiement de la dîme",
+                "Le conflit de Canossa sur le droit d'asile dans les monastères"
+              ],
+              "correctAnswer": "La querelle des Investitures, portant sur la nomination des évêques",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle ville abrite l'une des plus anciennes universités d'Europe, fondée à la fin du XIIe siècle ?",
+              "options": [
+                "Venise",
+                "Paris",
+                "Rome",
+                "Prague"
+              ],
+              "correctAnswer": "Paris",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle proportion de la population européenne la Peste noire a-t-elle environ emportée selon les historiens ?",
+              "options": [
+                "Environ un dixième de la population",
+                "Entre un tiers et la moitié de la population",
+                "Environ un cinquième de la population",
+                "Plus des deux tiers de la population"
+              ],
+              "correctAnswer": "Entre un tiers et la moitié de la population",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "history-gen-79",
+          "title": "La Renaissance",
+          "emoji": "🎨",
+          "themeColor": "pink",
+          "badgeId": "history-badge-79",
+          "badgeName": "Humaniste",
+          "badgeEmoji": "📜",
+          "cards": [
+            {
+              "title": "Une rupture avec le Moyen Âge",
+              "text": "La Renaissance est un mouvement culturel et intellectuel né en Italie au XIVe siècle, qui s'étend à toute l'Europe jusqu'au XVIe siècle. Elle marque une rupture progressive avec la vision médiévale du monde en plaçant l'être humain au centre des préoccupations artistiques, philosophiques et scientifiques. Ce renouveau s'appuie sur la redécouverte des textes antiques grecs et latins.",
+              "emoji": "🏛️"
+            },
+            {
+              "title": "L'humanisme, une nouvelle vision de l'homme",
+              "text": "L'humanisme est le courant de pensée fondamental de la Renaissance : il affirme la dignité de l'homme, sa capacité à comprendre le monde par la raison et l'observation. Des figures comme Érasme, Thomas More ou Montaigne remettent en question les dogmes et encouragent l'esprit critique. Cette philosophie transforme profondément l'éducation, la littérature et la politique en Europe.",
+              "emoji": "🧠"
+            },
+            {
+              "title": "Révolutions artistiques et scientifiques",
+              "text": "En art, des maîtres comme Léonard de Vinci, Michel-Ange et Raphaël développent de nouvelles techniques telles que la perspective et le sfumato, représentant le corps humain avec un réalisme inédit. Parallèlement, des savants comme Copernic et Galilée bouleversent la conception du cosmos en proposant le modèle héliocentrique, défiant l'autorité de l'Église. L'imprimerie de Gutenberg, vers 1450, accélère considérablement la diffusion de ces idées nouvelles.",
+              "emoji": "🔭"
+            },
+            {
+              "title": "La Renaissance hors d'Italie",
+              "text": "À partir du XVe siècle, la Renaissance se propage en France, en Espagne, en Angleterre et dans les pays germaniques, s'adaptant aux contextes locaux. En France, François Ier attire des artistes italiens, dont Léonard de Vinci, et favorise le développement d'un style français visible dans les châteaux de la Loire. Cette diffusion accompagne les grandes explorations maritimes qui élargissent la vision du monde et alimentent une curiosité universelle.",
+              "emoji": "🌍"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Dans quelle région d'Europe la Renaissance est-elle apparue avant de se diffuser au reste du continent ?",
+              "options": [
+                "En France, autour de Paris",
+                "En Italie, notamment à Florence et Rome",
+                "Dans les Flandres, grâce aux peintres flamands",
+                "En Espagne, sous l'impulsion des Rois Catholiques"
+              ],
+              "correctAnswer": "En Italie, notamment à Florence et Rome",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle invention de Gutenberg, vers 1450, a joué un rôle majeur dans la diffusion des idées de la Renaissance ?",
+              "options": [
+                "La boussole",
+                "La presse à imprimer",
+                "Le télescope",
+                "Le papier en feuilles reliées"
+              ],
+              "correctAnswer": "La presse à imprimer",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel est le nom du courant de pensée qui place l'être humain et sa raison au centre des préoccupations intellectuelles ?",
+              "options": [
+                "Le thomisme",
+                "Le scolastique",
+                "L'humanisme",
+                "Le providentialisme"
+              ],
+              "correctAnswer": "L'humanisme",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle technique picturale, développée notamment par Léonard de Vinci, consiste à estomper les contours pour créer des dégradés subtils ?",
+              "options": [
+                "Le sfumato",
+                "Le clair-obscur",
+                "Le trompe-l'oeil",
+                "La fresque"
+              ],
+              "correctAnswer": "Le sfumato",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel roi de France a favorisé l'introduction de la Renaissance italienne en attirant des artistes comme Léonard de Vinci ?",
+              "options": [
+                "Louis XI",
+                "Henri IV",
+                "François Ier",
+                "Charles VIII"
+              ],
+              "correctAnswer": "François Ier",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel savant a proposé le modèle héliocentrique, affirmant que la Terre tourne autour du Soleil ?",
+              "options": [
+                "Galilée",
+                "Tycho Brahé",
+                "Nicolas Copernic",
+                "Johannes Kepler"
+              ],
+              "correctAnswer": "Nicolas Copernic",
+              "isSpecial": false
+            },
+            {
+              "question": "Lequel de ces penseurs est une figure majeure de l'humanisme européen du XVIe siècle, connu pour ses Essais ?",
+              "options": [
+                "Thomas d'Aquin",
+                "Montaigne",
+                "Voltaire",
+                "Rabelais"
+              ],
+              "correctAnswer": "Montaigne",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle technique artistique, redécouverte à la Renaissance, permet de représenter la profondeur et le volume sur une surface plane ?",
+              "options": [
+                "La perspective",
+                "La mosaïque",
+                "Le vitrail",
+                "L'enluminure"
+              ],
+              "correctAnswer": "La perspective",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel édifice, symbole architectural de la Renaissance italienne, a été en partie conçu par Michel-Ange ?",
+              "options": [
+                "Le Palais des Doges à Venise",
+                "La cathédrale de Florence",
+                "La basilique Saint-Pierre de Rome",
+                "Le château de Chambord"
+              ],
+              "correctAnswer": "La basilique Saint-Pierre de Rome",
+              "isSpecial": false
+            },
+            {
+              "question": "En quoi la conception de l'homme à la Renaissance diffère-t-elle fondamentalement de la vision médiévale dominante ?",
+              "options": [
+                "L'homme est désormais considéré comme totalement soumis aux lois divines, sans liberté propre",
+                "La Renaissance affirme que l'homme est capable de se perfectionner par la raison et l'éducation, indépendamment de la seule foi",
+                "La Renaissance rejette toute référence à l'Antiquité pour créer une culture entièrement nouvelle",
+                "Les penseurs de la Renaissance considèrent que l'homme est fondamentalement mauvais et doit être contrôlé par l'Église"
+              ],
+              "correctAnswer": "La Renaissance affirme que l'homme est capable de se perfectionner par la raison et l'éducation, indépendamment de la seule foi",
               "isSpecial": true
             }
           ]

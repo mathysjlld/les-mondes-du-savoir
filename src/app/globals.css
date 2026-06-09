@@ -16,8 +16,11 @@
 }
 
 body {
-  background-color: #e0f2fe; /* Light blue sky background */
-  background-image: radial-gradient(circle at 10% 20%, rgba(215, 235, 255, 0.4) 0%, rgba(255, 255, 255, 0) 90%);
+  /* Charte ExploraKids : ambiance turquoise (avec une touche corail) */
+  background-color: #e9fbf7;
+  background-image:
+    radial-gradient(circle at 10% 15%, rgba(20, 184, 166, 0.12) 0%, rgba(255, 255, 255, 0) 60%),
+    radial-gradient(circle at 90% 85%, rgba(255, 107, 107, 0.08) 0%, rgba(255, 255, 255, 0) 55%);
   color: var(--foreground);
   font-family: var(--font-nunito), system-ui, sans-serif;
   min-height: 100vh;
@@ -35,15 +38,15 @@ h1, h2, h3, h4, h5, h6, button, .font-display {
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #e0f2fe;
+  background: #e9fbf7;
 }
 ::-webkit-scrollbar-thumb {
-  background: #93c5fd;
+  background: #5eead4;
   border-radius: 9999px;
-  border: 2px solid #e0f2fe;
+  border: 2px solid #e9fbf7;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #60a5fa;
+  background: #14b8a6;
 }
 
 /* Animations enfants fun */
