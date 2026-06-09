@@ -137,48 +137,13 @@ export default function Dashboard() {
   const [parentAnswer, setParentAnswer] = useState("");
   const [gateError, setGateError] = useState(false);
 
-  // Redirection animée vers le marché
+  // Transition vidéo cinématique vers le marché (générée avec fal.ai)
   useEffect(() => {
     if (showMarketTransition) {
-      setTransitionPhase("raining");
-      setIsDoorOpen(false);
-      
-      // Sons
-      const timer1 = setTimeout(() => {
-        playSound("levelup");
-      }, 500);
-
-      const timer2 = setTimeout(() => {
-        playSound("win");
-      }, 3000);
-
-      // Phase 2 : Mouvement du chariot à 2.0s
-      const timerMove = setTimeout(() => {
-        setTransitionPhase("moving");
-      }, 2000);
-
-      // Ouverture de la porte à 3.2s
-      const timerDoor = setTimeout(() => {
-        setIsDoorOpen(true);
-      }, 3200);
-
-      // Phase 3 : Entrée dans la porte à 3.5s
-      const timerEnter = setTimeout(() => {
-        setTransitionPhase("entering");
-      }, 3500);
-
-      const timer3 = setTimeout(() => {
-        router.push("/market");
-      }, 4700);
-
-      return () => {
-        clearTimeout(timer1);
-        clearTimeout(timer2);
-        clearTimeout(timerMove);
-        clearTimeout(timerDoor);
-        clearTimeout(timerEnter);
-        clearTimeout(timer3);
-      };
+      const sound = setTimeout(() => playSound("win"), 300);
+      // Sécurité : si la vidéo ne se charge pas ou ne se termine pas, on redirige quand même
+      const fallback = setTimeout(() => { router.push("/market"); }, 8000);
+      return () => { clearTimeout(sound); clearTimeout(fallback); };
     }
   }, [showMarketTransition, router]);
 
@@ -643,132 +608,32 @@ export default function Dashboard() {
         </section>
       </main>
 
-      {/* 3. Transition animée vers le Marché (Chariot et pièces qui tombent) */}
+      {/* Transition cinematique vers le Marche (video generee avec fal.ai) */}
       <AnimatePresence>
         {showMarketTransition && (
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[100] bg-gradient-to-b from-sky-300 via-sky-200 to-indigo-100 flex flex-col items-center justify-between p-6 sm:p-10 select-none overflow-hidden"
+            className="fixed inset-0 z-[100] bg-black flex items-center justify-center select-none overflow-hidden"
           >
-            {/* Nuages en arrière-plan */}
-            <div className="absolute top-10 left-[10%] w-32 h-10 bg-white/70 rounded-full blur-[1px] animate-pulse" />
-            <div className="absolute top-20 right-[15%] w-48 h-12 bg-white/60 rounded-full blur-[1px]" />
-
-            {/* Titre de transition */}
-            <div className="text-center mt-12 z-10">
-              <motion.h2
-                initial={{ y: -30, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 0.3 }}
-                className="text-3xl sm:text-5xl font-black text-indigo-950 drop-shadow-md"
-              >
-                En route pour le Marché ! 🏰✨
-              </motion.h2>
-              <p className="text-sm sm:text-base text-indigo-900 font-bold mt-2">
-                Tes pièces tombent dans le chariot...
-              </p>
+            <video
+              src={asset("/videos/market-intro.mp4")}
+              autoPlay
+              muted
+              playsInline
+              onEnded={() => router.push("/market")}
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute bottom-6 left-0 right-0 text-center px-4">
+              <span className="text-white font-black text-base sm:text-xl drop-shadow-lg">En route pour l'echoppe magique... 🏰✨</span>
             </div>
-
-            {/* Pluie de pièces cascade qui tombent précisément dans la caisse du chariot à 30vw */}
-            {[...Array(15)].map((_, i) => {
-              const xOffset = (i % 3) * 15 - 15;
-              return (
-                <motion.div
-                  key={i}
-                  initial={{ y: -50, x: xOffset, opacity: 0, rotate: 0 }}
-                  animate={{
-                    y: ["-5vh", "30vh", "60vh", "calc(100vh - 170px)"],
-                    opacity: [0, 1, 1, 0],
-                    rotate: 360,
-                    scale: [0.8, 1.2, 1, 0.5]
-                  }}
-                  transition={{
-                    duration: 0.9,
-                    delay: i * 0.12 + 0.3,
-                    ease: "easeIn"
-                  }}
-                  className="absolute top-0 text-3xl sm:text-4xl z-25 pointer-events-none select-none"
-                  style={{ left: "calc(30vw + 116px)" }}
-                >
-                  🪙
-                </motion.div>
-              );
-            })}
-
-            {/* Unique groupe: Avatar pousseur + Chariot Médiéval */}
-            <motion.div
-              initial={{ x: "30vw", y: 0, scale: 1, opacity: 1 }}
-              animate={
-                transitionPhase === "raining"
-                  ? { x: "30vw", y: 0, scale: 1, opacity: 1 }
-                  : transitionPhase === "moving"
-                  ? { x: "65vw", y: 0, scale: 1, opacity: 1 }
-                  : { x: "74vw", y: 15, scale: 0.15, opacity: 0 } // Rentrent dans la porte et se fondent dans la lumière
-              }
-              transition={{
-                duration: transitionPhase === "raining" ? 0.2 : transitionPhase === "moving" ? 1.5 : 1.0,
-                ease: transitionPhase === "entering" ? "easeIn" : "easeInOut"
-              }}
-              className="absolute bottom-20 left-0 flex items-end gap-1.5 z-30 pointer-events-none origin-bottom-right"
+            <button
+              onClick={() => router.push("/market")}
+              className="absolute top-4 right-4 z-10 px-3 py-1.5 rounded-xl bg-white/20 hover:bg-white/30 text-white text-xs font-bold backdrop-blur-sm cursor-pointer"
             >
-              {/* L'avatar */}
-              <div className="shrink-0 select-none">
-                <AvatarRenderer config={profile.avatar} size={70} interactive={false} />
-              </div>
-              
-              {/* Chariot en bois d'époque marron */}
-              <MedievalCart 
-                coinCount={transitionPhase === "raining" ? 8 : 15} 
-                isMoving={transitionPhase === "moving" || transitionPhase === "entering"} 
-              />
-            </motion.div>
-
-            {/* Grande porte de marché sur la droite (Double battants qui s'ouvrent) */}
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.8, type: "spring" }}
-              className="absolute left-[78vw] bottom-20 flex flex-col items-center gap-3 z-10"
-            >
-              <div className="w-28 h-40 bg-amber-950 border-4 border-amber-600 rounded-t-full shadow-2xl relative overflow-hidden">
-                {/* Lumière dorée chaleureuse à l'intérieur */}
-                <motion.div
-                  animate={{ opacity: [0.5, 1, 0.5] }}
-                  transition={{ duration: 1.2, repeat: Infinity }}
-                  className="absolute inset-0 bg-gradient-to-r from-yellow-300 via-amber-400 to-yellow-300"
-                />
-                
-                {/* Battant gauche */}
-                <motion.div
-                  initial={{ x: 0 }}
-                  animate={isDoorOpen ? { x: "-100%", skewY: -5 } : { x: 0 }}
-                  transition={{ duration: 0.8, ease: "easeOut" }}
-                  className="absolute top-0 left-0 w-1/2 h-full bg-amber-800 border-r-2 border-amber-900 origin-left flex items-center justify-end pr-1 shadow-md"
-                  style={{ transformOrigin: "left center" }}
-                >
-                  <div className="w-3 h-3 rounded-full border border-amber-950 bg-stone-700 mr-1" />
-                </motion.div>
-
-                {/* Battant droit */}
-                <motion.div
-                  initial={{ x: 0 }}
-                  animate={isDoorOpen ? { x: "100%", skewY: 5 } : { x: 0 }}
-                  transition={{ duration: 0.8, ease: "easeOut" }}
-                  className="absolute top-0 right-0 w-1/2 h-full bg-amber-800 border-l-2 border-amber-900 origin-right flex items-center justify-start pl-1 shadow-md"
-                  style={{ transformOrigin: "right center" }}
-                >
-                  <div className="w-3 h-3 rounded-full border border-amber-950 bg-stone-700 ml-1" />
-                </motion.div>
-              </div>
-              <span className="bg-amber-950 text-amber-200 font-black px-3 py-1 rounded-full text-xs uppercase tracking-widest border-2 border-amber-600 shadow-md">
-                Porte du Marché 🏰
-              </span>
-            </motion.div>
-
-            {/* Sol d'herbe */}
-            <div className="absolute bottom-0 left-0 right-0 h-24 bg-emerald-500 border-t-4 border-emerald-600 z-0" />
+              Passer ▸
+            </button>
           </motion.div>
         )}
       </AnimatePresence>
