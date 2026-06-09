@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ExploraKids — Apprendre en s'amusant</title>
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="apple-touch-icon" href="logo.png" />
   <meta name="description" content="ExploraKids : une application éducative et ludique qui transforme l'apprentissage en aventure. 12 univers, des quiz, des badges, un arbre de connaissances et bien plus !" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -54,6 +56,7 @@
     .logo { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 1.4rem; }
     .logo .mark { width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center; font-size: 1.4rem;
       background: linear-gradient(135deg, var(--indigo), var(--pink)); box-shadow: var(--shadow); }
+    .logo .logo-img { width: 48px; height: 48px; object-fit: contain; display: block; }
     .logo .brand { background: linear-gradient(90deg, var(--indigo), var(--purple)); -webkit-background-clip: text; background-clip: text; color: transparent; }
     nav .links { display: flex; gap: 28px; align-items: center; }
     nav .links a { font-weight: 700; color: var(--muted); transition: color .2s; }
@@ -161,7 +164,7 @@
 <body>
   <header>
     <div class="container nav">
-      <a href="#top" class="logo"><span class="mark"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 2.4 L13.9 10.1 L21.6 12 L13.9 13.9 L12 21.6 L10.1 13.9 L2.4 12 L10.1 10.1 Z" fill="#ffffff"/><circle cx="12" cy="12" r="2" fill="#ffc53d"/></svg></span><span class="brand">ExploraKids</span></a>
+      <a href="#top" class="logo"><img src="logo.png" class="logo-img" alt="Logo ExploraKids" /><span class="brand">ExploraKids</span></a>
       <nav class="links">
         <a href="#features">Fonctionnalités</a>
         <a href="#universes">Univers</a>
@@ -312,7 +315,7 @@
 
   <footer>
     <div class="container">
-      <div class="logo"><span class="mark"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 2.4 L13.9 10.1 L21.6 12 L13.9 13.9 L12 21.6 L10.1 13.9 L2.4 12 L10.1 10.1 Z" fill="#ffffff"/><circle cx="12" cy="12" r="2" fill="#ffc53d"/></svg></span><span class="brand">ExploraKids</span></div>
+      <div class="logo"><img src="logo.png" class="logo-img" alt="Logo ExploraKids" /><span class="brand">ExploraKids</span></div>
       <p>Application éducative et ludique — Projet de stage.</p>
       <p style="margin-top:6px; font-size:.85rem;">© 2026 ExploraKids. Fait avec ❤️ pour apprendre en s'amusant.</p>
     </div>
