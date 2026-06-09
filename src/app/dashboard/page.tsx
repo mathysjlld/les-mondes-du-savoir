@@ -543,6 +543,23 @@ export default function Dashboard() {
                   }
                 }
 
+                // Univers de base : verrouillé tant que le niveau requis n'est pas atteint
+                if (!univ.secret && univ.unlock && univ.unlock.type === "level" && currentLevel < univ.unlock.value) {
+                  return (
+                    <button
+                      key={univ.id}
+                      onClick={() => playSound("click")}
+                      className="p-4 sm:p-5 rounded-3xl border-4 border-dashed border-slate-200 bg-slate-100/70 flex flex-col items-center justify-center text-center cursor-not-allowed relative overflow-hidden min-h-[150px]"
+                    >
+                      <span className="text-4xl mb-1 grayscale opacity-50">{univ.emoji}</span>
+                      <span className="font-black text-slate-500">{univ.name}</span>
+                      <span className="flex items-center gap-1 text-[11px] font-bold text-slate-500 mt-1">
+                        <span>🔒</span> Débloqué au niveau {univ.unlock.value}
+                      </span>
+                    </button>
+                  );
+                }
+
                 // Mapper les couleurs Tailwind
                 const colorMap: Record<string, string> = {
                   amber: "from-amber-400/10 to-amber-500/20 hover:border-amber-400 border-amber-100 text-amber-800 focus:ring-amber-300",
@@ -566,7 +583,9 @@ export default function Dashboard() {
                   pink: "bg-pink-500 text-white",
                 };
 
-                const currentStyle = colorMap[univ.themeColor] || colorMap.amber;
+                // Le monde ultime "Le Temple des Sages" a un look légendaire distinct (or + violet)
+                const legendaryStyle = "from-amber-200/40 to-fuchsia-300/40 hover:border-amber-400 border-amber-300 text-fuchsia-900 focus:ring-amber-300 ring-2 ring-amber-300/60 shadow-lg shadow-amber-200/40";
+                const currentStyle = univ.id === "temple" ? legendaryStyle : (colorMap[univ.themeColor] || colorMap.amber);
                 const badgeColor = badgesColors[univ.themeColor] || "bg-sky-500";
 
                 return (

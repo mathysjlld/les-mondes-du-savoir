@@ -21008,6 +21008,10 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         }
       ]
+    },
+    "unlock": {
+      "type": "level",
+      "value": 2
     }
   },
   "maths": {
@@ -25587,6 +25591,10 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         }
       ]
+    },
+    "unlock": {
+      "type": "level",
+      "value": 2
     }
   },
   "geography": {
@@ -30896,6 +30904,10 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         }
       ]
+    },
+    "unlock": {
+      "type": "level",
+      "value": 2
     }
   },
   "french": {
@@ -36205,6 +36217,10 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         }
       ]
+    },
+    "unlock": {
+      "type": "level",
+      "value": 3
     }
   },
   "arts": {
@@ -41284,6 +41300,10 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         }
       ]
+    },
+    "unlock": {
+      "type": "level",
+      "value": 3
     }
   },
   "computer": {
@@ -46673,6 +46693,10 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         }
       ]
+    },
+    "unlock": {
+      "type": "level",
+      "value": 3
     }
   },
   "survival": {
@@ -51912,6 +51936,10 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         }
       ]
+    },
+    "unlock": {
+      "type": "level",
+      "value": 4
     }
   },
   "mythology": {
@@ -62025,6 +62053,10 @@ export const UNIVERSES: Record<string, Universe> = {
           ]
         }
       ]
+    },
+    "unlock": {
+      "type": "level",
+      "value": 4
     }
   },
   "temple": {
