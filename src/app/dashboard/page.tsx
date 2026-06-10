@@ -114,6 +114,7 @@ export default function Dashboard() {
     isLoaded,
     logout,
     changeAccountCode,
+    addCrystals,
     buyAccessory,
     equipAccessory,
     resetProgress,
@@ -292,6 +293,12 @@ export default function Dashboard() {
               className="px-3 py-1.5 rounded-xl bg-white/90 hover:bg-white text-violet-800 font-black text-[11px] sm:text-xs cursor-pointer transition-colors border border-violet-200 shadow"
             >
               🔮 Tester Mythologie (thème secret) →
+            </button>
+            <button
+              onClick={() => { playSound("correct"); addCrystals(5); }}
+              className="px-3 py-1.5 rounded-xl bg-white/90 hover:bg-white text-pink-800 font-black text-[11px] sm:text-xs cursor-pointer transition-colors border border-pink-200 shadow"
+            >
+              💠 Débloquer le Temple (+5 cristaux)
             </button>
           </div>
         </motion.div>
