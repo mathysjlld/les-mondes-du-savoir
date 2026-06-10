@@ -450,24 +450,25 @@ export default function Market() {
     >
       
       {/* Barre supérieure */}
-      <header className="w-full flex items-center justify-between p-3 sm:p-4 bg-stone-900/90 backdrop-blur-md rounded-2xl border-b-4 border-amber-800 shadow-md">
+      <header className="w-full flex items-center justify-between gap-2 p-3 sm:p-4 bg-stone-900/90 backdrop-blur-md rounded-2xl border-b-4 border-amber-800 shadow-md">
         <button
           onClick={() => {
             playSound("click");
             router.push("/dashboard");
           }}
-          className="py-2 px-3 sm:py-2.5 sm:px-4 rounded-2xl bg-amber-950 hover:bg-amber-900 text-amber-100 font-bold text-xs sm:text-sm flex items-center gap-1 cursor-pointer transition-all border-b-4 border-amber-800"
+          className="shrink-0 py-2 px-3 sm:py-2.5 sm:px-4 rounded-2xl bg-amber-950 hover:bg-amber-900 text-amber-100 font-bold text-xs sm:text-sm flex items-center gap-1 cursor-pointer transition-all border-b-4 border-amber-800"
         >
           <ArrowLeft size={16} />
-          <span>Retour</span>
+          <span className="hidden min-[400px]:inline">Retour</span>
         </button>
 
-        <h2 className="font-black text-base sm:text-2xl text-amber-100 flex items-center gap-1.5 select-none">
-          <span>Échoppe Médiévale 🏰</span>
+        <h2 className="flex-1 min-w-0 truncate text-center font-black text-sm sm:text-2xl text-amber-100 select-none">
+          <span className="min-[400px]:hidden">Échoppe 🏰</span>
+          <span className="hidden min-[400px]:inline">Échoppe Médiévale 🏰</span>
         </h2>
 
         {/* Portefeuille */}
-        <div className="flex items-center gap-3">
+        <div className="shrink-0 flex items-center gap-1.5 sm:gap-3">
           <div className="flex items-center gap-1 bg-amber-950 border-2 border-amber-800 px-3 py-1 rounded-full text-xs font-black text-amber-200 shadow-inner">
             <span>🪙 {profile.coins}</span>
           </div>

@@ -70,6 +70,16 @@
     .btn-primary:hover { filter: brightness(1.07); }
     .btn-ghost { background: #fff; color: var(--indigo); box-shadow: var(--shadow); }
     @media (max-width: 820px) { nav .links { display: none; } }
+    /* Très petites largeurs (ex. écran de couverture Galaxy Z Fold) : éviter le tassement et le débordement */
+    @media (max-width: 400px) {
+      .container { padding: 0 14px; }
+      .nav { height: 62px; }
+      .logo { font-size: 1.1rem; gap: 6px; }
+      .logo .logo-img { width: 36px; height: 36px; }
+      .btn { padding: 9px 13px; font-size: .82rem; }
+      section { padding: 52px 0; }
+      h1 { font-size: 26px; }
+    }
 
     /* Hero */
     .hero { position: relative; padding: 90px 0 70px; overflow: hidden; }

@@ -43,6 +43,7 @@ export interface UserProfile {
 
 interface AppContextType {
   profile: UserProfile | null;
+  isLoaded: boolean;
   onboardUser: (nickname: string, ageGroup: "facile" | "difficile", avatar: AvatarConfig, parentCode: string) => void;
   addXp: (amount: number) => { leveledUp: boolean; currentLevel: number; newLevel: number };
   addCoins: (amount: number) => void;
@@ -789,6 +790,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     <AppContext.Provider
       value={{
         profile,
+        isLoaded,
         onboardUser,
         addXp,
         addCoins,

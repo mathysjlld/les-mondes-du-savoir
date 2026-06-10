@@ -163,11 +163,6 @@ export default function Home() {
 
       </section>
 
-      {/* Footer */}
-      <footer className="text-slate-500 font-bold text-xs select-none py-4">
-        © 2026 ExploraKids — Développé pour éveiller la curiosité des enfants
-      </footer>
-
     </div>
   );
 }

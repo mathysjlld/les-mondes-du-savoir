@@ -111,6 +111,7 @@ export default function Dashboard() {
   const router = useRouter();
   const {
     profile,
+    isLoaded,
     buyAccessory,
     equipAccessory,
     resetProgress,
@@ -171,12 +172,13 @@ export default function Dashboard() {
   // Réglages parents
   const [showTimeLimitAlert, setShowTimeLimitAlert] = useState(false);
 
-  // Rediriger vers onboarding si pas de profil
+  // Rediriger vers l'accueil si pas de profil — seulement une fois le chargement terminé
+  // (sinon un accès direct / rafraîchissement sur /dashboard rebondit vers l'accueil).
   useEffect(() => {
-    if (!profile) {
+    if (isLoaded && !profile) {
       router.push("/");
     }
-  }, [profile, router]);
+  }, [isLoaded, profile, router]);
 
   // Suivi du temps d'écran (toutes les 10 secondes)
   useEffect(() => {
