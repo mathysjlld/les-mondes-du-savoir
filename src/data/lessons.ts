@@ -62063,7 +62063,7 @@ export const UNIVERSES: Record<string, Universe> = {
     "id": "temple",
     "name": "Le Temple des Sages",
     "emoji": "🏯",
-    "description": "Le monde ultime, réservé aux plus grands explorateurs ! Réunis des cristaux pour entrer.",
+    "description": "Le monde ultime, réservé aux plus grands explorateurs : sagesse, grands penseurs, énigmes et mystères du monde. Réunis des cristaux pour entrer.",
     "themeColor": "pink",
     "secret": true,
     "unlock": {
@@ -62073,430 +62073,859 @@ export const UNIVERSES: Record<string, Universe> = {
     "lessons": {
       "facile": [
         {
-          "id": "temple-gen-0",
-          "title": "Le grand quiz de culture générale",
-          "emoji": "🌍",
+          "id": "temple-sage-0",
+          "title": "Les grands penseurs",
+          "emoji": "🦉",
           "themeColor": "pink",
           "badgeId": "temple-badge-0",
-          "badgeName": "Sage Érudit",
+          "badgeName": "Disciple des Sages",
           "badgeEmoji": "🦉",
           "cards": [
             {
-              "title": "Le monde et sa géographie",
-              "text": "La Terre est divisée en 7 continents et compte près de 200 pays. L'océan Pacifique est le plus grand océan du monde, couvrant presque la moitié de la surface des océans. Le mont Everest, en Asie, est le point le plus haut de la planète avec 8 849 mètres d'altitude.",
-              "emoji": "🗺️"
-            },
-            {
-              "title": "L'histoire à travers les âges",
-              "text": "Les grandes civilisations anciennes, comme l'Égypte, la Grèce et Rome, ont façonné notre monde moderne. La Révolution française de 1789 a changé l'Europe en défendant les idées de liberté, d'égalité et de fraternité. Les deux guerres mondiales du XXe siècle ont profondément marqué l'humanité.",
+              "title": "Socrate, le maître du questionnement",
+              "text": "Socrate, philosophe de la Grèce antique (Ve siècle av. J.-C.), n'écrivait rien : il discutait sur les places d'Athènes. Sa célèbre phrase « Je sais que je ne sais rien » rappelle que reconnaître son ignorance est le début de la sagesse. Il posait sans cesse des questions pour aider les autres à réfléchir par eux-mêmes.",
               "emoji": "🏛️"
             },
             {
-              "title": "Les sciences et la nature",
-              "text": "Le système solaire comprend 8 planètes qui tournent autour du Soleil, notre étoile. Les êtres vivants sont classés en grands groupes : animaux, végétaux, champignons et micro-organismes. La photosynthèse est le processus par lequel les plantes fabriquent leur nourriture grâce à la lumière du soleil.",
-              "emoji": "🔬"
+              "title": "Confucius et la règle d'or",
+              "text": "Confucius, sage chinois (VIe siècle av. J.-C.), enseignait le respect, l'harmonie et l'étude. On lui attribue la « règle d'or » : « Ne fais pas à autrui ce que tu ne voudrais pas qu'on te fasse. » Ses idées ont influencé toute l'Asie pendant 2 500 ans.",
+              "emoji": "☯️"
             },
             {
-              "title": "L'art et la culture",
-              "text": "La Joconde, peinte par Léonard de Vinci au début du XVIe siècle, est le tableau le plus célèbre du monde. La musique classique européenne a été dominée par des compositeurs comme Mozart, Beethoven et Bach. La littérature mondiale regorge de chefs-d'œuvre, des fables de La Fontaine aux aventures de Jules Verne.",
-              "emoji": "🎨"
+              "title": "Hypatie, savante d'Alexandrie",
+              "text": "Hypatie (IVe siècle) était une mathématicienne, astronome et philosophe d'Alexandrie, en Égypte. Femme de science rare à son époque, elle enseignait la géométrie et l'astronomie, et reste aujourd'hui un symbole de la curiosité et du savoir.",
+              "emoji": "🔭"
+            },
+            {
+              "title": "Qu'est-ce que la philosophie ?",
+              "text": "Le mot « philosophie » vient du grec et signifie « amour de la sagesse ». Philosopher, c'est se poser de grandes questions (Qu'est-ce que le bonheur ? Qu'est-ce qui est juste ?) et chercher des réponses par la raison, en argumentant plutôt qu'en se disputant.",
+              "emoji": "💭"
             }
           ],
           "quiz": [
             {
-              "question": "Quelle est la capitale de la France ?",
+              "question": "Que signifie le mot « philosophie » ?",
               "options": [
-                "Lyon",
-                "Marseille",
-                "Paris",
-                "Bordeaux"
+                "L'amour de la sagesse",
+                "La peur de l'inconnu",
+                "L'art de la guerre",
+                "L'étude des étoiles"
               ],
-              "correctAnswer": "Paris",
+              "correctAnswer": "L'amour de la sagesse",
               "isSpecial": false
             },
             {
-              "question": "Combien de planètes compose notre système solaire ?",
+              "question": "Quelle phrase célèbre attribue-t-on à Socrate ?",
               "options": [
-                "6",
-                "7",
-                "8",
-                "9"
+                "Je pense donc je suis",
+                "Je sais que je ne sais rien",
+                "Connais-toi toi-même",
+                "Tout coule"
               ],
-              "correctAnswer": "8",
+              "correctAnswer": "Je sais que je ne sais rien",
               "isSpecial": false
             },
             {
-              "question": "Quel peintre a réalisé la Joconde ?",
+              "question": "De quel pays venait le sage Confucius ?",
               "options": [
-                "Michel-Ange",
-                "Léonard de Vinci",
-                "Raphaël",
-                "Botticelli"
+                "La Grèce",
+                "L'Égypte",
+                "La Chine",
+                "L'Inde"
               ],
-              "correctAnswer": "Léonard de Vinci",
+              "correctAnswer": "La Chine",
               "isSpecial": false
             },
             {
-              "question": "Quel est le plus grand océan du monde ?",
+              "question": "Comment appelle-t-on la maxime « Ne fais pas à autrui ce que tu ne voudrais pas qu'on te fasse » ?",
               "options": [
-                "Océan Atlantique",
-                "Océan Indien",
-                "Océan Arctique",
-                "Océan Pacifique"
+                "La règle d'or",
+                "La loi du talion",
+                "Le contrat social",
+                "Le serment"
               ],
-              "correctAnswer": "Océan Pacifique",
+              "correctAnswer": "La règle d'or",
               "isSpecial": false
             },
             {
-              "question": "En quelle année a débuté la Révolution française ?",
+              "question": "De quelle ville Hypatie était-elle la savante ?",
               "options": [
-                "1769",
-                "1789",
-                "1799",
-                "1815"
+                "Athènes",
+                "Rome",
+                "Alexandrie",
+                "Babylone"
               ],
-              "correctAnswer": "1789",
+              "correctAnswer": "Alexandrie",
               "isSpecial": false
             },
             {
-              "question": "Quel est le continent le plus grand du monde ?",
+              "question": "Comment Socrate transmettait-il sa pensée ?",
               "options": [
-                "Afrique",
-                "Amérique",
-                "Asie",
-                "Europe"
+                "En écrivant des livres",
+                "En discutant et en posant des questions",
+                "En peignant des fresques",
+                "En chantant"
               ],
-              "correctAnswer": "Asie",
+              "correctAnswer": "En discutant et en posant des questions",
               "isSpecial": false
             },
             {
-              "question": "Comment s'appelle le processus par lequel les plantes fabriquent leur nourriture grâce à la lumière ?",
+              "question": "À quelle époque vivait Socrate ?",
               "options": [
-                "La respiration",
-                "La fermentation",
-                "La photosynthèse",
-                "La germination"
+                "Le Moyen Âge",
+                "L'Antiquité grecque",
+                "La Renaissance",
+                "L'époque moderne"
               ],
-              "correctAnswer": "La photosynthèse",
+              "correctAnswer": "L'Antiquité grecque",
               "isSpecial": false
             },
             {
-              "question": "Quel célèbre compositeur était sourd lorsqu'il a composé sa 9e Symphonie ?",
+              "question": "Quelles matières Hypatie enseignait-elle ?",
               "options": [
-                "Mozart",
-                "Bach",
-                "Beethoven",
-                "Chopin"
+                "La musique et la danse",
+                "Les mathématiques et l'astronomie",
+                "La médecine et la chimie",
+                "Le droit et la politique"
               ],
-              "correctAnswer": "Beethoven",
+              "correctAnswer": "Les mathématiques et l'astronomie",
               "isSpecial": false
             },
             {
-              "question": "Quelle est la montagne la plus haute du monde ?",
+              "question": "Selon Socrate, reconnaître qu'on ne sait pas quelque chose est…",
               "options": [
-                "Le K2",
-                "Le Kilimandjaro",
-                "Le Mont Blanc",
-                "Le mont Everest"
+                "une honte",
+                "le début de la sagesse",
+                "une perte de temps",
+                "un signe de faiblesse"
               ],
-              "correctAnswer": "Le mont Everest",
+              "correctAnswer": "le début de la sagesse",
               "isSpecial": false
             },
             {
-              "question": "Un marchand achète un objet 80 euros et le revend 100 euros. Quel est son bénéfice en pourcentage ?",
+              "question": "Un sage déclare : « Plus j'apprends, plus je mesure tout ce que j'ignore. » Que veut-il dire ?",
               "options": [
-                "15 %",
-                "20 %",
-                "25 %",
-                "30 %"
+                "Qu'il vaut mieux ne rien apprendre",
+                "Que plus on apprend, plus on découvre l'étendue de ce qui reste à apprendre",
+                "Qu'il sait déjà tout",
+                "Que le savoir est inutile"
               ],
-              "correctAnswer": "25 %",
+              "correctAnswer": "Que plus on apprend, plus on découvre l'étendue de ce qui reste à apprendre",
               "isSpecial": true
             }
           ]
         },
         {
-          "id": "temple-gen-1",
-          "title": "Énigmes et Logique",
-          "emoji": "🧩",
+          "id": "temple-sage-1",
+          "title": "Proverbes et sagesses du monde",
+          "emoji": "🌍",
           "themeColor": "pink",
           "badgeId": "temple-badge-1",
-          "badgeName": "Maître des Énigmes",
-          "badgeEmoji": "🦉",
+          "badgeName": "Gardien des Proverbes",
+          "badgeEmoji": "📜",
           "cards": [
             {
-              "title": "Les suites logiques",
-              "text": "Une suite logique est une série de nombres ou de formes qui suivent une règle cachée. Pour trouver la règle, observe les écarts entre les termes : addition, multiplication ou alternance de motifs.",
-              "emoji": "🔢"
-            },
-            {
-              "title": "Le raisonnement par déduction",
-              "text": "Déduire, c'est tirer une conclusion certaine à partir d'indices. Si tous les chats ont quatre pattes et que Félix est un chat, alors Félix a forcément quatre pattes. Cette méthode s'appelle le syllogisme.",
-              "emoji": "🕵️"
-            },
-            {
-              "title": "Les devinettes et jeux de mots",
-              "text": "Certaines énigmes jouent sur le sens des mots ou les apparences. Il faut lire attentivement chaque mot sans se laisser piéger par les suppositions. Parfois la réponse évidente est un piège.",
+              "title": "Qu'est-ce qu'un proverbe ?",
+              "text": "Un proverbe est une courte phrase populaire qui transmet une leçon de sagesse, répétée de génération en génération. Par exemple, « Petit à petit, l'oiseau fait son nid » signifie qu'avec de la patience et des efforts réguliers, on finit par réussir.",
               "emoji": "💬"
             },
             {
-              "title": "La logique des probabilités",
-              "text": "La logique aide à raisonner sur des situations incertaines. Si un sac contient 3 billes rouges et 1 bleue, il est plus probable de tirer une rouge. Réfléchir aux possibilités aide à prendre de meilleures décisions.",
-              "emoji": "🎲"
+              "title": "Sagesses d'Afrique",
+              "text": "Beaucoup de proverbes africains valorisent l'entraide et la communauté. « Seul on va plus vite, ensemble on va plus loin » rappelle l'importance de coopérer. « Il faut tout un village pour élever un enfant » souligne que chacun a un rôle dans l'éducation.",
+              "emoji": "🌍"
+            },
+            {
+              "title": "Sagesses d'Asie",
+              "text": "« Un voyage de mille lieues commence par un premier pas », attribué à Lao Tseu, enseigne que les grands projets débutent par une petite action. Le proverbe japonais « Tombe sept fois, relève-toi huit » encourage à persévérer malgré les échecs.",
+              "emoji": "🏯"
+            },
+            {
+              "title": "Comprendre le sens caché",
+              "text": "Beaucoup de proverbes sont imagés : ils ne parlent pas vraiment d'oiseaux ou de voyages, mais cachent une leçon. « L'habit ne fait pas le moine » signifie qu'il ne faut pas juger les gens d'après leur apparence.",
+              "emoji": "🗝️"
             }
           ],
           "quiz": [
             {
-              "question": "Quelle est la suite logique : 2, 4, 8, 16, ... ?",
+              "question": "Qu'est-ce qu'un proverbe ?",
               "options": [
-                "24",
-                "32",
-                "28",
-                "20"
+                "Une chanson moderne",
+                "Une courte phrase populaire qui transmet une leçon",
+                "Une loi écrite",
+                "Une devinette sans réponse"
               ],
-              "correctAnswer": "32",
+              "correctAnswer": "Une courte phrase populaire qui transmet une leçon",
               "isSpecial": false
             },
             {
-              "question": "J'ai des aiguilles mais je ne couds pas. J'ai un cadran mais je ne lis pas. Qu'est-ce que je suis ?",
+              "question": "Que veut dire « Petit à petit, l'oiseau fait son nid » ?",
               "options": [
-                "Une boussole",
-                "Une montre",
-                "Un thermomètre",
-                "Un cadre photo"
+                "Les oiseaux sont paresseux",
+                "Avec patience et efforts réguliers, on finit par réussir",
+                "Il faut se dépêcher",
+                "Mieux vaut rester seul"
               ],
-              "correctAnswer": "Une montre",
+              "correctAnswer": "Avec patience et efforts réguliers, on finit par réussir",
               "isSpecial": false
             },
             {
-              "question": "Si 5 machines fabriquent 5 jouets en 5 minutes, combien faut-il de machines pour fabriquer 100 jouets en 100 minutes ?",
+              "question": "« Un voyage de mille lieues commence par un premier pas » signifie…",
               "options": [
-                "100 machines",
-                "50 machines",
-                "5 machines",
-                "10 machines"
+                "Qu'il ne faut jamais voyager",
+                "Que les grands projets débutent par une petite action",
+                "Qu'il faut courir vite",
+                "Qu'on n'arrive jamais au bout"
               ],
-              "correctAnswer": "5 machines",
+              "correctAnswer": "Que les grands projets débutent par une petite action",
               "isSpecial": false
             },
             {
-              "question": "Quelle lettre complète la suite : A, C, E, G, ... ?",
+              "question": "Le proverbe japonais « Tombe sept fois, relève-toi huit » parle de…",
               "options": [
-                "H",
-                "I",
-                "J",
-                "K"
+                "la chance",
+                "la persévérance",
+                "la richesse",
+                "la colère"
               ],
-              "correctAnswer": "I",
+              "correctAnswer": "la persévérance",
               "isSpecial": false
             },
             {
-              "question": "Un père a 3 fils. Le premier s'appelle Jean, le deuxième s'appelle Pierre. Comment s'appelle le troisième ?",
+              "question": "« Il faut tout un village pour élever un enfant » met en avant…",
               "options": [
-                "Paul",
-                "Jacques",
-                "Le troisième",
-                "On ne peut pas savoir"
+                "l'argent",
+                "l'importance de la communauté",
+                "la solitude",
+                "la compétition"
               ],
-              "correctAnswer": "On ne peut pas savoir",
+              "correctAnswer": "l'importance de la communauté",
               "isSpecial": false
             },
             {
-              "question": "Dans une famille, il y a 2 grands-parents, 2 parents et 4 enfants. Combien de paires de jambes y a-t-il en tout ?",
+              "question": "Que signifie « L'habit ne fait pas le moine » ?",
               "options": [
-                "8 paires",
-                "16 paires",
-                "14 paires",
-                "12 paires"
+                "Il faut bien s'habiller",
+                "Il ne faut pas juger les gens sur leur apparence",
+                "Les moines sont élégants",
+                "Les vêtements coûtent cher"
               ],
-              "correctAnswer": "8 paires",
+              "correctAnswer": "Il ne faut pas juger les gens sur leur apparence",
               "isSpecial": false
             },
             {
-              "question": "Quelle est la suite : 1, 1, 2, 3, 5, 8, ... ?",
+              "question": "« Seul on va plus vite, ensemble on va plus loin » valorise…",
               "options": [
-                "11",
-                "12",
-                "13",
-                "16"
+                "la vitesse",
+                "l'entraide",
+                "le silence",
+                "la prudence"
               ],
-              "correctAnswer": "13",
+              "correctAnswer": "l'entraide",
               "isSpecial": false
             },
             {
-              "question": "Je suis léger comme une plume mais même l'homme le plus fort du monde ne peut me tenir plus d'une minute. Qu'est-ce que je suis ?",
+              "question": "Comment les proverbes se transmettent-ils surtout ?",
               "options": [
-                "Un secret",
-                "Le vent",
-                "Le souffle",
-                "La fumée"
+                "Par la télévision",
+                "De génération en génération",
+                "Par les journaux",
+                "Par les ordinateurs"
               ],
-              "correctAnswer": "Le souffle",
+              "correctAnswer": "De génération en génération",
               "isSpecial": false
             },
             {
-              "question": "Si lundi vient deux jours après vendredi dans un calendrier cyclique, quel jour vient deux jours après mardi ?",
+              "question": "Un proverbe « imagé », c'est un proverbe qui…",
               "options": [
-                "Jeudi",
-                "Mercredi",
-                "Vendredi",
-                "Samedi"
+                "contient toujours un dessin",
+                "donne une leçon sans parler littéralement de ce qu'il décrit",
+                "est très long",
+                "n'a aucun sens"
               ],
-              "correctAnswer": "Jeudi",
+              "correctAnswer": "donne une leçon sans parler littéralement de ce qu'il décrit",
               "isSpecial": false
             },
             {
-              "question": "Un marchand a 3 boites : une contient des pommes, une des oranges, et une contient les deux. Les étiquettes sont toutes mal placées. En prenant UN seul fruit dans UNE seule boite, comment identifier toutes les boites ?",
+              "question": "« La nuit, tous les chats sont gris. » Que veut dire ce proverbe ?",
               "options": [
-                "Piocher dans la boite etiquetee Pommes+Oranges",
-                "Piocher dans la boite etiquetee Pommes",
-                "Piocher dans la boite etiquetee Oranges",
-                "Il faut piocher dans deux boites"
+                "Les chats détestent la nuit",
+                "Dans l'obscurité ou le flou, on distingue mal les différences entre les choses",
+                "Il faut dormir la nuit",
+                "Les chats gris sont rares"
               ],
-              "correctAnswer": "Piocher dans la boite etiquetee Pommes+Oranges",
+              "correctAnswer": "Dans l'obscurité ou le flou, on distingue mal les différences entre les choses",
               "isSpecial": true
             }
           ]
         },
         {
-          "id": "temple-gen-2",
-          "title": "Inventions et grandes découvertes",
-          "emoji": "💡",
+          "id": "temple-sage-2",
+          "title": "Les énigmes des sages",
+          "emoji": "🧩",
           "themeColor": "pink",
           "badgeId": "temple-badge-2",
-          "badgeName": "Génie Inventif",
-          "badgeEmoji": "🏆",
+          "badgeName": "Briseur d'Énigmes",
+          "badgeEmoji": "🗝️",
           "cards": [
             {
-              "title": "L'imprimerie change le monde",
-              "text": "En 1450, Johannes Gutenberg invente la presse à imprimer en Europe. Grâce à cette machine, on peut reproduire des livres rapidement et en grande quantité. Cette invention révolutionne la diffusion du savoir et rend les livres accessibles à bien plus de gens.",
-              "emoji": "📖"
+              "title": "L'énigme du Sphinx",
+              "text": "Dans la mythologie grecque, le Sphinx posait une énigme aux voyageurs : « Quel être marche à quatre pattes le matin, à deux le midi et à trois le soir ? » Œdipe trouva la réponse : l'être humain (bébé à quatre pattes, adulte sur ses deux jambes, vieillard avec une canne).",
+              "emoji": "🦁"
             },
             {
-              "title": "L'électricité s'invite dans nos vies",
-              "text": "Thomas Edison invente l'ampoule électrique fonctionnelle en 1879, permettant d'éclairer les maisons sans flamme ni danger. Quelques années plus tôt, Alessandro Volta avait inventé la première pile électrique. Ces deux inventions ont transformé notre quotidien pour toujours.",
+              "title": "Qu'est-ce qu'une énigme ?",
+              "text": "Une énigme est une question piège qui demande de réfléchir autrement. La solution est souvent cachée dans les mots eux-mêmes. Les sages s'entraînaient à résoudre des énigmes pour aiguiser leur logique et leur imagination.",
+              "emoji": "🧩"
+            },
+            {
+              "title": "Raisonner pas à pas",
+              "text": "Pour résoudre une énigme, il faut lire attentivement, repérer les indices et éliminer les réponses impossibles. Raisonner, c'est avancer d'une certitude à une autre, comme on monte un escalier marche après marche.",
+              "emoji": "🪜"
+            },
+            {
+              "title": "Les devinettes classiques",
+              "text": "« Plus on en enlève, plus il devient grand. Qu'est-ce que c'est ? » Réponse : un trou ! Les devinettes jouent souvent sur le double sens des mots et nous apprennent à ne pas nous arrêter à la réponse la plus évidente.",
               "emoji": "💡"
-            },
-            {
-              "title": "Conquérir les airs",
-              "text": "En 1903, les frères Wright réussissent le premier vol motorisé de l'histoire à Kitty Hawk, aux États-Unis. Leur avion vole pendant seulement 12 secondes, mais cette prouesse ouvre la voie à l'aviation moderne. Moins de 70 ans plus tard, l'homme marche sur la Lune.",
-              "emoji": "✈️"
-            },
-            {
-              "title": "La médecine fait des bonds en avant",
-              "text": "En 1928, Alexander Fleming découvre la pénicilline, le premier antibiotique, en observant qu'une moisissure tuait des bactéries. Cette découverte a sauvé des millions de vies. Plus tôt, en 1796, Edward Jenner avait mis au point le premier vaccin contre la variole.",
-              "emoji": "🔬"
             }
           ],
           "quiz": [
             {
-              "question": "Qui a inventé la presse à imprimer en Europe vers 1450 ?",
+              "question": "Quelle est la réponse à l'énigme du Sphinx ?",
               "options": [
-                "Leonardo da Vinci",
-                "Johannes Gutenberg",
-                "Galilée",
-                "Isaac Newton"
+                "Le lion",
+                "L'être humain",
+                "Le temps",
+                "Le soleil"
               ],
-              "correctAnswer": "Johannes Gutenberg",
+              "correctAnswer": "L'être humain",
               "isSpecial": false
             },
             {
-              "question": "En quelle année les frères Wright ont-ils réalisé le premier vol motorisé ?",
+              "question": "Qui a résolu l'énigme du Sphinx ?",
               "options": [
-                "1887",
-                "1895",
-                "1903",
-                "1912"
+                "Hercule",
+                "Ulysse",
+                "Œdipe",
+                "Persée"
               ],
-              "correctAnswer": "1903",
+              "correctAnswer": "Œdipe",
               "isSpecial": false
             },
             {
-              "question": "Alexander Fleming a découvert la pénicilline en observant quoi sur ses boîtes de culture ?",
+              "question": "« Plus on en enlève, plus il devient grand. » Qu'est-ce que c'est ?",
               "options": [
-                "Un virus inconnu",
-                "Une moisissure qui tuait des bactéries",
-                "Des cristaux de sel",
-                "Une réaction chimique colorée"
+                "Un trou",
+                "Un ballon",
+                "Un gâteau",
+                "Une montagne"
               ],
-              "correctAnswer": "Une moisissure qui tuait des bactéries",
+              "correctAnswer": "Un trou",
               "isSpecial": false
             },
             {
-              "question": "Quelle invention de Thomas Edison, mise au point en 1879, a permis d'éclairer les maisons sans flamme ?",
+              "question": "Pour résoudre une énigme, il faut surtout…",
               "options": [
-                "Le moteur à vapeur",
-                "Le téléphone",
-                "L'ampoule électrique",
-                "La dynamo"
+                "répondre le plus vite possible",
+                "lire attentivement et repérer les indices",
+                "deviner au hasard",
+                "demander la réponse"
               ],
-              "correctAnswer": "L'ampoule électrique",
+              "correctAnswer": "lire attentivement et repérer les indices",
               "isSpecial": false
             },
             {
-              "question": "Qui a inventé le téléphone en 1876 ?",
+              "question": "Léa est plus grande que Tom, et Tom est plus grand que Sam. Qui est le plus petit ?",
               "options": [
-                "Nikola Tesla",
-                "Alexander Graham Bell",
-                "Guglielmo Marconi",
-                "James Watt"
+                "Léa",
+                "Tom",
+                "Sam",
+                "On ne peut pas savoir"
               ],
-              "correctAnswer": "Alexander Graham Bell",
+              "correctAnswer": "Sam",
               "isSpecial": false
             },
             {
-              "question": "En quelle année Christophe Colomb a-t-il atteint les Amériques lors de sa première traversée de l'Atlantique ?",
+              "question": "Combien de mois de l'année comptent (au moins) 28 jours ?",
               "options": [
-                "1488",
-                "1492",
-                "1498",
-                "1510"
+                "Un seul (février)",
+                "Tous les mois",
+                "Six mois",
+                "Aucun"
               ],
-              "correctAnswer": "1492",
+              "correctAnswer": "Tous les mois",
               "isSpecial": false
             },
             {
-              "question": "Qui a inventé la machine à vapeur pratique qui a lancé la révolution industrielle au XVIIIe siècle ?",
+              "question": "« Je parle sans bouche et j'entends sans oreilles. Qui suis-je ? »",
               "options": [
-                "George Stephenson",
-                "James Watt",
-                "Michael Faraday",
-                "Humphry Davy"
+                "Le vent",
+                "L'écho",
+                "Le rêve",
+                "Le miroir"
               ],
-              "correctAnswer": "James Watt",
+              "correctAnswer": "L'écho",
               "isSpecial": false
             },
             {
-              "question": "Quel scientifique a découvert la gravitation universelle, inspiré selon la légende par une pomme qui tombait ?",
+              "question": "Un berger a 17 moutons. Tous sauf 9 s'échappent. Combien lui en reste-t-il ?",
               "options": [
-                "Galilée",
-                "René Descartes",
-                "Isaac Newton",
-                "Albert Einstein"
+                "8",
+                "9",
+                "17",
+                "0"
               ],
-              "correctAnswer": "Isaac Newton",
+              "correctAnswer": "9",
               "isSpecial": false
             },
             {
-              "question": "Quel pays a envoyé les premiers hommes sur la Lune en 1969 ?",
+              "question": "« Qu'est-ce qui monte mais ne redescend jamais ? »",
               "options": [
-                "L'Union soviétique",
-                "La France",
-                "Le Royaume-Uni",
-                "Les États-Unis"
+                "La pluie",
+                "L'âge",
+                "L'ascenseur",
+                "La fumée"
               ],
-              "correctAnswer": "Les États-Unis",
+              "correctAnswer": "L'âge",
               "isSpecial": false
             },
             {
-              "question": "Marie Curie est la première femme à avoir reçu un prix Nobel. Dans combien de disciplines scientifiques différentes a-t-elle reçu ce prix ?",
+              "question": "Deux pères et deux fils vont pêcher. Ils rapportent 3 poissons, et chacun en ramène exactement un. Comment est-ce possible ?",
               "options": [
-                "Un seul prix Nobel, en physique",
-                "Deux prix Nobel, en physique et en chimie",
-                "Deux prix Nobel, en chimie et en médecine",
-                "Trois prix Nobel, en physique, chimie et médecine"
+                "L'un a triché",
+                "Ils ne sont que trois : un grand-père, son fils et son petit-fils",
+                "Un poisson a été coupé",
+                "C'est impossible"
               ],
-              "correctAnswer": "Deux prix Nobel, en physique et en chimie",
+              "correctAnswer": "Ils ne sont que trois : un grand-père, son fils et son petit-fils",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "temple-sage-3",
+          "title": "Les vertus et l'art de vivre",
+          "emoji": "☯️",
+          "themeColor": "pink",
+          "badgeId": "temple-badge-3",
+          "badgeName": "Âme Sage",
+          "badgeEmoji": "🌟",
+          "cards": [
+            {
+              "title": "La patience",
+              "text": "La patience, c'est savoir attendre et persévérer sans se décourager. Un proverbe dit que « la patience est un arbre aux racines amères, mais aux fruits très doux » : les efforts difficiles finissent par être récompensés.",
+              "emoji": "⏳"
+            },
+            {
+              "title": "Le courage",
+              "text": "Le courage n'est pas l'absence de peur, mais la capacité d'agir malgré la peur. Le philosophe Aristote pensait que le courage se situe entre deux excès : la lâcheté (fuir tout danger) et l'imprudence (foncer sans réfléchir).",
+              "emoji": "🦁"
+            },
+            {
+              "title": "L'honnêteté et la justice",
+              "text": "Être honnête, c'est dire la vérité et tenir ses promesses. La justice consiste à donner à chacun ce qui lui revient et à traiter les autres avec équité. Ces vertus sont à la base de la confiance entre les gens.",
+              "emoji": "⚖️"
+            },
+            {
+              "title": "La maîtrise de soi",
+              "text": "Les philosophes stoïciens, dans la Grèce et la Rome antiques, enseignaient à rester calme face à ce qu'on ne peut pas changer, et à se concentrer sur ce qui dépend vraiment de nous : nos choix, nos efforts et nos réactions.",
+              "emoji": "🧘"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Qu'est-ce que la patience ?",
+              "options": [
+                "Tout obtenir tout de suite",
+                "Savoir attendre et persévérer sans se décourager",
+                "Ne jamais rien faire",
+                "Se mettre en colère"
+              ],
+              "correctAnswer": "Savoir attendre et persévérer sans se décourager",
+              "isSpecial": false
+            },
+            {
+              "question": "Selon Aristote, le courage se situe entre…",
+              "options": [
+                "la joie et la tristesse",
+                "la lâcheté et l'imprudence",
+                "la richesse et la pauvreté",
+                "le jour et la nuit"
+              ],
+              "correctAnswer": "la lâcheté et l'imprudence",
+              "isSpecial": false
+            },
+            {
+              "question": "Le courage, c'est avant tout…",
+              "options": [
+                "ne jamais avoir peur",
+                "agir malgré la peur",
+                "fuir le danger",
+                "se vanter"
+              ],
+              "correctAnswer": "agir malgré la peur",
+              "isSpecial": false
+            },
+            {
+              "question": "Être honnête, c'est notamment…",
+              "options": [
+                "dire la vérité et tenir ses promesses",
+                "gagner à tout prix",
+                "garder des secrets",
+                "parler fort"
+              ],
+              "correctAnswer": "dire la vérité et tenir ses promesses",
+              "isSpecial": false
+            },
+            {
+              "question": "En quoi consiste la justice ?",
+              "options": [
+                "Donner à chacun ce qui lui revient",
+                "Favoriser ses amis",
+                "Punir tout le monde",
+                "Ignorer les règles"
+              ],
+              "correctAnswer": "Donner à chacun ce qui lui revient",
+              "isSpecial": false
+            },
+            {
+              "question": "Les stoïciens conseillaient de se concentrer sur…",
+              "options": [
+                "ce qui dépend de nous",
+                "la météo",
+                "l'avis des autres",
+                "le passé"
+              ],
+              "correctAnswer": "ce qui dépend de nous",
+              "isSpecial": false
+            },
+            {
+              "question": "« Des racines amères mais des fruits très doux » illustre surtout…",
+              "options": [
+                "la gourmandise",
+                "la patience",
+                "la colère",
+                "la paresse"
+              ],
+              "correctAnswer": "la patience",
+              "isSpecial": false
+            },
+            {
+              "question": "Honnêteté et justice sont à la base de…",
+              "options": [
+                "la confiance entre les gens",
+                "la richesse",
+                "la peur",
+                "la solitude"
+              ],
+              "correctAnswer": "la confiance entre les gens",
+              "isSpecial": false
+            },
+            {
+              "question": "Rester calme face à ce qu'on ne peut pas changer, c'est…",
+              "options": [
+                "de la maîtrise de soi",
+                "de la lâcheté",
+                "de l'indifférence",
+                "de la chance"
+              ],
+              "correctAnswer": "de la maîtrise de soi",
+              "isSpecial": false
+            },
+            {
+              "question": "Un sage dit : « Ce n'est pas ce qui t'arrive qui compte, mais la façon dont tu y réagis. » Cette idée stoïcienne signifie…",
+              "options": [
+                "qu'on contrôle tout ce qui arrive",
+                "qu'on ne contrôle pas tout, mais qu'on contrôle nos réactions",
+                "qu'il ne faut rien ressentir",
+                "que tout est de notre faute"
+              ],
+              "correctAnswer": "qu'on ne contrôle pas tout, mais qu'on contrôle nos réactions",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "temple-sage-4",
+          "title": "Contes et fables de sagesse",
+          "emoji": "📖",
+          "themeColor": "pink",
+          "badgeId": "temple-badge-4",
+          "badgeName": "Conteur Sage",
+          "badgeEmoji": "🦊",
+          "cards": [
+            {
+              "title": "Ésope et la fable",
+              "text": "Ésope, conteur de la Grèce antique, inventait des fables : de courtes histoires d'animaux qui se terminent par une morale. Dans « Le Lièvre et la Tortue », la tortue lente mais régulière gagne la course contre le lièvre trop sûr de lui : rien ne sert de courir, il faut partir à point.",
+              "emoji": "🦊"
+            },
+            {
+              "title": "La Fontaine et ses morales",
+              "text": "Jean de La Fontaine, au XVIIe siècle, a réécrit de nombreuses fables. Dans « La Cigale et la Fourmi », la fourmi prévoyante a fait des réserves pour l'hiver, contrairement à la cigale qui a chanté tout l'été : la morale invite à anticiper et à se préparer.",
+              "emoji": "🐜"
+            },
+            {
+              "title": "Le jugement de Salomon",
+              "text": "Le roi Salomon, réputé pour sa sagesse, devait décider entre deux femmes qui revendiquaient le même bébé. Il proposa de partager l'enfant en deux : la vraie mère préféra y renoncer pour le sauver. Salomon comprit ainsi qui l'aimait vraiment.",
+              "emoji": "⚖️"
+            },
+            {
+              "title": "Pourquoi raconter des histoires ?",
+              "text": "Les contes de sagesse transmettent des leçons de vie de façon imagée et facile à retenir. On en trouve dans toutes les cultures : ils enseignent l'honnêteté, la prudence ou l'humilité sans faire la morale de façon directe.",
+              "emoji": "📚"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Qui gagne dans « Le Lièvre et la Tortue » ?",
+              "options": [
+                "Le lièvre",
+                "La tortue",
+                "Personne",
+                "Les deux à égalité"
+              ],
+              "correctAnswer": "La tortue",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est la morale du « Lièvre et la Tortue » ?",
+              "options": [
+                "Il faut courir le plus vite possible",
+                "Rien ne sert de courir, il faut partir à point",
+                "Mieux vaut abandonner",
+                "La force gagne toujours"
+              ],
+              "correctAnswer": "Rien ne sert de courir, il faut partir à point",
+              "isSpecial": false
+            },
+            {
+              "question": "Qui inventait des fables dans la Grèce antique ?",
+              "options": [
+                "Homère",
+                "Ésope",
+                "Platon",
+                "Hérodote"
+              ],
+              "correctAnswer": "Ésope",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans « La Cigale et la Fourmi », qui a fait des réserves pour l'hiver ?",
+              "options": [
+                "La cigale",
+                "La fourmi",
+                "Les deux",
+                "Aucune"
+              ],
+              "correctAnswer": "La fourmi",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle qualité montre la fourmi de la fable ?",
+              "options": [
+                "La prévoyance",
+                "La paresse",
+                "La gourmandise",
+                "La timidité"
+              ],
+              "correctAnswer": "La prévoyance",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment le roi Salomon a-t-il découvert la vraie mère ?",
+              "options": [
+                "En tirant au sort",
+                "En proposant de partager l'enfant, pour voir qui renoncerait afin de le sauver",
+                "En demandant aux voisins",
+                "En regardant les ressemblances"
+              ],
+              "correctAnswer": "En proposant de partager l'enfant, pour voir qui renoncerait afin de le sauver",
+              "isSpecial": false
+            },
+            {
+              "question": "Pour quelle qualité le roi Salomon est-il célèbre ?",
+              "options": [
+                "Sa force",
+                "Sa sagesse",
+                "sa richesse",
+                "sa vitesse"
+              ],
+              "correctAnswer": "Sa sagesse",
+              "isSpecial": false
+            },
+            {
+              "question": "Une fable se termine le plus souvent par…",
+              "options": [
+                "une chanson",
+                "une morale",
+                "une question",
+                "une bataille"
+              ],
+              "correctAnswer": "une morale",
+              "isSpecial": false
+            },
+            {
+              "question": "À quoi servent surtout les contes de sagesse ?",
+              "options": [
+                "À faire peur",
+                "À transmettre des leçons de vie de façon imagée",
+                "À endormir les enfants",
+                "À faire rire uniquement"
+              ],
+              "correctAnswer": "À transmettre des leçons de vie de façon imagée",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans une fable, un renard ne peut pas attraper des raisins trop hauts et déclare qu'ils « sont sûrement trop verts ». Que critique cette histoire ?",
+              "options": [
+                "Le fait de mépriser ce qu'on n'arrive pas à obtenir",
+                "La gourmandise des renards",
+                "Le travail des vignerons",
+                "La couleur des fruits"
+              ],
+              "correctAnswer": "Le fait de mépriser ce qu'on n'arrive pas à obtenir",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "temple-sage-5",
+          "title": "Mystères et merveilles du monde",
+          "emoji": "🏛️",
+          "themeColor": "pink",
+          "badgeId": "temple-badge-5",
+          "badgeName": "Maître du Temple",
+          "badgeEmoji": "🏆",
+          "cards": [
+            {
+              "title": "Les Sept Merveilles",
+              "text": "Les Anciens avaient dressé une liste des Sept Merveilles du monde, comme la Grande Pyramide de Gizeh, les Jardins suspendus de Babylone ou le Phare d'Alexandrie. De toutes ces merveilles, seule la Grande Pyramide existe encore aujourd'hui.",
+              "emoji": "🏛️"
+            },
+            {
+              "title": "La bibliothèque d'Alexandrie",
+              "text": "Dans l'Antiquité, la bibliothèque d'Alexandrie, en Égypte, voulait rassembler tout le savoir du monde. Elle abritait des centaines de milliers de rouleaux. Sa disparition reste l'une des plus grandes pertes de connaissances de l'histoire.",
+              "emoji": "📚"
+            },
+            {
+              "title": "L'oracle de Delphes",
+              "text": "À Delphes, en Grèce, on venait consulter un oracle censé transmettre les messages du dieu Apollon. Au fronton du temple était gravée une maxime célèbre : « Connais-toi toi-même », une invitation à se comprendre soi-même.",
+              "emoji": "🔮"
+            },
+            {
+              "title": "Les pyramides, prouesses d'ingénierie",
+              "text": "La Grande Pyramide de Khéops, construite il y a environ 4 500 ans, mesurait près de 146 mètres. Sans machines modernes, les Égyptiens ont déplacé des blocs de plusieurs tonnes : une prouesse qui fascine encore les chercheurs.",
+              "emoji": "🔺"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Quelle merveille antique existe encore aujourd'hui ?",
+              "options": [
+                "Le Phare d'Alexandrie",
+                "La Grande Pyramide de Gizeh",
+                "Les Jardins de Babylone",
+                "Le Colosse de Rhodes"
+              ],
+              "correctAnswer": "La Grande Pyramide de Gizeh",
+              "isSpecial": false
+            },
+            {
+              "question": "Combien y avait-il de Merveilles du monde antique ?",
+              "options": [
+                "Cinq",
+                "Sept",
+                "Dix",
+                "Douze"
+              ],
+              "correctAnswer": "Sept",
+              "isSpecial": false
+            },
+            {
+              "question": "Que voulait rassembler la bibliothèque d'Alexandrie ?",
+              "options": [
+                "De l'or",
+                "Tout le savoir du monde",
+                "Des armes",
+                "Des animaux"
+              ],
+              "correctAnswer": "Tout le savoir du monde",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle maxime était gravée au temple de Delphes ?",
+              "options": [
+                "Connais-toi toi-même",
+                "Aide-toi, le ciel t'aidera",
+                "Carpe diem",
+                "Veni, vidi, vici"
+              ],
+              "correctAnswer": "Connais-toi toi-même",
+              "isSpecial": false
+            },
+            {
+              "question": "À Delphes, l'oracle transmettait les messages de quel dieu ?",
+              "options": [
+                "Zeus",
+                "Apollon",
+                "Poséidon",
+                "Arès"
+              ],
+              "correctAnswer": "Apollon",
+              "isSpecial": false
+            },
+            {
+              "question": "Qui a construit la Grande Pyramide ?",
+              "options": [
+                "Les Romains",
+                "Les Grecs",
+                "Les Égyptiens",
+                "Les Babyloniens"
+              ],
+              "correctAnswer": "Les Égyptiens",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel âge a environ la Grande Pyramide de Khéops ?",
+              "options": [
+                "Environ 1 000 ans",
+                "Environ 2 000 ans",
+                "Environ 4 500 ans",
+                "Environ 10 000 ans"
+              ],
+              "correctAnswer": "Environ 4 500 ans",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans quelle cité se trouvaient les Jardins suspendus ?",
+              "options": [
+                "Athènes",
+                "Babylone",
+                "Le Caire",
+                "Carthage"
+              ],
+              "correctAnswer": "Babylone",
+              "isSpecial": false
+            },
+            {
+              "question": "À quoi servait le Phare d'Alexandrie ?",
+              "options": [
+                "À stocker du grain",
+                "À guider les navires",
+                "À observer les étoiles",
+                "À défendre la ville"
+              ],
+              "correctAnswer": "À guider les navires",
+              "isSpecial": false
+            },
+            {
+              "question": "La maxime « Connais-toi toi-même » invite surtout à…",
+              "options": [
+                "apprendre par cœur",
+                "réfléchir sur soi pour devenir plus sage",
+                "voyager loin",
+                "obéir aux dieux"
+              ],
+              "correctAnswer": "réfléchir sur soi pour devenir plus sage",
               "isSpecial": true
             }
           ]
@@ -62504,430 +62933,859 @@ export const UNIVERSES: Record<string, Universe> = {
       ],
       "difficile": [
         {
-          "id": "temple-gen-3",
-          "title": "Le grand quiz de culture générale",
-          "emoji": "🌍",
+          "id": "temple-sage-d-0",
+          "title": "Les grands penseurs",
+          "emoji": "🦉",
           "themeColor": "pink",
-          "badgeId": "temple-badge-3",
-          "badgeName": "Sage du Savoir",
+          "badgeId": "temple-badge-d-0",
+          "badgeName": "Disciple des Sages",
           "badgeEmoji": "🦉",
           "cards": [
             {
-              "title": "Histoire & Civilisations",
-              "text": "Les grandes civilisations antiques — Égypte, Grèce, Rome — ont façonné notre monde moderne par leurs lois, leur architecture et leur philosophie. La Révolution française de 1789 a introduit les idéaux de liberté, d'égalité et de fraternité qui influencent encore les démocraties d'aujourd'hui.",
+              "title": "Socrate, le maître du questionnement",
+              "text": "Socrate, philosophe de la Grèce antique (Ve siècle av. J.-C.), n'écrivait rien : il discutait sur les places d'Athènes. Sa célèbre phrase « Je sais que je ne sais rien » rappelle que reconnaître son ignorance est le début de la sagesse. Il posait sans cesse des questions pour aider les autres à réfléchir par eux-mêmes.",
               "emoji": "🏛️"
             },
             {
-              "title": "Sciences & Découvertes",
-              "text": "De Galilée affirmant que la Terre tourne autour du Soleil à Marie Curie découvrant la radioactivité, les scientifiques ont repoussé les frontières du savoir au péril de leur vie. La théorie de la relativité d'Einstein, publiée en 1905, a révolutionné notre compréhension du temps, de l'espace et de la matière.",
-              "emoji": "🔬"
+              "title": "Confucius et la règle d'or",
+              "text": "Confucius, sage chinois (VIe siècle av. J.-C.), enseignait le respect, l'harmonie et l'étude. On lui attribue la « règle d'or » : « Ne fais pas à autrui ce que tu ne voudrais pas qu'on te fasse. » Ses idées ont influencé toute l'Asie pendant 2 500 ans.",
+              "emoji": "☯️"
             },
             {
-              "title": "Géographie & Continents",
-              "text": "La Terre comprend sept continents et cinq océans. L'Asie est le continent le plus vaste et le plus peuplé, regroupant à elle seule plus de la moitié de la population mondiale. L'Amazonie, en Amérique du Sud, abrite la plus grande forêt tropicale du monde et une biodiversité exceptionnelle.",
-              "emoji": "🗺️"
+              "title": "Hypatie, savante d'Alexandrie",
+              "text": "Hypatie (IVe siècle) était une mathématicienne, astronome et philosophe d'Alexandrie, en Égypte. Femme de science rare à son époque, elle enseignait la géométrie et l'astronomie, et reste aujourd'hui un symbole de la curiosité et du savoir.",
+              "emoji": "🔭"
             },
             {
-              "title": "Arts & Littérature",
-              "text": "La Renaissance italienne (XIVe-XVIe siècle) a vu éclore des génies comme Léonard de Vinci et Michel-Ange, qui ont révolutionné la peinture, la sculpture et l'architecture. En littérature, Victor Hugo avec 'Les Misérables' et Shakespeare avec ses pièces ont créé des œuvres qui traversent les siècles.",
-              "emoji": "🎨"
+              "title": "Qu'est-ce que la philosophie ?",
+              "text": "Le mot « philosophie » vient du grec et signifie « amour de la sagesse ». Philosopher, c'est se poser de grandes questions (Qu'est-ce que le bonheur ? Qu'est-ce qui est juste ?) et chercher des réponses par la raison, en argumentant plutôt qu'en se disputant.",
+              "emoji": "💭"
             }
           ],
           "quiz": [
             {
-              "question": "En quelle année Christophe Colomb a-t-il atteint le continent américain ?",
+              "question": "Que signifie le mot « philosophie » ?",
               "options": [
-                "1488",
-                "1492",
-                "1498",
-                "1504"
+                "L'amour de la sagesse",
+                "La peur de l'inconnu",
+                "L'art de la guerre",
+                "L'étude des étoiles"
               ],
-              "correctAnswer": "1492",
+              "correctAnswer": "L'amour de la sagesse",
               "isSpecial": false
             },
             {
-              "question": "Quel est l'élément chimique le plus abondant dans l'univers ?",
+              "question": "Quelle phrase célèbre attribue-t-on à Socrate ?",
               "options": [
-                "Hélium",
-                "Oxygène",
-                "Carbone",
-                "Hydrogène"
+                "Je pense donc je suis",
+                "Je sais que je ne sais rien",
+                "Connais-toi toi-même",
+                "Tout coule"
               ],
-              "correctAnswer": "Hydrogène",
+              "correctAnswer": "Je sais que je ne sais rien",
               "isSpecial": false
             },
             {
-              "question": "Quelle est la capitale de l'Australie ?",
+              "question": "De quel pays venait le sage Confucius ?",
               "options": [
-                "Sydney",
-                "Melbourne",
-                "Canberra",
-                "Brisbane"
+                "La Grèce",
+                "L'Égypte",
+                "La Chine",
+                "L'Inde"
               ],
-              "correctAnswer": "Canberra",
+              "correctAnswer": "La Chine",
               "isSpecial": false
             },
             {
-              "question": "Qui a peint 'La Joconde' (Mona Lisa) ?",
+              "question": "Comment appelle-t-on la maxime « Ne fais pas à autrui ce que tu ne voudrais pas qu'on te fasse » ?",
               "options": [
-                "Michel-Ange",
-                "Raphaël",
-                "Léonard de Vinci",
-                "Botticelli"
+                "La règle d'or",
+                "La loi du talion",
+                "Le contrat social",
+                "Le serment"
               ],
-              "correctAnswer": "Léonard de Vinci",
+              "correctAnswer": "La règle d'or",
               "isSpecial": false
             },
             {
-              "question": "Quel philosophe grec est l'auteur de 'La République' ?",
+              "question": "De quelle ville Hypatie était-elle la savante ?",
               "options": [
-                "Aristote",
-                "Socrate",
-                "Platon",
-                "Épicure"
+                "Athènes",
+                "Rome",
+                "Alexandrie",
+                "Babylone"
               ],
-              "correctAnswer": "Platon",
+              "correctAnswer": "Alexandrie",
               "isSpecial": false
             },
             {
-              "question": "Combien d'os compte le corps humain adulte ?",
+              "question": "Comment Socrate transmettait-il sa pensée ?",
               "options": [
-                "186",
-                "206",
-                "226",
-                "246"
+                "En écrivant des livres",
+                "En discutant et en posant des questions",
+                "En peignant des fresques",
+                "En chantant"
               ],
-              "correctAnswer": "206",
+              "correctAnswer": "En discutant et en posant des questions",
               "isSpecial": false
             },
             {
-              "question": "Quel pays possède le plus grand nombre de pays frontaliers au monde ?",
+              "question": "À quelle époque vivait Socrate ?",
               "options": [
-                "Russie",
-                "Brésil",
-                "Chine",
-                "Allemagne"
+                "Le Moyen Âge",
+                "L'Antiquité grecque",
+                "La Renaissance",
+                "L'époque moderne"
               ],
-              "correctAnswer": "Chine",
+              "correctAnswer": "L'Antiquité grecque",
               "isSpecial": false
             },
             {
-              "question": "Dans quel roman Victor Hugo décrit-il le personnage de Jean Valjean ?",
+              "question": "Quelles matières Hypatie enseignait-elle ?",
               "options": [
-                "Notre-Dame de Paris",
-                "Les Misérables",
-                "L'Homme qui rit",
-                "Quatre-vingt-treize"
+                "La musique et la danse",
+                "Les mathématiques et l'astronomie",
+                "La médecine et la chimie",
+                "Le droit et la politique"
               ],
-              "correctAnswer": "Les Misérables",
+              "correctAnswer": "Les mathématiques et l'astronomie",
               "isSpecial": false
             },
             {
-              "question": "Quelle planète du système solaire possède le plus grand nombre de lunes connues ?",
+              "question": "Selon Socrate, reconnaître qu'on ne sait pas quelque chose est…",
               "options": [
-                "Jupiter",
-                "Saturne",
-                "Uranus",
-                "Neptune"
+                "une honte",
+                "le début de la sagesse",
+                "une perte de temps",
+                "un signe de faiblesse"
               ],
-              "correctAnswer": "Saturne",
+              "correctAnswer": "le début de la sagesse",
               "isSpecial": false
             },
             {
-              "question": "Si un train roule à 120 km/h et doit parcourir 300 km, combien de temps met-il pour arriver à destination ?",
+              "question": "Un sage déclare : « Plus j'apprends, plus je mesure tout ce que j'ignore. » Que veut-il dire ?",
               "options": [
-                "2 heures",
-                "2 heures 30 minutes",
-                "3 heures",
-                "3 heures 30 minutes"
+                "Qu'il vaut mieux ne rien apprendre",
+                "Que plus on apprend, plus on découvre l'étendue de ce qui reste à apprendre",
+                "Qu'il sait déjà tout",
+                "Que le savoir est inutile"
               ],
-              "correctAnswer": "2 heures 30 minutes",
+              "correctAnswer": "Que plus on apprend, plus on découvre l'étendue de ce qui reste à apprendre",
               "isSpecial": true
             }
           ]
         },
         {
-          "id": "temple-gen-4",
-          "title": "Énigmes et Logique",
-          "emoji": "🧩",
+          "id": "temple-sage-d-1",
+          "title": "Proverbes et sagesses du monde",
+          "emoji": "🌍",
           "themeColor": "pink",
-          "badgeId": "temple-badge-4",
-          "badgeName": "Maître du Raisonnement",
-          "badgeEmoji": "🏆",
+          "badgeId": "temple-badge-d-1",
+          "badgeName": "Gardien des Proverbes",
+          "badgeEmoji": "📜",
           "cards": [
             {
-              "title": "Le raisonnement déductif",
-              "text": "La déduction consiste à tirer une conclusion certaine à partir de prémisses vraies. Si tous les A sont B, et que C est un A, alors C est forcément un B. Ce type de logique est utilisé en mathématiques, en droit et en philosophie.",
-              "emoji": "🔍"
+              "title": "Qu'est-ce qu'un proverbe ?",
+              "text": "Un proverbe est une courte phrase populaire qui transmet une leçon de sagesse, répétée de génération en génération. Par exemple, « Petit à petit, l'oiseau fait son nid » signifie qu'avec de la patience et des efforts réguliers, on finit par réussir.",
+              "emoji": "💬"
             },
             {
-              "title": "Les suites logiques",
-              "text": "Une suite logique est une série de nombres ou de formes qui suivent une règle cachée. Pour trouver le terme suivant, il faut identifier l'opération répétée : addition, multiplication, alternance, ou une combinaison de plusieurs règles.",
-              "emoji": "🔢"
+              "title": "Sagesses d'Afrique",
+              "text": "Beaucoup de proverbes africains valorisent l'entraide et la communauté. « Seul on va plus vite, ensemble on va plus loin » rappelle l'importance de coopérer. « Il faut tout un village pour élever un enfant » souligne que chacun a un rôle dans l'éducation.",
+              "emoji": "🌍"
             },
             {
-              "title": "Les paradoxes célèbres",
-              "text": "Un paradoxe est une affirmation qui semble contradictoire mais qui peut être vraie. Le paradoxe du menteur dit : « Cette phrase est fausse. » Si elle est vraie, elle est fausse ; si elle est fausse, elle est vraie. Ces casse-têtes ont fasciné les philosophes pendant des siècles.",
-              "emoji": "🌀"
+              "title": "Sagesses d'Asie",
+              "text": "« Un voyage de mille lieues commence par un premier pas », attribué à Lao Tseu, enseigne que les grands projets débutent par une petite action. Le proverbe japonais « Tombe sept fois, relève-toi huit » encourage à persévérer malgré les échecs.",
+              "emoji": "🏯"
             },
             {
-              "title": "Le raisonnement par l'absurde",
-              "text": "Cette technique consiste à supposer que ce qu'on veut démontrer est faux, puis à montrer que cela mène à une contradiction. Si la négation d'une affirmation est impossible, alors l'affirmation elle-même doit être vraie. Euclide l'a utilisé pour prouver qu'il existe une infinité de nombres premiers.",
+              "title": "Comprendre le sens caché",
+              "text": "Beaucoup de proverbes sont imagés : ils ne parlent pas vraiment d'oiseaux ou de voyages, mais cachent une leçon. « L'habit ne fait pas le moine » signifie qu'il ne faut pas juger les gens d'après leur apparence.",
+              "emoji": "🗝️"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Qu'est-ce qu'un proverbe ?",
+              "options": [
+                "Une chanson moderne",
+                "Une courte phrase populaire qui transmet une leçon",
+                "Une loi écrite",
+                "Une devinette sans réponse"
+              ],
+              "correctAnswer": "Une courte phrase populaire qui transmet une leçon",
+              "isSpecial": false
+            },
+            {
+              "question": "Que veut dire « Petit à petit, l'oiseau fait son nid » ?",
+              "options": [
+                "Les oiseaux sont paresseux",
+                "Avec patience et efforts réguliers, on finit par réussir",
+                "Il faut se dépêcher",
+                "Mieux vaut rester seul"
+              ],
+              "correctAnswer": "Avec patience et efforts réguliers, on finit par réussir",
+              "isSpecial": false
+            },
+            {
+              "question": "« Un voyage de mille lieues commence par un premier pas » signifie…",
+              "options": [
+                "Qu'il ne faut jamais voyager",
+                "Que les grands projets débutent par une petite action",
+                "Qu'il faut courir vite",
+                "Qu'on n'arrive jamais au bout"
+              ],
+              "correctAnswer": "Que les grands projets débutent par une petite action",
+              "isSpecial": false
+            },
+            {
+              "question": "Le proverbe japonais « Tombe sept fois, relève-toi huit » parle de…",
+              "options": [
+                "la chance",
+                "la persévérance",
+                "la richesse",
+                "la colère"
+              ],
+              "correctAnswer": "la persévérance",
+              "isSpecial": false
+            },
+            {
+              "question": "« Il faut tout un village pour élever un enfant » met en avant…",
+              "options": [
+                "l'argent",
+                "l'importance de la communauté",
+                "la solitude",
+                "la compétition"
+              ],
+              "correctAnswer": "l'importance de la communauté",
+              "isSpecial": false
+            },
+            {
+              "question": "Que signifie « L'habit ne fait pas le moine » ?",
+              "options": [
+                "Il faut bien s'habiller",
+                "Il ne faut pas juger les gens sur leur apparence",
+                "Les moines sont élégants",
+                "Les vêtements coûtent cher"
+              ],
+              "correctAnswer": "Il ne faut pas juger les gens sur leur apparence",
+              "isSpecial": false
+            },
+            {
+              "question": "« Seul on va plus vite, ensemble on va plus loin » valorise…",
+              "options": [
+                "la vitesse",
+                "l'entraide",
+                "le silence",
+                "la prudence"
+              ],
+              "correctAnswer": "l'entraide",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment les proverbes se transmettent-ils surtout ?",
+              "options": [
+                "Par la télévision",
+                "De génération en génération",
+                "Par les journaux",
+                "Par les ordinateurs"
+              ],
+              "correctAnswer": "De génération en génération",
+              "isSpecial": false
+            },
+            {
+              "question": "Un proverbe « imagé », c'est un proverbe qui…",
+              "options": [
+                "contient toujours un dessin",
+                "donne une leçon sans parler littéralement de ce qu'il décrit",
+                "est très long",
+                "n'a aucun sens"
+              ],
+              "correctAnswer": "donne une leçon sans parler littéralement de ce qu'il décrit",
+              "isSpecial": false
+            },
+            {
+              "question": "« La nuit, tous les chats sont gris. » Que veut dire ce proverbe ?",
+              "options": [
+                "Les chats détestent la nuit",
+                "Dans l'obscurité ou le flou, on distingue mal les différences entre les choses",
+                "Il faut dormir la nuit",
+                "Les chats gris sont rares"
+              ],
+              "correctAnswer": "Dans l'obscurité ou le flou, on distingue mal les différences entre les choses",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "temple-sage-d-2",
+          "title": "Les énigmes des sages",
+          "emoji": "🧩",
+          "themeColor": "pink",
+          "badgeId": "temple-badge-d-2",
+          "badgeName": "Briseur d'Énigmes",
+          "badgeEmoji": "🗝️",
+          "cards": [
+            {
+              "title": "L'énigme du Sphinx",
+              "text": "Dans la mythologie grecque, le Sphinx posait une énigme aux voyageurs : « Quel être marche à quatre pattes le matin, à deux le midi et à trois le soir ? » Œdipe trouva la réponse : l'être humain (bébé à quatre pattes, adulte sur ses deux jambes, vieillard avec une canne).",
+              "emoji": "🦁"
+            },
+            {
+              "title": "Qu'est-ce qu'une énigme ?",
+              "text": "Une énigme est une question piège qui demande de réfléchir autrement. La solution est souvent cachée dans les mots eux-mêmes. Les sages s'entraînaient à résoudre des énigmes pour aiguiser leur logique et leur imagination.",
+              "emoji": "🧩"
+            },
+            {
+              "title": "Raisonner pas à pas",
+              "text": "Pour résoudre une énigme, il faut lire attentivement, repérer les indices et éliminer les réponses impossibles. Raisonner, c'est avancer d'une certitude à une autre, comme on monte un escalier marche après marche.",
+              "emoji": "🪜"
+            },
+            {
+              "title": "Les devinettes classiques",
+              "text": "« Plus on en enlève, plus il devient grand. Qu'est-ce que c'est ? » Réponse : un trou ! Les devinettes jouent souvent sur le double sens des mots et nous apprennent à ne pas nous arrêter à la réponse la plus évidente.",
               "emoji": "💡"
             }
           ],
           "quiz": [
             {
-              "question": "Dans une suite : 2, 6, 18, 54, … Quel est le terme suivant ?",
+              "question": "Quelle est la réponse à l'énigme du Sphinx ?",
               "options": [
-                "108",
-                "162",
-                "72",
-                "216"
+                "Le lion",
+                "L'être humain",
+                "Le temps",
+                "Le soleil"
               ],
-              "correctAnswer": "162",
+              "correctAnswer": "L'être humain",
               "isSpecial": false
             },
             {
-              "question": "J'ai des frères et des sœurs en nombre égal. Mais chacun de mes frères a deux fois plus de sœurs que de frères. Combien suis-je de frères et de sœurs ?",
+              "question": "Qui a résolu l'énigme du Sphinx ?",
               "options": [
-                "3 frères et 4 sœurs",
-                "4 frères et 3 sœurs",
-                "2 frères et 2 sœurs",
-                "3 frères et 3 sœurs"
+                "Hercule",
+                "Ulysse",
+                "Œdipe",
+                "Persée"
               ],
-              "correctAnswer": "3 frères et 4 sœurs",
+              "correctAnswer": "Œdipe",
               "isSpecial": false
             },
             {
-              "question": "Si « CHAT » se code « FKDW » (chaque lettre avancée de 3 rangs dans l'alphabet), comment se code « LOUP » ?",
+              "question": "« Plus on en enlève, plus il devient grand. » Qu'est-ce que c'est ?",
               "options": [
-                "ORXS",
-                "NQZR",
-                "ORXV",
-                "MQVS"
+                "Un trou",
+                "Un ballon",
+                "Un gâteau",
+                "Une montagne"
               ],
-              "correctAnswer": "ORXS",
+              "correctAnswer": "Un trou",
               "isSpecial": false
             },
             {
-              "question": "Un père a 30 ans de plus que son fils. Dans 5 ans, il sera 3 fois plus vieux que lui. Quel est l'âge actuel du fils ?",
+              "question": "Pour résoudre une énigme, il faut surtout…",
               "options": [
-                "10 ans",
-                "5 ans",
-                "8 ans",
-                "12 ans"
+                "répondre le plus vite possible",
+                "lire attentivement et repérer les indices",
+                "deviner au hasard",
+                "demander la réponse"
               ],
-              "correctAnswer": "10 ans",
+              "correctAnswer": "lire attentivement et repérer les indices",
               "isSpecial": false
             },
             {
-              "question": "Trois amis mentent toujours, parfois, ou jamais. Alex dit : « Je mens parfois. » Bob dit : « Alex ment toujours. » Clara dit : « Bob dit la vérité. » Qui ne ment jamais ?",
+              "question": "Léa est plus grande que Tom, et Tom est plus grand que Sam. Qui est le plus petit ?",
               "options": [
-                "Clara",
-                "Bob",
-                "Alex",
-                "Aucun des trois"
+                "Léa",
+                "Tom",
+                "Sam",
+                "On ne peut pas savoir"
               ],
-              "correctAnswer": "Clara",
+              "correctAnswer": "Sam",
               "isSpecial": false
             },
             {
-              "question": "Dans la suite : 1, 1, 2, 3, 5, 8, 13, … Quel est le prochain nombre ?",
+              "question": "Combien de mois de l'année comptent (au moins) 28 jours ?",
               "options": [
-                "21",
-                "18",
-                "20",
-                "26"
+                "Un seul (février)",
+                "Tous les mois",
+                "Six mois",
+                "Aucun"
               ],
-              "correctAnswer": "21",
+              "correctAnswer": "Tous les mois",
               "isSpecial": false
             },
             {
-              "question": "Tu dois traverser une rivière avec un loup, une chèvre et un chou. Tu ne peux emmener qu'un seul à la fois. Seul, le loup mange la chèvre, et la chèvre mange le chou. Quelle est la première action indispensable ?",
+              "question": "« Je parle sans bouche et j'entends sans oreilles. Qui suis-je ? »",
               "options": [
-                "Emmener la chèvre en premier",
-                "Emmener le loup en premier",
-                "Emmener le chou en premier",
-                "Emmener le loup et la chèvre ensemble"
+                "Le vent",
+                "L'écho",
+                "Le rêve",
+                "Le miroir"
               ],
-              "correctAnswer": "Emmener la chèvre en premier",
+              "correctAnswer": "L'écho",
               "isSpecial": false
             },
             {
-              "question": "Un escargot est au fond d'un puits de 10 mètres. Chaque jour il monte 3 mètres, chaque nuit il redescend 2 mètres. En combien de jours atteint-il le sommet ?",
+              "question": "Un berger a 17 moutons. Tous sauf 9 s'échappent. Combien lui en reste-t-il ?",
               "options": [
-                "8 jours",
-                "10 jours",
-                "7 jours",
-                "9 jours"
+                "8",
+                "9",
+                "17",
+                "0"
               ],
-              "correctAnswer": "8 jours",
+              "correctAnswer": "9",
               "isSpecial": false
             },
             {
-              "question": "Quel est le nombre qui, multiplié par lui-même, donne le même résultat que si on lui ajoutait lui-même ?",
+              "question": "« Qu'est-ce qui monte mais ne redescend jamais ? »",
               "options": [
-                "2",
-                "0 et 2",
-                "1",
-                "4"
+                "La pluie",
+                "L'âge",
+                "L'ascenseur",
+                "La fumée"
               ],
-              "correctAnswer": "0 et 2",
+              "correctAnswer": "L'âge",
               "isSpecial": false
             },
             {
-              "question": "Dans un village, le barbier rase tous ceux qui ne se rasent pas eux-mêmes, et seulement eux. Qui rase le barbier ?",
+              "question": "Deux pères et deux fils vont pêcher. Ils rapportent 3 poissons, et chacun en ramène exactement un. Comment est-ce possible ?",
               "options": [
-                "Ce paradoxe n'a pas de solution logique",
-                "Le barbier se rase lui-même",
-                "Un autre barbier du village voisin",
-                "Personne, il ne peut pas exister"
+                "L'un a triché",
+                "Ils ne sont que trois : un grand-père, son fils et son petit-fils",
+                "Un poisson a été coupé",
+                "C'est impossible"
               ],
-              "correctAnswer": "Ce paradoxe n'a pas de solution logique",
+              "correctAnswer": "Ils ne sont que trois : un grand-père, son fils et son petit-fils",
               "isSpecial": true
             }
           ]
         },
         {
-          "id": "temple-gen-5",
-          "title": "Inventions et grandes découvertes",
-          "emoji": "⚗️",
+          "id": "temple-sage-d-3",
+          "title": "Les vertus et l'art de vivre",
+          "emoji": "☯️",
           "themeColor": "pink",
-          "badgeId": "temple-badge-5",
-          "badgeName": "Grand Inventeur",
-          "badgeEmoji": "🏆",
+          "badgeId": "temple-badge-d-3",
+          "badgeName": "Âme Sage",
+          "badgeEmoji": "🌟",
           "cards": [
             {
-              "title": "L'imprimerie : révolution du savoir",
-              "text": "Johannes Gutenberg invente la presse à caractères mobiles vers 1450, permettant de reproduire des livres en grande quantité pour la première fois en Europe. Cette invention bouleverse la diffusion du savoir et joue un rôle clé dans la Renaissance et la Réforme protestante.",
-              "emoji": "📜"
+              "title": "La patience",
+              "text": "La patience, c'est savoir attendre et persévérer sans se décourager. Un proverbe dit que « la patience est un arbre aux racines amères, mais aux fruits très doux » : les efforts difficiles finissent par être récompensés.",
+              "emoji": "⏳"
             },
             {
-              "title": "L'électricité apprivoisée",
-              "text": "Au XIXe siècle, des scientifiques comme Michael Faraday et Thomas Edison transforment la compréhension de l'électricité en technologies concrètes. Faraday découvre l'induction électromagnétique en 1831, principe fondateur des générateurs, tandis qu'Edison perfectionne l'ampoule électrique à incandescence en 1879.",
-              "emoji": "⚡"
+              "title": "Le courage",
+              "text": "Le courage n'est pas l'absence de peur, mais la capacité d'agir malgré la peur. Le philosophe Aristote pensait que le courage se situe entre deux excès : la lâcheté (fuir tout danger) et l'imprudence (foncer sans réfléchir).",
+              "emoji": "🦁"
             },
             {
-              "title": "La pénicilline : une découverte accidentelle",
-              "text": "En 1928, Alexander Fleming remarque qu'une moisissure (Penicillium notatum) détruit les bactéries autour d'elle dans une boîte de Pétri oubliée. Cette observation fortuite mène au développement de la pénicilline, le premier antibiotique, qui sauvera des millions de vies à partir des années 1940.",
-              "emoji": "🔬"
+              "title": "L'honnêteté et la justice",
+              "text": "Être honnête, c'est dire la vérité et tenir ses promesses. La justice consiste à donner à chacun ce qui lui revient et à traiter les autres avec équité. Ces vertus sont à la base de la confiance entre les gens.",
+              "emoji": "⚖️"
             },
             {
-              "title": "Internet : la toile mondiale",
-              "text": "Internet naît dans les années 1960 avec le projet militaire ARPANET aux États-Unis, mais c'est Tim Berners-Lee qui invente le World Wide Web en 1989 au CERN en Suisse. Il crée le protocole HTTP et le langage HTML, permettant à des pages reliées par des hyperliens d'être accessibles à tous.",
-              "emoji": "🌐"
+              "title": "La maîtrise de soi",
+              "text": "Les philosophes stoïciens, dans la Grèce et la Rome antiques, enseignaient à rester calme face à ce qu'on ne peut pas changer, et à se concentrer sur ce qui dépend vraiment de nous : nos choix, nos efforts et nos réactions.",
+              "emoji": "🧘"
             }
           ],
           "quiz": [
             {
-              "question": "Qui a inventé la presse à caractères mobiles en Europe, vers 1450 ?",
+              "question": "Qu'est-ce que la patience ?",
               "options": [
-                "Léonard de Vinci",
-                "Johannes Gutenberg",
-                "Nicolás Copernicus",
-                "Roger Bacon"
+                "Tout obtenir tout de suite",
+                "Savoir attendre et persévérer sans se décourager",
+                "Ne jamais rien faire",
+                "Se mettre en colère"
               ],
-              "correctAnswer": "Johannes Gutenberg",
+              "correctAnswer": "Savoir attendre et persévérer sans se décourager",
               "isSpecial": false
             },
             {
-              "question": "En quelle année Alexander Fleming découvre-t-il la pénicilline ?",
+              "question": "Selon Aristote, le courage se situe entre…",
               "options": [
-                "1905",
-                "1919",
-                "1928",
-                "1945"
+                "la joie et la tristesse",
+                "la lâcheté et l'imprudence",
+                "la richesse et la pauvreté",
+                "le jour et la nuit"
               ],
-              "correctAnswer": "1928",
+              "correctAnswer": "la lâcheté et l'imprudence",
               "isSpecial": false
             },
             {
-              "question": "Quel principe physique, découvert par Faraday en 1831, est à la base du fonctionnement des générateurs électriques ?",
+              "question": "Le courage, c'est avant tout…",
               "options": [
-                "La conduction thermique",
-                "La fission nucléaire",
-                "L'induction électromagnétique",
-                "L'effet photoélectrique"
+                "ne jamais avoir peur",
+                "agir malgré la peur",
+                "fuir le danger",
+                "se vanter"
               ],
-              "correctAnswer": "L'induction électromagnétique",
+              "correctAnswer": "agir malgré la peur",
               "isSpecial": false
             },
             {
-              "question": "Tim Berners-Lee invente le World Wide Web en 1989. Dans quel organisme travaillait-il alors ?",
+              "question": "Être honnête, c'est notamment…",
               "options": [
-                "NASA",
-                "MIT",
-                "CERN",
-                "Bell Labs"
+                "dire la vérité et tenir ses promesses",
+                "gagner à tout prix",
+                "garder des secrets",
+                "parler fort"
               ],
-              "correctAnswer": "CERN",
+              "correctAnswer": "dire la vérité et tenir ses promesses",
               "isSpecial": false
             },
             {
-              "question": "La machine à vapeur de James Watt, améliorée dans les années 1760-1780, alimente quelle grande transformation historique ?",
+              "question": "En quoi consiste la justice ?",
               "options": [
-                "La Révolution française",
-                "La Révolution industrielle",
-                "La Renaissance italienne",
-                "La conquête de l'Ouest américain"
+                "Donner à chacun ce qui lui revient",
+                "Favoriser ses amis",
+                "Punir tout le monde",
+                "Ignorer les règles"
               ],
-              "correctAnswer": "La Révolution industrielle",
+              "correctAnswer": "Donner à chacun ce qui lui revient",
               "isSpecial": false
             },
             {
-              "question": "Marie Curie est la première femme à recevoir un prix Nobel. Dans quel domaine reçoit-elle son premier Nobel, en 1903 ?",
+              "question": "Les stoïciens conseillaient de se concentrer sur…",
               "options": [
-                "Chimie",
-                "Médecine",
-                "Physique",
-                "Paix"
+                "ce qui dépend de nous",
+                "la météo",
+                "l'avis des autres",
+                "le passé"
               ],
-              "correctAnswer": "Physique",
+              "correctAnswer": "ce qui dépend de nous",
               "isSpecial": false
             },
             {
-              "question": "Quel élément chimique, découvert par Marie et Pierre Curie en 1898, porte le nom du pays d'origine de Marie ?",
+              "question": "« Des racines amères mais des fruits très doux » illustre surtout…",
               "options": [
-                "Le radium",
-                "Le polonium",
-                "Le curium",
-                "Le francium"
+                "la gourmandise",
+                "la patience",
+                "la colère",
+                "la paresse"
               ],
-              "correctAnswer": "Le polonium",
+              "correctAnswer": "la patience",
               "isSpecial": false
             },
             {
-              "question": "Les frères Wright réalisent le premier vol motorisé contrôlé en 1903. Dans quel État américain a lieu cet exploit ?",
+              "question": "Honnêteté et justice sont à la base de…",
               "options": [
-                "Caroline du Nord",
-                "Ohio",
-                "Floride",
-                "Virginie"
+                "la confiance entre les gens",
+                "la richesse",
+                "la peur",
+                "la solitude"
               ],
-              "correctAnswer": "Caroline du Nord",
+              "correctAnswer": "la confiance entre les gens",
               "isSpecial": false
             },
             {
-              "question": "Lequel de ces objets du quotidien utilise le principe du laser, inventé en 1960 ?",
+              "question": "Rester calme face à ce qu'on ne peut pas changer, c'est…",
               "options": [
-                "Le four à micro-ondes",
-                "Le lecteur de code-barres",
-                "La machine à laver",
-                "Le réfrigérateur"
+                "de la maîtrise de soi",
+                "de la lâcheté",
+                "de l'indifférence",
+                "de la chance"
               ],
-              "correctAnswer": "Le lecteur de code-barres",
+              "correctAnswer": "de la maîtrise de soi",
               "isSpecial": false
             },
             {
-              "question": "Un savant envoie une lettre codée : chaque lettre est remplacée par celle qui se trouve 3 positions plus loin dans l'alphabet (A devient D, B devient E…). Il écrit 'LQYHQWHXU'. Quel mot a-t-il chiffré ?",
+              "question": "Un sage dit : « Ce n'est pas ce qui t'arrive qui compte, mais la façon dont tu y réagis. » Cette idée stoïcienne signifie…",
               "options": [
-                "INVENTEUR",
-                "CHERCHEUR",
-                "DECOUVERT",
-                "SCIENTIFI"
+                "qu'on contrôle tout ce qui arrive",
+                "qu'on ne contrôle pas tout, mais qu'on contrôle nos réactions",
+                "qu'il ne faut rien ressentir",
+                "que tout est de notre faute"
               ],
-              "correctAnswer": "INVENTEUR",
+              "correctAnswer": "qu'on ne contrôle pas tout, mais qu'on contrôle nos réactions",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "temple-sage-d-4",
+          "title": "Contes et fables de sagesse",
+          "emoji": "📖",
+          "themeColor": "pink",
+          "badgeId": "temple-badge-d-4",
+          "badgeName": "Conteur Sage",
+          "badgeEmoji": "🦊",
+          "cards": [
+            {
+              "title": "Ésope et la fable",
+              "text": "Ésope, conteur de la Grèce antique, inventait des fables : de courtes histoires d'animaux qui se terminent par une morale. Dans « Le Lièvre et la Tortue », la tortue lente mais régulière gagne la course contre le lièvre trop sûr de lui : rien ne sert de courir, il faut partir à point.",
+              "emoji": "🦊"
+            },
+            {
+              "title": "La Fontaine et ses morales",
+              "text": "Jean de La Fontaine, au XVIIe siècle, a réécrit de nombreuses fables. Dans « La Cigale et la Fourmi », la fourmi prévoyante a fait des réserves pour l'hiver, contrairement à la cigale qui a chanté tout l'été : la morale invite à anticiper et à se préparer.",
+              "emoji": "🐜"
+            },
+            {
+              "title": "Le jugement de Salomon",
+              "text": "Le roi Salomon, réputé pour sa sagesse, devait décider entre deux femmes qui revendiquaient le même bébé. Il proposa de partager l'enfant en deux : la vraie mère préféra y renoncer pour le sauver. Salomon comprit ainsi qui l'aimait vraiment.",
+              "emoji": "⚖️"
+            },
+            {
+              "title": "Pourquoi raconter des histoires ?",
+              "text": "Les contes de sagesse transmettent des leçons de vie de façon imagée et facile à retenir. On en trouve dans toutes les cultures : ils enseignent l'honnêteté, la prudence ou l'humilité sans faire la morale de façon directe.",
+              "emoji": "📚"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Qui gagne dans « Le Lièvre et la Tortue » ?",
+              "options": [
+                "Le lièvre",
+                "La tortue",
+                "Personne",
+                "Les deux à égalité"
+              ],
+              "correctAnswer": "La tortue",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle est la morale du « Lièvre et la Tortue » ?",
+              "options": [
+                "Il faut courir le plus vite possible",
+                "Rien ne sert de courir, il faut partir à point",
+                "Mieux vaut abandonner",
+                "La force gagne toujours"
+              ],
+              "correctAnswer": "Rien ne sert de courir, il faut partir à point",
+              "isSpecial": false
+            },
+            {
+              "question": "Qui inventait des fables dans la Grèce antique ?",
+              "options": [
+                "Homère",
+                "Ésope",
+                "Platon",
+                "Hérodote"
+              ],
+              "correctAnswer": "Ésope",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans « La Cigale et la Fourmi », qui a fait des réserves pour l'hiver ?",
+              "options": [
+                "La cigale",
+                "La fourmi",
+                "Les deux",
+                "Aucune"
+              ],
+              "correctAnswer": "La fourmi",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle qualité montre la fourmi de la fable ?",
+              "options": [
+                "La prévoyance",
+                "La paresse",
+                "La gourmandise",
+                "La timidité"
+              ],
+              "correctAnswer": "La prévoyance",
+              "isSpecial": false
+            },
+            {
+              "question": "Comment le roi Salomon a-t-il découvert la vraie mère ?",
+              "options": [
+                "En tirant au sort",
+                "En proposant de partager l'enfant, pour voir qui renoncerait afin de le sauver",
+                "En demandant aux voisins",
+                "En regardant les ressemblances"
+              ],
+              "correctAnswer": "En proposant de partager l'enfant, pour voir qui renoncerait afin de le sauver",
+              "isSpecial": false
+            },
+            {
+              "question": "Pour quelle qualité le roi Salomon est-il célèbre ?",
+              "options": [
+                "Sa force",
+                "Sa sagesse",
+                "sa richesse",
+                "sa vitesse"
+              ],
+              "correctAnswer": "Sa sagesse",
+              "isSpecial": false
+            },
+            {
+              "question": "Une fable se termine le plus souvent par…",
+              "options": [
+                "une chanson",
+                "une morale",
+                "une question",
+                "une bataille"
+              ],
+              "correctAnswer": "une morale",
+              "isSpecial": false
+            },
+            {
+              "question": "À quoi servent surtout les contes de sagesse ?",
+              "options": [
+                "À faire peur",
+                "À transmettre des leçons de vie de façon imagée",
+                "À endormir les enfants",
+                "À faire rire uniquement"
+              ],
+              "correctAnswer": "À transmettre des leçons de vie de façon imagée",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans une fable, un renard ne peut pas attraper des raisins trop hauts et déclare qu'ils « sont sûrement trop verts ». Que critique cette histoire ?",
+              "options": [
+                "Le fait de mépriser ce qu'on n'arrive pas à obtenir",
+                "La gourmandise des renards",
+                "Le travail des vignerons",
+                "La couleur des fruits"
+              ],
+              "correctAnswer": "Le fait de mépriser ce qu'on n'arrive pas à obtenir",
+              "isSpecial": true
+            }
+          ]
+        },
+        {
+          "id": "temple-sage-d-5",
+          "title": "Mystères et merveilles du monde",
+          "emoji": "🏛️",
+          "themeColor": "pink",
+          "badgeId": "temple-badge-d-5",
+          "badgeName": "Maître du Temple",
+          "badgeEmoji": "🏆",
+          "cards": [
+            {
+              "title": "Les Sept Merveilles",
+              "text": "Les Anciens avaient dressé une liste des Sept Merveilles du monde, comme la Grande Pyramide de Gizeh, les Jardins suspendus de Babylone ou le Phare d'Alexandrie. De toutes ces merveilles, seule la Grande Pyramide existe encore aujourd'hui.",
+              "emoji": "🏛️"
+            },
+            {
+              "title": "La bibliothèque d'Alexandrie",
+              "text": "Dans l'Antiquité, la bibliothèque d'Alexandrie, en Égypte, voulait rassembler tout le savoir du monde. Elle abritait des centaines de milliers de rouleaux. Sa disparition reste l'une des plus grandes pertes de connaissances de l'histoire.",
+              "emoji": "📚"
+            },
+            {
+              "title": "L'oracle de Delphes",
+              "text": "À Delphes, en Grèce, on venait consulter un oracle censé transmettre les messages du dieu Apollon. Au fronton du temple était gravée une maxime célèbre : « Connais-toi toi-même », une invitation à se comprendre soi-même.",
+              "emoji": "🔮"
+            },
+            {
+              "title": "Les pyramides, prouesses d'ingénierie",
+              "text": "La Grande Pyramide de Khéops, construite il y a environ 4 500 ans, mesurait près de 146 mètres. Sans machines modernes, les Égyptiens ont déplacé des blocs de plusieurs tonnes : une prouesse qui fascine encore les chercheurs.",
+              "emoji": "🔺"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Quelle merveille antique existe encore aujourd'hui ?",
+              "options": [
+                "Le Phare d'Alexandrie",
+                "La Grande Pyramide de Gizeh",
+                "Les Jardins de Babylone",
+                "Le Colosse de Rhodes"
+              ],
+              "correctAnswer": "La Grande Pyramide de Gizeh",
+              "isSpecial": false
+            },
+            {
+              "question": "Combien y avait-il de Merveilles du monde antique ?",
+              "options": [
+                "Cinq",
+                "Sept",
+                "Dix",
+                "Douze"
+              ],
+              "correctAnswer": "Sept",
+              "isSpecial": false
+            },
+            {
+              "question": "Que voulait rassembler la bibliothèque d'Alexandrie ?",
+              "options": [
+                "De l'or",
+                "Tout le savoir du monde",
+                "Des armes",
+                "Des animaux"
+              ],
+              "correctAnswer": "Tout le savoir du monde",
+              "isSpecial": false
+            },
+            {
+              "question": "Quelle maxime était gravée au temple de Delphes ?",
+              "options": [
+                "Connais-toi toi-même",
+                "Aide-toi, le ciel t'aidera",
+                "Carpe diem",
+                "Veni, vidi, vici"
+              ],
+              "correctAnswer": "Connais-toi toi-même",
+              "isSpecial": false
+            },
+            {
+              "question": "À Delphes, l'oracle transmettait les messages de quel dieu ?",
+              "options": [
+                "Zeus",
+                "Apollon",
+                "Poséidon",
+                "Arès"
+              ],
+              "correctAnswer": "Apollon",
+              "isSpecial": false
+            },
+            {
+              "question": "Qui a construit la Grande Pyramide ?",
+              "options": [
+                "Les Romains",
+                "Les Grecs",
+                "Les Égyptiens",
+                "Les Babyloniens"
+              ],
+              "correctAnswer": "Les Égyptiens",
+              "isSpecial": false
+            },
+            {
+              "question": "Quel âge a environ la Grande Pyramide de Khéops ?",
+              "options": [
+                "Environ 1 000 ans",
+                "Environ 2 000 ans",
+                "Environ 4 500 ans",
+                "Environ 10 000 ans"
+              ],
+              "correctAnswer": "Environ 4 500 ans",
+              "isSpecial": false
+            },
+            {
+              "question": "Dans quelle cité se trouvaient les Jardins suspendus ?",
+              "options": [
+                "Athènes",
+                "Babylone",
+                "Le Caire",
+                "Carthage"
+              ],
+              "correctAnswer": "Babylone",
+              "isSpecial": false
+            },
+            {
+              "question": "À quoi servait le Phare d'Alexandrie ?",
+              "options": [
+                "À stocker du grain",
+                "À guider les navires",
+                "À observer les étoiles",
+                "À défendre la ville"
+              ],
+              "correctAnswer": "À guider les navires",
+              "isSpecial": false
+            },
+            {
+              "question": "La maxime « Connais-toi toi-même » invite surtout à…",
+              "options": [
+                "apprendre par cœur",
+                "réfléchir sur soi pour devenir plus sage",
+                "voyager loin",
+                "obéir aux dieux"
+              ],
+              "correctAnswer": "réfléchir sur soi pour devenir plus sage",
               "isSpecial": true
             }
           ]
