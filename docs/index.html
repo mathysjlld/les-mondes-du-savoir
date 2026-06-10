@@ -193,6 +193,9 @@
     .member p { color: var(--muted); font-size: .96rem; }
     .member .tags { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-top: 14px; }
     .member .tag-chip { background: #eafaf7; color: var(--purple); font-weight: 700; font-size: .78rem; padding: 5px 12px; border-radius: 999px; }
+    .member .li-link { display: inline-flex; align-items: center; gap: 8px; margin-top: 16px; background: #0a66c2; color: #fff; font-weight: 800; font-size: .85rem; padding: 9px 16px; border-radius: 12px; transition: filter .2s, transform .15s; }
+    .member .li-link:hover { filter: brightness(1.08); transform: translateY(-1px); }
+    .member .li-link .in { background: #fff; color: #0a66c2; font-family: "Baloo 2", sans-serif; font-weight: 800; border-radius: 4px; padding: 0 5px; line-height: 1.5; }
   </style>
 </head>
 <body>
@@ -365,6 +368,9 @@
               <span class="tag-chip">Web &amp; digital</span>
               <span class="tag-chip">Nouvelles technologies</span>
             </div>
+            <a class="li-link" href="https://www.linkedin.com/in/ka%C3%AFden-vialle-910289142/" target="_blank" rel="noreferrer">
+              <span class="in">in</span> Voir le profil LinkedIn
+            </a>
           </div>
         </div>
       </div>
