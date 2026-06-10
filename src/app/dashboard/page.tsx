@@ -213,6 +213,8 @@ export default function Dashboard() {
 
   const currentLevel = getLevel();
   const xpPercent = getXpPercent();
+  // Code triche 7194 : débloque pièces/diamants ET tous les univers (niveaux + cristaux)
+  const cheat = !!profile.isCheatEnabled;
 
   // Universes
   const activeUniverses = Object.values(UNIVERSES);
@@ -517,12 +519,12 @@ export default function Dashboard() {
                   let label = "Thème secret";
                   let msg = "";
                   if (unl && unl.type === "level") {
-                    locked = currentLevel < unl.value;
+                    locked = !cheat && currentLevel < unl.value;
                     label = "Thème secret";
                     msg = `Atteins le niveau ${unl.value} pour découvrir un univers mystère ! (niveau ${currentLevel}/${unl.value})`;
                   } else if (unl && unl.type === "crystals") {
                     const cr = profile.maxCrystals || 0; // pic atteint : reste débloqué même après avoir dépensé des cristaux
-                    locked = cr < unl.value;
+                    locked = !cheat && cr < unl.value;
                     label = "Monde légendaire";
                     msg = `Réunis ${unl.value} cristaux 💠 (gagnés en réussissant les quiz du thème secret sans faute) pour ouvrir ce monde ! (${cr}/${unl.value})`;
                   }
@@ -542,7 +544,7 @@ export default function Dashboard() {
                 }
 
                 // Univers de base : verrouillé tant que le niveau requis n'est pas atteint
-                if (!univ.secret && univ.unlock && univ.unlock.type === "level" && currentLevel < univ.unlock.value) {
+                if (!cheat && !univ.secret && univ.unlock && univ.unlock.type === "level" && currentLevel < univ.unlock.value) {
                   return (
                     <button
                       key={univ.id}
