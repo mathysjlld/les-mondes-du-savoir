@@ -1,20 +1,26 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { useApp } from "@/context/AppContext";
 import { UNIVERSES } from "@/data/lessons";
-import { asset } from "@/lib/asset";
 import { playSound } from "@/lib/sound";
 
 export default function TempleWorld() {
   const router = useRouter();
   const { profile, isLoaded } = useApp();
+  const [showIntro, setShowIntro] = useState(true);
 
   useEffect(() => {
     if (isLoaded && !profile) router.push("/");
   }, [isLoaded, profile, router]);
+
+  useEffect(() => {
+    playSound("levelup");
+    const t = setTimeout(() => setShowIntro(false), 1900);
+    return () => clearTimeout(t);
+  }, []);
 
   if (!profile) return null;
 
@@ -31,9 +37,37 @@ export default function TempleWorld() {
         {[12, 30, 70, 88].map((l, i) => (
           <div key={i} className="absolute top-0 bottom-0 w-6 bg-gradient-to-b from-amber-300/25 to-amber-600/10 border-x border-amber-500/20" style={{ left: `${l}%` }} />
         ))}
+        {/* Particules dorées flottantes */}
+        {Array.from({ length: 16 }).map((_, i) => (
+          <motion.span
+            key={`p-${i}`}
+            className="absolute text-amber-400/70 select-none"
+            style={{ left: `${(i * 37) % 100}%`, bottom: "-5%", fontSize: `${10 + (i % 4) * 5}px` }}
+            animate={{ y: ["0vh", "-105vh"], opacity: [0, 0.9, 0.9, 0], rotate: [0, 180] }}
+            transition={{ duration: 9 + (i % 5) * 2, delay: (i % 8) * 1.1, repeat: Infinity, ease: "linear" }}
+          >
+            ✦
+          </motion.span>
+        ))}
       </div>
 
       <div className="relative z-10 max-w-5xl mx-auto px-4 py-6 sm:py-8 flex flex-col gap-6">
+        {/* Fronton de temple grec */}
+        <motion.div
+          initial={{ opacity: 0, y: -12 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="flex justify-center -mb-2 select-none pointer-events-none"
+        >
+          <svg viewBox="0 0 240 70" className="w-44 sm:w-60 h-auto drop-shadow">
+            <polygon points="120,4 230,40 10,40" fill="#fcd34d" stroke="#b45309" strokeWidth="3" />
+            <polygon points="120,12 205,38 35,38" fill="#fef3c7" />
+            <rect x="14" y="40" width="212" height="8" fill="#f59e0b" stroke="#b45309" strokeWidth="2" />
+            {[28, 66, 104, 142, 180, 212].map((x, i) => (
+              <rect key={i} x={x} y="48" width="14" height="20" fill="#fde68a" stroke="#b45309" strokeWidth="2" />
+            ))}
+          </svg>
+        </motion.div>
+
         {/* En-tête */}
         <header className="flex items-center justify-between gap-2 bg-amber-900/90 text-amber-50 rounded-2xl px-4 py-3 shadow-lg border-b-4 border-amber-950">
           <button
@@ -101,6 +135,51 @@ export default function TempleWorld() {
           </div>
         </section>
       </div>
+
+      {/* Animation d'entrée dans le monde */}
+      <AnimatePresence>
+        {showIntro && (
+          <motion.div
+            initial={{ opacity: 1 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.6 }}
+            className="fixed inset-0 z-[120] flex flex-col items-center justify-center bg-gradient-to-b from-amber-800 via-amber-600 to-orange-700 text-amber-50 select-none overflow-hidden"
+          >
+            <motion.div
+              className="absolute w-[120vmax] h-[120vmax] rounded-full bg-yellow-300/30 blur-3xl"
+              initial={{ scale: 0.2, opacity: 0 }}
+              animate={{ scale: 1.4, opacity: [0, 0.8, 0.4] }}
+              transition={{ duration: 1.6, ease: "easeOut" }}
+            />
+            <motion.span
+              initial={{ scale: 0.4, rotate: -10, opacity: 0 }}
+              animate={{ scale: 1, rotate: 0, opacity: 1 }}
+              transition={{ type: "spring", stiffness: 120, delay: 0.1 }}
+              className="text-7xl sm:text-8xl drop-shadow-lg z-10"
+            >
+              🏛️
+            </motion.span>
+            <motion.h2
+              initial={{ y: 16, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.35 }}
+              className="mt-4 text-2xl sm:text-4xl font-black tracking-wide z-10 text-center px-4"
+              style={{ fontFamily: "var(--font-title)" }}
+            >
+              Le Temple des Sages
+            </motion.h2>
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.7 }}
+              className="mt-1 text-sm sm:text-base font-bold text-amber-100 z-10"
+            >
+              Tu pénètres dans le monde de la sagesse…
+            </motion.p>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </main>
   );
 }

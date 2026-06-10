@@ -69,6 +69,17 @@ export default function SanctuaryMarket() {
         {[8, 26, 74, 92].map((l, i) => (
           <div key={i} className="absolute top-0 bottom-0 w-6 bg-gradient-to-b from-amber-300/25 to-amber-700/10 border-x border-amber-500/20" style={{ left: `${l}%` }} />
         ))}
+        {Array.from({ length: 12 }).map((_, i) => (
+          <motion.span
+            key={`p-${i}`}
+            className="absolute text-amber-400/70 select-none"
+            style={{ left: `${(i * 43) % 100}%`, bottom: "-5%", fontSize: `${10 + (i % 3) * 5}px` }}
+            animate={{ y: ["0vh", "-105vh"], opacity: [0, 0.9, 0.9, 0], rotate: [0, 180] }}
+            transition={{ duration: 10 + (i % 4) * 2, delay: (i % 6) * 1.3, repeat: Infinity, ease: "linear" }}
+          >
+            ✦
+          </motion.span>
+        ))}
       </div>
 
       <div className="relative z-10 max-w-3xl mx-auto px-4 py-6 sm:py-8 flex flex-col gap-5">
