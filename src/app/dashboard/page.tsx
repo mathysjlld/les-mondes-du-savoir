@@ -112,6 +112,7 @@ export default function Dashboard() {
   const {
     profile,
     isLoaded,
+    logout,
     buyAccessory,
     equipAccessory,
     resetProgress,
@@ -1066,15 +1067,15 @@ export default function Dashboard() {
 
                 <button
                   onClick={() => {
-                    resetProgress();
+                    logout();
                     playSound("click");
                     setShowParentsSpace(false);
-                    router.push("/");
+                    router.push("/login");
                   }}
                   className="w-full py-2.5 sm:py-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-[10px] sm:text-xs flex items-center justify-center gap-1.5 sm:gap-2 cursor-pointer transition-colors"
                 >
                   <LogOut size={12} className="sm:w-3.5 sm:h-3.5" />
-                  Se déconnecter (Changer d'utilisateur)
+                  Se déconnecter (mon compte est gardé)
                 </button>
               </div>
             </motion.div>

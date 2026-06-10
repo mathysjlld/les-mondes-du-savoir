@@ -34,6 +34,8 @@ export interface UserProfile {
   soundEnabled: boolean;
   readAloudEnabled: boolean;
   parentCode?: string;
+  accountCode?: string; // Code à 4 chiffres pour retrouver/recharger son compte sur cet appareil
+  codeHint?: string; // Indice pour se souvenir du code de connexion (en cas d'oubli)
   wateringCans: number; // Arrosoirs gagnés (5 bonnes réponses d'affilée)
   treeGrowth: number; // Pourcentage de croissance globale continue (0 à 100)
   isCheatEnabled?: boolean;
@@ -41,10 +43,22 @@ export interface UserProfile {
   savedDiamonds?: number;
 }
 
+// Résumé d'un compte sauvegardé sur l'appareil (pour l'écran de connexion)
+export interface AccountSummary {
+  accountCode: string;
+  nickname: string;
+  avatar: AvatarConfig;
+  codeHint?: string;
+}
+
 interface AppContextType {
   profile: UserProfile | null;
   isLoaded: boolean;
-  onboardUser: (nickname: string, ageGroup: "facile" | "difficile", avatar: AvatarConfig, parentCode: string) => void;
+  onboardUser: (nickname: string, ageGroup: "facile" | "difficile", avatar: AvatarConfig, parentCode: string, accountCode: string, codeHint: string) => void;
+  // Comptes locaux (connexion par code à 4 chiffres + indice)
+  listAccounts: () => AccountSummary[];
+  loginWithCode: (code: string) => { error: string | null };
+  logout: () => void;
   addXp: (amount: number) => { leveledUp: boolean; currentLevel: number; newLevel: number };
   addCoins: (amount: number) => void;
   resetCoins: () => void; // remet les pièces à 0 (ne touche pas aux diamants)
@@ -191,12 +205,58 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     }
   }, []);
 
-  // Sauvegarder dans le localStorage à chaque modification du profil
+  // Sauvegarder dans le localStorage à chaque modification du profil,
+  // et tenir à jour le registre multi-comptes (indexé par code de connexion).
   useEffect(() => {
     if (isLoaded && profile) {
       localStorage.setItem("explorakids_profile", JSON.stringify(profile));
+      if (profile.accountCode) upsertAccount(profile);
     }
   }, [profile, isLoaded]);
+
+  // ===== Comptes locaux (connexion par code à 4 chiffres) =====
+  const ACCOUNTS_KEY = "explorakids_accounts";
+  const readAccounts = (): UserProfile[] => {
+    if (typeof window === "undefined") return [];
+    try {
+      const raw = localStorage.getItem(ACCOUNTS_KEY);
+      return raw ? (JSON.parse(raw) as UserProfile[]) : [];
+    } catch {
+      return [];
+    }
+  };
+  const upsertAccount = (p: UserProfile) => {
+    if (typeof window === "undefined" || !p.accountCode) return;
+    const all = readAccounts().filter((a) => a.accountCode !== p.accountCode);
+    all.push(p);
+    localStorage.setItem(ACCOUNTS_KEY, JSON.stringify(all));
+  };
+  const removeAccount = (code?: string) => {
+    if (typeof window === "undefined" || !code) return;
+    const all = readAccounts().filter((a) => a.accountCode !== code);
+    localStorage.setItem(ACCOUNTS_KEY, JSON.stringify(all));
+  };
+  const listAccounts = (): AccountSummary[] =>
+    readAccounts()
+      .filter((a) => a.accountCode)
+      .map((a) => ({
+        accountCode: a.accountCode as string,
+        nickname: a.nickname,
+        avatar: a.avatar || { type: "fox", color: "orange", accessories: [] },
+        codeHint: a.codeHint,
+      }));
+  const loginWithCode = (code: string): { error: string | null } => {
+    const found = readAccounts().find((a) => a.accountCode === code.trim());
+    if (!found) return { error: "Aucun compte ne correspond à ce code." };
+    localStorage.setItem("explorakids_profile", JSON.stringify(found));
+    setProfile(found);
+    return { error: null };
+  };
+  const logout = () => {
+    // Le compte reste sauvegardé dans le registre ; on quitte juste la session active.
+    if (typeof window !== "undefined") localStorage.removeItem("explorakids_profile");
+    setProfile(null);
+  };
 
   // ===== Sauvegarde cloud + comptes (Supabase) — actif seulement si configuré =====
   const saveCloudProfile = async (uid: string, p: UserProfile) => {
@@ -260,12 +320,14 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
   };
 
   // Initialisation de l'utilisateur
-  const onboardUser = (nickname: string, ageGroup: "facile" | "difficile", avatar: AvatarConfig, parentCode: string) => {
+  const onboardUser = (nickname: string, ageGroup: "facile" | "difficile", avatar: AvatarConfig, parentCode: string, accountCode: string, codeHint: string) => {
     const todayStr = new Date().toISOString().split("T")[0];
     const newProfile: UserProfile = {
       nickname,
       ageGroup,
       avatar,
+      accountCode,
+      codeHint,
       xp: 0,
       coins: 20, // 20 pièces offertes à la création
       diamonds: 0, // 0 diamants au départ
@@ -751,9 +813,10 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     });
   };
 
-  // Réinitialiser tout
+  // Réinitialiser tout (supprime aussi le compte du registre local)
   const resetProgress = () => {
     if (typeof window !== "undefined") {
+      removeAccount(profile?.accountCode);
       localStorage.removeItem("explorakids_profile");
     }
     setProfile(null);
@@ -792,6 +855,9 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
         profile,
         isLoaded,
         onboardUser,
+        listAccounts,
+        loginWithCode,
+        logout,
         addXp,
         addCoins,
         resetCoins,

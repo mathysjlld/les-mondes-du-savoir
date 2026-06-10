@@ -5,38 +5,37 @@ import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import { playSound } from "@/lib/sound";
 import { asset } from "@/lib/asset";
+import { useApp } from "@/context/AppContext";
 import { Sparkles, Gamepad2, Compass, Award } from "lucide-react";
 
 export default function Home() {
   const router = useRouter();
-  const [hasProfile, setHasProfile] = useState(false);
-  const [nickname, setNickname] = useState("");
+  const { profile, listAccounts } = useApp();
+  const [accountCount, setAccountCount] = useState(0);
+
+  const hasProfile = !!profile;
+  const nickname = profile?.nickname || "";
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      const stored = localStorage.getItem("explorakids_profile");
-      if (stored) {
-        try {
-          const parsed = JSON.parse(stored);
-          if (parsed && parsed.nickname) {
-            setHasProfile(true);
-            setNickname(parsed.nickname);
-          }
-        } catch (e) {
-          console.error(e);
-        }
-      }
-    }
-  }, []);
+    setAccountCount(listAccounts().length);
+  }, [listAccounts, profile]);
 
   const handleStart = () => {
     playSound("levelup");
     if (hasProfile) {
       router.push("/dashboard");
+    } else if (accountCount > 0) {
+      router.push("/login");
     } else {
       router.push("/onboarding");
     }
   };
+
+  const ctaLabel = hasProfile
+    ? `Continuer avec ${nickname} ➔`
+    : accountCount > 0
+    ? "Se connecter 🔑"
+    : "Commencer l'aventure ! 🚀";
 
   return (
     <div className="flex-1 flex flex-col items-center justify-between min-h-screen bg-gradient-to-b from-sky-200 via-sky-100 to-indigo-100 p-4 sm:p-6 relative overflow-hidden">
@@ -117,8 +116,16 @@ export default function Home() {
             onClick={handleStart}
             className="w-full py-4 px-6 min-[380px]:py-5 min-[380px]:px-8 rounded-3xl bg-yellow-400 hover:bg-yellow-500 text-yellow-950 text-xl min-[380px]:text-2xl font-black shadow-2xl transition-all cursor-pointer border-b-8 border-yellow-600 active:border-b-2 active:translate-y-[6px] btn-bubble flex items-center justify-center gap-3"
           >
-            <span>{hasProfile ? `Continuer avec ${nickname} ➔` : "Commencer l'aventure ! 🚀"}</span>
+            <span>{ctaLabel}</span>
           </button>
+          {!hasProfile && accountCount > 0 && (
+            <button
+              onClick={() => { playSound("click"); router.push("/onboarding"); }}
+              className="w-full mt-3 text-sm font-bold text-indigo-700 hover:underline cursor-pointer"
+            >
+              + Créer un nouveau compte
+            </button>
+          )}
         </motion.div>
       </main>
 
