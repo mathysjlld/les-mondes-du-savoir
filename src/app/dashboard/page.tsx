@@ -1035,6 +1035,16 @@ export default function Dashboard() {
                 </p>
               </div>
 
+              {/* Compte & sauvegarde cloud */}
+              <div className="flex flex-col gap-2 sm:gap-3 pt-3 sm:pt-4 border-t border-slate-100">
+                <button
+                  onClick={() => { playSound("click"); router.push("/account"); }}
+                  className="w-full py-2.5 sm:py-3 rounded-xl bg-teal-50 hover:bg-teal-100 text-teal-700 font-bold text-[10px] sm:text-xs flex items-center justify-center gap-1.5 sm:gap-2 cursor-pointer transition-colors border border-teal-200"
+                >
+                  ☁️ Mon compte & sauvegarde cloud
+                </button>
+              </div>
+
               {/* Actions dangereuses */}
               <div className="flex flex-col gap-2 sm:gap-3 pt-3 sm:pt-4 border-t border-slate-100">
                 <button
