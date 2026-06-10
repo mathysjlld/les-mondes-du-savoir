@@ -8,7 +8,7 @@ import { usePathname } from "next/navigation";
  * Masqué sur les écrans immersifs (onboarding, quiz, marché) où un footer légal
  * déséquilibrerait la mise en page. Centré et équilibré à toutes les largeurs.
  */
-const HIDDEN_PREFIXES = ["/onboarding", "/play", "/market"];
+const HIDDEN_PREFIXES = ["/onboarding", "/play", "/market", "/temple"];
 
 export function Footer() {
   const pathname = usePathname() || "/";

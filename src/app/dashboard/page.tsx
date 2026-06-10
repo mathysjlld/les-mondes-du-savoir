@@ -283,10 +283,10 @@ export default function Dashboard() {
           {/* Accès direct aux nouveaux mondes, sans avoir à gagner les cristaux */}
           <div className="flex flex-wrap items-center justify-center gap-2">
             <button
-              onClick={() => { playSound("click"); router.push("/play/temple"); }}
-              className="px-3 py-1.5 rounded-xl bg-white/90 hover:bg-white text-fuchsia-800 font-black text-[11px] sm:text-xs cursor-pointer transition-colors border border-fuchsia-200 shadow"
+              onClick={() => { playSound("click"); router.push("/temple"); }}
+              className="px-3 py-1.5 rounded-xl bg-white/90 hover:bg-white text-amber-800 font-black text-[11px] sm:text-xs cursor-pointer transition-colors border border-amber-200 shadow"
             >
-              🏛️ Tester Le Temple des Sages →
+              🏛️ Entrer dans Le Temple des Sages →
             </button>
             <button
               onClick={() => { playSound("click"); router.push("/play/mythology"); }}
@@ -615,7 +615,8 @@ export default function Dashboard() {
                     key={univ.id}
                     onClick={() => {
                       playSound("click");
-                      router.push(`/play/${univ.id}`);
+                      // Le Temple des Sages est un monde à part : on entre dans son hub dédié
+                      router.push(univ.id === "temple" ? "/temple" : `/play/${univ.id}`);
                     }}
                     className={`p-4 sm:p-5 rounded-3xl border-4 bg-gradient-to-br flex flex-col justify-between items-start text-left cursor-pointer transition-all duration-300 relative group overflow-hidden ${currentStyle}`}
                   >
