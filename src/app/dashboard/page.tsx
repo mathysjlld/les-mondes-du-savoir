@@ -273,12 +273,27 @@ export default function Dashboard() {
       
       {/* Bandeau d'avertissement de triche */}
       {profile?.isCheatEnabled && (
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="w-full bg-gradient-to-r from-amber-500 via-orange-500 to-amber-600 text-white font-black text-center py-2.5 px-4 rounded-2xl shadow-md flex items-center justify-center gap-2 text-xs sm:text-sm border-2 border-amber-300"
+          className="w-full bg-gradient-to-r from-amber-500 via-orange-500 to-amber-600 text-white font-black py-2.5 px-4 rounded-2xl shadow-md flex flex-col items-center gap-2 text-xs sm:text-sm border-2 border-amber-300"
         >
-          ⚡ Mode Test Actif : Pièces et Diamants Illimités (Ressaisis le code 7194 dans la section Parents pour revenir à la normale)
+          <span className="text-center">⚡ Mode Test Actif : pièces, diamants et tous les univers débloqués (ressaisis 7194 dans la section Parents pour revenir à la normale)</span>
+          {/* Accès direct aux nouveaux mondes, sans avoir à gagner les cristaux */}
+          <div className="flex flex-wrap items-center justify-center gap-2">
+            <button
+              onClick={() => { playSound("click"); router.push("/play/temple"); }}
+              className="px-3 py-1.5 rounded-xl bg-white/90 hover:bg-white text-fuchsia-800 font-black text-[11px] sm:text-xs cursor-pointer transition-colors border border-fuchsia-200 shadow"
+            >
+              🏛️ Tester Le Temple des Sages →
+            </button>
+            <button
+              onClick={() => { playSound("click"); router.push("/play/mythology"); }}
+              className="px-3 py-1.5 rounded-xl bg-white/90 hover:bg-white text-violet-800 font-black text-[11px] sm:text-xs cursor-pointer transition-colors border border-violet-200 shadow"
+            >
+              🔮 Tester Mythologie (thème secret) →
+            </button>
+          </div>
         </motion.div>
       )}
       
