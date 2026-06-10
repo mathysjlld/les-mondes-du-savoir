@@ -59,6 +59,7 @@ interface AppContextType {
   listAccounts: () => AccountSummary[];
   loginWithCode: (code: string) => { error: string | null };
   logout: () => void;
+  changeAccountCode: (newCode: string, newHint?: string) => { error: string | null };
   addXp: (amount: number) => { leveledUp: boolean; currentLevel: number; newLevel: number };
   addCoins: (amount: number) => void;
   resetCoins: () => void; // remet les pièces à 0 (ne touche pas aux diamants)
@@ -256,6 +257,21 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     // Le compte reste sauvegardé dans le registre ; on quitte juste la session active.
     if (typeof window !== "undefined") localStorage.removeItem("explorakids_profile");
     setProfile(null);
+  };
+  // Changer le code de connexion (et éventuellement l'indice) du compte actif.
+  const changeAccountCode = (newCode: string, newHint?: string): { error: string | null } => {
+    if (!profile) return { error: "Aucun compte actif." };
+    const code = newCode.trim();
+    if (!/^\d{4}$/.test(code)) return { error: "Le code doit faire exactement 4 chiffres." };
+    const clash = readAccounts().some((a) => a.accountCode === code && a.accountCode !== profile.accountCode);
+    if (clash) return { error: "Ce code est déjà utilisé par un autre compte." };
+    removeAccount(profile.accountCode); // retire l'ancienne entrée ; l'autosave réécrira sous le nouveau code
+    setProfile({
+      ...profile,
+      accountCode: code,
+      codeHint: newHint && newHint.trim() ? newHint.trim() : profile.codeHint,
+    });
+    return { error: null };
   };
 
   // ===== Sauvegarde cloud + comptes (Supabase) — actif seulement si configuré =====
@@ -858,6 +874,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
         listAccounts,
         loginWithCode,
         logout,
+        changeAccountCode,
         addXp,
         addCoins,
         resetCoins,

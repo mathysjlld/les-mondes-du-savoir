@@ -113,6 +113,7 @@ export default function Dashboard() {
     profile,
     isLoaded,
     logout,
+    changeAccountCode,
     buyAccessory,
     equipAccessory,
     resetProgress,
@@ -135,6 +136,12 @@ export default function Dashboard() {
   const [showBadges, setShowBadges] = useState(false);
   const [showParentsGate, setShowParentsGate] = useState(false);
   const [showParentsSpace, setShowParentsSpace] = useState(false);
+
+  // Changement du code de connexion (Espace Parents)
+  const [showChangeCode, setShowChangeCode] = useState(false);
+  const [newCode, setNewCode] = useState("");
+  const [newHint, setNewHint] = useState("");
+  const [codeMsg, setCodeMsg] = useState<{ type: "ok" | "err"; text: string } | null>(null);
 
   // Barrière parentale
   const [parentAnswer, setParentAnswer] = useState("");
@@ -1046,6 +1053,64 @@ export default function Dashboard() {
                 >
                   ☁️ Mon compte & sauvegarde cloud
                 </button>
+
+                {/* Changer le code de connexion */}
+                <button
+                  onClick={() => {
+                    playSound("click");
+                    setShowChangeCode((v) => !v);
+                    setNewCode("");
+                    setNewHint(profile.codeHint || "");
+                    setCodeMsg(null);
+                  }}
+                  className="w-full py-2.5 sm:py-3 rounded-xl bg-indigo-50 hover:bg-indigo-100 text-indigo-700 font-bold text-[10px] sm:text-xs flex items-center justify-center gap-1.5 sm:gap-2 cursor-pointer transition-colors border border-indigo-200"
+                >
+                  🔑 Changer mon code de connexion
+                </button>
+
+                {showChangeCode && (
+                  <div className="flex flex-col gap-2 rounded-xl bg-slate-50 border border-slate-200 p-3">
+                    <label className="text-[10px] sm:text-xs font-bold text-slate-600">Nouveau code (4 chiffres)</label>
+                    <input
+                      type="text"
+                      inputMode="numeric"
+                      value={newCode}
+                      onChange={(e) => { setNewCode(e.target.value.replace(/\D/g, "").slice(0, 4)); setCodeMsg(null); }}
+                      placeholder="Ex : 1234"
+                      className="w-full px-3 py-2 rounded-lg border-2 border-slate-200 focus:border-indigo-400 bg-white text-center text-lg tracking-[0.3em] font-bold text-slate-700 outline-none"
+                    />
+                    <label className="text-[10px] sm:text-xs font-bold text-slate-600 mt-1">Indice (pour s&apos;en souvenir)</label>
+                    <input
+                      type="text"
+                      value={newHint}
+                      onChange={(e) => { setNewHint(e.target.value); setCodeMsg(null); }}
+                      placeholder="Ton indice..."
+                      maxLength={60}
+                      className="w-full px-3 py-2 rounded-lg border-2 border-slate-200 focus:border-indigo-400 bg-white text-sm font-semibold text-slate-700 outline-none"
+                    />
+                    {codeMsg && (
+                      <p className={`text-[11px] font-bold text-center ${codeMsg.type === "ok" ? "text-emerald-600" : "text-rose-500"}`}>
+                        {codeMsg.text}
+                      </p>
+                    )}
+                    <button
+                      onClick={() => {
+                        const { error } = changeAccountCode(newCode, newHint);
+                        if (error) {
+                          playSound("incorrect");
+                          setCodeMsg({ type: "err", text: error });
+                        } else {
+                          playSound("correct");
+                          setCodeMsg({ type: "ok", text: "Code mis à jour ! ✅" });
+                          setShowChangeCode(false);
+                        }
+                      }}
+                      className="w-full py-2.5 rounded-xl bg-indigo-500 hover:bg-indigo-600 text-white font-bold text-xs sm:text-sm cursor-pointer transition-colors border-b-4 border-indigo-700"
+                    >
+                      Enregistrer le nouveau code
+                    </button>
+                  </div>
+                )}
               </div>
 
               {/* Actions dangereuses */}
