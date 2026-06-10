@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Fredoka, Nunito } from "next/font/google";
 import "./globals.css";
 import { AppProvider } from "@/context/AppContext";
+import { Footer } from "@/components/Footer";
 
 const fredoka = Fredoka({
   variable: "--font-fredoka",
@@ -33,6 +34,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-sky-100 text-slate-800">
         <AppProvider>
           {children}
+          <Footer />
         </AppProvider>
       </body>
     </html>
