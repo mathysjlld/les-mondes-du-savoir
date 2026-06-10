@@ -21,7 +21,7 @@ export function Footer() {
           </Link>
         </nav>
         <p className="text-slate-400">
-          © {2026} — Kaiden Vialle &amp; Mathys
+          © {2026} — Kaiden Vialle &amp; Mathys Julliand
         </p>
       </div>
     </footer>

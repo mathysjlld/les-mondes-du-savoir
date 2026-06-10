@@ -24,7 +24,7 @@ export default function MentionsLegalesPage() {
             Il ne constitue pas une société commerciale et n&apos;a pas de but lucratif.
           </p>
           <ul className="mt-2 list-disc pl-6 space-y-1">
-            <li>Développeurs / auteurs : <strong>Kaiden Vialle</strong> et <strong>Mathys</strong></li>
+            <li>Développeurs / auteurs : <strong>Kaiden Vialle</strong> et <strong>Mathys Julliand</strong></li>
             <li>Contact : <a className="text-teal-600 hover:underline" href="mailto:kaidenvialle@gmail.com">kaidenvialle@gmail.com</a></li>
             <li>Statut : projet étudiant / de stage (non commercial)</li>
           </ul>
@@ -33,7 +33,7 @@ export default function MentionsLegalesPage() {
         <div>
           <h2 className="text-xl font-bold text-teal-700">Directeur de la publication</h2>
           <p className="mt-2">
-            Kaiden Vialle et Mathys, en qualité d&apos;auteurs du projet.
+            Kaiden Vialle et Mathys Julliand, en qualité d&apos;auteurs du projet.
           </p>
         </div>
 
