@@ -3,6 +3,13 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { AvatarConfig } from "@/context/AppContext";
+import { asset } from "@/lib/asset";
+
+// Personnages remplacés par une illustration (fal.ai) au lieu du SVG.
+// Les types absents de cette table continuent d'être rendus en SVG.
+const AVATAR_IMAGES: Partial<Record<AvatarConfig["type"], string>> = {
+  owl: "/images/avatar_owl.png",
+};
 
 interface AvatarRendererProps {
   config: AvatarConfig;
@@ -18,6 +25,9 @@ export const AvatarRenderer: React.FC<AvatarRendererProps> = ({
   interactive = true,
 }) => {
   const { type, color, accessories = [] } = config;
+
+  // Image personnalisée du personnage (remplace le rendu SVG si présente)
+  const customImage = AVATAR_IMAGES[type];
 
   // Animation properties are specified directly on the motion.div below
 
@@ -344,16 +354,24 @@ export const AvatarRenderer: React.FC<AvatarRendererProps> = ({
       whileTap={interactive ? { scale: 0.9, y: -10 } : undefined}
       whileHover={interactive ? { scale: 1.05, rotate: [0, -3, 3, 0] } : undefined}
     >
+      {/* Illustration du personnage (si disponible), sinon rendu SVG ci-dessous */}
+      {customImage && (
+        <img
+          src={asset(customImage)}
+          alt=""
+          className="absolute inset-0 w-full h-full object-contain drop-shadow-md select-none pointer-events-none"
+        />
+      )}
       <svg
         viewBox="0 0 100 100"
-        className="w-full h-full drop-shadow-md select-none"
+        className="absolute inset-0 w-full h-full drop-shadow-md select-none"
         xmlns="http://www.w3.org/2000/svg"
       >
         {/* Render Cape first (so it stays in the back) */}
         {accessories.includes("super-cape") && renderAccessory("super-cape")}
 
-        {/* Animal Core Body & Head */}
-        {renderAnimalSVG()}
+        {/* Animal Core Body & Head — uniquement si pas d'illustration dédiée */}
+        {!customImage && renderAnimalSVG()}
 
         {/* Render other accessories (on top of the head) */}
         {accessories.filter(a => a !== "super-cape" && a !== "none").map(a => (
