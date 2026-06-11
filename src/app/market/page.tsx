@@ -573,7 +573,7 @@ export default function Market() {
                   </motion.div>
                 )}
                 <div className="z-0 scale-65">
-                  <AvatarRenderer config={previewAvatarConfig} size={65} interactive={false} />
+                  <AvatarRenderer config={previewAvatarConfig} size={84} interactive={false} />
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 h-2 bg-emerald-950" />
               </>
@@ -766,7 +766,7 @@ export default function Market() {
 
                     {/* Avatar avec preview accessories */}
                     <div className="z-0 scale-90 sm:scale-100">
-                      <AvatarRenderer config={previewAvatarConfig} size={90} interactive={true} />
+                      <AvatarRenderer config={previewAvatarConfig} size={120} interactive={true} />
                     </div>
 
                     {/* Sol */}

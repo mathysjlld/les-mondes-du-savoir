@@ -211,10 +211,10 @@ export default function Onboarding() {
                       : "border-slate-100 hover:border-slate-300 bg-slate-50"
                   }`}
                 >
-                  <div className="w-14 h-14 min-[380px]:w-16 min-[380px]:h-16 sm:w-20 sm:h-20 flex items-center justify-center">
+                  <div className="w-20 h-20 min-[380px]:w-24 min-[380px]:h-24 sm:w-28 sm:h-28 flex items-center justify-center">
                     <AvatarRenderer
                       config={{ type: item.type, color: avatarColor, accessories: [] }}
-                      size={50}
+                      size={88}
                       interactive={false}
                     />
                   </div>
@@ -227,7 +227,7 @@ export default function Onboarding() {
             <div className="flex items-center justify-center gap-4 bg-sky-50 rounded-2xl p-3 sm:p-4 border-4 border-sky-100">
               <AvatarRenderer
                 config={{ type: avatarType, color: avatarColor, accessories: [] }}
-                size={72}
+                size={104}
                 interactive={true}
               />
               <div className="text-left">

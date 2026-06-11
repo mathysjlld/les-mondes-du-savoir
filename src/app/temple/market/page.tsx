@@ -109,8 +109,8 @@ export default function SanctuaryMarket() {
           <p className="flex-1 text-sm sm:text-base font-semibold text-amber-900 leading-relaxed">
             <strong>Le Gardien :</strong> « Seuls les cristaux 💠 ouvrent les trésors de ce sanctuaire, jeune sage. »
           </p>
-          <div className="shrink-0 w-14 h-14 sm:w-16 sm:h-16 bg-white/80 rounded-2xl border border-amber-200 flex items-center justify-center">
-            <AvatarRenderer config={profile.avatar} size={46} interactive={false} />
+          <div className="shrink-0 w-16 h-16 sm:w-20 sm:h-20 bg-white/80 rounded-2xl border border-amber-200 flex items-center justify-center">
+            <AvatarRenderer config={profile.avatar} size={60} interactive={false} />
           </div>
         </motion.div>
 

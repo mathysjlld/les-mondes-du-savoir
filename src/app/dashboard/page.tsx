@@ -313,7 +313,7 @@ export default function Dashboard() {
           <div className="relative shrink-0 flex items-end gap-1.5">
             {/* Avatar principal */}
             <div className="bg-sky-100 p-1 rounded-xl sm:rounded-2xl border-2 border-sky-300">
-              <AvatarRenderer config={profile.avatar} size={50} interactive={true} />
+              <AvatarRenderer config={profile.avatar} size={64} interactive={true} />
             </div>
 
             {/* Animal compagnon affiché clairement à côté de l'avatar */}
@@ -736,7 +736,7 @@ export default function Dashboard() {
             >
               {/* L'avatar choisi par le joueur */}
               <div className="shrink-0 select-none">
-                <AvatarRenderer config={profile.avatar} size={70} interactive={false} />
+                <AvatarRenderer config={profile.avatar} size={96} interactive={false} />
               </div>
 
               {/* Chariot en bois d'époque marron */}

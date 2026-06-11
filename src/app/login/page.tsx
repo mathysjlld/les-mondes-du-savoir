@@ -77,8 +77,8 @@ export default function LoginPage() {
                 onClick={() => choose(acc)}
                 className="flex items-center gap-3 p-3 rounded-2xl border-3 border-teal-100 bg-slate-50 hover:border-teal-400 hover:bg-teal-50 transition-all text-left cursor-pointer"
               >
-                <div className="w-12 h-12 shrink-0 flex items-center justify-center">
-                  <AvatarRenderer config={acc.avatar} size={40} interactive={false} />
+                <div className="w-14 h-14 shrink-0 flex items-center justify-center">
+                  <AvatarRenderer config={acc.avatar} size={52} interactive={false} />
                 </div>
                 <span className="font-black text-slate-700 text-lg">{acc.nickname}</span>
                 <span className="ml-auto text-teal-500 font-bold">→</span>
@@ -94,8 +94,8 @@ export default function LoginPage() {
         ) : (
           <form onSubmit={handleSubmit} className="flex flex-col gap-4">
             <div className="flex items-center gap-3 justify-center">
-              <div className="w-12 h-12 flex items-center justify-center">
-                <AvatarRenderer config={selected.avatar} size={40} interactive={false} />
+              <div className="w-14 h-14 flex items-center justify-center">
+                <AvatarRenderer config={selected.avatar} size={52} interactive={false} />
               </div>
               <span className="font-black text-slate-700 text-lg">{selected.nickname}</span>
             </div>
