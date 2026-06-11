@@ -11,6 +11,7 @@ const AVATAR_IMAGES: Partial<Record<AvatarConfig["type"], string>> = {
   fox: "/images/avatar_fox.png",
   owl: "/images/avatar_owl.png",
   panda: "/images/avatar_panda.png",
+  koala: "/images/avatar_koala.png",
 };
 
 interface AvatarRendererProps {
