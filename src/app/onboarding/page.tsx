@@ -14,14 +14,15 @@ const AVATAR_TYPES: { type: AvatarConfig["type"]; emoji: string; label: string }
   { type: "koala", emoji: "🐨", label: "Koala" },
 ];
 
-const COLORS = [
-  { name: "orange", hex: "#FF7F27", label: "Orange" },
-  { name: "blue", hex: "#3F88C5", label: "Bleu" },
-  { name: "pink", hex: "#FF70A6", label: "Rose" },
-  { name: "green", hex: "#70D6FF", label: "Vert" },
-  { name: "purple", hex: "#9B5DE5", label: "Violet" },
-  { name: "yellow", hex: "#FFD166", label: "Jaune" },
-];
+// Couleur par défaut de chaque personnage (le choix de couleur a été retiré de
+// l'onboarding). Sera sans effet une fois les personnages remplacés par les
+// illustrations fal.ai, mais reste nécessaire au rendu SVG actuel.
+const DEFAULT_COLORS: Record<AvatarConfig["type"], string> = {
+  fox: "orange",
+  panda: "grey",
+  owl: "purple",
+  koala: "blue",
+};
 
 export default function Onboarding() {
   const router = useRouter();
@@ -30,7 +31,7 @@ export default function Onboarding() {
   const [nickname, setNickname] = useState("");
   const [ageGroup, setAgeGroup] = useState<"facile" | "difficile">("facile");
   const [avatarType, setAvatarType] = useState<AvatarConfig["type"]>("fox");
-  const [avatarColor, setAvatarColor] = useState("orange");
+  const avatarColor = DEFAULT_COLORS[avatarType];
 
   const [step, setStep] = useState(1);
   const [parentCode, setParentCode] = useState("");
@@ -63,10 +64,10 @@ export default function Onboarding() {
       return;
     }
     playSound("click");
-    setStep(5);
+    setStep(4);
   };
 
-  // Étape 5 : valider le code de connexion + l'indice, puis créer le compte
+  // Étape 4 : valider le code de connexion + l'indice, puis créer le compte
   const handleFinish = (e?: React.FormEvent) => {
     if (e) e.preventDefault();
     const code = accountCode.trim();
@@ -122,7 +123,7 @@ export default function Onboarding() {
             Crée ton Aventurier
           </h1>
           <p className="text-slate-600 font-medium mt-1 text-sm sm:text-base">
-            Étape {step} sur 5
+            Étape {step} sur 4
           </p>
         </div>
 
@@ -222,6 +223,22 @@ export default function Onboarding() {
               ))}
             </div>
 
+            {/* Aperçu de l'aventurier choisi */}
+            <div className="flex items-center justify-center gap-4 bg-sky-50 rounded-2xl p-3 sm:p-4 border-4 border-sky-100">
+              <AvatarRenderer
+                config={{ type: avatarType, color: avatarColor, accessories: [] }}
+                size={72}
+                interactive={true}
+              />
+              <div className="text-left">
+                <p className="font-bold text-slate-500 text-[10px] sm:text-xs uppercase tracking-wider">Aventurier</p>
+                <h3 className="font-bold text-lg sm:text-xl text-slate-700 capitalize">{nickname}</h3>
+                <span className="px-2.5 py-0.5 sm:px-3 sm:py-1 bg-indigo-100 text-indigo-700 text-[10px] sm:text-xs font-bold rounded-full mt-1 inline-block">
+                  Niveau {ageGroup === "facile" ? "Collège" : "Lycée"}
+                </span>
+              </div>
+            </div>
+
             <div className="flex gap-4 mt-4 sm:mt-6">
               <button
                 onClick={handlePrevStep}
@@ -239,71 +256,8 @@ export default function Onboarding() {
           </motion.div>
         )}
 
-        {/* Étape 3 : Choix de la Couleur & Preview Finale */}
+        {/* Étape 3 : Validation du Code Parental */}
         {step === 3 && (
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            className="flex flex-col sm:flex-row items-center gap-4 sm:gap-8"
-          >
-            {/* Colonne Preview */}
-            <div className="flex flex-col items-center gap-3 sm:gap-4 bg-sky-50 rounded-2xl p-4 sm:p-6 border-4 border-sky-100 w-full sm:w-1/2">
-              <AvatarRenderer
-                config={{ type: avatarType, color: avatarColor, accessories: [] }}
-                size={100}
-                interactive={true}
-              />
-              <div className="text-center">
-                <p className="font-bold text-slate-500 text-[10px] sm:text-xs uppercase tracking-wider">Aventurier</p>
-                <h3 className="font-bold text-lg sm:text-xl text-slate-700 capitalize">{nickname}</h3>
-                <span className="px-2.5 py-0.5 sm:px-3 sm:py-1 bg-indigo-100 text-indigo-700 text-[10px] sm:text-xs font-bold rounded-full mt-1.5 sm:mt-2 inline-block">
-                  Niveau {ageGroup === "facile" ? "Collège" : "Lycée"}
-                </span>
-              </div>
-            </div>
-
-            {/* Colonne Choix Couleurs */}
-            <div className="flex flex-col gap-4 sm:gap-6 w-full sm:w-1/2">
-              <div className="flex flex-col gap-2">
-                <label className="text-base sm:text-lg font-bold text-slate-700 text-center sm:text-left">
-                  Choisis sa couleur !
-                </label>
-                <div className="grid grid-cols-3 gap-2">
-                  {COLORS.map((c) => (
-                    <button
-                      key={c.name}
-                      onClick={() => {
-                        playSound("click");
-                        setAvatarColor(c.name);
-                      }}
-                      className={`h-10 sm:h-12 rounded-xl flex items-center justify-center border-4 transition-all relative cursor-pointer ${
-                        avatarColor === c.name ? "border-slate-800 scale-105" : "border-transparent"
-                      }`}
-                      style={{ backgroundColor: c.hex }}
-                      title={c.label}
-                    >
-                      {avatarColor === c.name && (
-                        <span className="text-white text-xs font-bold drop-shadow">✨</span>
-                      )}
-                    </button>
-                  ))}
-                </div>
-              </div>
-
-              <div className="flex flex-col gap-3 mt-2 sm:mt-4">
-                <button
-                  onClick={handleNextStep}
-                  className="w-full py-3 sm:py-4 rounded-xl sm:rounded-2xl bg-emerald-500 hover:bg-emerald-600 text-white text-lg sm:text-xl font-bold transition-all shadow-lg btn-bubble border-b-4 border-emerald-700"
-                >
-                  Continuer ➔
-                </button>
-              </div>
-            </div>
-          </motion.div>
-        )}
-
-        {/* Étape 4 : Validation du Code Parental */}
-        {step === 4 && (
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -366,8 +320,8 @@ export default function Onboarding() {
           </motion.div>
         )}
 
-        {/* Étape 5 : Code de connexion + indice (pour retrouver son compte) */}
-        {step === 5 && (
+        {/* Étape 4 : Code de connexion + indice (pour retrouver son compte) */}
+        {step === 4 && (
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
