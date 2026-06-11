@@ -8,6 +8,7 @@ import { asset } from "@/lib/asset";
 // Personnages remplacés par une illustration (fal.ai) au lieu du SVG.
 // Les types absents de cette table continuent d'être rendus en SVG.
 const AVATAR_IMAGES: Partial<Record<AvatarConfig["type"], string>> = {
+  fox: "/images/avatar_fox.png",
   owl: "/images/avatar_owl.png",
   panda: "/images/avatar_panda.png",
 };
