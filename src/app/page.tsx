@@ -82,6 +82,22 @@ export default function Home() {
           </p>
         </motion.div>
 
+        {/* Illustration héro : l'Arbre du Savoir et les mascottes */}
+        <motion.div
+          initial={{ scale: 0.9, opacity: 0, y: 20 }}
+          animate={{ scale: 1, opacity: 1, y: 0 }}
+          transition={{ type: "spring", stiffness: 90, delay: 0.15 }}
+          className="w-full max-w-lg px-2"
+        >
+          <motion.img
+            animate={{ y: [0, -6, 0] }}
+            transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+            src={asset("/images/home_arbre.png")}
+            alt="Les mascottes d'ExploraKids autour de l'Arbre du Savoir"
+            className="w-full h-auto rounded-3xl border-4 border-white shadow-2xl select-none"
+          />
+        </motion.div>
+
         {/* Mascotte mignonne / Groupe d'illustrations 3D */}
         <motion.div
           animate={{ y: [0, -8, 0] }}
