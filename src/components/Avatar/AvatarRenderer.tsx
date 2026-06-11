@@ -9,6 +9,7 @@ import { asset } from "@/lib/asset";
 // Les types absents de cette table continuent d'être rendus en SVG.
 const AVATAR_IMAGES: Partial<Record<AvatarConfig["type"], string>> = {
   owl: "/images/avatar_owl.png",
+  panda: "/images/avatar_panda.png",
 };
 
 interface AvatarRendererProps {
