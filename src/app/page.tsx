@@ -77,8 +77,8 @@ export default function Home() {
           <h1 className="text-4xl min-[360px]:text-5xl sm:text-7xl font-black text-indigo-900 drop-shadow-md select-none tracking-tight">
             Explora<span className="text-yellow-500">Kids</span>
           </h1>
-          <p className="text-base sm:text-xl font-bold text-slate-700 mt-3 max-w-md leading-relaxed px-4">
-            Le site d'exploration où tu apprends en t'amusant et fais grandir ton Arbre du Savoir !
+          <p className="text-base sm:text-xl font-bold text-slate-700 mt-3 max-w-md leading-relaxed px-4 text-balance">
+            Le site d&apos;exploration où tu apprends en t&apos;amusant et fais grandir ton Arbre du Savoir&nbsp;!
           </p>
         </motion.div>
 
@@ -87,7 +87,7 @@ export default function Home() {
           initial={{ scale: 0.9, opacity: 0, y: 20 }}
           animate={{ scale: 1, opacity: 1, y: 0 }}
           transition={{ type: "spring", stiffness: 90, delay: 0.15 }}
-          className="w-full max-w-lg px-2"
+          className="w-full max-w-2xl px-2"
         >
           <motion.img
             animate={{ y: [0, -6, 0] }}
