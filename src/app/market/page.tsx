@@ -451,7 +451,7 @@ export default function Market() {
         <div className="flex items-center gap-2">
           {/* Marchand Barnabé compact */}
           <div className="flex-1 bg-amber-950/80 border border-amber-800 p-2 rounded-xl flex items-center gap-2 min-w-0">
-            <div className="w-10 h-10 shrink-0 select-none">
+            <div className="w-14 h-14 shrink-0 select-none">
               <img src={asset("/images/barnabe.png")} alt="Barnabé l'ours marchand" className="w-full h-full object-contain drop-shadow-sm select-none" />
             </div>
             <div className="text-[10px] leading-tight font-bold text-stone-200 truncate flex-1">
@@ -554,7 +554,7 @@ export default function Market() {
               <div className="flex flex-row min-[420px]:flex-col items-center gap-3 w-full">
                 
                 {/* Rendu réaliste et animé de Barnabé l'Ours en SVG */}
-                <div className="w-16 h-16 sm:w-20 sm:h-20 shrink-0 select-none">
+                <div className="w-24 h-24 sm:w-28 sm:h-28 shrink-0 select-none">
                   <img src={asset("/images/barnabe.png")} alt="Barnabé l'ours marchand" className="w-full h-full object-contain drop-shadow-md select-none" />
                 </div>
                 
