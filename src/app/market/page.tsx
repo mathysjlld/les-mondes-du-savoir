@@ -404,32 +404,17 @@ export default function Market() {
     Mythique: "text-rose-300 bg-rose-950/60 border-rose-900 font-extrabold animate-bounce",
   };
 
-  // Résoudre les catégories d'accessoires pour éviter le chevauchement
-  const getAccessoryCategory = (id: string): string => {
-    if (["crown", "magic-hat", "headphones"].includes(id)) return "head";
-    if (id === "glasses") return "eyes";
-    if (id === "bow-tie") return "neck";
-    if (id === "shield") return "left-hand";
-    if (id === "wand") return "right-hand";
-    if (["super-cape", "balloon"].includes(id)) return "back";
-    return "other";
-  };
-
   // Calcul du rendu de l'avatar avec preview dynamique (hover ou sélection)
   const activePreviewAccessoryId = hoveredAccessoryId || selectedPreviewAccessoryId;
   const activePreviewPetId = hoveredPetId || selectedPreviewPetId;
   const activePreviewTreeAnimalId = hoveredTreeAnimalId || selectedPreviewTreeAnimalId;
 
+  // Un seul accessoire à la fois : l'aperçu montre l'accessoire survolé/sélectionné
+  // seul, sinon l'accessoire actuellement équipé (0 ou 1).
   const currentAccessories = profile.avatar.accessories || [];
-  let previewAccessories = [...currentAccessories];
-  if (activePreviewAccessoryId) {
-    if (!currentAccessories.includes(activePreviewAccessoryId)) {
-      const category = getAccessoryCategory(activePreviewAccessoryId);
-      // Remplacer l'accessoire de la même catégorie pour la prévisualisation
-      previewAccessories = previewAccessories.filter(a => getAccessoryCategory(a) !== category);
-      previewAccessories.push(activePreviewAccessoryId);
-    }
-  }
+  const previewAccessories = activePreviewAccessoryId
+    ? [activePreviewAccessoryId]
+    : [...currentAccessories];
 
   const previewAvatarConfig = {
     ...profile.avatar,

@@ -706,36 +706,24 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
         };
       }
       
+      // Clic sur l'accessoire déjà équipé => on le retire.
       if (currentAccs.includes(accessoryId)) {
-        const updated = currentAccs.filter(a => a !== accessoryId);
         return {
           ...prev,
           avatar: {
             ...prev.avatar,
-            accessories: updated
+            accessories: []
           }
         };
       }
-      
-      const getAccessoryCategory = (id: string): string => {
-        if (["crown", "magic-hat", "headphones"].includes(id)) return "head";
-        if (id === "glasses") return "eyes";
-        if (id === "bow-tie") return "neck";
-        if (id === "shield") return "left-hand";
-        if (id === "wand") return "right-hand";
-        if (["super-cape", "balloon"].includes(id)) return "back";
-        return "other";
-      };
-      
-      const category = getAccessoryCategory(accessoryId);
-      const updated = currentAccs.filter(a => getAccessoryCategory(a) !== category);
-      updated.push(accessoryId);
-      
+
+      // Un seul accessoire à la fois : les illustrations composites n'en montrent
+      // qu'un, donc équiper un accessoire remplace le précédent.
       return {
         ...prev,
         avatar: {
           ...prev.avatar,
-          accessories: updated
+          accessories: [accessoryId]
         }
       };
     });
