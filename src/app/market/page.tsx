@@ -168,28 +168,6 @@ export default function Market() {
   const [hoveredTreeAnimalId, setHoveredTreeAnimalId] = useState<string | null>(null);
   const [selectedPreviewTreeAnimalId, setSelectedPreviewTreeAnimalId] = useState<string | null>(null);
 
-  // États pour animer le marchand Barnabé
-  const [isTalking, setIsTalking] = useState(false);
-  const [isBlinking, setIsBlinking] = useState(false);
-
-  // Déclencher le mouvement de la bouche quand Barnabé parle (changement de dialogue)
-  useEffect(() => {
-    setIsTalking(true);
-    const timer = setTimeout(() => {
-      setIsTalking(false);
-    }, 2800);
-    return () => clearTimeout(timer);
-  }, [dialogue]);
-
-  // Clignotement périodique des yeux
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIsBlinking(true);
-      setTimeout(() => setIsBlinking(false), 150);
-    }, 4000);
-    return () => clearInterval(interval);
-  }, []);
-
   // Remise à zéro des previews quand on change d'onglet
   useEffect(() => {
     setHoveredAccessoryId(null);
@@ -474,41 +452,7 @@ export default function Market() {
           {/* Marchand Barnabé compact */}
           <div className="flex-1 bg-amber-950/80 border border-amber-800 p-2 rounded-xl flex items-center gap-2 min-w-0">
             <div className="w-10 h-10 shrink-0 select-none">
-              <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-sm">
-                <defs>
-                  <linearGradient id="bearGradMini" x1="0%" y1="0%" x2="0%" y2="100%">
-                    <stop offset="0%" stopColor="#A76D3C" />
-                    <stop offset="100%" stopColor="#6E3E1A" />
-                  </linearGradient>
-                  <linearGradient id="snoutGradMini" x1="0%" y1="0%" x2="0%" y2="100%">
-                    <stop offset="0%" stopColor="#FFF9E6" />
-                    <stop offset="100%" stopColor="#E6DFCE" />
-                  </linearGradient>
-                </defs>
-                <circle cx="30" cy="36" r="8.5" fill="url(#bearGradMini)" />
-                <circle cx="30" cy="36" r="5" fill="#FFA3B1" opacity="0.8" />
-                <circle cx="70" cy="36" r="8.5" fill="url(#bearGradMini)" />
-                <circle cx="70" cy="36" r="5" fill="#FFA3B1" opacity="0.8" />
-                <circle cx="50" cy="50" r="20" fill="url(#bearGradMini)" />
-                <ellipse cx="42" cy="45" rx="2.5" ry={isBlinking ? 0.2 : 2.5} fill="#2C3E50" />
-                <ellipse cx="58" cy="45" rx="2.5" ry={isBlinking ? 0.2 : 2.5} fill="#2C3E50" />
-                <ellipse cx="50" cy="54" rx="7.5" ry="5" fill="url(#snoutGradMini)" />
-                <polygon points="47,52 53,52 50,54.5" fill="#2C3E50" />
-                {isTalking ? (
-                  <motion.ellipse
-                    cx="50"
-                    cy="56.5"
-                    rx="2"
-                    ry={2}
-                    fill="#2C3E50"
-                    animate={{ scaleY: [0.2, 1, 0.2] }}
-                    transition={{ duration: 0.25, repeat: Infinity, ease: "easeInOut" }}
-                    style={{ originX: "50px", originY: "56.5px" }}
-                  />
-                ) : (
-                  <path d="M 47.5 56 Q 50 58 52.5 56" fill="none" stroke="#2C3E50" strokeWidth="1.2" strokeLinecap="round" />
-                )}
-              </svg>
+              <img src={asset("/images/barnabe.png")} alt="Barnabé l'ours marchand" className="w-full h-full object-contain drop-shadow-sm select-none" />
             </div>
             <div className="text-[10px] leading-tight font-bold text-stone-200 truncate flex-1">
               <span className="text-amber-300 font-extrabold text-[8px] uppercase block">Barnabé :</span>
@@ -611,80 +555,7 @@ export default function Market() {
                 
                 {/* Rendu réaliste et animé de Barnabé l'Ours en SVG */}
                 <div className="w-16 h-16 sm:w-20 sm:h-20 shrink-0 select-none">
-                  <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-md">
-                    <defs>
-                      <linearGradient id="bearGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-                        <stop offset="0%" stopColor="#A76D3C" />
-                        <stop offset="100%" stopColor="#6E3E1A" />
-                      </linearGradient>
-                      <linearGradient id="snoutGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-                        <stop offset="0%" stopColor="#FFF9E6" />
-                        <stop offset="100%" stopColor="#E6DFCE" />
-                      </linearGradient>
-                      <linearGradient id="hatGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-                        <stop offset="0%" stopColor="#962D22" />
-                        <stop offset="100%" stopColor="#C0392B" />
-                      </linearGradient>
-                    </defs>
-                    {/* Chapeau de marchand médiéval */}
-                    <path d="M 32 28 Q 50 14 68 28 Z" fill="url(#hatGrad)" />
-                    <rect x="28" y="25" width="44" height="4" rx="2" fill="#7B241C" />
-                    <motion.path 
-                      animate={{ rotate: [0, -5, 5, 0] }}
-                      transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-                      d="M 62 23 Q 74 12 72 7 Q 66 14 62 23" 
-                      fill="#FFFFFF" 
-                    />
-
-                    {/* Oreilles */}
-                    <circle cx="30" cy="36" r="8.5" fill="url(#bearGrad)" />
-                    <circle cx="30" cy="36" r="5" fill="#FFA3B1" opacity="0.8" />
-                    <circle cx="70" cy="36" r="8.5" fill="url(#bearGrad)" />
-                    <circle cx="70" cy="36" r="5" fill="#FFA3B1" opacity="0.8" />
-
-                    {/* Tête */}
-                    <circle cx="50" cy="50" r="20" fill="url(#bearGrad)" />
-
-                    {/* Yeux qui clignotent */}
-                    <ellipse cx="42" cy="45" rx="2.5" ry={isBlinking ? 0.2 : 2.5} fill="#2C3E50" />
-                    {!isBlinking && <circle cx="43" cy="43.8" r="0.7" fill="#FFFFFF" />}
-                    <ellipse cx="58" cy="45" rx="2.5" ry={isBlinking ? 0.2 : 2.5} fill="#2C3E50" />
-                    {!isBlinking && <circle cx="59" cy="43.8" r="0.7" fill="#FFFFFF" />}
-
-                    {/* Joues roses */}
-                    <circle cx="35" cy="51" r="2" fill="#FFA3B1" opacity="0.5" />
-                    <circle cx="65" cy="51" r="2" fill="#FFA3B1" opacity="0.5" />
-
-                    {/* Museau */}
-                    <ellipse cx="50" cy="54" rx="7.5" ry="5" fill="url(#snoutGrad)" />
-                    
-                    {/* Nez */}
-                    <polygon points="47,52 53,52 50,54.5" fill="#2C3E50" />
-
-                    {/* Bouche animée quand parle */}
-                    {isTalking ? (
-                      <motion.ellipse
-                        cx="50"
-                        cy="56.5"
-                        rx="2.5"
-                        ry={2.5}
-                        fill="#2C3E50"
-                        animate={{ scaleY: [0.2, 1, 0.2] }}
-                        transition={{ duration: 0.25, repeat: Infinity, ease: "easeInOut" }}
-                        style={{ originX: "50px", originY: "56.5px" }}
-                      />
-                    ) : (
-                      <path d="M 47.5 56 Q 50 58 52.5 56" fill="none" stroke="#2C3E50" strokeWidth="1.2" strokeLinecap="round" />
-                    )}
-
-                    {/* Col chemise */}
-                    <path d="M 38 70 L 50 82 L 62 70 Z" fill="#FFFFFF" />
-                    {/* Veste verte */}
-                    <path d="M 30 70 L 36 96 L 64 96 L 70 70 Z" fill="#1E824C" />
-                    {/* Boutons dorés */}
-                    <circle cx="50" cy="77" r="1.5" fill="#F1C40F" />
-                    <circle cx="50" cy="85" r="1.5" fill="#F1C40F" />
-                  </svg>
+                  <img src={asset("/images/barnabe.png")} alt="Barnabé l'ours marchand" className="w-full h-full object-contain drop-shadow-md select-none" />
                 </div>
                 
                 {/* Dialogue */}
