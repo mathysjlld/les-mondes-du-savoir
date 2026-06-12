@@ -324,15 +324,8 @@ export default function Dashboard() {
                 className="flex flex-col items-center select-none"
                 title={`Compagnon : ${profile.activePet}`}
               >
-                <div className="text-2xl sm:text-3xl drop-shadow-md">
-                  {profile.activePet === "fox" && "🦊"}
-                  {profile.activePet === "cat" && "🐱"}
-                  {profile.activePet === "koala" && "🐨"}
-                  {profile.activePet === "dragon" && "🐲"}
-                  {profile.activePet === "unicorn" && "🦄"}
-                  {profile.activePet === "panda" && "🐼"}
-                  {profile.activePet === "lion" && "🦁"}
-                  {profile.activePet === "griffon" && "🦅"}
+                <div className="w-12 h-12 sm:w-14 sm:h-14 drop-shadow-md">
+                  <img src={asset(`/images/pet_${profile.activePet}.png`)} alt={`Compagnon ${profile.activePet}`} className="w-full h-full object-contain select-none" />
                 </div>
                 <span className="text-[8px] sm:text-[9px] font-black text-indigo-600 bg-indigo-50 border border-indigo-200 px-1.5 py-0.5 rounded-full leading-none -mt-0.5 whitespace-nowrap">
                   {profile.activePet === "fox" && "Renardeau"}

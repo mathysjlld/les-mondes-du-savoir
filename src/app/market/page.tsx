@@ -886,8 +886,8 @@ export default function Market() {
                           }`}
                         >
                           <div className="flex items-center gap-3">
-                            <span className="text-2xl p-2 bg-amber-950/60 rounded-xl shadow-md border border-amber-800/40 select-none">
-                              {item.emoji}
+                            <span className="p-1 bg-amber-950/60 rounded-xl shadow-md border border-amber-800/40 select-none">
+                              <img src={asset(`/images/pet_${item.id}.png`)} alt={item.name} className="w-11 h-11 object-contain" />
                             </span>
                             <div className="flex flex-col">
                               <div className="flex items-center gap-1.5">
