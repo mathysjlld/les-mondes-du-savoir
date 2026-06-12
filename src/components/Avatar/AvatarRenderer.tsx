@@ -14,6 +14,25 @@ const AVATAR_IMAGES: Partial<Record<AvatarConfig["type"], string>> = {
   koala: "/images/avatar_koala.png",
 };
 
+// Illustrations composites « personnage + accessoire » (fal.ai). Quand un
+// accessoire équipé possède une image dédiée pour ce personnage, on l'affiche
+// au lieu de la surcouche SVG (qui ne s'aligne pas sur les illustrations).
+const AVATAR_ACCESSORY_IMAGES: Partial<Record<AvatarConfig["type"], Record<string, string>>> = {
+  koala: {
+    "glasses": "/images/koala_glasses.png",
+    "bow-tie": "/images/koala_bow-tie.png",
+    "headphones": "/images/koala_headphones.png",
+    "balloon": "/images/koala_balloon.png",
+    "magic-hat": "/images/koala_magic-hat.png",
+    "wand": "/images/koala_wand.png",
+    "shield": "/images/koala_shield.png",
+    "crown": "/images/koala_crown.png",
+    "super-cape": "/images/koala_super-cape.png",
+    "halo": "/images/koala_halo.png",
+    "sage-star": "/images/koala_sage-star.png",
+  },
+};
+
 interface AvatarRendererProps {
   config: AvatarConfig;
   className?: string;
@@ -31,6 +50,22 @@ export const AvatarRenderer: React.FC<AvatarRendererProps> = ({
 
   // Image personnalisée du personnage (remplace le rendu SVG si présente)
   const customImage = AVATAR_IMAGES[type];
+
+  // Image composite « personnage + accessoire » : on prend le dernier accessoire
+  // équipé qui dispose d'une illustration dédiée pour ce personnage.
+  const accImages = AVATAR_ACCESSORY_IMAGES[type];
+  let compositeImage: string | undefined;
+  if (accImages) {
+    for (let i = accessories.length - 1; i >= 0; i--) {
+      if (accImages[accessories[i]]) {
+        compositeImage = accImages[accessories[i]];
+        break;
+      }
+    }
+  }
+
+  // Image finale à afficher : composite si dispo, sinon l'illustration de base.
+  const displayImage = compositeImage ?? customImage;
 
   // Animation properties are specified directly on the motion.div below
 
@@ -357,32 +392,35 @@ export const AvatarRenderer: React.FC<AvatarRendererProps> = ({
       whileTap={interactive ? { scale: 0.9, y: -10 } : undefined}
       whileHover={interactive ? { scale: 1.05, rotate: [0, -3, 3, 0] } : undefined}
     >
-      {/* Illustration du personnage (si disponible), sinon rendu SVG ci-dessous */}
-      {customImage && (
+      {/* Illustration du personnage (avec accessoire intégré si dispo), sinon SVG.
+          Sur les avatars-images, on n'affiche PAS la surcouche SVG d'accessoires
+          (elle ne s'aligne pas) : l'accessoire est intégré à l'illustration. */}
+      {displayImage ? (
         <img
-          src={asset(customImage)}
+          src={asset(displayImage)}
           alt=""
           className="absolute inset-0 w-full h-full object-contain drop-shadow-md select-none pointer-events-none"
         />
+      ) : (
+        <svg
+          viewBox="0 0 100 100"
+          className="absolute inset-0 w-full h-full drop-shadow-md select-none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          {/* Render Cape first (so it stays in the back) */}
+          {accessories.includes("super-cape") && renderAccessory("super-cape")}
+
+          {/* Animal Core Body & Head */}
+          {renderAnimalSVG()}
+
+          {/* Render other accessories (on top of the head) */}
+          {accessories.filter(a => a !== "super-cape" && a !== "none").map(a => (
+            <React.Fragment key={a}>
+              {renderAccessory(a)}
+            </React.Fragment>
+          ))}
+        </svg>
       )}
-      <svg
-        viewBox="0 0 100 100"
-        className="absolute inset-0 w-full h-full drop-shadow-md select-none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        {/* Render Cape first (so it stays in the back) */}
-        {accessories.includes("super-cape") && renderAccessory("super-cape")}
-
-        {/* Animal Core Body & Head — uniquement si pas d'illustration dédiée */}
-        {!customImage && renderAnimalSVG()}
-
-        {/* Render other accessories (on top of the head) */}
-        {accessories.filter(a => a !== "super-cape" && a !== "none").map(a => (
-          <React.Fragment key={a}>
-            {renderAccessory(a)}
-          </React.Fragment>
-        ))}
-      </svg>
     </motion.div>
   );
 };
