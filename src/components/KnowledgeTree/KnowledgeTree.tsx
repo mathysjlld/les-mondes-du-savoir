@@ -345,14 +345,21 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
           </motion.g>
         )}
 
-        {/* Animaux légendaires (cristaux) — rendus en emoji, sans image */}
+        {/* Animaux légendaires (cristaux) */}
         {unlockedTreeAnimals.includes("tree-dragon") && (
           <motion.g
             animate={{ rotate: [0, 4, -4, 0], y: [0, -1.5, 0] }}
             transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
             style={{ transformBox: "fill-box", transformOrigin: "center" }}
           >
-            <text x="22" y="40" fontSize="11" className="select-none pointer-events-none">🐉</text>
+            <image
+              href={asset("/images/tree_dragon.png")}
+              x="15"
+              y="31"
+              width="15"
+              height="15"
+              className="select-none pointer-events-none filter drop-shadow-sm"
+            />
           </motion.g>
         )}
 
@@ -362,7 +369,14 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
             transition={{ duration: 2.8, repeat: Infinity, ease: "easeInOut" }}
             style={{ transformBox: "fill-box", transformOrigin: "center" }}
           >
-            <text x="64" y="34" fontSize="10" className="select-none pointer-events-none">🔥</text>
+            <image
+              href={asset("/images/tree_phoenix.png")}
+              x="58"
+              y="26"
+              width="13"
+              height="13"
+              className="select-none pointer-events-none filter drop-shadow-sm"
+            />
           </motion.g>
         )}
       </svg>

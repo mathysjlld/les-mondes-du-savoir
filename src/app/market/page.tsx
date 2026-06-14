@@ -114,14 +114,14 @@ function TreePreview({
             className="origin-center"
             style={{ transformBox: "fill-box", transformOrigin: "center" }}
           >
-            <text
-              x={item.x}
-              y={item.y}
-              className={`select-none pointer-events-none filter drop-shadow-sm font-sans fill-current`}
-              style={{ fontSize: isPreview ? "9px" : "7px" }}
-            >
-              {item.emoji}
-            </text>
+            <image
+              href={asset(`/images/${item.id.replace("-", "_")}.png`)}
+              x={item.x - 5}
+              y={item.y - 8}
+              width={isPreview ? 14 : 11}
+              height={isPreview ? 14 : 11}
+              className="select-none pointer-events-none filter drop-shadow-sm"
+            />
             
             {/* Petit indicateur scintillant pour l'aperçu */}
             {isPreview && (
@@ -1002,8 +1002,8 @@ export default function Market() {
                           }`}
                         >
                           <div className="flex items-center gap-3">
-                            <span className="text-2xl p-2 bg-amber-950/60 rounded-xl shadow-md border border-amber-800/40 select-none">
-                              {item.emoji}
+                            <span className="p-1 bg-amber-950/60 rounded-xl shadow-md border border-amber-800/40 select-none">
+                              <img src={asset(`/images/${item.id.replace("-", "_")}.png`)} alt={item.name} className="w-11 h-11 object-contain" />
                             </span>
                             <div className="flex flex-col">
                               <div className="flex items-center gap-1.5">
