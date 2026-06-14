@@ -38,6 +38,8 @@ export interface UserProfile {
   codeHint?: string; // Indice pour se souvenir du code de connexion (en cas d'oubli)
   wateringCans: number; // Arrosoirs gagnés (5 bonnes réponses d'affilée)
   treeGrowth: number; // Pourcentage de croissance globale continue (0 à 100)
+  templeBricks: number; // Briques gagnées (5 bonnes réponses d'affilée dans le Temple)
+  templeGrowth: number; // Croissance du Temple des Sages (0 à 100)
   isCheatEnabled?: boolean;
   savedCoins?: number;
   savedDiamonds?: number;
@@ -67,6 +69,9 @@ interface AppContextType {
   addCrystals: (amount: number) => void; // ajoute des cristaux (monnaie du monde ultime)
   addWateringCan: () => void;
   useWateringCan: () => boolean; // retourne true si l'arrosoir a été utilisé avec succès
+  addBrick: () => void; // gagner une brique (5 bonnes réponses d'affilée dans le Temple)
+  useBrick: () => boolean; // dépenser une brique pour agrandir le Temple
+  growTemple: (amount: number) => void; // faire grandir le Temple (quiz/leçon du Temple)
   completeLesson: (lessonId: string) => void;
   completeQuiz: (lessonId: string, badgeInfo: { id: string; name: string; emoji: string }) => boolean; // renvoie true si nouveau badge débloqué
   buyAccessory: (accessoryId: string, price: number, currency?: "coins" | "diamonds" | "crystals") => boolean;
@@ -197,6 +202,8 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
             parentCode: parsed.parentCode || "2912",
             wateringCans: parsed.wateringCans || 0,
             treeGrowth: initialTreeGrowth,
+            templeBricks: parsed.templeBricks || 0,
+            templeGrowth: parsed.templeGrowth || 0,
           });
         } catch (e) {
           console.error("Erreur de lecture du profil sauvegardé", e);
@@ -366,6 +373,8 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
       parentCode,
       wateringCans: 0,
       treeGrowth: 0,
+      templeBricks: 0,
+      templeGrowth: 0,
     };
     setProfile(newProfile);
   };
@@ -638,6 +647,62 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     return true;
   };
 
+  // Gagner une brique (5 bonnes réponses d'affilée dans le Temple)
+  const addBrick = () => {
+    setProfile(prev => {
+      if (!prev) return null;
+      return { ...prev, templeBricks: (prev.templeBricks || 0) + 1 };
+    });
+  };
+
+  // Faire grandir le Temple directement (récompense de quiz/leçon du Temple)
+  const growTemple = (amount: number) => {
+    setProfile(prev => {
+      if (!prev) return null;
+      return { ...prev, templeGrowth: Math.min(100, (prev.templeGrowth || 0) + amount) };
+    });
+  };
+
+  // Utiliser une brique pour agrandir le Temple (miroir de l'arrosoir pour l'arbre)
+  const useBrick = (): boolean => {
+    if (!profile || (profile.templeBricks || 0) <= 0) return false;
+
+    const currentLvl = getLevel();
+    const updatedXp = profile.xp + 50;
+
+    let tempXp = updatedXp;
+    let lvl = 1;
+    let req = 100;
+    while (tempXp >= req) {
+      tempXp -= req;
+      lvl++;
+      req += 50;
+    }
+    const newLvl = lvl;
+    const leveledUp = newLvl > currentLvl;
+
+    setProfile(prev => {
+      if (!prev || (prev.templeBricks || 0) <= 0) return prev;
+      let growthBonus = 1.0 + 0.25;
+      if (leveledUp) {
+        growthBonus += 0.5;
+      }
+      const newGrowth = Math.min(100, (prev.templeGrowth || 0) + growthBonus);
+      return {
+        ...prev,
+        templeBricks: prev.templeBricks - 1,
+        xp: updatedXp,
+        templeGrowth: newGrowth
+      };
+    });
+
+    if (leveledUp && profile.soundEnabled) {
+      setTimeout(() => playSound("levelup"), 600);
+    }
+
+    return true;
+  };
+
   // Calcule la déduction selon la monnaie ; renvoie null si solde insuffisant
   const payPatch = (prev: UserProfile, currency: "coins" | "diamonds" | "crystals", price: number) => {
     if (currency === "coins") return prev.coins >= price ? { coins: prev.coins - price } : null;
@@ -869,6 +934,9 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
         addDiamonds,
         addWateringCan,
         useWateringCan,
+        addBrick,
+        useBrick,
+        growTemple,
         completeLesson,
         completeQuiz,
         buyAccessory,

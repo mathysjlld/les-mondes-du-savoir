@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useApp } from "@/context/AppContext";
 import { UNIVERSES } from "@/data/lessons";
 import { playSound } from "@/lib/sound";
+import { TempleProgress } from "@/components/Temple/TempleProgress";
 
 export default function TempleWorld() {
   const router = useRouter();
@@ -95,6 +96,15 @@ export default function TempleWorld() {
             Bienvenue, jeune sage. Ici, on cultive la <strong>sagesse</strong> : grands penseurs, énigmes, proverbes et mystères du monde.
             Maîtrise les épreuves pour gagner des <strong>cristaux 💠</strong> et visite le <strong>Sanctuaire</strong>.
           </p>
+        </motion.div>
+
+        {/* Progression du Temple — grandit avec les quiz et les briques */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="bg-amber-50/80 border-2 border-amber-300 rounded-3xl p-4 sm:p-6 shadow"
+        >
+          <TempleProgress />
         </motion.div>
 
         {/* Bouton Sanctuaire (marché du Temple) */}

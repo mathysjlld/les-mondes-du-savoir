@@ -20,7 +20,11 @@ export default function PlayUniverse() {
   const params = useParams();
   const universeId = params.universe as string;
 
-  const { profile, completeLesson, completeQuiz, addDiamonds, addWateringCan, resetCoins, addCrystals } = useApp();
+  const { profile, completeLesson, completeQuiz, addDiamonds, addWateringCan, addBrick, growTemple, resetCoins, addCrystals } = useApp();
+
+  // Le Temple des Sages est un monde à part : la série de 5 bonnes réponses y
+  // donne une brique (au lieu d'un arrosoir) et fait grandir le Temple.
+  const isTemple = universeId === "temple";
 
   const [lesson, setLesson] = useState<Lesson | null>(null);
   const [gameState, setGameState] = useState<"onboarding" | "lesson" | "quiz" | "victory">("lesson");
@@ -162,7 +166,11 @@ export default function PlayUniverse() {
       const newStreak = correctStreak + 1;
       setCorrectStreak(newStreak);
       if (newStreak >= 5) {
-        addWateringCan();
+        if (isTemple) {
+          addBrick();
+        } else {
+          addWateringCan();
+        }
         setCorrectStreak(0);
         setShowWateringCanEarned(true);
         setTimeout(() => setShowWateringCanEarned(false), 3000);
@@ -253,6 +261,11 @@ export default function PlayUniverse() {
       emoji: lesson.badgeEmoji
     });
     setUnlockedNewBadgeThisRun(newBadge);
+
+    // Dans le Temple, réussir un quiz fait grandir le Temple des Sages.
+    if (isTemple) {
+      growTemple(4);
+    }
 
     setGameState("victory");
     playSound("win");
@@ -777,13 +790,13 @@ export default function PlayUniverse() {
               initial={{ rotate: -15, scale: 0.5 }}
               animate={{ rotate: [0, -10, 10, -5, 5, 0], scale: [0.5, 1.2, 1] }}
               transition={{ duration: 1.2, ease: "easeOut" }}
-              className="bg-gradient-to-br from-emerald-400 to-teal-500 text-white rounded-3xl p-8 sm:p-12 shadow-2xl text-center max-w-sm mx-4"
+              className={`text-white rounded-3xl p-8 sm:p-12 shadow-2xl text-center max-w-sm mx-4 bg-gradient-to-br ${isTemple ? "from-amber-400 to-yellow-600" : "from-emerald-400 to-teal-500"}`}
             >
               <div className="w-24 h-24 mx-auto mb-4">
-                <img src={asset("/images/watering_can.png")} alt="Arrosoir" className="w-full h-full object-contain filter drop-shadow-md animate-bounce" />
+                <img src={asset(isTemple ? "/images/brick.png" : "/images/watering_can.png")} alt={isTemple ? "Brique" : "Arrosoir"} className="w-full h-full object-contain filter drop-shadow-md animate-bounce" />
               </div>
-              <h3 className="text-2xl sm:text-3xl font-black mb-2">Arrosoir Gagné !</h3>
-              <p className="text-sm sm:text-base font-semibold opacity-90">5 bonnes réponses d&apos;affilée ! 🎉<br/>Utilise-le pour accélérer la croissance de ton arbre !</p>
+              <h3 className="text-2xl sm:text-3xl font-black mb-2">{isTemple ? "Brique Gagnée !" : "Arrosoir Gagné !"}</h3>
+              <p className="text-sm sm:text-base font-semibold opacity-90">5 bonnes réponses d&apos;affilée ! 🎉<br/>{isTemple ? "Utilise-la pour agrandir ton Temple des Sages !" : "Utilise-le pour accélérer la croissance de ton arbre !"}</p>
             </motion.div>
           </motion.div>
         )}
