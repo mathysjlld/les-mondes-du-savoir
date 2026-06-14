@@ -6,6 +6,15 @@ import { motion } from "framer-motion";
 import { useApp } from "@/context/AppContext";
 import { AvatarRenderer } from "@/components/Avatar/AvatarRenderer";
 import { playSound } from "@/lib/sound";
+import { asset } from "@/lib/asset";
+
+// Illustrations des créatures légendaires du Sanctuaire (l'auréole et l'étoile
+// restent en emoji : ce sont des accessoires, pas des créatures).
+const SANCTUARY_IMAGES: Record<string, string> = {
+  griffon: "/images/pet_griffon.png",
+  "tree-dragon": "/images/tree_dragon.png",
+  "tree-phoenix": "/images/tree_phoenix.png",
+};
 
 type Item = {
   id: string;
@@ -125,8 +134,12 @@ export default function SanctuaryMarket() {
                 key={item.id}
                 className="flex items-center gap-3 p-3 rounded-2xl bg-amber-50/95 border-2 border-amber-300 shadow"
               >
-                <div className="shrink-0 w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-gradient-to-br from-amber-200 to-yellow-300 border border-amber-400 flex items-center justify-center text-2xl sm:text-3xl select-none">
-                  {item.emoji}
+                <div className="shrink-0 w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-gradient-to-br from-amber-200 to-yellow-300 border border-amber-400 flex items-center justify-center text-2xl sm:text-3xl select-none overflow-hidden">
+                  {SANCTUARY_IMAGES[item.id] ? (
+                    <img src={asset(SANCTUARY_IMAGES[item.id])} alt={item.name} className="w-full h-full object-contain" />
+                  ) : (
+                    item.emoji
+                  )}
                 </div>
                 <div className="flex-1 min-w-0">
                   <h3 className="font-black text-amber-900 text-sm sm:text-base leading-tight">{item.name}</h3>
