@@ -478,14 +478,7 @@ export default function Market() {
                     transition={{ duration: 2.2, repeat: Infinity, ease: "easeInOut" }}
                     className="absolute bottom-1.5 left-0.5 text-lg select-none z-10 filter drop-shadow-md"
                   >
-                    {activePetToRender === "fox" && "🦊"}
-                    {activePetToRender === "cat" && "🐱"}
-                    {activePetToRender === "koala" && "🐨"}
-                    {activePetToRender === "panda" && "🐼"}
-                    {activePetToRender === "unicorn" && "🦄"}
-                    {activePetToRender === "dragon" && "🐲"}
-                    {activePetToRender === "lion" && "🦁"}
-                    {activePetToRender === "griffon" && "🦅"}
+                    <img src={asset(`/images/pet_${activePetToRender}.png`)} alt="Compagnon" className="w-9 h-9 object-contain" />
                   </motion.div>
                 )}
                 {activePreviewTreeAnimalId && activePreviewTreeAnimalId !== "none" && (
@@ -495,10 +488,7 @@ export default function Market() {
                     transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
                     className="absolute top-0.5 right-0.5 text-sm select-none z-10 filter drop-shadow-sm"
                   >
-                    {activePreviewTreeAnimalId === "tree-butterfly" && "🦋"}
-                    {activePreviewTreeAnimalId === "tree-squirrel" && "🐿️"}
-                    {activePreviewTreeAnimalId === "tree-owl" && "🦉"}
-                    {activePreviewTreeAnimalId === "tree-parrot" && "🦜"}
+                    <img src={asset(`/images/${activePreviewTreeAnimalId.replace("-", "_")}.png`)} alt="Animal d'arbre" className="w-7 h-7 object-contain" />
                   </motion.div>
                 )}
                 <div className="z-0 scale-65">
@@ -591,14 +581,7 @@ export default function Market() {
                         transition={{ duration: 2.2, repeat: Infinity, ease: "easeInOut" }}
                         className="absolute bottom-3 left-1 text-3xl select-none z-10 filter drop-shadow-md"
                       >
-                        {activePetToRender === "fox" && "🦊"}
-                        {activePetToRender === "cat" && "🐱"}
-                        {activePetToRender === "koala" && "🐨"}
-                        {activePetToRender === "panda" && "🐼"}
-                        {activePetToRender === "unicorn" && "🦄"}
-                        {activePetToRender === "dragon" && "🐲"}
-                        {activePetToRender === "lion" && "🦁"}
-                    {activePetToRender === "griffon" && "🦅"}
+                        <img src={asset(`/images/pet_${activePetToRender}.png`)} alt="Compagnon" className="w-14 h-14 object-contain" />
                       </motion.div>
                     )}
 
@@ -613,10 +596,7 @@ export default function Market() {
                         transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
                         className="absolute top-2 right-1 text-2xl select-none z-10 filter drop-shadow-sm"
                       >
-                        {activePreviewTreeAnimalId === "tree-butterfly" && "🦋"}
-                        {activePreviewTreeAnimalId === "tree-squirrel" && "🐿️"}
-                        {activePreviewTreeAnimalId === "tree-owl" && "🦉"}
-                        {activePreviewTreeAnimalId === "tree-parrot" && "🦜"}
+                        <img src={asset(`/images/${activePreviewTreeAnimalId.replace("-", "_")}.png`)} alt="Animal d'arbre" className="w-11 h-11 object-contain" />
                       </motion.div>
                     )}
 
