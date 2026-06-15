@@ -25,6 +25,8 @@ export default function PlayUniverse() {
   // Le Temple des Sages est un monde à part : la série de 5 bonnes réponses y
   // donne une brique (au lieu d'un arrosoir) et fait grandir le Temple.
   const isTemple = universeId === "temple";
+  // En quittant un quiz du Temple, on revient au Temple (et non au tableau de bord).
+  const homeRoute = isTemple ? "/temple" : "/dashboard";
 
   const [lesson, setLesson] = useState<Lesson | null>(null);
   const [gameState, setGameState] = useState<"onboarding" | "lesson" | "quiz" | "victory">("lesson");
@@ -71,10 +73,10 @@ export default function PlayUniverse() {
         setLesson(selectedLesson);
         setAlreadyCompletedBefore(profile.completedQuizzes.includes(selectedLesson.id));
       } else {
-        router.push("/dashboard");
+        router.push(homeRoute);
       }
     }
-  }, [profile, universeId, router]);
+  }, [profile, universeId, router, homeRoute]);
 
   // Déclencher la lecture vocale automatique si activée
   useEffect(() => {
@@ -264,7 +266,7 @@ export default function PlayUniverse() {
 
     // Dans le Temple, réussir un quiz fait grandir le Temple des Sages.
     if (isTemple) {
-      growTemple(4);
+      growTemple(8);
     }
 
     setGameState("victory");
@@ -327,14 +329,22 @@ export default function PlayUniverse() {
           onClick={() => {
             playSound("click");
             stopSpeaking();
-            router.push("/dashboard");
+            router.push(homeRoute);
           }}
           className="py-2 px-3 sm:py-2.5 sm:px-4 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs sm:text-sm flex items-center gap-1 cursor-pointer transition-all border border-slate-200 shrink-0"
         >
           <ArrowLeft size={16} />
-          <span className="hidden sm:inline">Tableau de bord</span>
+          <span className="hidden sm:inline">{isTemple ? "Temple" : "Tableau de bord"}</span>
           <span className="sm:hidden">Retour</span>
         </button>
+        {isTemple && (
+          <button
+            onClick={() => { playSound("click"); stopSpeaking(); router.push("/dashboard"); }}
+            className="py-2 px-3 sm:py-2.5 sm:px-4 rounded-xl bg-emerald-100 hover:bg-emerald-200 text-emerald-800 font-bold text-xs sm:text-sm flex items-center gap-1 cursor-pointer transition-all border border-emerald-200 shrink-0"
+          >
+            🌳 <span className="hidden min-[420px]:inline">Revenir à l&apos;arbre du savoir</span><span className="min-[420px]:hidden">Arbre</span>
+          </button>
+        )}
 
         <div className="flex items-center gap-1.5 min-w-0">
           <div className="w-7 h-7 sm:w-10 sm:h-10 flex items-center justify-center shrink-0">
@@ -746,11 +756,11 @@ export default function PlayUniverse() {
               <button
                 onClick={() => {
                   playSound("click");
-                  router.push("/dashboard");
+                  router.push(homeRoute);
                 }}
                 className="w-full py-3 sm:py-4 rounded-2xl bg-emerald-500 hover:bg-emerald-600 text-white text-base sm:text-lg font-black transition-all shadow-md btn-bubble border-b-4 border-emerald-700 mt-1 sm:mt-2 cursor-pointer"
               >
-                Retourner au tableau de bord 🌳
+                {isTemple ? "Retourner au Temple 🏛️" : "Retourner au tableau de bord 🌳"}
               </button>
             </motion.div>
           )}

@@ -683,9 +683,9 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
 
     setProfile(prev => {
       if (!prev || (prev.templeBricks || 0) <= 0) return prev;
-      let growthBonus = 1.0 + 0.25;
+      let growthBonus = 7.0; // une brique fait grandir le Temple beaucoup plus vite
       if (leveledUp) {
-        growthBonus += 0.5;
+        growthBonus += 1.5;
       }
       const newGrowth = Math.min(100, (prev.templeGrowth || 0) + growthBonus);
       return {

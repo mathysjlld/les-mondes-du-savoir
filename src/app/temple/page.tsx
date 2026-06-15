@@ -75,7 +75,7 @@ export default function TempleWorld() {
             onClick={() => { playSound("click"); router.push("/dashboard"); }}
             className="shrink-0 px-3 py-2 rounded-xl bg-amber-950/60 hover:bg-amber-950 font-bold text-xs sm:text-sm cursor-pointer transition-colors"
           >
-            ← Retour au monde
+            🌳 <span className="hidden min-[420px]:inline">Revenir à l&apos;arbre du savoir</span><span className="min-[420px]:hidden">Arbre</span>
           </button>
           <h1 className="flex-1 min-w-0 truncate text-center font-black text-base sm:text-2xl tracking-wide" style={{ fontFamily: "var(--font-title)" }}>
             🏛️ Le Temple des Sages
