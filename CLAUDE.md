@@ -1,6 +1,6 @@
 @AGENTS.md
 
-# ExploraKids
+# Les mondes du Savoir
 
 Plateforme éducative ludifiée pour enfants (quizz, leçons, progression, récompenses).
 **Produit réel destiné à être lancé** — soigne la qualité, l'UX enfant et la robustesse.

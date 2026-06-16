@@ -17,7 +17,7 @@ const nunito = Nunito({
 });
 
 export const metadata: Metadata = {
-  title: "ExploraKids - Apprends en t'amusant !",
+  title: "Les mondes du Savoir - Apprends en t'amusant !",
   description: "Plateforme éducative interactive et gamifiée pour les enfants de 3 à 12 ans. Découvre la nature, l'espace, les sciences et bien plus !",
 };
 

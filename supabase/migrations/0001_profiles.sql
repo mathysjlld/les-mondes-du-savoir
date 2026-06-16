@@ -1,4 +1,4 @@
--- Sauvegarde cloud de la progression ExploraKids.
+-- Sauvegarde cloud de la progression Les mondes du Savoir.
 -- Une ligne par utilisateur ; la progression complète est stockée en JSON.
 create table if not exists public.profiles (
   id uuid primary key references auth.users(id) on delete cascade,

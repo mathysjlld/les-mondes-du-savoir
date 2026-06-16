@@ -2,8 +2,8 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Conditions générales de vente — ExploraKids",
-  description: "Conditions générales de vente (modèle pédagogique) du projet ExploraKids.",
+  title: "Conditions générales de vente — Les mondes du Savoir",
+  description: "Conditions générales de vente (modèle pédagogique) du projet Les mondes du Savoir.",
 };
 
 export default function CgvPage() {
@@ -19,7 +19,7 @@ export default function CgvPage() {
       <p className="mt-2 text-sm text-slate-500">Dernière mise à jour : juin 2026</p>
 
       <div className="mt-4 rounded-xl bg-amber-50 border border-amber-200 p-4 text-sm text-amber-800">
-        ExploraKids est un <strong>projet pédagogique de stage</strong>. L&apos;application est
+        Les mondes du Savoir est un <strong>projet pédagogique de stage</strong>. L&apos;application est
         <strong> gratuite</strong> et ne donne lieu à aucune vente réelle. Les présentes conditions sont
         fournies à titre d&apos;exemple, dans le cadre de l&apos;exercice, pour préfigurer une éventuelle
         offre commerciale future.
@@ -30,7 +30,7 @@ export default function CgvPage() {
           <h2 className="text-xl font-bold text-teal-700">Article 1 — Objet</h2>
           <p className="mt-2">
             Les présentes conditions générales de vente (CGV) encadrent les modalités de mise à disposition
-            de l&apos;application éducative ExploraKids et, le cas échéant, de ses futures offres payantes
+            de l&apos;application éducative Les mondes du Savoir et, le cas échéant, de ses futures offres payantes
             (abonnement « Famille », contenus premium).
           </p>
         </div>
@@ -38,7 +38,7 @@ export default function CgvPage() {
         <div>
           <h2 className="text-xl font-bold text-teal-700">Article 2 — Prix</h2>
           <p className="mt-2">
-            Dans sa version actuelle, l&apos;accès à ExploraKids est <strong>entièrement gratuit</strong>.
+            Dans sa version actuelle, l&apos;accès à Les mondes du Savoir est <strong>entièrement gratuit</strong>.
             Aucun paiement n&apos;est demandé. Les prix d&apos;une éventuelle offre future seraient indiqués
             en euros, toutes taxes comprises (TTC), avant toute souscription.
           </p>

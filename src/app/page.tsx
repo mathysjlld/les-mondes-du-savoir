@@ -74,8 +74,8 @@ export default function Home() {
             <span className="text-xs font-black text-sky-800 uppercase tracking-widest">Aventure Éducative</span>
           </div>
 
-          <h1 className="text-4xl min-[360px]:text-5xl sm:text-7xl font-black text-indigo-900 drop-shadow-md select-none tracking-tight">
-            Explora<span className="text-yellow-500">Kids</span>
+          <h1 className="text-4xl min-[360px]:text-5xl sm:text-6xl font-black text-indigo-900 drop-shadow-md select-none tracking-tight">
+            Les mondes du <span className="text-yellow-500">Savoir</span>
           </h1>
           <p className="text-base sm:text-xl font-bold text-slate-700 mt-3 max-w-md leading-relaxed px-4 text-balance">
             Le site d&apos;exploration où tu apprends en t&apos;amusant et fais grandir ton Arbre du Savoir&nbsp;!
@@ -93,7 +93,7 @@ export default function Home() {
             animate={{ y: [0, -6, 0] }}
             transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
             src={asset("/images/home_arbre.png")}
-            alt="Les mascottes d'ExploraKids autour de l'Arbre du Savoir"
+            alt="Les mascottes des Mondes du Savoir autour de l'Arbre du Savoir"
             className="w-full h-auto rounded-3xl border-4 border-white shadow-2xl select-none"
           />
         </motion.div>

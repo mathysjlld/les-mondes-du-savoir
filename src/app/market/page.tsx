@@ -350,7 +350,7 @@ export default function Market() {
         case "magic-hat": setDialogue("Le chapeau d'un vieux sorcier... attention, des étoiles dorées s'en échappent parfois ! 🎩"); break;
         case "wand": setDialogue("Une authentique baguette magique en bois de chêne. Réponds juste et dis Abracadabra ! 🪄"); break;
         case "shield": setDialogue("Un bouclier de chevalier légendaire pour parer toutes les questions difficiles ! 🛡️"); break;
-        case "crown": setDialogue("La couronne en or massif réservée aux rois et reines du quiz d'ExploraKids. 👑"); break;
+        case "crown": setDialogue("La couronne en or massif réservée aux rois et reines du quiz des Mondes du Savoir. 👑"); break;
         case "super-cape": setDialogue("La cape rouge des super-héros. Elle vole derrière toi quand tu cours ! 🦸‍♂️"); break;
         default: setDialogue(`Les ${item.name} sont parfaits pour un jeune aventurier comme toi !`);
       }

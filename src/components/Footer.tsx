@@ -29,7 +29,7 @@ export function Footer() {
           </Link>
         </nav>
         <p className="text-slate-400">
-          © 2026 ExploraKids — projet pédagogique de stage · Kaiden Vialle &amp; Mathys Julliand
+          © 2026 Les mondes du Savoir — projet pédagogique de stage · Kaiden Vialle &amp; Mathys Julliand
         </p>
       </div>
     </footer>
