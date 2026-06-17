@@ -240,7 +240,8 @@
     @media (max-width: 760px) { .team-grid { grid-template-columns: 1fr; } }
     .member { background: var(--card); border-radius: var(--radius); padding: 28px 26px; box-shadow: var(--shadow); border: 1px solid #e2eeec; text-align: center; }
     .member .ava { width: 88px; height: 88px; margin: 0 auto 14px; border-radius: 50%; display: grid; place-items: center; font-size: 2.6rem;
-      background: linear-gradient(135deg, var(--indigo), var(--pink)); color: #fff; box-shadow: var(--shadow); }
+      background: linear-gradient(135deg, var(--indigo), var(--pink)); color: #fff; box-shadow: var(--shadow); overflow: hidden; }
+    .member .ava img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
     .member h3 { font-size: 1.3rem; margin-bottom: 2px; }
     .member .role { color: var(--purple); font-weight: 800; font-size: .9rem; margin-bottom: 10px; }
     .member p { color: var(--muted); font-size: .96rem; }
@@ -497,7 +498,7 @@
             </div>
           </div>
           <div class="member">
-            <div class="ava">🧭</div>
+            <div class="ava"><img src="kaiden.png" alt="Kaiden Vialle" /></div>
             <h3>Kaiden Vialle</h3>
             <div class="role">Informaticien &amp; développeur chez KPIbara</div>
             <p>Informaticien et développeur, il encadre le projet Les mondes du Savoir au sein de KPIbara. Passionné de nouvelles technologies et de transformation digitale, il accompagne le développement, le suivi produit et la présence en ligne, et définit les objectifs du projet.</p>
