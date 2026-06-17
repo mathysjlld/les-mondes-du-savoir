@@ -187,6 +187,14 @@
     @media (max-width: 620px) { .acc { flex-basis: calc(33.333% - 10px); } }
     @media (max-width: 420px) { .acc { flex-basis: calc(50% - 7px); } }
 
+    /* Arbre du Savoir */
+    .tree-section { background: linear-gradient(180deg, #ffffff, #eafaf4); }
+    .tree-phases { display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-end; gap: 16px; margin-top: 36px; }
+    .tree-phases figure { margin: 0; text-align: center; width: 104px; }
+    .tree-phases img { width: 100%; height: 96px; object-fit: contain; filter: drop-shadow(0 8px 14px rgba(13,148,136,.18)); }
+    .tree-phases figcaption { font-weight: 800; font-size: .8rem; color: var(--ink); margin-top: 8px; }
+    @media (max-width: 520px) { .tree-phases figure { width: 90px; } .tree-phases img { height: 76px; } }
+
     /* How it works */
     .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 44px; }
     @media (max-width: 760px) { .steps { grid-template-columns: 1fr; } }
@@ -355,6 +363,24 @@
           <div class="uni"><div class="emo">🏰</div><div class="name">Histoire</div></div>
           <div class="uni" style="border-style:dashed;background:linear-gradient(135deg,#f5f0ff,#fff);"><div class="emo">🔒</div><div class="name">Thème secret</div></div>
           <div class="uni" style="border-color:#ffc53d;background:linear-gradient(135deg,#fff8e6,#fff);"><div class="emo">🏛️</div><div class="name">Le Temple des Sages</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARBRE DU SAVOIR -->
+    <section id="arbre" class="tree-section">
+      <div class="container center">
+        <span class="eyebrow">Ta progression</span>
+        <h2>L'Arbre du Savoir grandit avec toi 🌳</h2>
+        <p class="lead">Chaque bonne réponse fait pousser ton arbre : il traverse 5 grandes phases, de la petite pousse à l'arbre magique !</p>
+      </div>
+      <div class="container">
+        <div class="tree-phases">
+          <figure><img src="tree_sprout.png" alt="Phase pousse de l'arbre"><figcaption>Pousse</figcaption></figure>
+          <figure><img src="tree_sapling.png" alt="Phase jeune plant"><figcaption>Jeune plant</figcaption></figure>
+          <figure><img src="tree_young.png" alt="Phase jeune arbre"><figcaption>Jeune arbre</figcaption></figure>
+          <figure><img src="tree_mature.png" alt="Phase arbre mature"><figcaption>Arbre mature</figcaption></figure>
+          <figure><img src="tree_magic.png" alt="Phase arbre magique"><figcaption>Arbre magique</figcaption></figure>
         </div>
       </div>
     </section>
