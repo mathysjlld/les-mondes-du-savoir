@@ -38,7 +38,7 @@ export default function Home() {
     : "Commencer l'aventure ! 🚀";
 
   return (
-    <div className="flex-1 flex flex-col items-center justify-between min-h-screen bg-gradient-to-b from-sky-200 via-sky-100 to-indigo-100 p-4 sm:p-6 relative overflow-hidden">
+    <div className="flex-1 flex flex-col items-center justify-between min-h-screen bg-gradient-to-b from-teal-100 via-[#e9fbf7] to-teal-50 p-4 sm:p-6 relative overflow-hidden">
       
       {/* Nuages flottants d'arrière-plan */}
       <motion.div
@@ -69,13 +69,13 @@ export default function Home() {
           transition={{ type: "spring", stiffness: 100 }}
           className="flex flex-col items-center"
         >
-          <div className="flex items-center gap-2 bg-white/70 backdrop-blur-sm px-4 py-1.5 rounded-full border border-sky-300 shadow-sm mb-4">
-            <Sparkles size={16} className="text-yellow-500 animate-spin" />
-            <span className="text-xs font-black text-sky-800 uppercase tracking-widest">Aventure Éducative</span>
+          <div className="flex items-center gap-2 bg-white/70 backdrop-blur-sm px-4 py-1.5 rounded-full border border-teal-300 shadow-sm mb-4">
+            <Sparkles size={16} className="text-[#ffc53d] animate-spin" />
+            <span className="text-xs font-black text-teal-800 uppercase tracking-widest">Aventure Éducative</span>
           </div>
 
-          <h1 className="text-4xl min-[360px]:text-5xl sm:text-6xl font-black text-indigo-900 drop-shadow-md select-none tracking-tight">
-            Les mondes du <span className="text-yellow-500">Savoir</span>
+          <h1 className="text-4xl min-[360px]:text-5xl sm:text-6xl font-black text-[#143a3f] drop-shadow-md select-none tracking-tight">
+            Les mondes du <span className="text-[#ff6b6b]">Savoir</span>
           </h1>
           <p className="text-base sm:text-xl font-bold text-slate-700 mt-3 max-w-md leading-relaxed px-4 text-balance">
             Le site d&apos;exploration où tu apprends en t&apos;amusant et fais grandir ton Arbre du Savoir&nbsp;!
@@ -137,7 +137,7 @@ export default function Home() {
           {!hasProfile && accountCount > 0 && (
             <button
               onClick={() => { playSound("click"); router.push("/onboarding"); }}
-              className="w-full mt-3 text-sm font-bold text-indigo-700 hover:underline cursor-pointer"
+              className="w-full mt-3 text-sm font-bold text-teal-700 hover:underline cursor-pointer"
             >
               + Créer un nouveau compte
             </button>
@@ -149,7 +149,7 @@ export default function Home() {
       <section className="w-full max-w-4xl grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mt-6 sm:mt-12 mb-6 z-10">
         
         <div className="bg-white/80 backdrop-blur-md p-4 sm:p-5 rounded-2xl border-2 border-white shadow-md flex items-start gap-3">
-          <div className="p-2 bg-emerald-100 rounded-xl text-emerald-700">
+          <div className="p-2 bg-teal-100 rounded-xl text-teal-700">
             <Compass size={20} />
           </div>
           <div className="flex flex-col">
@@ -161,7 +161,7 @@ export default function Home() {
         </div>
 
         <div className="bg-white/80 backdrop-blur-md p-5 rounded-2xl border-2 border-white shadow-md flex items-start gap-3">
-          <div className="p-2 bg-sky-100 rounded-xl text-sky-700">
+          <div className="p-2 bg-[#ffecec] rounded-xl text-[#ff6b6b]">
             <Gamepad2 size={20} />
           </div>
           <div className="flex flex-col">
