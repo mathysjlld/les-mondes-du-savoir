@@ -84,7 +84,7 @@ export default function Home() {
           </div>
 
           <h1 className="text-4xl min-[360px]:text-5xl sm:text-6xl font-black text-[#143a3f] drop-shadow-md select-none tracking-tight">
-            Les mondes du <span className="text-[#ff6b6b]">Savoir</span>
+            Les mondes du <span className="text-[#6366f1]">Savoir</span>
           </h1>
           <p className="text-base sm:text-xl font-bold text-slate-700 mt-3 max-w-md leading-relaxed px-4 text-balance">
             Le site d&apos;exploration où tu apprends en t&apos;amusant et fais grandir ton Arbre du Savoir&nbsp;!
