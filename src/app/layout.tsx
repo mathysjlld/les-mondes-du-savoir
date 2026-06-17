@@ -31,7 +31,7 @@ export default function RootLayout({
       lang="fr"
       className={`${fredoka.variable} ${nunito.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-[#e9fbf7] text-slate-800">
+      <body className="min-h-full flex flex-col bg-[#f1fbf9] text-slate-800">
         <AppProvider>
           {children}
           <Footer />

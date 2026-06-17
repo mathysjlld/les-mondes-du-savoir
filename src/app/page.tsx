@@ -38,7 +38,16 @@ export default function Home() {
     : "Commencer l'aventure ! 🚀";
 
   return (
-    <div className="flex-1 flex flex-col items-center justify-between min-h-screen bg-gradient-to-b from-teal-100 via-[#e9fbf7] to-teal-50 p-4 sm:p-6 relative overflow-hidden">
+    <div
+      className="flex-1 flex flex-col items-center justify-between min-h-screen p-4 sm:p-6 relative overflow-hidden"
+      style={{
+        backgroundColor: "#f1fbf9",
+        backgroundImage:
+          "radial-gradient(60% 60% at 30% 20%, rgba(139,92,246,0.18), transparent 60%)," +
+          "radial-gradient(50% 50% at 80% 10%, rgba(236,72,153,0.18), transparent 60%)," +
+          "radial-gradient(50% 60% at 60% 60%, rgba(99,102,241,0.14), transparent 60%)",
+      }}
+    >
       
       {/* Nuages flottants d'arrière-plan */}
       <motion.div
