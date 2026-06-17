@@ -113,7 +113,7 @@ const LESSONS_DB = {
         t:"Internet et les sites web", e:"🌐", b:"Navigateur du Web", be:"🌐",
         cards:[
           {title:"Qu'est-ce qu'Internet ?", text:"Internet est un gigantesque réseau qui relie des millions d'ordinateurs et de téléphones à travers le monde. C'est grâce à Internet qu'on peut regarder des vidéos, envoyer des messages et trouver des informations.", emoji:"🌐"},
-          {title:"Les sites web", text:"Un site web est une sorte de livre numérique sur Internet. Chaque site a une adresse spéciale qu'on appelle une URL (par exemple : www.explorakids.fr). On utilise un navigateur comme Firefox ou Chrome pour visiter ces sites.", emoji:"🖥️"},
+          {title:"Les sites web", text:"Un site web est une sorte de livre numérique sur Internet. Chaque site a une adresse spéciale qu'on appelle une URL (par exemple : www.les-mondes-du-savoir.fr). On utilise un navigateur comme Firefox ou Chrome pour visiter ces sites.", emoji:"🖥️"},
           {title:"Prudence sur Internet !", text:"Sur Internet, il faut toujours rester prudent. On ne donne jamais son prénom, son adresse ou sa photo à des inconnus. Si quelque chose semble bizarre, on en parle à un adulte de confiance.", emoji:"🛡️"}
         ],
         quiz:[
@@ -636,13 +636,13 @@ function generateExtraLesson(univId, ageGroup, levelIndex) {
   const questions = [
     { question:`Quel est le sujet principal de cette leçon ?`, options:[title, "La géographie", "Les sciences"], correctAnswer:title },
     { question:`Cette leçon sur "${title}" appartient à quel univers ?`, options:[names[univId] ? univId : "sciences", "Les mathématiques", "L'histoire"], correctAnswer:names[univId] ? univId : "sciences" },
-    { question:`Combien de niveaux comporte chaque thème dans ExploraKids ?`, options:["5 niveaux","10 niveaux","3 niveaux"], correctAnswer:"10 niveaux" },
+    { question:`Combien de niveaux comporte chaque thème dans Les mondes du Savoir ?`, options:["5 niveaux","10 niveaux","3 niveaux"], correctAnswer:"10 niveaux" },
     { question:`Quel badge obtiens-tu en terminant ce niveau ${lNum} ?`, options:[`Badge ${name} L${lNum}`, "Aucun badge", "Un diplôme"], correctAnswer:`Badge ${name} L${lNum}` },
     { question:`À quel niveau sommes-nous dans cet univers ?`, options:[`Niveau ${lNum}`, `Niveau ${lNum+1}`, `Niveau ${Math.max(1,lNum-1)}`], correctAnswer:`Niveau ${lNum}` },
     { question:`Quel est le numéro de cette leçon ?`, options:[`Leçon ${lNum}`, `Leçon ${lNum+2}`, `Leçon ${Math.max(1,lNum-1)}`], correctAnswer:`Leçon ${lNum}` },
     { question:`La leçon ${lNum} est une leçon de niveau…`, options:["Débutant si c'est le niveau 1-3, Intermédiaire si 4-7, Avancé si 8-10","Toujours débutant","Toujours avancé"], correctAnswer:"Débutant si c'est le niveau 1-3, Intermédiaire si 4-7, Avancé si 8-10" },
     { question:`Pourquoi étudie-t-on "${title}" ?`, options:["Pour s'amuser et apprendre des choses importantes","Pour passer le temps","Ce n'est pas utile"], correctAnswer:"Pour s'amuser et apprendre des choses importantes" },
-    { question:`Combien d'univers au total dans ExploraKids ?`, options:["8 univers","10 univers","12 univers"], correctAnswer:"12 univers" },
+    { question:`Combien d'univers au total dans Les mondes du Savoir ?`, options:["8 univers","10 univers","12 univers"], correctAnswer:"12 univers" },
     { question:`Complète la phrase : Apprendre "${title}" est essentiel car…`, options:["Ça enrichit notre culture générale et notre compréhension du monde","Ça ne sert à rien","C'est obligatoire"], correctAnswer:"Ça enrichit notre culture générale et notre compréhension du monde", isSpecial:true }
   ];
   for (let i = 0; i < qCount; i++) quiz.push(questions[i % questions.length]);
