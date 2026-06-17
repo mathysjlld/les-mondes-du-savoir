@@ -6,7 +6,7 @@
   <title>Les mondes du Savoir — Apprendre en s'amusant</title>
   <link rel="icon" type="image/png" href="logo.png" />
   <link rel="apple-touch-icon" href="logo.png" />
-  <meta name="description" content="Les mondes du Savoir : une application éducative et ludique qui transforme l'apprentissage en aventure. 12 univers, des quiz, des badges, un arbre de connaissances et bien plus !" />
+  <meta name="description" content="Les mondes du Savoir : une application éducative et ludique qui transforme l'apprentissage en aventure. 13 univers, des quiz, des badges, un arbre de connaissances et bien plus !" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
@@ -113,7 +113,13 @@
     .xpbar > i { display: block; height: 100%; width: 72%; background: var(--amber); border-radius: 999px; }
     .hero-stats { display: flex; justify-content: space-between; margin-top: 16px; text-align: center; font-weight: 800; }
     .hero-stats span { font-size: .7rem; opacity: .85; display: block; font-weight: 700; }
-    @media (max-width: 820px) { .hero-grid { grid-template-columns: 1fr; } .hero-card { transform: none; } }
+    @media (max-width: 820px) {
+      .hero-grid { grid-template-columns: 1fr; }
+      .hero-card { transform: none; }
+      .hero-grid > div:first-child { text-align: center; }
+      .hero p.lead, .hero .lead { margin-left: auto; margin-right: auto; }
+      .hero .cta, .hero .badges { justify-content: center; }
+    }
 
     /* Stats band */
     .stats { background: linear-gradient(135deg, var(--ink), #0b1220); color: #fff; }
@@ -137,10 +143,10 @@
 
     /* Universes */
     .universes { background: linear-gradient(180deg, #fff, #f1f5ff); }
-    .uni-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 40px; }
-    @media (max-width: 900px) { .uni-grid { grid-template-columns: repeat(3, 1fr); } }
-    @media (max-width: 620px) { .uni-grid { grid-template-columns: repeat(2, 1fr); } }
-    .uni { background: #fff; border-radius: 20px; padding: 22px 14px; text-align: center; box-shadow: var(--shadow); border: 2px solid #eef2f7; transition: transform .18s, border-color .2s; }
+    .uni-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; margin-top: 40px; }
+    .uni { flex: 0 0 calc(25% - 12px); background: #fff; border-radius: 20px; padding: 22px 14px; text-align: center; box-shadow: var(--shadow); border: 2px solid #eef2f7; transition: transform .18s, border-color .2s; }
+    @media (max-width: 900px) { .uni { flex-basis: calc(33.333% - 11px); } }
+    @media (max-width: 620px) { .uni { flex-basis: calc(50% - 8px); } }
     .uni:hover { transform: translateY(-5px) scale(1.02); border-color: var(--purple); }
     .uni .emo { font-size: 2.4rem; }
     .uni .name { font-weight: 800; margin-top: 8px; }
@@ -217,7 +223,6 @@
         <a href="#parents">Parents</a>
         <a href="#equipe">Qui sommes-nous</a>
       </nav>
-      <a href="https://mathysjlld.github.io/les-mondes-du-savoir/app/" class="btn btn-primary">Jouer maintenant ▸</a>
     </div>
   </header>
 
@@ -228,15 +233,15 @@
         <div>
           <span class="eyebrow">Apprendre en s'amusant</span>
           <h1>Transforme l'apprentissage en <span class="grad">grande aventure</span> !</h1>
-          <p class="lead">Les mondes du Savoir est une application éducative et ludique pour les enfants et les ados. On explore 12 univers, on relève des quiz, on gagne des récompenses et on fait grandir son arbre de connaissances. 🌳</p>
+          <p class="lead">Les mondes du Savoir est une application éducative et ludique pour les enfants et les ados. On explore 13 univers, on relève des quiz, on gagne des récompenses et on fait grandir son arbre de connaissances. 🌳</p>
           <div class="cta">
             <a href="https://mathysjlld.github.io/les-mondes-du-savoir/app/" class="btn btn-primary">Lancer le jeu 🎮</a>
             <a href="#features" class="btn btn-ghost">Découvrir les fonctionnalités</a>
           </div>
           <div class="badges">
-            <span class="pill">🎓 12 univers</span>
+            <span class="pill">🎓 13 univers</span>
             <span class="pill">🧠 2 niveaux</span>
-            <span class="pill">❓ 3 220 questions</span>
+            <span class="pill">❓ 3 960 questions</span>
             <span class="pill">🇫🇷 En français</span>
           </div>
         </div>
@@ -264,9 +269,9 @@
     <section class="stats">
       <div class="container">
         <div class="grid">
-          <div><div class="num">12</div><div class="lbl">Univers à explorer</div></div>
-          <div><div class="num">322</div><div class="lbl">Quiz disponibles</div></div>
-          <div><div class="num">3 220</div><div class="lbl">Questions</div></div>
+          <div><div class="num">13</div><div class="lbl">Univers à explorer</div></div>
+          <div><div class="num">396</div><div class="lbl">Quiz disponibles</div></div>
+          <div><div class="num">3 960</div><div class="lbl">Questions</div></div>
           <div><div class="num">2</div><div class="lbl">Niveaux de difficulté</div></div>
         </div>
       </div>
@@ -295,8 +300,8 @@
     <section id="universes" class="universes">
       <div class="container center">
         <span class="eyebrow">Les univers</span>
-        <h2>12 mondes à explorer</h2>
-        <p class="lead">Des sciences à la culture, il y en a pour toutes les curiosités — et un <strong>thème secret</strong> à débloquer en progressant !</p>
+        <h2>13 mondes à explorer</h2>
+        <p class="lead">Des sciences à la culture, il y en a pour toutes les curiosités — et des <strong>mondes secrets</strong> à débloquer en progressant, dont <strong>Le Temple des Sages</strong>, le monde ultime !</p>
       </div>
       <div class="container">
         <div class="uni-grid">
@@ -310,8 +315,9 @@
           <div class="uni"><div class="emo">🎨</div><div class="name">Arts</div></div>
           <div class="uni"><div class="emo">💻</div><div class="name">Informatique</div></div>
           <div class="uni"><div class="emo">🏕️</div><div class="name">Survie</div></div>
-          <div class="uni" style="border-style:dashed;background:linear-gradient(135deg,#f5f0ff,#fff);"><div class="emo">🔒</div><div class="name">Thème secret</div></div>
           <div class="uni"><div class="emo">🏛️</div><div class="name">Histoire</div></div>
+          <div class="uni" style="border-style:dashed;background:linear-gradient(135deg,#f5f0ff,#fff);"><div class="emo">🔒</div><div class="name">Thème secret</div></div>
+          <div class="uni" style="border-color:#ffc53d;background:linear-gradient(135deg,#fff8e6,#fff);"><div class="emo">🏯</div><div class="name">Le Temple des Sages</div></div>
         </div>
       </div>
     </section>
