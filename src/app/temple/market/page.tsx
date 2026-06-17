@@ -39,7 +39,7 @@ export default function SanctuaryMarket() {
   const { profile, isLoaded, buyAccessory, buyPet, buyTreeAnimal, equipAccessory, equipPet } = useApp();
 
   useEffect(() => {
-    if (isLoaded && !profile) router.push("/");
+    if (isLoaded && !profile) router.push("/jouer");
   }, [isLoaded, profile, router]);
 
   if (!profile) return null;

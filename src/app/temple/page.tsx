@@ -14,7 +14,7 @@ export default function TempleWorld() {
   const [showIntro, setShowIntro] = useState(true);
 
   useEffect(() => {
-    if (isLoaded && !profile) router.push("/");
+    if (isLoaded && !profile) router.push("/jouer");
   }, [isLoaded, profile, router]);
 
   useEffect(() => {

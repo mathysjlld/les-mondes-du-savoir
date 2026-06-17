@@ -185,7 +185,7 @@ export default function Dashboard() {
   // (sinon un accès direct / rafraîchissement sur /dashboard rebondit vers l'accueil).
   useEffect(() => {
     if (isLoaded && !profile) {
-      router.push("/");
+      router.push("/jouer");
     }
   }, [isLoaded, profile, router]);
 
@@ -1139,7 +1139,7 @@ export default function Dashboard() {
                       resetProgress();
                       playSound("click");
                       setShowParentsSpace(false);
-                      router.push("/");
+                      router.push("/jouer");
                     }
                   }}
                   className="w-full py-2.5 sm:py-3 rounded-xl border border-rose-200 bg-rose-50 hover:bg-rose-100 text-rose-700 font-bold text-[10px] sm:text-xs flex items-center justify-center gap-1.5 sm:gap-2 cursor-pointer transition-colors"
