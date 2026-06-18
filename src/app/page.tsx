@@ -143,14 +143,24 @@ export default function Home() {
           >
             <span>{ctaLabel}</span>
           </button>
-          {!hasProfile && accountCount > 0 && (
-            <button
-              onClick={() => { playSound("click"); router.push("/onboarding"); }}
-              className="w-full mt-3 text-sm font-bold text-teal-700 hover:underline cursor-pointer"
-            >
-              + Créer un nouveau compte
-            </button>
-          )}
+          <div className="w-full flex flex-col gap-2.5 mt-3">
+            {hasProfile && (
+              <button
+                onClick={() => { playSound("click"); router.push("/login"); }}
+                className="w-full py-3 rounded-2xl bg-white/85 hover:bg-white text-teal-800 font-bold text-sm sm:text-base border-2 border-teal-200 shadow-sm transition-all cursor-pointer"
+              >
+                🔑 Se connecter avec un compte existant
+              </button>
+            )}
+            {accountCount > 0 && (
+              <button
+                onClick={() => { playSound("click"); router.push("/onboarding"); }}
+                className="w-full py-3 rounded-2xl bg-white/85 hover:bg-white text-teal-800 font-bold text-sm sm:text-base border-2 border-teal-200 shadow-sm transition-all cursor-pointer"
+              >
+                ✨ Créer un nouveau compte
+              </button>
+            )}
+          </div>
         </motion.div>
       </main>
 
