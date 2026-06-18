@@ -367,7 +367,7 @@ export default function Dashboard() {
         </div>
 
         {/* Stats centre (Monnaies, Streak) */}
-        <div className="flex items-center justify-around md:justify-end gap-3 sm:gap-6 border-t md:border-t-0 pt-3 md:pt-0 border-slate-100">
+        <div className="flex flex-wrap items-center justify-center md:justify-end gap-2 sm:gap-4 md:gap-6 border-t md:border-t-0 pt-3 md:pt-0 border-slate-100">
           <div className="flex items-center gap-2 bg-amber-50 border-2 border-amber-200 px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl sm:rounded-2xl">
             <Coins className="text-amber-500 w-5 h-5 sm:w-6 sm:h-6 animate-bounce" />
             <div className="flex flex-col">
