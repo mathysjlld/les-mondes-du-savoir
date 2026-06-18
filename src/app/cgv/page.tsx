@@ -19,7 +19,7 @@ export default function CgvPage() {
       <p className="mt-2 text-sm text-slate-500">Dernière mise à jour : juin 2026</p>
 
       <div className="mt-4 rounded-xl bg-amber-50 border border-amber-200 p-4 text-sm text-amber-800">
-        Les mondes du Savoir est un <strong>projet pédagogique de stage</strong>. L&apos;application est
+        Les mondes du Savoir est un <strong>projet professionnel à vocation pédagogique</strong>. L&apos;application est
         <strong> gratuite</strong> et ne donne lieu à aucune vente réelle. Les présentes conditions sont
         fournies à titre d&apos;exemple, dans le cadre de l&apos;exercice, pour préfigurer une éventuelle
         offre commerciale future.

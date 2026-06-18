@@ -20,13 +20,13 @@ export default function MentionsLegalesPage() {
         <div>
           <h2 className="text-xl font-bold text-teal-700">Éditeur du site</h2>
           <p className="mt-2">
-            <strong>Les mondes du Savoir</strong> est un projet pédagogique réalisé dans le cadre d&apos;un stage.
+            <strong>Les mondes du Savoir</strong> est un projet professionnel à vocation pédagogique.
             Il ne constitue pas une société commerciale et n&apos;a pas de but lucratif.
           </p>
           <ul className="mt-2 list-disc pl-6 space-y-1">
             <li>Développeurs / auteurs : <strong>Kaiden Vialle</strong> et <strong>Mathys Julliand</strong></li>
             <li>Contact : <a className="text-teal-600 hover:underline" href="mailto:kaidenvialle@gmail.com">kaidenvialle@gmail.com</a></li>
-            <li>Statut : projet étudiant / de stage (non commercial)</li>
+            <li>Statut : projet professionnel (à vocation pédagogique)</li>
           </ul>
         </div>
 
@@ -59,7 +59,7 @@ export default function MentionsLegalesPage() {
           <p className="mt-2">
             L&apos;ensemble des contenus présents sur Les mondes du Savoir (textes, quiz, illustrations, logo, code)
             est protégé par le droit d&apos;auteur. Toute reproduction ou réutilisation sans autorisation
-            des auteurs est interdite, sauf à des fins pédagogiques ou de démonstration de ce projet de stage.
+            des auteurs est interdite, sauf à des fins pédagogiques ou de démonstration de ce projet.
           </p>
         </div>
 
