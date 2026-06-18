@@ -629,7 +629,7 @@ export default function Dashboard() {
                           {univ.name}
                         </h4>
                         <span className="text-[10px] sm:text-[11px] font-bold text-slate-500">
-                          Niveau : {profile.ageGroup === "facile" ? "Collège" : "Lycée"}
+                          Niveau : {profile.ageGroup === "facile" ? "Moyen" : "Difficile"}
                         </span>
                       </div>
                     </div>
@@ -1007,8 +1007,8 @@ export default function Dashboard() {
                 </div>
                 <div className="grid grid-cols-2 gap-2">
                   {[
-                    { id: "facile", label: "👶 Facile (Collège)" },
-                    { id: "difficile", label: "🎓 Difficile (Lycée)" }
+                    { id: "facile", label: "🙂 Moyen" },
+                    { id: "difficile", label: "🎓 Difficile" }
                   ].map((levelItem) => (
                     <button
                       key={levelItem.id}

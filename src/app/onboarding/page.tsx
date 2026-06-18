@@ -155,8 +155,8 @@ export default function Onboarding() {
               </label>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-4">
                 {[
-                  { id: "facile", label: "👶 Facile (Niveau Collège)", desc: "Leçons illustrées & quiz interactifs" },
-                  { id: "difficile", label: "🎓 Difficile (Niveau Lycée)", desc: "Défis & cours complets avancés" },
+                  { id: "facile", label: "🙂 Moyen", desc: "Leçons illustrées & quiz interactifs" },
+                  { id: "difficile", label: "🎓 Difficile", desc: "Défis & cours complets avancés" },
                 ].map((item) => (
                   <button
                     key={item.id}
@@ -234,7 +234,7 @@ export default function Onboarding() {
                 <p className="font-bold text-slate-500 text-[10px] sm:text-xs uppercase tracking-wider">Aventurier</p>
                 <h3 className="font-bold text-lg sm:text-xl text-slate-700 capitalize">{nickname}</h3>
                 <span className="px-2.5 py-0.5 sm:px-3 sm:py-1 bg-indigo-100 text-indigo-700 text-[10px] sm:text-xs font-bold rounded-full mt-1 inline-block">
-                  Niveau {ageGroup === "facile" ? "Collège" : "Lycée"}
+                  Niveau {ageGroup === "facile" ? "Moyen" : "Difficile"}
                 </span>
               </div>
             </div>
