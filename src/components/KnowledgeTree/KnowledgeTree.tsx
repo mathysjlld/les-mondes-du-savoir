@@ -513,7 +513,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
             animate={{ opacity: 1, x: 0, y: 0, scale: 1 }}
             exit={{ opacity: 0, x: -30, scale: 0.85 }}
             transition={{ type: "spring", stiffness: 220, damping: 22 }}
-            className="absolute bottom-10 left-1.5 z-30 w-[24%] min-w-[68px] max-w-[100px] rounded-2xl overflow-hidden shadow-xl border-2 border-white/80 pointer-events-none select-none"
+            className="absolute bottom-8 left-1 z-30 w-[24%] min-w-[66px] max-w-[92px] rounded-xl overflow-hidden shadow-lg border border-white/70 pointer-events-none select-none"
           >
             <video
               autoPlay
