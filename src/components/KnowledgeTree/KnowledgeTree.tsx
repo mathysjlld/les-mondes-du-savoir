@@ -58,6 +58,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
   const [processedSrc, setProcessedSrc] = React.useState<string | null>(null);
   const [isWatering, setIsWatering] = React.useState(false);
   const [glowing, setGlowing] = React.useState(false);
+  const [showBarnabe, setShowBarnabe] = React.useState(false); // mascotte vidéo de Barnabé (clip ~4,8 s)
 
   // Calcul du pourcentage de croissance propre à la phase actuelle (de 0 à 100%)
   const getGrowthPercent = () => {
@@ -95,8 +96,10 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
     if (success) {
       setIsWatering(true);
       setGlowing(true);
+      setShowBarnabe(true);
       setTimeout(() => setIsWatering(false), 3000);
       setTimeout(() => setGlowing(false), 4000);
+      setTimeout(() => setShowBarnabe(false), 4800); // durée du clip de Barnabé
     }
   };
 
@@ -390,28 +393,8 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
             exit={{ opacity: 0 }}
             className="absolute inset-0 z-20 pointer-events-none overflow-hidden"
           >
-            {/* Arrosoir animé */}
-            <motion.div
-              initial={{ x: 120, y: -20, rotate: 0, scale: 0.8 }}
-              animate={{ 
-                x: [120, -35, -35, 120], 
-                y: [-20, 0, 0, -20], 
-                rotate: [0, -35, -35, 0],
-                scale: [0.8, 1, 1, 0.8],
-              }}
-              transition={{ 
-                duration: 3.2, 
-                times: [0, 0.25, 0.75, 1],
-                ease: 'easeInOut' 
-              }}
-              className="absolute right-0 top-2 w-28 h-28 origin-center"
-            >
-              <img 
-                src={asset("/images/watering_can.png")}
-                alt="Arrosoir"
-                className="w-full h-full object-contain filter drop-shadow-md"
-              />
-            </motion.div>
+            {/* L'arrosoir 2D volant a été retiré : c'est Barnabé qui arrose désormais.
+                On conserve les gouttelettes et étincelles ci-dessous. */}
 
             {/* Flux de gouttelettes d'eau réaliste (plus grosses, visibles et bien positionnées) */}
             {[...Array(40)].map((_, i) => {
@@ -521,8 +504,33 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
         </div>
       )}
 
+      {/* Mascotte Barnabé qui arrose (vidéo 3D) */}
+      <AnimatePresence>
+        {showBarnabe && (
+          <motion.div
+            key="barnabe-arrose"
+            initial={{ opacity: 0, x: -40, y: 12, scale: 0.85 }}
+            animate={{ opacity: 1, x: 0, y: 0, scale: 1 }}
+            exit={{ opacity: 0, x: -30, scale: 0.85 }}
+            transition={{ type: "spring", stiffness: 220, damping: 22 }}
+            className="absolute bottom-10 left-1.5 z-30 w-[24%] min-w-[68px] max-w-[100px] rounded-2xl overflow-hidden shadow-xl border-2 border-white/80 pointer-events-none select-none"
+          >
+            <video
+              autoPlay
+              muted
+              playsInline
+              poster={asset("/videos/barnabe_arrose_poster.jpg")}
+              className="w-full h-auto object-cover"
+            >
+              <source src={asset("/videos/barnabe_arrose.webm")} type="video/webm" />
+              <source src={asset("/videos/barnabe_arrose.mp4")} type="video/mp4" />
+            </video>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       {/* Bouton arrosoir */}
-      {wateringCans > 0 && !isWatering && (
+      {wateringCans > 0 && !isWatering && !showBarnabe && (
         <motion.button
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
