@@ -513,14 +513,14 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
             animate={{ opacity: 1, x: 0, y: 0, scale: 1 }}
             exit={{ opacity: 0, x: -30, scale: 0.85 }}
             transition={{ type: "spring", stiffness: 220, damping: 22 }}
-            className="absolute bottom-8 left-1 z-30 w-[24%] min-w-[66px] max-w-[92px] rounded-xl overflow-hidden shadow-lg border border-white/70 pointer-events-none select-none"
+            className="absolute bottom-7 left-0.5 z-30 w-[26%] min-w-[72px] max-w-[100px] pointer-events-none select-none"
           >
             <video
               autoPlay
               muted
               playsInline
-              poster={asset("/videos/barnabe_arrose_poster.jpg")}
-              className="w-full h-auto object-cover"
+              poster={asset("/videos/barnabe_arrose_poster.png")}
+              className="w-full h-auto drop-shadow-[0_5px_6px_rgba(0,0,0,0.28)]"
             >
               <source src={asset("/videos/barnabe_arrose.webm")} type="video/webm" />
               <source src={asset("/videos/barnabe_arrose.mp4")} type="video/mp4" />
