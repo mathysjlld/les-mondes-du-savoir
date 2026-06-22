@@ -404,14 +404,18 @@ export default function Market() {
     : profile.activePet;
 
   return (
-    <div 
-      className="flex-1 flex flex-col p-3 sm:p-6 max-w-4xl mx-auto w-full gap-4 sm:gap-6 min-h-screen text-stone-100"
-      style={{
-        backgroundImage: `linear-gradient(to bottom, rgba(28, 25, 23, 0.94), rgba(69, 26, 3, 0.89)), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='180' viewBox='0 0 120 180'%3E%3Crect x='0' y='55' width='120' height='6' fill='%235c3a21' opacity='0.25'/%3E%3Crect x='0' y='61' width='120' height='2' fill='%233a2010' opacity='0.4'/%3E%3Crect x='0' y='145' width='120' height='6' fill='%235c3a21' opacity='0.25'/%3E%3Crect x='0' y='151' width='120' height='2' fill='%233a2010' opacity='0.4'/%3E%3Crect x='8' y='0' width='5' height='180' fill='%23422817' opacity='0.2'/%3E%3Crect x='107' y='0' width='5' height='180' fill='%23422817' opacity='0.2'/%3E%3C/svg%3E")`,
-        backgroundAttachment: 'fixed'
-      }}
-    >
-      
+    <div className="flex-1 flex flex-col p-3 sm:p-6 max-w-4xl mx-auto w-full gap-4 sm:gap-6 min-h-screen text-stone-100">
+      {/* Fond bois en plein écran : couvre toute la fenêtre pour qu'il n'y ait plus
+          de bandes claires autour du marché sur les écrans larges (tout reste marron). */}
+      <div
+        aria-hidden
+        className="fixed inset-0 -z-10"
+        style={{
+          backgroundColor: '#2a1a0f',
+          backgroundImage: `linear-gradient(to bottom, rgba(28, 25, 23, 0.94), rgba(69, 26, 3, 0.89)), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='180' viewBox='0 0 120 180'%3E%3Crect x='0' y='55' width='120' height='6' fill='%235c3a21' opacity='0.25'/%3E%3Crect x='0' y='61' width='120' height='2' fill='%233a2010' opacity='0.4'/%3E%3Crect x='0' y='145' width='120' height='6' fill='%235c3a21' opacity='0.25'/%3E%3Crect x='0' y='151' width='120' height='2' fill='%233a2010' opacity='0.4'/%3E%3Crect x='8' y='0' width='5' height='180' fill='%23422817' opacity='0.2'/%3E%3Crect x='107' y='0' width='5' height='180' fill='%23422817' opacity='0.2'/%3E%3C/svg%3E")`,
+        }}
+      />
+
       {/* Barre supérieure */}
       <header className="w-full flex items-center justify-between gap-2 p-3 sm:p-4 bg-stone-900/90 backdrop-blur-md rounded-2xl border-b-4 border-amber-800 shadow-md">
         <button
