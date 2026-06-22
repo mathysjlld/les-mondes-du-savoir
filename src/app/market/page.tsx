@@ -739,7 +739,7 @@ export default function Market() {
                             setSelectedPreviewAccessoryId(item.id);
                             handleHoverItem(item, "acc");
                           }}
-                          className={`flex items-center justify-between p-2.5 rounded-2xl border-2 transition-all relative cursor-pointer ${
+                          className={`flex flex-col gap-2 min-[320px]:flex-row min-[320px]:items-center min-[320px]:justify-between min-[320px]:gap-0 p-2.5 rounded-2xl border-2 transition-all relative cursor-pointer ${
                             isEquipped
                               ? "border-emerald-500 bg-emerald-950/35 hover:bg-emerald-950/45"
                               : isCurrentlyPreviewed
@@ -859,7 +859,7 @@ export default function Market() {
                             setSelectedPreviewPetId(item.id);
                             handleHoverItem(item, "pet");
                           }}
-                          className={`flex items-center justify-between p-2.5 rounded-2xl border-2 transition-all relative cursor-pointer ${
+                          className={`flex flex-col gap-2 min-[320px]:flex-row min-[320px]:items-center min-[320px]:justify-between min-[320px]:gap-0 p-2.5 rounded-2xl border-2 transition-all relative cursor-pointer ${
                             isEquipped
                               ? "border-emerald-500 bg-emerald-950/35 hover:bg-emerald-950/45"
                               : isCurrentlyPreviewed
@@ -977,7 +977,7 @@ export default function Market() {
                             setSelectedPreviewTreeAnimalId(item.id);
                             handleHoverItem(item, "tree");
                           }}
-                          className={`flex items-center justify-between p-2.5 rounded-2xl border-2 transition-all relative cursor-pointer ${
+                          className={`flex flex-col gap-2 min-[320px]:flex-row min-[320px]:items-center min-[320px]:justify-between min-[320px]:gap-0 p-2.5 rounded-2xl border-2 transition-all relative cursor-pointer ${
                             isUnlocked
                               ? "border-emerald-800/40 bg-emerald-950/15"
                               : isCurrentlyPreviewed
