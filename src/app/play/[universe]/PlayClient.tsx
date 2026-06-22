@@ -44,6 +44,9 @@ export default function PlayUniverse() {
   const [hasMadeMistake, setHasMadeMistake] = useState(false);
   const [alreadyCompletedBefore, setAlreadyCompletedBefore] = useState(false);
   const [earnedDiamondThisRun, setEarnedDiamondThisRun] = useState(false);
+  // Une question spéciale a-t-elle été réussie pendant ce passage ? La récompense
+  // associée (diamant / cristal) n'est versée qu'à la fin du quiz, si aucune erreur.
+  const [answeredSpecialCorrectly, setAnsweredSpecialCorrectly] = useState(false);
   // Suivi des gains réels de CE passage (pour un récap honnête sur l'écran de victoire)
   const [gotLessonRewardThisRun, setGotLessonRewardThisRun] = useState(false);
   const [unlockedNewBadgeThisRun, setUnlockedNewBadgeThisRun] = useState(false);
@@ -143,6 +146,7 @@ export default function PlayUniverse() {
       completeLesson(lesson.id);
       setGameState("quiz");
       setHasMadeMistake(false);
+      setAnsweredSpecialCorrectly(false);
     }
   };
 
@@ -178,19 +182,14 @@ export default function PlayUniverse() {
         setTimeout(() => setShowWateringCanEarned(false), 3000);
       }
 
-      // Offrir un diamant si c'est la première fois qu'on répond correctement à une question spéciale
-      // et qu'on n'a fait aucune erreur durant le quiz
-      if (currentQuestion.isSpecial && !alreadyCompletedBefore && !hasMadeMistake) {
-        addDiamonds(1);
-        setEarnedDiamondThisRun(true);
-        setShowDiamondFeedback(true);
-        setTimeout(() => setShowDiamondFeedback(false), 2000);
-        // Bonus : un sans-faute dans le thème secret (déblocable au niveau) rapporte
-        // aussi un cristal, la monnaie qui ouvre le monde ultime "Le Temple des Sages".
-        const u = UNIVERSES[universeId];
-        if (u && u.secret && u.unlock && u.unlock.type === "level") {
-          addCrystals(1);
-        }
+      // On mémorise qu'une question spéciale a été réussie. La récompense (diamant,
+      // et cristal dans le thème secret) n'est versée qu'À LA FIN du quiz, et
+      // uniquement si AUCUNE erreur n'a été commise sur l'ensemble du quiz
+      // (cf. handleQuizVictory). Auparavant, le diamant était donné dès la bonne
+      // réponse : une erreur commise APRÈS la question spéciale ne l'annulait pas,
+      // ce qui contredisait la règle « sans-faute ».
+      if (currentQuestion.isSpecial && !alreadyCompletedBefore) {
+        setAnsweredSpecialCorrectly(true);
       }
       
       // Petit confetti local
@@ -267,6 +266,22 @@ export default function PlayUniverse() {
     // Dans le Temple, réussir un quiz fait grandir le Temple des Sages.
     if (isTemple) {
       growTemple(8);
+    }
+
+    // Récompense « sans-faute » versée maintenant que le quiz est terminé : un diamant
+    // si une question spéciale a été réussie ET qu'aucune erreur n'a été commise sur
+    // tout le quiz (et que la leçon n'avait pas déjà été validée auparavant).
+    if (answeredSpecialCorrectly && !hasMadeMistake && !alreadyCompletedBefore) {
+      addDiamonds(1);
+      setEarnedDiamondThisRun(true);
+      setShowDiamondFeedback(true);
+      setTimeout(() => setShowDiamondFeedback(false), 2000);
+      // Bonus : un sans-faute dans le thème secret (déblocable au niveau) rapporte
+      // aussi un cristal, la monnaie qui ouvre le monde ultime « Le Temple des Sages ».
+      const u = UNIVERSES[universeId];
+      if (u && u.secret && u.unlock && u.unlock.type === "level") {
+        addCrystals(1);
+      }
     }
 
     setGameState("victory");

@@ -7,11 +7,13 @@ import { useApp, AvatarConfig } from "@/context/AppContext";
 import { AvatarRenderer } from "@/components/Avatar/AvatarRenderer";
 import { playSound } from "@/lib/sound";
 
+// Chaque personnage a un prénom pour le rendre plus attachant pour les enfants
+// (l'emoji indique toujours l'espèce). « Niénié » le panda = demande de Kaiden.
 const AVATAR_TYPES: { type: AvatarConfig["type"]; emoji: string; label: string }[] = [
-  { type: "fox", emoji: "🦊", label: "Renard" },
-  { type: "panda", emoji: "🐼", label: "Panda" },
-  { type: "owl", emoji: "🦉", label: "Hibou" },
-  { type: "koala", emoji: "🐨", label: "Koala" },
+  { type: "fox", emoji: "🦊", label: "Filou" },
+  { type: "panda", emoji: "🐼", label: "Niénié" },
+  { type: "owl", emoji: "🦉", label: "Plume" },
+  { type: "koala", emoji: "🐨", label: "Bouba" },
 ];
 
 // Couleur par défaut de chaque personnage (le choix de couleur a été retiré de
