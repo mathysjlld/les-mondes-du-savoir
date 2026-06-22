@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { useApp, AvatarConfig } from "@/context/AppContext";
 import { asset } from "@/lib/asset";
-import { AvatarRenderer } from "@/components/Avatar/AvatarRenderer";
+import { AvatarRenderer, AVATAR_NAMES, AVATAR_EMOJIS } from "@/components/Avatar/AvatarRenderer";
 import { KnowledgeTree } from "@/components/KnowledgeTree/KnowledgeTree";
 import { IllustrationRenderer } from "@/components/UI/IllustrationRenderer";
 import { UNIVERSES } from "@/data/lessons";
@@ -350,6 +350,11 @@ export default function Dashboard() {
                 Niv. {currentLevel}
               </span>
             </div>
+
+            {/* Prénom du personnage choisi (pour l'attachement de l'enfant) */}
+            <span className="text-[11px] sm:text-xs font-bold text-slate-500 mt-0.5">
+              avec {AVATAR_EMOJIS[profile.avatar.type]} {AVATAR_NAMES[profile.avatar.type]}
+            </span>
 
             {/* Barre d'XP */}
             <div className="w-full bg-slate-100 rounded-full h-3 sm:h-4 mt-1 sm:mt-2 overflow-hidden border border-slate-200 relative">

@@ -4,17 +4,15 @@ import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import { useApp, AvatarConfig } from "@/context/AppContext";
-import { AvatarRenderer } from "@/components/Avatar/AvatarRenderer";
+import { AvatarRenderer, AVATAR_NAMES, AVATAR_EMOJIS } from "@/components/Avatar/AvatarRenderer";
 import { playSound } from "@/lib/sound";
 
 // Chaque personnage a un prénom pour le rendre plus attachant pour les enfants
-// (l'emoji indique toujours l'espèce). « Niénié » le panda = demande de Kaiden.
-const AVATAR_TYPES: { type: AvatarConfig["type"]; emoji: string; label: string }[] = [
-  { type: "fox", emoji: "🦊", label: "Filou" },
-  { type: "panda", emoji: "🐼", label: "Niénié" },
-  { type: "owl", emoji: "🦉", label: "Plume" },
-  { type: "koala", emoji: "🐨", label: "Bouba" },
-];
+// (l'emoji indique toujours l'espèce). Prénoms définis dans AvatarRenderer
+// (source unique) et réutilisés au dashboard + en jeu. « Niénié » = demande de Kaiden.
+const AVATAR_TYPES: { type: AvatarConfig["type"]; emoji: string; label: string }[] = (
+  ["fox", "panda", "owl", "koala"] as AvatarConfig["type"][]
+).map((type) => ({ type, emoji: AVATAR_EMOJIS[type], label: AVATAR_NAMES[type] }));
 
 // Couleur par défaut de chaque personnage (le choix de couleur a été retiré de
 // l'onboarding). Sera sans effet une fois les personnages remplacés par les

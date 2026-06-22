@@ -14,6 +14,22 @@ const AVATAR_IMAGES: Partial<Record<AvatarConfig["type"], string>> = {
   koala: "/images/avatar_koala.png",
 };
 
+// Prénom de chaque personnage — source unique de vérité. Sert à rendre l'avatar
+// attachant pour l'enfant : affiché à l'onboarding, sur le tableau de bord et en jeu.
+export const AVATAR_NAMES: Record<AvatarConfig["type"], string> = {
+  fox: "Filou",
+  panda: "Niénié",
+  owl: "Plume",
+  koala: "Bouba",
+};
+
+export const AVATAR_EMOJIS: Record<AvatarConfig["type"], string> = {
+  fox: "🦊",
+  panda: "🐼",
+  owl: "🦉",
+  koala: "🐨",
+};
+
 // Illustrations composites « personnage + accessoire » (fal.ai). Quand un
 // accessoire équipé possède une image dédiée pour ce personnage, on l'affiche
 // au lieu de la surcouche SVG (qui ne s'aligne pas sur les illustrations).

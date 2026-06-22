@@ -9,6 +9,7 @@ import { playSound, speakText, stopSpeaking } from "@/lib/sound";
 import { asset } from "@/lib/asset";
 import { Volume2, VolumeX, ArrowLeft, ArrowRight, Award, CheckCircle2, AlertCircle } from "lucide-react";
 import { IllustrationRenderer } from "@/components/UI/IllustrationRenderer";
+import { AVATAR_NAMES, AVATAR_EMOJIS } from "@/components/Avatar/AvatarRenderer";
 import confetti from "canvas-confetti";
 
 const formatFrenchPunctuation = (str: string) => {
@@ -372,6 +373,9 @@ export default function PlayUniverse() {
         </div>
 
         <div className="flex items-center gap-1.5 shrink-0">
+          <span className="flex items-center gap-1 bg-sky-50 border border-sky-200 px-2 py-1 rounded-full text-xs font-bold text-sky-700" title="Ton personnage t'accompagne">
+            {AVATAR_EMOJIS[profile.avatar.type]}<span className="hidden min-[420px]:inline">{AVATAR_NAMES[profile.avatar.type]}</span>
+          </span>
           <span className="bg-amber-50 border border-amber-200 px-2 py-1 rounded-full text-xs font-bold text-amber-700">🪙 {profile.coins}</span>
           <span className="bg-purple-50 border border-purple-200 px-2 py-1 rounded-full text-xs font-bold text-purple-700">💎 {profile.diamonds}</span>
         </div>
