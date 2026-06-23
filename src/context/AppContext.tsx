@@ -2,7 +2,9 @@
 
 import React, { createContext, useContext, useState, useEffect } from "react";
 import { playSound } from "@/lib/sound";
-import { supabase, cloudEnabled } from "@/lib/supabase";
+import { auth, db, cloudEnabled, authErrorMessage } from "@/lib/firebase";
+import { onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut as firebaseSignOut } from "firebase/auth";
+import { doc, getDoc, setDoc } from "firebase/firestore";
 
 export interface AvatarConfig {
   type: "fox" | "panda" | "owl" | "koala";
@@ -91,7 +93,7 @@ interface AppContextType {
   getXpForNextLevel: () => number;
   getXpPercent: () => number;
   toggleCheatCode: () => void;
-  // Sauvegarde cloud + comptes (actif uniquement si un projet Supabase est connecté)
+  // Sauvegarde cloud + comptes (actif uniquement si un projet Firebase est connecté)
   cloudEnabled: boolean;
   userEmail: string | null;
   signUp: (email: string, password: string) => Promise<{ error: string | null }>;
@@ -281,63 +283,71 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     return { error: null };
   };
 
-  // ===== Sauvegarde cloud + comptes (Supabase) — actif seulement si configuré =====
+  // ===== Sauvegarde cloud + comptes (Firebase) — actif seulement si configuré =====
   const saveCloudProfile = async (uid: string, p: UserProfile) => {
-    if (!supabase) return;
-    const { error } = await supabase
-      .from("profiles")
-      .upsert({ id: uid, data: p, updated_at: new Date().toISOString() });
-    if (error) console.error("Sauvegarde cloud échouée", error.message);
+    if (!db) return;
+    try {
+      await setDoc(doc(db, "profiles", uid), { data: p, updatedAt: new Date().toISOString() }, { merge: true });
+    } catch (e) {
+      console.error("Sauvegarde cloud échouée", e);
+    }
   };
 
   const loadCloudProfile = async (uid: string) => {
-    if (!supabase) return;
-    const { data, error } = await supabase.from("profiles").select("data").eq("id", uid).maybeSingle();
-    if (error) { console.error("Lecture cloud échouée", error.message); return; }
-    if (data && data.data && Object.keys(data.data).length > 0) {
-      // Progression trouvée dans le cloud : on la restaure (multi-appareils).
-      setProfile(data.data as UserProfile);
-    } else if (profile) {
-      // Pas encore de profil cloud : on y pousse la progression locale (1re synchro).
-      saveCloudProfile(uid, profile);
+    if (!db) return;
+    try {
+      const snap = await getDoc(doc(db, "profiles", uid));
+      const cloud = snap.exists() ? (snap.data().data as UserProfile | undefined) : undefined;
+      if (cloud && Object.keys(cloud).length > 0) {
+        // Progression trouvée dans le cloud : on la restaure (multi-appareils).
+        setProfile(cloud);
+      } else if (profile) {
+        // Pas encore de profil cloud : on y pousse la progression locale (1re synchro).
+        saveCloudProfile(uid, profile);
+      }
+    } catch (e) {
+      console.error("Lecture cloud échouée", e);
     }
   };
 
   // Initialiser la session et écouter les changements de connexion
   useEffect(() => {
-    if (!cloudEnabled || !supabase) return;
-    supabase.auth.getSession().then(({ data }) => {
-      const u = data.session?.user;
-      if (u) { setUserId(u.id); setUserEmail(u.email ?? null); loadCloudProfile(u.id); }
-    });
-    const { data: sub } = supabase.auth.onAuthStateChange((_event, session) => {
-      const u = session?.user;
-      setUserId(u?.id ?? null);
+    if (!cloudEnabled || !auth) return;
+    const unsub = onAuthStateChanged(auth, (u) => {
+      setUserId(u?.uid ?? null);
       setUserEmail(u?.email ?? null);
-      if (u) loadCloudProfile(u.id);
+      if (u) loadCloudProfile(u.uid);
     });
-    return () => sub.subscription.unsubscribe();
+    return () => unsub();
   }, []);
 
   // Synchroniser la progression vers le cloud (anti-rebond) quand l'utilisateur est connecté
   useEffect(() => {
-    if (!cloudEnabled || !supabase || !userId || !profile || !isLoaded) return;
+    if (!cloudEnabled || !db || !userId || !profile || !isLoaded) return;
     const t = setTimeout(() => { saveCloudProfile(userId, profile); }, 800);
     return () => clearTimeout(t);
   }, [profile, userId, isLoaded]);
 
   const signUp = async (email: string, password: string) => {
-    if (!supabase) return { error: "Sauvegarde cloud non configurée." };
-    const { error } = await supabase.auth.signUp({ email, password });
-    return { error: error?.message ?? null };
+    if (!auth) return { error: "Sauvegarde cloud non configurée." };
+    try {
+      await createUserWithEmailAndPassword(auth, email, password);
+      return { error: null };
+    } catch (e) {
+      return { error: authErrorMessage(e) };
+    }
   };
   const signIn = async (email: string, password: string) => {
-    if (!supabase) return { error: "Sauvegarde cloud non configurée." };
-    const { error } = await supabase.auth.signInWithPassword({ email, password });
-    return { error: error?.message ?? null };
+    if (!auth) return { error: "Sauvegarde cloud non configurée." };
+    try {
+      await signInWithEmailAndPassword(auth, email, password);
+      return { error: null };
+    } catch (e) {
+      return { error: authErrorMessage(e) };
+    }
   };
   const signOut = async () => {
-    if (supabase) await supabase.auth.signOut();
+    if (auth) await firebaseSignOut(auth);
     setUserId(null);
     setUserEmail(null);
   };
