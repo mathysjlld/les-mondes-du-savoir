@@ -214,6 +214,15 @@ export default function Dashboard() {
 
   const currentLevel = getLevel();
   const xpPercent = getXpPercent();
+  // Compteurs affichés dans l'en-tête (Pièces + Diamants toujours, Cristaux/Arrosoirs si > 0,
+  // Série toujours). Si le total est impair, la grille mobile 2 colonnes laisserait le dernier
+  // chip seul à gauche -> on le fait s'étendre sur les 2 colonnes pour rester aligné/centré.
+  const visibleStatCount =
+    2 + ((profile.crystals || 0) > 0 ? 1 : 0) + ((profile.wateringCans || 0) > 0 ? 1 : 0) + 1;
+  // Si le nombre de compteurs est impair, le dernier (Série) s'étend sur les 2 colonnes
+  // de la grille mobile pour rester centré. Style inline (la classe Tailwind dynamique
+  // n'est pas toujours détectée). Sans effet sur la rangée flex des écrans ≥ sm.
+  const streakSpanStyle = visibleStatCount % 2 === 1 ? { gridColumn: "1 / -1" } : undefined;
   // Code triche 7194 : débloque pièces/diamants ET tous les univers (niveaux + cristaux)
   const cheat = !!profile.isCheatEnabled;
 
@@ -371,9 +380,10 @@ export default function Dashboard() {
           </div>
         </div>
 
-        {/* Stats centre (Monnaies, Streak) */}
-        <div className="flex flex-wrap items-center justify-center md:justify-end gap-2 sm:gap-4 md:gap-6 border-t md:border-t-0 pt-3 md:pt-0 border-slate-100">
-          <div className="flex items-center gap-2 bg-amber-50 border-2 border-amber-200 px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl sm:rounded-2xl">
+        {/* Stats centre (Monnaies, Streak) — grille 2 colonnes alignée sur mobile
+            (évite que la « Série » tombe seule sous les autres), rangée sur écrans larges */}
+        <div className="grid grid-cols-2 sm:flex sm:flex-wrap items-stretch sm:items-center justify-center md:justify-end gap-2 sm:gap-4 md:gap-6 border-t md:border-t-0 pt-3 md:pt-0 border-slate-100">
+          <div className="flex items-center justify-center sm:justify-start w-full sm:w-auto gap-2 bg-amber-50 border-2 border-amber-200 px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl sm:rounded-2xl">
             <Coins className="text-amber-500 w-5 h-5 sm:w-6 sm:h-6 animate-bounce" />
             <div className="flex flex-col">
               <span className="text-[10px] sm:text-xs text-amber-700 font-bold leading-tight">Pièces</span>
@@ -381,7 +391,7 @@ export default function Dashboard() {
             </div>
           </div>
 
-          <div className="flex items-center gap-2 bg-purple-50 border-2 border-purple-200 px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl sm:rounded-2xl">
+          <div className="flex items-center justify-center sm:justify-start w-full sm:w-auto gap-2 bg-purple-50 border-2 border-purple-200 px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl sm:rounded-2xl">
             <span className="text-xl sm:text-2xl">💎</span>
             <div className="flex flex-col">
               <span className="text-[10px] sm:text-xs text-purple-700 font-bold leading-tight">Diamants</span>
@@ -390,7 +400,7 @@ export default function Dashboard() {
           </div>
 
           {(profile.crystals || 0) > 0 && (
-            <div className="flex items-center gap-2 bg-pink-50 border-2 border-pink-200 px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl sm:rounded-2xl">
+            <div className="flex items-center justify-center sm:justify-start w-full sm:w-auto gap-2 bg-pink-50 border-2 border-pink-200 px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl sm:rounded-2xl">
               <span className="text-xl sm:text-2xl">💠</span>
               <div className="flex flex-col">
                 <span className="text-[10px] sm:text-xs text-pink-700 font-bold leading-tight">Cristaux</span>
@@ -400,7 +410,7 @@ export default function Dashboard() {
           )}
 
           {(profile.wateringCans || 0) > 0 && (
-            <div className="flex items-center gap-2 bg-teal-50 border-2 border-teal-200 px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl sm:rounded-2xl">
+            <div className="flex items-center justify-center sm:justify-start w-full sm:w-auto gap-2 bg-teal-50 border-2 border-teal-200 px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl sm:rounded-2xl">
               <img src={asset("/images/watering_can.png")} alt="Arrosoir" className="w-6 h-6 sm:w-7 sm:h-7 object-contain" />
               <div className="flex flex-col">
                 <span className="text-[10px] sm:text-xs text-teal-700 font-bold leading-tight">Arrosoirs</span>
@@ -409,7 +419,7 @@ export default function Dashboard() {
             </div>
           )}
 
-          <div className="flex items-center gap-2 bg-orange-50 border-2 border-orange-200 px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl sm:rounded-2xl">
+          <div style={streakSpanStyle} className="flex items-center justify-center sm:justify-start w-full sm:w-auto gap-2 bg-orange-50 border-2 border-orange-200 px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl sm:rounded-2xl">
             <Flame className="text-orange-500 w-5 h-5 sm:w-6 sm:h-6" />
             <div className="flex flex-col">
               <span className="text-[10px] sm:text-xs text-orange-700 font-bold leading-tight">Série</span>
