@@ -5,6 +5,7 @@ import { playSound } from "@/lib/sound";
 import { auth, db, cloudEnabled, authErrorMessage } from "@/lib/firebase";
 import { onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut as firebaseSignOut } from "firebase/auth";
 import { doc, getDoc, setDoc } from "firebase/firestore";
+import { slotOf } from "@/lib/accessories";
 
 export interface AvatarConfig {
   type: "fox" | "panda" | "owl" | "koala";
@@ -781,24 +782,27 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
         };
       }
       
-      // Clic sur l'accessoire déjà équipé => on le retire.
+      // Clic sur l'accessoire déjà équipé => on le retire (toggle).
       if (currentAccs.includes(accessoryId)) {
         return {
           ...prev,
           avatar: {
             ...prev.avatar,
-            accessories: []
+            accessories: currentAccs.filter(a => a !== accessoryId)
           }
         };
       }
 
-      // Un seul accessoire à la fois : les illustrations composites n'en montrent
-      // qu'un, donc équiper un accessoire remplace le précédent.
+      // Multi-accessoires : on peut en porter plusieurs en même temps, mais UN SEUL
+      // par emplacement (slot). Équiper un accessoire remplace donc seulement celui
+      // du même slot (ex. un nouveau couvre-chef remplace l'ancien), et garde le reste.
+      const slot = slotOf(accessoryId);
+      const kept = currentAccs.filter(a => slotOf(a) !== slot);
       return {
         ...prev,
         avatar: {
           ...prev.avatar,
-          accessories: [accessoryId]
+          accessories: [...kept, accessoryId]
         }
       };
     });
