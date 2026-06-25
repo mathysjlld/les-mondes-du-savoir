@@ -30,63 +30,17 @@ export const AVATAR_EMOJIS: Record<AvatarConfig["type"], string> = {
   koala: "🐨",
 };
 
-// Illustrations composites « personnage + accessoire » (fal.ai). Quand un
-// accessoire équipé possède une image dédiée pour ce personnage, on l'affiche
-// au lieu de la surcouche SVG (qui ne s'aligne pas sur les illustrations).
-const AVATAR_ACCESSORY_IMAGES: Partial<Record<AvatarConfig["type"], Record<string, string>>> = {
-  koala: {
-    "glasses": "/images/koala_glasses.png",
-    "bow-tie": "/images/koala_bow-tie.png",
-    "headphones": "/images/koala_headphones.png",
-    "balloon": "/images/koala_balloon.png",
-    "magic-hat": "/images/koala_magic-hat.png",
-    "wand": "/images/koala_wand.png",
-    "shield": "/images/koala_shield.png",
-    "crown": "/images/koala_crown.png",
-    "super-cape": "/images/koala_super-cape.png",
-    "halo": "/images/koala_halo.png",
-    "sage-star": "/images/koala_sage-star.png",
-  },
-  owl: {
-    "glasses": "/images/owl_glasses.png",
-    "bow-tie": "/images/owl_bow-tie.png",
-    "headphones": "/images/owl_headphones.png",
-    "balloon": "/images/owl_balloon.png",
-    "magic-hat": "/images/owl_magic-hat.png",
-    "wand": "/images/owl_wand.png",
-    "shield": "/images/owl_shield.png",
-    "crown": "/images/owl_crown.png",
-    "super-cape": "/images/owl_super-cape.png",
-    "halo": "/images/owl_halo.png",
-    "sage-star": "/images/owl_sage-star.png",
-  },
-  panda: {
-    "glasses": "/images/panda_glasses.png",
-    "bow-tie": "/images/panda_bow-tie.png",
-    "headphones": "/images/panda_headphones.png",
-    "balloon": "/images/panda_balloon.png",
-    "magic-hat": "/images/panda_magic-hat.png",
-    "wand": "/images/panda_wand.png",
-    "shield": "/images/panda_shield.png",
-    "crown": "/images/panda_crown.png",
-    "super-cape": "/images/panda_super-cape.png",
-    "halo": "/images/panda_halo.png",
-    "sage-star": "/images/panda_sage-star.png",
-  },
-  fox: {
-    "glasses": "/images/fox_glasses.png",
-    "bow-tie": "/images/fox_bow-tie.png",
-    "headphones": "/images/fox_headphones.png",
-    "balloon": "/images/fox_balloon.png",
-    "magic-hat": "/images/fox_magic-hat.png",
-    "wand": "/images/fox_wand.png",
-    "shield": "/images/fox_shield.png",
-    "crown": "/images/fox_crown.png",
-    "super-cape": "/images/fox_super-cape.png",
-    "halo": "/images/fox_halo.png",
-    "sage-star": "/images/fox_sage-star.png",
-  },
-};
+// Accessoires & costumes disposant d'une illustration composite « perso + accessoire »
+// (un fichier par perso, nommé /images/{type}_{id}.png — généré pour les 4 persos).
+const COMPOSITE_IDS = new Set<string>([
+  "glasses", "bow-tie", "headphones", "balloon", "magic-hat", "wand", "shield",
+  "crown", "super-cape", "halo", "sage-star",
+  // nouveaux accessoires
+  "cowboy-hat", "sword",
+  // costumes (tenues complètes)
+  "costume-magicien", "costume-chevalier", "costume-cowboy", "costume-roi",
+  "costume-hero", "costume-intello", "costume-dj", "costume-sage",
+]);
 
 interface AvatarRendererProps {
   config: AvatarConfig;
@@ -106,16 +60,13 @@ export const AvatarRenderer: React.FC<AvatarRendererProps> = ({
   // Image personnalisée du personnage (remplace le rendu SVG si présente)
   const customImage = AVATAR_IMAGES[type];
 
-  // Image composite « personnage + accessoire » : on prend le dernier accessoire
-  // équipé qui dispose d'une illustration dédiée pour ce personnage.
-  const accImages = AVATAR_ACCESSORY_IMAGES[type];
+  // Image composite « personnage + accessoire/costume » : on prend le dernier
+  // accessoire équipé qui dispose d'une illustration (/images/{type}_{id}.png).
   let compositeImage: string | undefined;
-  if (accImages) {
-    for (let i = accessories.length - 1; i >= 0; i--) {
-      if (accImages[accessories[i]]) {
-        compositeImage = accImages[accessories[i]];
-        break;
-      }
+  for (let i = accessories.length - 1; i >= 0; i--) {
+    if (COMPOSITE_IDS.has(accessories[i])) {
+      compositeImage = `/images/${type}_${accessories[i]}.png`;
+      break;
     }
   }
 

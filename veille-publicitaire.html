@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Veille publicitaire — Les mondes du Savoir</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --turq:#14b8a6; --teal:#0d9488; --coral:#ff6b6b; --amber:#ffc53d;
+    --ink:#143a3f; --muted:#5b7a7d; --bg:#f1fbf9; --card:#fff;
+    --shadow:0 10px 30px rgba(13,148,136,.15);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:"Nunito",system-ui,sans-serif;color:var(--ink);background:#0d2b2a;}
+  h1,h2,h3,.brand{font-family:"Baloo 2",sans-serif}
+  .deck{position:relative}
+  .slide{
+    width:100vw;height:100vh;display:none;flex-direction:column;justify-content:center;
+    padding:6vh 7vw;background:var(--bg);position:relative;overflow:hidden;
+  }
+  .slide.active{display:flex}
+  .eyebrow{color:var(--teal);font-weight:800;text-transform:uppercase;letter-spacing:2px;font-size:.9rem;margin-bottom:10px}
+  .slide h1{font-size:clamp(2rem,5vw,4rem);line-height:1.05;font-weight:800}
+  .slide h2{font-size:clamp(1.6rem,3.6vw,2.8rem);font-weight:800;margin-bottom:18px}
+  .slide h2 .grad{background:linear-gradient(90deg,var(--turq),var(--coral));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .lead{font-size:clamp(1rem,1.6vw,1.35rem);color:var(--muted);max-width:60ch;line-height:1.5}
+  ul{list-style:none;display:grid;gap:14px;margin-top:18px}
+  li{display:flex;gap:14px;align-items:flex-start;font-size:clamp(1rem,1.5vw,1.25rem);line-height:1.45}
+  li .b{flex:0 0 auto;font-weight:800;color:var(--turq)}
+  .tag{display:inline-block;background:#e9fbf7;color:var(--teal);font-weight:800;border-radius:999px;padding:6px 16px;font-size:.95rem;margin-bottom:14px}
+  .metric{display:flex;flex-wrap:wrap;gap:16px;margin-top:22px}
+  .metric div{background:var(--card);border-radius:18px;padding:16px 22px;box-shadow:var(--shadow);border:2px solid #e2eeec}
+  .metric .num{font-family:"Baloo 2";font-size:1.8rem;font-weight:800;color:var(--turq)}
+  .metric .lbl{font-size:.8rem;color:var(--muted);font-weight:700}
+  .note{margin-top:18px;background:#fff7e6;border:1px solid #ffe2a8;border-radius:14px;padding:12px 18px;color:#8a6d1f;font-weight:600;max-width:62ch}
+  .takeaway{margin-top:20px;background:linear-gradient(135deg,#e9fbf7,#fff);border-left:6px solid var(--coral);border-radius:0 14px 14px 0;padding:14px 18px;font-weight:700;max-width:62ch}
+  table{border-collapse:collapse;margin-top:18px;width:100%;max-width:1000px;font-size:clamp(.85rem,1.3vw,1.05rem)}
+  th,td{text-align:left;padding:10px 14px;border-bottom:1px solid #d8ebe7}
+  th{color:var(--teal);font-family:"Baloo 2";font-weight:800}
+  td:first-child{font-weight:800;color:var(--ink)}
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:10px}
+  .card{background:var(--card);border-radius:18px;padding:18px 22px;box-shadow:var(--shadow);border:2px solid #e2eeec}
+  .card h3{color:var(--ink);font-size:1.15rem;margin-bottom:6px}
+  .card p{color:var(--muted);font-size:.98rem;line-height:1.45}
+  /* Slide de titre */
+  .cover{background:linear-gradient(135deg,#0d2b2a,#0d9488 60%,#14b8a6);color:#eafaf4;justify-content:center}
+  .cover h1{color:#fff}
+  .cover .eyebrow{color:var(--amber)}
+  .cover .lead{color:rgba(255,255,255,.85)}
+  .cover .by{margin-top:26px;font-weight:800;color:#bdeee5}
+  /* Pied de page */
+  .foot{position:absolute;bottom:22px;left:7vw;right:7vw;display:flex;justify-content:space-between;align-items:center;font-size:.8rem;color:var(--muted);font-weight:700}
+  .foot .brand{color:var(--teal)}
+  .cover .foot{color:rgba(255,255,255,.7)} .cover .foot .brand{color:#bdeee5}
+  .src{font-size:.82rem;color:var(--muted);line-height:1.7;margin-top:14px;max-width:70ch}
+  .src a{color:var(--teal)}
+  /* Navigation */
+  .nav{position:fixed;bottom:18px;right:22px;display:flex;gap:8px;z-index:50}
+  .nav button{background:var(--ink);color:#fff;border:none;width:42px;height:42px;border-radius:12px;font-size:1.2rem;cursor:pointer;opacity:.85}
+  .nav button:hover{opacity:1}
+  .pageno{position:fixed;bottom:26px;left:22px;color:var(--muted);font-weight:800;z-index:50;font-size:.85rem}
+  /* Impression PDF : une diapo par page */
+  @media print{
+    body{background:#fff}
+    .slide{display:flex!important;height:auto;min-height:100vh;page-break-after:always;width:100%}
+    .nav,.pageno{display:none}
+  }
+</style>
+</head>
+<body>
+<div class="deck">
+
+  <!-- 1. COVER -->
+  <section class="slide cover active">
+    <div class="eyebrow">Veille publicitaire</div>
+    <h1>Comment les apps ludo-éducatives<br/>pour enfants font leur pub</h1>
+    <p class="lead">Analyse des campagnes qui marchent — le comment, le pourquoi, et ce qu'on en retient pour <strong>Les mondes du Savoir</strong>.</p>
+    <div class="by">Les mondes du Savoir · Synthèse marketing</div>
+    <div class="foot"><span class="brand">Les mondes du Savoir</span><span>1 / 12</span></div>
+  </section>
+
+  <!-- 2. CONTEXTE -->
+  <section class="slide">
+    <div class="eyebrow">Le marché en bref</div>
+    <h2>Une vidéo, <span class="grad">deux cibles</span></h2>
+    <p class="lead">L'enfant n'achète pas : c'est le parent qui décide et paie. Les meilleures pubs jouent sur deux niveaux en même temps.</p>
+    <div class="cols">
+      <div class="card"><h3>👧 L'enfant</h3><p>Couleurs, mascottes, récompenses, déblocages. Le message : « je veux jouer ! »</p></div>
+      <div class="card"><h3>👨‍👩‍👧 Le parent</h3><p>« C'est vraiment éducatif », temps d'écran sans culpabilité, sûr et sans collecte de données.</p></div>
+    </div>
+    <div class="note">⚠️ La pub ciblant directement les enfants est encadrée (RGPD). On cible donc les <strong>parents</strong>, avec une créa qui plaît à l'enfant.</div>
+    <div class="foot"><span class="brand">Les mondes du Savoir</span><span>2 / 12</span></div>
+  </section>
+
+  <!-- 3. DUOLINGO -->
+  <section class="slide">
+    <span class="tag">Cas n°1 · 🦉 Duolingo</span>
+    <h2>La mascotte qui devient une star</h2>
+    <ul>
+      <li><span class="b">Concept</span><span>Le hibou « Duo » devient un personnage de divertissement sur TikTok : surfe sur les trends, humour sarcastique, « mort » puis « ressuscité » par les XP des joueurs.</span></li>
+      <li><span class="b">Pourquoi</span><span>Une personnalité de marque mémorable et virale gratuitement. Le personnage est <em>spécifique</em> (obsédé par les langues), pas bizarre au hasard.</span></li>
+    </ul>
+    <div class="metric">
+      <div><div class="num">+1 400 %</div><div class="lbl">d'abonnés</div></div>
+      <div><div class="num">~38 M</div><div class="lbl">d'utilisateurs touchés</div></div>
+      <div><div class="num">~90 M</div><div class="lbl">de vues</div></div>
+      <div><div class="num">~11 %</div><div class="lbl">d'engagement (vs 2-3 %)</div></div>
+    </div>
+    <div class="takeaway">👉 Pour nous : nos 4 mascottes (renard, koala, chouette, panda) → un « renard influenceur » récurrent.</div>
+    <div class="foot"><span class="brand">Les mondes du Savoir</span><span>3 / 12</span></div>
+  </section>
+
+  <!-- 4. LINGOKIDS -->
+  <section class="slide">
+    <span class="tag">Cas n°2 · 🧒 Lingokids</span>
+    <h2>« Parent Guilt on Trial »</h2>
+    <ul>
+      <li><span class="b">Concept</span><span>Campagne d'affichage à New York + film avec 11 vrais parents jugeant la culpabilité du temps d'écran (réalisateur primé aux Emmy).</span></li>
+      <li><span class="b">Pourquoi</span><span>Attaque frontale de l'angoisse n°1 du parent et la retourne : avec la bonne app, l'écran devient un allié. Vrais gens = authenticité.</span></li>
+    </ul>
+    <div class="takeaway">👉 Pour nous : notre argument « temps d'écran assumé + 0 donnée collectée » est exactement ce registre.</div>
+    <div class="foot"><span class="brand">Les mondes du Savoir</span><span>4 / 12</span></div>
+  </section>
+
+  <!-- 5. ABCMOUSE -->
+  <section class="slide">
+    <span class="tag">Cas n°3 · 🐭 ABCmouse</span>
+    <h2>La machine à conversion</h2>
+    <ul>
+      <li><span class="b">Concept</span><span>Matraquage TV / YouTube : parcours d'apprentissage, enfants qui progressent, témoignages, et essai gratuit très visible.</span></li>
+      <li><span class="b">Pourquoi</span><span>Volume + preuve + offre claire = conversion à grande échelle.</span></li>
+    </ul>
+    <div class="note">⚠️ Revers : marketing jugé culpabilisant (« si vous n'achetez pas, vous échouez ») → réaction négative. À ne pas copier tel quel.</div>
+    <div class="takeaway">👉 Pour nous : une offre claire (essai gratuit, puis abonnement) et une promesse simple, en ton positif — jamais anxiogène.</div>
+    <div class="foot"><span class="brand">Les mondes du Savoir</span><span>5 / 12</span></div>
+  </section>
+
+  <!-- 6. PRODIGY -->
+  <section class="slide">
+    <span class="tag">Cas n°4 · 🎮 Prodigy Math</span>
+    <h2>Le jeu d'abord</h2>
+    <ul>
+      <li><span class="b">Concept</span><span>Une pub qui ressemble à une bande-annonce de jeu vidéo RPG : l'apprentissage est « caché » dans le jeu.</span></li>
+      <li><span class="b">Pourquoi</span><span>L'enfant <em>veut</em> y jouer → il en fait la demande aux parents (levier d'acquisition puissant).</span></li>
+    </ul>
+    <div class="note">⚠️ Revers : critiqué pour pousser les enfants vers l'abonnement payant → mauvaise image. Séduire l'enfant sans en faire un levier de vente agressif.</div>
+    <div class="takeaway">👉 Pour nous : le Temple des Sages et le monde secret = exactement le ressort « je veux débloquer ».</div>
+    <div class="foot"><span class="brand">Les mondes du Savoir</span><span>6 / 12</span></div>
+  </section>
+
+  <!-- 7. KHAN -->
+  <section class="slide">
+    <span class="tag">Cas n°5 · 🐻 Khan Academy Kids</span>
+    <h2>« Gratuit & de confiance »</h2>
+    <ul>
+      <li><span class="b">Concept</span><span>Ton doux, mascotte rassurante (Kodi l'ours), message central : 100 % gratuit, sans pub, conçu par des experts.</span></li>
+      <li><span class="b">Pourquoi</span><span>Dans un marché d'apps payantes parfois agressives, « gratuit et sain » est un différenciateur de confiance énorme.</span></li>
+    </ul>
+    <div class="takeaway">👉 Pour nous : on ne mise pas sur le prix mais sur la confiance — un produit premium, hors-ligne, sans collecte de données, avec un essai gratuit pour convaincre.</div>
+    <div class="foot"><span class="brand">Les mondes du Savoir</span><span>7 / 12</span></div>
+  </section>
+
+  <!-- 8. OSMO / SAGO -->
+  <section class="slide">
+    <span class="tag">Cas n°6 · 🧩 Osmo / Sago Mini</span>
+    <h2>Démo produit & belle direction artistique</h2>
+    <ul>
+      <li><span class="b">Concept</span><span>Pubs « montre le produit en action » (Osmo) ou DA premium façon Pixar/Apple (Sago Mini, Pok Pok), souvent mises en avant par l'App Store.</span></li>
+      <li><span class="b">Pourquoi</span><span>La qualité visuelle inspire confiance et désir ; la démo lève le doute (« concrètement, ça fait quoi ? »).</span></li>
+    </ul>
+    <div class="takeaway">👉 Pour nous : notre style 3D « pâte à modeler » cohérent (avatars, arbre, temple) est un vrai atout à exploiter.</div>
+    <div class="foot"><span class="brand">Les mondes du Savoir</span><span>8 / 12</span></div>
+  </section>
+
+  <!-- 9. CONSTANTES -->
+  <section class="slide">
+    <div class="eyebrow">Synthèse</div>
+    <h2>Les <span class="grad">constantes</span> qui marchent</h2>
+    <table>
+      <tr><th>Levier</th><th>Exemple</th><th>Notre atout</th></tr>
+      <tr><td>Mascotte incarnée</td><td>Duo, Kodi</td><td>4 animaux</td></tr>
+      <tr><td>Parler au parent</td><td>Lingokids</td><td>Écran sain, vie privée</td></tr>
+      <tr><td>Émotion / vrais gens</td><td>Lingokids, ABCmouse</td><td>UGC vrais enfants</td></tr>
+      <tr><td>Désir enfant (déblocage)</td><td>Prodigy</td><td>Temple, monde secret</td></tr>
+      <tr><td>Promesse + offre simple</td><td>ABCmouse</td><td>Essai gratuit → premium</td></tr>
+      <tr><td>Confiance / sans données</td><td>Khan Kids</td><td>Atout RGPD</td></tr>
+      <tr><td>Démo + belle DA</td><td>Osmo, Sago</td><td>Rendus 3D</td></tr>
+    </table>
+    <div class="foot"><span class="brand">Les mondes du Savoir</span><span>9 / 12</span></div>
+  </section>
+
+  <!-- 10. PIEGES -->
+  <section class="slide">
+    <div class="eyebrow">À éviter</div>
+    <h2>Les <span class="grad">pièges</span> observés</h2>
+    <ul>
+      <li><span class="b">✗</span><span>Culpabiliser le parent (ABCmouse) → réaction négative.</span></li>
+      <li><span class="b">✗</span><span>Pousser l'enfant à l'achat (Prodigy) → mauvaise réputation.</span></li>
+      <li><span class="b">✗</span><span>Sur-promettre (« votre enfant deviendra un génie ») → déception et défiance.</span></li>
+      <li><span class="b">✗</span><span>Cibler la pub directement aux enfants → encadré juridiquement (RGPD). On cible les parents.</span></li>
+    </ul>
+    <div class="foot"><span class="brand">Les mondes du Savoir</span><span>10 / 12</span></div>
+  </section>
+
+  <!-- 11. POUR NOUS -->
+  <section class="slide">
+    <div class="eyebrow">Notre positionnement</div>
+    <h2>Ce qu'on en retient pour <span class="grad">Les mondes du Savoir</span></h2>
+    <ul>
+      <li><span class="b">1</span><span>Capitaliser sur nos <strong>4 mascottes 3D</strong> comme personnages récurrents.</span></li>
+      <li><span class="b">2</span><span>Cibler les <strong>parents</strong> : « écran sain, sûr, sans collecte de données — un contenu premium qui vaut son prix ».</span></li>
+      <li><span class="b">3</span><span>Faire désirer le produit à l'enfant via le <strong>Temple</strong> et le <strong>monde secret</strong>.</span></li>
+      <li><span class="b">4</span><span>Montrer de <strong>vrais enfants</strong> (UGC authentique) + nos <strong>beaux rendus 3D</strong>.</span></li>
+      <li><span class="b">5</span><span>Ton toujours <strong>positif</strong>, jamais culpabilisant ni sur-promesse.</span></li>
+    </ul>
+    <div class="foot"><span class="brand">Les mondes du Savoir</span><span>11 / 12</span></div>
+  </section>
+
+  <!-- 12. SOURCES -->
+  <section class="slide">
+    <div class="eyebrow">Références</div>
+    <h2>Sources</h2>
+    <div class="src">
+      • <a href="https://ads.tiktok.com/business/en-US/inspiration/duolingo-509">TikTok for Business — Case Study Duolingo</a><br/>
+      • <a href="https://technical.ly/company-culture/duolingo-viral-marketing-strategy-lessons/">How Duolingo built a viral strategy (Technical.ly)</a><br/>
+      • <a href="https://www.sookio.com/blog/the-anatomy-of-a-campaign-tiktok-duo-the-duolingo-owl">Anatomy of a campaign : Duo on TikTok (Sookio)</a><br/>
+      • <a href="https://adsofbrands.net/en/news/ad-of-the-day-lingokids-puts-parent-guilt-on-trial-in-first-of-its-kind-campaign/7911">Lingokids « Parent Guilt on Trial » (AdsofBrands)</a><br/>
+      • <a href="https://www.ispot.tv/brands/d9N/abcmouse-com">ABCmouse TV commercials (iSpot)</a><br/>
+      • <a href="https://screenwiseapp.com/guides/lingokids-vs-abcmouse-vs-khan-academy-kids-which-learning-app-is-best">Lingokids vs ABCmouse vs Khan Academy Kids (Screenwise)</a><br/>
+      • <a href="https://www.emarketer.com/content/how-duolingo-s-new-ad-program-leans-its-gamified--community-oriented-strengths">Duolingo ad program & gamification (eMarketer)</a>
+    </div>
+    <div class="foot"><span class="brand">Les mondes du Savoir</span><span>12 / 12</span></div>
+  </section>
+
+</div>
+
+<div class="pageno"><span id="cur">1</span> / 12</div>
+<div class="nav">
+  <button id="prev" aria-label="Précédent">‹</button>
+  <button id="next" aria-label="Suivant">›</button>
+</div>
+
+<script>
+  const slides = [...document.querySelectorAll('.slide')];
+  let i = 0;
+  const cur = document.getElementById('cur');
+  function show(n){
+    i = Math.max(0, Math.min(slides.length - 1, n));
+    slides.forEach((s, k) => s.classList.toggle('active', k === i));
+    cur.textContent = i + 1;
+  }
+  document.getElementById('next').onclick = () => show(i + 1);
+  document.getElementById('prev').onclick = () => show(i - 1);
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') { e.preventDefault(); show(i + 1); }
+    if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); show(i - 1); }
+    if (e.key === 'Home') show(0);
+    if (e.key === 'End') show(slides.length - 1);
+  });
+</script>
+</body>
+</html>

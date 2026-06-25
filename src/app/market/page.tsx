@@ -22,6 +22,18 @@ const ACCESSORIES_ITEMS = [
   { id: "super-cape", name: "Cape Héroïque", emoji: "🦸‍♂️", price: 180, desc: "Pour s'envoler vers la réussite !", rarity: "Mythique" },
   { id: "halo", name: "Auréole des Sages", emoji: "😇", price: 2, currency: "crystals", desc: "Une auréole dorée réservée aux maîtres du Temple !", rarity: "Mythique" },
   { id: "sage-star", name: "Étoile du Sage", emoji: "🌟", price: 3, currency: "crystals", desc: "L'emblème lumineux des plus grands explorateurs !", rarity: "Mythique" },
+  // --- Nouveaux accessoires ---
+  { id: "cowboy-hat", name: "Chapeau de Cow-boy", emoji: "🤠", price: 40, desc: "En selle pour de nouvelles aventures !", rarity: "Rare" },
+  { id: "sword", name: "Épée du Chevalier", emoji: "⚔️", price: 70, desc: "Une lame brillante, parfaite avec le bouclier !", rarity: "Légendaire" },
+  // --- Costumes (tenues complètes) ---
+  { id: "costume-intello", name: "Tenue d'Intello", emoji: "🤓", price: 80, desc: "Lunettes + nœud papillon : le look du petit génie !", rarity: "Épique" },
+  { id: "costume-dj", name: "Tenue de DJ", emoji: "🎧", price: 90, desc: "Casque + lunettes pour mixer les meilleurs sons !", rarity: "Épique" },
+  { id: "costume-cowboy", name: "Tenue de Cow-boy", emoji: "🤠", price: 110, desc: "Chapeau + bandana pour la grande aventure !", rarity: "Épique" },
+  { id: "costume-magicien", name: "Tenue de Magicien", emoji: "🧙", price: 120, desc: "Chapeau étoilé + baguette pour de vrais sortilèges !", rarity: "Légendaire" },
+  { id: "costume-sage", name: "Tenue du Sage", emoji: "😇", price: 130, desc: "Auréole + baguette : la sagesse incarnée !", rarity: "Légendaire" },
+  { id: "costume-hero", name: "Tenue de Super-Héros", emoji: "🦸", price: 140, desc: "Cape + lunettes pour voler vers la réussite !", rarity: "Légendaire" },
+  { id: "costume-chevalier", name: "Tenue de Chevalier", emoji: "🛡️", price: 150, desc: "Bouclier + épée + cape : prêt pour la quête !", rarity: "Mythique" },
+  { id: "costume-roi", name: "Tenue Royale", emoji: "👑", price: 160, desc: "Couronne + cape pour régner sur le savoir !", rarity: "Mythique" },
 ] as const;
 
 // Les compagnons achetables avec les diamants (s'affichent à côté de l'avatar)
