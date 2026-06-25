@@ -46,8 +46,10 @@ export default function PlayUniverse() {
   const [alreadyCompletedBefore, setAlreadyCompletedBefore] = useState(false);
   const [earnedDiamondThisRun, setEarnedDiamondThisRun] = useState(false);
   // Une question spéciale a-t-elle été réussie pendant ce passage ? La récompense
-  // associée (diamant / cristal) n'est versée qu'à la fin du quiz, si aucune erreur.
-  const [answeredSpecialCorrectly, setAnsweredSpecialCorrectly] = useState(false);
+  // (diamant / cristal) n'est versée qu'à la fin du quiz, si aucune erreur.
+  // On utilise un ref : sa valeur est TOUJOURS à jour, même quand la question
+  // spéciale est la dernière (sinon stale closure => diamant jamais donné).
+  const answeredSpecialRef = useRef(false);
   // Suivi des gains réels de CE passage (pour un récap honnête sur l'écran de victoire)
   const [gotLessonRewardThisRun, setGotLessonRewardThisRun] = useState(false);
   const [unlockedNewBadgeThisRun, setUnlockedNewBadgeThisRun] = useState(false);
@@ -147,7 +149,7 @@ export default function PlayUniverse() {
       completeLesson(lesson.id);
       setGameState("quiz");
       setHasMadeMistake(false);
-      setAnsweredSpecialCorrectly(false);
+      answeredSpecialRef.current = false;
     }
   };
 
@@ -190,7 +192,7 @@ export default function PlayUniverse() {
       // réponse : une erreur commise APRÈS la question spéciale ne l'annulait pas,
       // ce qui contredisait la règle « sans-faute ».
       if (currentQuestion.isSpecial && !alreadyCompletedBefore) {
-        setAnsweredSpecialCorrectly(true);
+        answeredSpecialRef.current = true;
       }
       
       // Petit confetti local
@@ -272,7 +274,7 @@ export default function PlayUniverse() {
     // Récompense « sans-faute » versée maintenant que le quiz est terminé : un diamant
     // si une question spéciale a été réussie ET qu'aucune erreur n'a été commise sur
     // tout le quiz (et que la leçon n'avait pas déjà été validée auparavant).
-    if (answeredSpecialCorrectly && !hasMadeMistake && !alreadyCompletedBefore) {
+    if (answeredSpecialRef.current && !hasMadeMistake && !alreadyCompletedBefore) {
       addDiamonds(1);
       setEarnedDiamondThisRun(true);
       setShowDiamondFeedback(true);
