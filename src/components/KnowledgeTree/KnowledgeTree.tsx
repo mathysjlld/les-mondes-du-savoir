@@ -528,6 +528,13 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
               playsInline
               poster={asset("/videos/barnabe_arrose_poster.png")}
               className="w-full h-auto drop-shadow-[0_5px_6px_rgba(0,0,0,0.28)]"
+              // Le clip source est rogné au bord droit (la patte qui guide le bec est
+              // coupée net). On fait fondre ce bord en douceur : l'eau (en CSS) jaillit
+              // exactement de cette zone, donc la transition paraît naturelle.
+              style={{
+                WebkitMaskImage: "linear-gradient(to right, #000 80%, transparent 99%)",
+                maskImage: "linear-gradient(to right, #000 80%, transparent 99%)",
+              }}
             >
               <source src={asset("/videos/barnabe_arrose.webm")} type="video/webm" />
               <source src={asset("/videos/barnabe_arrose.mp4")} type="video/mp4" />

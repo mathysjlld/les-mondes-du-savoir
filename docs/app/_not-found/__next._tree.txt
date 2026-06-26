@@ -1,3 +1,3 @@
 :HL["/les-mondes-du-savoir/app/_next/static/chunks/0-gh5hpljlsqq.css","style"]
-:HL["/les-mondes-du-savoir/app/_next/static/chunks/1iyhxezfoc53_.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"JO2TAj0pp-IUUv0hm2zBu"}
+:HL["/les-mondes-du-savoir/app/_next/static/chunks/22y1k2aya5045.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"2btoT5Sj1aP70Sk6xYkh0"}

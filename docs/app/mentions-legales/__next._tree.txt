@@ -1,5 +1,5 @@
 :HL["/les-mondes-du-savoir/app/_next/static/chunks/0-gh5hpljlsqq.css","style"]
-:HL["/les-mondes-du-savoir/app/_next/static/chunks/1iyhxezfoc53_.css","style"]
+:HL["/les-mondes-du-savoir/app/_next/static/chunks/22y1k2aya5045.css","style"]
 :HL["/les-mondes-du-savoir/app/_next/static/media/07454f8ad8aaac57-s.p.2kjei9psvcorz.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/les-mondes-du-savoir/app/_next/static/media/5d52bd6c4cb3f315-s.p.0ez3bnoxb63ra.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"mentions-legales","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"JO2TAj0pp-IUUv0hm2zBu"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"mentions-legales","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"2btoT5Sj1aP70Sk6xYkh0"}
