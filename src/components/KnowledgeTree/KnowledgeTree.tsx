@@ -400,13 +400,13 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
                 (en bas à gauche) et retombe en arc au pied de l'arbre. */}
             {[...Array(40)].map((_, i) => {
               const delay = 0.7 + (i * 0.05);
-              // Bec de l'arrosoir de Barnabé, mesuré sur le clip : ~24% / 46% du
-              // conteneur carré (et non plus le haut du cadre comme l'ancien arrosoir 2D).
-              const startX = 24 + (Math.random() * 4 - 2);
-              const startY = 46 + (Math.random() * 3 - 1.5);
+              // Bec de l'arrosoir de Barnabé (illustration en bas à gauche),
+              // mesuré sur l'image : ~28% / 74% du conteneur carré.
+              const startX = 28 + (Math.random() * 4 - 2);
+              const startY = 73 + (Math.random() * 3 - 1.5);
               // Point de chute : pied de l'arbre, à droite de Barnabé.
-              const targetX = 45 + (Math.random() * 14 - 7);
-              const targetY = 80 + (Math.random() * 8 - 4);
+              const targetX = 47 + (Math.random() * 14 - 7);
+              const targetY = 81 + (Math.random() * 7 - 3);
               // Arc de versement (droite + descente accélérée).
               const midX = startX + (targetX - startX) * 0.55;
               const midY = startY + (targetY - startY) * 0.4;
@@ -440,7 +440,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
               return (
                 <motion.div
                   key={`splash-${i}`}
-                  initial={{ opacity: 0, scale: 0.1, left: '45%', top: '80%' }}
+                  initial={{ opacity: 0, scale: 0.1, left: '47%', top: '82%' }}
                   animate={{ 
                     opacity: [0, 0.6, 0],
                     scale: [0.1, 1.8, 2.5],
@@ -511,34 +511,29 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
         </div>
       )}
 
-      {/* Mascotte Barnabé qui arrose (vidéo 3D) */}
+      {/* Mascotte Barnabé qui arrose (illustration 3D entière, animée en CSS).
+          On utilise une image (et non plus le clip vidéo, qui était rogné au bord
+          droit : le bras levé de Barnabé était coupé). Léger balancement = il arrose. */}
       <AnimatePresence>
         {showBarnabe && (
           <motion.div
             key="barnabe-arrose"
-            initial={{ opacity: 0, x: -40, y: 12, scale: 0.85 }}
+            initial={{ opacity: 0, x: -40, y: 12, scale: 0.82 }}
             animate={{ opacity: 1, x: 0, y: 0, scale: 1 }}
-            exit={{ opacity: 0, x: -30, scale: 0.85 }}
+            exit={{ opacity: 0, x: -30, scale: 0.82 }}
             transition={{ type: "spring", stiffness: 220, damping: 22 }}
-            className="absolute bottom-7 left-0.5 z-30 w-[26%] min-w-[72px] max-w-[100px] pointer-events-none select-none"
+            className="absolute bottom-3 left-0.5 z-30 w-[34%] min-w-[96px] max-w-[128px] pointer-events-none select-none"
+            style={{ transformOrigin: "30% 95%" }}
           >
-            <video
-              autoPlay
-              muted
-              playsInline
-              poster={asset("/videos/barnabe_arrose_poster.png")}
+            <motion.img
+              src={asset("/images/barnabe_arrose.png")}
+              alt=""
               className="w-full h-auto drop-shadow-[0_5px_6px_rgba(0,0,0,0.28)]"
-              // Le clip source est rogné au bord droit (la patte qui guide le bec est
-              // coupée net). On fait fondre ce bord en douceur : l'eau (en CSS) jaillit
-              // exactement de cette zone, donc la transition paraît naturelle.
-              style={{
-                WebkitMaskImage: "linear-gradient(to right, #000 80%, transparent 99%)",
-                maskImage: "linear-gradient(to right, #000 80%, transparent 99%)",
-              }}
-            >
-              <source src={asset("/videos/barnabe_arrose.webm")} type="video/webm" />
-              <source src={asset("/videos/barnabe_arrose.mp4")} type="video/mp4" />
-            </video>
+              // Balancement doux : il penche l'arrosoir d'avant en arrière en arrosant.
+              animate={{ rotate: [0, -3, 1.5, -2, 0], y: [0, -2, 0, -1.5, 0] }}
+              transition={{ duration: 2.4, ease: "easeInOut", repeat: Infinity }}
+              style={{ transformOrigin: "32% 92%" }}
+            />
           </motion.div>
         )}
       </AnimatePresence>
