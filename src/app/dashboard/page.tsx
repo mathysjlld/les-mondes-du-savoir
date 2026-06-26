@@ -314,10 +314,10 @@ export default function Dashboard() {
       )}
       
       {/* 1. Header & Barre de Profil */}
-      <header className="w-full flex flex-col gap-3 sm:gap-4 glass-card p-4 sm:p-6 bg-white/90">
-        
+      <header className="w-full flex flex-col lg:flex-row lg:items-center justify-between gap-3 sm:gap-4 glass-card p-4 sm:p-6 bg-white/90">
+
         {/* Infos profil gauche */}
-        <div className="flex items-center gap-3 sm:gap-4">
+        <div className="flex items-center gap-3 sm:gap-4 lg:flex-1 lg:min-w-0">
           {/* Avatar (sans lien marché) + Animal compagnon à côté */}
           <div className="relative shrink-0 flex items-end gap-1.5">
             {/* Avatar principal */}
@@ -382,7 +382,7 @@ export default function Dashboard() {
 
         {/* Stats centre (Monnaies, Streak) — grille 2 colonnes alignée sur mobile
             (évite que la « Série » tombe seule sous les autres), rangée sur écrans larges */}
-        <div className="grid grid-cols-2 sm:flex sm:flex-wrap items-stretch sm:items-center justify-center gap-2 sm:gap-4 md:gap-6 border-t pt-3 border-slate-100">
+        <div className="grid grid-cols-2 sm:flex sm:flex-wrap lg:flex-nowrap lg:shrink-0 items-stretch sm:items-center justify-center lg:justify-end gap-2 sm:gap-4 md:gap-6 lg:gap-3 border-t lg:border-t-0 pt-3 lg:pt-0 border-slate-100">
           <div className="flex items-center justify-center sm:justify-start w-full sm:w-auto gap-2 bg-amber-50 border-2 border-amber-200 px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl sm:rounded-2xl">
             <Coins className="text-amber-500 w-5 h-5 sm:w-6 sm:h-6 animate-bounce" />
             <div className="flex flex-col">
@@ -429,7 +429,7 @@ export default function Dashboard() {
         </div>
 
         {/* Contrôles et options droites */}
-        <div className="flex items-center justify-center sm:justify-end gap-1.5 sm:gap-2 w-full sm:w-auto">
+        <div className="flex items-center justify-center sm:justify-end gap-1.5 sm:gap-2 w-full sm:w-auto lg:shrink-0">
           {/* Bouton son */}
           <button
             onClick={() => {
