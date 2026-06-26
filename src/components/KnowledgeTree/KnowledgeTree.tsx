@@ -396,33 +396,40 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
             {/* L'arrosoir 2D volant a été retiré : c'est Barnabé qui arrose désormais.
                 On conserve les gouttelettes et étincelles ci-dessous. */}
 
-            {/* Flux de gouttelettes d'eau réaliste (plus grosses, visibles et bien positionnées) */}
+            {/* Flux de gouttelettes : l'eau sort du bec de l'arrosoir de Barnabé
+                (en bas à gauche) et retombe en arc au pied de l'arbre. */}
             {[...Array(40)].map((_, i) => {
-              const delay = 0.6 + (i * 0.055);
-              const startX = 55 + (Math.random() * 4 - 2); // Aligné sur le bec verseur
-              const startY = 20 + (Math.random() * 2 - 1); // Aligné sur le bec verseur
-              const targetX = 42 + (Math.random() * 16 - 8);
-              const targetY = 78 + (Math.random() * 8 - 4);
-              
+              const delay = 0.7 + (i * 0.05);
+              // Bec de l'arrosoir de Barnabé, mesuré sur le clip : ~24% / 46% du
+              // conteneur carré (et non plus le haut du cadre comme l'ancien arrosoir 2D).
+              const startX = 24 + (Math.random() * 4 - 2);
+              const startY = 46 + (Math.random() * 3 - 1.5);
+              // Point de chute : pied de l'arbre, à droite de Barnabé.
+              const targetX = 45 + (Math.random() * 14 - 7);
+              const targetY = 80 + (Math.random() * 8 - 4);
+              // Arc de versement (droite + descente accélérée).
+              const midX = startX + (targetX - startX) * 0.55;
+              const midY = startY + (targetY - startY) * 0.4;
+
               return (
                 <motion.div
                   key={`drop-${i}`}
                   initial={{ opacity: 0, scale: 0.1, left: `${startX}%`, top: `${startY}%` }}
-                  animate={{ 
+                  animate={{
                     opacity: [0, 0.95, 0.95, 0],
                     scale: [0.4, 1.2, 1.2, 0.4],
-                    left: [`${startX}%`, `${startX - 10}%`, `${targetX}%`],
-                    top: [`${startY}%`, `${startY + 15}%`, `${targetY}%`],
+                    left: [`${startX}%`, `${midX}%`, `${targetX}%`],
+                    top: [`${startY}%`, `${midY}%`, `${targetY}%`],
                   }}
-                  transition={{ 
-                    duration: 0.75, 
-                    delay: delay, 
-                    ease: 'easeIn' 
+                  transition={{
+                    duration: 0.85,
+                    delay: delay,
+                    ease: 'easeIn'
                   }}
                   className="absolute pointer-events-none select-none"
                   style={{ transform: 'translate(-50%, -50%)' }}
                 >
-                  <div className="w-2.5 h-5.5 bg-gradient-to-b from-cyan-300 via-sky-400 to-blue-600 rounded-full border border-white/40 shadow-[0_0_12px_rgba(56,189,248,0.95)] drop-shadow-[0_1px_3px_rgba(255,255,255,0.8)] transform -rotate-[22deg]" />
+                  <div className="w-2.5 h-5.5 bg-gradient-to-b from-cyan-300 via-sky-400 to-blue-600 rounded-full border border-white/40 shadow-[0_0_12px_rgba(56,189,248,0.95)] drop-shadow-[0_1px_3px_rgba(255,255,255,0.8)] transform rotate-[30deg]" />
                 </motion.div>
               );
             })}
@@ -433,7 +440,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
               return (
                 <motion.div
                   key={`splash-${i}`}
-                  initial={{ opacity: 0, scale: 0.1, left: '46%', top: '78%' }}
+                  initial={{ opacity: 0, scale: 0.1, left: '45%', top: '80%' }}
                   animate={{ 
                     opacity: [0, 0.6, 0],
                     scale: [0.1, 1.8, 2.5],
