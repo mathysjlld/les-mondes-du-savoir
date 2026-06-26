@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Compte rendu du 26 juin · Les Mondes du Savoir</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --teal-700:#0f766e; --teal-600:#0d9488; --teal-500:#14b8a6; --teal-400:#2dd4bf;
+    --teal-50:#f0fdfa; --teal-100:#ccfbf1;
+    --coral:#fb7185; --coral-deep:#e11d48;
+    --green:#059669; --green-bg:#ecfdf5; --green-border:#a7f3d0;
+    --amber:#b45309; --amber-bg:#fffbeb; --amber-border:#fcd34d;
+    --ink:#1f2937; --muted:#5b6b7a;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; font-family:'Nunito',system-ui,sans-serif; color:var(--ink);
+    background:linear-gradient(160deg,#f0fdfa 0%,#ecfeff 40%,#fff 100%);
+    line-height:1.6; padding:24px 16px 64px;
+  }
+  .wrap{max-width:780px; margin:0 auto}
+  header.hero{
+    background:linear-gradient(135deg,var(--teal-600),var(--teal-400));
+    color:#fff; border-radius:28px; padding:32px 30px 28px; text-align:center;
+    box-shadow:0 14px 34px rgba(13,148,136,.32);
+  }
+  header.hero .badge{
+    display:inline-block; background:rgba(255,255,255,.22); border:1px solid rgba(255,255,255,.35);
+    font-weight:700; font-size:13px; letter-spacing:.04em; padding:5px 14px; border-radius:999px; margin-bottom:12px;
+  }
+  header.hero h1{font-family:'Fredoka',sans-serif; font-weight:700; font-size:30px; margin:.1em 0 .15em}
+  header.hero p{margin:0; opacity:.95; font-weight:600}
+  .intro{
+    background:#fff; border:1px solid var(--teal-100); border-radius:20px;
+    padding:18px 22px; margin:22px 0; box-shadow:0 6px 18px rgba(15,118,110,.07);
+  }
+  .intro p{margin:.3em 0}
+  .card{
+    background:#fff; border:1px solid var(--teal-100); border-radius:20px;
+    padding:20px 24px; margin:16px 0; box-shadow:0 6px 18px rgba(15,118,110,.07);
+  }
+  .card h2{
+    font-family:'Fredoka',sans-serif; font-weight:600; font-size:19px; color:var(--teal-700);
+    margin:0 0 6px; display:flex; align-items:center; gap:10px; flex-wrap:wrap;
+  }
+  .chip{
+    font-family:'Nunito',sans-serif; font-weight:800; font-size:11px; letter-spacing:.03em;
+    padding:3px 10px; border-radius:999px; margin-left:auto;
+  }
+  .chip.done{background:var(--green-bg); color:var(--green); border:1px solid var(--green-border)}
+  .chip.wip{background:var(--amber-bg); color:var(--amber); border:1px solid var(--amber-border)}
+  .card ul{margin:.5em 0 0; padding-left:20px}
+  .card li{margin:.3em 0}
+  .card li b{color:var(--teal-700)}
+  .next{
+    background:linear-gradient(135deg,#0f766e,#0d9488); color:#eafffb; border-radius:20px;
+    padding:22px 24px; margin:22px 0;
+  }
+  .next h2{font-family:'Fredoka',sans-serif; color:#fff; margin:0 0 8px; font-size:20px}
+  .next ul{margin:.5em 0 0; padding-left:20px}
+  .next li{margin:.35em 0}
+  .next a{color:#bff5ea; font-weight:700}
+  a{color:var(--teal-600); font-weight:700}
+  .links{display:flex; gap:10px; flex-wrap:wrap; margin-top:8px}
+  .pill{
+    display:inline-block; background:var(--teal-50); border:1px solid var(--teal-100);
+    border-radius:999px; padding:7px 14px; font-weight:700; font-size:14px; text-decoration:none; color:var(--teal-700);
+  }
+  footer{text-align:center; color:var(--muted); margin-top:26px; font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <span class="badge">🌳 Les Mondes du Savoir</span>
+    <h1>Compte rendu — 26 juin 2026</h1>
+    <p>Avancement du jeu éducatif (jouabilité, avatars, sauvegarde cloud)</p>
+  </header>
+
+  <div class="intro">
+    <p>Résumé du travail réalisé aujourd'hui sur le jeu. Quatre chantiers terminés et déployés, plus la mise en route de la sauvegarde cloud (qui demande encore deux réglages côté serveur).</p>
+  </div>
+
+  <section class="card">
+    <h2>🛒 Marché — voix du marchand <span class="chip done">✅ Terminé</span></h2>
+    <ul>
+      <li>Ajout de <b>répliques sur-mesure</b> pour les 2 nouveaux accessoires (chapeau de cow-boy, épée) et les 8 costumes — avant, ils tombaient sur un texte générique, ce qui cassait l'ambiance.</li>
+      <li>Correction d'un <b>défaut de grammaire</b> dans le message d'achat (accord singulier/pluriel des noms d'objets).</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>🦊 Avatars — choix du style <span class="chip done">✅ Terminé</span></h2>
+    <ul>
+      <li>Test d'harmonisation du <b>hibou</b> dans un style plus « chibi », puis <b>retour au style Disney d'origine</b> : on conserve les illustrations originales, plus fidèles à ce qui a été présenté.</li>
+      <li>Pour la suite, les nouveaux accessoires seront regénérés via des <b>prompts dédiés</b> sur la même base d'avatar, pour garder un rendu cohérent.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>💧 Arbre du Savoir — animation d'arrosage <span class="chip done">✅ Terminé</span></h2>
+    <ul>
+      <li>L'eau d'arrosage <b>sort désormais du bec de l'arrosoir de Barnabé</b> et retombe en arc au pied de l'arbre (avant, elle « tombait du ciel », sans lien avec la mascotte).</li>
+      <li>Correction d'un <b>bras coupé</b> de Barnabé : l'ancien clip vidéo était rogné sur le bord. Remplacé par une <b>illustration entière</b> de Barnabé, animée en douceur — rendu net et complet.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>☁️ Sauvegarde cloud (Supabase) <span class="chip wip">🔧 En cours</span></h2>
+    <ul>
+      <li>Le jeu a été <b>branché au projet Supabase</b> fourni, et la <b>connexion est vérifiée</b> (URL + clé publique valides).</li>
+      <li>Objectif : <b>comptes synchronisés entre appareils</b> (la progression suit l'enfant sur téléphone, tablette, ordinateur).</li>
+      <li>Il reste <b>2 réglages côté serveur</b> (création de la table + variables sur l'hébergeur) — détaillés dans le mémo technique ci-dessous.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>🌐 Mise au point du déploiement <span class="chip done">✅ Clarifié</span></h2>
+    <ul>
+      <li>Le site public <b>lesmondesdusavoir.fr</b> est hébergé sur <b>Vercel</b>. Constat : il sert une <b>version un peu en retard</b> sur le code à jour → un <b>redéploiement</b> est nécessaire pour publier les correctifs du jour.</li>
+      <li>Tous les changements ci-dessus sont <b>déjà en ligne sur la version de prévisualisation</b> et vérifiés.</li>
+    </ul>
+    <div class="links">
+      <a class="pill" href="https://mathysjlld.github.io/les-mondes-du-savoir/app/" target="_blank" rel="noopener">▶ Tester le jeu (prévisualisation)</a>
+      <a class="pill" href="https://mathysjlld.github.io/les-mondes-du-savoir/memo-kaiden.html" target="_blank" rel="noopener">🔧 Mémo technique (cloud + domaine)</a>
+    </div>
+  </section>
+
+  <div class="next">
+    <h2>🎯 Prochaines étapes</h2>
+    <ul>
+      <li>Finaliser la <b>sauvegarde cloud</b> (créer la table + variables sur Vercel) et la tester sur 2 appareils.</li>
+      <li><b>Redéployer</b> le domaine pour mettre en ligne les correctifs du jour.</li>
+      <li>Regénérer proprement les <b>nouveaux accessoires</b> d'avatars.</li>
+    </ul>
+  </div>
+
+  <footer>— Mathys · Les Mondes du Savoir · 26 juin 2026</footer>
+</div>
+</body>
+</html>
