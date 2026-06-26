@@ -308,7 +308,7 @@ export default function Market() {
     if (success) {
       playSound("levelup");
       setSuccessAnimItem(item.id);
-      setDialogue(`Merveilleux ! Ces ${item.name} sont maintenant à toi. Prends-en bien soin ! ✨`);
+      setDialogue(`Merveilleux ! « ${item.name} », c'est maintenant à toi. Prends-en bien soin ! ✨`);
       setTimeout(() => {
         setSuccessAnimItem(null);
         setDialogue(`Bienvenue dans mon échoppe de l'aventurier ! Que veux-tu échanger aujourd'hui ? 🎒`);
@@ -364,6 +364,16 @@ export default function Market() {
         case "shield": setDialogue("Un bouclier de chevalier légendaire pour parer toutes les questions difficiles ! 🛡️"); break;
         case "crown": setDialogue("La couronne en or massif réservée aux rois et reines du quiz des Mondes du Savoir. 👑"); break;
         case "super-cape": setDialogue("La cape rouge des super-héros. Elle vole derrière toi quand tu cours ! 🦸‍♂️"); break;
+        case "cowboy-hat": setDialogue("Ce chapeau a traversé mille déserts sur la tête des plus braves cow-boys ! En selle, aventurier ! 🤠"); break;
+        case "sword": setDialogue("Une épée brillante forgée dans l'acier des étoiles. Brandis-la bien haut quand tu réponds juste ! ⚔️"); break;
+        case "costume-intello": setDialogue("La panoplie complète du petit génie : lunettes sur le nez et nœud papillon impeccable ! 🤓"); break;
+        case "costume-dj": setDialogue("Casque sur les oreilles et lunettes stylées : la tenue qui fait danser tout le village des explorateurs ! 🎧"); break;
+        case "costume-cowboy": setDialogue("Chapeau vissé et bandana au cou, te voilà prêt à chevaucher vers de grandes aventures ! 🤠"); break;
+        case "costume-magicien": setDialogue("La robe étoilée et le chapeau pointu d'un véritable sorcier... Prononce la formule magique ! 🧙"); break;
+        case "costume-sage": setDialogue("L'auréole dorée des plus grands sages flotte au-dessus de toi. La sagesse t'accompagne ! 😇"); break;
+        case "costume-hero": setDialogue("Cape au vent et lunettes de héros : envole-toi vers la réussite, super-aventurier ! 🦸"); break;
+        case "costume-chevalier": setDialogue("Bouclier, épée et cape : l'armure légendaire des chevaliers du savoir. En garde ! 🛡️"); break;
+        case "costume-roi": setDialogue("Couronne d'or et cape royale... Te voilà prêt à régner sur tous les Mondes du Savoir ! 👑"); break;
         default: setDialogue(`Les ${item.name} sont parfaits pour un jeune aventurier comme toi !`);
       }
     } else if (type === "pet") {
