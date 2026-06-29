@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mémo Kaiden — Mettre le domaine à jour · Les Mondes du Savoir</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{--teal-700:#0f766e;--teal-600:#0d9488;--teal-500:#14b8a6;--teal-400:#2dd4bf;--teal-50:#f0fdfa;--teal-100:#ccfbf1;--coral:#fb7185;--coral-deep:#e11d48;--ink:#1f2937;--muted:#5b6b7a;--amber-bg:#fff7ed;--amber-border:#fdba74;--amber-ink:#9a3412;}
+  *{margin:0;box-sizing:border-box}
+  body{font-family:'Nunito',system-ui,sans-serif;color:var(--ink);background:linear-gradient(160deg,#f0fdfa 0%,#ecfeff 40%,#fff 100%);line-height:1.6;padding:24px 16px 64px}
+  .wrap{max-width:760px;margin:0 auto}
+  header.hero{background:linear-gradient(135deg,var(--teal-600),var(--teal-400));color:#fff;border-radius:28px;padding:30px 30px 26px;text-align:center;box-shadow:0 14px 34px rgba(13,148,136,.32)}
+  header.hero .badge{display:inline-block;background:rgba(255,255,255,.22);border:1px solid rgba(255,255,255,.35);font-weight:700;font-size:13px;letter-spacing:.04em;padding:5px 14px;border-radius:999px;margin-bottom:12px}
+  header.hero h1{font-family:'Fredoka',sans-serif;font-weight:700;font-size:28px;margin:.1em 0 .15em}
+  header.hero p{margin:0;opacity:.95;font-weight:600}
+  .intro,.step,.check{background:#fff;border:1px solid var(--teal-100);border-radius:20px;padding:20px 24px;margin:16px 0;box-shadow:0 6px 18px rgba(15,118,110,.07)}
+  .intro p{margin:.35em 0}
+  .step h2{font-family:'Fredoka',sans-serif;font-weight:600;font-size:20px;color:var(--teal-700);margin:0 0 12px;display:flex;align-items:center;gap:12px}
+  .num{flex:0 0 auto;width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--teal-600),var(--teal-400));color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:16px;box-shadow:0 3px 8px rgba(13,148,136,.35)}
+  a{color:var(--teal-600);font-weight:700;word-break:break-all}
+  .codebox{position:relative;margin:12px 0}
+  pre{background:#0b1f1d;color:#d7faf3;border-radius:14px;padding:16px;margin:0;overflow-x:auto;font-family:ui-monospace,Consolas,monospace;font-size:13px;line-height:1.55;border:1px solid #11433d}
+  .copybtn{position:absolute;top:10px;right:10px;background:var(--teal-500);color:#04221e;border:none;border-radius:9px;padding:6px 12px;font-family:'Nunito',sans-serif;font-weight:800;font-size:12px;cursor:pointer}
+  .copybtn:hover{background:var(--teal-400)}.copybtn.ok{background:#34d399}
+  ul{margin:.4em 0;padding-left:22px}li{margin:.3em 0}
+  .tag{font-family:ui-monospace,Consolas,monospace;background:var(--teal-100);color:var(--teal-700);padding:1px 7px;border-radius:6px;font-size:.92em}
+  .warn{background:var(--amber-bg);border:1px solid var(--amber-border);border-left:6px solid var(--coral-deep);color:var(--amber-ink);border-radius:14px;padding:14px 18px;margin:14px 0;font-weight:600}
+  .warn b{color:var(--coral-deep)}
+  .note{background:var(--teal-50);border:1px solid var(--teal-100);border-radius:12px;padding:10px 14px;margin:10px 0;font-size:14px;color:var(--muted)}
+  .pill{display:inline-block;background:#fde047;color:#042f2c;border-radius:999px;padding:8px 16px;font-weight:800;text-decoration:none;font-family:'Fredoka',sans-serif}
+  footer{text-align:center;color:var(--muted);margin-top:26px;font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <span class="badge">🌳 Les Mondes du Savoir</span>
+    <h1>Mémo Kaiden — mettre le domaine à jour</h1>
+    <p>Faire servir la dernière version (avec sauvegarde cloud) sur lesmondesdusavoir.fr</p>
+  </header>
+
+  <div class="intro">
+    <p>Kaiden, le domaine <b>lesmondesdusavoir.fr</b> est bien sur ton projet Vercel, mais il sert une <b>version ancienne</b> : ton projet ne construit pas le code à jour (il n'est pas branché sur le dépôt vivant).</p>
+    <p>La base cloud Supabase est <b>créée et testée, elle marche</b>. Il reste juste à ce que <b>ton</b> projet build la dernière version. <b>2 étapes.</b></p>
+  </div>
+
+  <section class="step">
+    <h2><span class="num">1</span><span>Brancher ton projet sur le bon dépôt</span></h2>
+    <p>Dans <b>ton</b> projet Vercel (celui qui a le domaine) → <b>Settings → Git</b> :</p>
+    <ul>
+      <li>connecter le dépôt <span class="tag">mathysjlld/les-mondes-du-savoir</span></li>
+      <li>branche / <b>Production Branch</b> = <span class="tag">main</span></li>
+    </ul>
+    <div class="note">Mathys t'a ajouté comme <b>collaborateur</b> du dépôt GitHub pour que tu puisses le sélectionner. (Si tu ne le vois pas dans la liste, dis-lui.)</div>
+  </section>
+
+  <section class="step">
+    <h2><span class="num">2</span><span>Vérifier les variables + redéployer</span></h2>
+    <p>a) <b>Settings → Environment Variables</b> — vérifie que ces 2 lignes existent (Production + Preview). Tu les avais déjà mises :</p>
+    <div class="codebox">
+      <button class="copybtn" data-copy="env">Copier</button>
+      <pre id="env">NEXT_PUBLIC_SUPABASE_URL=https://yhipxaaamcdcvwdbdjkn.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=sb_publishable_J0QXOZ5gKjO3A8bsMhc_QA_sDY6h5us</pre>
+    </div>
+    <p>b) <b>Deployments</b> → sur le dernier → <b>⋯ → Redeploy</b> (décoche « Use existing build cache »).</p>
+    <div class="note">Une fois branché sur <span class="tag">main</span>, chaque push déploiera automatiquement la dernière version — tu restes admin de la prod et du domaine.</div>
+  </section>
+
+  <div class="check">
+    <h2 style="font-family:'Fredoka',sans-serif;color:var(--teal-700);font-size:18px;margin:0 0 .4em">✅ Comment vérifier</h2>
+    Sur <b>https://lesmondesdusavoir.fr</b> après le déploiement : les avatars sont les bons, les accessoires s'équipent sans bug, et sur <span class="tag">/account</span> on peut créer un compte cloud (la progression suit entre appareils).
+    <div style="margin-top:12px">En attendant, version à jour + cloud déjà en ligne : <a class="pill" href="https://site-stage-explora-kids.vercel.app/" target="_blank" rel="noopener">site-stage-explora-kids.vercel.app</a></div>
+  </div>
+
+  <div class="warn">🔒 <b>À faire ensuite (sécurité)</b> : on a partagé des accès en clair pour débloquer. Merci de <b>révoquer</b> : le token Supabase <span class="tag">sbp_</span> (Supabase → Account → Access Tokens) et le token Vercel <span class="tag">vcp_</span> (Vercel → Account Settings → Tokens). Ils ne servent plus.</div>
+
+  <footer>— Mathys · Les Mondes du Savoir</footer>
+</div>
+<script>
+  document.querySelectorAll('.copybtn').forEach(function(b){b.addEventListener('click',function(){var e=document.getElementById(b.getAttribute('data-copy'));navigator.clipboard.writeText(e.innerText).then(function(){var o=b.textContent;b.textContent='✓ Copié';b.classList.add('ok');setTimeout(function(){b.textContent=o;b.classList.remove('ok')},1600)})})});
+</script>
+</body>
+</html>
