@@ -1,6 +1,6 @@
 export interface LessonCard { title: string; text: string; emoji: string; illustrationData?: string; mediaUrl?: string; mediaType?: "image" | "video"; }
 export interface QuizQuestion { question: string; options: string[]; correctAnswer: string; imageHint?: string; mediaUrl?: string; mediaType?: "image" | "video"; isSpecial?: boolean; }
-export interface Lesson { id: string; title: string; emoji: string; themeColor: string; cards: LessonCard[]; quiz: QuizQuestion[]; badgeId: string; badgeName: string; badgeEmoji: string; }
+export interface Lesson { id: string; title: string; emoji: string; themeColor: string; cards: LessonCard[]; quiz: QuizQuestion[]; badgeId: string; badgeName: string; badgeEmoji: string; gratuit?: boolean; /* freemium : forcer gratuit/payant pour CETTE leçon. Si absent, règle par défaut (cf. src/lib/premium.ts). */ }
 export interface Universe { id: string; name: string; emoji: string; description: string; themeColor: string; secret?: boolean; unlock?: { type: "level" | "crystals"; value: number }; lessons: Record<string, Lesson[]>; }
 
 export const UNIVERSES: Record<string, Universe> = {

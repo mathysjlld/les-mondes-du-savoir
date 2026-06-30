@@ -5,9 +5,10 @@ import { useParams, useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { useApp } from "@/context/AppContext";
 import { UNIVERSES, Lesson, QuizQuestion } from "@/data/lessons";
+import { estDebloquee } from "@/lib/premium";
 import { playSound, speakText, stopSpeaking } from "@/lib/sound";
 import { asset } from "@/lib/asset";
-import { Volume2, VolumeX, ArrowLeft, ArrowRight, Award, CheckCircle2, AlertCircle } from "lucide-react";
+import { Volume2, VolumeX, ArrowLeft, ArrowRight, Award, CheckCircle2, AlertCircle, Lock } from "lucide-react";
 import { IllustrationRenderer } from "@/components/UI/IllustrationRenderer";
 import { AVATAR_NAMES, AVATAR_EMOJIS } from "@/components/Avatar/AvatarRenderer";
 import confetti from "canvas-confetti";
@@ -30,6 +31,8 @@ export default function PlayUniverse() {
   const homeRoute = isTemple ? "/temple" : "/dashboard";
 
   const [lesson, setLesson] = useState<Lesson | null>(null);
+  // Freemium : true si la leçon à jouer est premium et que le joueur n'est pas abonné.
+  const [locked, setLocked] = useState(false);
   const [gameState, setGameState] = useState<"onboarding" | "lesson" | "quiz" | "victory">("lesson");
   
   // États de la leçon
@@ -77,6 +80,9 @@ export default function PlayUniverse() {
         );
         const selectedLesson = firstUncompleted || lessons[lessons.length - 1];
         setLesson(selectedLesson);
+        // Freemium : si cette leçon est premium et que le joueur n'est pas abonné,
+        // on affiche l'écran de déverrouillage au lieu du quiz.
+        setLocked(!estDebloquee(selectedLesson, lessons, profile));
         setAlreadyCompletedBefore(profile.completedQuizzes.includes(selectedLesson.id));
       } else {
         router.push(homeRoute);
@@ -131,6 +137,75 @@ export default function PlayUniverse() {
   }, [gameState, health, resetCoins]);
 
   if (!profile || !lesson) return null;
+
+  // ÉCRAN DE BLOCAGE FREEMIUM : ce quizz fait partie du contenu premium et le
+  // joueur n'est pas (encore) abonné. On reste dans l'univers du jeu (on ne
+  // « punit » pas l'enfant) et on propose de poursuivre l'aventure.
+  if (locked) {
+    const u = UNIVERSES[universeId];
+    return (
+      <div className="flex-1 flex flex-col p-3 sm:p-6 max-w-4xl mx-auto w-full gap-4 sm:gap-6">
+        <header className="w-full flex items-center justify-between glass-card p-2.5 sm:p-4 bg-white/90 gap-2">
+          <button
+            onClick={() => { playSound("click"); router.push(homeRoute); }}
+            className="py-2 px-3 sm:py-2.5 sm:px-4 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs sm:text-sm flex items-center gap-1 cursor-pointer transition-all border border-slate-200 shrink-0"
+          >
+            <ArrowLeft size={16} />
+            <span className="hidden sm:inline">Tableau de bord</span>
+            <span className="sm:hidden">Retour</span>
+          </button>
+          <div className="flex items-center gap-1.5 min-w-0">
+            <div className="w-7 h-7 sm:w-10 sm:h-10 flex items-center justify-center shrink-0">
+              <img src={asset(`/images/${universeId}.png`)} alt="" className="w-full h-full object-contain" />
+            </div>
+            <h2 className="font-bold text-sm sm:text-lg text-slate-800 truncate">{u?.name}</h2>
+          </div>
+          <span className="w-8 shrink-0" />
+        </header>
+
+        <main className="flex-1 flex items-center justify-center min-h-[380px] sm:min-h-[450px]">
+          <motion.div
+            initial={{ scale: 0.92, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            className="w-full max-w-md bg-white rounded-3xl p-6 sm:p-9 border-4 border-amber-200 shadow-2xl flex flex-col items-center text-center gap-4 sm:gap-5 relative overflow-hidden"
+          >
+            <div className="absolute -top-14 -right-14 w-32 h-32 bg-amber-100 rounded-full blur-2xl" />
+            <div className="absolute -bottom-14 -left-14 w-32 h-32 bg-fuchsia-100 rounded-full blur-2xl" />
+
+            <motion.div
+              animate={{ rotate: [0, -8, 8, -4, 4, 0] }}
+              transition={{ repeat: Infinity, duration: 3.5, ease: "easeInOut" }}
+              className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-gradient-to-br from-amber-300 to-fuchsia-400 border-4 border-white flex items-center justify-center shadow-lg ring-4 ring-amber-300/30 z-10"
+            >
+              <Lock size={38} className="text-white" />
+            </motion.div>
+
+            <h2 className="text-xl sm:text-2xl font-black text-fuchsia-900 leading-tight z-10">
+              Ce quizz est encore scellé… 🔒
+            </h2>
+            <p className="text-sm sm:text-base font-semibold text-slate-600 leading-relaxed z-10">
+              Tu as terminé les quizz gratuits de cet univers, bravo&nbsp;! ✨ Les suivants font
+              partie de l&apos;aventure complète. Débloque{" "}
+              <strong>tous les mondes et tous les quizz</strong> pour continuer à explorer&nbsp;!
+            </p>
+
+            <button
+              onClick={() => { playSound("click"); router.push("/abonnement"); }}
+              className="w-full py-3 sm:py-4 rounded-2xl bg-gradient-to-r from-amber-500 to-fuchsia-500 hover:from-amber-600 hover:to-fuchsia-600 text-white text-base sm:text-lg font-black transition-all shadow-md btn-bubble border-b-4 border-fuchsia-700 mt-1 cursor-pointer z-10 flex items-center justify-center gap-2"
+            >
+              ✨ Débloquer l&apos;aventure complète
+            </button>
+            <button
+              onClick={() => { playSound("click"); router.push(homeRoute); }}
+              className="text-xs sm:text-sm font-bold text-slate-400 hover:text-slate-600 cursor-pointer z-10"
+            >
+              Plus tard, revenir au tableau de bord
+            </button>
+          </motion.div>
+        </main>
+      </div>
+    );
+  }
 
   const currentCard = lesson.cards[currentCardIdx];
   const currentQuestion = lesson.quiz[currentQuestionIdx];

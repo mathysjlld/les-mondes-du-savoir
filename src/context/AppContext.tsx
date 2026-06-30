@@ -41,6 +41,7 @@ export interface UserProfile {
   templeBricks: number; // Briques gagnées (5 bonnes réponses d'affilée dans le Temple)
   templeGrowth: number; // Croissance du Temple des Sages (0 à 100)
   isCheatEnabled?: boolean;
+  isPremium?: boolean; // Abonnement actif (freemium). Piloté plus tard par Stripe ; pour l'instant seul le mode test (7194) débloque le premium.
   savedCoins?: number;
   savedDiamonds?: number;
   savedCrystals?: number;

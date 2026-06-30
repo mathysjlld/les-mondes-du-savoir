@@ -9,6 +9,7 @@ import { AvatarRenderer, AVATAR_NAMES, AVATAR_EMOJIS } from "@/components/Avatar
 import { KnowledgeTree } from "@/components/KnowledgeTree/KnowledgeTree";
 import { IllustrationRenderer } from "@/components/UI/IllustrationRenderer";
 import { UNIVERSES } from "@/data/lessons";
+import { aDuContenuPremiumVerrouille } from "@/lib/premium";
 import { playSound } from "@/lib/sound";
 import {
   Volume2,
@@ -541,6 +542,11 @@ export default function Dashboard() {
               {activeUniverses.map((univ) => {
                 const { completed, total } = getUniverseProgress(univ.id);
                 const isFinished = total > 0 && completed === total;
+                // Freemium : l'univers contient-il des quizz premium encore verrouillés ?
+                const hasPremiumLocked = aDuContenuPremiumVerrouille(
+                  UNIVERSES[univ.id]?.lessons[profile.ageGroup] || [],
+                  profile
+                );
 
                 // Mondes secrets : déblocage générique (par niveau OU par cristaux)
                 if (univ.secret) {
@@ -634,6 +640,13 @@ export default function Dashboard() {
                       alt=""
                       className="absolute right-2 -bottom-2 w-24 h-24 sm:w-28 sm:h-28 opacity-10 select-none group-hover:scale-110 transition-transform duration-300 pointer-events-none object-contain"
                     />
+
+                    {/* Repère freemium : des quizz premium restent à débloquer dans cet univers */}
+                    {hasPremiumLocked && (
+                      <span className="absolute top-2.5 right-2.5 z-10 flex items-center gap-1 bg-gradient-to-r from-amber-500 to-fuchsia-500 text-white text-[9px] sm:text-[10px] font-black uppercase tracking-wide px-2 py-1 rounded-full shadow border border-white/40">
+                        🔒 Premium
+                      </span>
+                    )}
 
                     <div className="flex items-center gap-2.5 sm:gap-3">
                       <div className="w-12 h-12 sm:w-16 sm:h-16 bg-white rounded-2xl shadow-sm border border-slate-100 group-hover:rotate-6 transition-transform flex items-center justify-center overflow-hidden p-1.5 shrink-0 select-none">
