@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
-2:I[39756,["/les-mondes-du-savoir/app/_next/static/chunks/1n9noc2ob69xc.js","/les-mondes-du-savoir/app/_next/static/chunks/1uvv7fapwtfj5.js","/les-mondes-du-savoir/app/_next/static/chunks/14mrh2-p_w84d.js"],"default"]
-3:I[37457,["/les-mondes-du-savoir/app/_next/static/chunks/1n9noc2ob69xc.js","/les-mondes-du-savoir/app/_next/static/chunks/1uvv7fapwtfj5.js","/les-mondes-du-savoir/app/_next/static/chunks/14mrh2-p_w84d.js"],"default"]
+2:I[39756,["/les-mondes-du-savoir/app/_next/static/chunks/1n9noc2ob69xc.js","/les-mondes-du-savoir/app/_next/static/chunks/0sui183gb3lft.js","/les-mondes-du-savoir/app/_next/static/chunks/14mrh2-p_w84d.js"],"default"]
+3:I[37457,["/les-mondes-du-savoir/app/_next/static/chunks/1n9noc2ob69xc.js","/les-mondes-du-savoir/app/_next/static/chunks/0sui183gb3lft.js","/les-mondes-du-savoir/app/_next/static/chunks/14mrh2-p_w84d.js"],"default"]
 4:[]
-0:{"rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"isPartial":false,"staleTime":300,"varyParams":"$W4","buildId":"-3e9_2LZMw2wBQ4esDWfl"}
+0:{"rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"isPartial":false,"staleTime":300,"varyParams":"$W4","buildId":"xl7i0tl-x_Zc03z4zW7WY"}
