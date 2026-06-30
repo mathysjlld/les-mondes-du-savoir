@@ -43,6 +43,8 @@ export interface UserProfile {
   isCheatEnabled?: boolean;
   savedCoins?: number;
   savedDiamonds?: number;
+  savedCrystals?: number;
+  savedMaxCrystals?: number;
 }
 
 // Résumé d'un compte sauvegardé sur l'appareil (pour l'écran de connexion)
@@ -902,7 +904,9 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
           ...prev,
           isCheatEnabled: false,
           coins: prev.savedCoins ?? prev.coins,
-          diamonds: prev.savedDiamonds ?? prev.diamonds
+          diamonds: prev.savedDiamonds ?? prev.diamonds,
+          crystals: prev.savedCrystals ?? prev.crystals,
+          maxCrystals: prev.savedMaxCrystals ?? prev.maxCrystals
         };
       } else {
         // Activer le cheat et sauvegarder les valeurs actuelles
@@ -911,8 +915,13 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
           isCheatEnabled: true,
           savedCoins: prev.coins,
           savedDiamonds: prev.diamonds,
+          savedCrystals: prev.crystals,
+          savedMaxCrystals: prev.maxCrystals,
           coins: 99999,
-          diamonds: 99999
+          diamonds: 99999,
+          // Cristaux = monnaie du thème secret (accès au Sanctuaire / dragon)
+          crystals: 99999,
+          maxCrystals: Math.max(prev.maxCrystals || 0, 99999)
         };
       }
     });
