@@ -170,6 +170,15 @@ export default function Market() {
   // Barnabé le marchand dialogue
   const [dialogue, setDialogue] = useState("Bienvenue dans mon échoppe de l'aventurier ! Que veux-tu échanger aujourd'hui ? 🎒");
 
+  // Intro animée du Marché : à l'ouverture, l'avatar du joueur arrive en poussant
+  // sa charrette de pièces. La vidéo dépend du type d'avatar (renard/panda/koala/hibou).
+  const [showIntro, setShowIntro] = useState(true);
+  // Filet de sécurité : on referme l'intro même si la vidéo ne déclenche pas onEnded.
+  useEffect(() => {
+    const t = setTimeout(() => setShowIntro(false), 6000);
+    return () => clearTimeout(t);
+  }, []);
+
   // États de prévisualisation au survol ou clic (particulièrement utile sur mobile)
   const [hoveredAccessoryId, setHoveredAccessoryId] = useState<string | null>(null);
   const [selectedPreviewAccessoryId, setSelectedPreviewAccessoryId] = useState<string | null>(null);
@@ -425,6 +434,15 @@ export default function Market() {
     ? activePreviewPetId
     : profile.activePet;
 
+  // Vidéo d'intro selon l'avatar du joueur (fichiers dans public/videos/).
+  const MARKET_INTRO_VIDEOS: Record<string, string> = {
+    fox: "/videos/market_fox.mp4",
+    panda: "/videos/market_panda.mp4",
+    koala: "/videos/market_koala.mp4",
+    owl: "/videos/market_owl.mp4",
+  };
+  const introVideoSrc = MARKET_INTRO_VIDEOS[profile.avatar.type] || MARKET_INTRO_VIDEOS.fox;
+
   return (
     <div className="flex-1 flex flex-col p-3 sm:p-6 max-w-4xl mx-auto w-full gap-4 sm:gap-6 min-h-screen text-stone-100">
       {/* Fond bois en plein écran : couvre toute la fenêtre pour qu'il n'y ait plus
@@ -437,6 +455,41 @@ export default function Market() {
           backgroundImage: `linear-gradient(to bottom, rgba(28, 25, 23, 0.94), rgba(69, 26, 3, 0.89)), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='180' viewBox='0 0 120 180'%3E%3Crect x='0' y='55' width='120' height='6' fill='%235c3a21' opacity='0.25'/%3E%3Crect x='0' y='61' width='120' height='2' fill='%233a2010' opacity='0.4'/%3E%3Crect x='0' y='145' width='120' height='6' fill='%235c3a21' opacity='0.25'/%3E%3Crect x='0' y='151' width='120' height='2' fill='%233a2010' opacity='0.4'/%3E%3Crect x='8' y='0' width='5' height='180' fill='%23422817' opacity='0.2'/%3E%3Crect x='107' y='0' width='5' height='180' fill='%23422817' opacity='0.2'/%3E%3C/svg%3E")`,
         }}
       />
+
+      {/* Intro animée : l'avatar arrive au marché en poussant sa charrette de pièces.
+          Vidéo plein écran (selon l'avatar), tap pour passer, disparaît à la fin. */}
+      <AnimatePresence>
+        {showIntro && (
+          <motion.div
+            initial={{ opacity: 1 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.6 }}
+            onClick={() => setShowIntro(false)}
+            className="fixed inset-0 z-[120] flex items-center justify-center bg-black select-none overflow-hidden cursor-pointer"
+          >
+            <video
+              src={asset(introVideoSrc)}
+              autoPlay
+              muted
+              playsInline
+              onEnded={() => setShowIntro(false)}
+              className="w-full h-full object-contain"
+            />
+            <motion.div
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.3 }}
+              className="absolute bottom-8 inset-x-0 text-center px-4 pointer-events-none"
+            >
+              <h2 className="text-2xl sm:text-4xl font-black text-amber-100 drop-shadow-lg" style={{ fontFamily: "var(--font-title)" }}>
+                En route vers l&apos;échoppe ! 🛒
+              </h2>
+              <p className="mt-1 text-xs sm:text-sm font-bold text-amber-200/80">Touche l&apos;écran pour passer</p>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {/* Barre supérieure */}
       <header className="w-full flex items-center justify-between gap-2 p-3 sm:p-4 bg-stone-900/90 backdrop-blur-md rounded-2xl border-b-4 border-amber-800 shadow-md">
