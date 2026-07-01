@@ -16,7 +16,10 @@ type TreeAnimal = {
   img: string;
   x: number; y: number; w: number; h: number;
   bx: number; by: number;
-  // animation d'inactivité (boucle)
+  // "fly" = vole au-dessus de l'arbre (tournoie) ; "ground" = posé au sol.
+  // Ainsi aucun animal ne flotte dans le vide, quelle que soit la taille de l'arbre.
+  mode: "fly" | "ground";
+  // animation d'inactivité (boucle) — pour les volants, c'est une trajectoire en boucle
   idle: Record<string, number[]>;
   dur: number;
   delay?: number;
@@ -24,12 +27,22 @@ type TreeAnimal = {
 };
 
 const TREE_ANIMALS: TreeAnimal[] = [
-  { id: "tree-butterfly", img: "tree_butterfly.png", x: 58, y: 38, w: 10, h: 10, bx: 63, by: 38, idle: { x: [0, 1.5, -1, 0], y: [0, -3, 1.5, 0], rotate: [0, 8, -8, 0] }, dur: 4, origin: "center" },
-  { id: "tree-owl", img: "tree_owl.png", x: 43, y: 26, w: 12, h: 12, bx: 49, by: 26, idle: { scaleY: [1, 1.08, 1], rotate: [0, 1.5, -1.5, 0] }, dur: 5, origin: "bottom center" },
-  { id: "tree-squirrel", img: "tree_squirrel.png", x: 20, y: 74, w: 12, h: 12, bx: 26, by: 74, idle: { y: [0, -1, 0], scaleX: [1, 0.97, 1] }, dur: 3, delay: 0.7, origin: "bottom center" },
-  { id: "tree-parrot", img: "tree_parrot.png", x: 68, y: 48, w: 12, h: 12, bx: 74, by: 48, idle: { rotate: [0, -3, 3, 0] }, dur: 4.5, origin: "bottom center" },
-  { id: "tree-dragon", img: "tree_dragon.png", x: 15, y: 31, w: 15, h: 15, bx: 22, by: 31, idle: { rotate: [0, 4, -4, 0], y: [0, -1.5, 0] }, dur: 5, origin: "center" },
-  { id: "tree-phoenix", img: "tree_phoenix.png", x: 58, y: 26, w: 13, h: 13, bx: 64, by: 26, idle: { scale: [1, 1.12, 1], opacity: [0.9, 1, 0.9] }, dur: 2.8, origin: "center" },
+  // VOLANTS — tournoient dans le ciel au-dessus de l'arbre (jamais posés), dans les
+  // coins hauts (dégagés du feuillage même sur le grand arbre) et sous la barre.
+  { id: "tree-butterfly", img: "tree_butterfly.png", mode: "fly", x: 9, y: 14, w: 8, h: 8, bx: 13, by: 14,
+    idle: { x: [0, 7, 11, 7, 0, -7, -11, -7, 0], y: [0, -4, -9, -13, -16, -13, -9, -4, 0], rotate: [0, 10, 0, -10, 0, 10, 0, -10, 0] }, dur: 7, origin: "center" },
+  { id: "tree-phoenix", img: "tree_phoenix.png", mode: "fly", x: 75, y: 11, w: 12, h: 12, bx: 81, by: 11,
+    idle: { x: [0, -8, 0, 8, 0], y: [0, -3, -6, -3, 0], rotate: [0, -5, 0, 5, 0], scale: [1, 1.06, 1, 1.06, 1] }, dur: 5.5, origin: "center" },
+  // AU SOL — posés sur l'herbe (pieds à ~y=89), répartis de part et d'autre du pot,
+  // hors de la zone du bouton « Arroser » (remonté). Chacun a une ombre portée.
+  { id: "tree-squirrel", img: "tree_squirrel.png", mode: "ground", x: 7, y: 80, w: 9, h: 9, bx: 11, by: 80,
+    idle: { y: [0, -1.2, 0], scaleX: [1, 0.96, 1] }, dur: 2.6, delay: 0.4, origin: "bottom center" },
+  { id: "tree-dragon", img: "tree_dragon.png", mode: "ground", x: 19, y: 76, w: 13, h: 13, bx: 25, by: 76,
+    idle: { rotate: [0, 3, -3, 0], y: [0, -1, 0] }, dur: 5, origin: "bottom center" },
+  { id: "tree-owl", img: "tree_owl.png", mode: "ground", x: 61, y: 79, w: 10, h: 10, bx: 66, by: 79,
+    idle: { scaleY: [1, 1.06, 1], rotate: [0, 1.5, -1.5, 0] }, dur: 4.5, delay: 0.6, origin: "bottom center" },
+  { id: "tree-parrot", img: "tree_parrot.png", mode: "ground", x: 77, y: 80, w: 9, h: 9, bx: 81, by: 80,
+    idle: { rotate: [0, -3, 3, 0], y: [0, -0.8, 0] }, dur: 4, delay: 0.2, origin: "bottom center" },
 ];
 
 // Anecdotes / encouragements joués au clic (un rôle « compagnon » : ça réagit,
@@ -124,8 +137,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
     const msgs = ANIMAL_MESSAGES[a.id] || ["Coucou ! 🌳"];
     const msg = msgs[Math.floor(Math.random() * msgs.length)];
     if (animalBubbleTimer.current) clearTimeout(animalBubbleTimer.current);
-    // La bulle suit l'animal, qui est mis à l'échelle avec l'arbre (pivot 50,85).
-    setAnimalBubble({ id: a.id, msg, x: 50 + (a.bx - 50) * treeScale, y: 85 + (a.by - 85) * treeScale });
+    setAnimalBubble({ id: a.id, msg, x: a.bx, y: a.by });
     animalBubbleTimer.current = setTimeout(() => setAnimalBubble(null), 3500);
   };
 
@@ -244,31 +256,19 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
         </div>
       </div>
 
-      {/* Nuages en arrière-plan */}
-      <div className="absolute top-14 left-4 w-12 h-6 bg-white opacity-60 rounded-full blur-[1px] animate-pulse" />
-      <div className="absolute top-20 right-6 w-16 h-8 bg-white opacity-50 rounded-full blur-[1px]" style={{ animationDuration: '6s' }} />
-
       <svg
         viewBox="0 0 100 100"
         className="w-full h-full select-none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        {/* Colline d'herbe au sol */}
-        <path d="M -10 90 Q 50 82 110 90 L 110 110 L -10 110 Z" fill="#2ECC71" />
-        <path d="M -10 92 Q 50 86 110 92 L 110 110 L -10 110 Z" fill="#27AE60" />
-
-        {/* Fleurs au sol */}
-        <circle cx="20" cy="86" r="1.5" fill="#F1C40F" />
-        <circle cx="18" cy="86" r="1.2" fill="#E74C3C" />
-        <circle cx="22" cy="86" r="1.2" fill="#E74C3C" />
-        <circle cx="20" cy="84" r="1.2" fill="#E74C3C" />
-        <circle cx="20" cy="88" r="1.2" fill="#E74C3C" />
-
-        <circle cx="82" cy="88" r="1.5" fill="#F1C40F" />
-        <circle cx="80" cy="88" r="1.2" fill="#9B5DE5" />
-        <circle cx="84" cy="88" r="1.2" fill="#9B5DE5" />
-        <circle cx="82" cy="86" r="1.2" fill="#9B5DE5" />
-        <circle cx="82" cy="90" r="1.2" fill="#9B5DE5" />
+        {/* Décor réaliste (herbe + ciel, profondeur de champ) en fond, à la place
+            de la colline cartoon. Les animaux au sol se posent sur l'herbe. */}
+        <image
+          href={asset("/images/tree_scene_bg.png")}
+          x="0" y="0" width="100" height="100"
+          preserveAspectRatio="xMidYMid slice"
+          className="select-none pointer-events-none"
+        />
 
         {/* Rendu dynamique de l'arbre selon le niveau */}
         <AnimatePresence mode="wait">
@@ -337,14 +337,23 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
         {/* Animaux de l'Arbre débloqués : compagnons VIVANTS (animation d'inactivité)
             et UTILES (cliquables : réagissent au clic/survol et lancent une bulle
             d'anecdote ou d'encouragement). Rendu piloté par TREE_ANIMALS. */}
-        <motion.g
-          // Les animaux suivent la croissance de l'arbre : même échelle et même
-          // pivot (50,85) que le tronc, pour rester posés sur le feuillage à tous
-          // les stades au lieu de flotter en l'air quand l'arbre est encore petit.
-          animate={{ scale: treeScale }}
-          transition={{ type: "spring", stiffness: 120, damping: 14 }}
-          style={{ originX: "50px", originY: "85px" }}
-        >
+        {/* Ombres portées au sol des animaux terrestres (statiques : elles ancrent
+            l'animal sur l'herbe même quand il sautille). */}
+        {TREE_ANIMALS.filter((a) => a.mode === "ground" && unlockedTreeAnimals.includes(a.id)).map((a) => (
+          <ellipse
+            key={a.id + "-shadow"}
+            cx={a.x + a.w / 2}
+            cy={a.y + a.h - 0.5}
+            rx={a.w * 0.36}
+            ry={1.3}
+            fill="#1b3a1b"
+            opacity={0.22}
+          />
+        ))}
+
+        {/* Animaux débloqués : les volants (papillon, phénix) tournoient dans le ciel
+            au-dessus de l'arbre ; les terrestres sont posés sur l'herbe. Positions
+            relatives au cadre (plus au feuillage) → aucun animal ne flotte dans le vide. */}
         {TREE_ANIMALS.filter((a) => unlockedTreeAnimals.includes(a.id)).map((a) => (
           <motion.g
             key={a.id}
@@ -366,7 +375,6 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
             />
           </motion.g>
         ))}
-        </motion.g>
       </svg>
 
       {/* Bulle de l'animal cliqué (anecdote / encouragement) — positionnée juste
@@ -550,7 +558,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           onClick={handleWatering}
-          className="absolute bottom-10 right-3 z-30 bg-gradient-to-br from-teal-400 to-emerald-500 text-white rounded-2xl px-3 py-2 shadow-lg text-xs sm:text-sm font-black flex items-center gap-1.5 cursor-pointer border-2 border-teal-300 hover:shadow-xl transition-shadow"
+          className="absolute bottom-24 right-3 z-30 bg-gradient-to-br from-teal-400 to-emerald-500 text-white rounded-2xl px-3 py-2 shadow-lg text-xs sm:text-sm font-black flex items-center gap-1.5 cursor-pointer border-2 border-teal-300 hover:shadow-xl transition-shadow"
         >
           <img src={asset("/images/watering_can.png")} alt="Arrosoir" className="w-5 h-5 object-contain filter drop-shadow-sm" />
           <span>Arroser ({wateringCans})</span>
