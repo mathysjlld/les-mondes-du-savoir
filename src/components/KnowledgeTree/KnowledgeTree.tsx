@@ -4,6 +4,62 @@ import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { IllustrationRenderer } from "../UI/IllustrationRenderer";
 import { asset } from "@/lib/asset";
+import { playSound } from "@/lib/sound";
+
+// Animaux de l'Arbre du Savoir : compagnons à débloquer. Chacun a sa position
+// sur l'arbre, son animation d'inactivité, et — depuis le chantier « animaux
+// vivants + utiles » — devient CLIQUABLE : au clic, il réagit (rebond + son) et
+// affiche une bulle (anecdote / encouragement). Le point `bx/by` (en % du cadre
+// carré) place la bulle juste au-dessus de l'animal.
+type TreeAnimal = {
+  id: string;
+  img: string;
+  x: number; y: number; w: number; h: number;
+  bx: number; by: number;
+  // animation d'inactivité (boucle)
+  idle: Record<string, number[]>;
+  dur: number;
+  delay?: number;
+  origin: string; // transformOrigin dans le repère de l'image
+};
+
+const TREE_ANIMALS: TreeAnimal[] = [
+  { id: "tree-butterfly", img: "tree_butterfly.png", x: 58, y: 38, w: 10, h: 10, bx: 63, by: 38, idle: { x: [0, 1.5, -1, 0], y: [0, -3, 1.5, 0], rotate: [0, 8, -8, 0] }, dur: 4, origin: "center" },
+  { id: "tree-owl", img: "tree_owl.png", x: 43, y: 26, w: 12, h: 12, bx: 49, by: 26, idle: { scaleY: [1, 1.08, 1], rotate: [0, 1.5, -1.5, 0] }, dur: 5, origin: "bottom center" },
+  { id: "tree-squirrel", img: "tree_squirrel.png", x: 20, y: 74, w: 12, h: 12, bx: 26, by: 74, idle: { y: [0, -1, 0], scaleX: [1, 0.97, 1] }, dur: 3, delay: 0.7, origin: "bottom center" },
+  { id: "tree-parrot", img: "tree_parrot.png", x: 68, y: 48, w: 12, h: 12, bx: 74, by: 48, idle: { rotate: [0, -3, 3, 0] }, dur: 4.5, origin: "bottom center" },
+  { id: "tree-dragon", img: "tree_dragon.png", x: 15, y: 31, w: 15, h: 15, bx: 22, by: 31, idle: { rotate: [0, 4, -4, 0], y: [0, -1.5, 0] }, dur: 5, origin: "center" },
+  { id: "tree-phoenix", img: "tree_phoenix.png", x: 58, y: 26, w: 13, h: 13, bx: 64, by: 26, idle: { scale: [1, 1.12, 1], opacity: [0.9, 1, 0.9] }, dur: 2.8, origin: "center" },
+];
+
+// Anecdotes / encouragements joués au clic (un rôle « compagnon » : ça réagit,
+// ça apprend quelque chose et ça motive — sans donner de monnaie, donc pas d'abus).
+const ANIMAL_MESSAGES: Record<string, string[]> = {
+  "tree-butterfly": [
+    "Le savais-tu ? Les papillons goûtent avec leurs pattes ! 🦋",
+    "Bats des ailes vers de nouveaux quiz ! ✨",
+  ],
+  "tree-owl": [
+    "Hou hou ! Plus tu fais de quiz, plus tu deviens sage. 🦉",
+    "Un sage révise un peu chaque jour… comme toi ! 📚",
+  ],
+  "tree-squirrel": [
+    "Les écureuils cachent leurs noisettes ; toi, tu gardes tes leçons ! 🐿️",
+    "Petit à petit, l'écureuil remplit son arbre. Continue ! 🌰",
+  ],
+  "tree-parrot": [
+    "Coco adore quand tu trouves la bonne réponse ! 🦜",
+    "Répète après moi : « j'adore apprendre ! » 🎶",
+  ],
+  "tree-dragon": [
+    "Le dragon veille sur ton arbre légendaire ! 🐉",
+    "Crache du feu sur les questions difficiles ! 🔥",
+  ],
+  "tree-phoenix": [
+    "Le phénix renaît de ses cendres… comme toi après une erreur ! 🔥",
+    "Chaque essai te rend plus fort. Envole-toi ! 🪶",
+  ],
+};
 
 interface KnowledgeTreeProps {
   xp: number;
@@ -59,6 +115,20 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
   const [isWatering, setIsWatering] = React.useState(false);
   const [glowing, setGlowing] = React.useState(false);
   const [showBarnabe, setShowBarnabe] = React.useState(false); // mascotte vidéo de Barnabé (clip ~4,8 s)
+  // Bulle affichée quand on clique un animal de l'arbre (anecdote / encouragement).
+  const [animalBubble, setAnimalBubble] = React.useState<{ id: string; msg: string; x: number; y: number } | null>(null);
+  const animalBubbleTimer = React.useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const handleAnimalClick = (a: TreeAnimal) => {
+    playSound("click");
+    const msgs = ANIMAL_MESSAGES[a.id] || ["Coucou ! 🌳"];
+    const msg = msgs[Math.floor(Math.random() * msgs.length)];
+    if (animalBubbleTimer.current) clearTimeout(animalBubbleTimer.current);
+    setAnimalBubble({ id: a.id, msg, x: a.bx, y: a.by });
+    animalBubbleTimer.current = setTimeout(() => setAnimalBubble(null), 3500);
+  };
+
+  React.useEffect(() => () => { if (animalBubbleTimer.current) clearTimeout(animalBubbleTimer.current); }, []);
 
   // Calcul du pourcentage de croissance propre à la phase actuelle (de 0 à 100%)
   const getGrowthPercent = () => {
@@ -263,126 +333,52 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
           </g>
         )}
 
-        {/* Animaux de l'arbre débloqués */}
-        {unlockedTreeAnimals.includes("tree-butterfly") && (
+        {/* Animaux de l'Arbre débloqués : compagnons VIVANTS (animation d'inactivité)
+            et UTILES (cliquables : réagissent au clic/survol et lancent une bulle
+            d'anecdote ou d'encouragement). Rendu piloté par TREE_ANIMALS. */}
+        {TREE_ANIMALS.filter((a) => unlockedTreeAnimals.includes(a.id)).map((a) => (
           <motion.g
-            animate={{ 
-              x: [0, 1.5, -1, 0],
-              y: [0, -3, 1.5, 0],
-              rotate: [0, 8, -8, 0]
-            }}
-            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-            className="origin-center"
-            style={{ transformBox: "fill-box", transformOrigin: "center" }}
+            key={a.id}
+            animate={a.idle}
+            transition={{ duration: a.dur, repeat: Infinity, ease: "easeInOut", delay: a.delay || 0 }}
+            whileHover={{ scale: 1.18 }}
+            whileTap={{ scale: 1.32 }}
+            onClick={() => handleAnimalClick(a)}
+            className="cursor-pointer"
+            style={{ transformBox: "fill-box", transformOrigin: a.origin }}
           >
             <image
-              href={asset("/images/tree_butterfly.png")}
-              x="58"
-              y="38"
-              width="10"
-              height="10"
-              className="select-none pointer-events-none filter drop-shadow-sm"
+              href={asset(`/images/${a.img}`)}
+              x={a.x}
+              y={a.y}
+              width={a.w}
+              height={a.h}
+              className="select-none filter drop-shadow-sm"
             />
           </motion.g>
-        )}
-
-        {unlockedTreeAnimals.includes("tree-owl") && (
-          <motion.g
-            animate={{ 
-              scaleY: [1, 1.08, 1],
-              rotate: [0, 1.5, -1.5, 0]
-            }}
-            transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-            className="origin-center"
-            style={{ transformBox: "fill-box", transformOrigin: "bottom center" }}
-          >
-            <image
-              href={asset("/images/tree_owl.png")}
-              x="43"
-              y="26"
-              width="12"
-              height="12"
-              className="select-none pointer-events-none filter drop-shadow-sm"
-            />
-          </motion.g>
-        )}
-
-        {unlockedTreeAnimals.includes("tree-squirrel") && (
-          <motion.g
-            animate={{ 
-              y: [0, -1, 0],
-              scaleX: [1, 0.97, 1]
-            }}
-            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 0.7 }}
-            className="origin-bottom"
-            style={{ transformBox: "fill-box", transformOrigin: "bottom center" }}
-          >
-            <image
-              href={asset("/images/tree_squirrel.png")}
-              x="20"
-              y="74"
-              width="12"
-              height="12"
-              className="select-none pointer-events-none filter drop-shadow-sm"
-            />
-          </motion.g>
-        )}
-
-        {unlockedTreeAnimals.includes("tree-parrot") && (
-          <motion.g
-            animate={{ 
-              rotate: [0, -3, 3, 0]
-            }}
-            transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut" }}
-            className="origin-center"
-            style={{ transformBox: "fill-box", transformOrigin: "bottom center" }}
-          >
-            <image
-              href={asset("/images/tree_parrot.png")}
-              x="68"
-              y="48"
-              width="12"
-              height="12"
-              className="select-none pointer-events-none filter drop-shadow-sm"
-            />
-          </motion.g>
-        )}
-
-        {/* Animaux légendaires (cristaux) */}
-        {unlockedTreeAnimals.includes("tree-dragon") && (
-          <motion.g
-            animate={{ rotate: [0, 4, -4, 0], y: [0, -1.5, 0] }}
-            transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-            style={{ transformBox: "fill-box", transformOrigin: "center" }}
-          >
-            <image
-              href={asset("/images/tree_dragon.png")}
-              x="15"
-              y="31"
-              width="15"
-              height="15"
-              className="select-none pointer-events-none filter drop-shadow-sm"
-            />
-          </motion.g>
-        )}
-
-        {unlockedTreeAnimals.includes("tree-phoenix") && (
-          <motion.g
-            animate={{ scale: [1, 1.12, 1], opacity: [0.9, 1, 0.9] }}
-            transition={{ duration: 2.8, repeat: Infinity, ease: "easeInOut" }}
-            style={{ transformBox: "fill-box", transformOrigin: "center" }}
-          >
-            <image
-              href={asset("/images/tree_phoenix.png")}
-              x="58"
-              y="26"
-              width="13"
-              height="13"
-              className="select-none pointer-events-none filter drop-shadow-sm"
-            />
-          </motion.g>
-        )}
+        ))}
       </svg>
+
+      {/* Bulle de l'animal cliqué (anecdote / encouragement) — positionnée juste
+          au-dessus de l'animal grâce à ses coordonnées bx/by (en % du cadre). */}
+      <AnimatePresence>
+        {animalBubble && (
+          <motion.div
+            key={animalBubble.id + animalBubble.msg}
+            initial={{ opacity: 0, scale: 0.6, y: 6 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            exit={{ opacity: 0, scale: 0.7 }}
+            transition={{ type: "spring", stiffness: 320, damping: 22 }}
+            className="absolute z-40 pointer-events-none -translate-x-1/2 -translate-y-full"
+            style={{ left: `${animalBubble.x}%`, top: `${animalBubble.y}%` }}
+          >
+            <div className="relative max-w-[150px] bg-white border-2 border-emerald-300 rounded-2xl px-3 py-1.5 shadow-lg text-[10px] sm:text-xs font-bold text-emerald-800 text-center leading-snug">
+              {animalBubble.msg}
+              <span className="absolute left-1/2 -bottom-1.5 -translate-x-1/2 w-3 h-3 bg-white border-b-2 border-r-2 border-emerald-300 rotate-45" />
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {/* Animation d'arrosage */}
       <AnimatePresence>
