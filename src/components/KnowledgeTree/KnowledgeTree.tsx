@@ -124,7 +124,8 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
     const msgs = ANIMAL_MESSAGES[a.id] || ["Coucou ! 🌳"];
     const msg = msgs[Math.floor(Math.random() * msgs.length)];
     if (animalBubbleTimer.current) clearTimeout(animalBubbleTimer.current);
-    setAnimalBubble({ id: a.id, msg, x: a.bx, y: a.by });
+    // La bulle suit l'animal, qui est mis à l'échelle avec l'arbre (pivot 50,85).
+    setAnimalBubble({ id: a.id, msg, x: 50 + (a.bx - 50) * treeScale, y: 85 + (a.by - 85) * treeScale });
     animalBubbleTimer.current = setTimeout(() => setAnimalBubble(null), 3500);
   };
 
@@ -336,6 +337,14 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
         {/* Animaux de l'Arbre débloqués : compagnons VIVANTS (animation d'inactivité)
             et UTILES (cliquables : réagissent au clic/survol et lancent une bulle
             d'anecdote ou d'encouragement). Rendu piloté par TREE_ANIMALS. */}
+        <motion.g
+          // Les animaux suivent la croissance de l'arbre : même échelle et même
+          // pivot (50,85) que le tronc, pour rester posés sur le feuillage à tous
+          // les stades au lieu de flotter en l'air quand l'arbre est encore petit.
+          animate={{ scale: treeScale }}
+          transition={{ type: "spring", stiffness: 120, damping: 14 }}
+          style={{ originX: "50px", originY: "85px" }}
+        >
         {TREE_ANIMALS.filter((a) => unlockedTreeAnimals.includes(a.id)).map((a) => (
           <motion.g
             key={a.id}
@@ -357,6 +366,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
             />
           </motion.g>
         ))}
+        </motion.g>
       </svg>
 
       {/* Bulle de l'animal cliqué (anecdote / encouragement) — positionnée juste
