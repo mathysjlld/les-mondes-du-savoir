@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
-4:I[97367,["/les-mondes-du-savoir/app/_next/static/chunks/1n9noc2ob69xc.js","/les-mondes-du-savoir/app/_next/static/chunks/0sui183gb3lft.js","/les-mondes-du-savoir/app/_next/static/chunks/14mrh2-p_w84d.js"],"OutletBoundary"]
+4:I[97367,["/les-mondes-du-savoir/app/_next/static/chunks/0v2y7-lp61i_t.js","/les-mondes-du-savoir/app/_next/static/chunks/3klm8_gd5mbj3.js","/les-mondes-du-savoir/app/_next/static/chunks/14mrh2-p_w84d.js"],"OutletBoundary"]
 5:"$Sreact.suspense"
 2:T9440,<style>@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap');
 
@@ -567,6 +567,6 @@
       <p style="margin-top:16px; font-size:.85rem;">© 2026 Les mondes du Savoir. Kaiden Vialle &amp; Mathys Julliand. Fait avec ❤️ pour apprendre en s'amusant.</p>
     </div>
   </footer>
-0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,"$L3"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"rPmWYztmMZ_rQiEYmN2B8"}
+0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,"$L3"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"7-FRkcxgRyqqBb_U6yz8D"}
 3:["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]
 6:null
