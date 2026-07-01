@@ -337,23 +337,6 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
           </g>
         )}
 
-        {/* Animaux de l'Arbre débloqués : compagnons VIVANTS (animation d'inactivité)
-            et UTILES (cliquables : réagissent au clic/survol et lancent une bulle
-            d'anecdote ou d'encouragement). Rendu piloté par TREE_ANIMALS. */}
-        {/* Ombres portées au sol des animaux terrestres (statiques : elles ancrent
-            l'animal sur l'herbe même quand il sautille). */}
-        {TREE_ANIMALS.filter((a) => a.mode === "ground" && unlockedTreeAnimals.includes(a.id)).map((a) => (
-          <ellipse
-            key={a.id + "-shadow"}
-            cx={a.x + a.w / 2}
-            cy={a.y + a.h - 0.5}
-            rx={a.w * 0.36}
-            ry={1.3}
-            fill="#1b3a1b"
-            opacity={0.22}
-          />
-        ))}
-
       </svg>
 
       {/* Couche des animaux : sprites VIDÉO transparents (WebM générés par Seedance)
