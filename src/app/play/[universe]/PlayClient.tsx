@@ -186,7 +186,7 @@ export default function PlayUniverse() {
             <p className="text-sm sm:text-base font-semibold text-slate-600 leading-relaxed z-10">
               Tu as terminé les quizz gratuits de cet univers, bravo&nbsp;! ✨ Les suivants font
               partie de l&apos;aventure complète. Débloque{" "}
-              <strong>tous les mondes et tous les quizz</strong> pour continuer à explorer&nbsp;!
+              <strong>tous les mondes et tous les quizz</strong>{" "}pour continuer à explorer&nbsp;!
             </p>
 
             <button

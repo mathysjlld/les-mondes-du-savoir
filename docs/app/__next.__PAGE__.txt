@@ -567,6 +567,6 @@
       <p style="margin-top:16px; font-size:.85rem;">© 2026 Les mondes du Savoir. Kaiden Vialle &amp; Mathys Julliand. Fait avec ❤️ pour apprendre en s'amusant.</p>
     </div>
   </footer>
-0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,"$L3"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"7-FRkcxgRyqqBb_U6yz8D"}
+0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,"$L3"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"okrbZmlEjEFM3PFLtbaVH"}
 3:["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]
 6:null
