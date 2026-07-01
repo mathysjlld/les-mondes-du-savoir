@@ -74,6 +74,9 @@ function TreePreview({
     { id: "tree-owl", emoji: "🦉", x: 47, y: 34 },
     { id: "tree-squirrel", emoji: "🐿️", x: 28, y: 65 },
     { id: "tree-parrot", emoji: "🦜", x: 74, y: 55 },
+    // Animaux légendaires du Temple (récompenses cristaux) — étaient absents de l'aperçu.
+    { id: "tree-dragon", emoji: "🐉", x: 24, y: 40 },
+    { id: "tree-phoenix", emoji: "🔥", x: 66, y: 34 },
   ];
 
   return (
