@@ -19,6 +19,9 @@ type TreeAnimal = {
   // "fly" = vole au-dessus de l'arbre (tournoie) ; "ground" = posé au sol.
   // Ainsi aucun animal ne flotte dans le vide, quelle que soit la taille de l'arbre.
   mode: "fly" | "ground";
+  // anim = sprite vidéo transparent (WebM) généré par Seedance : les ailes battent.
+  // Sinon, PNG figé avec une petite animation CSS.
+  anim?: boolean;
   // animation d'inactivité (boucle) — pour les volants, c'est une trajectoire en boucle
   idle: Record<string, number[]>;
   dur: number;
@@ -29,19 +32,19 @@ type TreeAnimal = {
 const TREE_ANIMALS: TreeAnimal[] = [
   // VOLANTS — tournoient dans le ciel au-dessus de l'arbre (jamais posés), dans les
   // coins hauts (dégagés du feuillage même sur le grand arbre) et sous la barre.
-  { id: "tree-butterfly", img: "tree_butterfly.png", mode: "fly", x: 9, y: 14, w: 8, h: 8, bx: 13, by: 14,
+  { id: "tree-butterfly", img: "tree_butterfly.png", mode: "fly", anim: true, x: 9, y: 14, w: 8, h: 8, bx: 13, by: 14,
     idle: { x: [0, 7, 11, 7, 0, -7, -11, -7, 0], y: [0, -4, -9, -13, -16, -13, -9, -4, 0], rotate: [0, 10, 0, -10, 0, 10, 0, -10, 0] }, dur: 7, origin: "center" },
-  { id: "tree-phoenix", img: "tree_phoenix.png", mode: "fly", x: 75, y: 11, w: 12, h: 12, bx: 81, by: 11,
+  { id: "tree-phoenix", img: "tree_phoenix.png", mode: "fly", anim: true, x: 75, y: 11, w: 12, h: 12, bx: 81, by: 11,
     idle: { x: [0, -8, 0, 8, 0], y: [0, -3, -6, -3, 0], rotate: [0, -5, 0, 5, 0], scale: [1, 1.06, 1, 1.06, 1] }, dur: 5.5, origin: "center" },
   // AU SOL — posés sur l'herbe (pieds à ~y=89), répartis de part et d'autre du pot,
   // hors de la zone du bouton « Arroser » (remonté). Chacun a une ombre portée.
   { id: "tree-squirrel", img: "tree_squirrel.png", mode: "ground", x: 7, y: 80, w: 9, h: 9, bx: 11, by: 80,
     idle: { y: [0, -1.2, 0], scaleX: [1, 0.96, 1] }, dur: 2.6, delay: 0.4, origin: "bottom center" },
-  { id: "tree-dragon", img: "tree_dragon.png", mode: "ground", x: 19, y: 76, w: 13, h: 13, bx: 25, by: 76,
+  { id: "tree-dragon", img: "tree_dragon.png", mode: "ground", anim: true, x: 19, y: 76, w: 13, h: 13, bx: 25, by: 76,
     idle: { rotate: [0, 3, -3, 0], y: [0, -1, 0] }, dur: 5, origin: "bottom center" },
-  { id: "tree-owl", img: "tree_owl.png", mode: "ground", x: 61, y: 79, w: 10, h: 10, bx: 66, by: 79,
+  { id: "tree-owl", img: "tree_owl.png", mode: "ground", anim: true, x: 61, y: 79, w: 10, h: 10, bx: 66, by: 79,
     idle: { scaleY: [1, 1.06, 1], rotate: [0, 1.5, -1.5, 0] }, dur: 4.5, delay: 0.6, origin: "bottom center" },
-  { id: "tree-parrot", img: "tree_parrot.png", mode: "ground", x: 77, y: 80, w: 9, h: 9, bx: 81, by: 80,
+  { id: "tree-parrot", img: "tree_parrot.png", mode: "ground", anim: true, x: 77, y: 80, w: 9, h: 9, bx: 81, by: 80,
     idle: { rotate: [0, -3, 3, 0], y: [0, -0.8, 0] }, dur: 4, delay: 0.2, origin: "bottom center" },
 ];
 
@@ -351,31 +354,67 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
           />
         ))}
 
-        {/* Animaux débloqués : les volants (papillon, phénix) tournoient dans le ciel
-            au-dessus de l'arbre ; les terrestres sont posés sur l'herbe. Positions
-            relatives au cadre (plus au feuillage) → aucun animal ne flotte dans le vide. */}
-        {TREE_ANIMALS.filter((a) => unlockedTreeAnimals.includes(a.id)).map((a) => (
-          <motion.g
-            key={a.id}
-            animate={a.idle}
-            transition={{ duration: a.dur, repeat: Infinity, ease: "easeInOut", delay: a.delay || 0 }}
-            whileHover={{ scale: 1.18 }}
-            whileTap={{ scale: 1.32 }}
-            onClick={() => handleAnimalClick(a)}
-            className="cursor-pointer"
-            style={{ transformBox: "fill-box", transformOrigin: a.origin }}
-          >
-            <image
-              href={asset(`/images/${a.img}`)}
-              x={a.x}
-              y={a.y}
-              width={a.w}
-              height={a.h}
-              className="select-none filter drop-shadow-sm"
-            />
-          </motion.g>
-        ))}
       </svg>
+
+      {/* Couche des animaux : sprites VIDÉO transparents (WebM générés par Seedance)
+          → les ailes battent vraiment. Volants (papillon, phénix) = tournoient dans le
+          ciel ; terrestres = posés sur l'herbe. `inset-4` aligne cette couche sur le
+          repère du SVG (0–100). Les animaux du coin bas-gauche s'effacent quand
+          Barnabé arrose pour ne pas le gêner. */}
+      <div className="absolute inset-4 z-[15] pointer-events-none">
+        {TREE_ANIMALS.filter((a) => unlockedTreeAnimals.includes(a.id)).map((a) => {
+          const cx = a.x + a.w / 2;
+          const cy = a.y + a.h / 2;
+          const fly = a.mode === "fly";
+          const fadeForBarnabe = a.mode === "ground" && cx < 45; // proche de Barnabé (bas-gauche)
+          // Trajectoire de tournoiement pour les volants ; terrestres immobiles.
+          const flyAnim = a.id === "tree-butterfly"
+            ? { x: [0, 10, 14, 10, 0, -10, -14, -10, 0], y: [0, -6, -12, -18, -22, -18, -12, -6, 0] }
+            : { x: [0, -9, 0, 9, 0], y: [0, -5, -9, -5, 0] };
+          // Sprite vidéo cadré à 2× (l'animal occupe ~50% du carré source), centré sur (cx,cy).
+          const side = 2 * Math.max(a.w, a.h);
+          const boxStyle = a.anim
+            ? { left: `${cx - side / 2}%`, top: `${cy - side / 2}%`, width: `${side}%`, height: `${side}%` }
+            : { left: `${a.x}%`, top: `${a.y}%`, width: `${a.w}%`, height: `${a.h}%` };
+          return (
+            <motion.div
+              key={a.id}
+              onClick={() => handleAnimalClick(a)}
+              className="absolute cursor-pointer pointer-events-auto"
+              style={boxStyle}
+              animate={{ ...(fly ? flyAnim : {}), opacity: fadeForBarnabe && showBarnabe ? 0 : 1 }}
+              transition={{
+                x: fly ? { duration: a.dur, repeat: Infinity, ease: "easeInOut" } : undefined,
+                y: fly ? { duration: a.dur, repeat: Infinity, ease: "easeInOut" } : undefined,
+                opacity: { duration: 0.4 },
+              }}
+              whileHover={{ scale: 1.15 }}
+              whileTap={{ scale: 1.3 }}
+            >
+              {a.anim ? (
+                <video
+                  src={asset(`/images/${a.img.replace(".png", ".webm")}`)}
+                  poster={asset(`/images/${a.img}`)}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full h-full object-contain pointer-events-none select-none drop-shadow-sm"
+                />
+              ) : (
+                <motion.img
+                  src={asset(`/images/${a.img}`)}
+                  alt=""
+                  animate={a.idle}
+                  transition={{ duration: a.dur, repeat: Infinity, ease: "easeInOut", delay: a.delay || 0 }}
+                  className="w-full h-full object-contain pointer-events-none select-none drop-shadow-sm"
+                  style={{ transformOrigin: "bottom center" }}
+                />
+              )}
+            </motion.div>
+          );
+        })}
+      </div>
 
       {/* Bulle de l'animal cliqué (anecdote / encouragement) — positionnée juste
           au-dessus de l'animal grâce à ses coordonnées bx/by (en % du cadre). */}
