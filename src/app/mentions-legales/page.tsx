@@ -31,22 +31,14 @@ export default function MentionsLegalesPage() {
           </p>
           <ul className="mt-2 list-disc pl-6 space-y-1">
             <li>
-              Dénomination / exploitant :{" "}
-              <span className="rounded bg-amber-100 px-1 font-semibold text-amber-800">
-                Kaiden Vialle &amp; Mathys Julliand — [forme juridique à compléter&nbsp;: auto-entrepreneur, société…]
-              </span>
+              Dénomination / exploitant : <strong>Kaiden Vialle, entrepreneur individuel</strong> (service
+              co-créé avec Mathys Julliand)
             </li>
             <li>
-              Siège / adresse :{" "}
-              <span className="rounded bg-amber-100 px-1 font-semibold text-amber-800">[adresse postale à compléter]</span>
+              Numéro SIRET : <strong>890&nbsp;831&nbsp;415&nbsp;00025</strong>
             </li>
             <li>
-              Numéro SIREN / SIRET :{" "}
-              <span className="rounded bg-amber-100 px-1 font-semibold text-amber-800">[à compléter dès l&apos;immatriculation]</span>
-            </li>
-            <li>
-              N° de TVA intracommunautaire :{" "}
-              <span className="rounded bg-amber-100 px-1 font-semibold text-amber-800">[le cas échéant]</span>
+              Adresse : communiquée sur demande à l&apos;adresse e-mail ci-dessous
             </li>
             <li>
               Adresse e-mail :{" "}

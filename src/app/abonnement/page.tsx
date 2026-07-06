@@ -322,8 +322,10 @@ export default function AbonnementPage() {
                 En attendant, les premiers quizz de chaque univers restent <strong>gratuits</strong>&nbsp;: continue à jouer&nbsp;!
               </p>
               <p className="mt-2 text-center text-[11px] text-slate-400 font-medium">
-                En souscrivant, vous acceptez nos{" "}
-                <Link href="/cgv" className="text-teal-600 hover:underline">conditions générales de vente</Link>.
+                En validant votre paiement, vous acceptez nos{" "}
+                <Link href="/cgv" className="text-teal-600 hover:underline">conditions générales de vente</Link>,
+                demandez l&apos;accès immédiat au service et renoncez à votre droit de rétractation de 14 jours
+                pour la partie déjà exécutée (art. L.221-28 du Code de la consommation).
               </p>
             </>
           )}
