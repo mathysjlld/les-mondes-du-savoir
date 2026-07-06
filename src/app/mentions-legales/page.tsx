@@ -31,12 +31,13 @@ export default function MentionsLegalesPage() {
           </p>
           <ul className="mt-2 list-disc pl-6 space-y-1">
             <li>
-              Dénomination / exploitant : <strong>Kaiden Vialle, entrepreneur individuel</strong> (service
-              co-créé avec Mathys Julliand)
+              Dénomination / exploitant : <strong>Kaïden Zoghlami Vialle, entrepreneur individuel</strong>{" "}
+              (service co-créé avec Mathys Julliand)
             </li>
             <li>
               Numéro SIRET : <strong>890&nbsp;831&nbsp;415&nbsp;00025</strong>
             </li>
+            <li>TVA : non applicable, article 293&nbsp;B du Code général des impôts</li>
             <li>
               Adresse : communiquée sur demande à l&apos;adresse e-mail ci-dessous
             </li>
@@ -52,7 +53,7 @@ export default function MentionsLegalesPage() {
         <div>
           <h2 className="text-xl font-bold text-teal-700">2. Directeur de la publication</h2>
           <p className="mt-2">
-            Le directeur de la publication est <strong>Kaiden Vialle</strong>, co-éditeur du service, joignable
+            Le directeur de la publication est <strong>Kaïden Zoghlami Vialle</strong>, co-éditeur du service, joignable
             à l&apos;adresse{" "}
             <a className="text-teal-600 hover:underline" href="mailto:kaidenvialle@gmail.com">
               kaidenvialle@gmail.com

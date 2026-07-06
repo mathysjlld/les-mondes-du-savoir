@@ -38,7 +38,7 @@ export default function CgvPage() {
         <div>
           <h2 className="text-xl font-bold text-teal-700">Article 2 — Identité du vendeur</h2>
           <p className="mt-2">
-            Le Service est édité et commercialisé par <strong>Kaiden Vialle, entrepreneur
+            Le Service est édité et commercialisé par <strong>Kaïden Zoghlami Vialle, entrepreneur
             individuel</strong>, immatriculé sous le numéro <strong>SIRET 890&nbsp;831&nbsp;415&nbsp;00025</strong>{" "}
             (voir les{" "}
             <Link href="/mentions-legales" className="text-teal-600 hover:underline">
@@ -72,8 +72,8 @@ export default function CgvPage() {
         <div>
           <h2 className="text-xl font-bold text-teal-700">Article 4 — Prix</h2>
           <p className="mt-2">
-            L&apos;abonnement Famille est proposé au prix de <strong>7&nbsp;€ par mois, toutes taxes comprises
-            (TTC)</strong>. Ce prix inclut l&apos;accès à l&apos;ensemble des fonctionnalités de l&apos;offre pour
+            L&apos;abonnement Famille est proposé au prix de <strong>7&nbsp;€ par mois</strong> (TVA non
+            applicable, article 293&nbsp;B du Code général des impôts). Ce prix inclut l&apos;accès à l&apos;ensemble des fonctionnalités de l&apos;offre pour
             un foyer. Le prix applicable est celui affiché au moment de la souscription. L&apos;éditeur se réserve
             le droit de modifier ses tarifs&nbsp;; toute évolution sera communiquée au Client à l&apos;avance et ne
             s&apos;appliquera qu&apos;aux échéances postérieures, le Client restant libre de résilier.
