@@ -486,7 +486,7 @@ export default function Market() {
               className="absolute bottom-8 inset-x-0 text-center px-4 pointer-events-none"
             >
               <h2 className="text-2xl sm:text-4xl font-black text-amber-100 drop-shadow-lg" style={{ fontFamily: "var(--font-title)" }}>
-                En route vers l&apos;échoppe ! 🛒
+                En route vers le marché ! 🛒
               </h2>
               <p className="mt-1 text-xs sm:text-sm font-bold text-amber-200/80">Touche l&apos;écran pour passer</p>
             </motion.div>

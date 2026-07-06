@@ -26,88 +26,6 @@ import {
   Gamepad2,
 } from "lucide-react";
 
-const MedievalCart = ({ coinCount, isMoving }: { coinCount: number; isMoving: boolean }) => {
-  return (
-    <svg viewBox="0 0 100 80" className="w-20 h-16 sm:w-28 sm:h-22 drop-shadow-md select-none pointer-events-none">
-      <defs>
-        <linearGradient id="woodGrad" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stopColor="#8E5A36" />
-          <stop offset="100%" stopColor="#5C3A21" />
-        </linearGradient>
-        <linearGradient id="ironGrad" x1="0" y1="0" x2="1" y2="0">
-          <stop offset="0%" stopColor="#7F8C8D" />
-          <stop offset="100%" stopColor="#34495E" />
-        </linearGradient>
-        <linearGradient id="goldGrad" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stopColor="#F1C40F" />
-          <stop offset="100%" stopColor="#D4AC0D" />
-        </linearGradient>
-      </defs>
-      
-      {/* Handle for pushing */}
-      <path d="M 15 45 L 30 45" stroke="#5C3A21" strokeWidth="4" strokeLinecap="round" />
-      <path d="M 15 40 L 15 50" stroke="#422B1B" strokeWidth="4" strokeLinecap="round" />
-
-      {/* Gold pile inside the cart - scales up based on coinCount */}
-      {coinCount > 0 && (
-        <motion.ellipse
-          cx="55"
-          cy="38"
-          rx="25"
-          ry="10"
-          fill="url(#goldGrad)"
-          stroke="#B7950B"
-          strokeWidth="1"
-          animate={{ scale: Math.min(1, 0.4 + coinCount * 0.05) }}
-          transition={{ type: "spring", stiffness: 100 }}
-          style={{ originX: "55px", originY: "43px" }}
-        />
-      )}
-      
-      {/* Main wooden body of the cart */}
-      <polygon points="30,35 80,35 75,55 35,55" fill="url(#woodGrad)" stroke="#422B1B" strokeWidth="2.5" />
-      
-      {/* Metal bands/supports around the cart */}
-      <line x1="42" y1="35" x2="45" y2="55" stroke="url(#ironGrad)" strokeWidth="3" />
-      <line x1="68" y1="35" x2="65" y2="55" stroke="url(#ironGrad)" strokeWidth="3" />
-      <rect x="30" y="35" width="50" height="3" fill="url(#ironGrad)" />
-
-      {/* Wheels */}
-      {/* Back wheel */}
-      <motion.g 
-        animate={isMoving ? { rotate: 360 } : {}}
-        transition={isMoving ? { duration: 1.2, repeat: Infinity, ease: "linear" } : {}}
-        style={{ transformOrigin: "42px 62px" }}
-      >
-        <circle cx="42" cy="62" r="14" fill="#3D2516" stroke="#22140C" strokeWidth="2" />
-        <circle cx="42" cy="62" r="11" fill="url(#woodGrad)" />
-        {/* Spokes */}
-        <line x1="42" y1="48" x2="42" y2="76" stroke="#22140C" strokeWidth="2" />
-        <line x1="28" y1="62" x2="56" y2="62" stroke="#22140C" strokeWidth="2" />
-        <line x1="32" y1="52" x2="52" y2="72" stroke="#22140C" strokeWidth="2" />
-        <line x1="32" y1="72" x2="52" y2="52" stroke="#22140C" strokeWidth="2" />
-        <circle cx="42" cy="62" r="4.5" fill="url(#ironGrad)" stroke="#22140C" strokeWidth="1" />
-      </motion.g>
-      
-      {/* Front wheel */}
-      <motion.g 
-        animate={isMoving ? { rotate: 360 } : {}}
-        transition={isMoving ? { duration: 1.2, repeat: Infinity, ease: "linear" } : {}}
-        style={{ transformOrigin: "68px 62px" }}
-      >
-        <circle cx="68" cy="62" r="14" fill="#3D2516" stroke="#22140C" strokeWidth="2" />
-        <circle cx="68" cy="62" r="11" fill="url(#woodGrad)" />
-        {/* Spokes */}
-        <line x1="68" y1="48" x2="68" y2="76" stroke="#22140C" strokeWidth="2" />
-        <line x1="54" y1="62" x2="82" y2="62" stroke="#22140C" strokeWidth="2" />
-        <line x1="58" y1="52" x2="78" y2="72" stroke="#22140C" strokeWidth="2" />
-        <line x1="58" y1="72" x2="78" y2="52" stroke="#22140C" strokeWidth="2" />
-        <circle cx="68" cy="62" r="4.5" fill="url(#ironGrad)" stroke="#22140C" strokeWidth="1" />
-      </motion.g>
-    </svg>
-  );
-};
-
 export default function Dashboard() {
   const router = useRouter();
   const {
@@ -131,10 +49,7 @@ export default function Dashboard() {
     toggleCheatCode,
   } = useApp();
 
-  // Modales & Transition
-  const [showMarketTransition, setShowMarketTransition] = useState(false);
-  const [transitionPhase, setTransitionPhase] = useState<"raining" | "moving" | "entering">("raining");
-  const [isDoorOpen, setIsDoorOpen] = useState(false);
+  // Modales
   const [showBadges, setShowBadges] = useState(false);
   const [showParentsGate, setShowParentsGate] = useState(false);
   const [showParentsSpace, setShowParentsSpace] = useState(false);
@@ -148,36 +63,6 @@ export default function Dashboard() {
   // Barrière parentale
   const [parentAnswer, setParentAnswer] = useState("");
   const [gateError, setGateError] = useState(false);
-
-  // Redirection animée vers le marché : l'avatar du joueur amène la charrette vers la porte du Marché
-  useEffect(() => {
-    if (showMarketTransition) {
-      setTransitionPhase("raining");
-      setIsDoorOpen(false);
-
-      // Sons
-      const timer1 = setTimeout(() => playSound("levelup"), 500);
-      const timer2 = setTimeout(() => playSound("win"), 3000);
-
-      // Phase 2 : la charrette avance vers la porte
-      const timerMove = setTimeout(() => setTransitionPhase("moving"), 2000);
-      // Ouverture de la porte
-      const timerDoor = setTimeout(() => setIsDoorOpen(true), 3200);
-      // Phase 3 : l'avatar entre dans la porte
-      const timerEnter = setTimeout(() => setTransitionPhase("entering"), 3500);
-      // Navigation vers le marché
-      const timer3 = setTimeout(() => router.push("/market"), 4700);
-
-      return () => {
-        clearTimeout(timer1);
-        clearTimeout(timer2);
-        clearTimeout(timerMove);
-        clearTimeout(timerDoor);
-        clearTimeout(timerEnter);
-        clearTimeout(timer3);
-      };
-    }
-  }, [showMarketTransition, router]);
 
   // Réglages parents
   const [showTimeLimitAlert, setShowTimeLimitAlert] = useState(false);
@@ -520,7 +405,9 @@ export default function Dashboard() {
               <button
                 onClick={() => {
                   playSound("click");
-                  setShowMarketTransition(true);
+                  // On va directement au Marché : l'unique animation d'entrée est la
+                  // vidéo POV de la charrette jouée par la page Marché elle-même.
+                  router.push("/market");
                 }}
                 className="py-2.5 px-2 min-[380px]:py-3 min-[380px]:px-4 rounded-2xl bg-amber-400 hover:bg-amber-500 text-amber-950 font-bold text-xs sm:text-sm transition-all shadow-md btn-bubble border-b-4 border-amber-600 flex items-center justify-center gap-1.5 sm:gap-2 cursor-pointer"
               >
@@ -684,136 +571,6 @@ export default function Dashboard() {
           </div>
         </section>
       </main>
-
-      {/* Transition animée vers le Marché : l'avatar du joueur amène la charrette vers la porte */}
-      <AnimatePresence>
-        {showMarketTransition && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[100] bg-gradient-to-b from-sky-300 via-sky-200 to-indigo-100 flex flex-col items-center justify-between p-6 sm:p-10 select-none overflow-hidden"
-          >
-            {/* Nuages en arrière-plan */}
-            <div className="absolute top-10 left-[10%] w-32 h-10 bg-white/70 rounded-full blur-[1px] animate-pulse" />
-            <div className="absolute top-20 right-[15%] w-48 h-12 bg-white/60 rounded-full blur-[1px]" />
-
-            {/* Titre de transition */}
-            <div className="text-center mt-12 z-10">
-              <motion.h2
-                initial={{ y: -30, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 0.3 }}
-                className="text-3xl sm:text-5xl font-black text-indigo-950 drop-shadow-md"
-              >
-                En route pour le Marché ! 🏰✨
-              </motion.h2>
-              <p className="text-sm sm:text-base text-indigo-900 font-bold mt-2">
-                Tes pièces tombent dans le chariot...
-              </p>
-            </div>
-
-            {/* Pluie de pièces cascade qui tombent précisément dans la caisse du chariot à 30vw */}
-            {[...Array(15)].map((_, i) => {
-              const xOffset = (i % 3) * 15 - 15;
-              return (
-                <motion.div
-                  key={i}
-                  initial={{ y: -50, x: xOffset, opacity: 0, rotate: 0 }}
-                  animate={{
-                    y: ["-5vh", "30vh", "60vh", "calc(100vh - 170px)"],
-                    opacity: [0, 1, 1, 0],
-                    rotate: 360,
-                    scale: [0.8, 1.2, 1, 0.5]
-                  }}
-                  transition={{
-                    duration: 0.9,
-                    delay: i * 0.12 + 0.3,
-                    ease: "easeIn"
-                  }}
-                  className="absolute top-0 text-3xl sm:text-4xl z-25 pointer-events-none select-none"
-                  style={{ left: "calc(30vw + 116px)" }}
-                >
-                  🪙
-                </motion.div>
-              );
-            })}
-
-            {/* Unique groupe: Avatar pousseur + Chariot Médiéval */}
-            <motion.div
-              initial={{ x: "30vw", y: 0, scale: 1, opacity: 1 }}
-              animate={
-                transitionPhase === "raining"
-                  ? { x: "30vw", y: 0, scale: 1, opacity: 1 }
-                  : transitionPhase === "moving"
-                  ? { x: "65vw", y: 0, scale: 1, opacity: 1 }
-                  : { x: "74vw", y: 15, scale: 0.15, opacity: 0 } // Rentrent dans la porte et se fondent dans la lumière
-              }
-              transition={{
-                duration: transitionPhase === "raining" ? 0.2 : transitionPhase === "moving" ? 1.5 : 1.0,
-                ease: transitionPhase === "entering" ? "easeIn" : "easeInOut"
-              }}
-              className="absolute bottom-20 left-0 flex items-end gap-1.5 z-30 pointer-events-none origin-bottom-right"
-            >
-              {/* L'avatar choisi par le joueur */}
-              <div className="shrink-0 select-none">
-                <AvatarRenderer config={profile.avatar} size={96} interactive={false} />
-              </div>
-
-              {/* Chariot en bois d'époque marron */}
-              <MedievalCart
-                coinCount={transitionPhase === "raining" ? 8 : 15}
-                isMoving={transitionPhase === "moving" || transitionPhase === "entering"}
-              />
-            </motion.div>
-
-            {/* Grande porte de marché sur la droite (Double battants qui s'ouvrent) */}
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.8, type: "spring" }}
-              className="absolute left-[78vw] bottom-20 flex flex-col items-center gap-3 z-10"
-            >
-              <div className="w-28 h-40 bg-amber-950 border-4 border-amber-600 rounded-t-full shadow-2xl relative overflow-hidden">
-                {/* Lumière dorée chaleureuse à l'intérieur */}
-                <motion.div
-                  animate={{ opacity: [0.5, 1, 0.5] }}
-                  transition={{ duration: 1.2, repeat: Infinity }}
-                  className="absolute inset-0 bg-gradient-to-r from-yellow-300 via-amber-400 to-yellow-300"
-                />
-
-                {/* Battant gauche */}
-                <motion.div
-                  initial={{ x: 0 }}
-                  animate={isDoorOpen ? { x: "-100%", skewY: -5 } : { x: 0 }}
-                  transition={{ duration: 0.8, ease: "easeOut" }}
-                  className="absolute top-0 left-0 w-1/2 h-full bg-amber-800 border-r-2 border-amber-900 origin-left flex items-center justify-end pr-1 shadow-md"
-                  style={{ transformOrigin: "left center" }}
-                >
-                  <div className="w-3 h-3 rounded-full border border-amber-950 bg-stone-700 mr-1" />
-                </motion.div>
-
-                {/* Battant droit */}
-                <motion.div
-                  initial={{ x: 0 }}
-                  animate={isDoorOpen ? { x: "100%", skewY: 5 } : { x: 0 }}
-                  transition={{ duration: 0.8, ease: "easeOut" }}
-                  className="absolute top-0 right-0 w-1/2 h-full bg-amber-800 border-l-2 border-amber-900 origin-right flex items-center justify-start pl-1 shadow-md"
-                  style={{ transformOrigin: "right center" }}
-                >
-                  <div className="w-3 h-3 rounded-full border border-amber-950 bg-stone-700 ml-1" />
-                </motion.div>
-              </div>
-              <span className="bg-amber-950 text-amber-200 font-black px-3 py-1 rounded-full text-xs uppercase tracking-widest border-2 border-amber-600 shadow-md">
-                Marché 🏰
-              </span>
-            </motion.div>
-
-            {/* Sol d'herbe */}
-            <div className="absolute bottom-0 left-0 right-0 h-24 bg-emerald-500 border-t-4 border-emerald-600 z-0" />
-          </motion.div>
-        )}
-      </AnimatePresence>
 
       {/* ========================================================================= */}
       {/* 4. Modale Galerie des Badges / Étagère à Trophées */}
