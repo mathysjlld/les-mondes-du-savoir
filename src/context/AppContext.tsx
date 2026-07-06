@@ -100,6 +100,10 @@ interface AppContextType {
   signUp: (email: string, password: string) => Promise<{ error: string | null }>;
   signIn: (email: string, password: string) => Promise<{ error: string | null }>;
   signOut: () => Promise<void>;
+  // Abonnement Stripe (Offre Famille) — statut lu dans la table `abonnements`,
+  // écrite uniquement par le webhook serveur (jamais par le client).
+  premiumActif: boolean;
+  refreshPremium: () => Promise<void>;
 }
 
 const AppContext = createContext<AppContextType | undefined>(undefined);
@@ -145,6 +149,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
   const [isLoaded, setIsLoaded] = useState(false);
   const [userId, setUserId] = useState<string | null>(null);
   const [userEmail, setUserEmail] = useState<string | null>(null);
+  const [premiumActif, setPremiumActif] = useState(false);
 
   // Charger la progression depuis le localStorage
   useEffect(() => {
@@ -306,21 +311,43 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     }
   };
 
+  // Statut premium : lu côté serveur (table abonnements, RLS lecture seule).
+  const fetchPremium = async (uid: string) => {
+    if (!supabase) return;
+    const { data, error } = await supabase
+      .from("abonnements")
+      .select("is_premium")
+      .eq("user_id", uid)
+      .maybeSingle();
+    if (error) { console.error("Lecture abonnement échouée", error.message); return; }
+    setPremiumActif(!!data?.is_premium);
+  };
+
   // Initialiser la session et écouter les changements de connexion
   useEffect(() => {
     if (!cloudEnabled || !supabase) return;
     supabase.auth.getSession().then(({ data }) => {
       const u = data.session?.user;
-      if (u) { setUserId(u.id); setUserEmail(u.email ?? null); loadCloudProfile(u.id); }
+      if (u) { setUserId(u.id); setUserEmail(u.email ?? null); loadCloudProfile(u.id); fetchPremium(u.id); }
     });
     const { data: sub } = supabase.auth.onAuthStateChange((_event, session) => {
       const u = session?.user;
       setUserId(u?.id ?? null);
       setUserEmail(u?.email ?? null);
-      if (u) loadCloudProfile(u.id);
+      if (u) { loadCloudProfile(u.id); fetchPremium(u.id); }
+      else setPremiumActif(false);
     });
     return () => sub.subscription.unsubscribe();
   }, []);
+
+  // Refléter l'abonnement dans le profil actif : estPremium() lit profile.isPremium
+  // partout dans l'app, on l'aligne donc sur la vérité serveur quand on est connecté.
+  useEffect(() => {
+    if (!userId || !profile || !isLoaded) return;
+    if (!!profile.isPremium !== premiumActif) {
+      setProfile({ ...profile, isPremium: premiumActif });
+    }
+  }, [premiumActif, userId, profile, isLoaded]);
 
   // Synchroniser la progression vers le cloud (anti-rebond) quand l'utilisateur est connecté
   useEffect(() => {
@@ -343,6 +370,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     if (supabase) await supabase.auth.signOut();
     setUserId(null);
     setUserEmail(null);
+    setPremiumActif(false);
   };
 
   // Initialisation de l'utilisateur
@@ -972,6 +1000,8 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
         signUp,
         signIn,
         signOut,
+        premiumActif,
+        refreshPremium: async () => { if (userId) await fetchPremium(userId); },
       }}
     >
       {children}
