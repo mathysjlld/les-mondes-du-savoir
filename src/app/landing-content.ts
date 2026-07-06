@@ -179,6 +179,19 @@ export const LANDING_HTML = `<style>@import url('https://fonts.googleapis.com/cs
     @media (max-width: 900px) { .acc { flex-basis: calc(25% - 11px); } }
     @media (max-width: 620px) { .acc { flex-basis: calc(33.333% - 10px); } }
     @media (max-width: 420px) { .acc { flex-basis: calc(50% - 7px); } }
+    /* Tenues complètes (costumes) */
+    .cos-title { text-align: center; margin-top: 54px; }
+    .cos-title h3 { font-family: "Baloo 2", sans-serif; font-size: 1.5rem; color: var(--ink); }
+    .cos-title p { color: var(--muted); font-weight: 600; margin-top: 6px; }
+    .cos-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; margin-top: 28px; }
+    .cos { flex: 0 0 calc(25% - 12px); background: linear-gradient(180deg, #ffffff, #f4fbf9); border-radius: 20px;
+      padding: 16px 10px 12px; text-align: center; box-shadow: var(--shadow); border: 2px solid #eef2f7; transition: transform .18s; }
+    .cos:hover { transform: translateY(-6px) scale(1.03); }
+    .cos img { width: 100%; height: 150px; object-fit: contain; filter: drop-shadow(0 10px 16px rgba(13,148,136,.16)); }
+    .cos .lbl { font-weight: 800; font-size: .92rem; margin-top: 8px; color: var(--ink); }
+    .cos .rar { display: inline-block; margin-top: 4px; font-weight: 700; font-size: .72rem; color: var(--purple); background: #eafaf7; padding: 3px 10px; border-radius: 999px; }
+    @media (max-width: 760px) { .cos { flex-basis: calc(33.333% - 11px); } }
+    @media (max-width: 520px) { .cos { flex-basis: calc(50% - 8px); } .cos img { height: 128px; } }
 
     /* Arbre du Savoir */
     .tree-section { background: linear-gradient(180deg, #ffffff, #eafaf4); }
@@ -403,7 +416,7 @@ export const LANDING_HTML = `<style>@import url('https://fonts.googleapis.com/cs
       <div class="container center">
         <span class="eyebrow">Personnalisation</span>
         <h2>Habille tes compagnons</h2>
-        <p class="lead">Dépense tes pièces 🪙 et tes diamants 💎 à la boutique pour débloquer <strong>11 accessoires</strong> et les faire porter à ton avatar : renard, koala, chouette ou panda.</p>
+        <p class="lead">Dépense tes pièces 🪙 et tes diamants 💎 à la boutique pour débloquer <strong>des accessoires</strong> et <strong>8 tenues complètes</strong>, et habille ton avatar : renard, koala, chouette ou panda.</p>
       </div>
       <div class="container">
         <div class="acc-grid">
@@ -418,6 +431,21 @@ export const LANDING_HTML = `<style>@import url('https://fonts.googleapis.com/cs
           <div class="acc"><img src="/images/fox_super-cape.png" alt="Renard avec une super-cape"><div class="lbl">Super-cape</div></div>
           <div class="acc"><img src="/images/koala_halo.png" alt="Koala avec une auréole"><div class="lbl">Auréole</div></div>
           <div class="acc"><img src="/images/owl_sage-star.png" alt="Chouette avec l'étoile du sage"><div class="lbl">Étoile du sage</div></div>
+        </div>
+
+        <div class="cos-title">
+          <h3>… et 8 tenues complètes à débloquer 🧙</h3>
+          <p>Des panoplies entières pour transformer ton compagnon de la tête aux pieds !</p>
+        </div>
+        <div class="cos-grid">
+          <div class="cos"><img src="/images/fox_costume-chevalier.png" alt="Renard en tenue de chevalier"><div class="lbl">Chevalier</div><span class="rar">Bouclier · épée · cape</span></div>
+          <div class="cos"><img src="/images/owl_costume-magicien.png" alt="Chouette en tenue de magicien"><div class="lbl">Magicien</div><span class="rar">Chapeau étoilé · baguette</span></div>
+          <div class="cos"><img src="/images/panda_costume-hero.png" alt="Panda en tenue de super-héros"><div class="lbl">Super-héros</div><span class="rar">Cape · masque</span></div>
+          <div class="cos"><img src="/images/koala_costume-roi.png" alt="Koala en tenue royale"><div class="lbl">Roi</div><span class="rar">Couronne · cape</span></div>
+          <div class="cos"><img src="/images/panda_costume-intello.png" alt="Panda en tenue d'intello"><div class="lbl">Intello</div><span class="rar">Lunettes · nœud pap'</span></div>
+          <div class="cos"><img src="/images/koala_costume-cowboy.png" alt="Koala en tenue de cow-boy"><div class="lbl">Cow-boy</div><span class="rar">Chapeau · bandana</span></div>
+          <div class="cos"><img src="/images/owl_costume-dj.png" alt="Chouette en tenue de DJ"><div class="lbl">DJ</div><span class="rar">Casque · lunettes</span></div>
+          <div class="cos"><img src="/images/panda_costume-sage.png" alt="Panda en tenue du sage"><div class="lbl">Sage</div><span class="rar">Auréole · baguette</span></div>
         </div>
       </div>
     </section>
