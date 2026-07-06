@@ -106,7 +106,8 @@ export default function CgvPage() {
             L&apos;abonnement est conclu pour une durée d&apos;<strong>un mois, reconductible tacitement</strong>
             par périodes successives d&apos;un mois. Conformément aux articles L.215-1 et suivants et L.215-4 du
             Code de la consommation, le Client peut <strong>résilier à tout moment</strong>, sans frais ni
-            justification, depuis son espace compte ou par simple demande à{" "}
+            justification, depuis la page «&nbsp;Abonnement&nbsp;» du site (bouton «&nbsp;Gérer mon
+            abonnement&nbsp;») ou par simple demande à{" "}
             <a className="text-teal-600 hover:underline" href="mailto:kaidenvialle@gmail.com">
               kaidenvialle@gmail.com
             </a>

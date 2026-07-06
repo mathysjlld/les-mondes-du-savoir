@@ -39,7 +39,7 @@ export default function MentionsLegalesPage() {
             </li>
             <li>TVA : non applicable, article 293&nbsp;B du Code général des impôts</li>
             <li>
-              Adresse : communiquée sur demande à l&apos;adresse e-mail ci-dessous
+              Adresse : 172 rue Charles Germain, 69400 Villefranche-sur-Saône, France
             </li>
             <li>
               Adresse e-mail :{" "}
