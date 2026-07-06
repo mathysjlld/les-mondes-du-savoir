@@ -15,6 +15,13 @@
   --font-title: var(--font-fredoka), sans-serif;
 }
 
+html {
+  /* Réserve en permanence la place de la barre de défilement pour éviter que le
+     contenu centré (dont le footer) ne se décale entre une page qui défile et une
+     page qui ne défile pas. */
+  scrollbar-gutter: stable;
+}
+
 body {
   /* Charte Les mondes du Savoir : ambiance turquoise (avec une touche corail) */
   background-color: #e9fbf7;

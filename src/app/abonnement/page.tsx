@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import { ArrowLeft, Check, Sparkles, Lock } from "lucide-react";
@@ -71,12 +72,15 @@ export default function AbonnementPage() {
             ))}
           </ul>
 
-          {/* Prix (placeholder — l'offre définitive arrive avec le paiement) */}
+          {/* Prix de l'offre Famille (le paiement sécurisé Stripe est branché séparément) */}
           <div className="mt-6 rounded-2xl bg-amber-50 border border-amber-200 p-4 text-center">
             <span className="block text-xs font-bold uppercase tracking-wide text-amber-700">Offre Famille</span>
-            <span className="block text-3xl font-black text-amber-900 mt-1">Bientôt disponible</span>
+            <span className="block mt-1">
+              <span className="text-4xl font-black text-amber-900">7&nbsp;€</span>
+              <span className="text-lg font-black text-amber-900">/mois</span>
+            </span>
             <span className="block text-xs font-semibold text-amber-700/80 mt-1">
-              Le paiement sécurisé arrive très prochainement. Le prix te sera indiqué clairement avant toute souscription.
+              Sans engagement, résiliable à tout moment. Paiement sécurisé — arrive très prochainement.
             </span>
           </div>
 
@@ -100,6 +104,10 @@ export default function AbonnementPage() {
 
           <p className="mt-4 text-center text-[11px] text-slate-400 font-medium">
             En attendant, les premiers quizz de chaque univers restent <strong>gratuits</strong>&nbsp;: continue à jouer&nbsp;!
+          </p>
+          <p className="mt-2 text-center text-[11px] text-slate-400 font-medium">
+            En souscrivant, vous acceptez nos{" "}
+            <Link href="/cgv" className="text-teal-600 hover:underline">conditions générales de vente</Link>.
           </p>
         </div>
       </motion.div>

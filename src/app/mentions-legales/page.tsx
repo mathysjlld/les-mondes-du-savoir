@@ -3,7 +3,8 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Mentions légales — Les mondes du Savoir",
-  description: "Mentions légales du projet pédagogique Les mondes du Savoir.",
+  description:
+    "Mentions légales de Les mondes du Savoir : éditeur, directeur de la publication, hébergeur, propriété intellectuelle.",
 };
 
 export default function MentionsLegalesPage() {
@@ -14,88 +15,151 @@ export default function MentionsLegalesPage() {
       </Link>
 
       <h1 className="mt-4 text-3xl sm:text-4xl font-black text-teal-800">Mentions légales</h1>
-      <p className="mt-2 text-sm text-slate-500">Dernière mise à jour : juin 2026</p>
+      <p className="mt-2 text-sm text-slate-500">Dernière mise à jour : juillet 2026</p>
+
+      <div className="mt-4 rounded-xl bg-sky-50 border border-sky-200 p-4 text-sm text-sky-900">
+        Conformément à l&apos;article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans
+        l&apos;économie numérique (LCEN), les informations suivantes sont portées à la connaissance des
+        utilisateurs du site <strong>lesmondesdusavoir.fr</strong>.
+      </div>
 
       <section className="mt-8 space-y-6 text-slate-700 leading-relaxed">
         <div>
-          <h2 className="text-xl font-bold text-teal-700">Éditeur du site</h2>
+          <h2 className="text-xl font-bold text-teal-700">1. Éditeur du site</h2>
           <p className="mt-2">
-            <strong>Les mondes du Savoir</strong> est un projet professionnel à vocation pédagogique.
-            Il ne constitue pas une société commerciale et n&apos;a pas de but lucratif.
+            Le site et l&apos;application <strong>Les mondes du Savoir</strong> sont édités par&nbsp;:
           </p>
           <ul className="mt-2 list-disc pl-6 space-y-1">
-            <li>Développeurs / auteurs : <strong>Kaiden Vialle</strong> et <strong>Mathys Julliand</strong></li>
-            <li>Contact : <a className="text-teal-600 hover:underline" href="mailto:kaidenvialle@gmail.com">kaidenvialle@gmail.com</a></li>
-            <li>Statut : projet professionnel (à vocation pédagogique)</li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 className="text-xl font-bold text-teal-700">Directeur de la publication</h2>
-          <p className="mt-2">
-            Kaiden Vialle et Mathys Julliand, en qualité d&apos;auteurs du projet.
-          </p>
-        </div>
-
-        <div>
-          <h2 className="text-xl font-bold text-teal-700">Hébergement</h2>
-          <p className="mt-2">
-            Le site est hébergé par <strong>GitHub Pages</strong> :
-          </p>
-          <ul className="mt-2 list-disc pl-6 space-y-1">
-            <li>GitHub, Inc.</li>
-            <li>88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis</li>
             <li>
-              Site :{" "}
-              <a className="text-teal-600 hover:underline" href="https://github.com" target="_blank" rel="noreferrer">
-                github.com
+              Dénomination / exploitant :{" "}
+              <span className="rounded bg-amber-100 px-1 font-semibold text-amber-800">
+                Kaiden Vialle &amp; Mathys Julliand — [forme juridique à compléter&nbsp;: auto-entrepreneur, société…]
+              </span>
+            </li>
+            <li>
+              Siège / adresse :{" "}
+              <span className="rounded bg-amber-100 px-1 font-semibold text-amber-800">[adresse postale à compléter]</span>
+            </li>
+            <li>
+              Numéro SIREN / SIRET :{" "}
+              <span className="rounded bg-amber-100 px-1 font-semibold text-amber-800">[à compléter dès l&apos;immatriculation]</span>
+            </li>
+            <li>
+              N° de TVA intracommunautaire :{" "}
+              <span className="rounded bg-amber-100 px-1 font-semibold text-amber-800">[le cas échéant]</span>
+            </li>
+            <li>
+              Adresse e-mail :{" "}
+              <a className="text-teal-600 hover:underline" href="mailto:kaidenvialle@gmail.com">
+                kaidenvialle@gmail.com
               </a>
             </li>
           </ul>
         </div>
 
         <div>
-          <h2 className="text-xl font-bold text-teal-700">Propriété intellectuelle</h2>
+          <h2 className="text-xl font-bold text-teal-700">2. Directeur de la publication</h2>
           <p className="mt-2">
-            L&apos;ensemble des contenus présents sur Les mondes du Savoir (textes, quiz, illustrations, logo, code)
-            est protégé par le droit d&apos;auteur. Toute reproduction ou réutilisation sans autorisation
-            des auteurs est interdite, sauf à des fins pédagogiques ou de démonstration de ce projet.
+            Le directeur de la publication est <strong>Kaiden Vialle</strong>, co-éditeur du service, joignable
+            à l&apos;adresse{" "}
+            <a className="text-teal-600 hover:underline" href="mailto:kaidenvialle@gmail.com">
+              kaidenvialle@gmail.com
+            </a>
+            .
           </p>
         </div>
 
         <div>
-          <h2 className="text-xl font-bold text-teal-700">Données personnelles (RGPD)</h2>
+          <h2 className="text-xl font-bold text-teal-700">3. Hébergement</h2>
           <p className="mt-2">
-            Les mondes du Savoir ne collecte aucune donnée personnelle sur un serveur. Le profil de l&apos;enfant
-            (prénom, avatar, progression, pièces) est stocké <strong>uniquement en local</strong> dans le
-            navigateur de l&apos;appareil (localStorage) et n&apos;est jamais transmis à un tiers.
-            Aucune publicité ni traceur marketing n&apos;est utilisé. Vous pouvez effacer ces données à tout
-            moment depuis l&apos;espace parents ou en vidant le cache du navigateur.
+            Le site est déployé et hébergé par&nbsp;:
+          </p>
+          <ul className="mt-2 list-disc pl-6 space-y-1">
+            <li>
+              <strong>Vercel Inc.</strong> — 340 S Lemon Ave #4133, Walnut, CA 91789, États-Unis —{" "}
+              <a className="text-teal-600 hover:underline" href="https://vercel.com" target="_blank" rel="noreferrer">
+                vercel.com
+              </a>
+            </li>
+          </ul>
+          <p className="mt-2">
+            Les données de compte et de progression synchronisées dans le cloud (fonction optionnelle) sont
+            stockées via&nbsp;:
+          </p>
+          <ul className="mt-2 list-disc pl-6 space-y-1">
+            <li>
+              <strong>Supabase Inc.</strong> — 970 Toa Payoh North #07-04, Singapour —{" "}
+              <a className="text-teal-600 hover:underline" href="https://supabase.com" target="_blank" rel="noreferrer">
+                supabase.com
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 className="text-xl font-bold text-teal-700">4. Propriété intellectuelle</h2>
+          <p className="mt-2">
+            L&apos;ensemble des éléments composant Les mondes du Savoir (marque, nom, logo, textes, contenus
+            pédagogiques, quiz, illustrations, sons, interface et code source) est protégé par le droit
+            d&apos;auteur et le droit des marques. Ces éléments sont la propriété exclusive de l&apos;éditeur ou
+            font l&apos;objet d&apos;une autorisation d&apos;usage. Toute reproduction, représentation, modification
+            ou exploitation, totale ou partielle, sans l&apos;accord écrit préalable de l&apos;éditeur est
+            interdite et constitue une contrefaçon sanctionnée par les articles L.335-2 et suivants du Code de la
+            propriété intellectuelle.
           </p>
         </div>
 
         <div>
-          <h2 className="text-xl font-bold text-teal-700">Public visé</h2>
+          <h2 className="text-xl font-bold text-teal-700">5. Responsabilité</h2>
           <p className="mt-2">
-            Les mondes du Savoir s&apos;adresse aux enfants de 3 à 12 ans, sous la supervision d&apos;un parent ou
-            d&apos;un adulte responsable. Un espace parents protégé permet de régler le temps d&apos;écran et
-            les paramètres du compte.
+            L&apos;éditeur s&apos;efforce d&apos;assurer l&apos;exactitude et la mise à jour des informations
+            diffusées, ainsi que la disponibilité du service. Il ne saurait toutefois être tenu responsable des
+            erreurs, d&apos;une indisponibilité temporaire, ou de dommages résultant d&apos;une intrusion
+            frauduleuse d&apos;un tiers. L&apos;utilisation du service se fait sous la responsabilité de
+            l&apos;utilisateur&nbsp;; s&apos;agissant d&apos;un public d&apos;enfants, elle s&apos;effectue sous la
+            supervision d&apos;un parent ou d&apos;un adulte responsable.
           </p>
         </div>
 
         <div>
-          <h2 className="text-xl font-bold text-teal-700">Responsabilité</h2>
+          <h2 className="text-xl font-bold text-teal-700">6. Liens hypertextes</h2>
           <p className="mt-2">
-            Ce site étant un projet pédagogique, il est fourni « en l&apos;état », sans garantie de
-            disponibilité ni d&apos;absence d&apos;erreurs. Les auteurs ne sauraient être tenus responsables
-            d&apos;un éventuel dommage lié à son utilisation.
+            Le site peut contenir des liens vers des sites tiers. L&apos;éditeur n&apos;exerce aucun contrôle sur
+            ces sites et décline toute responsabilité quant à leur contenu ou à leur politique de protection des
+            données.
+          </p>
+        </div>
+
+        <div>
+          <h2 className="text-xl font-bold text-teal-700">7. Données personnelles &amp; cookies</h2>
+          <p className="mt-2">
+            Le traitement des données personnelles et l&apos;usage éventuel de cookies sont détaillés dans notre{" "}
+            <Link href="/politique-confidentialite" className="text-teal-600 hover:underline">
+              politique de confidentialité
+            </Link>
+            .
+          </p>
+        </div>
+
+        <div>
+          <h2 className="text-xl font-bold text-teal-700">8. Droit applicable</h2>
+          <p className="mt-2">
+            Les présentes mentions légales sont régies par le droit français. Pour toute question, vous pouvez
+            écrire à{" "}
+            <a className="text-teal-600 hover:underline" href="mailto:kaidenvialle@gmail.com">
+              kaidenvialle@gmail.com
+            </a>
+            .
           </p>
         </div>
       </section>
 
-      <div className="mt-10 text-sm">
+      <div className="mt-10 flex flex-wrap gap-4 text-sm">
+        <Link href="/politique-confidentialite" className="text-teal-600 font-semibold hover:underline">
+          Politique de confidentialité →
+        </Link>
         <Link href="/cgv" className="text-teal-600 font-semibold hover:underline">
-          Voir aussi : Conditions générales de vente →
+          Conditions générales de vente →
         </Link>
       </div>
     </main>

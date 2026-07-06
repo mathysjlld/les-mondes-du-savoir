@@ -215,17 +215,10 @@ export const LANDING_HTML = `<style>@import url('https://fonts.googleapis.com/cs
     /* Footer */
     footer { padding: 40px 0; text-align: center; color: var(--muted); font-weight: 600; }
     footer .logo { justify-content: center; margin-bottom: 12px; }
-    .legal { max-width: 820px; margin: 26px auto 0; text-align: left; }
-    .legal details { background: #fff; border: 1px solid #e2eeec; border-radius: 16px; padding: 0 20px; margin-bottom: 12px; box-shadow: var(--shadow); }
-    .legal summary { cursor: pointer; font-family: "Baloo 2", sans-serif; font-weight: 800; color: var(--ink); padding: 16px 0; list-style: none; font-size: 1.02rem; }
-    .legal summary::-webkit-details-marker { display: none; }
-    .legal summary::before { content: "▸ "; color: var(--indigo); }
-    .legal details[open] summary::before { content: "▾ "; }
-    .legal .body { padding: 0 0 18px; font-weight: 500; color: var(--muted); font-size: .92rem; }
-    .legal .body h4 { color: var(--ink); font-family: "Baloo 2", sans-serif; margin: 14px 0 4px; font-size: 1rem; }
-    .legal .body ul { padding-left: 20px; margin: 6px 0; }
-    .legal .body a { color: var(--indigo); font-weight: 700; }
-    .legal .note { background: #fff7e6; border: 1px solid #ffe2a8; border-radius: 12px; padding: 12px 14px; color: #8a6d1f; margin-bottom: 10px; }
+    .legal-links { max-width: 820px; margin: 22px auto 0; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 10px 14px; }
+    .legal-links a { color: var(--ink); font-family: "Baloo 2", sans-serif; font-weight: 700; text-decoration: none; }
+    .legal-links a:hover { color: var(--indigo); text-decoration: underline; }
+    .legal-links span { color: #cbd5d3; }
 
     /* Qui sommes-nous */
     .team { background: linear-gradient(180deg, #fff, #f1fbf9); }
@@ -527,43 +520,13 @@ export const LANDING_HTML = `<style>@import url('https://fonts.googleapis.com/cs
       <div class="logo"><img src="/logo.png" class="logo-img" alt="Logo Les mondes du Savoir" /><span class="brand">Les mondes du Savoir</span></div>
       <p>Application éducative et ludique. Projet professionnel.</p>
 
-      <div class="legal">
-        <details>
-          <summary>Mentions légales</summary>
-          <div class="body">
-            <h4>Éditeur</h4>
-            <p><strong>Les mondes du Savoir</strong> est un projet professionnel à vocation pédagogique.</p>
-            <ul>
-              <li>Auteurs / développeurs : <strong>Kaiden Vialle</strong> et <strong>Mathys Julliand</strong></li>
-              <li>Contact : <a href="mailto:kaidenvialle@gmail.com">kaidenvialle@gmail.com</a></li>
-              <li>Directeurs de la publication : Kaiden Vialle et Mathys Julliand</li>
-            </ul>
-            <h4>Hébergement</h4>
-            <p>Site hébergé par <strong>GitHub Pages</strong> : GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis (<a href="https://github.com" target="_blank" rel="noreferrer">github.com</a>).</p>
-            <h4>Propriété intellectuelle</h4>
-            <p>Les contenus (textes, quiz, illustrations, logo, code) sont protégés par le droit d'auteur. Toute reproduction sans l'accord des auteurs est interdite, sauf à des fins pédagogiques de présentation du projet.</p>
-            <h4>Données personnelles (RGPD)</h4>
-            <p>Les mondes du Savoir ne collecte aucune donnée sur un serveur. Le profil et la progression de l'enfant sont stockés uniquement en local dans le navigateur (localStorage). Aucune publicité ni traceur marketing.</p>
-          </div>
-        </details>
-
-        <details>
-          <summary>Conditions générales de vente</summary>
-          <div class="body">
-            <div class="note">Les mondes du Savoir est un projet professionnel à vocation pédagogique : l'application est <strong>gratuite</strong> et ne donne lieu à aucune vente réelle. Ces conditions sont fournies à titre d'exemple.</div>
-            <h4>Article 1 : Objet</h4>
-            <p>Les présentes CGV encadrent la mise à disposition de l'application et, le cas échéant, de futures offres payantes.</p>
-            <h4>Article 2 : Prix</h4>
-            <p>L'accès est actuellement entièrement gratuit. Tout prix futur serait affiché en euros TTC avant souscription.</p>
-            <h4>Article 3 : Monnaies virtuelles</h4>
-            <p>Les pièces 🪙, diamants 💎 et cristaux 💠 sont des monnaies virtuelles sans valeur monétaire réelle, ni achetables ni remboursables.</p>
-            <h4>Article 4 : Droit de rétractation</h4>
-            <p>Pour une éventuelle offre payante, un délai de rétractation de 14 jours s'appliquerait conformément au Code de la consommation.</p>
-            <h4>Article 5 : Droit applicable</h4>
-            <p>Les présentes conditions sont soumises au droit français. Contact : <a href="mailto:kaidenvialle@gmail.com">kaidenvialle@gmail.com</a>.</p>
-          </div>
-        </details>
-      </div>
+      <nav class="legal-links">
+        <a href="/mentions-legales">Mentions légales</a>
+        <span aria-hidden="true">•</span>
+        <a href="/politique-confidentialite">Politique de confidentialité</a>
+        <span aria-hidden="true">•</span>
+        <a href="/cgv">Conditions générales de vente</a>
+      </nav>
 
       <p style="margin-top:16px; font-size:.85rem;">© 2026 Les mondes du Savoir. Kaiden Vialle &amp; Mathys Julliand. Fait avec ❤️ pour apprendre en s'amusant.</p>
     </div>
