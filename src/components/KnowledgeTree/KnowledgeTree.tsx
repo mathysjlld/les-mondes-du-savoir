@@ -339,26 +339,31 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
 
       </svg>
 
-      {/* Couche des animaux : sprites VIDÉO transparents (WebM générés par Seedance)
-          → les ailes battent vraiment. Volants (papillon, phénix) = tournoient dans le
-          ciel ; terrestres = posés sur l'herbe. `inset-4` aligne cette couche sur le
-          repère du SVG (0–100). Les animaux du coin bas-gauche s'effacent quand
+      {/* Couche des animaux : PNG DÉTOURÉS (fond transparent) animés en CSS.
+          On n'utilise plus les sprites WebM : leur transparence n'est pas gérée par
+          Safari/iOS, ce qui affichait un vilain fond vert/rose par-dessus le cadre.
+          Le PNG s'affiche correctement partout. Volants (papillon, phénix) = tournoient
+          dans le ciel ; terrestres = posés sur l'herbe. `inset-4` aligne cette couche
+          sur le repère du SVG (0–100). Les animaux du coin bas-gauche s'effacent quand
           Barnabé arrose pour ne pas le gêner. */}
       <div className="absolute inset-4 z-[15] pointer-events-none">
         {TREE_ANIMALS.filter((a) => unlockedTreeAnimals.includes(a.id)).map((a) => {
           const cx = a.x + a.w / 2;
-          const cy = a.y + a.h / 2;
           const fly = a.mode === "fly";
           const fadeForBarnabe = a.mode === "ground" && cx < 45; // proche de Barnabé (bas-gauche)
           // Trajectoire de tournoiement pour les volants ; terrestres immobiles.
           const flyAnim = a.id === "tree-butterfly"
             ? { x: [0, 10, 14, 10, 0, -10, -14, -10, 0], y: [0, -6, -12, -18, -22, -18, -12, -6, 0] }
             : { x: [0, -9, 0, 9, 0], y: [0, -5, -9, -5, 0] };
-          // Sprite vidéo cadré à 2× (l'animal occupe ~50% du carré source), centré sur (cx,cy).
-          const side = 2 * Math.max(a.w, a.h);
-          const boxStyle = a.anim
-            ? { left: `${cx - side / 2}%`, top: `${cy - side / 2}%`, width: `${side}%`, height: `${side}%` }
-            : { left: `${a.x}%`, top: `${a.y}%`, width: `${a.w}%`, height: `${a.h}%` };
+          // Animation de l'image elle-même : pour les volants, le déplacement est déjà
+          // porté par la div (flyAnim) → on ne garde ici qu'un battement d'ailes
+          // (rotation / échelle) pour éviter un double déplacement. Terrestres = leur idle.
+          const imgIdle = fly
+            ? (a.id === "tree-phoenix"
+                ? { rotate: [0, -5, 0, 5, 0], scale: [1, 1.06, 1, 1.06, 1] }
+                : { rotate: [0, 12, 0, -12, 0] })
+            : a.idle;
+          const boxStyle = { left: `${a.x}%`, top: `${a.y}%`, width: `${a.w}%`, height: `${a.h}%` };
           return (
             <motion.div
               key={a.id}
@@ -374,26 +379,14 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
               whileHover={{ scale: 1.15 }}
               whileTap={{ scale: 1.3 }}
             >
-              {a.anim ? (
-                <video
-                  src={asset(`/images/${a.img.replace(".png", ".webm")}`)}
-                  poster={asset(`/images/${a.img}`)}
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  className="w-full h-full object-contain pointer-events-none select-none drop-shadow-sm"
-                />
-              ) : (
-                <motion.img
-                  src={asset(`/images/${a.img}`)}
-                  alt=""
-                  animate={a.idle}
-                  transition={{ duration: a.dur, repeat: Infinity, ease: "easeInOut", delay: a.delay || 0 }}
-                  className="w-full h-full object-contain pointer-events-none select-none drop-shadow-sm"
-                  style={{ transformOrigin: "bottom center" }}
-                />
-              )}
+              <motion.img
+                src={asset(`/images/${a.img}`)}
+                alt=""
+                animate={imgIdle}
+                transition={{ duration: a.dur, repeat: Infinity, ease: "easeInOut", delay: a.delay || 0 }}
+                className="w-full h-full object-contain pointer-events-none select-none drop-shadow-sm"
+                style={{ transformOrigin: fly ? "center" : "bottom center" }}
+              />
             </motion.div>
           );
         })}
