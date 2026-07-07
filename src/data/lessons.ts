@@ -3588,7 +3588,7 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Lequel de ces animaux du désert est un mammifère rongeur originaire d'Amérique du Nord, capable de survivre sans jamais boire d'eau liquide ?",
               "options": [
-                "Le gerbille de Mongolie",
+                "La gerbille de Mongolie",
                 "Le rat-kangourou",
                 "Le fennec",
                 "L'écureuil du Cap"
@@ -3804,8 +3804,8 @@ export const UNIVERSES: Record<string, Universe> = {
               "emoji": "🦴"
             },
             {
-              "title": "Le T-Rex et les vélocraptors",
-              "text": "Le T-Rex était un prédateur bipède dont les membres antérieurs avaient régressé au fil de l'évolution car il utilisait principalement sa puissante mâchoire pour capturer et tuer ses proies, rendant ses bras superflus. Le vélociraptor, contrairement à son image populaire, n'était pas un grand lézard écailleux mais un animal recouvert de plumes, atteignant seulement la taille d'une grande dinde (environ 60 cm de hauteur). Les vélocraptors chassaient en groupe, ce qui leur permettait de coordonner leurs attaques pour épuiser et encercler des proies impossibles à neutraliser individuellement.",
+              "title": "Le T-Rex et les vélociraptors",
+              "text": "Le T-Rex était un prédateur bipède dont les membres antérieurs avaient régressé au fil de l'évolution car il utilisait principalement sa puissante mâchoire pour capturer et tuer ses proies, rendant ses bras superflus. Le vélociraptor, contrairement à son image populaire, n'était pas un grand lézard écailleux mais un animal recouvert de plumes, atteignant seulement la taille d'une grande dinde (environ 60 cm de hauteur). Les vélociraptors chassaient en groupe, ce qui leur permettait de coordonner leurs attaques pour épuiser et encercler des proies impossibles à neutraliser individuellement.",
               "emoji": "🦖"
             },
             {
@@ -3839,12 +3839,12 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Le Diplodocus appartenait au groupe des sauropodes. Quelle caractéristique commune définit ce groupe de dinosaures ?",
               "options": [
-                "Un long cou, un long queue, quatre membres massifs et un régime strictement herbivore",
+                "Un long cou, une longue queue, quatre membres massifs et un régime strictement herbivore",
                 "Des cornes frontales, une collerette osseuse et un régime omnivore",
                 "Des plumes, des membres antérieurs en ailes et un régime carnivore",
                 "Une posture bipède, des dents en forme de lame et une locomotion rapide"
               ],
-              "correctAnswer": "Un long cou, un long queue, quatre membres massifs et un régime strictement herbivore",
+              "correctAnswer": "Un long cou, une longue queue, quatre membres massifs et un régime strictement herbivore",
               "isSpecial": false
             },
             {
@@ -3870,7 +3870,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Les vélocraptors chassaient en groupe. Quel avantage évolutif ce comportement de chasse collective procure-t-il face à des proies plus grandes ?",
+              "question": "Les vélociraptors chassaient en groupe. Quel avantage évolutif ce comportement de chasse collective procure-t-il face à des proies plus grandes ?",
               "options": [
                 "Il permet de coordonner les attaques pour épuiser et encercler des proies impossibles à neutraliser individuellement",
                 "Il permet à chaque individu de manger davantage car les proies de groupe sont plus grasses",
@@ -6836,7 +6836,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "La formation des nuages et la coalescence",
-              "text": "En altitude, la vapeur d'eau se refroidit et se condense sur de minuscules poussières appelées noyaux de condensation, formant ainsi des nuages. Dans le nuage, les microgouttelettes se heurtent et fusionnent : c'est la coalescence. Quand une goutte atteint environ 0,5 mm, elle devient assez lourde pour vainqure les courants ascendants et tombe en pluie.",
+              "text": "En altitude, la vapeur d'eau se refroidit et se condense sur de minuscules poussières appelées noyaux de condensation, formant ainsi des nuages. Dans le nuage, les microgouttelettes se heurtent et fusionnent : c'est la coalescence. Quand une goutte atteint environ 0,5 mm, elle devient assez lourde pour vaincre les courants ascendants et tombe en pluie.",
               "emoji": "☁️"
             },
             {
@@ -8180,7 +8180,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Les types d'éruptions : volcans rouges et volcans gris",
-              "text": "On distingue deux grands types d'éruptions. Les volcans rouges produisent une lave très fluide qui s'écoule lentement sur de longues distances, formant des dômes larges et peu pentus appelés volcans boucliers (exemple : Hawaï). Les volcans gris ont une lave visqueuse qui obstrue la cheminée : la pression s'accumule jusqu'à une explosion violente projetant des cendres, des gaz et des nuages pyrocastiques. L'émission d'un important panache de fumée grise peut annoncer le réveil d'un tel volcan.",
+              "text": "On distingue deux grands types d'éruptions. Les volcans rouges produisent une lave très fluide qui s'écoule lentement sur de longues distances, formant des dômes larges et peu pentus appelés volcans boucliers (exemple : Hawaï). Les volcans gris ont une lave visqueuse qui obstrue la cheminée : la pression s'accumule jusqu'à une explosion violente projetant des cendres, des gaz et des nuages pyroclastiques. L'émission d'un important panache de fumée grise peut annoncer le réveil d'un tel volcan.",
               "emoji": "💨"
             },
             {
@@ -8782,7 +8782,7 @@ export const UNIVERSES: Record<string, Universe> = {
           "cards": [
             {
               "title": "L'évaporation : moteur du cycle de l'eau",
-              "text": "Le cycle de l'eau débute par l'évaporation, le passage de l'eau liquide à l'état gazeux (vapeur d'eau) sous l'effet de la chaleur. L'énergie solaire est la principale responsable de ce phénomène : elle chauffe la surface des océans, des lacs et des rivières, provoquant l'évaporation de d'immenses quantités d'eau. Ce cycle est dit « fermé » car la quantité totale d'eau sur Terre reste constante, l'eau changeant seulement d'état et de lieu.",
+              "text": "Le cycle de l'eau débute par l'évaporation, le passage de l'eau liquide à l'état gazeux (vapeur d'eau) sous l'effet de la chaleur. L'énergie solaire est la principale responsable de ce phénomène : elle chauffe la surface des océans, des lacs et des rivières, provoquant l'évaporation d'immenses quantités d'eau. Ce cycle est dit « fermé » car la quantité totale d'eau sur Terre reste constante, l'eau changeant seulement d'état et de lieu.",
               "emoji": "☀️"
             },
             {
@@ -9236,7 +9236,7 @@ export const UNIVERSES: Record<string, Universe> = {
           "cards": [
             {
               "title": "La répartition de l'eau sur Terre",
-              "text": "L'eau couvre plus de 70 % de la surface terrestre, mais 97 % de cette eau est salée et inutilisable directement par l'homme. Parmi l'eau douce restante, environ 70 % est immobilisée sous forme de glace dans les calottes polaires et les glaciers. L'eau douce liquide de surface — lacs et fleuves — ne représente donc moins de 1 % de toute l'eau de la Terre, ce qui en fait une ressource extrêmement rare et précieuse.",
+              "text": "L'eau couvre plus de 70 % de la surface terrestre, mais 97 % de cette eau est salée et inutilisable directement par l'homme. Parmi l'eau douce restante, environ 70 % est immobilisée sous forme de glace dans les calottes polaires et les glaciers. L'eau douce liquide de surface — lacs et fleuves — représente donc moins de 1 % de toute l'eau de la Terre, ce qui en fait une ressource extrêmement rare et précieuse.",
               "emoji": "🌍"
             },
             {
@@ -10752,7 +10752,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Le sommeil profond : repos du corps",
-              "text": "Le sommeil lent profond est la phase où le corps se repose principalement sur le plan physique. C'est pendant cette phase que l'hormone de croissance est secrétée. Cette hormone aide les enfants et les adolescents à grandir et à réparer leurs cellules. C'est pourquoi bien dormir est particulièrement important quand on est jeune.",
+              "text": "Le sommeil lent profond est la phase où le corps se repose principalement sur le plan physique. C'est pendant cette phase que l'hormone de croissance est sécrétée. Cette hormone aide les enfants et les adolescents à grandir et à réparer leurs cellules. C'est pourquoi bien dormir est particulièrement important quand on est jeune.",
               "emoji": "💪"
             },
             {
@@ -10767,7 +10767,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Pourquoi bien dormir est vital ?",
-              "text": "Un bon sommeil est essentiel pour la santé, la croissance et l'apprentissage. C'est pendant le sommeil profond que l'hormone de croissance est secrétée, permettant de grandir et de réparer les cellules. Le cerveau consolide les souvenirs et les connaissances pendant la nuit. Les enfants et les adolescents ont besoin de plus de sommeil que les adultes car leur corps et leur cerveau grandissent encore.",
+              "text": "Un bon sommeil est essentiel pour la santé, la croissance et l'apprentissage. C'est pendant le sommeil profond que l'hormone de croissance est sécrétée, permettant de grandir et de réparer les cellules. Le cerveau consolide les souvenirs et les connaissances pendant la nuit. Les enfants et les adolescents ont besoin de plus de sommeil que les adultes car leur corps et leur cerveau grandissent encore.",
               "emoji": "⭐"
             }
           ],
@@ -12954,10 +12954,10 @@ export const UNIVERSES: Record<string, Universe> = {
               "options": [
                 "Un organe creux constitué principalement de tissu osseux",
                 "Un organe plein composé de tissu nerveux",
-                "Un muscle creux qui se contracte rhythmiquement",
+                "Un muscle creux qui se contracte rythmiquement",
                 "Une glande qui secrète des hormones dans le sang"
               ],
-              "correctAnswer": "Un muscle creux qui se contracte rhythmiquement",
+              "correctAnswer": "Un muscle creux qui se contracte rythmiquement",
               "isSpecial": false
             },
             {
@@ -13295,7 +13295,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Les types de dents et leurs rôles",
-              "text": "Les incisives (devant) coupent les aliments ; les canines, pointues, déchirent et dépècent les aliments ; les prémolaires broient grossièrement ; les molaires, à l'arrière, broyent finement les aliments en petits morceaux. Chaque forme de dent est adaptée à une fonction précise dans la mastication.",
+              "text": "Les incisives (devant) coupent les aliments ; les canines, pointues, déchirent et dépècent les aliments ; les prémolaires broient grossièrement ; les molaires, à l'arrière, broient finement les aliments en petits morceaux. Chaque forme de dent est adaptée à une fonction précise dans la mastication.",
               "emoji": "🍎"
             },
             {
@@ -16246,7 +16246,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "De la lumière invisible et des ondes radio uniquement",
                 "Des métaux et des poussières qui peuvent former de nouvelles planètes",
                 "Des trous noirs en serie",
-                "Du gaz d'hydrogenepur"
+                "Du gaz d'hydrogène pur"
               ],
               "correctAnswer": "Des métaux et des poussières qui peuvent former de nouvelles planètes",
               "isSpecial": false
@@ -17286,7 +17286,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "La Terre tournerait deux fois plus vite sur elle-même",
                 "Il n'y aurait plus de saisons, et chaque point recevrait la même quantité de chaleur toute l'année",
                 "Les jours et les nuits auraient exactement 12 heures partout et en tout temps, sans aucune variation saisonnière",
-                "Les oceáns gèleraient intégralement car le Soleil ne réchaufferait plus les pôles"
+                "Les océans gèleraient intégralement car le Soleil ne réchaufferait plus les pôles"
               ],
               "correctAnswer": "Les jours et les nuits auraient exactement 12 heures partout et en tout temps, sans aucune variation saisonnière",
               "isSpecial": true
@@ -18002,7 +18002,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Pourquoi une fusée doit-elle emporter son propre comburant (oxygydant) et ne peut pas utiliser l'air ambiant comme un avion à réaction ?",
+              "question": "Pourquoi une fusée doit-elle emporter son propre comburant (oxydant) et ne peut pas utiliser l'air ambiant comme un avion à réaction ?",
               "options": [
                 "Il n'y a pas d'oxygène dans l'espace pour alimenter la combustion",
                 "L'air ambiant contient trop d'azote qui endommage les moteurs",
@@ -18523,7 +18523,7 @@ export const UNIVERSES: Record<string, Universe> = {
           "cards": [
             {
               "title": "La naissance des étoiles dans les nébuleuses",
-              "text": "Une étoile naît au sein d'une nébuleuse, un immense nuage de gaz et de poussières interstellaires. Sous l'effet de la gravité, ce nuage se contracte progressivement, formant une protétoile de plus en plus dense et chaude. Lorsque la température au cœur atteint plusieurs millions de degrés, les réactions de fusion nucléaire s'amorcent et l'étoile commence à briller.",
+              "text": "Une étoile naît au sein d'une nébuleuse, un immense nuage de gaz et de poussières interstellaires. Sous l'effet de la gravité, ce nuage se contracte progressivement, formant une protoétoile de plus en plus dense et chaude. Lorsque la température au cœur atteint plusieurs millions de degrés, les réactions de fusion nucléaire s'amorcent et l'étoile commence à briller.",
               "emoji": "🌫️"
             },
             {
@@ -24176,7 +24176,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "emoji": "🇳🇴"
             },
             {
-              "title": "Les climates et paysages d'Europe",
+              "title": "Les climats et paysages d'Europe",
               "text": "L'Europe offre des paysages très variés selon les régions. Au nord, on trouve des pays enneigés et froids comme la Norvège et la Suède. Au sud, le climat est plus chaud et ensoleillé, ce qui favorise la culture de l'olivier et de la vigne en Espagne et en Italie.",
               "emoji": "🏔️"
             }
@@ -38202,7 +38202,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Impressionnisme, Cézanne et Abstraction",
-              "text": "Les Impressionnistes (Monet, Renoir, fin XIXe siècle) révolutionnent la technique en appliquant de petites touches de couleur pure, juxtaposées, pour capturer la lumière fugace et les variations atmosphériques plutôt qu'un dessin précis. Paul Cézanne, post-impressionniste, franchit une étape décisive en structurant ses compositions en formes géométriques (cônes, sphères, cylindres) et volumes solides, ouvrant la voie au Cubisme. Au XXe siècle, l'Abstraction pousse cette logique à l'extrême en renounçant totalement à la représentation du monde visible, ne travaillant plus que formes, couleurs et matières.",
+              "text": "Les Impressionnistes (Monet, Renoir, fin XIXe siècle) révolutionnent la technique en appliquant de petites touches de couleur pure, juxtaposées, pour capturer la lumière fugace et les variations atmosphériques plutôt qu'un dessin précis. Paul Cézanne, post-impressionniste, franchit une étape décisive en structurant ses compositions en formes géométriques (cônes, sphères, cylindres) et volumes solides, ouvrant la voie au Cubisme. Au XXe siècle, l'Abstraction pousse cette logique à l'extrême en renonçant totalement à la représentation du monde visible, ne travaillant plus que formes, couleurs et matières.",
               "emoji": "🎨"
             }
           ],
