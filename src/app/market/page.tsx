@@ -177,8 +177,9 @@ export default function Market() {
   // sa charrette de pièces. La vidéo dépend du type d'avatar (renard/panda/koala/hibou).
   const [showIntro, setShowIntro] = useState(true);
   // Filet de sécurité : on referme l'intro même si la vidéo ne déclenche pas onEnded.
+  // 9,5 s pour couvrir la plus longue vidéo (avatar hibou ≈ 8 s) sans la couper.
   useEffect(() => {
-    const t = setTimeout(() => setShowIntro(false), 6000);
+    const t = setTimeout(() => setShowIntro(false), 9500);
     return () => clearTimeout(t);
   }, []);
 
@@ -327,7 +328,9 @@ export default function Market() {
       }, 2500);
     } else {
       playSound("incorrect");
-      setDialogue(`Oh, il te manque un peu d'or pour t'acheter cela... Va lire des leçons ! 🪙`);
+      const cur = (item as { currency?: "coins" | "diamonds" | "crystals" }).currency;
+      const manque = cur === "crystals" ? "de cristaux 💠" : cur === "diamonds" ? "de diamants 💎" : "d'or 🪙";
+      setDialogue(`Oh, il te manque un peu ${manque} pour t'acheter cela... Va lire des leçons !`);
     }
   };
 

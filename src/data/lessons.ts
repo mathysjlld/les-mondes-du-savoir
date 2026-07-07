@@ -286,14 +286,14 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Si une girafe adulte mesure en moyenne 5 metres de haut et que son cou représente environ un tiers de sa hauteur totale, quelle est la longueur approximative de son cou ?",
+              "question": "Si une girafe adulte mesure en moyenne 5 mètres de haut et que son cou représente environ un tiers de sa hauteur totale, quelle est la longueur approximative de son cou ?",
               "options": [
-                "Environ 1 metre",
-                "Environ 1,5 metre",
-                "Environ 2 metres",
-                "Environ 2,5 metres"
+                "Environ 1 mètre",
+                "Environ 1,5 mètre",
+                "Environ 2 mètres",
+                "Environ 2,5 mètres"
               ],
-              "correctAnswer": "Environ 1,5 metre",
+              "correctAnswer": "Environ 1,5 mètre",
               "isSpecial": true
             }
           ]
@@ -1328,7 +1328,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "options": [
                 "Sur le sol de la foret",
                 "Dans les terriers",
-                "Pres des rivieres",
+                "Pres des rivières",
                 "Dans les grands arbres"
               ],
               "correctAnswer": "Dans les grands arbres",
@@ -1766,7 +1766,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "En suivant les courants d'air chauds",
                 "En memorisant les paysages et les reliefs",
                 "En etant sensibles au champ magnetique de la Terre",
-                "En suivant les autres membres de leur espece"
+                "En suivant les autres membres de leur espèce"
               ],
               "correctAnswer": "En etant sensibles au champ magnetique de la Terre",
               "isSpecial": false
@@ -1783,14 +1783,14 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Combien de kilometres environ la Sterne arctique parcourt-elle chaque annee lors de son aller-retour migratoire ?",
+              "question": "Combien de kilomètres environ la Sterne arctique parcourt-elle chaque annee lors de son aller-retour migratoire ?",
               "options": [
-                "Environ 20 000 kilometres",
-                "Environ 40 000 kilometres",
-                "Environ 70 000 kilometres",
-                "Environ 100 000 kilometres"
+                "Environ 20 000 kilomètres",
+                "Environ 40 000 kilomètres",
+                "Environ 70 000 kilomètres",
+                "Environ 100 000 kilomètres"
               ],
-              "correctAnswer": "Environ 70 000 kilometres",
+              "correctAnswer": "Environ 70 000 kilomètres",
               "isSpecial": false
             },
             {
@@ -1818,12 +1818,12 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Si un oiseau migrateur part du pole Nord en direction du pole Sud, puis revient au pole Nord, et que la Sterne arctique parcourt environ 70 000 km pour ce trajet complet, quelle distance correspond approximativement a un seul sens du voyage ?",
               "options": [
-                "Environ 17 500 kilometres",
-                "Environ 35 000 kilometres",
-                "Environ 50 000 kilometres",
-                "Environ 70 000 kilometres"
+                "Environ 17 500 kilomètres",
+                "Environ 35 000 kilomètres",
+                "Environ 50 000 kilomètres",
+                "Environ 70 000 kilomètres"
               ],
-              "correctAnswer": "Environ 35 000 kilometres",
+              "correctAnswer": "Environ 35 000 kilomètres",
               "isSpecial": true
             }
           ]
@@ -1898,7 +1898,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Quel role jouent les plumes dans la regulation de la temperature du corps d'un oiseau ?",
+              "question": "Quel role jouent les plumes dans la regulation de la température du corps d'un oiseau ?",
               "options": [
                 "Elles refroidissent l'oiseau en evacuant la chaleur",
                 "Elles gardent la chaleur et protegeent du froid",
@@ -1933,12 +1933,12 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "A quelle distance un aigle peut-il reperer une souris au sol lorsqu'il vole en altitude ?",
               "options": [
-                "A environ 100 metres",
-                "A environ 500 metres",
-                "A plus de 1 kilometre",
-                "A environ 5 kilometres"
+                "A environ 100 mètres",
+                "A environ 500 mètres",
+                "A plus de 1 kilomètre",
+                "A environ 5 kilomètres"
               ],
-              "correctAnswer": "A plus de 1 kilometre",
+              "correctAnswer": "A plus de 1 kilomètre",
               "isSpecial": false
             },
             {
@@ -1964,14 +1964,14 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Si un faucon pelerin possede une vue environ huit fois plus percante que celle d'un humain, et qu'un humain distingue un objet a 200 metres, a quelle distance approximative le faucon peut-il distinguer ce meme objet ?",
+              "question": "Si un faucon pelerin possede une vue environ huit fois plus percante que celle d'un humain, et qu'un humain distingue un objet a 200 mètres, a quelle distance approximative le faucon peut-il distinguer ce meme objet ?",
               "options": [
-                "Environ 400 metres",
-                "Environ 800 metres",
-                "Environ 1 600 metres",
-                "Environ 3 200 metres"
+                "Environ 400 mètres",
+                "Environ 800 mètres",
+                "Environ 1 600 mètres",
+                "Environ 3 200 mètres"
               ],
-              "correctAnswer": "Environ 1 600 metres",
+              "correctAnswer": "Environ 1 600 mètres",
               "isSpecial": true
             }
           ]
@@ -2068,14 +2068,14 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "A partir de quelle profondeur environ parle-t-on de zone aphotique, ou la lumiere du soleil ne penetre plus jamais ?",
+              "question": "A partir de quelle profondeur environ parle-t-on de zone aphotique, ou la lumière du soleil ne penetre plus jamais ?",
               "options": [
-                "200 metres",
-                "500 metres",
-                "1000 metres",
-                "3000 metres"
+                "200 mètres",
+                "500 mètres",
+                "1000 mètres",
+                "3000 mètres"
               ],
-              "correctAnswer": "1000 metres",
+              "correctAnswer": "1000 mètres",
               "isSpecial": false
             },
             {
@@ -2092,10 +2092,10 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Lors de la cryptobiose, par quoi les tardigrades remplacent-ils l'eau dans leurs cellules pour proteger leurs structures ?",
               "options": [
-                "Des proteines resistantes",
+                "Des protéines resistantes",
                 "Des sucres protecteurs vitreux",
                 "Des lipides anti-gel",
-                "Des mineraux cristallises"
+                "Des minéraux cristallises"
               ],
               "correctAnswer": "Des sucres protecteurs vitreux",
               "isSpecial": false
@@ -2112,14 +2112,14 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "La bioluminescence repose sur une reaction chimique precise : la luciferine est oxydee grace a une enzyme specifique. Laquelle, et quelle est la particularite de la lumiere produite par rapport a une flamme ?",
+              "question": "La bioluminescence repose sur une réaction chimique precise : la luciferine est oxydee grace a une enzyme specifique. Laquelle, et quelle est la particularite de la lumière produite par rapport a une flamme ?",
               "options": [
-                "La luciferase ; cette lumiere est dite froide car elle ne produit pas de chaleur",
-                "La peroxydase ; cette lumiere est ultraviolette et invisible a l'oeil nu",
-                "La luciferase ; cette lumiere est chaude et permet de rechauffer l'animal dans les eaux froides",
-                "L'oxydase ; cette lumiere est produite uniquement en absence d'oxygene"
+                "La luciferase ; cette lumière est dite froide car elle ne produit pas de chaleur",
+                "La peroxydase ; cette lumière est ultraviolette et invisible a l'oeil nu",
+                "La luciferase ; cette lumière est chaude et permet de rechauffer l'animal dans les eaux froides",
+                "L'oxydase ; cette lumière est produite uniquement en absence d'oxygene"
               ],
-              "correctAnswer": "La luciferase ; cette lumiere est dite froide car elle ne produit pas de chaleur",
+              "correctAnswer": "La luciferase ; cette lumière est dite froide car elle ne produit pas de chaleur",
               "isSpecial": true
             }
           ]
@@ -2198,10 +2198,10 @@ export const UNIVERSES: Record<string, Universe> = {
               "options": [
                 "La Lune pleine",
                 "La constellation d'Orion",
-                "Le centre de rotation des constellations, près de l'Etoile Polaire",
+                "Le centre de rotation des constellations, près de l'Étoile Polaire",
                 "La position de Mars dans le ciel"
               ],
-              "correctAnswer": "Le centre de rotation des constellations, près de l'Etoile Polaire",
+              "correctAnswer": "Le centre de rotation des constellations, près de l'Étoile Polaire",
               "isSpecial": false
             },
             {
@@ -2856,12 +2856,12 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Chez les caméléons, les deux yeux peuvent se mouvoir de manière totalement indépendante l'un de l'autre. Quel avantage adaptatif majeur cela procure-t-il lors de la chasse ?",
               "options": [
-                "Un champ de vision couvrant presque 360 degres permettant de localiser une proie et surveiller les predateurs simultanement",
+                "Un champ de vision couvrant presque 360 degrés permettant de localiser une proie et surveiller les predateurs simultanement",
                 "Une vision binoculaire permanente pour estimer precisement la distance de toutes les proies",
-                "La capacite de voir dans deux longueurs d'onde differentes de la lumiere en meme temps",
+                "La capacite de voir dans deux longueurs d'onde différentes de la lumière en meme temps",
                 "Une acceleration du traitement neuronal des images pour reagir plus vite aux mouvements"
               ],
-              "correctAnswer": "Un champ de vision couvrant presque 360 degres permettant de localiser une proie et surveiller les predateurs simultanement",
+              "correctAnswer": "Un champ de vision couvrant presque 360 degrés permettant de localiser une proie et surveiller les predateurs simultanement",
               "isSpecial": true
             }
           ]
@@ -4450,7 +4450,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Quelle est la difference fondamentale entre un animal endotherme et un animal ectotherme concernant la regulation de leur temperature corporelle ?",
+              "question": "Quelle est la différence fondamentale entre un animal endotherme et un animal ectotherme concernant la regulation de leur température corporelle ?",
               "options": [
                 "L'endotherme produit sa propre chaleur par son metabolisme, l'ectotherme depend de sources exterieures",
                 "L'endotherme se refroidit en s'exposant au soleil, l'ectotherme produit de la chaleur interne",
@@ -4461,18 +4461,18 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "A partir de quelle profondeur oceanique se trouve la zone aphotique, dans laquelle la lumiere solaire ne penetre jamais ?",
+              "question": "A partir de quelle profondeur oceanique se trouve la zone aphotique, dans laquelle la lumière solaire ne penetre jamais ?",
               "options": [
-                "Au-dela de 1000 metres",
-                "Au-dela de 200 metres",
-                "Au-dela de 500 metres",
-                "Au-dela de 3000 metres"
+                "Au-dela de 1000 mètres",
+                "Au-dela de 200 mètres",
+                "Au-dela de 500 mètres",
+                "Au-dela de 3000 mètres"
               ],
-              "correctAnswer": "Au-dela de 1000 metres",
+              "correctAnswer": "Au-dela de 1000 mètres",
               "isSpecial": false
             },
             {
-              "question": "Dans la bioluminescence, quelle molecule est oxydee pour produire de la lumiere, et grace a quelle enzyme ce processus se realise-t-il ?",
+              "question": "Dans la bioluminescence, quelle molécule est oxydee pour produire de la lumière, et grace a quelle enzyme ce processus se realise-t-il ?",
               "options": [
                 "La luciferine est oxydee grace a la luciferase",
                 "La luciferase est oxydee grace a la luciferine",
@@ -4483,14 +4483,14 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Pourquoi dit-on que la lumiere produite par bioluminescence est une lumiere dite froide ?",
+              "question": "Pourquoi dit-on que la lumière produite par bioluminescence est une lumière dite froide ?",
               "options": [
-                "Parce qu'elle ne produit pas de chaleur lors de la reaction chimique",
-                "Parce qu'elle ne peut etre produite qu'a des temperatures tres basses",
+                "Parce qu'elle ne produit pas de chaleur lors de la réaction chimique",
+                "Parce qu'elle ne peut etre produite qu'a des températures tres basses",
                 "Parce qu'elle est uniquement visible dans les eaux glaciaires",
                 "Parce qu'elle refroidit activement les cellules de l'animal qui la genere"
               ],
-              "correctAnswer": "Parce qu'elle ne produit pas de chaleur lors de la reaction chimique",
+              "correctAnswer": "Parce qu'elle ne produit pas de chaleur lors de la réaction chimique",
               "isSpecial": false
             },
             {
@@ -4508,18 +4508,18 @@ export const UNIVERSES: Record<string, Universe> = {
               "question": "Lors de la cryptobiose, par quelle substance les tardigrades remplacent-ils l'eau de leurs cellules pour proteger leurs structures internes ?",
               "options": [
                 "Par des sucres protecteurs vitreux",
-                "Par des proteines de choc thermique",
+                "Par des protéines de choc thermique",
                 "Par du glycerol en solution",
-                "Par une resine minerale produite par les glandes cutanees"
+                "Par une resine minérale produite par les glandes cutanees"
               ],
               "correctAnswer": "Par des sucres protecteurs vitreux",
               "isSpecial": false
             },
             {
-              "question": "Un reptile est classe comme ectotherme. Quel comportement specifique lui permet de monter sa temperature corporelle sans metabolisme interne eleve ?",
+              "question": "Un reptile est classe comme ectotherme. Quel comportement specifique lui permet de monter sa température corporelle sans metabolisme interne eleve ?",
               "options": [
                 "S'exposer au soleil sur une surface chaude",
-                "Augmenter la frequence de ses battements cardiaques",
+                "Augmenter la fréquence de ses battements cardiaques",
                 "Transpirer abondamment pour activer la circulation sanguine",
                 "Se nourrir de proies a sang chaud pour absorber leur chaleur"
               ],
@@ -4527,12 +4527,12 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Un tardigrade en cryptobiose est expose au vide spatial et a une temperature de -272°C. Laquelle des affirmations suivantes decrit correctement son etat et ses capacites de survie dans ces conditions extremes ?",
+              "question": "Un tardigrade en cryptobiose est expose au vide spatial et a une température de -272°C. Laquelle des affirmations suivantes decrit correctement son etat et ses capacites de survie dans ces conditions extremes ?",
               "options": [
                 "Son metabolisme est totalement arrete, ses cellules sont protegees par des sucres vitreux et il peut se reveiller des que de l'eau liquide reapparait",
-                "Son metabolisme ralentit de 50%, il maintient une temperature interne stable grace a une enzyme anticongelante",
-                "Il entre en hibernation profonde avec un metabolisme residuel et ne peut survivre qu'a des temperatures superieures a -100°C",
-                "Ses cellules cristallisent completement mais les proteines ne sont pas denaturees, lui permettant une regeneration lente sur plusieurs annees"
+                "Son metabolisme ralentit de 50%, il maintient une température interne stable grace a une enzyme anticongelante",
+                "Il entre en hibernation profonde avec un metabolisme residuel et ne peut survivre qu'a des températures superieures a -100°C",
+                "Ses cellules cristallisent completement mais les protéines ne sont pas denaturees, lui permettant une regeneration lente sur plusieurs annees"
               ],
               "correctAnswer": "Son metabolisme est totalement arrete, ses cellules sont protegees par des sucres vitreux et il peut se reveiller des que de l'eau liquide reapparait",
               "isSpecial": true
@@ -5485,12 +5485,12 @@ export const UNIVERSES: Record<string, Universe> = {
           ],
           "quiz": [
             {
-              "question": "Pourquoi la Terre est-elle souvent appelée la planete bleue ?",
+              "question": "Pourquoi la Terre est-elle souvent appelée la planète bleue ?",
               "options": [
-                "Parce que son atmosphere est bleue",
+                "Parce que son atmosphère est bleue",
                 "Parce qu'elle est couverte en grande partie d'eau",
                 "Parce que ses rochers sont de couleur bleue",
-                "Parce qu'elle reflechit la lumiere du soleil en bleu"
+                "Parce qu'elle reflechit la lumière du soleil en bleu"
               ],
               "correctAnswer": "Parce qu'elle est couverte en grande partie d'eau",
               "isSpecial": false
@@ -5521,15 +5521,15 @@ export const UNIVERSES: Record<string, Universe> = {
               "question": "Comment s'appelle la couche de gaz qui entoure la Terre et nous protege des rayons dangereux du Soleil ?",
               "options": [
                 "Le manteau",
-                "L'atmosphere",
+                "L'atmosphère",
                 "La stratosphere magnetique",
                 "La croute terrestre"
               ],
-              "correctAnswer": "L'atmosphere",
+              "correctAnswer": "L'atmosphère",
               "isSpecial": false
             },
             {
-              "question": "Quel phenomene cause l'alternance du jour et de la nuit sur Terre ?",
+              "question": "Quel phénomène cause l'alternance du jour et de la nuit sur Terre ?",
               "options": [
                 "La Terre qui tourne autour du Soleil",
                 "La Lune qui tourne autour de la Terre",
@@ -5556,7 +5556,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Le noyau interne",
                 "Le noyau externe",
                 "Le manteau",
-                "L'atmosphere"
+                "L'atmosphère"
               ],
               "correctAnswer": "Le manteau",
               "isSpecial": false
@@ -5573,9 +5573,9 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "La Terre est la seule planete connue ou il y a de la vie. Quelle caracteristique importante la rend unique dans notre systeme solaire ?",
+              "question": "La Terre est la seule planète connue ou il y a de la vie. Quelle caracteristique importante la rend unique dans notre système solaire ?",
               "options": [
-                "C'est la plus grande planete du systeme solaire",
+                "C'est la plus grande planète du système solaire",
                 "Elle possede de l'eau liquide en surface",
                 "Elle est la plus proche du Soleil",
                 "Elle possede le plus grand nombre de lunes"
@@ -5824,7 +5824,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Autour de quel ocean se trouve la majorite des volcans actifs de la planete ?",
+              "question": "Autour de quel ocean se trouve la majorite des volcans actifs de la planète ?",
               "options": [
                 "L'ocean Atlantique",
                 "L'ocean Arctique",
@@ -5857,7 +5857,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Quelle est la difference principale entre un volcan rouge et un volcan gris ?",
+              "question": "Quelle est la différence principale entre un volcan rouge et un volcan gris ?",
               "options": [
                 "Le volcan rouge est plus vieux que le volcan gris",
                 "Le volcan rouge se trouve en mer, le gris sur terre",
@@ -5884,7 +5884,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Une pluie de pierres multicolores",
                 "Un arc-en-ciel de vapeur",
                 "Un gros nuage de fumee grise qui monte tres haut",
-                "Une lumiere bleue au sommet du cratere"
+                "Une lumière bleue au sommet du cratere"
               ],
               "correctAnswer": "Un gros nuage de fumee grise qui monte tres haut",
               "isSpecial": false
@@ -6185,7 +6185,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Quelle energie renouvelable peut-on utiliser pour polluer moins selon la leçon ?",
+              "question": "Quelle énergie renouvelable peut-on utiliser pour polluer moins selon la leçon ?",
               "options": [
                 "Le charbon et le pétrole",
                 "Le nucléaire et le gaz naturel",
@@ -6286,11 +6286,11 @@ export const UNIVERSES: Record<string, Universe> = {
               "question": "Pourquoi les dechets electroniques comme les telephones doivent-ils etre apportes dans des points de collecte speciaux ?",
               "options": [
                 "Parce qu'ils sont trop lourds pour les poubelles ordinaires",
-                "Parce qu'ils contiennent des metaux rares et toxiques",
+                "Parce qu'ils contiennent des métaux rares et toxiques",
                 "Parce qu'ils peuvent etre repares gratuitement",
                 "Parce qu'ils sont vendus a l'etranger"
               ],
-              "correctAnswer": "Parce qu'ils contiennent des metaux rares et toxiques",
+              "correctAnswer": "Parce qu'ils contiennent des métaux rares et toxiques",
               "isSpecial": false
             },
             {
@@ -6310,7 +6310,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Produire plus pour vendre plus",
                 "Reparer, reutiliser et recycler pour ne plus creer de dechets",
                 "Exporter les dechets vers d'autres pays",
-                "Brûler les dechets pour produire de l'energie"
+                "Brûler les dechets pour produire de l'énergie"
               ],
               "correctAnswer": "Reparer, reutiliser et recycler pour ne plus creer de dechets",
               "isSpecial": false
@@ -6342,10 +6342,10 @@ export const UNIVERSES: Record<string, Universe> = {
               "options": [
                 "Le papier",
                 "Le plastique souple",
-                "Le metal",
+                "Le métal",
                 "Le tissu"
               ],
-              "correctAnswer": "Le metal",
+              "correctAnswer": "Le métal",
               "isSpecial": false
             },
             {
@@ -6633,14 +6633,14 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Quels types de lumiere la chlorophylle absorbe-t-elle principalement pour produire de l'energie ?",
+              "question": "Quels types de lumière la chlorophylle absorbe-t-elle principalement pour produire de l'énergie ?",
               "options": [
-                "La lumiere verte et jaune",
-                "La lumiere rouge et bleue",
-                "La lumiere ultraviolette et infrarouge",
-                "La lumiere blanche uniquement"
+                "La lumière verte et jaune",
+                "La lumière rouge et bleue",
+                "La lumière ultraviolette et infrarouge",
+                "La lumière blanche uniquement"
               ],
-              "correctAnswer": "La lumiere rouge et bleue",
+              "correctAnswer": "La lumière rouge et bleue",
               "isSpecial": false
             },
             {
@@ -6657,10 +6657,10 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Si une plante est placee dans une piece completement sombre pendant plusieurs jours, que se passera-t-il en premier ?",
               "options": [
-                "Elle produit plus d'oxygene pour compenser le manque de lumiere",
+                "Elle produit plus d'oxygene pour compenser le manque de lumière",
                 "Elle ne peut plus realiser la photosynthese et commence a manquer de sucres",
                 "Ses stomates se ferment definitivement et elle absorbe plus de CO2",
-                "Elle transforme sa chlorophylle en une autre molecule pour capter la chaleur"
+                "Elle transforme sa chlorophylle en une autre molécule pour capter la chaleur"
               ],
               "correctAnswer": "Elle ne peut plus realiser la photosynthese et commence a manquer de sucres",
               "isSpecial": true
@@ -7589,14 +7589,14 @@ export const UNIVERSES: Record<string, Universe> = {
           ],
           "quiz": [
             {
-              "question": "A quelle temperature l'eau liquide se transforme-t-elle en glace dans les conditions normales de pression ?",
+              "question": "A quelle température l'eau liquide se transforme-t-elle en glace dans les conditions normales de pression ?",
               "options": [
-                "0 degre Celsius",
-                "-10 degres Celsius",
-                "4 degres Celsius",
-                "100 degres Celsius"
+                "0 degré Celsius",
+                "-10 degrés Celsius",
+                "4 degrés Celsius",
+                "100 degrés Celsius"
               ],
-              "correctAnswer": "0 degre Celsius",
+              "correctAnswer": "0 degré Celsius",
               "isSpecial": false
             },
             {
@@ -7655,7 +7655,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Comment appelle-t-on le phenomene par lequel les plantes rejettent de l'eau sous forme de vapeur par leurs feuilles ?",
+              "question": "Comment appelle-t-on le phénomène par lequel les plantes rejettent de l'eau sous forme de vapeur par leurs feuilles ?",
               "options": [
                 "La transpiration ou evapotranspiration",
                 "La photosynthese",
@@ -7666,36 +7666,36 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Pourquoi l'eau de pluie est-elle indispensable a la survie des rivieres en dehors des episodes de fonte des neiges ?",
+              "question": "Pourquoi l'eau de pluie est-elle indispensable a la survie des rivières en dehors des episodes de fonte des neiges ?",
               "options": [
                 "Elle alimente directement les cours d'eau en surface et recharge les nappes souterraines qui les alimentent",
                 "Elle transforme les vapeurs atmosferiques en glace dans les montagnes",
-                "Elle cree du courant en augmentant la temperature de l'eau des rivieres",
-                "Elle dissout les roches et creuse le lit des rivieres"
+                "Elle cree du courant en augmentant la température de l'eau des rivières",
+                "Elle dissout les roches et creuse le lit des rivières"
               ],
               "correctAnswer": "Elle alimente directement les cours d'eau en surface et recharge les nappes souterraines qui les alimentent",
               "isSpecial": false
             },
             {
-              "question": "Dans un ecosysteme fluvial, quel role joue principalement la vegetation des berges par rapport a l'eau de la riviere ?",
+              "question": "Dans un ecosysteme fluvial, quel role joue principalement la végétation des berges par rapport a l'eau de la rivière ?",
               "options": [
                 "Elle stabilise les berges, filtre les polluants et limite l'evaporation de l'eau",
-                "Elle accelere le courant en creant des obstacles dans le lit de la riviere",
+                "Elle accelere le courant en creant des obstacles dans le lit de la rivière",
                 "Elle empeche les poissons de remonter vers les zones de montagne",
-                "Elle produit du sel mineral qui modifie la composition de l'eau"
+                "Elle produit du sel minéral qui modifie la composition de l'eau"
               ],
               "correctAnswer": "Elle stabilise les berges, filtre les polluants et limite l'evaporation de l'eau",
               "isSpecial": false
             },
             {
-              "question": "La molecule d'eau possede une structure dite polaire. Quelle consequence directe cette polarite a-t-elle sur les proprietes de l'eau qui la rendent si particuliere en chimie et en biologie ?",
+              "question": "La molécule d'eau possede une structure dite polaire. Quelle consequence directe cette polarite a-t-elle sur les proprietes de l'eau qui la rendent si particuliere en chimie et en biologie ?",
               "options": [
-                "Elle permet a l'eau de dissoudre un grand nombre de substances et de former des liaisons hydrogene avec d'autres molecules",
-                "Elle rend l'eau incapable de se solidifier a des temperatures inferieures a 0 degre Celsius",
+                "Elle permet a l'eau de dissoudre un grand nombre de substances et de former des liaisons hydrogene avec d'autres molécules",
+                "Elle rend l'eau incapable de se solidifier a des températures inferieures a 0 degré Celsius",
                 "Elle empeche l'eau de s'evaporer dans les conditions normales de pression atmospherique",
                 "Elle confere a l'eau une couleur bleue naturelle visible dans les grandes etendues"
               ],
-              "correctAnswer": "Elle permet a l'eau de dissoudre un grand nombre de substances et de former des liaisons hydrogene avec d'autres molecules",
+              "correctAnswer": "Elle permet a l'eau de dissoudre un grand nombre de substances et de former des liaisons hydrogene avec d'autres molécules",
               "isSpecial": true
             }
           ]
@@ -7844,11 +7844,11 @@ export const UNIVERSES: Record<string, Universe> = {
               "question": "La force de Coriolis est nulle à l'équateur et maximale aux pôles. Quelle en est la conséquence directe sur la formation des ouragans ?",
               "options": [
                 "Les ouragans se forment exclusivement aux pôles car la force de Coriolis y est maximale",
-                "Les ouragans ne peuvent pas se former a moins de 5 a 10 degres de latitude de l'equateur car la force de Coriolis y est trop faible pour initier la rotation du systeme",
+                "Les ouragans ne peuvent pas se former a moins de 5 a 10 degrés de latitude de l'equateur car la force de Coriolis y est trop faible pour initier la rotation du système",
                 "Les ouragans se forment uniquement a l'equateur car l'air y est le plus chaud",
                 "La force de Coriolis n'a aucune influence sur la formation des ouragans"
               ],
-              "correctAnswer": "Les ouragans ne peuvent pas se former a moins de 5 a 10 degres de latitude de l'equateur car la force de Coriolis y est trop faible pour initier la rotation du systeme",
+              "correctAnswer": "Les ouragans ne peuvent pas se former a moins de 5 a 10 degrés de latitude de l'equateur car la force de Coriolis y est trop faible pour initier la rotation du système",
               "isSpecial": true
             }
           ]
@@ -8458,7 +8458,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Elle est beaucoup plus grande que le Soleil mais moins lumineuse",
                 "Elle a une taille comparable à celle de la Terre mais une masse proche de celle du Soleil, la rendant extrêmement dense",
                 "Elle est entourée d'un disque d'accretion qui lui permet de continuer à fusionner de l'hydrogène",
-                "Elle possède une temperature de surface inferieure a celle du Soleil et une masse dix fois plus faible"
+                "Elle possède une température de surface inferieure a celle du Soleil et une masse dix fois plus faible"
               ],
               "correctAnswer": "Elle a une taille comparable à celle de la Terre mais une masse proche de celle du Soleil, la rendant extrêmement dense",
               "isSpecial": true
@@ -9057,22 +9057,22 @@ export const UNIVERSES: Record<string, Universe> = {
               "question": "En quoi la photosynthèse est-elle fondamentale pour les animaux, y compris les carnivores ?",
               "options": [
                 "Les animaux absorbent directement la chlorophylle des plantes pour produire leur propre énergie",
-                "La photosynthèse est la base de toutes les chaines alimentaires : elle produit la matiere organique et l'oxygene dont dependent tous les etres vivants",
-                "Seuls les herbivores dependent de la photosynthese ; les carnivores puisent leur energie dans les mineraux du sol",
+                "La photosynthèse est la base de toutes les chaines alimentaires : elle produit la matière organique et l'oxygene dont dependent tous les etres vivants",
+                "Seuls les herbivores dependent de la photosynthese ; les carnivores puisent leur énergie dans les minéraux du sol",
                 "La photosynthese produit uniquement de l'eau, indispensable a la survie des animaux"
               ],
-              "correctAnswer": "La photosynthèse est la base de toutes les chaines alimentaires : elle produit la matiere organique et l'oxygene dont dependent tous les etres vivants",
+              "correctAnswer": "La photosynthèse est la base de toutes les chaines alimentaires : elle produit la matière organique et l'oxygene dont dependent tous les etres vivants",
               "isSpecial": false
             },
             {
-              "question": "L'equation simplifiee de la photosynthese peut s'ecrire : 6 CO2 + 6 H2O + energie lumineuse -> C6H12O6 + 6 O2. Que represente la molecule C6H12O6 et pourquoi sa production est-elle capitale pour la plante ?",
+              "question": "L'equation simplifiee de la photosynthese peut s'ecrire : 6 CO2 + 6 H2O + énergie lumineuse -> C6H12O6 + 6 O2. Que represente la molécule C6H12O6 et pourquoi sa production est-elle capitale pour la plante ?",
               "options": [
-                "C'est la chlorophylle, qui permet d'absorber davantage de lumiere pour accelerer la reaction",
-                "C'est le glucose, un sucre qui constitue la source d'energie chimique stockee permettant a la plante de croitre, se reproduire et synthetiser toutes ses molecules organiques",
+                "C'est la chlorophylle, qui permet d'absorber davantage de lumière pour accelerer la réaction",
+                "C'est le glucose, un sucre qui constitue la source d'énergie chimique stockee permettant a la plante de croitre, se reproduire et synthetiser toutes ses molécules organiques",
                 "C'est le dioxyde de carbone libere par la plante durant la nuit lors de la respiration cellulaire",
-                "C'est la seve brute, solution minerale transportee des racines jusqu'aux feuilles via le xyleme"
+                "C'est la seve brute, solution minérale transportee des racines jusqu'aux feuilles via le xyleme"
               ],
-              "correctAnswer": "C'est le glucose, un sucre qui constitue la source d'energie chimique stockee permettant a la plante de croitre, se reproduire et synthetiser toutes ses molecules organiques",
+              "correctAnswer": "C'est le glucose, un sucre qui constitue la source d'énergie chimique stockee permettant a la plante de croitre, se reproduire et synthetiser toutes ses molécules organiques",
               "isSpecial": true
             }
           ]
@@ -10207,12 +10207,12 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Quelle est la longueur approximative de l'intestin grêle ?",
               "options": [
-                "1 metre",
-                "3 metres",
-                "6 metres",
-                "10 metres"
+                "1 mètre",
+                "3 mètres",
+                "6 mètres",
+                "10 mètres"
               ],
-              "correctAnswer": "6 metres",
+              "correctAnswer": "6 mètres",
               "isSpecial": false
             },
             {
@@ -10254,7 +10254,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Il broie la nourriture comme un mixeur",
                 "Il absorbe l'eau dans le gros intestin",
                 "Il nettoie le sang et produit la bile pour digerer les graisses",
-                "Il stocke les reserves d'energie sous forme de sucre"
+                "Il stocke les reserves d'énergie sous forme de sucre"
               ],
               "correctAnswer": "Il nettoie le sang et produit la bile pour digerer les graisses",
               "isSpecial": false
@@ -10263,11 +10263,11 @@ export const UNIVERSES: Record<string, Universe> = {
               "question": "Les enzymes digestives sont comparees a de petits ciseaux chimiques. Quel est leur role precis dans la digestion des aliments ?",
               "options": [
                 "Elles transportent les nutriments vers les cellules du corps",
-                "Elles decoupent les molecules complexes des aliments en elements plus simples absorbables",
+                "Elles decoupent les molécules complexes des aliments en elements plus simples absorbables",
                 "Elles neutralisent les acides de l'estomac pour proteger la paroi gastrique",
                 "Elles stimulent les contractions musculaires de l'oesophage pour faire descendre les aliments"
               ],
-              "correctAnswer": "Elles decoupent les molecules complexes des aliments en elements plus simples absorbables",
+              "correctAnswer": "Elles decoupent les molécules complexes des aliments en elements plus simples absorbables",
               "isSpecial": true
             }
           ]
@@ -10852,12 +10852,12 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Quel signal exterieur aide ton horloge circadienne a te dire qu'il est l'heure de dormir ?",
               "options": [
-                "La baisse de la temperature",
-                "La baisse de la lumiere",
+                "La baisse de la température",
+                "La baisse de la lumière",
                 "Le bruit de la rue qui diminue",
                 "Le repas du soir"
               ],
-              "correctAnswer": "La baisse de la lumiere",
+              "correctAnswer": "La baisse de la lumière",
               "isSpecial": false
             },
             {
@@ -10872,12 +10872,12 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Pourquoi une bonne nuit de sommeil est-elle particulierement importante pour les enfants et les adolescents en periode de croissance ?",
+              "question": "Pourquoi une bonne nuit de sommeil est-elle particulierement importante pour les enfants et les adolescents en période de croissance ?",
               "options": [
                 "Parce que le cerveau fabrique de la melatonine uniquement le matin",
                 "Parce que c'est pendant le sommeil profond que l'hormone de croissance est secretee pour grandir et reparer les cellules",
                 "Parce que les muscles ne se developpent qu'en l'absence totale de mouvement",
-                "Parce que le systeme digestif est deux fois plus actif la nuit que le jour"
+                "Parce que le système digestif est deux fois plus actif la nuit que le jour"
               ],
               "correctAnswer": "Parce que c'est pendant le sommeil profond que l'hormone de croissance est secretee pour grandir et reparer les cellules",
               "isSpecial": true
@@ -11912,7 +11912,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Les lipides",
                 "Les vitamines",
                 "Le glucose",
-                "Les proteines"
+                "Les protéines"
               ],
               "correctAnswer": "Le glucose",
               "isSpecial": false
@@ -13225,7 +13225,7 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Pourquoi se réveiller à la fin d'un cycle complet de sommeil permet-il de se sentir plus en forme ?",
               "options": [
-                "Parce que la temperature corporelle est la plus basse en fin de cycle",
+                "Parce que la température corporelle est la plus basse en fin de cycle",
                 "Parce qu'on se réveille pendant une phase de sommeil léger, proche de l'éveil",
                 "Parce que le cerveau a terminé de produire de l'hormone de croissance",
                 "Parce que les rêves s'arrêtent naturellement à ce moment"
@@ -13365,7 +13365,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "A quelle periode de la vie les dents de sagesse apparaissent-elles generalement ?",
+              "question": "A quelle période de la vie les dents de sagesse apparaissent-elles generalement ?",
               "options": [
                 "Entre 6 et 10 ans",
                 "Entre 10 et 13 ans",
@@ -13409,7 +13409,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Lors du remplacement des dents de lait, a quel age environ les premieres incisives definitives font-elles leur apparition ?",
+              "question": "Lors du remplacement des dents de lait, a quel age environ les premières incisives definitives font-elles leur apparition ?",
               "options": [
                 "3-4 ans",
                 "6-7 ans",
@@ -13420,14 +13420,14 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "La dentine, situee sous l'email, est traversee par de minuscules canaux relies a la pulpe. Quel phenomene douloureux explique-t-elle lorsque l'email est use ou absent ?",
+              "question": "La dentine, situee sous l'email, est traversee par de minuscules canaux relies a la pulpe. Quel phénomène douloureux explique-t-elle lorsque l'email est use ou absent ?",
               "options": [
-                "L'hypersensibilite dentaire aux variations de temperature et aux aliments sucres",
+                "L'hypersensibilite dentaire aux variations de température et aux aliments sucres",
                 "La formation acceleree de caries sur toute la surface de la dent",
                 "Le decollement spontane de la dent de son alveole osseuse",
                 "L'apparition de taches blanches irreversibles sur l'email restant"
               ],
-              "correctAnswer": "L'hypersensibilite dentaire aux variations de temperature et aux aliments sucres",
+              "correctAnswer": "L'hypersensibilite dentaire aux variations de température et aux aliments sucres",
               "isSpecial": true
             }
           ]
@@ -14165,7 +14165,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "La vitesse maximale de conduction de l'influx nerveux le long d'un axone myélinisé peut atteindre 120 m/s. Si un signal moteur doit parcourir 1,2 metre depuis la moelle epiniere jusqu'au pied, quelle duree minimale ce trajet prend-il ?",
+              "question": "La vitesse maximale de conduction de l'influx nerveux le long d'un axone myélinisé peut atteindre 120 m/s. Si un signal moteur doit parcourir 1,2 mètre depuis la moelle epiniere jusqu'au pied, quelle duree minimale ce trajet prend-il ?",
               "options": [
                 "0,1 seconde",
                 "0,01 seconde",
@@ -14599,20 +14599,20 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Elles tournent toutes autour de la Terre",
                 "Ce sont des soleils lointains qui produisent leur propre lumière",
                 "Elles reflètent la lumière du Soleil comme la Lune",
-                "Elles sont toutes situées dans notre systeme solaire"
+                "Elles sont toutes situées dans notre système solaire"
               ],
               "correctAnswer": "Ce sont des soleils lointains qui produisent leur propre lumière",
               "isSpecial": false
             },
             {
-              "question": "Le Soleil est une etoile de type naine jaune. A quelle distance approximative se trouve-t-il de la Terre ?",
+              "question": "Le Soleil est une étoile de type naine jaune. A quelle distance approximative se trouve-t-il de la Terre ?",
               "options": [
-                "Environ 150 kilometres",
-                "Environ 150 millions de kilometres",
-                "Environ 1 milliard de kilometres",
-                "Environ 40 millions de kilometres"
+                "Environ 150 kilomètres",
+                "Environ 150 millions de kilomètres",
+                "Environ 1 milliard de kilomètres",
+                "Environ 40 millions de kilomètres"
               ],
-              "correctAnswer": "Environ 150 millions de kilometres",
+              "correctAnswer": "Environ 150 millions de kilomètres",
               "isSpecial": true
             }
           ]
@@ -14950,12 +14950,12 @@ export const UNIVERSES: Record<string, Universe> = {
           ],
           "quiz": [
             {
-              "question": "Pourquoi Mars est-elle surnommee la 'planete rouge' ?",
+              "question": "Pourquoi Mars est-elle surnommee la 'planète rouge' ?",
               "options": [
                 "Son sol est couvert de roches et de poussiere contenant de l'oxyde de fer",
-                "Elle reflete la lumiere du soleil en rouge",
+                "Elle reflete la lumière du soleil en rouge",
                 "Sa surface est recouverte de lave en fusion",
-                "Son atmosphere contient beaucoup d'azote rouge"
+                "Son atmosphère contient beaucoup d'azote rouge"
               ],
               "correctAnswer": "Son sol est couvert de roches et de poussiere contenant de l'oxyde de fer",
               "isSpecial": false
@@ -14972,7 +14972,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Quel est le nom du plus grand volcan de tout le systeme solaire, situe sur Mars ?",
+              "question": "Quel est le nom du plus grand volcan de tout le système solaire, situe sur Mars ?",
               "options": [
                 "Mont Everest",
                 "Vesuve",
@@ -15018,21 +15018,21 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Pourquoi un humain ne pourrait pas respirer sur Mars sans combinaison spatiale ?",
               "options": [
-                "L'atmosphere est trop froide pour les poumons",
-                "Il n'y a pas assez d'oxygene dans l'atmosphere tres fine de Mars",
-                "L'atmosphere est trop epaisse et contient du chlore",
-                "Il n'y a aucune atmosphere sur Mars"
+                "L'atmosphère est trop froide pour les poumons",
+                "Il n'y a pas assez d'oxygene dans l'atmosphère tres fine de Mars",
+                "L'atmosphère est trop epaisse et contient du chlore",
+                "Il n'y a aucune atmosphère sur Mars"
               ],
-              "correctAnswer": "Il n'y a pas assez d'oxygene dans l'atmosphere tres fine de Mars",
+              "correctAnswer": "Il n'y a pas assez d'oxygene dans l'atmosphère tres fine de Mars",
               "isSpecial": false
             },
             {
               "question": "Qu'est-ce que les rovers envoyes sur Mars ont pour mission principale d'etudier ?",
               "options": [
-                "La temperature des etoiles proches",
+                "La température des étoiles proches",
                 "Les tremblements de terre sur la Lune",
                 "Les roches et les photos de la surface martienne",
-                "Les orbites des autres planetes"
+                "Les orbites des autres planètes"
               ],
               "correctAnswer": "Les roches et les photos de la surface martienne",
               "isSpecial": false
@@ -15051,12 +15051,12 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Parmi ces affirmations sur Olympus Mons, laquelle est correcte ?",
               "options": [
-                "C'est le plus grand volcan du systeme solaire et il est situe sur Mars",
+                "C'est le plus grand volcan du système solaire et il est situe sur Mars",
                 "C'est un volcan sous-marin decouvert sur Europa, lune de Jupiter",
                 "C'est le volcan le plus actif de la Terre, en Islande",
                 "C'est une montagne de glace au pole nord de Mars"
               ],
-              "correctAnswer": "C'est le plus grand volcan du systeme solaire et il est situe sur Mars",
+              "correctAnswer": "C'est le plus grand volcan du système solaire et il est situe sur Mars",
               "isSpecial": true
             }
           ]
@@ -15502,7 +15502,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Parce qu'elles sont plus petites que la Terre",
                 "Parce qu'elles sont très loin de nous",
                 "Parce qu'elles ne brillent que faiblement",
-                "Parce que notre atmosphere les rapetisse"
+                "Parce que notre atmosphère les rapetisse"
               ],
               "correctAnswer": "Parce qu'elles sont très loin de nous",
               "isSpecial": false
@@ -15510,12 +15510,12 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Lequel de ces énoncés est vrai concernant notre Soleil et les autres étoiles ?",
               "options": [
-                "Notre Soleil est l'etoile la plus grosse de l'univers",
-                "Notre Soleil est unique car aucune autre etoile ne lui ressemble",
-                "Notre Soleil est une etoile, et certaines autres etoiles sont encore plus grosses que lui",
-                "Notre Soleil est une planete, pas une etoile"
+                "Notre Soleil est l'étoile la plus grosse de l'univers",
+                "Notre Soleil est unique car aucune autre étoile ne lui ressemble",
+                "Notre Soleil est une étoile, et certaines autres étoiles sont encore plus grosses que lui",
+                "Notre Soleil est une planète, pas une étoile"
               ],
-              "correctAnswer": "Notre Soleil est une etoile, et certaines autres etoiles sont encore plus grosses que lui",
+              "correctAnswer": "Notre Soleil est une étoile, et certaines autres étoiles sont encore plus grosses que lui",
               "isSpecial": true
             }
           ]
@@ -16087,7 +16087,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "A cause de la pression du vent solaire",
                 "Grace a la force de gravite du Soleil",
                 "Parce qu'elles sont aimantees par le Soleil",
-                "A cause de la rotation du systeme solaire"
+                "A cause de la rotation du système solaire"
               ],
               "correctAnswer": "Grace a la force de gravite du Soleil",
               "isSpecial": false
@@ -16223,10 +16223,10 @@ export const UNIVERSES: Record<string, Universe> = {
               "options": [
                 "Un nuage de gaz très froid",
                 "Une étoile naissante entourée de poussière",
-                "Une zone si dense que meme la lumiere ne peut pas s'en echapper",
-                "Une galaxie sans etoiles"
+                "Une zone si dense que meme la lumière ne peut pas s'en echapper",
+                "Une galaxie sans étoiles"
               ],
-              "correctAnswer": "Une zone si dense que meme la lumiere ne peut pas s'en echapper",
+              "correctAnswer": "Une zone si dense que meme la lumière ne peut pas s'en echapper",
               "isSpecial": false
             },
             {
@@ -16243,32 +16243,32 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Que projette une supernova dans l'espace lors de son explosion ?",
               "options": [
-                "De la lumiere invisible et des ondes radio uniquement",
-                "Des metaux et des poussières qui peuvent former de nouvelles planetes",
+                "De la lumière invisible et des ondes radio uniquement",
+                "Des métaux et des poussières qui peuvent former de nouvelles planètes",
                 "Des trous noirs en serie",
                 "Du gaz d'hydrogenepur"
               ],
-              "correctAnswer": "Des metaux et des poussières qui peuvent former de nouvelles planetes",
+              "correctAnswer": "Des métaux et des poussières qui peuvent former de nouvelles planètes",
               "isSpecial": false
             },
             {
-              "question": "Pourquoi dit-on que notre Soleil est une etoile d'age moyen ?",
+              "question": "Pourquoi dit-on que notre Soleil est une étoile d'age moyen ?",
               "options": [
-                "Parce qu'il est le plus petit du systeme solaire",
+                "Parce qu'il est le plus petit du système solaire",
                 "Parce qu'il a deja brule environ la moitie de son carburant et qu'il lui en reste autant",
-                "Parce qu'il brille moins fort que les autres etoiles",
+                "Parce qu'il brille moins fort que les autres étoiles",
                 "Parce qu'il est ne il y a seulement 100 millions d'annees"
               ],
               "correctAnswer": "Parce qu'il a deja brule environ la moitie de son carburant et qu'il lui en reste autant",
               "isSpecial": false
             },
             {
-              "question": "Quelle sequence d'evenements decrit correctement la fin de vie d'une etoile tres massive ?",
+              "question": "Quelle sequence d'événements decrit correctement la fin de vie d'une étoile tres massive ?",
               "options": [
                 "Elle refroidit lentement puis devient une naine blanche",
                 "Elle grossit en geante rouge, explose en supernova, puis son noyau s'effondre en trou noir",
                 "Elle se transforme directement en nebuleuse sans exploser",
-                "Elle fusionne avec une autre etoile pour former une planete geante"
+                "Elle fusionne avec une autre étoile pour former une planète geante"
               ],
               "correctAnswer": "Elle grossit en geante rouge, explose en supernova, puis son noyau s'effondre en trou noir",
               "isSpecial": true
@@ -16400,7 +16400,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Quel scientifique a etabli au 17e siecle les trois lois qui decrivent les mouvements des planetes autour du Soleil ?",
+              "question": "Quel scientifique a etabli au 17e siècle les trois lois qui decrivent les mouvements des planètes autour du Soleil ?",
               "options": [
                 "Galilee",
                 "Isaac Newton",
@@ -17339,8 +17339,8 @@ export const UNIVERSES: Record<string, Universe> = {
               "options": [
                 "La croute contient de l'hematite, un oxyde de fer qui donne une couleur rouille",
                 "Des algues rouges recouvrent l'ensemble de la surface martienne",
-                "La lumiere du soleil reflechit differemment sur la glace carbonique des poles",
-                "L'atmosphere filtre la lumiere et projette une teinte rouge sur le sol"
+                "La lumière du soleil reflechit differemment sur la glace carbonique des poles",
+                "L'atmosphère filtre la lumière et projette une teinte rouge sur le sol"
               ],
               "correctAnswer": "La croute contient de l'hematite, un oxyde de fer qui donne une couleur rouille",
               "isSpecial": false
@@ -17350,14 +17350,14 @@ export const UNIVERSES: Record<string, Universe> = {
               "options": [
                 "Dioxyde de carbone gele (neige carbonique)",
                 "Glace d'eau ordinaire comme sur Terre",
-                "Azote solidifie a tres basse temperature",
+                "Azote solidifie a tres basse température",
                 "Methane gele accumule par l'activite volcanique"
               ],
               "correctAnswer": "Dioxyde de carbone gele (neige carbonique)",
               "isSpecial": false
             },
             {
-              "question": "Olympus Mons est le plus grand volcan du systeme solaire. A quelle categorie de volcans appartient-il ?",
+              "question": "Olympus Mons est le plus grand volcan du système solaire. A quelle categorie de volcans appartient-il ?",
               "options": [
                 "Volcan bouclier, forme par des coulees de lave tres fluide",
                 "Stratovolcan, forme par des couches alternees de lave et de cendres",
@@ -17392,12 +17392,12 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Pourquoi le ciel de Mars est-il rose ou jaunatre plutot que bleu comme sur Terre ?",
               "options": [
-                "Des particules de poussiere ferrugineuse en suspension diffusent la lumiere dans des longueurs d'onde chaudes",
-                "L'atmosphere martienne est riche en azote qui absorbe la lumiere bleue",
+                "Des particules de poussiere ferrugineuse en suspension diffusent la lumière dans des longueurs d'onde chaudes",
+                "L'atmosphère martienne est riche en azote qui absorbe la lumière bleue",
                 "Les nuages de glace carbonique reflechissent uniquement les rayons infrarouges",
                 "Mars recoit moins de rayonnement ultraviolet, ce qui modifie la couleur percue"
               ],
-              "correctAnswer": "Des particules de poussiere ferrugineuse en suspension diffusent la lumiere dans des longueurs d'onde chaudes",
+              "correctAnswer": "Des particules de poussiere ferrugineuse en suspension diffusent la lumière dans des longueurs d'onde chaudes",
               "isSpecial": false
             },
             {
@@ -17412,7 +17412,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Quel gaz est absent en quantite suffisante dans l'atmosphere de Mars pour permettre la respiration humaine ?",
+              "question": "Quel gaz est absent en quantite suffisante dans l'atmosphère de Mars pour permettre la respiration humaine ?",
               "options": [
                 "L'oxygene moleculaire (O2)",
                 "Le dioxyde de carbone (CO2)",
@@ -17427,7 +17427,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "options": [
                 "Analyser les roches et chercher des traces de vie ancienne ou d'eau liquide",
                 "Preparer des infrastructures pour une future base humaine permanente",
-                "Cartographier les ressources minerales exploitables pour l'industrie terrestre",
+                "Cartographier les ressources minérales exploitables pour l'industrie terrestre",
                 "Mesurer les tempetes de sable afin de proteger les satellites en orbite"
               ],
               "correctAnswer": "Analyser les roches et chercher des traces de vie ancienne ou d'eau liquide",
@@ -17437,7 +17437,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "question": "Si un humain se trouvait a la surface de Mars sans combinaison spatiale, laquelle de ces consequences surviendrait en premier et pourquoi ?",
               "options": [
                 "La quasi-absence de pression ferait bouillir les liquides corporels et l'oxygene manquerait immediatement",
-                "Le froid intense de moins 200 degres provoquerait une mort par congelation instantanee",
+                "Le froid intense de moins 200 degrés provoquerait une mort par congelation instantanee",
                 "Les rayonnements cosmiques non filtres causeraient des brulures mortelles en quelques secondes",
                 "La forte concentration de CO2 empoisonnerait le sang en une minute environ"
               ],
@@ -17646,7 +17646,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Sa masse tres elevee",
                 "Sa densite inferieure a celle de l'eau",
                 "Sa composition en glace pure",
-                "Sa temperature de surface negative"
+                "Sa température de surface negative"
               ],
               "correctAnswer": "Sa densite inferieure a celle de l'eau",
               "isSpecial": false
@@ -17657,7 +17657,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Gaz et plasma",
                 "Glace, roche et poussiere",
                 "Magma solidifie",
-                "Metaux lourds et mineraux"
+                "Métaux lourds et minéraux"
               ],
               "correctAnswer": "Glace, roche et poussiere",
               "isSpecial": false
@@ -17665,12 +17665,12 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Pourquoi les anneaux de Saturne brillent-ils dans l'espace ?",
               "options": [
-                "Ils emettent leur propre lumiere",
+                "Ils emettent leur propre lumière",
                 "Ils contiennent des elements radioactifs",
-                "Ils reflechissent la lumiere du Soleil",
+                "Ils reflechissent la lumière du Soleil",
                 "Ils sont chauffes par le noyau de Saturne"
               ],
-              "correctAnswer": "Ils reflechissent la lumiere du Soleil",
+              "correctAnswer": "Ils reflechissent la lumière du Soleil",
               "isSpecial": false
             },
             {
@@ -17685,25 +17685,25 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Quelle caracteristique exceptionnelle possede Titan parmi les lunes du systeme solaire ?",
+              "question": "Quelle caracteristique exceptionnelle possede Titan parmi les lunes du système solaire ?",
               "options": [
                 "Elle est entierement recouverte de glace d'eau",
-                "Elle possede une atmosphere epaisse et des lacs de methane liquide",
+                "Elle possede une atmosphère epaisse et des lacs de methane liquide",
                 "Elle orbite en sens inverse des autres lunes de Saturne",
-                "Elle est plus grande que la planete Mars"
+                "Elle est plus grande que la planète Mars"
               ],
-              "correctAnswer": "Elle possede une atmosphere epaisse et des lacs de methane liquide",
+              "correctAnswer": "Elle possede une atmosphère epaisse et des lacs de methane liquide",
               "isSpecial": false
             },
             {
-              "question": "Saturne appartient a quelle categorie de planetes du systeme solaire ?",
+              "question": "Saturne appartient a quelle categorie de planètes du système solaire ?",
               "options": [
-                "Planete rocheuse",
-                "Planete naine",
-                "Planete gazeuse",
-                "Planete tellurique"
+                "Planète rocheuse",
+                "Planète naine",
+                "Planète gazeuse",
+                "Planète tellurique"
               ],
-              "correctAnswer": "Planete gazeuse",
+              "correctAnswer": "Planète gazeuse",
               "isSpecial": false
             },
             {
@@ -17740,14 +17740,14 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Si Titan possede une atmosphere epaisse composee principalement d'azote avec du methane, quelle conclusion scientifique peut-on en tirer concernant son potentiel astrobiologique ?",
+              "question": "Si Titan possede une atmosphère epaisse composee principalement d'azote avec du methane, quelle conclusion scientifique peut-on en tirer concernant son potentiel astrobiologique ?",
               "options": [
                 "Titan est certainement habitee par des formes de vie identiques a celles de la Terre",
-                "La presence d'une atmosphere et de liquides de surface en fait un objet d'interet pour la recherche de formes de vie non conventionnelles",
+                "La presence d'une atmosphère et de liquides de surface en fait un objet d'interet pour la recherche de formes de vie non conventionnelles",
                 "L'absence d'eau liquide rend toute forme de vie impossible, meme hypothetique",
-                "Son atmosphere indique qu'elle a ete une planete independante avant d'etre capturee par Saturne"
+                "Son atmosphère indique qu'elle a ete une planète independante avant d'etre capturee par Saturne"
               ],
-              "correctAnswer": "La presence d'une atmosphere et de liquides de surface en fait un objet d'interet pour la recherche de formes de vie non conventionnelles",
+              "correctAnswer": "La presence d'une atmosphère et de liquides de surface en fait un objet d'interet pour la recherche de formes de vie non conventionnelles",
               "isSpecial": true
             }
           ]
@@ -19623,10 +19623,10 @@ export const UNIVERSES: Record<string, Universe> = {
               "options": [
                 "La somme",
                 "Le produit",
-                "La difference",
+                "La différence",
                 "Le quotient"
               ],
-              "correctAnswer": "La difference",
+              "correctAnswer": "La différence",
               "isSpecial": false
             },
             {
@@ -19674,7 +19674,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Quel est le plus grand nombre que l'on peut soustraire a 15 pour obtenir un resultat superieur a 10 ?",
+              "question": "Quel est le plus grand nombre que l'on peut soustraire a 15 pour obtenir un résultat superieur a 10 ?",
               "options": [
                 "2",
                 "3",
@@ -20749,7 +20749,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Dans une suite logique, quelle est la premiere etape pour trouver la règle cachée ?",
+              "question": "Dans une suite logique, quelle est la première etape pour trouver la règle cachée ?",
               "options": [
                 "Additionner tous les termes entre eux",
                 "Observer les indices et eliminer ce qui est impossible",
@@ -20786,7 +20786,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "options": [
                 "Les cristaux de glace",
                 "Les spirales des pommes de pin",
-                "Les anneaux des planetes",
+                "Les anneaux des planètes",
                 "Les flocons de neige"
               ],
               "correctAnswer": "Les spirales des pommes de pin",
@@ -21044,7 +21044,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Remplir un réservoir d'eau à débit constant",
                 "Calculer des économies hebdomadaires fixes",
                 "La division cellulaire où les cellules doublent à chaque étape",
-                "La temperature qui monte d'un degre par heure"
+                "La température qui monte d'un degré par heure"
               ],
               "correctAnswer": "La division cellulaire où les cellules doublent à chaque étape",
               "isSpecial": false
@@ -22331,7 +22331,7 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Comment appelle-t-on le segment reliant le centre d'un cercle à un point de sa circonférence ?",
               "options": [
-                "Diametre",
+                "Diamètre",
                 "Corde",
                 "Rayon",
                 "Tangente"
@@ -22511,7 +22511,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Dans un tableau de multiplication de 1 a 10, quel est le seul resultat qui n'apparait qu'une seule fois ?",
+              "question": "Dans un tableau de multiplication de 1 a 10, quel est le seul résultat qui n'apparait qu'une seule fois ?",
               "options": [
                 "25",
                 "36",
@@ -22837,7 +22837,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Un train part de la gare A à 8h00 et roule à 90 km/h. Un autre train part de la gare B, à 270 km de A, à 9h00 en sens inverse à 60 km/h. À quelle heure se croisent-ils ?",
+              "question": "Un train part de la gare A à 8h00 et roule à 90 km/h. Un autre train part de la gare B, à 240 km de A, à 9h00 en sens inverse à 60 km/h. À quelle heure se croisent-ils ?",
               "options": [
                 "10h00",
                 "10h30",
@@ -22859,7 +22859,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Marie pense à un nombre. Elle le multiplie par 3, soustrait 7, puis divise par 2. Elle obtient 11. Quel est le nombre de départ ?",
+              "question": "Marie pense à un nombre. Elle le multiplie par 3, soustrait 6, puis divise par 2. Elle obtient 12. Quel est le nombre de départ ?",
               "options": [
                 "10",
                 "9",
@@ -22892,7 +22892,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Quatre amis (Alex, Bea, Chris, Dan) finissent une course aux positions 1 à 4. Alex n'est pas dernier. Bea finit avant Chris. Dan finit juste après Alex. Qui finit en troisième position ?",
+              "question": "Quatre amis (Alex, Bea, Chris, Dan) finissent une course aux positions 1 à 4. Alex finit avant Bea. Bea finit avant Dan. Chris finit juste avant Dan. Qui finit en troisième position ?",
               "options": [
                 "Bea",
                 "Chris",
@@ -23214,7 +23214,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Le produit",
                 "La somme",
                 "Le quotient",
-                "La difference"
+                "La différence"
               ],
               "correctAnswer": "Le produit",
               "isSpecial": false
@@ -24883,7 +24883,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Quelle caracteristique de l'eau distingue les océans des lacs et des rivieres ?",
+              "question": "Quelle caracteristique de l'eau distingue les océans des lacs et des rivières ?",
               "options": [
                 "Elle est plus froide",
                 "Elle est salée",
@@ -25194,7 +25194,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Parce que les fleuves protègent du soleil",
                 "Parce que les fleuves permettent l'accès a l'eau douce, la navigation et la fertilite des sols",
                 "Parce que les fleuves attirent les touristes",
-                "Parce que les fleuves produisent naturellement de l'electricite"
+                "Parce que les fleuves produisent naturellement de l'électricité"
               ],
               "correctAnswer": "Parce que les fleuves permettent l'accès a l'eau douce, la navigation et la fertilite des sols",
               "isSpecial": false
@@ -25204,7 +25204,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "options": [
                 "Le fleuve est apparu apres la foret et n'a aucun lien avec elle",
                 "Le fleuve alimente la foret en eau douce, favorisant ainsi sa biodiversite exceptionnelle",
-                "La foret produit l'electricite necessaire pour maintenir le debit du fleuve",
+                "La foret produit l'électricité necessaire pour maintenir le debit du fleuve",
                 "Le fleuve empeche la foret de s'etendre vers l'ocean"
               ],
               "correctAnswer": "Le fleuve alimente la foret en eau douce, favorisant ainsi sa biodiversite exceptionnelle",
@@ -25314,7 +25314,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Pour savoir combien de pays sont dessinés",
                 "Pour représenter de grandes distances sur un petit espace",
                 "Pour indiquer l'altitude des montagnes",
-                "Pour mesurer la temperature en différents endroits"
+                "Pour mesurer la température en différents endroits"
               ],
               "correctAnswer": "Pour représenter de grandes distances sur un petit espace",
               "isSpecial": false
@@ -26840,11 +26840,11 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Quelle affirmation est FAUSSE concernant les capitales mondiales : Washington D.C. aux Etats-Unis, Canberra en Australie et Brasilia au Bresil ont en commun le fait d'etre des capitales construites artificiellement pour remplacer une ancienne capitale trop dominante. Pourquoi ce modele de creation de capitale planifiee est-il parfois prefere ?",
+              "question": "Quelle affirmation est FAUSSE concernant les capitales mondiales : Washington D.C. aux Etats-Unis, Canberra en Australie et Brasilia au Bresil ont en commun le fait d'etre des capitales construites artificiellement pour remplacer une ancienne capitale trop dominante. Pourquoi ce modèle de creation de capitale planifiee est-il parfois prefere ?",
               "options": [
                 "Pour eviter qu'une seule ville concentre tout le pouvoir politique et economique",
                 "Parce que les anciennes capitales etaient trop froides en hiver",
-                "Pour copier le modele urbanistique d'un pays voisin plus puissant",
+                "Pour copier le modèle urbanistique d'un pays voisin plus puissant",
                 "Parce que les constitutions de ces pays l'imposaient des leur independance"
               ],
               "correctAnswer": "Pour eviter qu'une seule ville concentre tout le pouvoir politique et economique",
@@ -27659,11 +27659,11 @@ export const UNIVERSES: Record<string, Universe> = {
           ],
           "quiz": [
             {
-              "question": "Quelle est la difference fondamentale entre la latitude et la longitude dans un systeme de coordonnees geographiques ?",
+              "question": "Quelle est la différence fondamentale entre la latitude et la longitude dans un système de coordonnees geographiques ?",
               "options": [
                 "La latitude mesure la distance est-ouest, la longitude mesure la distance nord-sud",
                 "La latitude mesure la distance nord-sud par rapport a l'equateur, la longitude mesure la distance est-ouest par rapport au meridien de Greenwich",
-                "La latitude s'exprime en kilometres, la longitude en degres",
+                "La latitude s'exprime en kilomètres, la longitude en degrés",
                 "La latitude est utilisee en mer, la longitude est utilisee sur terre"
               ],
               "correctAnswer": "La latitude mesure la distance nord-sud par rapport a l'equateur, la longitude mesure la distance est-ouest par rapport au meridien de Greenwich",
@@ -27672,12 +27672,12 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Sur une carte, l'echelle 1:100 000 signifie que 1 cm sur la carte correspond a quelle distance reelle ?",
               "options": [
-                "1 metre",
-                "100 metres",
-                "1 kilometre",
-                "100 kilometres"
+                "1 mètre",
+                "100 mètres",
+                "1 kilomètre",
+                "100 kilomètres"
               ],
-              "correctAnswer": "1 kilometre",
+              "correctAnswer": "1 kilomètre",
               "isSpecial": false
             },
             {
@@ -27729,7 +27729,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "options": [
                 "Le nord geographique (pole Nord vrai)",
                 "Le nord magnetique (pole Nord magnetique)",
-                "Le nord celeste (etoile polaire)",
+                "Le nord celeste (étoile polaire)",
                 "Le nord cartographique (convention Mercator)"
               ],
               "correctAnswer": "Le nord magnetique (pole Nord magnetique)",
@@ -27740,25 +27740,25 @@ export const UNIVERSES: Record<string, Universe> = {
               "options": [
                 "Le blanc ou le violet fonce selon la hauteur",
                 "Le marron ou le rouge selon les conventions hypsometriques",
-                "Le vert fonce pour toutes les elevations au-dessus de 500 metres",
+                "Le vert fonce pour toutes les elevations au-dessus de 500 mètres",
                 "Le jaune vif pour se distinguer des plaines"
               ],
               "correctAnswer": "Le marron ou le rouge selon les conventions hypsometriques",
               "isSpecial": false
             },
             {
-              "question": "Quelle difference existe-t-il entre une carte politique et une carte physique ?",
+              "question": "Quelle différence existe-t-il entre une carte politique et une carte physique ?",
               "options": [
                 "La carte politique montre les frontieres des pays et les villes, la carte physique represente le relief, les fleuves et les zones naturelles",
                 "La carte politique est utilisee par les gouvernements, la carte physique est reservee aux randonneurs",
                 "La carte politique est en couleur, la carte physique est en noir et blanc",
-                "La carte politique est numerique, la carte physique est imprimee sur papier"
+                "La carte politique est numérique, la carte physique est imprimee sur papier"
               ],
               "correctAnswer": "La carte politique montre les frontieres des pays et les villes, la carte physique represente le relief, les fleuves et les zones naturelles",
               "isSpecial": false
             },
             {
-              "question": "La projection de Mercator, creee au XVIe siecle, est encore tres utilisee aujourd'hui pour la navigation. Quel est son principal avantage technique malgre ses distorsions de surface ?",
+              "question": "La projection de Mercator, creee au XVIe siècle, est encore tres utilisee aujourd'hui pour la navigation. Quel est son principal avantage technique malgre ses distorsions de surface ?",
               "options": [
                 "Elle represente exactement les superficies de tous les continents",
                 "Elle conserve les angles et les formes locales, ce qui permet de tracer des routes a cap constant (loxodromie)",
@@ -28112,7 +28112,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "options": [
                 "Parce que les ondes S ne peuvent se propager que dans des milieux solides, et le noyau externe est liquide",
                 "Parce que les ondes S sont trop lentes pour atteindre cette profondeur sans s'atténuer",
-                "Parce que la temperature au noyau externe absorbe l'energie des ondes S",
+                "Parce que la température au noyau externe absorbe l'énergie des ondes S",
                 "Parce que les ondes S se transforment en ondes P au contact du noyau externe"
               ],
               "correctAnswer": "Parce que les ondes S ne peuvent se propager que dans des milieux solides, et le noyau externe est liquide",
@@ -28892,7 +28892,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Pourquoi utilise-t-on des rimes dans les poemes et les comptines ?",
+              "question": "Pourquoi utilise-t-on des rimes dans les poèmes et les comptines ?",
               "options": [
                 "Pour rendre le texte plus long",
                 "Pour que le texte soit plus musical et agreable a entendre",
@@ -29846,11 +29846,11 @@ export const UNIVERSES: Record<string, Universe> = {
               "question": "Qu'est-ce qu'une nuance de sens entre deux synonymes ?",
               "options": [
                 "Le fait que les deux mots soient identiques",
-                "Une petite difference de degre ou de signification entre deux mots proches",
+                "Une petite différence de degré ou de signification entre deux mots proches",
                 "Le fait que les deux mots appartiennent a la meme categorie grammaticale",
                 "Le fait que les deux mots riment"
               ],
-              "correctAnswer": "Une petite difference de degre ou de signification entre deux mots proches",
+              "correctAnswer": "Une petite différence de degré ou de signification entre deux mots proches",
               "isSpecial": false
             },
             {
@@ -31203,7 +31203,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Parmi les animaux mentionnes dans cet alphabet, lequel appartient a la classe des mammiferes marins, ordre des Cetaces ?",
+              "question": "Parmi les animaux mentionnes dans cet alphabet, lequel appartient a la classe des mammifères marins, ordre des Cetaces ?",
               "options": [
                 "L'ane",
                 "La coccinelle",
@@ -31214,7 +31214,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "L'ane (Equus asinus) et le zebre (genre Equus) appartiennent au meme genre taxonomique. Si l'on croise un ane male avec une jument (femelle cheval), le produit obtenu est generalement sterile. Comment appelle-t-on ce phenomene evolutif qui limite les echanges genetiques entre especes proches ?",
+              "question": "L'ane (Equus asinus) et le zebre (genre Equus) appartiennent au meme genre taxonomique. Si l'on croise un ane male avec une jument (femelle cheval), le produit obtenu est generalement sterile. Comment appelle-t-on ce phénomène evolutif qui limite les echanges genetiques entre espèces proches ?",
               "options": [
                 "La derive genetique",
                 "L'isolement reproducteur post-zygotique",
@@ -31510,7 +31510,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Quelle affirmation decrit le mieux la difference entre un verbe d'action et un verbe d'etat ?",
+              "question": "Quelle affirmation decrit le mieux la différence entre un verbe d'action et un verbe d'etat ?",
               "options": [
                 "Un verbe d'action se conjugue tandis qu'un verbe d'etat reste toujours a l'infinitif",
                 "Un verbe d'action exprime quelque chose que le sujet accomplit, alors qu'un verbe d'etat decrit une situation ou une qualite du sujet",
@@ -32078,7 +32078,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Quelle est la principale difference entre le point d'interrogation et le point d'exclamation ?",
+              "question": "Quelle est la principale différence entre le point d'interrogation et le point d'exclamation ?",
               "options": [
                 "Le point d'interrogation termine une question directe, le point d'exclamation exprime une émotion forte",
                 "Le point d'interrogation s'emploie en poésie, le point d'exclamation en prose",
@@ -32122,7 +32122,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "En typographie française, les guillemets standard sont de forme « ... ». Comment appelle-t-on precisement ces guillemets, et en quoi different-ils des guillemets anglais \" ... \" ?",
+              "question": "En typographie française, les guillemets standard sont de forme « ... ». Comment appelle-t-on precisement ces guillemets, et en quoi différent-ils des guillemets anglais \" ... \" ?",
               "options": [
                 "Guillemets chevrons ou angulaires, ils encadrent le texte avec des espaces insécables en français, contrairement aux guillemets droits anglais collés au texte",
                 "Guillemets simples, ils ne s'utilisent qu'en poésie tandis que les guillemets anglais sont réservés à la prose",
@@ -32233,12 +32233,12 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Qu'est-ce qu'une nuance de sens entre deux synonymes ?",
               "options": [
-                "Une difference de longueur entre les deux mots",
-                "Une petite difference de degre ou d'intensite dans leur signification",
+                "Une différence de longueur entre les deux mots",
+                "Une petite différence de degré ou d'intensite dans leur signification",
                 "Le fait qu'ils ne peuvent pas etre utilises dans la meme phrase",
-                "Le fait qu'ils appartiennent a deux langues differentes"
+                "Le fait qu'ils appartiennent a deux langues différentes"
               ],
-              "correctAnswer": "Une petite difference de degre ou d'intensite dans leur signification",
+              "correctAnswer": "Une petite différence de degré ou d'intensite dans leur signification",
               "isSpecial": false
             },
             {
@@ -34029,10 +34029,10 @@ export const UNIVERSES: Record<string, Universe> = {
               "options": [
                 "Il apporte du calme et de la relaxation",
                 "Il donne envie de dormir",
-                "Il donne de l'energie et l'envie de danser",
+                "Il donne de l'énergie et l'envie de danser",
                 "Il rend la musique plus douce"
               ],
-              "correctAnswer": "Il donne de l'energie et l'envie de danser",
+              "correctAnswer": "Il donne de l'énergie et l'envie de danser",
               "isSpecial": false
             },
             {
@@ -34094,11 +34094,11 @@ export const UNIVERSES: Record<string, Universe> = {
               "question": "Un chef d'orchestre joue un morceau d'abord très lentement, puis de plus en plus vite. Quel paramètre musical fait-il varier, et quel effet émotionnel ce changement produit-il probablement sur le public ?",
               "options": [
                 "Il varie les nuances, ce qui rend le morceau de plus en plus fort",
-                "Il varie le tempo, ce qui crée une montée en energie et en intensité",
+                "Il varie le tempo, ce qui crée une montée en énergie et en intensité",
                 "Il varie le solfège, ce qui complique la lecture pour les musiciens",
                 "Il varie le rythme de chaque note séparément, sans effet global"
               ],
-              "correctAnswer": "Il varie le tempo, ce qui crée une montée en energie et en intensité",
+              "correctAnswer": "Il varie le tempo, ce qui crée une montée en énergie et en intensité",
               "isSpecial": true
             }
           ]
@@ -34859,11 +34859,11 @@ export const UNIVERSES: Record<string, Universe> = {
               "question": "Le conservateur d'un musée souhaite exposer une peinture du XVIe siècle particulièrement sensible. Quelles mesures doit-il combiner pour la préserver au mieux ?",
               "options": [
                 "Placer la peinture sous un eclairage puissant pour les visiteurs et renouveler l'air frequemment",
-                "Utiliser un eclairage a faible rayonnement UV, maintenir une temperature et une humidite stables, et proteger l'oeuvre dans une vitrine",
+                "Utiliser un eclairage a faible rayonnement UV, maintenir une température et une humidite stables, et proteger l'oeuvre dans une vitrine",
                 "Accrocher la peinture pres d'une fenetre pour un eclairage naturel et surveiller uniquement la poussiere",
                 "Conserver la peinture dans une reserve sans jamais l'exposer afin d'eviter tout risque de deterioration"
               ],
-              "correctAnswer": "Utiliser un eclairage a faible rayonnement UV, maintenir une temperature et une humidite stables, et proteger l'oeuvre dans une vitrine",
+              "correctAnswer": "Utiliser un eclairage a faible rayonnement UV, maintenir une température et une humidite stables, et proteger l'oeuvre dans une vitrine",
               "isSpecial": true
             }
           ]
@@ -35758,7 +35758,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "options": [
                 "La ligne d'horizon est tout en bas du tableau ; les points de fuite indiquent les personnages les plus importants",
                 "La ligne d'horizon est a hauteur des yeux de l'observateur ; les points de fuite sont les endroits vers lesquels convergent toutes les lignes paralleles de l'image",
-                "La ligne d'horizon est tout en haut du tableau ; les points de fuite correspondent aux sources de lumiere",
+                "La ligne d'horizon est tout en haut du tableau ; les points de fuite correspondent aux sources de lumière",
                 "La ligne d'horizon varie selon le style du peintre ; les points de fuite indiquent les bords du tableau"
               ],
               "correctAnswer": "La ligne d'horizon est a hauteur des yeux de l'observateur ; les points de fuite sont les endroits vers lesquels convergent toutes les lignes paralleles de l'image",
@@ -36047,7 +36047,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "En synthese additive (lumiere, comme sur un ecran), quelles sont les trois couleurs primaires, et quelle couleur obtient-on en les combinant toutes ensemble a pleine intensite ?",
+              "question": "En synthese additive (lumière, comme sur un ecran), quelles sont les trois couleurs primaires, et quelle couleur obtient-on en les combinant toutes ensemble a pleine intensite ?",
               "options": [
                 "Rouge, jaune, bleu — qui donnent du marron",
                 "Cyan, magenta, jaune — qui donnent du noir",
@@ -36184,7 +36184,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Un triangle musical émet un son clair meme si l'on touche son metal avec les doigts pendant qu'il vibre. Pourquoi faut-il au contraire laisser le triangle suspendu librement ?",
+              "question": "Un triangle musical émet un son clair meme si l'on touche son métal avec les doigts pendant qu'il vibre. Pourquoi faut-il au contraire laisser le triangle suspendu librement ?",
               "options": [
                 "Pour que les vibrations ne soient pas amorties et que le son résonne pleinement",
                 "Pour que l'instrument garde sa forme triangulaire",
@@ -36195,7 +36195,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "La guitare classique a un corps asymetrique : le bout inferieur est plus large que le superieur. Cette forme en « 8 » etiré optimise la resonance. Quel luthier espagnol du XIXe siecle est considere comme le pere de la guitare classique moderne, ayant notamment etabli ses proportions actuelles ?",
+              "question": "La guitare classique a un corps asymetrique : le bout inferieur est plus large que le superieur. Cette forme en « 8 » etiré optimise la resonance. Quel luthier espagnol du XIXe siècle est considere comme le pere de la guitare classique moderne, ayant notamment etabli ses proportions actuelles ?",
               "options": [
                 "Antonio de Torres Jurado",
                 "Andres Segovia",
@@ -36470,12 +36470,12 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Lequel de ces effets est generalement associe a un tempo rapide en musique ?",
               "options": [
-                "Une atmosphere relaxante et calme",
+                "Une atmosphère relaxante et calme",
                 "Une impression de tristesse profonde",
-                "Une sensation d'energie et d'envie de danser",
+                "Une sensation d'énergie et d'envie de danser",
                 "Un sentiment de solennite et de gravite"
               ],
-              "correctAnswer": "Une sensation d'energie et d'envie de danser",
+              "correctAnswer": "Une sensation d'énergie et d'envie de danser",
               "isSpecial": false
             },
             {
@@ -37102,7 +37102,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Quelle est la principale difference de processus entre modeler de l'argile et tailler de la pierre ?",
+              "question": "Quelle est la principale différence de processus entre modeler de l'argile et tailler de la pierre ?",
               "options": [
                 "Modeler consiste à ajouter et former la matière, tailler consiste à en retirer",
                 "Modeler utilise des outils metalliques, tailler se fait uniquement a la main",
@@ -37113,7 +37113,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Michel-Ange a sculpté le David (1501-1504) dans un seul bloc de marbre de Carrare mesurant environ 5,17 metres de haut. Quel principe fondamental de la taille directe cette oeuvre illustre-t-elle de maniere exemplaire ?",
+              "question": "Michel-Ange a sculpté le David (1501-1504) dans un seul bloc de marbre de Carrare mesurant environ 5,17 mètres de haut. Quel principe fondamental de la taille directe cette oeuvre illustre-t-elle de maniere exemplaire ?",
               "options": [
                 "Que le sculpteur assemble plusieurs blocs pour atteindre la taille souhaitee",
                 "Que toute erreur de taille est irréversible car on ne peut pas rajouter la matière enlevée",
@@ -37386,7 +37386,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "La trompette et la flute sont toutes deux des instruments a vent. Quelle difference fondamentale les distingue ?",
+              "question": "La trompette et la flute sont toutes deux des instruments a vent. Quelle différence fondamentale les distingue ?",
               "options": [
                 "La trompette est un cuivre et la flute est un bois",
                 "La flute se joue en tapant dessus et la trompette en soufflant",
@@ -37408,7 +37408,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "La guitare et le violon appartiennent tous deux a la famille des cordes. Quelle difference principale distingue leur technique de jeu habituelle ?",
+              "question": "La guitare et le violon appartiennent tous deux a la famille des cordes. Quelle différence principale distingue leur technique de jeu habituelle ?",
               "options": [
                 "La guitare se joue en soufflant et le violon en grattant",
                 "La guitare se gratte avec les doigts ou un mediator et le violon se joue avec un archet",
@@ -37771,12 +37771,12 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Pourquoi les peintres impressionnistes sortaient-ils de leur atelier pour travailler en extérieur ?",
               "options": [
-                "Pour capturer la lumiere naturelle et ses variations en temps reel",
+                "Pour capturer la lumière naturelle et ses variations en temps reel",
                 "Pour respecter les regles du Salon officiel qui interdisait la peinture en interieur",
                 "Pour economiser les pigments de couleur qui etaient tres couteux a l'epoque",
                 "Pour imiter les techniques des peintres academiques hollandais"
               ],
-              "correctAnswer": "Pour capturer la lumiere naturelle et ses variations en temps reel",
+              "correctAnswer": "Pour capturer la lumière naturelle et ses variations en temps reel",
               "isSpecial": false
             },
             {
@@ -37791,7 +37791,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Quelle est la difference principale entre le pointillisme de Seurat et la technique impressionniste classique ?",
+              "question": "Quelle est la différence principale entre le pointillisme de Seurat et la technique impressionniste classique ?",
               "options": [
                 "Seurat peignait uniquement des paysages, contrairement aux impressionnistes qui peignaient des portraits",
                 "Seurat juxtapose des points de couleurs pures pour que l'oeil fasse la synthese, tandis que les impressionnistes utilisaient des touches de pinceau visibles",
@@ -37802,7 +37802,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "En quelle annee Vassily Kandinsky est-il considere comme ayant realise la premiere oeuvre totalement abstraite ?",
+              "question": "En quelle annee Vassily Kandinsky est-il considere comme ayant realise la première oeuvre totalement abstraite ?",
               "options": [
                 "1888",
                 "1900",
@@ -37818,7 +37818,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Parce que les palettes de l'epoque ne supportaient pas le melange de certains pigments chimiques",
                 "Pour ne pas ternir les pigments et conserver des couleurs plus lumineuses sur la toile",
                 "Parce que le melange des couleurs etait interdit par les regles du mouvement impressionniste",
-                "Pour peindre plus rapidement et terminer leurs tableaux en plein air avant que la lumiere ne change"
+                "Pour peindre plus rapidement et terminer leurs tableaux en plein air avant que la lumière ne change"
               ],
               "correctAnswer": "Pour ne pas ternir les pigments et conserver des couleurs plus lumineuses sur la toile",
               "isSpecial": false
@@ -37837,7 +37837,7 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Selon Kandinsky, quelle resonance spirituelle attribuait-il a la couleur bleue ?",
               "options": [
-                "L'energie et la passion de la vie",
+                "L'énergie et la passion de la vie",
                 "La joie et la legerte du printemps",
                 "Le calme celeste",
                 "La puissance et la domination"
@@ -38606,7 +38606,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Quelle est la difference entre un langage compile et un langage interprete ?",
+              "question": "Quelle est la différence entre un langage compile et un langage interprete ?",
               "options": [
                 "Le compile est plus lent car il traduit ligne par ligne",
                 "Le compile transforme tout le code avant l'execution, l'interprete traduit ligne par ligne",
@@ -38872,7 +38872,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "options": [
                 "A comprendre ce qui se passe autour de lui, comme des yeux ou des oreilles",
                 "A stocker les programmes qu'il doit executer",
-                "A alimenter le robot en electricite",
+                "A alimenter le robot en électricité",
                 "A communiquer avec d'autres robots via internet"
               ],
               "correctAnswer": "A comprendre ce qui se passe autour de lui, comme des yeux ou des oreilles",
@@ -39482,12 +39482,12 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Selon la règle 20-20-20, que doit-on faire toutes les 20 minutes d'écran ?",
               "options": [
-                "Regarder un objet à 6 metres pendant 20 secondes",
+                "Regarder un objet à 6 mètres pendant 20 secondes",
                 "Fermer les yeux pendant 20 minutes",
                 "Boire un verre d'eau et marcher 20 pas",
                 "Reduire la luminosite de l'ecran de 20 %"
               ],
-              "correctAnswer": "Regarder un objet à 6 metres pendant 20 secondes",
+              "correctAnswer": "Regarder un objet à 6 mètres pendant 20 secondes",
               "isSpecial": false
             },
             {
@@ -39495,8 +39495,8 @@ export const UNIVERSES: Record<string, Universe> = {
               "options": [
                 "Entre 50 et 70 cm",
                 "Entre 10 et 20 cm",
-                "Entre 1 et 2 metres",
-                "Plus de 2 metres"
+                "Entre 1 et 2 mètres",
+                "Plus de 2 mètres"
               ],
               "correctAnswer": "Entre 50 et 70 cm",
               "isSpecial": false
@@ -41765,7 +41765,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "options": [
                 "Un filtre anti-spam qui bloque les messages indésirables dans les boites mail",
                 "La personnalisation des résultats de recherche qui limite l'exposition a des points de vue différents",
-                "Un systeme de protection des données personnelles imposé par la loi européenne",
+                "Un système de protection des données personnelles imposé par la loi européenne",
                 "Une technique SEO qui améliore le classement d'un site dans une zone géographique"
               ],
               "correctAnswer": "La personnalisation des résultats de recherche qui limite l'exposition a des points de vue différents",
@@ -43576,12 +43576,12 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Un randonneur perdu en forêt dispose d'eau de rivière, d'un briquet, d'une casserole et de plantes inconnues. Quelle est la meilleure sequence d'actions pour survivre sans risque ?",
               "options": [
-                "Manger les plantes inconnues pour avoir de l'energie, puis boire l'eau de riviere directement",
-                "Faire bouillir l'eau de riviere pour la purifier, et eviter de manger les plantes tant qu'elles n'ont pas ete identifiees avec certitude",
-                "Boire l'eau de riviere directement car la soif est la priorite absolue, et gouter prudemment les plantes",
+                "Manger les plantes inconnues pour avoir de l'énergie, puis boire l'eau de rivière directement",
+                "Faire bouillir l'eau de rivière pour la purifier, et eviter de manger les plantes tant qu'elles n'ont pas ete identifiees avec certitude",
+                "Boire l'eau de rivière directement car la soif est la priorite absolue, et gouter prudemment les plantes",
                 "Ignorer l'eau et les plantes, et chercher uniquement a construire un abri avant toute autre action"
               ],
-              "correctAnswer": "Faire bouillir l'eau de riviere pour la purifier, et eviter de manger les plantes tant qu'elles n'ont pas ete identifiees avec certitude",
+              "correctAnswer": "Faire bouillir l'eau de rivière pour la purifier, et eviter de manger les plantes tant qu'elles n'ont pas ete identifiees avec certitude",
               "isSpecial": true
             }
           ]
@@ -44146,7 +44146,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "options": [
                 "Pour eviter les coups de soleil et limiter la perte d'eau du corps",
                 "Parce que le soleil fait peur aux animaux dangereux",
-                "Pour garder son energie en dormant a l'ombre",
+                "Pour garder son énergie en dormant a l'ombre",
                 "Parce que le sable reflète la lumière et abime les yeux uniquement"
               ],
               "correctAnswer": "Pour eviter les coups de soleil et limiter la perte d'eau du corps",
@@ -44430,10 +44430,10 @@ export const UNIVERSES: Record<string, Universe> = {
               "options": [
                 "Elle indique la direction du Sud",
                 "Elle permet de mesurer l'heure",
-                "Elle aide a reperer l'Etoile Polaire",
+                "Elle aide a reperer l'Étoile Polaire",
                 "Elle predit la meteo du lendemain"
               ],
-              "correctAnswer": "Elle aide a reperer l'Etoile Polaire",
+              "correctAnswer": "Elle aide a reperer l'Étoile Polaire",
               "isSpecial": false
             },
             {
@@ -44470,14 +44470,14 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Quelle difference fondamentale existe-t-il entre la Terre et l'espace en ce qui concerne l'air ?",
+              "question": "Quelle différence fondamentale existe-t-il entre la Terre et l'espace en ce qui concerne l'air ?",
               "options": [
                 "Sur Terre il y a de l'azote, dans l'espace il y a de l'oxygene",
-                "La Terre possede une atmosphere remplie d'oxygene, l'espace n'en a pas",
+                "La Terre possede une atmosphère remplie d'oxygene, l'espace n'en a pas",
                 "Dans l'espace l'air est tres froid, sur Terre il est chaud",
                 "Sur Terre l'air est rare, dans l'espace il est abondant"
               ],
-              "correctAnswer": "La Terre possede une atmosphere remplie d'oxygene, l'espace n'en a pas",
+              "correctAnswer": "La Terre possede une atmosphère remplie d'oxygene, l'espace n'en a pas",
               "isSpecial": false
             },
             {
@@ -44492,7 +44492,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Un astronaute se retrouve en panne d'oxygene dans l'espace et doit attendre les secours. En connaissant la regle des 3, quel probleme devient critique en premier et en combien de temps ?",
+              "question": "Un astronaute se retrouve en panne d'oxygene dans l'espace et doit attendre les secours. En connaissant la regle des 3, quel problème devient critique en premier et en combien de temps ?",
               "options": [
                 "Le manque d'eau, en 3 jours",
                 "Le manque de nourriture, en 3 semaines",
@@ -45760,10 +45760,10 @@ export const UNIVERSES: Record<string, Universe> = {
               "options": [
                 "La Lune",
                 "Vénus",
-                "L'Etoile Polaire",
+                "L'Étoile Polaire",
                 "Sirius"
               ],
-              "correctAnswer": "L'Etoile Polaire",
+              "correctAnswer": "L'Étoile Polaire",
               "isSpecial": false
             },
             {
@@ -46383,7 +46383,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "options": [
                 "Ils modifient le pH du sol et tuent les champignons",
                 "Les animaux peuvent les ingerer et tomber gravement malades",
-                "Ils bloquent la lumiere solaire et empeche la croissance des plantes",
+                "Ils bloquent la lumière solaire et empeche la croissance des plantes",
                 "Ils liberent des substances qui repoussent les insectes pollinisateurs"
               ],
               "correctAnswer": "Les animaux peuvent les ingerer et tomber gravement malades",
@@ -46805,14 +46805,14 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Quelle constellation du ciel nocturne permet de localiser l'Etoile Polaire et pourquoi est-elle utile en survie ?",
+              "question": "Quelle constellation du ciel nocturne permet de localiser l'Étoile Polaire et pourquoi est-elle utile en survie ?",
               "options": [
                 "Orion, car elle indique le sud géographique",
-                "La Grande Ourse, car elle pointe vers le nord grâce à l'Etoile Polaire",
+                "La Grande Ourse, car elle pointe vers le nord grâce à l'Étoile Polaire",
                 "Cassiopée, car elle forme une croix qui marque les quatre points cardinaux",
                 "Le Centaure, car il pointe vers l'est au lever du soleil"
               ],
-              "correctAnswer": "La Grande Ourse, car elle pointe vers le nord grâce à l'Etoile Polaire",
+              "correctAnswer": "La Grande Ourse, car elle pointe vers le nord grâce à l'Étoile Polaire",
               "isSpecial": false
             },
             {
@@ -46860,14 +46860,14 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Quelle est la principale difference entre regarder les etoiles depuis la Terre et depuis l'espace ?",
+              "question": "Quelle est la principale différence entre regarder les étoiles depuis la Terre et depuis l'espace ?",
               "options": [
-                "Dans l'espace, les etoiles semblent plus petites car on en est plus proche",
-                "Dans l'espace, les etoiles ne scintillent pas car il n'y a pas d'atmosphere pour diffuser la lumiere",
-                "Depuis la Terre, on voit plus d'etoiles car l'atmosphere amplifie leur lumiere",
-                "Dans l'espace, les etoiles changent de couleur en raison de l'absence de gravite"
+                "Dans l'espace, les étoiles semblent plus petites car on en est plus proche",
+                "Dans l'espace, les étoiles ne scintillent pas car il n'y a pas d'atmosphère pour diffuser la lumière",
+                "Depuis la Terre, on voit plus d'étoiles car l'atmosphère amplifie leur lumière",
+                "Dans l'espace, les étoiles changent de couleur en raison de l'absence de gravite"
               ],
-              "correctAnswer": "Dans l'espace, les etoiles ne scintillent pas car il n'y a pas d'atmosphere pour diffuser la lumiere",
+              "correctAnswer": "Dans l'espace, les étoiles ne scintillent pas car il n'y a pas d'atmosphère pour diffuser la lumière",
               "isSpecial": false
             },
             {
@@ -51742,7 +51742,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "question": "Comment Susanoo a-t-il réussi à vaincre le serpent géant Yamata no Orochi ?",
               "options": [
                 "En l'enivrant avec du saké placé dans huit cuves",
-                "En le pétrифiant avec un miroir sacré",
+                "En le pétrifiant avec un miroir sacré",
                 "En appelant Amaterasu à l'aide depuis le ciel",
                 "En l'enfermant dans une grotte à l'aide d'une corde magique"
               ],
@@ -53105,12 +53105,12 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Quel spectacle les Romains appréciaient-ils particulièrement au Colisée ?",
               "options": [
-                "Des représentations de theatre comique",
+                "Des représentations de théâtre comique",
                 "Des tournois de chevaliers",
-                "Des courses de chars tirés par des chevaux",
-                "Des combats d'elephants"
+                "Des combats de gladiateurs",
+                "Des courses de chars tirés par des chevaux"
               ],
-              "correctAnswer": "Des courses de chars tirés par des chevaux",
+              "correctAnswer": "Des combats de gladiateurs",
               "isSpecial": false
             },
             {
@@ -55657,7 +55657,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "La pierre de Rosette porte des inscriptions en trois systèmes d'ecriture differents. Lequel de ces ensembles correspond exactement aux trois ecritures gravees sur cette pierre ?",
+              "question": "La pierre de Rosette porte des inscriptions en trois systèmes d'ecriture différents. Lequel de ces ensembles correspond exactement aux trois ecritures gravees sur cette pierre ?",
               "options": [
                 "Hieroglyphes, cuneiforme et latin",
                 "Hieroglyphes, demotique et grec ancien",
