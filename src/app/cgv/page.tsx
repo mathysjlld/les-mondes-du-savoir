@@ -38,10 +38,8 @@ export default function CgvPage() {
         <div>
           <h2 className="text-xl font-bold text-teal-700">Article 2 — Identité du vendeur</h2>
           <p className="mt-2">
-            Le Service est édité et commercialisé par{" "}
-            <span className="rounded bg-amber-100 px-1 font-semibold text-amber-800">
-              Kaiden Vialle &amp; Mathys Julliand — [forme juridique, SIRET et adresse à compléter]
-            </span>{" "}
+            Le Service est édité et commercialisé par <strong>Kaïden Zoghlami Vialle, entrepreneur
+            individuel</strong>, immatriculé sous le numéro <strong>SIRET 890&nbsp;831&nbsp;415&nbsp;00025</strong>{" "}
             (voir les{" "}
             <Link href="/mentions-legales" className="text-teal-600 hover:underline">
               mentions légales
@@ -74,8 +72,8 @@ export default function CgvPage() {
         <div>
           <h2 className="text-xl font-bold text-teal-700">Article 4 — Prix</h2>
           <p className="mt-2">
-            L&apos;abonnement Famille est proposé au prix de <strong>7&nbsp;€ par mois, toutes taxes comprises
-            (TTC)</strong>. Ce prix inclut l&apos;accès à l&apos;ensemble des fonctionnalités de l&apos;offre pour
+            L&apos;abonnement Famille est proposé au prix de <strong>7&nbsp;€ par mois</strong> (TVA non
+            applicable, article 293&nbsp;B du Code général des impôts). Ce prix inclut l&apos;accès à l&apos;ensemble des fonctionnalités de l&apos;offre pour
             un foyer. Le prix applicable est celui affiché au moment de la souscription. L&apos;éditeur se réserve
             le droit de modifier ses tarifs&nbsp;; toute évolution sera communiquée au Client à l&apos;avance et ne
             s&apos;appliquera qu&apos;aux échéances postérieures, le Client restant libre de résilier.
@@ -108,7 +106,8 @@ export default function CgvPage() {
             L&apos;abonnement est conclu pour une durée d&apos;<strong>un mois, reconductible tacitement</strong>
             par périodes successives d&apos;un mois. Conformément aux articles L.215-1 et suivants et L.215-4 du
             Code de la consommation, le Client peut <strong>résilier à tout moment</strong>, sans frais ni
-            justification, depuis son espace compte ou par simple demande à{" "}
+            justification, depuis la page «&nbsp;Abonnement&nbsp;» du site (bouton «&nbsp;Gérer mon
+            abonnement&nbsp;») ou par simple demande à{" "}
             <a className="text-teal-600 hover:underline" href="mailto:kaidenvialle@gmail.com">
               kaidenvialle@gmail.com
             </a>
@@ -122,11 +121,17 @@ export default function CgvPage() {
           <p className="mt-2">
             Conformément aux articles L.221-18 et suivants du Code de la consommation, le Client dispose d&apos;un
             délai de <strong>14 jours</strong> à compter de la souscription pour exercer son droit de rétractation,
-            sans avoir à se justifier. Toutefois, s&apos;agissant d&apos;un contenu numérique fourni
-            immédiatement, le Client qui demande à accéder au Service avant la fin de ce délai reconnaît, en
-            cochant la case prévue à cet effet, <strong>renoncer expressément à son droit de rétractation</strong>
-            pour la partie déjà exécutée (article L.221-28, 13°). Le Client peut néanmoins résilier à tout moment
-            dans les conditions de l&apos;article 7.
+            sans avoir à se justifier. Toutefois, s&apos;agissant d&apos;un contenu numérique fourni immédiatement,
+            <strong> en validant son paiement, le Client demande expressément l&apos;accès immédiat au Service et
+            reconnaît renoncer à son droit de rétractation</strong> pour la partie déjà exécutée (article
+            L.221-28, 13° du Code de la consommation) — cette information lui est rappelée sur la page de
+            paiement avant validation. S&apos;il exerce sa rétractation dans le délai de 14 jours, le Client est
+            remboursé au prorata de la période restant à courir. Il peut par ailleurs résilier à tout moment dans
+            les conditions de l&apos;article 7. La demande de rétractation s&apos;exerce par e-mail à{" "}
+            <a className="text-teal-600 hover:underline" href="mailto:kaidenvialle@gmail.com">
+              kaidenvialle@gmail.com
+            </a>
+            .
           </p>
         </div>
 
@@ -187,10 +192,11 @@ export default function CgvPage() {
           <p className="mt-2">
             Conformément à l&apos;article L.612-1 du Code de la consommation, le Client a le droit de recourir
             gratuitement à un médiateur de la consommation en vue de la résolution amiable d&apos;un litige,
-            après avoir tenté de le résoudre directement avec l&apos;éditeur.{" "}
-            <span className="rounded bg-amber-100 px-1 font-semibold text-amber-800">
-              [Coordonnées du médiateur à compléter lors de l&apos;adhésion à un dispositif de médiation]
-            </span>
+            après avoir tenté de le résoudre directement avec l&apos;éditeur. Les coordonnées du médiateur
+            compétent sont communiquées à tout Client qui en fait la demande à{" "}
+            <a className="text-teal-600 hover:underline" href="mailto:kaidenvialle@gmail.com">
+              kaidenvialle@gmail.com
+            </a>
             . Le Client peut également utiliser la plateforme européenne de règlement en ligne des litiges&nbsp;:{" "}
             <a
               className="text-teal-600 hover:underline"

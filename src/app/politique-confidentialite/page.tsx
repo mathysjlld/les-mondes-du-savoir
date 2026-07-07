@@ -110,8 +110,9 @@ export default function PolitiqueConfidentialitePage() {
           </p>
           <ul className="mt-2 list-disc pl-6 space-y-1">
             <li><strong>Vercel</strong> — hébergement du site.</li>
-            <li><strong>Supabase</strong> — authentification et base de données (compte cloud).</li>
+            <li><strong>Supabase</strong> — authentification et base de données (compte cloud)&nbsp;; données hébergées dans l&apos;Union européenne.</li>
             <li><strong>Stripe</strong> — traitement des paiements de l&apos;abonnement.</li>
+            <li><strong>Brevo</strong> (société française) — envoi des e-mails de service, comme la confirmation d&apos;abonnement.</li>
           </ul>
           <p className="mt-2">
             Certains de ces prestataires peuvent être situés hors de l&apos;Union européenne. Dans ce cas, les

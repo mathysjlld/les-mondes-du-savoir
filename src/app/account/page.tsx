@@ -1,11 +1,20 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import Link from "next/link";
+import { useRouter, useSearchParams } from "next/navigation";
 import { useApp } from "@/context/AppContext";
 
-export default function AccountPage() {
+function AccountContent() {
   const { cloudEnabled, userEmail, signUp, signIn, signOut } = useApp();
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  // Retour automatique vers la page d'origine (ex. /abonnement) après connexion.
+  const next = searchParams.get("next");
+
+  useEffect(() => {
+    if (userEmail && next && next.startsWith("/")) router.replace(next);
+  }, [userEmail, next, router]);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [mode, setMode] = useState<"signin" | "signup">("signin");
@@ -84,5 +93,14 @@ export default function AccountPage() {
         {message && <p className="text-center text-sm font-bold text-amber-700 mt-4">{message}</p>}
       </div>
     </main>
+  );
+}
+
+export default function AccountPage() {
+  // useSearchParams impose une frontière Suspense au niveau de la page.
+  return (
+    <Suspense>
+      <AccountContent />
+    </Suspense>
   );
 }
