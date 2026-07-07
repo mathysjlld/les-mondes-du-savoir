@@ -166,7 +166,7 @@ export const UNIVERSES: Record<string, Universe> = {
           "cards": [
             {
               "title": "La girafe, reine de la hauteur",
-              "text": "La girafe est l'animal terrestre le plus haut du monde. Elle possède un très long cou et de très longues pattes, ce qui la rend immédiatement reconnaissable. Son cou représente environ un tiers de sa hauteur totale : une girafe adulte mesure en moyenne 5 mètres, dont environ 1,5 mètre de cou. Grâce à cette morphologie, elle peut atteindre les feuilles tout en haut des arbres.",
+              "text": "La girafe est l'animal terrestre le plus haut du monde. Elle possède un très long cou et de très longues pattes, ce qui la rend immédiatement reconnaissable. Son cou représente environ un tiers de sa hauteur totale : une girafe adulte mesure en moyenne 5 mètrès, dont environ 1,5 mètre de cou. Grâce à cette morphologie, elle peut atteindre les feuilles tout en haut des arbres.",
               "emoji": "🦒"
             },
             {
@@ -286,12 +286,12 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Si une girafe adulte mesure en moyenne 5 mètres de haut et que son cou représente environ un tiers de sa hauteur totale, quelle est la longueur approximative de son cou ?",
+              "question": "Si une girafe adulte mesure en moyenne 5 mètrès de haut et que son cou représente environ un tiers de sa hauteur totale, quelle est la longueur approximative de son cou ?",
               "options": [
                 "Environ 1 mètre",
                 "Environ 1,5 mètre",
-                "Environ 2 mètres",
-                "Environ 2,5 mètres"
+                "Environ 2 mètrès",
+                "Environ 2,5 mètrès"
               ],
               "correctAnswer": "Environ 1,5 mètre",
               "isSpecial": true
@@ -400,7 +400,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Leur sang est toujours à une température très basse",
                 "Ils ne peuvent pas survivre en dehors de l'eau",
                 "Leur température corporelle dépend de celle de leur environnement",
-                "Ils ne produisent aucune chaleur meme en courant"
+                "Ils ne produisent aucune chaleur même en courant"
               ],
               "correctAnswer": "Leur température corporelle dépend de celle de leur environnement",
               "isSpecial": false
@@ -1282,7 +1282,7 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Quelle capacite particuliere possede le cameleon pour chasser ?",
               "options": [
-                "Il court tres vite",
+                "Il court très vite",
                 "Il change de couleur pour se fondre dans le feuillage",
                 "Il grimpe aux arbres comme un singe",
                 "Il nage sous l'eau"
@@ -1691,7 +1691,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Le papillon Monarque : un voyage de 4 000 km",
-              "text": "Le papillon Monarque accomplit l'une des migrations les plus étonnantes du monde des insectes. Depuis le Canada, il parcourt plus de 4 000 kilomètres pour rejoindre les forêts du Mexique, où il passe l'hiver. Au printemps, ses descendants remontent vers le nord. Ce voyage s'effectue sur plusieurs générations de papillons.",
+              "text": "Le papillon Monarque accomplit l'une des migrations les plus étonnantes du monde des insectes. Depuis le Canada, il parcourt plus de 4 000 kilomètrès pour rejoindre les forêts du Mexique, où il passe l'hiver. Au printemps, ses descendants remontent vers le nord. Ce voyage s'effectue sur plusieurs générations de papillons.",
               "emoji": "🦋"
             },
             {
@@ -1706,7 +1706,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "La sterne arctique : championne des migrations",
-              "text": "La sterne arctique détient le record mondial de la plus longue migration. Chaque année, elle effectue un aller-retour entre le pôle Nord et le pôle Sud, soit environ 70 000 kilomètres au total. Cela représente environ 35 000 kilomètres dans un seul sens. En une vie, une sterne arctique peut parcourir l'équivalent de plusieurs voyages jusqu'à la Lune.",
+              "text": "La sterne arctique détient le record mondial de la plus longue migration. Chaque année, elle effectue un aller-retour entre le pôle Nord et le pôle Sud, soit environ 70 000 kilomètrès au total. Cela représente environ 35 000 kilomètrès dans un seul sens. En une vie, une sterne arctique peut parcourir l'équivalent de plusieurs voyages jusqu'à la Lune.",
               "emoji": "🐦"
             },
             {
@@ -1730,12 +1730,12 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Quelle distance le papillon Monarque parcourt-il lors de sa migration ?",
               "options": [
-                "Plus de 1 000 kilomètres",
-                "Plus de 2 500 kilomètres",
-                "Plus de 4 000 kilomètres",
-                "Plus de 10 000 kilomètres"
+                "Plus de 1 000 kilomètrès",
+                "Plus de 2 500 kilomètrès",
+                "Plus de 4 000 kilomètrès",
+                "Plus de 10 000 kilomètrès"
               ],
-              "correctAnswer": "Plus de 4 000 kilomètres",
+              "correctAnswer": "Plus de 4 000 kilomètrès",
               "isSpecial": false
             },
             {
@@ -1783,14 +1783,14 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Combien de kilomètres environ la Sterne arctique parcourt-elle chaque annee lors de son aller-retour migratoire ?",
+              "question": "Combien de kilomètrès environ la Sterne arctique parcourt-elle chaque année lors de son aller-retour migratoire ?",
               "options": [
-                "Environ 20 000 kilomètres",
-                "Environ 40 000 kilomètres",
-                "Environ 70 000 kilomètres",
-                "Environ 100 000 kilomètres"
+                "Environ 20 000 kilomètrès",
+                "Environ 40 000 kilomètrès",
+                "Environ 70 000 kilomètrès",
+                "Environ 100 000 kilomètrès"
               ],
-              "correctAnswer": "Environ 70 000 kilomètres",
+              "correctAnswer": "Environ 70 000 kilomètrès",
               "isSpecial": false
             },
             {
@@ -1818,12 +1818,12 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Si un oiseau migrateur part du pole Nord en direction du pole Sud, puis revient au pole Nord, et que la Sterne arctique parcourt environ 70 000 km pour ce trajet complet, quelle distance correspond approximativement a un seul sens du voyage ?",
               "options": [
-                "Environ 17 500 kilomètres",
-                "Environ 35 000 kilomètres",
-                "Environ 50 000 kilomètres",
-                "Environ 70 000 kilomètres"
+                "Environ 17 500 kilomètrès",
+                "Environ 35 000 kilomètrès",
+                "Environ 50 000 kilomètrès",
+                "Environ 70 000 kilomètrès"
               ],
-              "correctAnswer": "Environ 35 000 kilomètres",
+              "correctAnswer": "Environ 35 000 kilomètrès",
               "isSpecial": true
             }
           ]
@@ -1839,7 +1839,7 @@ export const UNIVERSES: Record<string, Universe> = {
           "cards": [
             {
               "title": "Ce qui rend les oiseaux uniques",
-              "text": "Les oiseaux sont les seuls animaux sur Terre à posséder des plumes. Ils ont également deux ailes et un bec sans dents, contrairement à leurs ancêtres les dinosaures. Ces caractéristiques les distinguent de tous les autres animaux, même si certains oiseaux, comme le manchot, ne peuvent pas voler malgré leurs ailes.",
+              "text": "Les oiseaux sont les seuls animaux sur Terre à posséder des plumes. Ils ont également deux ailes et un bec sans dents, contrairement à leurs ancêtrès les dinosaures. Ces caractéristiques les distinguent de tous les autres animaux, même si certains oiseaux, comme le manchot, ne peuvent pas voler malgré leurs ailes.",
               "emoji": "🦅"
             },
             {
@@ -1859,18 +1859,18 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Les rapaces : chasseurs aux yeux de lynx",
-              "text": "Un rapace est un oiseau chasseur comme l'aigle ou le faucon, qui se nourrit d'autres animaux. Ils possèdent une vue extraordinairement perçante. Un aigle peut repérer une souris au sol depuis plus d'un kilomètre de hauteur. Le faucon pèlerin a une vue environ huit fois plus puissante que celle d'un humain : si un humain voit à 200 mètres, le faucon distingue le même objet à environ 1 600 mètres.",
+              "text": "Un rapace est un oiseau chasseur comme l'aigle ou le faucon, qui se nourrit d'autres animaux. Ils possèdent une vue extraordinairement perçante. Un aigle peut repérer une souris au sol depuis plus d'un kilomètre de hauteur. Le faucon pèlerin a une vue environ huit fois plus puissante que celle d'un humain : si un humain voit à 200 mètrès, le faucon distingue le même objet à environ 1 600 mètrès.",
               "emoji": "🦅"
             }
           ],
           "quiz": [
             {
-              "question": "Quelle caracteristique physique distingue les oiseaux de tous les autres animaux ?",
+              "question": "Quelle caractéristique physique distingue les oiseaux de tous les autres animaux ?",
               "options": [
                 "Ils ont quatre pattes et une queue",
                 "Ils ont des plumes, deux ailes et un bec sans dents",
-                "Ils pondent des oeufs et ont des ecailles",
-                "Ils respirent sous l'eau grace a des branchies"
+                "Ils pondent des oeufs et ont des écailles",
+                "Ils respirent sous l'eau grâce a des branchies"
               ],
               "correctAnswer": "Ils ont des plumes, deux ailes et un bec sans dents",
               "isSpecial": false
@@ -1879,64 +1879,64 @@ export const UNIVERSES: Record<string, Universe> = {
               "question": "Pourquoi les os des oiseaux sont-ils creux ?",
               "options": [
                 "Pour stocker de la nourriture pendant les migrations",
-                "Pour resister aux morsures des predateurs",
-                "Pour rendre leur corps plus leger et faciliter le vol",
+                "Pour resister aux morsures des prédateurs",
+                "Pour rendre leur corps plus léger et faciliter le vol",
                 "Pour produire plus de globules rouges"
               ],
-              "correctAnswer": "Pour rendre leur corps plus leger et faciliter le vol",
+              "correctAnswer": "Pour rendre leur corps plus léger et faciliter le vol",
               "isSpecial": false
             },
             {
               "question": "Pour quelle raison principale un oiseau chante-t-il au printemps ?",
               "options": [
                 "Pour avertir ses petits d'un danger proche",
-                "Pour seduire un partenaire",
+                "Pour séduire un partenaire",
                 "Pour indiquer ou se trouve de la nourriture",
                 "Pour signaler qu'il fait chaud"
               ],
-              "correctAnswer": "Pour seduire un partenaire",
+              "correctAnswer": "Pour séduire un partenaire",
               "isSpecial": false
             },
             {
               "question": "Quel role jouent les plumes dans la regulation de la température du corps d'un oiseau ?",
               "options": [
                 "Elles refroidissent l'oiseau en evacuant la chaleur",
-                "Elles gardent la chaleur et protegeent du froid",
+                "Elles gardent la chaleur et protègent du froid",
                 "Elles absorbent la chaleur du soleil pour rechauffer le sang",
                 "Elles n'ont aucun role thermique"
               ],
-              "correctAnswer": "Elles gardent la chaleur et protegeent du froid",
+              "correctAnswer": "Elles gardent la chaleur et protègent du froid",
               "isSpecial": false
             },
             {
-              "question": "Comment les plumes des oiseaux restent-elles impermeables a l'eau ?",
+              "question": "Comment les plumes des oiseaux restent-elles imperméables a l'eau ?",
               "options": [
-                "Grace a une couche de cire produite par la peau",
-                "Grace a une huile speciale qui recouvre les plumes",
-                "Grace a leur structure en ecailles microscopiques",
-                "Grace a l'air emprisonne entre les plumes"
+                "Grâce a une couche de cire produite par la peau",
+                "Grâce a une huile speciale qui recouvre les plumes",
+                "Grâce a leur structure en écailles microscopiques",
+                "Grâce a l'air emprisonne entre les plumes"
               ],
-              "correctAnswer": "Grace a une huile speciale qui recouvre les plumes",
+              "correctAnswer": "Grâce a une huile speciale qui recouvre les plumes",
               "isSpecial": false
             },
             {
               "question": "Qu'appelle-t-on un rapace ?",
               "options": [
-                "Un oiseau qui migre chaque annee vers le sud",
+                "Un oiseau qui migre chaque année vers le sud",
                 "Un oiseau comme l'aigle ou le faucon qui chasse d'autres animaux",
                 "Un oiseau aquatique qui plonge pour attraper des poissons",
-                "Un oiseau incapable de voler comme le pingouin"
+                "Un oiseau incapable de voler comme le manchot"
               ],
               "correctAnswer": "Un oiseau comme l'aigle ou le faucon qui chasse d'autres animaux",
               "isSpecial": false
             },
             {
-              "question": "A quelle distance un aigle peut-il reperer une souris au sol lorsqu'il vole en altitude ?",
+              "question": "A quelle distance un aigle peut-il repérer une souris au sol lorsqu'il vole en altitude ?",
               "options": [
-                "A environ 100 mètres",
-                "A environ 500 mètres",
+                "A environ 100 mètrès",
+                "A environ 500 mètrès",
                 "A plus de 1 kilomètre",
-                "A environ 5 kilomètres"
+                "A environ 5 kilomètrès"
               ],
               "correctAnswer": "A plus de 1 kilomètre",
               "isSpecial": false
@@ -1946,7 +1946,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "options": [
                 "Ses glandes salivaires",
                 "Une glande speciale situee pres de la queue",
-                "Ses plumes elles-memes",
+                "Ses plumes elles-mêmes",
                 "Son foie"
               ],
               "correctAnswer": "Une glande speciale situee pres de la queue",
@@ -1955,23 +1955,23 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Un oiseau chante pour deux raisons principales. Laquelle de ces raisons est correcte ?",
               "options": [
-                "Attirer des insectes et se reperer dans l'obscurite",
-                "Defendre son territoire et seduire un partenaire",
+                "Attirer des insectes et se repérer dans l'obscurite",
+                "Defendre son territoire et séduire un partenaire",
                 "Communiquer avec sa famille et demander de la nourriture",
                 "Signaler la pluie et endormir ses petits"
               ],
-              "correctAnswer": "Defendre son territoire et seduire un partenaire",
+              "correctAnswer": "Defendre son territoire et séduire un partenaire",
               "isSpecial": false
             },
             {
-              "question": "Si un faucon pelerin possede une vue environ huit fois plus percante que celle d'un humain, et qu'un humain distingue un objet a 200 mètres, a quelle distance approximative le faucon peut-il distinguer ce meme objet ?",
+              "question": "Si un faucon pèlerin possede une vue environ huit fois plus perçante que celle d'un humain, et qu'un humain distingue un objet a 200 mètrès, a quelle distance approximative le faucon peut-il distinguer ce même objet ?",
               "options": [
-                "Environ 400 mètres",
-                "Environ 800 mètres",
-                "Environ 1 600 mètres",
-                "Environ 3 200 mètres"
+                "Environ 400 mètrès",
+                "Environ 800 mètrès",
+                "Environ 1 600 mètrès",
+                "Environ 3 200 mètrès"
               ],
-              "correctAnswer": "Environ 1 600 mètres",
+              "correctAnswer": "Environ 1 600 mètrès",
               "isSpecial": true
             }
           ]
@@ -2002,7 +2002,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "La bioluminescence dans les abysses",
-              "text": "Dans les profondeurs océaniques, au-delà de 1 000 mètres (la zone aphotique), la lumière du soleil ne pénètre plus jamais. Pour survivre dans ce monde noir, certains animaux produisent leur propre lumière grâce à la bioluminescence. La baudroie abyssale utilise un leurre lumineux accroché sur sa tête pour attirer ses proies dans l'obscurité. Cette lumière est dite « froide » car elle ne produit pas de chaleur, contrairement à une flamme.",
+              "text": "Dans les profondeurs océaniques, au-delà de 1 000 mètrès (la zone aphotique), la lumière du soleil ne pénètre plus jamais. Pour survivre dans ce monde noir, certains animaux produisent leur propre lumière grâce à la bioluminescence. La baudroie abyssale utilise un leurre lumineux accroché sur sa tête pour attirer ses proies dans l'obscurité. Cette lumière est dite « froide » car elle ne produit pas de chaleur, contrairement à une flamme.",
               "emoji": "🔦"
             },
             {
@@ -2070,12 +2070,12 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "A partir de quelle profondeur environ parle-t-on de zone aphotique, ou la lumière du soleil ne penetre plus jamais ?",
               "options": [
-                "200 mètres",
-                "500 mètres",
-                "1000 mètres",
-                "3000 mètres"
+                "200 mètrès",
+                "500 mètrès",
+                "1000 mètrès",
+                "3000 mètrès"
               ],
-              "correctAnswer": "1000 mètres",
+              "correctAnswer": "1000 mètrès",
               "isSpecial": false
             },
             {
@@ -2112,7 +2112,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "La bioluminescence repose sur une réaction chimique precise : la luciferine est oxydee grace a une enzyme specifique. Laquelle, et quelle est la particularite de la lumière produite par rapport a une flamme ?",
+              "question": "La bioluminescence repose sur une réaction chimique precise : la luciferine est oxydee grâce a une enzyme specifique. Laquelle, et quelle est la particularite de la lumière produite par rapport a une flamme ?",
               "options": [
                 "La luciferase ; cette lumière est dite froide car elle ne produit pas de chaleur",
                 "La peroxydase ; cette lumière est ultraviolette et invisible a l'oeil nu",
@@ -2150,7 +2150,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "La Barge rousse : 12 000 km sans escale",
-              "text": "La Barge rousse détient le record du plus long vol continu sans escale enregistré chez un oiseau. Elle parcourt environ 12 000 kilomètres d'une traite, au-dessus du Pacifique, en 11 jours sans jamais se poser. Pour y arriver, elle réduit temporairement la taille de ses organes non essentiels, comme l'estomac, pour alléger son corps et voler plus efficacement.",
+              "text": "La Barge rousse détient le record du plus long vol continu sans escale enregistré chez un oiseau. Elle parcourt environ 12 000 kilomètrès d'une traite, au-dessus du Pacifique, en 11 jours sans jamais se poser. Pour y arriver, elle réduit temporairement la taille de ses organes non essentiels, comme l'estomac, pour alléger son corps et voler plus efficacement.",
               "emoji": "🐦"
             },
             {
@@ -2238,14 +2238,14 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Combien de kilomètres environ la Barge rousse parcourt-elle sans s'arrêter lors de sa migration ?",
+              "question": "Combien de kilomètrès environ la Barge rousse parcourt-elle sans s'arrêter lors de sa migration ?",
               "options": [
-                "5 000 kilomètres",
-                "12 000 kilomètres",
-                "18 500 kilomètres",
-                "7 200 kilomètres"
+                "5 000 kilomètrès",
+                "12 000 kilomètrès",
+                "18 500 kilomètrès",
+                "7 200 kilomètrès"
               ],
-              "correctAnswer": "12 000 kilomètres",
+              "correctAnswer": "12 000 kilomètrès",
               "isSpecial": false
             },
             {
@@ -2283,12 +2283,12 @@ export const UNIVERSES: Record<string, Universe> = {
           "cards": [
             {
               "title": "Les trois caractéristiques des oiseaux",
-              "text": "Tous les oiseaux ont trois points communs : des plumes, un bec et deux ailes. Ces traits les distinguent de tous les autres animaux. Même les oiseaux qui ne volent pas, comme le pingouin, possèdent ces trois caractéristiques.",
+              "text": "Tous les oiseaux ont trois points communs : des plumes, un bec et deux ailes. Ces traits les distinguent de tous les autres animaux. Même les oiseaux qui ne volent pas, comme le manchot, possèdent ces trois caractéristiques.",
               "emoji": "🐦"
             },
             {
               "title": "Des os légers pour voler",
-              "text": "Les os des oiseaux sont creux à l'intérieur : on les appelle des os pneumatisés. Grâce à ces os creux, les oiseaux sont beaucoup plus légers, ce qui les aide à décoller et à voler. Si leurs os étaient pleins comme les nôtres, ils seraient trop lourds pour s'envoler.",
+              "text": "Les os des oiseaux sont creux à l'intérieur : on les appelle des os pneumatisés. Grâce à ces os creux, les oiseaux sont beaucoup plus légers, ce qui les aide à décoller et à voler. Si leurs os étaient pleins comme les nôtrès, ils seraient trop lourds pour s'envoler.",
               "emoji": "🦴"
             },
             {
@@ -2856,12 +2856,12 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Chez les caméléons, les deux yeux peuvent se mouvoir de manière totalement indépendante l'un de l'autre. Quel avantage adaptatif majeur cela procure-t-il lors de la chasse ?",
               "options": [
-                "Un champ de vision couvrant presque 360 degrés permettant de localiser une proie et surveiller les predateurs simultanement",
+                "Un champ de vision couvrant presque 360 degrés permettant de localiser une proie et surveiller les prédateurs simultanement",
                 "Une vision binoculaire permanente pour estimer precisement la distance de toutes les proies",
-                "La capacite de voir dans deux longueurs d'onde différentes de la lumière en meme temps",
+                "La capacite de voir dans deux longueurs d'onde différentes de la lumière en même temps",
                 "Une acceleration du traitement neuronal des images pour reagir plus vite aux mouvements"
               ],
-              "correctAnswer": "Un champ de vision couvrant presque 360 degrés permettant de localiser une proie et surveiller les predateurs simultanement",
+              "correctAnswer": "Un champ de vision couvrant presque 360 degrés permettant de localiser une proie et surveiller les prédateurs simultanement",
               "isSpecial": true
             }
           ]
@@ -3728,7 +3728,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "La canopée amazonienne est décrite comme le toit de la jungle à des dizaines de mètres de hauteur. Dans une forêt tropicale, combien de strates végétales distinctes reconnaît-on généralement ?",
+              "question": "La canopée amazonienne est décrite comme le toit de la jungle à des dizaines de mètrès de hauteur. Dans une forêt tropicale, combien de strates végétales distinctes reconnaît-on généralement ?",
               "options": [
                 "4 à 5 strates (émergente, canopée, sous-canopée, arbustive, herbacée)",
                 "2 strates (canopée et sol)",
@@ -3948,12 +3948,12 @@ export const UNIVERSES: Record<string, Universe> = {
           "cards": [
             {
               "title": "L'écholocalisation des chauves-souris",
-              "text": "Les chauves-souris se repèrent dans l'obscurité totale grâce à l'écholocalisation : elles émettent des sons à très haute fréquence, dans le domaine des ultrasons, puis analysent l'écho renvoyé par les obstacles et les proies. Ces sons sont inaudibles pour l'être humain car ils se situent au-delà de la portée auditive humaine (supérieure à 20 000 Hz). Ce système leur permet de détecter des objets de quelques millimètres et de chasser des insectes en plein vol dans l'obscurité la plus totale.",
+              "text": "Les chauves-souris se repèrent dans l'obscurité totale grâce à l'écholocalisation : elles émettent des sons à très haute fréquence, dans le domaine des ultrasons, puis analysent l'écho renvoyé par les obstacles et les proies. Ces sons sont inaudibles pour l'être humain car ils se situent au-delà de la portée auditive humaine (supérieure à 20 000 Hz). Ce système leur permet de détecter des objets de quelques millimètrès et de chasser des insectes en plein vol dans l'obscurité la plus totale.",
               "emoji": "🦇"
             },
             {
               "title": "Les protéines antigel et la bioluminescence",
-              "text": "Certains poissons de l'Antarctique survivent dans des eaux glacées grâce à des protéines antigel spéciales qui se fixent sur les micro-cristaux de glace et empêchent leur croissance, évitant ainsi que les fluides corporels ne gèlent. Dans les abysses, où la lumière solaire ne pénètre pas au-delà de 1 000 mètres de profondeur (zone aphotique), de nombreuses espèces ont développé la bioluminescence : la molécule de luciférine est oxydée grâce à l'enzyme luciférase pour produire une lumière dite « froide » car la réaction ne génère pas de chaleur. La baudroie abyssale utilise ce leurre lumineux pour attirer ses proies.",
+              "text": "Certains poissons de l'Antarctique survivent dans des eaux glacées grâce à des protéines antigel spéciales qui se fixent sur les micro-cristaux de glace et empêchent leur croissance, évitant ainsi que les fluides corporels ne gèlent. Dans les abysses, où la lumière solaire ne pénètre pas au-delà de 1 000 mètrès de profondeur (zone aphotique), de nombreuses espèces ont développé la bioluminescence : la molécule de luciférine est oxydée grâce à l'enzyme luciférase pour produire une lumière dite « froide » car la réaction ne génère pas de chaleur. La baudroie abyssale utilise ce leurre lumineux pour attirer ses proies.",
               "emoji": "🐟"
             },
             {
@@ -4106,12 +4106,12 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Le papillon Monarque",
-              "text": "Le papillon Monarque effectue l'une des migrations d'insectes les plus étonnantes du monde. Il part du Canada au début de l'automne et parcourt environ 4 000 kilomètres pour rejoindre les forêts de conifères du Mexique où il hiverne. Phénomène remarquable, aucun individu ne réalise le voyage complet aller-retour : plusieurs générations se succèdent, et pourtant chaque génération retrouve les mêmes zones de rassemblement, suggérant que l'information migratoire est en partie codée génétiquement.",
+              "text": "Le papillon Monarque effectue l'une des migrations d'insectes les plus étonnantes du monde. Il part du Canada au début de l'automne et parcourt environ 4 000 kilomètrès pour rejoindre les forêts de conifères du Mexique où il hiverne. Phénomène remarquable, aucun individu ne réalise le voyage complet aller-retour : plusieurs générations se succèdent, et pourtant chaque génération retrouve les mêmes zones de rassemblement, suggérant que l'information migratoire est en partie codée génétiquement.",
               "emoji": "🦋"
             },
             {
               "title": "La Sterne arctique : championne de la migration",
-              "text": "La Sterne arctique détient le record mondial de la plus longue migration annuelle. Cet oiseau effectue un aller-retour entre le pôle Nord et le pôle Sud chaque année, soit un trajet total d'environ 70 000 kilomètres. Ce faisant, elle profite de deux étés et de deux périodes d'abondance alimentaire par an. Sur l'ensemble de sa vie (jusqu'à 30 ans), une sterne arctique peut ainsi voyager l'équivalent de trois fois la distance Terre-Lune.",
+              "text": "La Sterne arctique détient le record mondial de la plus longue migration annuelle. Cet oiseau effectue un aller-retour entre le pôle Nord et le pôle Sud chaque année, soit un trajet total d'environ 70 000 kilomètrès. Ce faisant, elle profite de deux étés et de deux périodes d'abondance alimentaire par an. Sur l'ensemble de sa vie (jusqu'à 30 ans), une sterne arctique peut ainsi voyager l'équivalent de trois fois la distance Terre-Lune.",
               "emoji": "🕊️"
             },
             {
@@ -4143,14 +4143,14 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Combien de kilomètres le papillon Monarque parcourt-il lors de sa migration ?",
+              "question": "Combien de kilomètrès le papillon Monarque parcourt-il lors de sa migration ?",
               "options": [
-                "Environ 1 500 kilomètres",
-                "Environ 4 000 kilomètres",
-                "Environ 10 000 kilomètres",
-                "Environ 70 000 kilomètres"
+                "Environ 1 500 kilomètrès",
+                "Environ 4 000 kilomètrès",
+                "Environ 10 000 kilomètrès",
+                "Environ 70 000 kilomètrès"
               ],
-              "correctAnswer": "Environ 4 000 kilomètres",
+              "correctAnswer": "Environ 4 000 kilomètrès",
               "isSpecial": false
             },
             {
@@ -4200,12 +4200,12 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Quel est approximativement le trajet total aller-retour de la Sterne arctique lors de sa migration annuelle ?",
               "options": [
-                "Environ 20 000 kilomètres",
-                "Environ 40 000 kilomètres",
-                "Environ 70 000 kilomètres",
-                "Environ 100 000 kilomètres"
+                "Environ 20 000 kilomètrès",
+                "Environ 40 000 kilomètrès",
+                "Environ 70 000 kilomètrès",
+                "Environ 100 000 kilomètrès"
               ],
-              "correctAnswer": "Environ 70 000 kilomètres",
+              "correctAnswer": "Environ 70 000 kilomètrès",
               "isSpecial": false
             },
             {
@@ -4235,7 +4235,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "options": [
                 "Le saumon change de couleur pour se camoufler dans les eaux claires des rivières",
                 "Le saumon retrouve précisément le lieu de sa naissance grâce à sa mémoire olfactive de la rivière",
-                "Le saumon est le seul poisson capable de sauter des cascades de plus de dix mètres de haut",
+                "Le saumon est le seul poisson capable de sauter des cascades de plus de dix mètrès de haut",
                 "Le saumon cesse totalement de se nourrir dès qu'il entre dans l'eau salée de l'océan"
               ],
               "correctAnswer": "Le saumon retrouve précisément le lieu de sa naissance grâce à sa mémoire olfactive de la rivière",
@@ -4254,12 +4254,12 @@ export const UNIVERSES: Record<string, Universe> = {
           "cards": [
             {
               "title": "Anatomie de l'oiseau : os, plumes et gésier",
-              "text": "Les oiseaux possèdent des os creux qui réduisent leur masse corporelle, facilitant ainsi le vol, mais qui diminuent leur résistance aux chocs. Leurs plumes remplissent plusieurs fonctions vitales : isolation thermique, imperméabilisation, vol et communication visuelle, mais elles ne participent pas directement à la production du chant mélodieux. Contrairement à leurs ancêtres reptiliens, les oiseaux modernes sont entièrement édentés ; chez les espèces granivores, le gésier — un estomac musculeux contenant souvent de petits cailloux — remplace fonctionnellement les dents pour broyer les aliments.",
+              "text": "Les oiseaux possèdent des os creux qui réduisent leur masse corporelle, facilitant ainsi le vol, mais qui diminuent leur résistance aux chocs. Leurs plumes remplissent plusieurs fonctions vitales : isolation thermique, imperméabilisation, vol et communication visuelle, mais elles ne participent pas directement à la production du chant mélodieux. Contrairement à leurs ancêtrès reptiliens, les oiseaux modernes sont entièrement édentés ; chez les espèces granivores, le gésier — un estomac musculeux contenant souvent de petits cailloux — remplace fonctionnellement les dents pour broyer les aliments.",
               "emoji": "🪶"
             },
             {
               "title": "La glande uropygienne et l'imperméabilisation",
-              "text": "De nombreux oiseaux, en particulier les espèces aquatiques comme les canards, possèdent une glande uropygienne, également appelée glande à huile ou glande du croupion. Cette glande sécrète une huile que l'oiseau étale sur ses plumes lors du lissage (préening), rendant son plumage imperméable à l'eau. Sans cette imperméabilisation, les plumes se détrempaient et perdraient leurs propriétés isolantes et aérodynamiques, ce qui compromettrait la survie de l'oiseau en milieu aquatique.",
+              "text": "De nombreux oiseaux, en particulier les espèces aquatiques comme les canards, possèdent une glande uropygienne, également appelée glande à huile ou glande du croupion. Cette glande sécrète une huile que l'oiseau étale sur ses plumes lors du lissage (préening), rendant son plumage imperméable à l'eau. Sans cette imperméabilisation, les plumes se détremperaient et perdraient leurs propriétés isolantes et aérodynamiques, ce qui compromettrait la survie de l'oiseau en milieu aquatique.",
               "emoji": "🦆"
             },
             {
@@ -4412,7 +4412,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Endothermie, ectothermie et les abysses",
-              "text": "On distingue deux grands modes de thermorégulation animale : les endothermes (mammifères et oiseaux) produisent leur propre chaleur corporelle grâce à leur métabolisme interne, ce qui leur permet d'être actifs par temps froid. Les ectothermes (reptiles, poissons, insectes) dépendent de sources de chaleur externes ; un reptile monte ainsi sa température en s'exposant au soleil sur une surface chaude. Dans les océans, au-delà de 1 000 mètres de profondeur se trouve la zone aphotique, où la lumière solaire ne pénètre jamais, imposant des adaptations radicales à la faune qui y vit.",
+              "text": "On distingue deux grands modes de thermorégulation animale : les endothermes (mammifères et oiseaux) produisent leur propre chaleur corporelle grâce à leur métabolisme interne, ce qui leur permet d'être actifs par temps froid. Les ectothermes (reptiles, poissons, insectes) dépendent de sources de chaleur externes ; un reptile monte ainsi sa température en s'exposant au soleil sur une surface chaude. Dans les océans, au-delà de 1 000 mètrès de profondeur se trouve la zone aphotique, où la lumière solaire ne pénètre jamais, imposant des adaptations radicales à la faune qui y vit.",
               "emoji": "🌡️"
             },
             {
@@ -4463,30 +4463,30 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "A partir de quelle profondeur oceanique se trouve la zone aphotique, dans laquelle la lumière solaire ne penetre jamais ?",
               "options": [
-                "Au-dela de 1000 mètres",
-                "Au-dela de 200 mètres",
-                "Au-dela de 500 mètres",
-                "Au-dela de 3000 mètres"
+                "Au-dela de 1000 mètrès",
+                "Au-dela de 200 mètrès",
+                "Au-dela de 500 mètrès",
+                "Au-dela de 3000 mètrès"
               ],
-              "correctAnswer": "Au-dela de 1000 mètres",
+              "correctAnswer": "Au-dela de 1000 mètrès",
               "isSpecial": false
             },
             {
-              "question": "Dans la bioluminescence, quelle molécule est oxydee pour produire de la lumière, et grace a quelle enzyme ce processus se realise-t-il ?",
+              "question": "Dans la bioluminescence, quelle molécule est oxydee pour produire de la lumière, et grâce a quelle enzyme ce processus se realise-t-il ?",
               "options": [
-                "La luciferine est oxydee grace a la luciferase",
-                "La luciferase est oxydee grace a la luciferine",
-                "La chlorophylle est activee grace a la bioluminase",
-                "L'adenosine est transformee grace a l'oxygene seul"
+                "La luciferine est oxydee grâce a la luciferase",
+                "La luciferase est oxydee grâce a la luciferine",
+                "La chlorophylle est activee grâce a la bioluminase",
+                "L'adenosine est transformee grâce a l'oxygene seul"
               ],
-              "correctAnswer": "La luciferine est oxydee grace a la luciferase",
+              "correctAnswer": "La luciferine est oxydee grâce a la luciferase",
               "isSpecial": false
             },
             {
               "question": "Pourquoi dit-on que la lumière produite par bioluminescence est une lumière dite froide ?",
               "options": [
                 "Parce qu'elle ne produit pas de chaleur lors de la réaction chimique",
-                "Parce qu'elle ne peut etre produite qu'a des températures tres basses",
+                "Parce qu'elle ne peut etre produite qu'a des températures très basses",
                 "Parce qu'elle est uniquement visible dans les eaux glaciaires",
                 "Parce qu'elle refroidit activement les cellules de l'animal qui la genere"
               ],
@@ -4530,9 +4530,9 @@ export const UNIVERSES: Record<string, Universe> = {
               "question": "Un tardigrade en cryptobiose est expose au vide spatial et a une température de -272°C. Laquelle des affirmations suivantes decrit correctement son etat et ses capacites de survie dans ces conditions extremes ?",
               "options": [
                 "Son metabolisme est totalement arrete, ses cellules sont protegees par des sucres vitreux et il peut se reveiller des que de l'eau liquide reapparait",
-                "Son metabolisme ralentit de 50%, il maintient une température interne stable grace a une enzyme anticongelante",
+                "Son metabolisme ralentit de 50%, il maintient une température interne stable grâce a une enzyme anticongelante",
                 "Il entre en hibernation profonde avec un metabolisme residuel et ne peut survivre qu'a des températures superieures a -100°C",
-                "Ses cellules cristallisent completement mais les protéines ne sont pas denaturees, lui permettant une regeneration lente sur plusieurs annees"
+                "Ses cellules cristallisent completement mais les protéines ne sont pas denaturees, lui permettant une regeneration lente sur plusieurs années"
               ],
               "correctAnswer": "Son metabolisme est totalement arrete, ses cellules sont protegees par des sucres vitreux et il peut se reveiller des que de l'eau liquide reapparait",
               "isSpecial": true
@@ -4570,7 +4570,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Records, menaces et défis climatiques",
-              "text": "La Barge rousse détient le record du plus long vol continu sans escale, parcourant environ 12 000 kilomètres sans s'arrêter lors de sa traversée trans-océanique. Les oiseaux migrateurs font face à deux menaces majeures : la pollution lumineuse des grandes villes perturbe leur orientation nocturne et les attire vers les bâtiments, causant épuisement et collisions mortelles ; le réchauffement climatique décale le cycle d'éclosion des insectes, privant les oisillons de nourriture à leur arrivée sur les sites de reproduction.",
+              "text": "La Barge rousse détient le record du plus long vol continu sans escale, parcourant environ 12 000 kilomètrès sans s'arrêter lors de sa traversée trans-océanique. Les oiseaux migrateurs font face à deux menaces majeures : la pollution lumineuse des grandes villes perturbe leur orientation nocturne et les attire vers les bâtiments, causant épuisement et collisions mortelles ; le réchauffement climatique décale le cycle d'éclosion des insectes, privant les oisillons de nourriture à leur arrivée sur les sites de reproduction.",
               "emoji": "⚠️"
             }
           ],
@@ -4611,12 +4611,12 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "La Barge rousse détient le record du plus long trajet continu sans escale. Quelle distance approximative parcourt-elle lors de ce vol ?",
               "options": [
-                "4 500 kilomètres",
-                "8 000 kilomètres",
-                "12 000 kilomètres",
-                "18 500 kilomètres"
+                "4 500 kilomètrès",
+                "8 000 kilomètrès",
+                "12 000 kilomètrès",
+                "18 500 kilomètrès"
               ],
-              "correctAnswer": "12 000 kilomètres",
+              "correctAnswer": "12 000 kilomètrès",
               "isSpecial": false
             },
             {
@@ -5005,7 +5005,7 @@ export const UNIVERSES: Record<string, Universe> = {
           "cards": [
             {
               "title": "Le soleil et la chaleur",
-              "text": "Quand il fait beau, le soleil brille dans le ciel et il apparaît de couleur jaune. Ses rayons chauffent notre peau et réchauffent la Terre. Le soleil donne de la lumière et de la chaleur à tous les êtres vivants. Sans soleil, les plantes ne pourraient pas pousser.",
+              "text": "Quand il fait beau, le soleil brille dans le ciel et il apparaît de couleur jaune. Ses rayons chauffent notre peau et réchauffent la Terre. Le soleil donne de la lumière et de la chaleur à tous les êtrès vivants. Sans soleil, les plantes ne pourraient pas pousser.",
               "emoji": "☀️"
             },
             {
@@ -5153,7 +5153,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Les rivières coulent vers la mer",
-              "text": "L'eau des rivières coule toujours des endroits hauts vers les endroits bas, c'est-à-dire des montagnes vers la mer. Sur leur chemin, les rivières abritent de nombreux êtres vivants : des poissons, des grenouilles et de petites bêtes comme les larves d'insectes. L'eau douce des rivières est la seule directement utilisable pour boire et arroser les plantes.",
+              "text": "L'eau des rivières coule toujours des endroits hauts vers les endroits bas, c'est-à-dire des montagnes vers la mer. Sur leur chemin, les rivières abritent de nombreux êtrès vivants : des poissons, des grenouilles et de petites bêtes comme les larves d'insectes. L'eau douce des rivières est la seule directement utilisable pour boire et arroser les plantes.",
               "emoji": "🏞️"
             },
             {
@@ -5168,7 +5168,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "La vie dans l'eau",
-              "text": "L'eau est indispensable à tous les êtres vivants. Dans les rivières vivent des poissons, des grenouilles, des écrevisses et de petites bêtes aquatiques. Les plantes au bord de l'eau boivent grâce à leurs racines. Les animaux et les êtres humains ont besoin de boire de l'eau tous les jours pour rester en bonne santé.",
+              "text": "L'eau est indispensable à tous les êtrès vivants. Dans les rivières vivent des poissons, des grenouilles, des écrevisses et de petites bêtes aquatiques. Les plantes au bord de l'eau boivent grâce à leurs racines. Les animaux et les êtrès humains ont besoin de boire de l'eau tous les jours pour rester en bonne santé.",
               "emoji": "🐟"
             },
             {
@@ -5278,7 +5278,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "L'eau douce des rivières représente une très faible part de toute l'eau sur Terre. Parmi ces affirmations, laquelle explique le mieux pourquoi elle est si précieuse pour les êtres vivants terrestres ?",
+              "question": "L'eau douce des rivières représente une très faible part de toute l'eau sur Terre. Parmi ces affirmations, laquelle explique le mieux pourquoi elle est si précieuse pour les êtrès vivants terrestres ?",
               "options": [
                 "Parce qu'elle est plus froide que l'eau de mer",
                 "Parce qu'elle est la seule directement utilisable pour boire et arroser les plantes",
@@ -5499,7 +5499,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "question": "De quoi est compose le noyau de la Terre ?",
               "options": [
                 "De sable et de pierre",
-                "De glace tres comprimee",
+                "De glace très comprimee",
                 "De fer et de nickel",
                 "De magma et de lave"
               ],
@@ -5509,10 +5509,10 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Quelle est la bonne description de la forme de la Terre ?",
               "options": [
-                "Un cube tres grand",
+                "Un cube très grand",
                 "Un disque plat",
                 "Une grosse boule ronde",
-                "Un ovale tres allonge"
+                "Un ovale très allonge"
               ],
               "correctAnswer": "Une grosse boule ronde",
               "isSpecial": false
@@ -5533,10 +5533,10 @@ export const UNIVERSES: Record<string, Universe> = {
               "options": [
                 "La Terre qui tourne autour du Soleil",
                 "La Lune qui tourne autour de la Terre",
-                "La Terre qui tourne sur elle-meme",
+                "La Terre qui tourne sur elle-même",
                 "Le Soleil qui se deplace dans le ciel"
               ],
-              "correctAnswer": "La Terre qui tourne sur elle-meme",
+              "correctAnswer": "La Terre qui tourne sur elle-même",
               "isSpecial": false
             },
             {
@@ -5573,7 +5573,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "La Terre est la seule planète connue ou il y a de la vie. Quelle caracteristique importante la rend unique dans notre système solaire ?",
+              "question": "La Terre est la seule planète connue ou il y a de la vie. Quelle caractéristique importante la rend unique dans notre système solaire ?",
               "options": [
                 "C'est la plus grande planète du système solaire",
                 "Elle possede de l'eau liquide en surface",
@@ -5586,7 +5586,7 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Le champ magnetique terrestre nous protege des vents solaires. Qu'est-ce qui genere ce champ magnetique ?",
               "options": [
-                "La rotation de la croute terrestre sur elle-meme",
+                "La rotation de la croute terrestre sur elle-même",
                 "L'epaisseur du manteau chaud",
                 "Le mouvement du fer liquide dans le noyau terrestre",
                 "L'accumulation de glace aux poles"
@@ -5622,7 +5622,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Chaque arbre est un écosystème",
-              "text": "Un grand arbre est bien plus qu'une simple plante : il est le centre d'un écosystème entier. Des insectes vivent dans son écorce, des champignons poussent à ses racines, des oiseaux nichent dans ses branches. Tous ces êtres vivants dépendent les uns des autres pour survivre. La forêt est donc un monde vivant très complexe.",
+              "text": "Un grand arbre est bien plus qu'une simple plante : il est le centre d'un écosystème entier. Des insectes vivent dans son écorce, des champignons poussent à ses racines, des oiseaux nichent dans ses branches. Tous ces êtrès vivants dépendent les uns des autres pour survivre. La forêt est donc un monde vivant très complexe.",
               "emoji": "🦅"
             },
             {
@@ -5765,7 +5765,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Qu'est-ce qu'une éruption volcanique ?",
-              "text": "Une éruption volcanique se produit quand la pression du magma est trop forte : le volcan explose ou laisse couler la lave en abondance. Avant même que la lave ne coule, on observe souvent dans le ciel un gros nuage de fumée grise et de cendres qui monte très haut. Ces cendres peuvent parcourir des milliers de kilomètres.",
+              "text": "Une éruption volcanique se produit quand la pression du magma est trop forte : le volcan explose ou laisse couler la lave en abondance. Avant même que la lave ne coule, on observe souvent dans le ciel un gros nuage de fumée grise et de cendres qui monte très haut. Ces cendres peuvent parcourir des milliers de kilomètrès.",
               "emoji": "💨"
             },
             {
@@ -5879,25 +5879,25 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Qu'observe-t-on dans le ciel quand un volcan se reveille, avant meme que la lave ne coule ?",
+              "question": "Qu'observe-t-on dans le ciel quand un volcan se reveille, avant même que la lave ne coule ?",
               "options": [
                 "Une pluie de pierres multicolores",
                 "Un arc-en-ciel de vapeur",
-                "Un gros nuage de fumee grise qui monte tres haut",
+                "Un gros nuage de fumee grise qui monte très haut",
                 "Une lumière bleue au sommet du cratere"
               ],
-              "correctAnswer": "Un gros nuage de fumee grise qui monte tres haut",
+              "correctAnswer": "Un gros nuage de fumee grise qui monte très haut",
               "isSpecial": false
             },
             {
               "question": "Les plaques tectoniques sont des blocs de la croute terrestre. Laquelle de ces affirmations decrit correctement ce qui se passe quand deux plaques se chevauchent pres d'un ocean ?",
               "options": [
-                "La plaque la plus legere plonge sous l'autre, creant une zone de subduction ou le magma peut remonter",
+                "La plaque la plus légère plonge sous l'autre, creant une zone de subduction ou le magma peut remonter",
                 "Les deux plaques fusionnent pour former une nouvelle plaque plus epaisse",
                 "La plaque oceanique remonte au-dessus de la plaque continentale sans provoquer de volcanisme",
                 "Le choc entre les deux plaques refroidit le magma et empeche toute eruption"
               ],
-              "correctAnswer": "La plaque la plus legere plonge sous l'autre, creant une zone de subduction ou le magma peut remonter",
+              "correctAnswer": "La plaque la plus légère plonge sous l'autre, creant une zone de subduction ou le magma peut remonter",
               "isSpecial": true
             }
           ]
@@ -7122,7 +7122,7 @@ export const UNIVERSES: Record<string, Universe> = {
           "cards": [
             {
               "title": "Les étages de végétation en montagne",
-              "text": "En montagne, la température baisse d'environ 0,6 °C tous les 100 mètres d'altitude. Cela crée des étages de végétation distincts : l'étage montagnard (sapins, hêtres), l'étage subalpin (résineux clairsemés), l'étage alpin (prairies et plantes coussins) et l'étage nival, le plus haut, où seuls des lichens survivent sur la roche nue.",
+              "text": "En montagne, la température baisse d'environ 0,6 °C tous les 100 mètrès d'altitude. Cela crée des étages de végétation distincts : l'étage montagnard (sapins, hêtrès), l'étage subalpin (résineux clairsemés), l'étage alpin (prairies et plantes coussins) et l'étage nival, le plus haut, où seuls des lichens survivent sur la roche nue.",
               "emoji": "⛰️"
             },
             {
@@ -7148,7 +7148,7 @@ export const UNIVERSES: Record<string, Universe> = {
           ],
           "quiz": [
             {
-              "question": "De combien la température baisse-t-elle environ tous les 100 mètres d'altitude en montagne ?",
+              "question": "De combien la température baisse-t-elle environ tous les 100 mètrès d'altitude en montagne ?",
               "options": [
                 "0,3°C",
                 "0,6°C",
@@ -7170,7 +7170,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "À quel étage de végétation trouve-t-on principalement des sapins et des hêtres ?",
+              "question": "À quel étage de végétation trouve-t-on principalement des sapins et des hêtrès ?",
               "options": [
                 "L'étage collinéen",
                 "L'étage montagnard",
@@ -7626,8 +7626,8 @@ export const UNIVERSES: Record<string, Universe> = {
               "options": [
                 "La glace est moins dense que l'eau liquide",
                 "La glace est plus dense que l'eau liquide",
-                "La glace a la meme densite que l'eau liquide",
-                "La glace repousse l'eau grace a une charge electrique"
+                "La glace a la même densite que l'eau liquide",
+                "La glace repousse l'eau grâce a une charge electrique"
               ],
               "correctAnswer": "La glace est moins dense que l'eau liquide",
               "isSpecial": false
@@ -7688,7 +7688,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "La molécule d'eau possede une structure dite polaire. Quelle consequence directe cette polarite a-t-elle sur les proprietes de l'eau qui la rendent si particuliere en chimie et en biologie ?",
+              "question": "La molécule d'eau possede une structure dite polaire. Quelle conséquence directe cette polarite a-t-elle sur les proprietes de l'eau qui la rendent si particuliere en chimie et en biologie ?",
               "options": [
                 "Elle permet a l'eau de dissoudre un grand nombre de substances et de former des liaisons hydrogene avec d'autres molécules",
                 "Elle rend l'eau incapable de se solidifier a des températures inferieures a 0 degré Celsius",
@@ -8533,7 +8533,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "options": [
                 "La pollution de l'air se disperse rapidement sur de grandes distances via le vent, tandis que la pollution de l'eau se propage via les cours d'eau et les courants",
                 "La pollution de l'eau est toujours plus dangereuse que la pollution de l'air car elle est invisible",
-                "La pollution de l'air affecte uniquement les êtres humains, la pollution de l'eau uniquement les animaux",
+                "La pollution de l'air affecte uniquement les êtrès humains, la pollution de l'eau uniquement les animaux",
                 "La pollution de l'eau se disperse plus vite que la pollution de l'air grâce à l'évaporation"
               ],
               "correctAnswer": "La pollution de l'air se disperse rapidement sur de grandes distances via le vent, tandis que la pollution de l'eau se propage via les cours d'eau et les courants",
@@ -8945,7 +8945,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Les produits de la photosynthèse : glucose et oxygène",
-              "text": "La photosynthèse se résume par l'équation : 6 CO2 + 6 H2O + énergie lumineuse → C6H12O6 + 6 O2. La molécule C6H12O6 est le glucose, un sucre qui constitue la source d'énergie chimique stockée par la plante. Le glucose lui permet de croître, de se reproduire et de synthétiser toutes ses molécules organiques. L'oxygène (O2) libéré est indispensable à la respiration de presque tous les êtres vivants.",
+              "text": "La photosynthèse se résume par l'équation : 6 CO2 + 6 H2O + énergie lumineuse → C6H12O6 + 6 O2. La molécule C6H12O6 est le glucose, un sucre qui constitue la source d'énergie chimique stockée par la plante. Le glucose lui permet de croître, de se reproduire et de synthétiser toutes ses molécules organiques. L'oxygène (O2) libéré est indispensable à la respiration de presque tous les êtrès vivants.",
               "emoji": "⚗️"
             },
             {
@@ -8960,7 +8960,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "La photosynthèse, base de toute vie",
-              "text": "La photosynthèse est le fondement de toutes les chaînes alimentaires sur Terre. Elle produit la matière organique (glucose) dont se nourrissent les herbivores, eux-mêmes mangés par les carnivores. Elle fournit également l'oxygène nécessaire à la respiration de presque tous les êtres vivants. Sans photosynthèse, ni les proies ni les prédateurs ne pourraient exister : même les carnivores dépendent indirectement des plantes.",
+              "text": "La photosynthèse est le fondement de toutes les chaînes alimentaires sur Terre. Elle produit la matière organique (glucose) dont se nourrissent les herbivores, eux-mêmes mangés par les carnivores. Elle fournit également l'oxygène nécessaire à la respiration de presque tous les êtrès vivants. Sans photosynthèse, ni les proies ni les prédateurs ne pourraient exister : même les carnivores dépendent indirectement des plantes.",
               "emoji": "🌍"
             }
           ],
@@ -9317,7 +9317,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Quel pourcentage de toute l'eau de la Terre représente l'eau douce liquide de surface (lacs et fleuves) disponible pour les êtres vivants ?",
+              "question": "Quel pourcentage de toute l'eau de la Terre représente l'eau douce liquide de surface (lacs et fleuves) disponible pour les êtrès vivants ?",
               "options": [
                 "Moins de 1%",
                 "Environ 2,5%",
@@ -9532,12 +9532,12 @@ export const UNIVERSES: Record<string, Universe> = {
           "cards": [
             {
               "title": "Les étages de végétation en montagne",
-              "text": "En montagne, la végétation se répartit en étages qui se succèdent avec l'altitude, car la température baisse d'environ 0,6 °C tous les 100 mètres. L'étage collinéen (forêts de chênes) cède la place à l'étage montagnard (hêtres, sapins), puis à l'étage subalpin dominé par les mélèzes et autres conifères résistants au froid. Plus haut encore, l'étage alpin ne laisse place qu'aux pelouses rases et aux fleurs alpines, avant la zone neigeuse permanente.",
+              "text": "En montagne, la végétation se répartit en étages qui se succèdent avec l'altitude, car la température baisse d'environ 0,6 °C tous les 100 mètrès. L'étage collinéen (forêts de chênes) cède la place à l'étage montagnard (hêtrès, sapins), puis à l'étage subalpin dominé par les mélèzes et autres conifères résistants au froid. Plus haut encore, l'étage alpin ne laisse place qu'aux pelouses rases et aux fleurs alpines, avant la zone neigeuse permanente.",
               "emoji": "🌲"
             },
             {
               "title": "Les adaptations des fleurs alpines",
-              "text": "Les plantes qui vivent au-dessus de 2 000 mètres doivent faire face à des conditions extrêmes : rayonnement ultraviolet intense, gel fréquent, vent desséchant. L'edelweiss et d'autres fleurs alpines possèdent un duvet de poils blancs qui réfléchit les UV (évitant les brûlures cellulaires) et retient l'humidité autour de la plante. Les plantes alpines sont également en coussinet, poussant très près du sol pour limiter la prise au vent et conserver la chaleur.",
+              "text": "Les plantes qui vivent au-dessus de 2 000 mètrès doivent faire face à des conditions extrêmes : rayonnement ultraviolet intense, gel fréquent, vent desséchant. L'edelweiss et d'autres fleurs alpines possèdent un duvet de poils blancs qui réfléchit les UV (évitant les brûlures cellulaires) et retient l'humidité autour de la plante. Les plantes alpines sont également en coussinet, poussant très près du sol pour limiter la prise au vent et conserver la chaleur.",
               "emoji": "🌸"
             },
             {
@@ -9558,7 +9558,7 @@ export const UNIVERSES: Record<string, Universe> = {
           ],
           "quiz": [
             {
-              "question": "De combien de degrés Celsius la température baisse-t-elle tous les 100 mètres de dénivelé en montagne ?",
+              "question": "De combien de degrés Celsius la température baisse-t-elle tous les 100 mètrès de dénivelé en montagne ?",
               "options": [
                 "0,3°C",
                 "0,6°C",
@@ -9932,7 +9932,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Parmi ces caracteristiques, laquelle decrit bien les os ?",
+              "question": "Parmi ces caractéristiques, laquelle decrit bien les os ?",
               "options": [
                 "Ils sont durs et blancs",
                 "Ils sont mous et rouges",
@@ -10140,7 +10140,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "L'intestin grêle absorbe les nutriments",
-              "text": "Après l'estomac, la bouillie arrive dans l'intestin grêle, qui mesure environ 6 mètres de long. C'est là que les nutriments (sucres, protéines, graisses) traversent la paroi intestinale pour passer dans le sang et nourrir le corps.",
+              "text": "Après l'estomac, la bouillie arrive dans l'intestin grêle, qui mesure environ 6 mètrès de long. C'est là que les nutriments (sucres, protéines, graisses) traversent la paroi intestinale pour passer dans le sang et nourrir le corps.",
               "emoji": "🌀"
             },
             {
@@ -10208,11 +10208,11 @@ export const UNIVERSES: Record<string, Universe> = {
               "question": "Quelle est la longueur approximative de l'intestin grêle ?",
               "options": [
                 "1 mètre",
-                "3 mètres",
-                "6 mètres",
-                "10 mètres"
+                "3 mètrès",
+                "6 mètrès",
+                "10 mètrès"
               ],
-              "correctAnswer": "6 mètres",
+              "correctAnswer": "6 mètrès",
               "isSpecial": false
             },
             {
@@ -10569,7 +10569,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "question": "Dans le cœur, les ventricules se trouvent en bas et les oreillettes en haut. Quel est le rôle des ventricules par rapport aux oreillettes ?",
               "options": [
                 "Les ventricules recoivent le sang qui arrive, les oreillettes l'expulsent vers les arteres",
-                "Les ventricules et les oreillettes ont exactement le meme role",
+                "Les ventricules et les oreillettes ont exactement le même role",
                 "Les oreillettes recoivent le sang entrant, puis le transmettent aux ventricules qui le propulsent vers les arteres",
                 "Les oreillettes filtrent le sang avant que les ventricules ne le rechauffent"
               ],
@@ -10787,7 +10787,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "question": "Comment appelle-t-on la phase du sommeil pendant laquelle on reve le plus ?",
               "options": [
                 "Le sommeil lent profond",
-                "Le sommeil leger",
+                "Le sommeil léger",
                 "Le sommeil paradoxal",
                 "Le micro-sommeil"
               ],
@@ -11178,7 +11178,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Si une personne manque de globules rouges, quelle consequence principale cela peut-il avoir sur son corps ?",
+              "question": "Si une personne manque de globules rouges, quelle conséquence principale cela peut-il avoir sur son corps ?",
               "options": [
                 "Ses muscles recevront moins d'oxygene et elle se sentira fatiguee",
                 "Son sang deviendra bleu comme celui des pieuvres",
@@ -11650,7 +11650,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Les neurones et leurs parties",
-              "text": "Le cerveau contient environ 86 milliards de neurones. Chaque neurone possède des dendrites qui reçoivent les messages des autres cellules, et un axone qui transmet le message. Grâce à la gaine de myéline qui enveloppe l'axone, l'influx nerveux peut voyager jusqu'à 120 mètres par seconde.",
+              "text": "Le cerveau contient environ 86 milliards de neurones. Chaque neurone possède des dendrites qui reçoivent les messages des autres cellules, et un axone qui transmet le message. Grâce à la gaine de myéline qui enveloppe l'axone, l'influx nerveux peut voyager jusqu'à 120 mètrès par seconde.",
               "emoji": "⚡"
             },
             {
@@ -11704,7 +11704,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Grâce à quoi l'influx nerveux peut-il voyager jusqu'à 120 mètres par seconde dans un neurone ?",
+              "question": "Grâce à quoi l'influx nerveux peut-il voyager jusqu'à 120 mètrès par seconde dans un neurone ?",
               "options": [
                 "La longueur exceptionnelle des dendrites",
                 "La gaine de myéline qui enveloppe l'axone",
@@ -12535,7 +12535,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "L'estomac et l'intestin grêle",
-              "text": "L'estomac produit un suc gastrique très acide (acide chlorhydrique) qui détruit les bactéries et active les enzymes protéolytiques. Pour se protéger de cette acidité, la paroi de l'estomac est recouverte d'une épaisse couche de mucus. L'intestin grêle mesure environ 6 mètres chez un adulte ; c'est là que les nutriments issus de la digestion (glucides simples, acides aminés, acides gras) sont absorbés à travers la paroi intestinale et passent dans le sang.",
+              "text": "L'estomac produit un suc gastrique très acide (acide chlorhydrique) qui détruit les bactéries et active les enzymes protéolytiques. Pour se protéger de cette acidité, la paroi de l'estomac est recouverte d'une épaisse couche de mucus. L'intestin grêle mesure environ 6 mètrès chez un adulte ; c'est là que les nutriments issus de la digestion (glucides simples, acides aminés, acides gras) sont absorbés à travers la paroi intestinale et passent dans le sang.",
               "emoji": "🌀"
             },
             {
@@ -12569,12 +12569,12 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Quelle est la longueur approximative de l'intestin grêle chez un adulte ?",
               "options": [
-                "Environ 6 mètres",
+                "Environ 6 mètrès",
                 "Environ 1,5 mètre",
-                "Environ 15 mètres",
-                "Environ 3 mètres"
+                "Environ 15 mètrès",
+                "Environ 3 mètrès"
               ],
-              "correctAnswer": "Environ 6 mètres",
+              "correctAnswer": "Environ 6 mètrès",
               "isSpecial": false
             },
             {
@@ -13721,12 +13721,12 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Un eleve affirme que l'intestin grele et le gros intestin ont le meme role : absorber les nutriments. Quelle erreur commet-il ?",
+              "question": "Un eleve affirme que l'intestin grele et le gros intestin ont le même role : absorber les nutriments. Quelle erreur commet-il ?",
               "options": [
                 "Le gros intestin abrite le microbiote et traite les fibres non absorbees, tandis que l'intestin grele filtre les nutriments vers le sang",
                 "Le gros intestin produit la bile et l'intestin grele produit les sucs pancreatiques",
                 "L'intestin grele stocke les dechets et le gros intestin absorbe les vitamines",
-                "Les deux organes ont exactement le meme role, donc l'affirmation est correcte"
+                "Les deux organes ont exactement le même role, donc l'affirmation est correcte"
               ],
               "correctAnswer": "Le gros intestin abrite le microbiote et traite les fibres non absorbees, tandis que l'intestin grele filtre les nutriments vers le sang",
               "isSpecial": true
@@ -14313,9 +14313,9 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Un patient présente une obstruction des artères coronaires (qui irriguent le myocarde lui-meme). En combinant vos connaissances sur la respiration cellulaire et le cycle cardiaque, quelle en est la conséquence directe sur le muscle cardiaque et pourquoi ?",
+              "question": "Un patient présente une obstruction des artères coronaires (qui irriguent le myocarde lui-même). En combinant vos connaissances sur la respiration cellulaire et le cycle cardiaque, quelle en est la conséquence directe sur le muscle cardiaque et pourquoi ?",
               "options": [
-                "Le myocarde produit davantage d'ATP grace aux mitochondries voisines non touchees",
+                "Le myocarde produit davantage d'ATP grâce aux mitochondries voisines non touchees",
                 "Le myocarde est prive d'O2 et de glucose, ce qui bloque sa production d'ATP et provoque une necrose (infarctus)",
                 "Les valves cardiaques compensent en pompant plus fort pour maintenir la circulation",
                 "Le noeud sinusal accelere le rythme cardiaque pour pallier le manque d'apport sanguin"
@@ -14490,7 +14490,7 @@ export const UNIVERSES: Record<string, Universe> = {
           "cards": [
             {
               "title": "Le Soleil : notre étoile",
-              "text": "Le Soleil est une énorme boule de feu gazeuse qui se trouve à environ 150 millions de kilomètres de la Terre. C'est une étoile, tout comme celles que l'on voit briller la nuit dans le ciel. Le Soleil produit lui-même sa propre lumière et sa propre chaleur. Il est indispensable à la vie sur Terre car il nous éclaire et nous réchauffe chaque jour.",
+              "text": "Le Soleil est une énorme boule de feu gazeuse qui se trouve à environ 150 millions de kilomètrès de la Terre. C'est une étoile, tout comme celles que l'on voit briller la nuit dans le ciel. Le Soleil produit lui-même sa propre lumière et sa propre chaleur. Il est indispensable à la vie sur Terre car il nous éclaire et nous réchauffe chaque jour.",
               "emoji": "☀️"
             },
             {
@@ -14607,12 +14607,12 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Le Soleil est une étoile de type naine jaune. A quelle distance approximative se trouve-t-il de la Terre ?",
               "options": [
-                "Environ 150 kilomètres",
-                "Environ 150 millions de kilomètres",
-                "Environ 1 milliard de kilomètres",
-                "Environ 40 millions de kilomètres"
+                "Environ 150 kilomètrès",
+                "Environ 150 millions de kilomètrès",
+                "Environ 1 milliard de kilomètrès",
+                "Environ 40 millions de kilomètrès"
               ],
-              "correctAnswer": "Environ 150 millions de kilomètres",
+              "correctAnswer": "Environ 150 millions de kilomètrès",
               "isSpecial": true
             }
           ]
@@ -14781,7 +14781,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Résumé : ce qui rend la Terre unique",
-              "text": "La Terre est une planète exceptionnelle dans le système solaire. Elle possède de l'eau liquide sur sa surface, une atmosphère riche en oxygène, et accueille une immense variété d'êtres vivants : plantes, animaux et êtres humains. Sa rotation sur elle-même crée le jour et la nuit, et sa révolution autour du Soleil provoque les saisons. Aucune autre planète connue ne réunit toutes ces conditions favorables à la vie.",
+              "text": "La Terre est une planète exceptionnelle dans le système solaire. Elle possède de l'eau liquide sur sa surface, une atmosphère riche en oxygène, et accueille une immense variété d'êtrès vivants : plantes, animaux et êtrès humains. Sa rotation sur elle-même crée le jour et la nuit, et sa révolution autour du Soleil provoque les saisons. Aucune autre planète connue ne réunit toutes ces conditions favorables à la vie.",
               "emoji": "💧"
             },
             {
@@ -14841,7 +14841,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Quel rôle joue l'atmosphère terrestre pour les êtres vivants ?",
+              "question": "Quel rôle joue l'atmosphère terrestre pour les êtrès vivants ?",
               "options": [
                 "Elle produit de la chaleur pour réchauffer la planète",
                 "Elle fournit de l'oxygène et protège des rayons trop forts du Soleil",
@@ -15019,11 +15019,11 @@ export const UNIVERSES: Record<string, Universe> = {
               "question": "Pourquoi un humain ne pourrait pas respirer sur Mars sans combinaison spatiale ?",
               "options": [
                 "L'atmosphère est trop froide pour les poumons",
-                "Il n'y a pas assez d'oxygene dans l'atmosphère tres fine de Mars",
+                "Il n'y a pas assez d'oxygene dans l'atmosphère très fine de Mars",
                 "L'atmosphère est trop epaisse et contient du chlore",
                 "Il n'y a aucune atmosphère sur Mars"
               ],
-              "correctAnswer": "Il n'y a pas assez d'oxygene dans l'atmosphère tres fine de Mars",
+              "correctAnswer": "Il n'y a pas assez d'oxygene dans l'atmosphère très fine de Mars",
               "isSpecial": false
             },
             {
@@ -15038,7 +15038,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Quelle caracteristique Mars partage-t-elle avec la Terre concernant ses poles ?",
+              "question": "Quelle caractéristique Mars partage-t-elle avec la Terre concernant ses poles ?",
               "options": [
                 "Toutes deux ont des oceans aux poles",
                 "Toutes deux ont des calottes glaciaires aux poles",
@@ -15250,7 +15250,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Saturne en chiffres",
-              "text": "Saturne possède plus de 80 lunes connues. Ses anneaux s'étendent sur des centaines de milliers de kilomètres mais sont très fins (quelques dizaines de mètres seulement d'épaisseur). C'est une planète fascinante qui continue d'étonner les scientifiques.",
+              "text": "Saturne possède plus de 80 lunes connues. Ses anneaux s'étendent sur des centaines de milliers de kilomètrès mais sont très fins (quelques dizaines de mètrès seulement d'épaisseur). C'est une planète fascinante qui continue d'étonner les scientifiques.",
               "emoji": "🔭"
             }
           ],
@@ -15541,7 +15541,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "La vitesse de libération",
-              "text": "Pour quitter définitivement l'attraction terrestre, une fusée doit atteindre une vitesse très élevée appelée vitesse de libération. Sur Terre, cette vitesse est d'environ 40 000 kilomètres par heure. Sur la Lune, qui est bien moins lourde, cette vitesse est beaucoup plus faible (environ 8 600 km/h).",
+              "text": "Pour quitter définitivement l'attraction terrestre, une fusée doit atteindre une vitesse très élevée appelée vitesse de libération. Sur Terre, cette vitesse est d'environ 40 000 kilomètrès par heure. Sur la Lune, qui est bien moins lourde, cette vitesse est beaucoup plus faible (environ 8 600 km/h).",
               "emoji": "⚡"
             },
             {
@@ -15586,12 +15586,12 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "À quelle vitesse approximative une fusée doit-elle aller pour quitter définitivement l'attraction terrestre ?",
               "options": [
-                "1 000 kilomètres par heure",
-                "10 000 kilomètres par heure",
-                "40 000 kilomètres par heure",
-                "100 000 kilomètres par heure"
+                "1 000 kilomètrès par heure",
+                "10 000 kilomètrès par heure",
+                "40 000 kilomètrès par heure",
+                "100 000 kilomètrès par heure"
               ],
-              "correctAnswer": "40 000 kilomètres par heure",
+              "correctAnswer": "40 000 kilomètrès par heure",
               "isSpecial": false
             },
             {
@@ -16085,11 +16085,11 @@ export const UNIVERSES: Record<string, Universe> = {
               "question": "Pourquoi les planètes restent-elles en orbite autour du Soleil sans s'envoler ?",
               "options": [
                 "A cause de la pression du vent solaire",
-                "Grace a la force de gravite du Soleil",
+                "Grâce a la force de gravite du Soleil",
                 "Parce qu'elles sont aimantees par le Soleil",
                 "A cause de la rotation du système solaire"
               ],
-              "correctAnswer": "Grace a la force de gravite du Soleil",
+              "correctAnswer": "Grâce a la force de gravite du Soleil",
               "isSpecial": false
             },
             {
@@ -16223,10 +16223,10 @@ export const UNIVERSES: Record<string, Universe> = {
               "options": [
                 "Un nuage de gaz très froid",
                 "Une étoile naissante entourée de poussière",
-                "Une zone si dense que meme la lumière ne peut pas s'en echapper",
+                "Une zone si dense que même la lumière ne peut pas s'en echapper",
                 "Une galaxie sans étoiles"
               ],
-              "correctAnswer": "Une zone si dense que meme la lumière ne peut pas s'en echapper",
+              "correctAnswer": "Une zone si dense que même la lumière ne peut pas s'en echapper",
               "isSpecial": false
             },
             {
@@ -16257,13 +16257,13 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Parce qu'il est le plus petit du système solaire",
                 "Parce qu'il a deja brule environ la moitie de son carburant et qu'il lui en reste autant",
                 "Parce qu'il brille moins fort que les autres étoiles",
-                "Parce qu'il est ne il y a seulement 100 millions d'annees"
+                "Parce qu'il est ne il y a seulement 100 millions d'années"
               ],
               "correctAnswer": "Parce qu'il a deja brule environ la moitie de son carburant et qu'il lui en reste autant",
               "isSpecial": false
             },
             {
-              "question": "Quelle sequence d'événements decrit correctement la fin de vie d'une étoile tres massive ?",
+              "question": "Quelle sequence d'événements decrit correctement la fin de vie d'une étoile très massive ?",
               "options": [
                 "Elle refroidit lentement puis devient une naine blanche",
                 "Elle grossit en geante rouge, explose en supernova, puis son noyau s'effondre en trou noir",
@@ -16730,7 +16730,7 @@ export const UNIVERSES: Record<string, Universe> = {
           "cards": [
             {
               "title": "Comment une étoile produit sa lumière",
-              "text": "Une étoile, comme le Soleil, est une gigantesque boule de gaz très chaud. En son centre, des réactions nucléaires (appelées fusion nucléaire) transforment de l'hydrogène en hélium et libèrent une énergie colossale sous forme de lumière et de chaleur. Le Soleil est à environ 150 millions de kilomètres de la Terre et sa surface atteint environ 5 500 °C. Les étoiles les plus chaudes apparaissent bleues, tandis que les plus froides sont rouges.",
+              "text": "Une étoile, comme le Soleil, est une gigantesque boule de gaz très chaud. En son centre, des réactions nucléaires (appelées fusion nucléaire) transforment de l'hydrogène en hélium et libèrent une énergie colossale sous forme de lumière et de chaleur. Le Soleil est à environ 150 millions de kilomètrès de la Terre et sa surface atteint environ 5 500 °C. Les étoiles les plus chaudes apparaissent bleues, tandis que les plus froides sont rouges.",
               "emoji": "⭐"
             },
             {
@@ -16764,12 +16764,12 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "À quelle distance se trouve le Soleil de la Terre ?",
               "options": [
-                "Environ 150 millions de kilomètres",
-                "Environ 1 million de kilomètres",
-                "Environ 150 000 kilomètres",
-                "Environ 150 milliards de kilomètres"
+                "Environ 150 millions de kilomètrès",
+                "Environ 1 million de kilomètrès",
+                "Environ 150 000 kilomètrès",
+                "Environ 150 milliards de kilomètrès"
               ],
-              "correctAnswer": "Environ 150 millions de kilomètres",
+              "correctAnswer": "Environ 150 millions de kilomètrès",
               "isSpecial": false
             },
             {
@@ -16875,7 +16875,7 @@ export const UNIVERSES: Record<string, Universe> = {
           "cards": [
             {
               "title": "Le Soleil : composition et production d'énergie",
-              "text": "Le Soleil est principalement composé d'hydrogène (environ 75 %) et d'hélium (environ 24 %). En son noyau, la température et la pression sont tellement extrêmes qu'elles déclenchent la fusion nucléaire : des noyaux d'hydrogène fusionnent pour former de l'hélium, libérant une quantité colossale d'énergie sous forme de lumière et de chaleur. Cette énergie met environ 8 minutes pour parcourir les 150 millions de kilomètres (1 Unité Astronomique) qui séparent le Soleil de la Terre. Le Soleil est classifié comme une naine jaune selon sa couleur et sa température de surface.",
+              "text": "Le Soleil est principalement composé d'hydrogène (environ 75 %) et d'hélium (environ 24 %). En son noyau, la température et la pression sont tellement extrêmes qu'elles déclenchent la fusion nucléaire : des noyaux d'hydrogène fusionnent pour former de l'hélium, libérant une quantité colossale d'énergie sous forme de lumière et de chaleur. Cette énergie met environ 8 minutes pour parcourir les 150 millions de kilomètrès (1 Unité Astronomique) qui séparent le Soleil de la Terre. Le Soleil est classifié comme une naine jaune selon sa couleur et sa température de surface.",
               "emoji": "☀️"
             },
             {
@@ -16885,7 +16885,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Distances astronomiques et étoiles lointaines",
-              "text": "La distance moyenne Terre-Soleil est définie comme 1 Unité Astronomique (UA), soit 150 millions de kilomètres. Les autres étoiles visibles la nuit sont des astres semblables au Soleil, mais situées à des distances immensément plus grandes, ce qui explique qu'elles n'apparaissent que comme de minuscules points lumineux. Le Soleil, classé comme naine jaune sur le diagramme de Hertzsprung-Russell, se situe sur la séquence principale, la région du diagramme qui regroupe les étoiles en phase stable de fusion de l'hydrogène.",
+              "text": "La distance moyenne Terre-Soleil est définie comme 1 Unité Astronomique (UA), soit 150 millions de kilomètrès. Les autres étoiles visibles la nuit sont des astres semblables au Soleil, mais situées à des distances immensément plus grandes, ce qui explique qu'elles n'apparaissent que comme de minuscules points lumineux. Le Soleil, classé comme naine jaune sur le diagramme de Hertzsprung-Russell, se situe sur la séquence principale, la région du diagramme qui regroupe les étoiles en phase stable de fusion de l'hydrogène.",
               "emoji": "📏"
             }
           ],
@@ -17023,7 +17023,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Le Soleil et le diagramme de Hertzsprung-Russell",
-              "text": "Depuis la Terre, le Soleil paraît jaune en raison de la diffusion de la lumière par l'atmosphère terrestre, mais observé depuis l'espace, il émet une lumière blanche. Il se trouve à environ 150 millions de kilomètres de la Terre. Le Soleil est classifié sur la séquence principale du diagramme de Hertzsprung-Russell, un graphique qui classe les étoiles selon leur luminosité et leur température. La séquence principale regroupe les étoiles qui fusionnent activement de l'hydrogène en hélium dans leur noyau.",
+              "text": "Depuis la Terre, le Soleil paraît jaune en raison de la diffusion de la lumière par l'atmosphère terrestre, mais observé depuis l'espace, il émet une lumière blanche. Il se trouve à environ 150 millions de kilomètrès de la Terre. Le Soleil est classifié sur la séquence principale du diagramme de Hertzsprung-Russell, un graphique qui classe les étoiles selon leur luminosité et leur température. La séquence principale regroupe les étoiles qui fusionnent activement de l'hydrogène en hélium dans leur noyau.",
               "emoji": "📊"
             }
           ],
@@ -17064,12 +17064,12 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "À quelle distance approximative le Soleil se trouve-t-il de la Terre ?",
               "options": [
-                "150 millions de kilomètres",
-                "384 000 kilomètres",
+                "150 millions de kilomètrès",
+                "384 000 kilomètrès",
                 "4,2 années-lumière",
-                "1 milliard de kilomètres"
+                "1 milliard de kilomètrès"
               ],
-              "correctAnswer": "150 millions de kilomètres",
+              "correctAnswer": "150 millions de kilomètrès",
               "isSpecial": false
             },
             {
@@ -17117,7 +17117,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "La surface de Mars est parsemée de roches rougeâtres. Quel est le nom du principal minéral responsable de cette couleur ?",
+              "question": "La surface de Mars est parsemée de roches rougeâtrès. Quel est le nom du principal minéral responsable de cette couleur ?",
               "options": [
                 "Hématite",
                 "Basalte",
@@ -17161,7 +17161,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "L'atmosphère terrestre : un bouclier vital",
-              "text": "L'atmosphère terrestre est une couche de gaz qui enveloppe la Terre. Elle est composée majoritairement d'azote et d'oxygène, ce dernier étant indispensable à la respiration des êtres vivants. L'atmosphère filtre et bloque les rayonnements solaires les plus nocifs (comme les ultraviolets), protégeant ainsi la vie en surface. Sans atmosphère, la Terre serait exposée à un rayonnement intense et les températures seraient extrêmes.",
+              "text": "L'atmosphère terrestre est une couche de gaz qui enveloppe la Terre. Elle est composée majoritairement d'azote et d'oxygène, ce dernier étant indispensable à la respiration des êtrès vivants. L'atmosphère filtre et bloque les rayonnements solaires les plus nocifs (comme les ultraviolets), protégeant ainsi la vie en surface. Sans atmosphère, la Terre serait exposée à un rayonnement intense et les températures seraient extrêmes.",
               "emoji": "🌬️"
             },
             {
@@ -17329,7 +17329,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Le ciel de Mars et ses nuances",
-              "text": "Contrairement au ciel bleu terrestre causé par la diffusion de Rayleigh, le ciel martien présente des teintes roses ou jaunâtres. Cette couleur est due aux particules de poussière ferrugineuse en suspension dans l'atmosphère : elles diffusent la lumière solaire dans des longueurs d'onde chaudes (rouge, orange, jaune) plutôt que dans le bleu. Ce phénomène est amplifié lors des tempêtes de poussière martiennes, qui peuvent durer plusieurs mois et recouvrir la planète entière.",
+              "text": "Contrairement au ciel bleu terrestre causé par la diffusion de Rayleigh, le ciel martien présente des teintes roses ou jaunâtrès. Cette couleur est due aux particules de poussière ferrugineuse en suspension dans l'atmosphère : elles diffusent la lumière solaire dans des longueurs d'onde chaudes (rouge, orange, jaune) plutôt que dans le bleu. Ce phénomène est amplifié lors des tempêtes de poussière martiennes, qui peuvent durer plusieurs mois et recouvrir la planète entière.",
               "emoji": "🌅"
             }
           ],
@@ -17350,7 +17350,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "options": [
                 "Dioxyde de carbone gele (neige carbonique)",
                 "Glace d'eau ordinaire comme sur Terre",
-                "Azote solidifie a tres basse température",
+                "Azote solidifie a très basse température",
                 "Methane gele accumule par l'activite volcanique"
               ],
               "correctAnswer": "Dioxyde de carbone gele (neige carbonique)",
@@ -17359,12 +17359,12 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Olympus Mons est le plus grand volcan du système solaire. A quelle categorie de volcans appartient-il ?",
               "options": [
-                "Volcan bouclier, forme par des coulees de lave tres fluide",
+                "Volcan bouclier, forme par des coulees de lave très fluide",
                 "Stratovolcan, forme par des couches alternees de lave et de cendres",
                 "Volcan effusif sous-marin, forme sous un ocean disparu",
                 "Caldeira d'impact, creusee par une meteorite geante"
               ],
-              "correctAnswer": "Volcan bouclier, forme par des coulees de lave tres fluide",
+              "correctAnswer": "Volcan bouclier, forme par des coulees de lave très fluide",
               "isSpecial": false
             },
             {
@@ -17434,7 +17434,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Si un humain se trouvait a la surface de Mars sans combinaison spatiale, laquelle de ces consequences surviendrait en premier et pourquoi ?",
+              "question": "Si un humain se trouvait a la surface de Mars sans combinaison spatiale, laquelle de ces conséquences surviendrait en premier et pourquoi ?",
               "options": [
                 "La quasi-absence de pression ferait bouillir les liquides corporels et l'oxygene manquerait immediatement",
                 "Le froid intense de moins 200 degrés provoquerait une mort par congelation instantanee",
@@ -17615,7 +17615,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Les anneaux de Saturne",
-              "text": "Les anneaux de Saturne sont son signe distinctif le plus spectaculaire. Ils sont composés de millions de fragments de glace, de roche et de poussière, dont la taille varie de quelques millimètres à plusieurs mètres. Ces fragments ne forment pas un disque solide : ils sont en orbite indépendante autour de la planète, séparés les uns des autres. Les anneaux brillent dans l'espace car ils réfléchissent efficacement la lumière du Soleil grâce à la glace qu'ils contiennent.",
+              "text": "Les anneaux de Saturne sont son signe distinctif le plus spectaculaire. Ils sont composés de millions de fragments de glace, de roche et de poussière, dont la taille varie de quelques millimètrès à plusieurs mètrès. Ces fragments ne forment pas un disque solide : ils sont en orbite indépendante autour de la planète, séparés les uns des autres. Les anneaux brillent dans l'espace car ils réfléchissent efficacement la lumière du Soleil grâce à la glace qu'ils contiennent.",
               "emoji": "💍"
             },
             {
@@ -17630,12 +17630,12 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "La structure des anneaux en détail",
-              "text": "Les anneaux de Saturne s'étendent sur des centaines de milliers de kilomètres mais sont étonnamment minces, parfois seulement quelques dizaines de mètres d'épaisseur. Ils sont organisés en plusieurs anneaux distincts, séparés par des espaces vides appelés divisions, dont la célèbre division de Cassini. Chaque fragment qui compose les anneaux suit sa propre orbite autour de Saturne selon les lois de la gravitation. L'origine des anneaux est encore débattue : ils pourraient provenir d'une lune ou d'une comète détruite par les forces de marée.",
+              "text": "Les anneaux de Saturne s'étendent sur des centaines de milliers de kilomètrès mais sont étonnamment minces, parfois seulement quelques dizaines de mètrès d'épaisseur. Ils sont organisés en plusieurs anneaux distincts, séparés par des espaces vides appelés divisions, dont la célèbre division de Cassini. Chaque fragment qui compose les anneaux suit sa propre orbite autour de Saturne selon les lois de la gravitation. L'origine des anneaux est encore débattue : ils pourraient provenir d'une lune ou d'une comète détruite par les forces de marée.",
               "emoji": "🪐"
             },
             {
               "title": "Saturne dans le système solaire",
-              "text": "Saturne est la deuxième plus grande planète du système solaire, après Jupiter. Elle orbite autour du Soleil à une distance d'environ 1,4 milliard de kilomètres, ce qui représente environ 9,5 fois la distance Terre-Soleil. Une année saturnienne dure environ 29,5 années terrestres. Plusieurs sondes spatiales ont exploré Saturne, notamment Cassini-Huygens, qui a orbité autour de la planète de 2004 à 2017 et a déposé la sonde Huygens sur Titan, révélant la surface et l'atmosphère de cette lune en détail.",
+              "text": "Saturne est la deuxième plus grande planète du système solaire, après Jupiter. Elle orbite autour du Soleil à une distance d'environ 1,4 milliard de kilomètrès, ce qui représente environ 9,5 fois la distance Terre-Soleil. Une année saturnienne dure environ 29,5 années terrestres. Plusieurs sondes spatiales ont exploré Saturne, notamment Cassini-Huygens, qui a orbité autour de la planète de 2004 à 2017 et a déposé la sonde Huygens sur Titan, révélant la surface et l'atmosphère de cette lune en détail.",
               "emoji": "🚀"
             }
           ],
@@ -17643,7 +17643,7 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Quelle propriete physique de Saturne lui permettrait theoriquement de flotter sur l'eau ?",
               "options": [
-                "Sa masse tres elevee",
+                "Sa masse très elevee",
                 "Sa densite inferieure a celle de l'eau",
                 "Sa composition en glace pure",
                 "Sa température de surface negative"
@@ -17685,7 +17685,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Quelle caracteristique exceptionnelle possede Titan parmi les lunes du système solaire ?",
+              "question": "Quelle caractéristique exceptionnelle possede Titan parmi les lunes du système solaire ?",
               "options": [
                 "Elle est entierement recouverte de glace d'eau",
                 "Elle possede une atmosphère epaisse et des lacs de methane liquide",
@@ -17744,7 +17744,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "options": [
                 "Titan est certainement habitee par des formes de vie identiques a celles de la Terre",
                 "La presence d'une atmosphère et de liquides de surface en fait un objet d'interet pour la recherche de formes de vie non conventionnelles",
-                "L'absence d'eau liquide rend toute forme de vie impossible, meme hypothetique",
+                "L'absence d'eau liquide rend toute forme de vie impossible, même hypothetique",
                 "Son atmosphère indique qu'elle a ete une planète independante avant d'etre capturee par Saturne"
               ],
               "correctAnswer": "La presence d'une atmosphère et de liquides de surface en fait un objet d'interet pour la recherche de formes de vie non conventionnelles",
@@ -17936,7 +17936,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Saturn V et le programme Apollo",
-              "text": "Saturn V est la fusée qui a permis aux astronautes du programme Apollo d'atteindre la Lune, dont l'équipage d'Apollo 11 en juillet 1969, premier alunissage habité. Avec 110 mètres de hauteur et une poussée de 35 millions de newtons, elle reste l'une des fusées les plus puissantes jamais construites. La faible gravité de la Lune (masse environ 81 fois inférieure à celle de la Terre) implique une vitesse de libération lunaire de seulement 2,4 km/s, permettant au module lunaire de décoller avec des moteurs bien moins puissants qu'au décollage terrestre.",
+              "text": "Saturn V est la fusée qui a permis aux astronautes du programme Apollo d'atteindre la Lune, dont l'équipage d'Apollo 11 en juillet 1969, premier alunissage habité. Avec 110 mètrès de hauteur et une poussée de 35 millions de newtons, elle reste l'une des fusées les plus puissantes jamais construites. La faible gravité de la Lune (masse environ 81 fois inférieure à celle de la Terre) implique une vitesse de libération lunaire de seulement 2,4 km/s, permettant au module lunaire de décoller avec des moteurs bien moins puissants qu'au décollage terrestre.",
               "emoji": "🌕"
             },
             {
@@ -19063,7 +19063,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "options": [
                 "Il utilise des ondes radio pour détecter les signaux émis par ces galaxies",
                 "Il capte la lumière infrarouge qui a voyagé pendant des milliards d'années depuis ces galaxies",
-                "Il photographie directement les galaxies grâce à un miroir de 100 mètres de diamètre",
+                "Il photographie directement les galaxies grâce à un miroir de 100 mètrès de diamètre",
                 "Il analyse les particules cosmiques provenant des premières étoiles"
               ],
               "correctAnswer": "Il capte la lumière infrarouge qui a voyagé pendant des milliards d'années depuis ces galaxies",
@@ -19426,7 +19426,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Le carré : 4 côtés égaux et 4 angles droits",
-              "text": "Le carré est une figure géométrique qui possède exactement 4 côtés de même longueur et 4 angles droits (coins en forme de L). Il a donc 4 côtés et 4 coins. Un angle droit ressemble au coin d'une feuille de papier. Les fenêtres carrées ou les carreaux de sol sont de bons exemples de carrés dans la vie quotidienne.",
+              "text": "Le carré est une figure géométrique qui possède exactement 4 côtés de même longueur et 4 angles droits (coins en forme de L). Il a donc 4 côtés et 4 coins. Un angle droit ressemble au coin d'une feuille de papier. Les fenêtrès carrées ou les carreaux de sol sont de bons exemples de carrés dans la vie quotidienne.",
               "emoji": "🟦"
             },
             {
@@ -20640,7 +20640,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Un escargot monte un mur de 10 mètres. Chaque jour il monte 3 mètres, mais chaque nuit il redescend de 2 mètres. Au bout de combien de jours atteint-il le sommet ?",
+              "question": "Un escargot monte un mur de 10 mètrès. Chaque jour il monte 3 mètrès, mais chaque nuit il redescend de 2 mètrès. Au bout de combien de jours atteint-il le sommet ?",
               "options": [
                 "7 jours",
                 "8 jours",
@@ -21404,7 +21404,7 @@ export const UNIVERSES: Record<string, Universe> = {
         },
         {
           "id": "maths-gen-4",
-          "title": "Aires et Périmètres",
+          "title": "Aires et Périmètrès",
           "emoji": "📐",
           "themeColor": "orange",
           "badgeId": "maths-badge-4",
@@ -22235,7 +22235,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Un capital de 500 euros est doublé chaque annee pendant 4 ans. Quel montant final obtient-on ?",
+              "question": "Un capital de 500 euros est doublé chaque année pendant 4 ans. Quel montant final obtient-on ?",
               "options": [
                 "2 000 euros",
                 "4 000 euros",
@@ -22787,7 +22787,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Si on multiplie le numérateur et le dénominateur d'une fraction par le meme nombre non nul, que se passe-t-il ?",
+              "question": "Si on multiplie le numérateur et le dénominateur d'une fraction par le même nombre non nul, que se passe-t-il ?",
               "options": [
                 "La valeur de la fraction reste identique",
                 "La fraction augmente proportionnellement",
@@ -23689,7 +23689,7 @@ export const UNIVERSES: Record<string, Universe> = {
         },
         {
           "id": "maths-gen-5",
-          "title": "Aires et Périmètres",
+          "title": "Aires et Périmètrès",
           "emoji": "📐",
           "themeColor": "orange",
           "badgeId": "maths-badge-5",
@@ -24626,7 +24626,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Le berceau de l'humanité",
-              "text": "Les scientifiques appellent l'Afrique le berceau de l'humanité. En effet, c'est sur ce continent que l'on a retrouvé les fossiles de nos premiers ancêtres, les hommes préhistoriques. Ces découvertes montrent que les premiers êtres humains sont apparus en Afrique avant de se répandre sur toute la planète.",
+              "text": "Les scientifiques appellent l'Afrique le berceau de l'humanité. En effet, c'est sur ce continent que l'on a retrouvé les fossiles de nos premiers ancêtrès, les hommes préhistoriques. Ces découvertes montrent que les premiers êtrès humains sont apparus en Afrique avant de se répandre sur toute la planète.",
               "emoji": "🦴"
             },
             {
@@ -24678,11 +24678,11 @@ export const UNIVERSES: Record<string, Universe> = {
               "question": "Pourquoi l'Afrique est-elle souvent appelée le berceau de l'humanité ?",
               "options": [
                 "Parce qu'elle est le continent le plus chaud du monde",
-                "Parce qu'on y a retrouvé des fossiles de nos premiers ancêtres",
+                "Parce qu'on y a retrouvé des fossiles de nos premiers ancêtrès",
                 "Parce qu'elle abrite le plus grand nombre d'animaux sauvages",
                 "Parce que c'est le continent le plus peuplé du monde"
               ],
-              "correctAnswer": "Parce qu'on y a retrouvé des fossiles de nos premiers ancêtres",
+              "correctAnswer": "Parce qu'on y a retrouvé des fossiles de nos premiers ancêtrès",
               "isSpecial": false
             },
             {
@@ -24774,7 +24774,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "La fosse des Mariannes",
-              "text": "Le point le plus profond de tous les océans s'appelle la fosse des Mariannes. Elle se trouve dans l'océan Pacifique et atteint une profondeur d'environ 11 kilomètres, soit plus de dix fois la hauteur de la Tour Eiffel ! C'est l'endroit le plus profond connu sur Terre.",
+              "text": "Le point le plus profond de tous les océans s'appelle la fosse des Mariannes. Elle se trouve dans l'océan Pacifique et atteint une profondeur d'environ 11 kilomètrès, soit plus de dix fois la hauteur de la Tour Eiffel ! C'est l'endroit le plus profond connu sur Terre.",
               "emoji": "📏"
             },
             {
@@ -24841,12 +24841,12 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Quelle est la profondeur approximative de la fosse des Mariannes ?",
               "options": [
-                "5 kilomètres",
-                "8 kilomètres",
-                "11 kilomètres",
-                "15 kilomètres"
+                "5 kilomètrès",
+                "8 kilomètrès",
+                "11 kilomètrès",
+                "15 kilomètrès"
               ],
-              "correctAnswer": "11 kilomètres",
+              "correctAnswer": "11 kilomètrès",
               "isSpecial": false
             },
             {
@@ -24883,7 +24883,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Quelle caracteristique de l'eau distingue les océans des lacs et des rivières ?",
+              "question": "Quelle caractéristique de l'eau distingue les océans des lacs et des rivières ?",
               "options": [
                 "Elle est plus froide",
                 "Elle est salée",
@@ -24922,7 +24922,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "L'Everest et l'Himalaya",
-              "text": "Le mont Everest, situé dans la chaîne de l'Himalaya en Asie, est la plus haute montagne du monde avec plus de 8 800 mètres d'altitude. L'Himalaya est si haut parce que la collision entre la plaque indienne et la plaque eurasienne est plus récente et plus puissante que celle qui a formé les Alpes en Europe.",
+              "text": "Le mont Everest, situé dans la chaîne de l'Himalaya en Asie, est la plus haute montagne du monde avec plus de 8 800 mètrès d'altitude. L'Himalaya est si haut parce que la collision entre la plaque indienne et la plaque eurasienne est plus récente et plus puissante que celle qui a formé les Alpes en Europe.",
               "emoji": "🏔️"
             },
             {
@@ -25391,7 +25391,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Les plaques tectoniques",
-              "text": "La croûte terrestre est découpée en grands morceaux rigides appelés plaques tectoniques. Ces plaques flottent lentement sur le manteau et se déplacent de quelques centimètres par an. On ne le sent pas au quotidien, mais sur des millions d'années, ces mouvements changent totalement la forme des continents.",
+              "text": "La croûte terrestre est découpée en grands morceaux rigides appelés plaques tectoniques. Ces plaques flottent lentement sur le manteau et se déplacent de quelques centimètrès par an. On ne le sent pas au quotidien, mais sur des millions d'années, ces mouvements changent totalement la forme des continents.",
               "emoji": "🧩"
             },
             {
@@ -25464,12 +25464,12 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "De combien environ les continents se déplacent-ils chaque année à cause des plaques tectoniques ?",
               "options": [
-                "Quelques millimètres",
-                "Quelques centimètres",
-                "Quelques mètres",
-                "Quelques kilomètres"
+                "Quelques millimètrès",
+                "Quelques centimètrès",
+                "Quelques mètrès",
+                "Quelques kilomètrès"
               ],
-              "correctAnswer": "Quelques centimètres",
+              "correctAnswer": "Quelques centimètrès",
               "isSpecial": false
             },
             {
@@ -25544,7 +25544,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Le Grand Rift est-africain",
-              "text": "Le Grand Rift est-africain est une immense fissure dans la croûte terrestre qui s'étend sur environ 6 000 kilomètres. C'est une zone où deux plaques tectoniques s'écartent, ce qui crée des lacs profonds comme le lac Tanganyika et des volcans comme le Kilimandjaro. Dans des millions d'années, cette zone pourrait former un nouvel océan si le rift continue de s'élargir, séparant la Corne de l'Afrique du reste du continent.",
+              "text": "Le Grand Rift est-africain est une immense fissure dans la croûte terrestre qui s'étend sur environ 6 000 kilomètrès. C'est une zone où deux plaques tectoniques s'écartent, ce qui crée des lacs profonds comme le lac Tanganyika et des volcans comme le Kilimandjaro. Dans des millions d'années, cette zone pourrait former un nouvel océan si le rift continue de s'élargir, séparant la Corne de l'Afrique du reste du continent.",
               "emoji": "🌍"
             },
             {
@@ -25601,12 +25601,12 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Quelle est la longueur approximative du Grand Rift est-africain ?",
               "options": [
-                "6 000 kilomètres",
-                "2 000 kilomètres",
-                "10 000 kilomètres",
-                "500 kilomètres"
+                "6 000 kilomètrès",
+                "2 000 kilomètrès",
+                "10 000 kilomètrès",
+                "500 kilomètrès"
               ],
-              "correctAnswer": "6 000 kilomètres",
+              "correctAnswer": "6 000 kilomètrès",
               "isSpecial": false
             },
             {
@@ -25682,7 +25682,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "La croûte terrestre : océanique et continentale",
-              "text": "La croûte terrestre se divise en deux types. La croûte continentale, sous les terres émergées, est plus épaisse (30 à 70 km) mais moins dense. La croûte océanique, sous les océans, est plus fine (5 à 10 km) mais plus dense. La frontière entre la croûte et le manteau supérieur s'appelle le Moho. L'Homme a foré au maximum 12 kilomètres dans la croûte, sans jamais l'atteindre entièrement.",
+              "text": "La croûte terrestre se divise en deux types. La croûte continentale, sous les terres émergées, est plus épaisse (30 à 70 km) mais moins dense. La croûte océanique, sous les océans, est plus fine (5 à 10 km) mais plus dense. La frontière entre la croûte et le manteau supérieur s'appelle le Moho. L'Homme a foré au maximum 12 kilomètrès dans la croûte, sans jamais l'atteindre entièrement.",
               "emoji": "🪨"
             },
             {
@@ -25716,12 +25716,12 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Jusqu'à quelle profondeur maximale l'Homme a-t-il réussi à forer la croûte terrestre ?",
               "options": [
-                "5 kilomètres",
-                "12 kilomètres",
-                "30 kilomètres",
-                "100 kilomètres"
+                "5 kilomètrès",
+                "12 kilomètrès",
+                "30 kilomètrès",
+                "100 kilomètrès"
               ],
-              "correctAnswer": "12 kilomètres",
+              "correctAnswer": "12 kilomètrès",
               "isSpecial": false
             },
             {
@@ -25988,7 +25988,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "L'Everest, toit du monde",
-              "text": "L'Everest est le plus haut sommet du monde. Il se trouve dans la chaîne de l'Himalaya, à la frontière entre le Népal et la Chine. Son sommet culmine à 8 849 mètres d'altitude. Il s'est formé il y a des millions d'années par la collision de la plaque indienne contre la plaque eurasiatique, qui a soulevé d'immenses masses de roche.",
+              "text": "L'Everest est le plus haut sommet du monde. Il se trouve dans la chaîne de l'Himalaya, à la frontière entre le Népal et la Chine. Son sommet culmine à 8 849 mètrès d'altitude. Il s'est formé il y a des millions d'années par la collision de la plaque indienne contre la plaque eurasiatique, qui a soulevé d'immenses masses de roche.",
               "emoji": "🏔️"
             }
           ],
@@ -26829,7 +26829,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Rome est surnommée la Ville Eternelle. Quelle caracteristique historique justifie ce surnom ?",
+              "question": "Rome est surnommée la Ville Eternelle. Quelle caractéristique historique justifie ce surnom ?",
               "options": [
                 "Elle n'a jamais connu de tremblement de terre",
                 "Elle a été fondee au bord de la mer Mediterranee",
@@ -26840,7 +26840,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Quelle affirmation est FAUSSE concernant les capitales mondiales : Washington D.C. aux Etats-Unis, Canberra en Australie et Brasilia au Bresil ont en commun le fait d'etre des capitales construites artificiellement pour remplacer une ancienne capitale trop dominante. Pourquoi ce modèle de creation de capitale planifiee est-il parfois prefere ?",
+              "question": "Quelle affirmation est FAUSSE concernant les capitales mondiales : Washington D.C. aux Etats-Unis, Canberra en Australie et Brasilia au Bresil ont en commun le fait d'etre des capitales construites artificiellement pour remplacer une ancienne capitale trop dominante. Pourquoi ce modèle de creation de capitale planifiee est-il parfois préfère ?",
               "options": [
                 "Pour eviter qu'une seule ville concentre tout le pouvoir politique et economique",
                 "Parce que les anciennes capitales etaient trop froides en hiver",
@@ -26873,12 +26873,12 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Les grands reliefs et déserts d'Asie",
-              "text": "L'Himalaya est la plus haute chaîne de montagnes du monde : elle abrite l'Everest, sommet culminant à 8 849 mètres. L'Everest résulte de la collision entre la plaque indienne et la plaque eurasiatique. Le désert de Gobi, immense et aride, s'étend principalement sur le territoire de la Chine et de la Mongolie.",
+              "text": "L'Himalaya est la plus haute chaîne de montagnes du monde : elle abrite l'Everest, sommet culminant à 8 849 mètrès. L'Everest résulte de la collision entre la plaque indienne et la plaque eurasiatique. Le désert de Gobi, immense et aride, s'étend principalement sur le territoire de la Chine et de la Mongolie.",
               "emoji": "⛰️"
             },
             {
               "title": "La Route de la Soie",
-              "text": "La Route de la Soie était un réseau de routes commerciales qui reliait la Chine à l'Europe et au Moyen-Orient. Ces voies permettaient d'échanger soieries, épices, céramiques et idées sur des milliers de kilomètres. Elles ont joué un rôle majeur dans les échanges culturels et économiques entre l'Asie et le reste du monde pendant des siècles.",
+              "text": "La Route de la Soie était un réseau de routes commerciales qui reliait la Chine à l'Europe et au Moyen-Orient. Ces voies permettaient d'échanger soieries, épices, céramiques et idées sur des milliers de kilomètrès. Elles ont joué un rôle majeur dans les échanges culturels et économiques entre l'Asie et le reste du monde pendant des siècles.",
               "emoji": "🛤️"
             },
             {
@@ -27021,7 +27021,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Le berceau de l'humanité",
-              "text": "L'Afrique est souvent appelée le berceau de l'humanité car les plus anciens fossiles de nos ancêtres, notamment les australopithèques, y ont été découverts. Ces vestiges paléontologiques, trouvés notamment en Afrique de l'Est et du Sud, montrent que l'Homo sapiens est apparu sur ce continent avant de migrer vers le reste du monde.",
+              "text": "L'Afrique est souvent appelée le berceau de l'humanité car les plus anciens fossiles de nos ancêtrès, notamment les australopithèques, y ont été découverts. Ces vestiges paléontologiques, trouvés notamment en Afrique de l'Est et du Sud, montrent que l'Homo sapiens est apparu sur ce continent avant de migrer vers le reste du monde.",
               "emoji": "🦴"
             },
             {
@@ -27036,7 +27036,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "La vallée du Rift",
-              "text": "La vallée du Rift est une immense fracture géologique qui traverse l'Afrique de l'Est sur plusieurs milliers de kilomètres. Elle abrite de grands lacs comme le Tanganyika et le Victoria. Ce phénomène résulte de l'écartement progressif de plaques tectoniques, un processus qui pourrait à terme scinder l'Afrique de l'Est du reste du continent.",
+              "text": "La vallée du Rift est une immense fracture géologique qui traverse l'Afrique de l'Est sur plusieurs milliers de kilomètrès. Elle abrite de grands lacs comme le Tanganyika et le Victoria. Ce phénomène résulte de l'écartement progressif de plaques tectoniques, un processus qui pourrait à terme scinder l'Afrique de l'Est du reste du continent.",
               "emoji": "🌋"
             },
             {
@@ -27072,11 +27072,11 @@ export const UNIVERSES: Record<string, Universe> = {
               "question": "Pourquoi l'Afrique est-elle souvent appelée le berceau de l'humanité ?",
               "options": [
                 "Parce qu'elle est le continent le plus peuplé du monde",
-                "Parce que les plus anciens fossiles de nos ancêtres y ont été découverts",
+                "Parce que les plus anciens fossiles de nos ancêtrès y ont été découverts",
                 "Parce qu'elle possède le plus grand nombre de langues au monde",
                 "Parce que les premières civilisations agricoles y sont nées"
               ],
-              "correctAnswer": "Parce que les plus anciens fossiles de nos ancêtres y ont été découverts",
+              "correctAnswer": "Parce que les plus anciens fossiles de nos ancêtrès y ont été découverts",
               "isSpecial": false
             },
             {
@@ -27146,7 +27146,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "La vallée du Rift africain s'étend sur plusieurs milliers de kilomètres. Lequel de ces phénomènes géologiques majeurs lui est directement associé ?",
+              "question": "La vallée du Rift africain s'étend sur plusieurs milliers de kilomètrès. Lequel de ces phénomènes géologiques majeurs lui est directement associé ?",
               "options": [
                 "La formation d'une dorsale océanique immergée sous le lac Victoria",
                 "L'écartement progressif des plaques tectoniques qui pourrait à terme scinder l'Afrique de l'Est du reste du continent",
@@ -27184,12 +27184,12 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "La fosse des Mariannes",
-              "text": "La fosse des Mariannes, située dans l'Océan Pacifique, est le point le plus profond des océans avec une profondeur d'environ 11 kilomètres. Cette dépression abyssale est soumise à des pressions colossales et à une obscurité totale. Elle illustre l'immensité et le mystère des profondeurs marines encore largement inexplorées.",
+              "text": "La fosse des Mariannes, située dans l'Océan Pacifique, est le point le plus profond des océans avec une profondeur d'environ 11 kilomètrès. Cette dépression abyssale est soumise à des pressions colossales et à une obscurité totale. Elle illustre l'immensité et le mystère des profondeurs marines encore largement inexplorées.",
               "emoji": "📉"
             },
             {
               "title": "Les abysses, monde de l'extrême",
-              "text": "Les abysses désignent les zones les plus profondes et obscures des océans, situées généralement au-delà de 2 000 mètres de profondeur. Les organismes qui y vivent doivent s'adapter à l'obscurité totale et à des pressions extrêmes : certains poissons y produisent leur propre lumière grâce à la bioluminescence. Ces adaptations les distinguent radicalement des espèces des eaux de surface.",
+              "text": "Les abysses désignent les zones les plus profondes et obscures des océans, situées généralement au-delà de 2 000 mètrès de profondeur. Les organismes qui y vivent doivent s'adapter à l'obscurité totale et à des pressions extrêmes : certains poissons y produisent leur propre lumière grâce à la bioluminescence. Ces adaptations les distinguent radicalement des espèces des eaux de surface.",
               "emoji": "🐟"
             },
             {
@@ -27213,12 +27213,12 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Quelle est la profondeur approximative de la fosse des Mariannes, le point le plus profond des océans ?",
               "options": [
-                "7 kilomètres",
-                "9 kilomètres",
-                "11 kilomètres",
-                "15 kilomètres"
+                "7 kilomètrès",
+                "9 kilomètrès",
+                "11 kilomètrès",
+                "15 kilomètrès"
               ],
-              "correctAnswer": "11 kilomètres",
+              "correctAnswer": "11 kilomètrès",
               "isSpecial": false
             },
             {
@@ -27337,7 +27337,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Les grandes chaînes montagneuses du monde",
-              "text": "Les Andes, en Amérique du Sud, forment la plus longue chaîne de montagnes du monde. Les Alpes traversent plusieurs pays d'Europe centrale comme la France, la Suisse, l'Italie et l'Autriche, mais pas le Portugal. L'Himalaya, en Asie, est la chaîne la plus haute avec l'Everest comme point culminant à 8 849 mètres.",
+              "text": "Les Andes, en Amérique du Sud, forment la plus longue chaîne de montagnes du monde. Les Alpes traversent plusieurs pays d'Europe centrale comme la France, la Suisse, l'Italie et l'Autriche, mais pas le Portugal. L'Himalaya, en Asie, est la chaîne la plus haute avec l'Everest comme point culminant à 8 849 mètrès.",
               "emoji": "🗺️"
             },
             {
@@ -27633,7 +27633,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Lire une échelle cartographique",
-              "text": "L'échelle indique le rapport entre une distance sur la carte et la distance réelle sur le terrain. Une échelle de 1:100 000 signifie qu'un centimètre sur la carte représente 100 000 centimètres dans la réalité, soit exactement 1 kilomètre. Plus le dénominateur est grand, plus la carte couvre une vaste région et moins elle est détaillée.",
+              "text": "L'échelle indique le rapport entre une distance sur la carte et la distance réelle sur le terrain. Une échelle de 1:100 000 signifie qu'un centimètre sur la carte représente 100 000 centimètrès dans la réalité, soit exactement 1 kilomètre. Plus le dénominateur est grand, plus la carte couvre une vaste région et moins elle est détaillée.",
               "emoji": "📏"
             },
             {
@@ -27648,7 +27648,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Le GPS et la triangulation par satellites",
-              "text": "Un récepteur GPS détermine sa position en mesurant le temps que mettent les signaux radio à lui parvenir depuis plusieurs satellites en orbite autour de la Terre. En calculant la distance à au moins trois satellites simultanément, le récepteur peut localiser sa position en deux dimensions ; un quatrième satellite affine l'altitude. Ce processus, appelé triangulation (ou trilatération), atteint une précision de quelques mètres en usage courant.",
+              "text": "Un récepteur GPS détermine sa position en mesurant le temps que mettent les signaux radio à lui parvenir depuis plusieurs satellites en orbite autour de la Terre. En calculant la distance à au moins trois satellites simultanément, le récepteur peut localiser sa position en deux dimensions ; un quatrième satellite affine l'altitude. Ce processus, appelé triangulation (ou trilatération), atteint une précision de quelques mètrès en usage courant.",
               "emoji": "🛰️"
             },
             {
@@ -27663,7 +27663,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "options": [
                 "La latitude mesure la distance est-ouest, la longitude mesure la distance nord-sud",
                 "La latitude mesure la distance nord-sud par rapport a l'equateur, la longitude mesure la distance est-ouest par rapport au meridien de Greenwich",
-                "La latitude s'exprime en kilomètres, la longitude en degrés",
+                "La latitude s'exprime en kilomètrès, la longitude en degrés",
                 "La latitude est utilisee en mer, la longitude est utilisee sur terre"
               ],
               "correctAnswer": "La latitude mesure la distance nord-sud par rapport a l'equateur, la longitude mesure la distance est-ouest par rapport au meridien de Greenwich",
@@ -27673,9 +27673,9 @@ export const UNIVERSES: Record<string, Universe> = {
               "question": "Sur une carte, l'echelle 1:100 000 signifie que 1 cm sur la carte correspond a quelle distance reelle ?",
               "options": [
                 "1 mètre",
-                "100 mètres",
+                "100 mètrès",
                 "1 kilomètre",
-                "100 kilomètres"
+                "100 kilomètrès"
               ],
               "correctAnswer": "1 kilomètre",
               "isSpecial": false
@@ -27740,7 +27740,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "options": [
                 "Le blanc ou le violet fonce selon la hauteur",
                 "Le marron ou le rouge selon les conventions hypsometriques",
-                "Le vert fonce pour toutes les elevations au-dessus de 500 mètres",
+                "Le vert fonce pour toutes les elevations au-dessus de 500 mètrès",
                 "Le jaune vif pour se distinguer des plaines"
               ],
               "correctAnswer": "Le marron ou le rouge selon les conventions hypsometriques",
@@ -27758,7 +27758,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "La projection de Mercator, creee au XVIe siècle, est encore tres utilisee aujourd'hui pour la navigation. Quel est son principal avantage technique malgre ses distorsions de surface ?",
+              "question": "La projection de Mercator, creee au XVIe siècle, est encore très utilisee aujourd'hui pour la navigation. Quel est son principal avantage technique malgre ses distorsions de surface ?",
               "options": [
                 "Elle represente exactement les superficies de tous les continents",
                 "Elle conserve les angles et les formes locales, ce qui permet de tracer des routes a cap constant (loxodromie)",
@@ -27796,7 +27796,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "La croûte terrestre et les plaques tectoniques",
-              "text": "La croûte terrestre n'est pas une enveloppe continue et uniforme : elle est découpée en une douzaine de grandes plaques tectoniques rigides, comparables aux pièces d'un puzzle cassé. Ces plaques reposent sur l'asthénosphère, une zone du manteau suffisamment ductile pour permettre leur déplacement. Les plaques bougent de quelques centimètres par an, entraînées par les courants de convection du manteau.",
+              "text": "La croûte terrestre n'est pas une enveloppe continue et uniforme : elle est découpée en une douzaine de grandes plaques tectoniques rigides, comparables aux pièces d'un puzzle cassé. Ces plaques reposent sur l'asthénosphère, une zone du manteau suffisamment ductile pour permettre leur déplacement. Les plaques bougent de quelques centimètrès par an, entraînées par les courants de convection du manteau.",
               "emoji": "🧩"
             },
             {
@@ -27867,14 +27867,14 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "De combien de centimètres les plaques tectoniques se déplacent-elles environ chaque année ?",
+              "question": "De combien de centimètrès les plaques tectoniques se déplacent-elles environ chaque année ?",
               "options": [
-                "Quelques millimètres",
-                "Quelques centimètres",
-                "Quelques décimètres",
-                "Quelques mètres"
+                "Quelques millimètrès",
+                "Quelques centimètrès",
+                "Quelques décimètrès",
+                "Quelques mètrès"
               ],
-              "correctAnswer": "Quelques centimètres",
+              "correctAnswer": "Quelques centimètrès",
               "isSpecial": false
             },
             {
@@ -27902,7 +27902,7 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Pourquoi aucun être humain n'a jamais atteint le noyau de la Terre, contrairement à l'espace ?",
               "options": [
-                "Parce que le noyau est trop éloigné, situé à plusieurs milliers de kilomètres de profondeur",
+                "Parce que le noyau est trop éloigné, situé à plusieurs milliers de kilomètrès de profondeur",
                 "Parce que la chaleur extrême et le métal en fusion rendent tout voyage impossible avec la technologie actuelle",
                 "Parce que des lois internationales interdisent le forage en profondeur",
                 "Parce que la pression atmosphérique augmente trop vite dès 10 km de profondeur"
@@ -27934,7 +27934,7 @@ export const UNIVERSES: Record<string, Universe> = {
           "cards": [
             {
               "title": "La Pangée et la dérive des continents",
-              "text": "Il y a environ 250 millions d'années, toutes les terres émergées de la Terre formaient un unique supercontinent appelé Pangée. Sous l'effet des mouvements des plaques tectoniques, la Pangée s'est progressivement fragmentée et ses morceaux ont dérivé pour donner les continents actuels. Les plaques reposent sur l'asthénosphère, une couche du manteau supérieur suffisamment plastique pour permettre leur déplacement de quelques centimètres par an.",
+              "text": "Il y a environ 250 millions d'années, toutes les terres émergées de la Terre formaient un unique supercontinent appelé Pangée. Sous l'effet des mouvements des plaques tectoniques, la Pangée s'est progressivement fragmentée et ses morceaux ont dérivé pour donner les continents actuels. Les plaques reposent sur l'asthénosphère, une couche du manteau supérieur suffisamment plastique pour permettre leur déplacement de quelques centimètrès par an.",
               "emoji": "🌍"
             },
             {
@@ -27949,7 +27949,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Le Grand Rift est-africain : une dorsale en formation",
-              "text": "Le Grand Rift est-africain est une immense fracture de la croûte terrestre qui s'étend sur environ 6 000 kilomètres du nord au sud de l'Afrique. Il résulte de l'écartement progressif de deux plaques : la plaque somalienne et la plaque nubienne. Cette divergence crée une vallée s'enfonçant progressivement, accompagnée d'une intense activité volcanique, dont le Kilimandjaro est l'une des manifestations. Dans plusieurs millions d'années, un nouvel océan pourrait se former à cet endroit par expansion du plancher océanique.",
+              "text": "Le Grand Rift est-africain est une immense fracture de la croûte terrestre qui s'étend sur environ 6 000 kilomètrès du nord au sud de l'Afrique. Il résulte de l'écartement progressif de deux plaques : la plaque somalienne et la plaque nubienne. Cette divergence crée une vallée s'enfonçant progressivement, accompagnée d'une intense activité volcanique, dont le Kilimandjaro est l'une des manifestations. Dans plusieurs millions d'années, un nouvel océan pourrait se former à cet endroit par expansion du plancher océanique.",
               "emoji": "🌋"
             },
             {
@@ -27995,12 +27995,12 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Quelle est la longueur approximative du Grand Rift est-africain ?",
               "options": [
-                "2 000 kilomètres",
-                "4 500 kilomètres",
-                "6 000 kilomètres",
-                "8 500 kilomètres"
+                "2 000 kilomètrès",
+                "4 500 kilomètrès",
+                "6 000 kilomètrès",
+                "8 500 kilomètrès"
               ],
-              "correctAnswer": "6 000 kilomètres",
+              "correctAnswer": "6 000 kilomètrès",
               "isSpecial": false
             },
             {
@@ -28059,7 +28059,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "L'Antarctique est protégé par un traité international interdisant son exploitation militaire et minière. Si la plaque africaine continue de se diviser au rythme actuel de quelques centimètres par an, quel phénomène géologique comparable à une formation de nouvel océan pourrait résulter du Grand Rift dans plusieurs millions d'années, et quel processus tectonique en serait à l'origine ?",
+              "question": "L'Antarctique est protégé par un traité international interdisant son exploitation militaire et minière. Si la plaque africaine continue de se diviser au rythme actuel de quelques centimètrès par an, quel phénomène géologique comparable à une formation de nouvel océan pourrait résulter du Grand Rift dans plusieurs millions d'années, et quel processus tectonique en serait à l'origine ?",
               "options": [
                 "Une dorsale océanique se formera par écartement des plaques somalienne et nubienne, créant un nouvel océan par expansion du plancher océanique",
                 "Une zone de subduction engloutira la corne de l'Afrique sous la plaque arabique, formant une mer fermée",
@@ -28097,7 +28097,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Les courants de convection et la géodynamique des plaques",
-              "text": "Le déplacement des plaques tectoniques est entraîné par des courants de convection dans le manteau. Les roches chaudes du manteau profond, moins denses, montent lentement vers la croûte. En s'éloignant de leur source de chaleur, elles se refroidissent, deviennent plus denses et redescendent, créant des boucles thermiques continues. Ces cellules convectives exercent des forces de traction et de poussée sur les plaques, les faisant dériver de quelques centimètres par an.",
+              "text": "Le déplacement des plaques tectoniques est entraîné par des courants de convection dans le manteau. Les roches chaudes du manteau profond, moins denses, montent lentement vers la croûte. En s'éloignant de leur source de chaleur, elles se refroidissent, deviennent plus denses et redescendent, créant des boucles thermiques continues. Ces cellules convectives exercent des forces de traction et de poussée sur les plaques, les faisant dériver de quelques centimètrès par an.",
               "emoji": "♨️"
             },
             {
@@ -28134,7 +28134,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "options": [
                 "Elle marque la frontière entre la croûte et le manteau, là où la composition des roches change brusquement et les ondes sismiques accélèrent",
                 "Elle correspond à la limite entre le manteau et le noyau externe, détectée par l'arrêt des ondes P",
-                "Elle indique la profondeur maximale atteinte par les forages humains, soit environ 12 kilomètres",
+                "Elle indique la profondeur maximale atteinte par les forages humains, soit environ 12 kilomètrès",
                 "Elle représente la zone où les roches du manteau deviennent plastiques sous l'effet de la chaleur"
               ],
               "correctAnswer": "Elle marque la frontière entre la croûte et le manteau, là où la composition des roches change brusquement et les ondes sismiques accélèrent",
@@ -28207,7 +28207,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Si la graine grossit d'un millimètre par an par solidification du noyau externe, combien de kilomètres de rayon gagnera-t-elle approximativement en 1 milliard d'années, et quelle conséquence cela implique-t-il pour le champ magnétique terrestre à très long terme ?",
+              "question": "Si la graine grossit d'un millimètre par an par solidification du noyau externe, combien de kilomètrès de rayon gagnera-t-elle approximativement en 1 milliard d'années, et quelle conséquence cela implique-t-il pour le champ magnétique terrestre à très long terme ?",
               "options": [
                 "Environ 1000 km de rayon supplémentaire ; la réduction progressive du noyau externe liquide affaiblira à terme la géodynamo et donc le champ magnétique",
                 "Environ 1 km de rayon supplémentaire ; cela n'a aucun effet mesurable sur le champ magnétique à cette échelle de temps",
@@ -28388,7 +28388,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Le toit du monde : l'Himalaya et le Karakoram",
-              "text": "Le mont Everest, situé à la frontière du Népal et du Tibet, culmine à 8 849 m d'altitude : c'est le point le plus haut de la planète. Dans le monde entier, seuls 14 sommets dépassent les 8 000 mètres d'altitude, et ils sont tous concentrés dans deux massifs voisins : l'Himalaya et le Karakoram, en Asie centrale.",
+              "text": "Le mont Everest, situé à la frontière du Népal et du Tibet, culmine à 8 849 m d'altitude : c'est le point le plus haut de la planète. Dans le monde entier, seuls 14 sommets dépassent les 8 000 mètrès d'altitude, et ils sont tous concentrés dans deux massifs voisins : l'Himalaya et le Karakoram, en Asie centrale.",
               "emoji": "🏔️"
             },
             {
@@ -28498,7 +28498,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Combien de sommets dépassent 8 000 mètres d'altitude dans le monde, tous situés en Himalaya et Karakoram ?",
+              "question": "Combien de sommets dépassent 8 000 mètrès d'altitude dans le monde, tous situés en Himalaya et Karakoram ?",
               "options": [
                 "8",
                 "11",
@@ -28850,12 +28850,12 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Que se passe-t-il quand deux mots riment ?",
               "options": [
-                "Ils ont le meme nombre de lettres",
-                "Ils se terminent par le meme son",
-                "Ils commencent par la meme lettre",
-                "Ils appartiennent a la meme categorie"
+                "Ils ont le même nombre de lettres",
+                "Ils se terminent par le même son",
+                "Ils commencent par la même lettre",
+                "Ils appartiennent a la même categorie"
               ],
-              "correctAnswer": "Ils se terminent par le meme son",
+              "correctAnswer": "Ils se terminent par le même son",
               "isSpecial": false
             },
             {
@@ -28897,7 +28897,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Pour rendre le texte plus long",
                 "Pour que le texte soit plus musical et agreable a entendre",
                 "Pour que les mots soient plus faciles a epeler",
-                "Pour eviter de repeter les memes idees"
+                "Pour eviter de repeter les mêmes idees"
               ],
               "correctAnswer": "Pour que le texte soit plus musical et agreable a entendre",
               "isSpecial": false
@@ -28936,7 +28936,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Comment appelle-t-on deux mots qui se terminent par le meme son ?",
+              "question": "Comment appelle-t-on deux mots qui se terminent par le même son ?",
               "options": [
                 "Des synonymes",
                 "Des homophones",
@@ -29847,7 +29847,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "options": [
                 "Le fait que les deux mots soient identiques",
                 "Une petite différence de degré ou de signification entre deux mots proches",
-                "Le fait que les deux mots appartiennent a la meme categorie grammaticale",
+                "Le fait que les deux mots appartiennent a la même categorie grammaticale",
                 "Le fait que les deux mots riment"
               ],
               "correctAnswer": "Une petite différence de degré ou de signification entre deux mots proches",
@@ -30018,7 +30018,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Au présent, la forme \"je fais\" provient du verbe \"faire\". A quelle personne et nombre appartient la forme \"font\" du meme verbe ?",
+              "question": "Au présent, la forme \"je fais\" provient du verbe \"faire\". A quelle personne et nombre appartient la forme \"font\" du même verbe ?",
               "options": [
                 "A la 2e personne du pluriel (vous)",
                 "A la 1re personne du singulier (je)",
@@ -31214,7 +31214,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "L'ane (Equus asinus) et le zebre (genre Equus) appartiennent au meme genre taxonomique. Si l'on croise un ane male avec une jument (femelle cheval), le produit obtenu est generalement sterile. Comment appelle-t-on ce phénomène evolutif qui limite les echanges genetiques entre espèces proches ?",
+              "question": "L'ane (Equus asinus) et le zebre (genre Equus) appartiennent au même genre taxonomique. Si l'on croise un ane male avec une jument (femelle cheval), le produit obtenu est generalement sterile. Comment appelle-t-on ce phénomène evolutif qui limite les echanges genetiques entre espèces proches ?",
               "options": [
                 "La derive genetique",
                 "L'isolement reproducteur post-zygotique",
@@ -32235,7 +32235,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "options": [
                 "Une différence de longueur entre les deux mots",
                 "Une petite différence de degré ou d'intensite dans leur signification",
-                "Le fait qu'ils ne peuvent pas etre utilises dans la meme phrase",
+                "Le fait qu'ils ne peuvent pas etre utilises dans la même phrase",
                 "Le fait qu'ils appartiennent a deux langues différentes"
               ],
               "correctAnswer": "Une petite différence de degré ou d'intensite dans leur signification",
@@ -33068,7 +33068,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Ces / ses : comment les distinguer",
-              "text": "« Ces » est un déterminant démonstratif pluriel : il désigne des êtres ou des choses montrés ou connus. On peut le remplacer par « ce…-là » ou « ces…-là » : « ces livres-là ». « Ses » est un déterminant possessif pluriel de la troisième personne. On peut le remplacer par « mes » ou « tes » : « ses amis » → « mes amis ». Si la substitution par « mes/tes » fonctionne, c'est « ses » ; sinon c'est « ces ».",
+              "text": "« Ces » est un déterminant démonstratif pluriel : il désigne des êtrès ou des choses montrés ou connus. On peut le remplacer par « ce…-là » ou « ces…-là » : « ces livres-là ». « Ses » est un déterminant possessif pluriel de la troisième personne. On peut le remplacer par « mes » ou « tes » : « ses amis » → « mes amis ». Si la substitution par « mes/tes » fonctionne, c'est « ses » ; sinon c'est « ces ».",
               "emoji": "📖"
             },
             {
@@ -33640,11 +33640,11 @@ export const UNIVERSES: Record<string, Universe> = {
               "question": "Si tu melanges les trois couleurs primaires (rouge, bleu et jaune) ensemble en quantites egales, quelle couleur obtiendras-tu approximativement ?",
               "options": [
                 "Du blanc",
-                "Du noir ou du marron tres fonce",
+                "Du noir ou du marron très fonce",
                 "Du violet clair",
                 "Du gris metallique"
               ],
-              "correctAnswer": "Du noir ou du marron tres fonce",
+              "correctAnswer": "Du noir ou du marron très fonce",
               "isSpecial": true
             }
           ]
@@ -34039,11 +34039,11 @@ export const UNIVERSES: Record<string, Universe> = {
               "question": "En musique, que signifie le terme \"forte\" dans les nuances ?",
               "options": [
                 "Jouer doucement",
-                "Jouer tres fort",
+                "Jouer très fort",
                 "Jouer rapidement",
                 "Jouer lentement"
               ],
-              "correctAnswer": "Jouer tres fort",
+              "correctAnswer": "Jouer très fort",
               "isSpecial": false
             },
             {
@@ -35643,7 +35643,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "emoji": "⛪"
             },
             {
-              "title": "L'architecture gothique et ses grandes fenêtres",
+              "title": "L'architecture gothique et ses grandes fenêtrès",
               "text": "L'architecture gothique se développe en Europe à partir du 12ème siècle. Les cathédrales gothiques peuvent avoir de grands vitraux dans leurs murs car ceux-ci sont libérés de leur rôle porteur. C'est possible grâce aux arcs-boutants (contreforts extérieurs) et à la croisée d'ogives (arcs croisés au plafond) qui reportent les charges vers l'extérieur.",
               "emoji": "🕍"
             },
@@ -36184,7 +36184,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Un triangle musical émet un son clair meme si l'on touche son métal avec les doigts pendant qu'il vibre. Pourquoi faut-il au contraire laisser le triangle suspendu librement ?",
+              "question": "Un triangle musical émet un son clair même si l'on touche son métal avec les doigts pendant qu'il vibre. Pourquoi faut-il au contraire laisser le triangle suspendu librement ?",
               "options": [
                 "Pour que les vibrations ne soient pas amorties et que le son résonne pleinement",
                 "Pour que l'instrument garde sa forme triangulaire",
@@ -36448,9 +36448,9 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "En musique, le terme italien \"piano\" utilisé comme nuance signifie qu'il faut jouer comment ?",
               "options": [
-                "Tres vite",
+                "Très vite",
                 "Doucement",
-                "Tres fort",
+                "Très fort",
                 "De facon saccadee"
               ],
               "correctAnswer": "Doucement",
@@ -36501,7 +36501,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Le terme italien \"forte\" designe la nuance la plus forte, tandis que \"pianissimo\" designe un jeu tres doux. Quelle nuance se situe entre \"piano\" et \"forte\" sur l'echelle des intensites ?",
+              "question": "Le terme italien \"forte\" designe la nuance la plus forte, tandis que \"pianissimo\" designe un jeu très doux. Quelle nuance se situe entre \"piano\" et \"forte\" sur l'echelle des intensites ?",
               "options": [
                 "Fortissimo",
                 "Mezzo-forte",
@@ -36677,7 +36677,7 @@ export const UNIVERSES: Record<string, Universe> = {
           "cards": [
             {
               "title": "La scène et l'espace théâtral",
-              "text": "La scène est l'espace surélevé sur lequel les comédiens évoluent devant le public. Elle est distincte de la salle où sont assis les spectateurs. La configuration de cet espace varie selon les théâtres : à l'italienne, en arène ou en traverse. Cet espace est le cœur du spectacle vivant.",
+              "text": "La scène est l'espace surélevé sur lequel les comédiens évoluent devant le public. Elle est distincte de la salle où sont assis les spectateurs. La configuration de cet espace varie selon les théâtrès : à l'italienne, en arène ou en traverse. Cet espace est le cœur du spectacle vivant.",
               "emoji": "🎭"
             },
             {
@@ -36697,12 +36697,12 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Les techniques vocales au théâtre",
-              "text": "Au théâtre, la voix est l'un des outils principaux de l'acteur pour incarner un personnage. Un comédien module le rythme, le timbre et l'intensité de sa voix selon le rôle qu'il joue. Pour caractériser un personnage âgé et faible, il utilise une voix chevrotante et lente. Dans le théâtre antique grec, des masques amplifiaient la voix et montraient clairement l'émotion des personnages aux spectateurs éloignés dans les grands amphithéâtres.",
+              "text": "Au théâtre, la voix est l'un des outils principaux de l'acteur pour incarner un personnage. Un comédien module le rythme, le timbre et l'intensité de sa voix selon le rôle qu'il joue. Pour caractériser un personnage âgé et faible, il utilise une voix chevrotante et lente. Dans le théâtre antique grec, des masques amplifiaient la voix et montraient clairement l'émotion des personnages aux spectateurs éloignés dans les grands amphithéâtrès.",
               "emoji": "🗣️"
             },
             {
               "title": "Histoire du théâtre : masques grecs et Commedia dell'arte",
-              "text": "Dans le théâtre antique grec, les acteurs portaient des masques pour amplifier leur voix et rendre l'émotion visible depuis les gradins éloignés des amphithéâtres. La Commedia dell'arte est une forme de théâtre populaire italienne née au XVIe siècle, reposant sur des personnages types récurrents appelés les zanni. Arlequin est le personnage le plus emblématique de cette tradition et a directement influencé le personnage de Pierrot dans le théâtre français.",
+              "text": "Dans le théâtre antique grec, les acteurs portaient des masques pour amplifier leur voix et rendre l'émotion visible depuis les gradins éloignés des amphithéâtrès. La Commedia dell'arte est une forme de théâtre populaire italienne née au XVIe siècle, reposant sur des personnages types récurrents appelés les zanni. Arlequin est le personnage le plus emblématique de cette tradition et a directement influencé le personnage de Pierrot dans le théâtre français.",
               "emoji": "🎭"
             }
           ],
@@ -36798,12 +36798,12 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Dans le théâtre antique grec, les acteurs portaient des masques sur scène. Pour quelle raison principale cette pratique était-elle indispensable ?",
               "options": [
-                "Pour amplifier la voix et montrer clairement l'émotion du personnage aux spectateurs éloignés dans les grands amphithéâtres",
+                "Pour amplifier la voix et montrer clairement l'émotion du personnage aux spectateurs éloignés dans les grands amphithéâtrès",
                 "Pour protéger le visage des acteurs des intempéries pendant les représentations en plein air",
                 "Pour permettre aux acteurs de jouer plusieurs rôles sans être reconnus par leurs proches",
                 "Parce que le maquillage n'avait pas encore été inventé à cette époque"
               ],
-              "correctAnswer": "Pour amplifier la voix et montrer clairement l'émotion du personnage aux spectateurs éloignés dans les grands amphithéâtres",
+              "correctAnswer": "Pour amplifier la voix et montrer clairement l'émotion du personnage aux spectateurs éloignés dans les grands amphithéâtrès",
               "isSpecial": false
             },
             {
@@ -37008,7 +37008,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Michel-Ange et le David : la maîtrise de la taille directe",
-              "text": "Michel-Ange a sculpté le David (1501-1504) dans un seul bloc de marbre de Carrare mesurant environ 5,17 mètres de haut. Cette œuvre illustre de façon exemplaire le principe fondamental de la taille directe : chaque coup de burin est définitif car on ne peut pas rajouter la matière enlevée. La moindre erreur sur un tel bloc unique aurait pu être catastrophique, ce qui témoigne du talent exceptionnel de l'artiste.",
+              "text": "Michel-Ange a sculpté le David (1501-1504) dans un seul bloc de marbre de Carrare mesurant environ 5,17 mètrès de haut. Cette œuvre illustre de façon exemplaire le principe fondamental de la taille directe : chaque coup de burin est définitif car on ne peut pas rajouter la matière enlevée. La moindre erreur sur un tel bloc unique aurait pu être catastrophique, ce qui témoigne du talent exceptionnel de l'artiste.",
               "emoji": "🏛️"
             }
           ],
@@ -37113,7 +37113,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Michel-Ange a sculpté le David (1501-1504) dans un seul bloc de marbre de Carrare mesurant environ 5,17 mètres de haut. Quel principe fondamental de la taille directe cette oeuvre illustre-t-elle de maniere exemplaire ?",
+              "question": "Michel-Ange a sculpté le David (1501-1504) dans un seul bloc de marbre de Carrare mesurant environ 5,17 mètrès de haut. Quel principe fondamental de la taille directe cette oeuvre illustre-t-elle de maniere exemplaire ?",
               "options": [
                 "Que le sculpteur assemble plusieurs blocs pour atteindre la taille souhaitee",
                 "Que toute erreur de taille est irréversible car on ne peut pas rajouter la matière enlevée",
@@ -37571,7 +37571,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "options": [
                 "Des touches rouges et blanches posées en alternance",
                 "Des touches bleues et jaunes posées cote a cote",
-                "Des touches noires et blanches tres rapprochees",
+                "Des touches noires et blanches très rapprochees",
                 "Des touches violettes et orangees superposees"
               ],
               "correctAnswer": "Des touches bleues et jaunes posées cote a cote",
@@ -37773,7 +37773,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "options": [
                 "Pour capturer la lumière naturelle et ses variations en temps reel",
                 "Pour respecter les regles du Salon officiel qui interdisait la peinture en interieur",
-                "Pour economiser les pigments de couleur qui etaient tres couteux a l'epoque",
+                "Pour economiser les pigments de couleur qui etaient très couteux a l'epoque",
                 "Pour imiter les techniques des peintres academiques hollandais"
               ],
               "correctAnswer": "Pour capturer la lumière naturelle et ses variations en temps reel",
@@ -37802,7 +37802,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "En quelle annee Vassily Kandinsky est-il considere comme ayant realise la première oeuvre totalement abstraite ?",
+              "question": "En quelle année Vassily Kandinsky est-il considere comme ayant realise la première oeuvre totalement abstraite ?",
               "options": [
                 "1888",
                 "1900",
@@ -37824,14 +37824,14 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Comment le cubisme, initie par Picasso et Braque, represente-t-il un visage de maniere caracteristique ?",
+              "question": "Comment le cubisme, initie par Picasso et Braque, represente-t-il un visage de maniere caractéristique ?",
               "options": [
                 "En utilisant uniquement des teintes sombres pour accentuer les contrastes du visage",
                 "En floutant les contours pour donner une impression de mouvement",
-                "En montrant simultanement le nez de profil et les yeux de face sur la meme toile",
+                "En montrant simultanement le nez de profil et les yeux de face sur la même toile",
                 "En decoupant le visage en bandes horizontales superposees de couleurs vives"
               ],
-              "correctAnswer": "En montrant simultanement le nez de profil et les yeux de face sur la meme toile",
+              "correctAnswer": "En montrant simultanement le nez de profil et les yeux de face sur la même toile",
               "isSpecial": false
             },
             {
@@ -37857,7 +37857,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Aux alentours de quelle annee Picasso et Braque ont-ils initie le mouvement cubiste ?",
+              "question": "Aux alentours de quelle année Picasso et Braque ont-ils initie le mouvement cubiste ?",
               "options": [
                 "1880",
                 "1895",
@@ -38133,7 +38133,7 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Pourquoi l'architecture gothique pouvait-elle intégrer d'immenses vitraux dans ses murs, contrairement à l'architecture romane ?",
               "options": [
-                "Parce que les vitraux gothiques etaient plus legers et plus fins",
+                "Parce que les vitraux gothiques etaient plus légers et plus fins",
                 "Parce que les arcs-boutants reportaient le poids a l'exterieur, liberant les murs porteurs",
                 "Parce que le beton arme renforçait les parois interieures",
                 "Parce que les murs gothiques etaient plus epais que les murs romans"
@@ -38620,11 +38620,11 @@ export const UNIVERSES: Record<string, Universe> = {
               "question": "Qu'est-ce qu'un framework en programmation ?",
               "options": [
                 "Un type de boucle dans un algorithme",
-                "Un ensemble d'outils prefabriques qui accelerent le developpement",
-                "Un langage compile tres rapide",
+                "Un ensemble d'outils prefabriques qui accelerent le développement",
+                "Un langage compile très rapide",
                 "Un bouton special du clavier"
               ],
-              "correctAnswer": "Un ensemble d'outils prefabriques qui accelerent le developpement",
+              "correctAnswer": "Un ensemble d'outils prefabriques qui accelerent le développement",
               "isSpecial": false
             },
             {
@@ -38633,7 +38633,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Couleur",
                 "Marque",
                 "Accelerer",
-                "Annee de fabrication"
+                "Année de fabrication"
               ],
               "correctAnswer": "Accelerer",
               "isSpecial": true
@@ -39421,7 +39421,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "L'ergonomie devant l'écran",
-              "text": "Pour protéger ta santé devant un écran, installe-toi entre 50 et 70 cm de l'écran. Applique la règle 20-20-20 : toutes les 20 minutes, regarde un objet à 6 mètres pendant 20 secondes. Cela détend les muscles des yeux et évite la fatigue oculaire. Une bonne posture et un bureau bien éclairé sont aussi importants.",
+              "text": "Pour protéger ta santé devant un écran, installe-toi entre 50 et 70 cm de l'écran. Applique la règle 20-20-20 : toutes les 20 minutes, regarde un objet à 6 mètrès pendant 20 secondes. Cela détend les muscles des yeux et évite la fatigue oculaire. Une bonne posture et un bureau bien éclairé sont aussi importants.",
               "emoji": "🪑"
             },
             {
@@ -39482,12 +39482,12 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Selon la règle 20-20-20, que doit-on faire toutes les 20 minutes d'écran ?",
               "options": [
-                "Regarder un objet à 6 mètres pendant 20 secondes",
+                "Regarder un objet à 6 mètrès pendant 20 secondes",
                 "Fermer les yeux pendant 20 minutes",
                 "Boire un verre d'eau et marcher 20 pas",
                 "Reduire la luminosite de l'ecran de 20 %"
               ],
-              "correctAnswer": "Regarder un objet à 6 mètres pendant 20 secondes",
+              "correctAnswer": "Regarder un objet à 6 mètrès pendant 20 secondes",
               "isSpecial": false
             },
             {
@@ -39495,8 +39495,8 @@ export const UNIVERSES: Record<string, Universe> = {
               "options": [
                 "Entre 50 et 70 cm",
                 "Entre 10 et 20 cm",
-                "Entre 1 et 2 mètres",
-                "Plus de 2 mètres"
+                "Entre 1 et 2 mètrès",
+                "Plus de 2 mètrès"
               ],
               "correctAnswer": "Entre 50 et 70 cm",
               "isSpecial": false
@@ -39515,12 +39515,12 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Pourquoi peut-on ecouter de la musique tout en naviguant sur Internet sans que l'ordinateur se bloque ?",
               "options": [
-                "Le processeur possede plusieurs coeurs qui executent plusieurs taches en meme temps",
+                "Le processeur possede plusieurs coeurs qui executent plusieurs taches en même temps",
                 "La musique est stockee sur Internet et ne necessite pas le processeur",
                 "Le disque dur traite la musique independamment du reste",
                 "La RAM gere la musique separement des autres programmes"
               ],
-              "correctAnswer": "Le processeur possede plusieurs coeurs qui executent plusieurs taches en meme temps",
+              "correctAnswer": "Le processeur possede plusieurs coeurs qui executent plusieurs taches en même temps",
               "isSpecial": false
             },
             {
@@ -40119,7 +40119,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "question": "Où peut-on télécharger des logiciels de façon officielle ?",
               "options": [
                 "Sur n'importe quel site inconnu",
-                "Dans les paramètres de l'écran",
+                "Dans les paramètrès de l'écran",
                 "Dans une boutique en ligne comme l'App Store",
                 "En demandant à un autre ordinateur"
               ],
@@ -41557,7 +41557,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "options": [
                 "Le processeur grille immédiatement à cause de la surchauffe",
                 "On peut perdre des fichiers ou endommager le système",
-                "La carte mère se réinitialise et efface tous les paramètres",
+                "La carte mère se réinitialise et efface tous les paramètrès",
                 "La RAM conserve les données grâce à sa mémoire non volatile"
               ],
               "correctAnswer": "On peut perdre des fichiers ou endommager le système",
@@ -41826,7 +41826,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Ergonomie et protection des yeux",
-              "text": "Une bonne ergonomie informatique recommande de placer l'écran entre 50 et 70 cm des yeux pour éviter la fatigue visuelle. Les ophtalmologues conseillent la règle 20-20-20 : toutes les 20 minutes passées devant un écran, regarder un objet situé à environ 6 mètres pendant 20 secondes. Cette règle permet aux muscles oculaires de se relaxer et réduit les tensions.",
+              "text": "Une bonne ergonomie informatique recommande de placer l'écran entre 50 et 70 cm des yeux pour éviter la fatigue visuelle. Les ophtalmologues conseillent la règle 20-20-20 : toutes les 20 minutes passées devant un écran, regarder un objet situé à environ 6 mètrès pendant 20 secondes. Cette règle permet aux muscles oculaires de se relaxer et réduit les tensions.",
               "emoji": "👁️"
             },
             {
@@ -41851,11 +41851,11 @@ export const UNIVERSES: Record<string, Universe> = {
               "question": "Selon la règle 20-20-20 recommandée par les ophtalmologues, que doit-on faire toutes les 20 minutes passées devant un écran ?",
               "options": [
                 "Fermer les yeux pendant 20 minutes et boire 20 cl d'eau",
-                "Regarder un objet situé à environ 6 mètres pendant 20 secondes",
+                "Regarder un objet situé à environ 6 mètrès pendant 20 secondes",
                 "Réduire la luminosité de l'écran de 20 % pendant 20 secondes",
                 "Faire 20 rotations des yeux puis regarder le plafond 20 secondes"
               ],
-              "correctAnswer": "Regarder un objet situé à environ 6 mètres pendant 20 secondes",
+              "correctAnswer": "Regarder un objet situé à environ 6 mètrès pendant 20 secondes",
               "isSpecial": false
             },
             {
@@ -42302,7 +42302,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Mégaoctets (Mo)",
                 "Gigahertz (GHz)",
                 "Téraflops (TFLOPS)",
-                "Nanomètres (nm)"
+                "Nanomètrès (nm)"
               ],
               "correctAnswer": "Gigahertz (GHz)",
               "isSpecial": false
@@ -42703,8 +42703,8 @@ export const UNIVERSES: Record<string, Universe> = {
               "emoji": "🔁"
             },
             {
-              "title": "Fonctions et paramètres",
-              "text": "Une fonction est un bloc de code nommé et réutilisable qui accomplit une tâche précise. L'avantage principal est d'éviter de réécrire le même code plusieurs fois : on appelle simplement la fonction là où on en a besoin. Lors de l'appel d'une fonction, on lui transmet des paramètres, c'est-à-dire des valeurs qu'elle utilise dans son traitement pour produire un résultat adapté au contexte d'appel.",
+              "title": "Fonctions et paramètrès",
+              "text": "Une fonction est un bloc de code nommé et réutilisable qui accomplit une tâche précise. L'avantage principal est d'éviter de réécrire le même code plusieurs fois : on appelle simplement la fonction là où on en a besoin. Lors de l'appel d'une fonction, on lui transmet des paramètrès, c'est-à-dire des valeurs qu'elle utilise dans son traitement pour produire un résultat adapté au contexte d'appel.",
               "emoji": "⚙️"
             },
             {
@@ -43655,7 +43655,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "A indiquer la météo du jour",
                 "A expliquer les symboles utilisés sur la carte",
                 "A montrer les noms des explorateurs",
-                "A calculer la distance en kilomètres"
+                "A calculer la distance en kilomètrès"
               ],
               "correctAnswer": "A expliquer les symboles utilisés sur la carte",
               "isSpecial": false
@@ -44014,11 +44014,11 @@ export const UNIVERSES: Record<string, Universe> = {
               "question": "Comment la mousse poussant sur les arbres peut-elle aider un randonneur en foret ?",
               "options": [
                 "Elle indique que l'arbre est en bonne sante",
-                "Elle peut servir de repere pour s'orienter",
+                "Elle peut servir de repère pour s'orienter",
                 "Elle signale la presence d'une source d'eau juste en dessous",
                 "Elle protege l'arbre du froid et des insectes"
               ],
-              "correctAnswer": "Elle peut servir de repere pour s'orienter",
+              "correctAnswer": "Elle peut servir de repère pour s'orienter",
               "isSpecial": false
             },
             {
@@ -44038,7 +44038,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Trouver de la nourriture en premier, puis de l'eau, puis de l'air",
                 "Garantir la respiration en priorite absolue, puis trouver de l'eau, puis chercher de quoi manger",
                 "Trouver de l'eau en premier car la deshydratation est plus rapide que l'asphyxie",
-                "Les trois besoins sont egalement urgents et doivent etre traites en meme temps"
+                "Les trois besoins sont egalement urgents et doivent etre traites en même temps"
               ],
               "correctAnswer": "Garantir la respiration en priorite absolue, puis trouver de l'eau, puis chercher de quoi manger",
               "isSpecial": true
@@ -44430,10 +44430,10 @@ export const UNIVERSES: Record<string, Universe> = {
               "options": [
                 "Elle indique la direction du Sud",
                 "Elle permet de mesurer l'heure",
-                "Elle aide a reperer l'Étoile Polaire",
+                "Elle aide a repérer l'Étoile Polaire",
                 "Elle predit la meteo du lendemain"
               ],
-              "correctAnswer": "Elle aide a reperer l'Étoile Polaire",
+              "correctAnswer": "Elle aide a repérer l'Étoile Polaire",
               "isSpecial": false
             },
             {
@@ -44474,7 +44474,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "options": [
                 "Sur Terre il y a de l'azote, dans l'espace il y a de l'oxygene",
                 "La Terre possede une atmosphère remplie d'oxygene, l'espace n'en a pas",
-                "Dans l'espace l'air est tres froid, sur Terre il est chaud",
+                "Dans l'espace l'air est très froid, sur Terre il est chaud",
                 "Sur Terre l'air est rare, dans l'espace il est abondant"
               ],
               "correctAnswer": "La Terre possede une atmosphère remplie d'oxygene, l'espace n'en a pas",
@@ -44484,7 +44484,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "question": "Pourquoi est-il important de porter de bonnes chaussures et une veste en foret ?",
               "options": [
                 "Pour se camoufler parmi les arbres",
-                "Pour etre repere facilement en cas de danger",
+                "Pour etre repère facilement en cas de danger",
                 "Pour se proteger du froid et marcher en securite",
                 "Pour impressionner les autres randonneurs"
               ],
@@ -44816,7 +44816,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "La friction : créer de la chaleur par le mouvement",
-              "text": "En frottant deux matières l'une contre l'autre, on produit de la chaleur grâce à la friction. C'est ce phénomène physique qui permet d'allumer un feu sans allumettes. Les êtres humains utilisent cette technique depuis des milliers d'années.",
+              "text": "En frottant deux matières l'une contre l'autre, on produit de la chaleur grâce à la friction. C'est ce phénomène physique qui permet d'allumer un feu sans allumettes. Les êtrès humains utilisent cette technique depuis des milliers d'années.",
               "emoji": "🔥"
             },
             {
@@ -44920,7 +44920,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "La méthode arc-et-foret est utilisée depuis combien de temps environ par les êtres humains ?",
+              "question": "La méthode arc-et-foret est utilisée depuis combien de temps environ par les êtrès humains ?",
               "options": [
                 "Quelques centaines d'années",
                 "Des milliers d'années",
@@ -46055,7 +46055,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "options": [
                 "A indiquer la météo de la région",
                 "A expliquer la signification des symboles utilisés",
-                "A mesurer les distances en kilomètres",
+                "A mesurer les distances en kilomètrès",
                 "A donner le nom des propriétaires des terrains"
               ],
               "correctAnswer": "A expliquer la signification des symboles utilisés",
@@ -46394,7 +46394,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "options": [
                 "Pour ne pas provoquer d'echo qui perturberait notre orientation",
                 "Pour ne pas stresser les oiseaux et autres animaux sauvages",
-                "Parce que le bruit attire les predateurs vers les randonneurs",
+                "Parce que le bruit attire les prédateurs vers les randonneurs",
                 "Pour respecter le silence obligatoire impose par les parcs naturels"
               ],
               "correctAnswer": "Pour ne pas stresser les oiseaux et autres animaux sauvages",
@@ -46414,7 +46414,7 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Quelle attitude adopter face a de jeunes arbres lorsque l'on traverse une foret ?",
               "options": [
-                "On peut les plier pour creer des reperes de chemin",
+                "On peut les plier pour creer des repères de chemin",
                 "Il ne faut pas les couper afin de preserver l'ecosysteme",
                 "On les marque a l'encre pour signaler son passage aux secours",
                 "Il est conseille de les tailler pour faciliter le passage"
@@ -48518,8 +48518,8 @@ export const UNIVERSES: Record<string, Universe> = {
               "emoji": "⚖️"
             },
             {
-              "title": "Le pharaon et les prêtres",
-              "text": "En Égypte ancienne, le pharaon était considéré comme le représentant des dieux sur Terre, voire comme un dieu lui-même. Les prêtres jouaient un rôle essentiel : ils étaient les intermédiaires entre les humains et les dieux, s'occupant des temples et des rituels sacrés au quotidien.",
+              "title": "Le pharaon et les prêtrès",
+              "text": "En Égypte ancienne, le pharaon était considéré comme le représentant des dieux sur Terre, voire comme un dieu lui-même. Les prêtrès jouaient un rôle essentiel : ils étaient les intermédiaires entre les humains et les dieux, s'occupant des temples et des rituels sacrés au quotidien.",
               "emoji": "👑"
             }
           ],
@@ -48580,7 +48580,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Quel rôle jouaient les prêtres dans la religion égyptienne ?",
+              "question": "Quel rôle jouaient les prêtrès dans la religion égyptienne ?",
               "options": [
                 "Ils construisaient les pyramides",
                 "Ils étaient des intermédiaires entre les humains et les dieux",
@@ -49944,7 +49944,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Atlas et Prométhée, deux Titans punis",
-              "text": "Après la Titanomachie, Zeus punit sévèrement certains Titans. Atlas fut condamné à porter le ciel sur ses épaules pour l'éternité, sans jamais pouvoir se reposer. Prométhée, lui, fut puni pour avoir volé le feu aux dieux afin de le donner aux êtres humains. Ces punitions montrent la puissance de Zeus et sa volonté de maintenir l'ordre entre dieux et mortels.",
+              "text": "Après la Titanomachie, Zeus punit sévèrement certains Titans. Atlas fut condamné à porter le ciel sur ses épaules pour l'éternité, sans jamais pouvoir se reposer. Prométhée, lui, fut puni pour avoir volé le feu aux dieux afin de le donner aux êtrès humains. Ces punitions montrent la puissance de Zeus et sa volonté de maintenir l'ordre entre dieux et mortels.",
               "emoji": "🔥"
             },
             {
@@ -50952,7 +50952,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "La religion dans la vie quotidienne romaine",
-              "text": "Pour les Romains, la religion n'était pas séparée de la vie politique et privée. Chaque famille honorait ses Lares (génies du foyer) et ses Pénates (dieux du garde-manger) au moyen de petits autels domestiques appelés laraires. À l'échelle de l'État, des prêtres et des vestales assuraient les rites publics pour garantir la protection divine de Rome — notion exprimée par la formule Pax Deorum (paix des dieux). L'intégration de divinités étrangères était courante : Rome adoptait volontiers les dieux des peuples conquis, renforçant ainsi la cohésion de son empire.",
+              "text": "Pour les Romains, la religion n'était pas séparée de la vie politique et privée. Chaque famille honorait ses Lares (génies du foyer) et ses Pénates (dieux du garde-manger) au moyen de petits autels domestiques appelés laraires. À l'échelle de l'État, des prêtrès et des vestales assuraient les rites publics pour garantir la protection divine de Rome — notion exprimée par la formule Pax Deorum (paix des dieux). L'intégration de divinités étrangères était courante : Rome adoptait volontiers les dieux des peuples conquis, renforçant ainsi la cohésion de son empire.",
               "emoji": "🔥"
             }
           ],
@@ -51233,7 +51233,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Créatures des mythologies nordique, slave et japonaise",
-              "text": "Chaque civilisation peuple le monde de créatures propres à son imaginaire. Le Kraken, monstre marin gigantesque capable de couler des navires, appartient à la mythologie scandinave. Dans la tradition slave, les Rusalki sont des esprits féminins des rivières : belles et dangereuses, elles attirent les hommes dans les profondeurs pour les noyer. Au Japon, les Tengu sont des êtres ailés à visage humain ou de rapace, réputés maîtres des arts martiaux et de la stratégie militaire, et parfois représentés comme tuteurs de guerriers légendaires.",
+              "text": "Chaque civilisation peuple le monde de créatures propres à son imaginaire. Le Kraken, monstre marin gigantesque capable de couler des navires, appartient à la mythologie scandinave. Dans la tradition slave, les Rusalki sont des esprits féminins des rivières : belles et dangereuses, elles attirent les hommes dans les profondeurs pour les noyer. Au Japon, les Tengu sont des êtrès ailés à visage humain ou de rapace, réputés maîtrès des arts martiaux et de la stratégie militaire, et parfois représentés comme tuteurs de guerriers légendaires.",
               "emoji": "🌊"
             },
             {
@@ -51381,7 +51381,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Le Popol Vuh maya et la diversité des récits de création",
-              "text": "Le Popol Vuh est le texte sacré de la civilisation maya, qui raconte la création du monde et des hommes en plusieurs tentatives. Les dieux essaient d'abord de modeler des êtres à partir d'argile, puis de bois, avant d'échouer. C'est finalement avec le maïs — aliment central de la civilisation méso-américaine — qu'ils parviennent à créer des êtres humains véritables, capables de penser et de vénérer le divin. La comparaison des cosmogonies du monde révèle ainsi à la fois une diversité culturelle remarquable et des invariants structurels : toutes ces cultures cherchent à expliquer l'origine de l'humanité à travers une intervention divine organisatrice.",
+              "text": "Le Popol Vuh est le texte sacré de la civilisation maya, qui raconte la création du monde et des hommes en plusieurs tentatives. Les dieux essaient d'abord de modeler des êtrès à partir d'argile, puis de bois, avant d'échouer. C'est finalement avec le maïs — aliment central de la civilisation méso-américaine — qu'ils parviennent à créer des êtrès humains véritables, capables de penser et de vénérer le divin. La comparaison des cosmogonies du monde révèle ainsi à la fois une diversité culturelle remarquable et des invariants structurels : toutes ces cultures cherchent à expliquer l'origine de l'humanité à travers une intervention divine organisatrice.",
               "emoji": "🌽"
             }
           ],
@@ -52367,7 +52367,7 @@ export const UNIVERSES: Record<string, Universe> = {
           "cards": [
             {
               "title": "Le Grand Esprit et la vision du cosmos amérindien",
-              "text": "Dans la cosmologie des peuples amérindiens, la nature n'est pas un simple décor mais un ensemble d'êtres vivants avec lesquels les humains entretiennent des relations de réciprocité et de respect mutuel. Chez les Lakota, la puissance suprême est appelée Wakan Tanka, le Grand Esprit, principe divin unificateur de toute existence. Les Anishinaabe désignent la Terre-Mère sous le nom de Nokomis, figure nourricière fondamentale. Ces cosmologies placent l'harmonie avec le monde naturel au cœur de l'existence humaine, à l'opposé de la vision occidentale moderne de domination sur la nature.",
+              "text": "Dans la cosmologie des peuples amérindiens, la nature n'est pas un simple décor mais un ensemble d'êtrès vivants avec lesquels les humains entretiennent des relations de réciprocité et de respect mutuel. Chez les Lakota, la puissance suprême est appelée Wakan Tanka, le Grand Esprit, principe divin unificateur de toute existence. Les Anishinaabe désignent la Terre-Mère sous le nom de Nokomis, figure nourricière fondamentale. Ces cosmologies placent l'harmonie avec le monde naturel au cœur de l'existence humaine, à l'opposé de la vision occidentale moderne de domination sur la nature.",
               "emoji": "🌿"
             },
             {
@@ -52490,11 +52490,11 @@ export const UNIVERSES: Record<string, Universe> = {
               "question": "Dans les cosmologies amérindiennes, quelle vision du rapport à la nature se distingue fondamentalement de la conception occidentale moderne ?",
               "options": [
                 "La nature est perçue comme un espace à domestiquer par la technique",
-                "La nature est un ensemble d'êtres vivants avec lesquels les humains entretiennent des relations de réciprocité",
+                "La nature est un ensemble d'êtrès vivants avec lesquels les humains entretiennent des relations de réciprocité",
                 "La nature est un danger permanent dont l'humanité doit se protéger",
                 "La nature est indifférente aux activités humaines et suit ses propres lois"
               ],
-              "correctAnswer": "La nature est un ensemble d'êtres vivants avec lesquels les humains entretiennent des relations de réciprocité",
+              "correctAnswer": "La nature est un ensemble d'êtrès vivants avec lesquels les humains entretiennent des relations de réciprocité",
               "isSpecial": true
             }
           ]
@@ -53092,7 +53092,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Qu'affirme la Déclaration des droits de l'homme et du citoyen au sujet des êtres humains ?",
+              "question": "Qu'affirme la Déclaration des droits de l'homme et du citoyen au sujet des êtrès humains ?",
               "options": [
                 "Que seuls les nobles ont des droits",
                 "Que tous les hommes naissent libres et égaux",
@@ -53564,12 +53564,12 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Comment les bateaux à voiles avançaient-ils avant l'invention des moteurs ?",
               "options": [
-                "Grace aux rameurs qui pagayaient",
-                "Grace au vent qui poussait les voiles",
-                "Grace a des chevaux tireurs",
-                "Grace aux courants magnetiques"
+                "Grâce aux rameurs qui pagayaient",
+                "Grâce au vent qui poussait les voiles",
+                "Grâce a des chevaux tireurs",
+                "Grâce aux courants magnetiques"
               ],
-              "correctAnswer": "Grace au vent qui poussait les voiles",
+              "correctAnswer": "Grâce au vent qui poussait les voiles",
               "isSpecial": false
             },
             {
@@ -54055,7 +54055,7 @@ export const UNIVERSES: Record<string, Universe> = {
           "cards": [
             {
               "title": "Qu'est-ce que la Préhistoire ?",
-              "text": "La Préhistoire est la très longue période qui précède l'invention de l'écriture. Les premiers êtres humains sont apparus il y a environ 3 millions d'années. La Préhistoire prend fin avec l'invention de l'écriture, il y a environ 5 000 ans. C'est la période la plus longue de l'histoire humaine.",
+              "text": "La Préhistoire est la très longue période qui précède l'invention de l'écriture. Les premiers êtrès humains sont apparus il y a environ 3 millions d'années. La Préhistoire prend fin avec l'invention de l'écriture, il y a environ 5 000 ans. C'est la période la plus longue de l'histoire humaine.",
               "emoji": "🦴"
             },
             {
@@ -54087,7 +54087,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Depuis combien de temps environ les premiers êtres humains existent-ils ?",
+              "question": "Depuis combien de temps environ les premiers êtrès humains existent-ils ?",
               "options": [
                 "500 000 ans",
                 "1 million d'années",
@@ -54637,7 +54637,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "L'Église et la culture au Moyen Âge",
-              "text": "L'Église catholique joue un rôle central au Moyen Âge : elle gère les hôpitaux, les écoles et guide la vie spirituelle des gens. Les cathédrales gothiques se reconnaissent à leurs grandes fenêtres ornées de vitraux colorés qui laissent entrer la lumière. En 1096, le pape lance la première croisade pour reprendre Jérusalem aux musulmans.",
+              "text": "L'Église catholique joue un rôle central au Moyen Âge : elle gère les hôpitaux, les écoles et guide la vie spirituelle des gens. Les cathédrales gothiques se reconnaissent à leurs grandes fenêtrès ornées de vitraux colorés qui laissent entrer la lumière. En 1096, le pape lance la première croisade pour reprendre Jérusalem aux musulmans.",
               "emoji": "⛪"
             },
             {
@@ -54703,7 +54703,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Quel style architectural médiéval est caractérisé par de grandes fenêtres en vitraux colorés ?",
+              "question": "Quel style architectural médiéval est caractérisé par de grandes fenêtrès en vitraux colorés ?",
               "options": [
                 "Le gothique",
                 "Le roman",
@@ -55088,7 +55088,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Chevaliers et samouraïs : un code de conduite commun",
-              "text": "Bien que séparés par des milliers de kilomètres et des cultures radicalement différentes, les chevaliers européens et les samouraïs japonais partageaient une conception similaire de la guerre et de l'honneur. Tous deux suivaient un code de conduite rigoureux qui guidait leur comportement au combat et dans la vie quotidienne. Cette éthique guerrière faisait d'eux des figures d'élite, respectées au sein de leurs sociétés hiérarchisées. Ce parallèle illustre l'universalité de certaines valeurs militaires à travers les cultures.",
+              "text": "Bien que séparés par des milliers de kilomètrès et des cultures radicalement différentes, les chevaliers européens et les samouraïs japonais partageaient une conception similaire de la guerre et de l'honneur. Tous deux suivaient un code de conduite rigoureux qui guidait leur comportement au combat et dans la vie quotidienne. Cette éthique guerrière faisait d'eux des figures d'élite, respectées au sein de leurs sociétés hiérarchisées. Ce parallèle illustre l'universalité de certaines valeurs militaires à travers les cultures.",
               "emoji": "🌏"
             },
             {
@@ -56413,7 +56413,7 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Quelle caractéristique architecturale principale des châteaux forts du Moyen Age servait avant tout à la défense militaire ?",
               "options": [
-                "Leurs larges fenêtres en verre coloré",
+                "Leurs larges fenêtrès en verre coloré",
                 "Leurs jardins ornementaux en terrasses",
                 "Leurs murs épais en pierre et leurs tours de guet",
                 "Leurs toits en tuiles vernissées"
@@ -57027,7 +57027,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Architecture gothique et essor des universités",
-              "text": "Le style gothique, qui s'épanouit à partir du XIIe siècle, se distingue par l'utilisation d'arcs-boutants, des structures extérieures qui transmettent la poussée des voûtes vers l'extérieur des murs. Cela permet d'alléger les murs, d'agrandir les fenêtres et d'élever les cathédrales vers le ciel. Sur le plan intellectuel, les premières universités d'Europe voient le jour à cette période : Paris accueille l'une des plus anciennes, fondée à la fin du XIIe siècle, centre du savoir théologique et philosophique.",
+              "text": "Le style gothique, qui s'épanouit à partir du XIIe siècle, se distingue par l'utilisation d'arcs-boutants, des structures extérieures qui transmettent la poussée des voûtes vers l'extérieur des murs. Cela permet d'alléger les murs, d'agrandir les fenêtrès et d'élever les cathédrales vers le ciel. Sur le plan intellectuel, les premières universités d'Europe voient le jour à cette période : Paris accueille l'une des plus anciennes, fondée à la fin du XIIe siècle, centre du savoir théologique et philosophique.",
               "emoji": "⛪"
             },
             {
@@ -57084,12 +57084,12 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Quelle est la caractéristique architecturale propre aux cathédrales gothiques ?",
               "options": [
-                "Des murs épais et des petites fenêtres pour résister aux assauts",
+                "Des murs épais et des petites fenêtrès pour résister aux assauts",
                 "Des coupoles dorées inspirées de l'architecture byzantine",
-                "Des arcs-boutants permettant d'alléger les murs et d'agrandir les fenêtres",
+                "Des arcs-boutants permettant d'alléger les murs et d'agrandir les fenêtrès",
                 "Des colonnes de marbre blanc à chapiteaux sculptés"
               ],
-              "correctAnswer": "Des arcs-boutants permettant d'alléger les murs et d'agrandir les fenêtres",
+              "correctAnswer": "Des arcs-boutants permettant d'alléger les murs et d'agrandir les fenêtrès",
               "isSpecial": false
             },
             {
@@ -57323,7 +57323,7 @@ export const UNIVERSES: Record<string, Universe> = {
           "cards": [
             {
               "title": "Qu'est-ce que la philosophie ?",
-              "text": "Le mot « philosophie » vient du grec et signifie littéralement « l'amour de la sagesse ». Les philosophes cherchent à comprendre le monde, les êtres humains et les grandes questions de la vie. On trouve des philosophes et des sages dans toutes les cultures et à toutes les époques. Leur but est d'apprendre à mieux vivre et à mieux penser.",
+              "text": "Le mot « philosophie » vient du grec et signifie littéralement « l'amour de la sagesse ». Les philosophes cherchent à comprendre le monde, les êtrès humains et les grandes questions de la vie. On trouve des philosophes et des sages dans toutes les cultures et à toutes les époques. Leur but est d'apprendre à mieux vivre et à mieux penser.",
               "emoji": "🦉"
             },
             {
@@ -58336,7 +58336,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Proverbes sur l'entraide et la communauté",
-              "text": "« Il faut tout un village pour élever un enfant » est un proverbe africain qui met en avant l'importance de la communauté dans l'éducation et le soutien mutuel. « Seul on va plus vite, ensemble on va plus loin » valorise l'entraide et la coopération. Ces proverbes rappellent que les êtres humains sont des êtres sociaux qui s'épanouissent grâce aux autres.",
+              "text": "« Il faut tout un village pour élever un enfant » est un proverbe africain qui met en avant l'importance de la communauté dans l'éducation et le soutien mutuel. « Seul on va plus vite, ensemble on va plus loin » valorise l'entraide et la coopération. Ces proverbes rappellent que les êtrès humains sont des êtrès sociaux qui s'épanouissent grâce aux autres.",
               "emoji": "🤝"
             },
             {
@@ -58617,7 +58617,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Le courage selon Aristote",
-              "text": "Pour le philosophe grec Aristote, le courage est une vertu qui se situe entre deux extrêmes : la lâcheté (fuir systématiquement le danger) et l'imprudence (foncer tête baissée sans discernement). Le courage véritable, c'est agir malgré la peur, en surmontant l'appréhension pour faire ce qui est juste ou nécessaire. Aristote appelait cette idée du « juste milieu » la doctrine du méson.",
+              "text": "Pour le philosophe grec Aristote, le courage est une vertu qui se situe entre deux extrêmes : la lâcheté (fuir systématiquement le danger) et l'imprudence (foncer tête baissée sans discernement). Le courage véritable, c'est agir malgré la peur, en surmontant l'appréhension pour faire ce qui est juste ou nécessaire. Aristote appelait cette idée du « juste milieu » la doctrine du juste milieu (mésotès).",
               "emoji": "🛡️"
             },
             {
@@ -58898,7 +58898,7 @@ export const UNIVERSES: Record<string, Universe> = {
           "cards": [
             {
               "title": "Les Sept Merveilles du monde antique",
-              "text": "L'Antiquité a célébré sept monuments exceptionnels, réputés pour leur grandeur et leur ingéniosité : la Grande Pyramide de Khéops (Égypte), les Jardins suspendus de Babylone, la statue de Zeus à Olympie, le temple d'Artémis à Éphèse, le Mausolée d'Halicarnasse, le Colosse de Rhodes et le Phare d'Alexandrie. De toutes ces merveilles, une seule a traversé les millénaires et nous est parvenue intacte : la Grande Pyramide de Gizeh, construite par les Égyptiens il y a environ 4 500 ans. Les Jardins suspendus se dressaient dans la somptueuse cité de Babylone, en Mésopotamie.",
+              "text": "L'Antiquité a célébré sept monuments exceptionnels, réputés pour leur grandeur et leur ingéniosité : la Grande Pyramide de Khéops (Égypte), les Jardins suspendus de Babylone, la statue de Zeus à Olympie, le temple d'Artémis à Éphèse, le Mausolée d'Halicarnasse, le Colosse de Rhodes et le Phare d'Alexandrie. De toutes ces merveilles, une seule a traversé les millénaires et nous est parvenue, encore debout : la Grande Pyramide de Gizeh, construite par les Égyptiens il y a environ 4 500 ans. Les Jardins suspendus se dressaient dans la somptueuse cité de Babylone, en Mésopotamie.",
               "emoji": "🏛️"
             },
             {
