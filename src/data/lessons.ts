@@ -166,7 +166,7 @@ export const UNIVERSES: Record<string, Universe> = {
           "cards": [
             {
               "title": "La girafe, reine de la hauteur",
-              "text": "La girafe est le plus grand animal terrestre du monde. Elle possède un très long cou et de très longues pattes, ce qui la rend immédiatement reconnaissable. Son cou représente environ un tiers de sa hauteur totale : une girafe adulte mesure en moyenne 5 mètres, dont environ 1,5 mètre de cou. Grâce à cette morphologie, elle peut atteindre les feuilles tout en haut des arbres.",
+              "text": "La girafe est l'animal terrestre le plus haut du monde. Elle possède un très long cou et de très longues pattes, ce qui la rend immédiatement reconnaissable. Son cou représente environ un tiers de sa hauteur totale : une girafe adulte mesure en moyenne 5 mètres, dont environ 1,5 mètre de cou. Grâce à cette morphologie, elle peut atteindre les feuilles tout en haut des arbres.",
               "emoji": "🦒"
             },
             {
@@ -231,7 +231,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Lequel de ces animaux de la jungle est décrit comme le plus grand animal de la Terre ?",
+              "question": "Lequel de ces animaux est le plus haut du monde (le plus grand par la taille) ?",
               "options": [
                 "L'éléphant",
                 "Le lion",
@@ -620,7 +620,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "La grenouille : sauts et couleurs",
-              "text": "La grenouille se déplace principalement en sautant grâce à ses pattes arrière très puissantes, ce qui lui permet de chasser des proies ou de fuir les prédateurs rapidement. Certaines grenouilles tropicales arborent des couleurs très vives pour avertir les prédateurs qu'elles sont venimeuses. Ces grenouilles très colorées et venimeuses s'appellent les dendrobates.",
+              "text": "La grenouille se déplace principalement en sautant grâce à ses pattes arrière très puissantes, ce qui lui permet de chasser des proies ou de fuir les prédateurs rapidement. Certaines grenouilles tropicales arborent des couleurs très vives pour avertir les prédateurs qu'elles sont toxiques. Ces grenouilles très colorées et toxiques s'appellent les dendrobates.",
               "emoji": "🐸"
             },
             {
@@ -726,11 +726,11 @@ export const UNIVERSES: Record<string, Universe> = {
               "question": "Pourquoi certaines grenouilles tropicales arborent-elles des couleurs très vives ?",
               "options": [
                 "Pour séduire un partenaire lors de la saison des pluies",
-                "Pour avertir les prédateurs qu'elles sont venimeuses",
+                "Pour avertir les prédateurs qu'elles sont toxiques",
                 "Pour absorber la chaleur du soleil plus efficacement",
                 "Pour se fondre dans les fleurs colorées de la forêt"
               ],
-              "correctAnswer": "Pour avertir les prédateurs qu'elles sont venimeuses",
+              "correctAnswer": "Pour avertir les prédateurs qu'elles sont toxiques",
               "isSpecial": false
             },
             {
@@ -745,7 +745,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Quel groupe de grenouilles tropicales très venimeuses utilise des couleurs vives comme signal d'avertissement ?",
+              "question": "Quel groupe de grenouilles tropicales très toxiques utilise des couleurs vives comme signal d'avertissement ?",
               "options": [
                 "Les rainettes vertes",
                 "Les dendrobates",
@@ -2581,7 +2581,7 @@ export const UNIVERSES: Record<string, Universe> = {
           "cards": [
             {
               "title": "La girafe : anatomie, classification et vulnérabilité",
-              "text": "La girafe (nom scientifique : Giraffa camelopardalis) est le seul genre survivant de la famille des Giraffidae. Son long cou et ses pattes lui confèrent une portée unique parmi les herbivores terrestres, lui permettant d'atteindre les feuilles en hauteur sans concurrence. Contrairement à ce que l'on pourrait croire, la girafe possède le même nombre de vertèbres cervicales qu'un humain : sept, mais chacune est considérablement allongée. Depuis 2016, l'UICN classe la girafe comme espèce vulnérable en raison de la perte d'habitat liée à l'agriculture, du braconnage et des conflits armés dans son aire de répartition.",
+              "text": "La girafe (nom scientifique : Giraffa camelopardalis) est l'un des deux seuls genres encore vivants de la famille des Giraffidae, avec l'okapi. Son long cou et ses pattes lui confèrent une portée unique parmi les herbivores terrestres, lui permettant d'atteindre les feuilles en hauteur sans concurrence. Contrairement à ce que l'on pourrait croire, la girafe possède le même nombre de vertèbres cervicales qu'un humain : sept, mais chacune est considérablement allongée. Depuis 2016, l'UICN classe la girafe comme espèce vulnérable en raison de la perte d'habitat liée à l'agriculture, du braconnage et des conflits armés dans son aire de répartition.",
               "emoji": "🦒"
             },
             {
@@ -2613,7 +2613,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Quel est le nom scientifique de la girafe, seul genre survivant de la famille des Giraffidae ?",
+              "question": "Quel est le nom scientifique de la girafe, l'un des deux genres actuels de la famille des Giraffidae (avec l'okapi) ?",
               "options": [
                 "Panthera giraffa",
                 "Giraffa camelopardalis",
@@ -3341,7 +3341,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "L'écureuil et la dispersion des graines",
-              "text": "L'écureuil cache des noisettes et des glands en les enterrant pour constituer des réserves alimentaires en vue de l'hiver. Cependant, il oublie une partie de ses cachettes. Ces graines oubliées germent et donnent naissance à de nouveaux arbres. L'écureuil joue ainsi involontairement un rôle essentiel dans la régénération et la dispersion des forêts, un comportement qualifié de dispersion des graines par myrmécochorie animale.",
+              "text": "L'écureuil cache des noisettes et des glands en les enterrant pour constituer des réserves alimentaires en vue de l'hiver. Cependant, il oublie une partie de ses cachettes. Ces graines oubliées germent et donnent naissance à de nouveaux arbres. L'écureuil joue ainsi involontairement un rôle essentiel dans la régénération et la dispersion des forêts, un comportement qualifié de dispersion des graines par les animaux, la zoochorie.",
               "emoji": "🐿️"
             },
             {
@@ -3641,8 +3641,8 @@ export const UNIVERSES: Record<string, Universe> = {
           "badgeEmoji": "🔮",
           "cards": [
             {
-              "title": "Le tigre et le mimétisme agressif",
-              "text": "Le tigre est le plus grand félin sauvage du monde. Ses rayures verticales noires sur fond orangé lui permettent de se fondre dans la végétation des hautes herbes et des forêts denses. Cette adaptation permettant à un prédateur de se dissimuler pour chasser s'appelle le mimétisme agressif. Les proies du tigre étant dichromates — incapables de percevoir le rouge et l'orange —, ses rayures deviennent pratiquement indiscernables dans la végétation jaunâtre, le rendant invisible jusqu'au moment de l'attaque.",
+              "title": "Le tigre et le camouflage",
+              "text": "Le tigre est le plus grand félin sauvage du monde. Ses rayures verticales noires sur fond orangé lui permettent de se fondre dans la végétation des hautes herbes et des forêts denses. Cette adaptation, qui permet à un prédateur de se dissimuler dans son environnement pour chasser, s'appelle le camouflage (ou homochromie). Les proies du tigre étant dichromates — incapables de percevoir le rouge et l'orange —, ses rayures deviennent pratiquement indiscernables dans la végétation jaunâtre, le rendant invisible jusqu'au moment de l'attaque.",
               "emoji": "🐯"
             },
             {
@@ -3675,12 +3675,12 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Le tigre utilise ses rayures pour se camoufler. Quel terme scientifique désigne cette adaptation permettant à un prédateur de se fondre dans son environnement pour chasser ?",
               "options": [
-                "Le mimétisme agressif",
+                "Le camouflage (homochromie)",
                 "L'aposématisme",
                 "La mélanisation",
                 "Le phototactisme"
               ],
-              "correctAnswer": "Le mimétisme agressif",
+              "correctAnswer": "Le camouflage (homochromie)",
               "isSpecial": false
             },
             {
@@ -10054,12 +10054,12 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Que se passe-t-il quand un muscle se contracte ?",
               "options": [
-                "Il grossit et pousse les os",
+                "Il se raccourcit et tire sur l'os",
                 "Il envoie du sang vers les poumons",
                 "Il libère de l'oxygène",
                 "Il produit de la chaleur uniquement"
               ],
-              "correctAnswer": "Il grossit et pousse les os",
+              "correctAnswer": "Il se raccourcit et tire sur l'os",
               "isSpecial": false
             },
             {
@@ -10900,7 +10900,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Les différents types de dents",
-              "text": "Les incisives sont les dents du devant qui servent à couper les aliments. Les canines, pointues, servent à déchirer. Les molaires, larges et plates, servent à broyer les aliments. Dans chaque moitié de mâchoire, on trouve 2 incisives, 1 canine et 3 molaires, soit 28 dents en dehors des dents de sagesse.",
+              "text": "Les incisives sont les dents du devant qui servent à couper les aliments. Les canines, pointues, servent à déchirer. Les molaires, larges et plates, servent à broyer les aliments. Dans chaque quart de mâchoire, on trouve 2 incisives, 1 canine, 2 prémolaires et 2 molaires, soit 7 dents ; multiplié par 4, cela fait 28 dents en dehors des 4 dents de sagesse.",
               "emoji": "🍎"
             },
             {
@@ -11025,14 +11025,14 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Un adulte possède 32 dents au total, dont 4 dents de sagesse. Combien de dents restantes a-t-il en dehors des dents de sagesse, et comment se répartissent incisives, canines et molaires dans chaque moitié de mâchoire ?",
+              "question": "Un adulte possède 32 dents au total, dont 4 dents de sagesse. Combien de dents lui reste-t-il en dehors des dents de sagesse, et comment se répartissent-elles dans chaque quart de mâchoire ?",
               "options": [
-                "28 dents : 4 incisives, 2 canines et 8 molaires par moitié",
-                "28 dents : 2 incisives, 1 canine et 3 molaires par moitié de mâchoire",
-                "28 dents : 3 incisives, 2 canines et 2 molaires par moitié de mâchoire",
-                "28 dents : 2 incisives, 2 canines et 2 molaires par moitié de mâchoire"
+                "28 dents : 4 incisives, 2 canines et 8 molaires par quart",
+                "28 dents : 2 incisives, 1 canine, 2 prémolaires et 2 molaires par quart de mâchoire",
+                "28 dents : 3 incisives, 2 canines et 2 molaires par quart",
+                "28 dents : 2 incisives, 2 canines et 2 molaires par quart"
               ],
-              "correctAnswer": "28 dents : 2 incisives, 1 canine et 3 molaires par moitié de mâchoire",
+              "correctAnswer": "28 dents : 2 incisives, 1 canine, 2 prémolaires et 2 molaires par quart de mâchoire",
               "isSpecial": true
             }
           ]
@@ -12841,7 +12841,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "La grande et la petite circulation",
-              "text": "La petite circulation relie le cœur aux poumons : le sang pauvre en oxygène part du ventricule droit vers les poumons, se charge en oxygène et revient à l'oreillette gauche. La grande circulation part du ventricule gauche, passe par l'oreillette gauche, et distribue le sang oxygéné à tous les organes du corps.",
+              "text": "La petite circulation relie le cœur aux poumons : le sang pauvre en oxygène part du ventricule droit vers les poumons, se charge en oxygène et revient à l'oreillette gauche. La grande circulation part du ventricule gauche, distribue le sang oxygéné à tous les organes du corps, puis le sang appauvri en oxygène revient à l'oreillette droite.",
               "emoji": "🔄"
             },
             {
@@ -15087,7 +15087,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Plus de 90 lunes !",
-              "text": "Jupiter possède plus de 90 lunes, ce qui en fait la planète avec le plus grand nombre de satellites naturels connus. Ces lunes sont très différentes les unes des autres en taille et en apparence.",
+              "text": "Jupiter possède plus de 90 lunes. Elle a longtemps été la planète au plus grand nombre de satellites, jusqu'à ce que Saturne la dépasse en 2023 (plus de 140 lunes connues). Ces lunes sont très différentes les unes des autres en taille et en apparence.",
               "emoji": "🌕"
             },
             {
@@ -17467,7 +17467,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Le système de lunes de Jupiter",
-              "text": "Jupiter possède plus de 90 lunes officiellement recensées, ce qui en fait la planète avec le plus grand nombre de satellites naturels connus. Les quatre plus grandes, découvertes par Galilée en 1610, sont Io, Europe, Ganymède et Callisto. Ganymède est la plus grande lune du système solaire entier, plus grande même que la planète Mercure. Ces quatre lunes, appelées lunes galiléennes, sont visibles depuis la Terre avec de simples jumelles.",
+              "text": "Jupiter possède plus de 90 lunes officiellement recensées. Elle fut longtemps la planète au plus grand nombre de satellites, avant d'être dépassée par Saturne en 2023 (plus de 140 lunes). Les quatre plus grandes, découvertes par Galilée en 1610, sont Io, Europe, Ganymède et Callisto. Ganymède est la plus grande lune du système solaire entier, plus grande même que la planète Mercure. Ces quatre lunes, appelées lunes galiléennes, sont visibles depuis la Terre avec de simples jumelles.",
               "emoji": "🌕"
             },
             {
@@ -18380,7 +18380,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Les planètes rocheuses",
-              "text": "Les quatre planètes rocheuses — Mercure, Vénus, la Terre et Mars — sont petites, denses et situées près du Soleil. La Terre est la seule entièrement recouverte d'eau liquide à sa surface, condition essentielle à la vie. Mars doit sa couleur rougeâtre à la présence d'oxyde de fer (rouille) à sa surface. Plus un objet est massif, plus il attire gravitationnellement les corps voisins.",
+              "text": "Les quatre planètes rocheuses — Mercure, Vénus, la Terre et Mars — sont petites, denses et situées près du Soleil. La Terre est la seule à posséder de l'eau liquide en abondance à sa surface (environ 70 % recouverts d'océans), condition essentielle à la vie. Mars doit sa couleur rougeâtre à la présence d'oxyde de fer (rouille) à sa surface. Plus un objet est massif, plus il attire gravitationnellement les corps voisins.",
               "emoji": "🔴"
             },
             {
@@ -18478,7 +18478,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Parmi les planètes rocheuses, laquelle est entièrement recouverte d'eau liquide à sa surface ?",
+              "question": "Parmi les planètes rocheuses, laquelle possède de l'eau liquide en abondance à sa surface ?",
               "options": [
                 "Mercure",
                 "Vénus",
@@ -20197,7 +20197,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "options": [
                 "4 x 9",
                 "5 x 7",
-                "6 x 6",
+                "5 x 6",
                 "8 x 4"
               ],
               "correctAnswer": "4 x 9",
@@ -21987,7 +21987,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Propriétés des entiers de 1 à 10",
-              "text": "Parmi les entiers de 1 à 10, les nombres premiers sont ceux qui n'ont que deux diviseurs : 1 et eux-mêmes. Il y en a 4 : 2, 3, 5 et 7. Le nombre 4 est à la fois un carré parfait (2² = 4) et un nombre pair. Le nombre 6 possède le plus grand nombre de diviseurs parmi 1 à 10 : 1, 2, 3 et 6, soit 4 diviseurs. Les nombres impairs de 1 à 10 sont : 1, 3, 5, 7 et 9 ; ce sont ceux obtenus en comptant de 2 en 2 à partir de 1.",
+              "text": "Parmi les entiers de 1 à 10, les nombres premiers sont ceux qui n'ont que deux diviseurs : 1 et eux-mêmes. Il y en a 4 : 2, 3, 5 et 7. Le nombre 4 est à la fois un carré parfait (2² = 4) et un nombre pair. Parmi 1 à 10, trois nombres possèdent le plus grand nombre de diviseurs (4 chacun) : 6 (1, 2, 3, 6), 8 (1, 2, 4, 8) et 10 (1, 2, 5, 10). Les nombres impairs de 1 à 10 sont : 1, 3, 5, 7 et 9 ; ce sont ceux obtenus en comptant de 2 en 2 à partir de 1.",
               "emoji": "🔢"
             },
             {
@@ -22086,14 +22086,14 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Parmi les nombres de 1 à 10, lequel possède le plus grand nombre de diviseurs ?",
+              "question": "Parmi les nombres de 1 à 12, lequel possède le plus grand nombre de diviseurs ?",
               "options": [
                 "8",
-                "6",
+                "12",
                 "10",
                 "9"
               ],
-              "correctAnswer": "6",
+              "correctAnswer": "12",
               "isSpecial": false
             },
             {
@@ -22396,7 +22396,7 @@ export const UNIVERSES: Record<string, Universe> = {
           "cards": [
             {
               "title": "La commutativité et les faits essentiels",
-              "text": "La multiplication est commutative : 4 × 7 = 7 × 4. Grâce à cette propriété, un tableau de multiplication 10 × 10 contient 100 cases, mais seulement 55 faits distincts (10 carrés + 45 paires symétriques). Cela signifie que si un élève ne connaît que la moitié du tableau, il lui manque exactement 45 faits distincts. Parmi les résultats du tableau, 25 (5 × 5) est le seul carré parfait qui n'apparaît qu'une seule fois car il est le produit de deux facteurs identiques.",
+              "text": "La multiplication est commutative : 4 × 7 = 7 × 4. Grâce à cette propriété, un tableau de multiplication 10 × 10 contient 100 cases, mais seulement 55 faits distincts (10 carrés + 45 paires symétriques). Cela signifie que si un élève ne connaît que la moitié du tableau, il lui manque exactement 45 faits distincts. Parmi les résultats du tableau, 25 (5 × 5) est un carré parfait qui n'apparaît qu'une seule fois, car on ne peut l'obtenir que par 5 × 5 (comme 49 = 7 × 7 ou 100 = 10 × 10).",
               "emoji": "🔄"
             },
             {
@@ -22511,14 +22511,14 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Dans un tableau de multiplication de 1 a 10, quel est le seul résultat qui n'apparait qu'une seule fois ?",
+              "question": "Dans un tableau de multiplication de 1 à 10, quel est le seul de ces résultats qui apparaît plusieurs fois (et pas une seule) ?",
               "options": [
                 "25",
                 "36",
                 "49",
                 "100"
               ],
-              "correctAnswer": "25",
+              "correctAnswer": "36",
               "isSpecial": true
             }
           ]
@@ -24074,14 +24074,14 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Combien de continents principaux compte notre planète ?",
+              "question": "Combien de continents compte notre planète (classification française) ?",
               "options": [
                 "5",
                 "6",
                 "7",
                 "8"
               ],
-              "correctAnswer": "6",
+              "correctAnswer": "7",
               "isSpecial": false
             },
             {
@@ -27026,7 +27026,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Les grands paysages africains",
-              "text": "Le désert du Sahara, situé au nord du continent, est le plus grand désert chaud du monde. L'Égypte, pays le plus septentrional traversé par le Nil, abrite une partie du cours supérieur de ce fleuve avant qu'il ne se jette dans la mer Méditerranée. L'Algérie et le Congo font partie des plus grands pays africains en superficie.",
+              "text": "Le désert du Sahara, situé au nord du continent, est le plus grand désert chaud du monde. L'Égypte, pays le plus septentrional traversé par le Nil, abrite le cours inférieur de ce fleuve (le Nil coule du sud vers le nord) avant qu'il ne se jette dans la mer Méditerranée. L'Algérie et le Congo font partie des plus grands pays africains en superficie.",
               "emoji": "🏜️"
             },
             {
@@ -27135,7 +27135,7 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Quel pays africain est situé à l'extrémité la plus septentrionale du continent et abrite notamment le cours supérieur du Nil ?",
+              "question": "Quel pays, le plus au nord parmi ceux que traverse le Nil, abrite le cours inférieur du fleuve avant son embouchure dans la mer Méditerranée ?",
               "options": [
                 "La Somalie",
                 "L'Éthiopie",
@@ -28699,7 +28699,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "La famille des équidés",
-              "text": "Dans l'alphabet des animaux, trois lettres sont directement associées à un animal : A pour l'âne, C pour la coccinelle et Z pour le zèbre. L'âne, le zèbre et le cheval forment ensemble la famille des équidés : ce sont des mammifères qui ont des sabots et une crinière. Chaque animal a ses propres caractéristiques, mais ils se ressemblent par leur silhouette.",
+              "text": "Dans l'alphabet des animaux, quatre lettres sont directement associées à un animal : A pour l'âne, C pour la coccinelle, D pour le dauphin et Z pour le zèbre. L'âne, le zèbre et le cheval forment ensemble la famille des équidés : ce sont des mammifères qui ont des sabots et une crinière. Chaque animal a ses propres caractéristiques, mais ils se ressemblent par leur silhouette.",
               "emoji": "🐴"
             }
           ],
@@ -28800,7 +28800,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "Quatre lettres : A, C, D et Z",
                 "Cinq lettres : A, B, C, D et Z"
               ],
-              "correctAnswer": "Trois lettres : A, C et Z",
+              "correctAnswer": "Quatre lettres : A, C, D et Z",
               "isSpecial": false
             },
             {
@@ -31242,7 +31242,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Richesse des rimes : pauvre, suffisante, riche",
-              "text": "On distingue la rime pauvre (un seul son commun), la rime suffisante (deux sons communs) et la rime riche (trois sons ou plus). Ainsi, \"lunettes\" et \"chaussettes\" partagent trois sons finals identiques : les sons 'e', 't' et 'e', ce qui en fait une rime riche. Plus les sons communs sont nombreux, plus la rime est qualifiée de riche et musicale.",
+              "text": "On distingue la rime pauvre (un seul son commun), la rime suffisante (deux sons communs) et la rime riche (trois sons ou plus). Ainsi, \"capitaine\" et \"fontaine\" partagent trois sons finaux identiques : les sons 't', 'è' et 'n', ce qui en fait une rime riche. À l'inverse, \"lunettes\" et \"chaussettes\" ne partagent que deux sons ('è' et 't', le -e final étant muet) : c'est une rime suffisante. Plus les sons communs sont nombreux, plus la rime est riche.",
               "emoji": "🏆"
             },
             {
@@ -31348,12 +31348,12 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Combien de sons finaux identiques les mots 'lunettes' et 'chaussettes' partagent-ils exactement ?",
               "options": [
-                "Un seul son : le 'e'",
-                "Deux sons : 'et' et 'te'",
-                "Trois sons : 'e', 't', 'e'",
+                "Un seul son : le 'e' final",
+                "Deux sons : 'è' et 't' (le -e final est muet)",
+                "Trois sons : 'è', 't' et 'e'",
                 "Quatre sons formant la syllabe 'ette'"
               ],
-              "correctAnswer": "Trois sons : 'e', 't', 'e'",
+              "correctAnswer": "Deux sons : 'è' et 't' (le -e final est muet)",
               "isSpecial": false
             },
             {
@@ -31538,7 +31538,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "Les mots en -eau et en -au au pluriel",
-              "text": "La grande majorité des mots terminés par -eau ou -au prennent un -x au pluriel à la place du -s habituel. Exemples : un eau → des eaux, un bateau → des bateaux, un noyau → des noyaux. Cette terminaison -eaux ou -aux est très régulière et s'applique à presque tous ces mots.",
+              "text": "La grande majorité des mots terminés par -eau ou -au prennent un -x au pluriel à la place du -s habituel. Exemples : un manteau → des manteaux, un bateau → des bateaux, un noyau → des noyaux. Cette terminaison -eaux ou -aux est très régulière et s'applique à presque tous ces mots.",
               "emoji": "💧"
             },
             {
@@ -31663,14 +31663,14 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Parmi les mots \"vitrail\", \"carnaval\", \"récital\" et \"choral\", lequel fait exception à la règle du pluriel en \"-aux\" et conserve un pluriel en \"-s\" ?",
+              "question": "Parmi les mots \"vitrail\", \"carnaval\", \"récital\" et \"choral\", lequel forme son pluriel en \"-aux\" (les trois autres étant des exceptions en \"-s\") ?",
               "options": [
                 "vitrail",
                 "carnaval",
                 "récital",
                 "choral"
               ],
-              "correctAnswer": "carnaval",
+              "correctAnswer": "vitrail",
               "isSpecial": true
             }
           ]
@@ -37990,7 +37990,7 @@ export const UNIVERSES: Record<string, Universe> = {
                 "pp (pianissimo)",
                 "ppp (pianississimo)"
               ],
-              "correctAnswer": "pp (pianissimo)",
+              "correctAnswer": "ppp (pianississimo)",
               "isSpecial": false
             },
             {
@@ -42080,7 +42080,7 @@ export const UNIVERSES: Record<string, Universe> = {
             {
               "question": "Que signifie l'acronyme GAFAM dans le contexte des enjeux du Cloud ?",
               "options": [
-                "Google, Amazon, Facebook, Apple, Microsoft",
+                "Google, Apple, Facebook, Amazon, Netflix",
                 "Google, Apple, Facebook, Amazon, Microsoft",
                 "GitHub, Apple, Facebook, Adobe, Mozilla",
                 "Google, Alibaba, Facebook, Airbnb, Meta"
@@ -43602,7 +43602,7 @@ export const UNIVERSES: Record<string, Universe> = {
             },
             {
               "title": "S'orienter grâce au soleil",
-              "text": "Le soleil se lève chaque matin à l'Est et se couche chaque soir à l'Ouest. En tendant le bras gauche vers l'Est et le bras droit vers l'Ouest au lever du soleil, tu fais face au Nord. Cette astuce simple permet de s'orienter sans boussole en plein jour.",
+              "text": "Le soleil se lève chaque matin à l'Est et se couche chaque soir à l'Ouest. En tendant le bras droit vers l'Est (là où le soleil se lève) et le bras gauche vers l'Ouest, tu fais face au Nord. Cette astuce simple permet de s'orienter sans boussole en plein jour.",
               "emoji": "☀️"
             },
             {
@@ -45811,14 +45811,14 @@ export const UNIVERSES: Record<string, Universe> = {
               "isSpecial": false
             },
             {
-              "question": "Un survivant perdu en forêt, sans boussole ni ciel étoilé visible, remarque que la mousse couvre le côté gauche des arbres et que le soleil est devant lui en fin d'après-midi. En combinant ces deux indices, quelle direction suit-il en réalité ?",
+              "question": "En fin d'après-midi, un survivant marche avec le soleil couchant droit devant lui. Il remarque que la mousse — qui pousse surtout du côté nord des arbres — se trouve sur sa droite. Vers quelle direction avance-t-il ?",
               "options": [
-                "Il marche vers le Nord-Est",
-                "Il marche vers le Sud-Ouest",
-                "Il marche vers le Nord-Ouest",
-                "Il marche vers le Sud-Est"
+                "Vers le Nord",
+                "Vers le Sud",
+                "Vers l'Est",
+                "Vers l'Ouest"
               ],
-              "correctAnswer": "Il marche vers le Nord-Ouest",
+              "correctAnswer": "Vers l'Ouest",
               "isSpecial": true
             }
           ]
