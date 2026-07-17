@@ -28,7 +28,7 @@ export async function envoyerEmailBienvenue(destinataire: string) {
         <p>Votre abonnement <strong>Famille</strong> aux <strong>Mondes du Savoir</strong> est actif. 🎉</p>
         <p>Votre enfant a maintenant accès à&nbsp;:</p>
         <ul style="padding-left:20px;">
-          <li>🌍 Les 14 univers <strong>et les mondes secrets</strong></li>
+          <li>🌍 Les 13 univers, <strong>dont 2 mondes secrets</strong></li>
           <li>🧩 Tous les quizz, sans aucune limite</li>
           <li>🏆 Tous les badges et récompenses à collectionner</li>
           <li>🌳 L'Arbre du Savoir, le Marché et le Temple des Sages</li>

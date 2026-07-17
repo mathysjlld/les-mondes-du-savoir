@@ -2,6 +2,14 @@
 
 let audioCtx: AudioContext | null = null;
 
+// État "muet" partagé pour les bruitages. Piloté par le réglage profile.soundEnabled
+// (cf. AppContext qui appelle setSoundsMuted). Sans ça, le bouton "Couper les
+// bruitages" n'aurait aucun effet puisque playSound est appelé en dur partout.
+let soundsMuted = false;
+export function setSoundsMuted(muted: boolean) {
+  soundsMuted = muted;
+}
+
 function getAudioContext(): AudioContext | null {
   if (typeof window === "undefined") return null;
   if (!audioCtx) {
@@ -15,6 +23,7 @@ function getAudioContext(): AudioContext | null {
 }
 
 export function playSound(type: "click" | "correct" | "incorrect" | "win" | "levelup") {
+  if (soundsMuted) return; // réglage "Couper les bruitages"
   const ctx = getAudioContext();
   if (!ctx) return;
 

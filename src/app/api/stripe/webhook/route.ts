@@ -62,16 +62,23 @@ export async function POST(req: Request) {
         break;
       }
 
-      // Premier paiement réussi → email de bienvenue.
+      // Premier paiement réussi → email de bienvenue (best-effort : un échec d'email
+      // ne doit JAMAIS renvoyer une erreur à Stripe ni bloquer la chaîne de paiement).
       case "invoice.paid": {
         const invoice = event.data.object as Stripe.Invoice;
         if (invoice.billing_reason === "subscription_create") {
-          const email =
-            invoice.customer_email ||
-            (typeof invoice.customer === "string"
-              ? ((await stripe.customers.retrieve(invoice.customer)) as Stripe.Customer).email
-              : null);
-          if (email) await envoyerEmailBienvenue(email);
+          try {
+            const customer =
+              typeof invoice.customer === "string"
+                ? await stripe.customers.retrieve(invoice.customer)
+                : null;
+            const email =
+              invoice.customer_email ||
+              (customer && !customer.deleted ? customer.email : null);
+            if (email) await envoyerEmailBienvenue(email);
+          } catch (e) {
+            console.error("email bienvenue (non bloquant):", e);
+          }
         }
         break;
       }
@@ -82,9 +89,11 @@ export async function POST(req: Request) {
         break;
     }
   } catch (e) {
-    // On log mais on répond 200 : Stripe rejouera l'événement en cas de vrai souci
-    // et on ne veut pas qu'une erreur d'email bloque la chaîne de paiement.
-    console.error("webhook stripe:", event.type, e);
+    // Erreur sur l'écriture du statut premium (source de vérité) → on renvoie 500
+    // pour que Stripe REJOUE l'événement. Sinon un client paierait sans jamais
+    // obtenir son accès. (Les erreurs best-effort, ex. email, sont déjà catchées plus haut.)
+    console.error("webhook stripe (à rejouer):", event.type, e);
+    return new Response("Erreur de traitement, à rejouer", { status: 500 });
   }
 
   return Response.json({ received: true });

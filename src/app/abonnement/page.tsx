@@ -16,7 +16,7 @@ import { supabase } from "@/lib/supabase";
 // Le statut premium est activé par le webhook Stripe côté serveur, jamais ici.
 
 const AVANTAGES = [
-  { emoji: "🌍", text: "Tous les mondes débloqués (14 univers + les mondes secrets)" },
+  { emoji: "🌍", text: "Tous les mondes débloqués (13 univers, dont 2 mondes secrets)" },
   { emoji: "🧩", text: "Tous les quizz, sans limite, dans chaque univers" },
   { emoji: "🏆", text: "Tous les badges et toutes les récompenses à collectionner" },
   { emoji: "🌳", text: "L'aventure complète : Arbre du Savoir, Marché et Temple des Sages" },
@@ -303,19 +303,22 @@ export default function AbonnementPage() {
                     Connecté en tant que <strong>{userEmail}</strong>
                   </p>
                 </div>
+              ) : stripePromise ? (
+                <Elements
+                  stripe={stripePromise}
+                  options={{
+                    clientSecret,
+                    appearance: APPEARANCE,
+                    fonts: [{ cssSrc: "https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" }],
+                  }}
+                >
+                  <FormulairePaiement montant={montant} />
+                </Elements>
               ) : (
-                stripePromise && (
-                  <Elements
-                    stripe={stripePromise}
-                    options={{
-                      clientSecret,
-                      appearance: APPEARANCE,
-                      fonts: [{ cssSrc: "https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" }],
-                    }}
-                  >
-                    <FormulairePaiement montant={montant} />
-                  </Elements>
-                )
+                // Clé Stripe publique absente : on affiche un message clair au lieu d'un écran vide.
+                <p className="mt-5 text-center text-sm font-bold text-rose-600">
+                  Le paiement est momentanément indisponible. Merci de réessayer dans un instant.
+                </p>
               )}
 
               <p className="mt-4 text-center text-[11px] text-slate-400 font-medium">

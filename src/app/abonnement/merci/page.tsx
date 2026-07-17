@@ -59,6 +59,14 @@ export default function MerciPage() {
             <p className="font-bold text-emerald-700 bg-emerald-50 border-2 border-emerald-200 rounded-2xl px-4 py-3">
               ✅ C&apos;est actif ! Tous les mondes sont maintenant débloqués.
             </p>
+          ) : tentatives >= 6 ? (
+            // Message de secours : le webhook peut mettre un peu plus de temps. On rassure
+            // (le paiement est bien pris en compte) au lieu de laisser tourner à l'infini.
+            <p className="font-semibold text-amber-700 bg-amber-50 border-2 border-amber-200 rounded-2xl px-4 py-3 text-sm leading-relaxed">
+              💛 Ton paiement est bien reçu&nbsp;! L&apos;accès peut mettre une minute à s&apos;activer.
+              Recharge la page dans un instant&nbsp;; ton reçu et ton email de bienvenue confirment
+              ton abonnement. Rien n&apos;est perdu, tout est enregistré.
+            </p>
           ) : (
             <p className="font-semibold text-slate-500 text-sm">
               Ton accès s&apos;active en quelques secondes… Un email de bienvenue et un reçu

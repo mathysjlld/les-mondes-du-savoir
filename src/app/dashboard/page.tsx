@@ -139,8 +139,9 @@ export default function Dashboard() {
       return;
     }
 
-    // Le code 2912 fonctionne toujours comme code de secours maître (Master Override)
-    if (cleanAnswer === correctCode || cleanAnswer === "2912") {
+    // On respecte le code parent (personnalisé ou, à défaut, le 2912 par défaut).
+    // Plus de "master override" universel : un parent qui a choisi son code est le seul à le connaître.
+    if (cleanAnswer === correctCode) {
       playSound("correct");
       setShowParentsGate(false);
       setShowParentsSpace(true);
@@ -349,7 +350,7 @@ export default function Dashboard() {
           >
             <span>🗣️</span>
             <span className="hidden sm:inline">
-              {profile.readAloudEnabled ? "Voix Activable" : "Voix Muette"}
+              {profile.readAloudEnabled ? "Voix Activée" : "Voix Muette"}
             </span>
           </button>
 
@@ -850,6 +851,21 @@ export default function Dashboard() {
                 </p>
               </div>
 
+              {/* Passer à l'aventure complète (abonnement) — masqué si déjà premium */}
+              {!profile.isPremium && (
+                <div className="flex flex-col gap-2 pt-3 sm:pt-4 border-t border-slate-100">
+                  <button
+                    onClick={() => { playSound("click"); router.push("/abonnement"); }}
+                    className="w-full py-3 rounded-xl bg-gradient-to-r from-amber-500 to-fuchsia-500 hover:from-amber-600 hover:to-fuchsia-600 text-white font-black text-[11px] sm:text-sm flex items-center justify-center gap-2 cursor-pointer transition-colors shadow-md border-b-4 border-fuchsia-700"
+                  >
+                    ✨ Passer à l&apos;aventure complète — 7&nbsp;€/mois
+                  </button>
+                  <p className="text-center text-[10px] text-slate-400 font-semibold">
+                    Tous les mondes, tous les quizz, sans limite. Sans engagement.
+                  </p>
+                </div>
+              )}
+
               {/* Compte & sauvegarde cloud */}
               <div className="flex flex-col gap-2 sm:gap-3 pt-3 sm:pt-4 border-t border-slate-100">
                 <button
@@ -907,7 +923,8 @@ export default function Dashboard() {
                         } else {
                           playSound("correct");
                           setCodeMsg({ type: "ok", text: "Code mis à jour ! ✅" });
-                          setShowChangeCode(false);
+                          // On garde le panneau ouvert pour que le message de succès soit visible.
+                          setNewCode("");
                         }
                       }}
                       className="w-full py-2.5 rounded-xl bg-indigo-500 hover:bg-indigo-600 text-white font-bold text-xs sm:text-sm cursor-pointer transition-colors border-b-4 border-indigo-700"

@@ -1,7 +1,7 @@
 "use client";
 
 import React, { createContext, useContext, useState, useEffect } from "react";
-import { playSound } from "@/lib/sound";
+import { playSound, setSoundsMuted } from "@/lib/sound";
 import { supabase, cloudEnabled } from "@/lib/supabase";
 
 export interface AvatarConfig {
@@ -102,7 +102,7 @@ interface AppContextType {
   signOut: () => Promise<void>;
   // Abonnement Stripe (Offre Famille) — statut lu dans la table `abonnements`,
   // écrite uniquement par le webhook serveur (jamais par le client).
-  premiumActif: boolean;
+  premiumActif: boolean | null; // null = statut premium pas encore chargé depuis le serveur
   refreshPremium: () => Promise<void>;
 }
 
@@ -149,7 +149,9 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
   const [isLoaded, setIsLoaded] = useState(false);
   const [userId, setUserId] = useState<string | null>(null);
   const [userEmail, setUserEmail] = useState<string | null>(null);
-  const [premiumActif, setPremiumActif] = useState(false);
+  // null = « pas encore chargé » : tant qu'on ne connaît pas le vrai statut serveur,
+  // on n'écrase PAS profile.isPremium (sinon on verrouille un client qui vient de payer).
+  const [premiumActif, setPremiumActif] = useState<boolean | null>(false);
 
   // Charger la progression depuis le localStorage
   useEffect(() => {
@@ -328,13 +330,14 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     if (!cloudEnabled || !supabase) return;
     supabase.auth.getSession().then(({ data }) => {
       const u = data.session?.user;
-      if (u) { setUserId(u.id); setUserEmail(u.email ?? null); loadCloudProfile(u.id); fetchPremium(u.id); }
+      if (u) { setUserId(u.id); setUserEmail(u.email ?? null); setPremiumActif(null); loadCloudProfile(u.id); fetchPremium(u.id); }
     });
     const { data: sub } = supabase.auth.onAuthStateChange((_event, session) => {
       const u = session?.user;
       setUserId(u?.id ?? null);
       setUserEmail(u?.email ?? null);
-      if (u) { loadCloudProfile(u.id); fetchPremium(u.id); }
+      // Nouvelle session → statut premium « inconnu » le temps de le relire (évite d'écraser).
+      if (u) { setPremiumActif(null); loadCloudProfile(u.id); fetchPremium(u.id); }
       else setPremiumActif(false);
     });
     return () => sub.subscription.unsubscribe();
@@ -344,10 +347,17 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
   // partout dans l'app, on l'aligne donc sur la vérité serveur quand on est connecté.
   useEffect(() => {
     if (!userId || !profile || !isLoaded) return;
+    if (premiumActif === null) return; // statut pas encore connu : ne rien écraser
     if (!!profile.isPremium !== premiumActif) {
       setProfile({ ...profile, isPremium: premiumActif });
     }
   }, [premiumActif, userId, profile, isLoaded]);
+
+  // Répercuter le réglage "Couper les bruitages" sur le lecteur de sons (playSound est
+  // appelé en dur partout ; c'est ce drapeau partagé qui coupe réellement les bruitages).
+  useEffect(() => {
+    setSoundsMuted(profile ? profile.soundEnabled === false : false);
+  }, [profile?.soundEnabled]);
 
   // Synchroniser la progression vers le cloud (anti-rebond) quand l'utilisateur est connecté
   useEffect(() => {

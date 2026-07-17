@@ -172,7 +172,7 @@ export default function Home() {
             <Compass size={20} />
           </div>
           <div className="flex flex-col">
-            <h4 className="font-bold text-slate-800 text-sm">12 Univers à explorer</h4>
+            <h4 className="font-bold text-slate-800 text-sm">13 Univers à explorer</h4>
             <p className="text-slate-600 text-xs mt-1 leading-relaxed">
               Des animaux sauvages à l'espace, en passant par le corps humain et les mathématiques.
             </p>

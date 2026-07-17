@@ -31,8 +31,12 @@ export async function userFromRequest(req: Request) {
 }
 
 // Un statut Stripe qui donne accès au contenu premium.
+// `past_due` est inclus VOLONTAIREMENT : au 1er échec de prélèvement, Stripe passe
+// l'abonnement en past_due et relance (dunning) pendant plusieurs jours. On garde
+// l'accès pendant cette fenêtre pour ne pas couper un client qui a une période payée
+// en cours ; si Stripe finit par abandonner, l'abo passe `canceled`/`unpaid` → accès retiré.
 export function statutDonneAcces(statut: string): boolean {
-  return statut === "active" || statut === "trialing";
+  return statut === "active" || statut === "trialing" || statut === "past_due";
 }
 
 // Met à jour la ligne d'abonnement d'un utilisateur (source de vérité du premium).
@@ -50,5 +54,8 @@ export async function majAbonnement(fields: {
       is_premium: statutDonneAcces(fields.statut),
       updated_at: new Date().toISOString(),
     });
-  if (error) console.error("majAbonnement échouée:", error.message);
+  // On PROPAGE l'erreur (au lieu de seulement la logger) : c'est la source de vérité
+  // du premium. Si l'écriture échoue, le webhook doit renvoyer 500 pour que Stripe
+  // REJOUE l'événement — sinon un client paierait sans jamais obtenir son accès.
+  if (error) throw new Error(`majAbonnement échouée: ${error.message}`);
 }

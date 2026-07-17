@@ -536,7 +536,7 @@ export const LANDING_HTML = `<style>@import url('https://fonts.googleapis.com/cs
           <p class="lead">Rejoins Les mondes du Savoir et transforme chaque quiz en victoire.</p>
           <div class="cta" style="justify-content:center; margin-top:24px;">
             <a href="/jouer" class="btn btn-ghost">Lancer le jeu 🎮</a>
-            <a href="https://github.com/mathysjlld/les-mondes-du-savoir" class="btn btn-ghost">Voir le projet sur GitHub</a>
+            <a href="/abonnement" class="btn btn-ghost">Voir l'offre Famille ✨</a>
           </div>
         </div>
       </div>
