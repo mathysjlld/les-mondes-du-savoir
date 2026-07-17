@@ -109,8 +109,9 @@ export default function Dashboard() {
   // de la grille mobile pour rester centré. Style inline (la classe Tailwind dynamique
   // n'est pas toujours détectée). Sans effet sur la rangée flex des écrans ≥ sm.
   const streakSpanStyle = visibleStatCount % 2 === 1 ? { gridColumn: "1 / -1" } : undefined;
-  // Code triche 7194 : débloque pièces/diamants ET tous les univers (niveaux + cristaux)
-  const cheat = !!profile.isCheatEnabled;
+  // Code triche 7194 : débloque pièces/diamants ET tous les univers (niveaux + cristaux).
+  // Réservé au DÉVELOPPEMENT — neutralisé en production (lancement).
+  const cheat = !!profile.isCheatEnabled && process.env.NODE_ENV !== "production";
 
   // Universes
   const activeUniverses = Object.values(UNIVERSES);
@@ -128,8 +129,9 @@ export default function Dashboard() {
     const cleanAnswer = parentAnswer.trim();
     const correctCode = profile.parentCode || "2912";
     
-    // Code de triche temporaire pour les tests (pieces et diamants illimites)
-    if (cleanAnswer === "7194") {
+    // Code de triche RÉSERVÉ AU DÉVELOPPEMENT (pieces/diamants/univers illimités).
+    // Désactivé en production pour ne pas donner d'accès premium gratuit au lancement.
+    if (cleanAnswer === "7194" && process.env.NODE_ENV !== "production") {
       playSound("correct");
       toggleCheatCode();
       setShowParentsGate(false);
@@ -167,8 +169,8 @@ export default function Dashboard() {
   return (
     <div className="flex-1 flex flex-col p-3 sm:p-6 max-w-6xl mx-auto w-full gap-4 sm:gap-6">
       
-      {/* Bandeau d'avertissement de triche */}
-      {profile?.isCheatEnabled && (
+      {/* Bandeau d'avertissement de triche (dev uniquement — cf. `cheat`) */}
+      {cheat && (
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}

@@ -25,7 +25,11 @@ type ProfilLike = { isPremium?: boolean; isCheatEnabled?: boolean } | null | und
  */
 export function estPremium(profile: ProfilLike): boolean {
   if (!profile) return false;
-  return !!profile.isPremium || !!profile.isCheatEnabled;
+  // En PRODUCTION (app lancée), SEUL l'abonnement Stripe (profile.isPremium)
+  // donne le premium. Le mode test (code 7194 → isCheatEnabled) n'est honoré
+  // qu'en développement, pour ne jamais offrir le premium en clair aux joueurs.
+  const cheatAutorise = process.env.NODE_ENV !== "production";
+  return !!profile.isPremium || (cheatAutorise && !!profile.isCheatEnabled);
 }
 
 /**
