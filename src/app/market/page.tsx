@@ -60,12 +60,10 @@ const TREE_ANIMALS_ITEMS = [
 
 function TreePreview({
   stage,
-  processedTreeSrc,
   unlockedTreeAnimals,
   activePreviewTreeAnimalId,
 }: {
   stage: string;
-  processedTreeSrc: string | null;
   unlockedTreeAnimals: string[];
   activePreviewTreeAnimalId: string | null;
 }) {
@@ -91,13 +89,12 @@ function TreePreview({
 
       {/* Tree Image */}
       <image
-        href={processedTreeSrc || asset(`/images/tree_${stage}.png`)}
+        href={asset(`/images/tree_${stage}.png`)}
         x="12"
         y="10"
         width="76"
         height="76"
         className="select-none pointer-events-none"
-        style={processedTreeSrc ? {} : { mixBlendMode: "multiply" }}
       />
 
       {/* Animals */}
@@ -212,54 +209,6 @@ export default function Market() {
     return "magic";                    // Niv 10+
   };
   const stage = getGrowthStage();
-  const [processedTreeSrc, setProcessedTreeSrc] = useState<string | null>(null);
-
-  useEffect(() => {
-    if (typeof window === "undefined" || !profile) return;
-    const imgSrc = asset(`/images/tree_${stage}.png`);
-    const img = new Image();
-    img.src = imgSrc;
-    img.onload = () => {
-      const canvas = document.createElement("canvas");
-      canvas.width = img.naturalWidth;
-      canvas.height = img.naturalHeight;
-      const ctx = canvas.getContext("2d");
-      if (ctx) {
-        ctx.drawImage(img, 0, 0);
-        const imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-        const data = imgData.data;
-        for (let i = 0; i < data.length; i += 4) {
-          const r = data[i];
-          const g = data[i + 1];
-          const b = data[i + 2];
-          
-          const max = Math.max(r, g, b);
-          const min = Math.min(r, g, b);
-          const diff = max - min;
-          
-          if (r > 150 && g > 150 && b > 130 && diff < 80) {
-            const rScore = Math.min(1, Math.max(0, (r - 150) / 40));
-            const gScore = Math.min(1, Math.max(0, (g - 150) / 40));
-            const bScore = Math.min(1, Math.max(0, (b - 130) / 40));
-            const diffScore = Math.min(1, Math.max(0, (80 - diff) / 45));
-            
-            const bgConfidence = rScore * gScore * bScore * diffScore;
-            
-            if (bgConfidence > 0.8) {
-              data[i + 3] = 0;
-            } else {
-              data[i + 3] = Math.floor(data[i + 3] * (1 - bgConfidence));
-            }
-          }
-        }
-        ctx.putImageData(imgData, 0, 0);
-        setProcessedTreeSrc(canvas.toDataURL("image/png"));
-      }
-    };
-    img.onerror = () => {
-      setProcessedTreeSrc(null);
-    };
-  }, [stage, profile]);
 
   // Synthétiseur Web Audio pour la musique cozy du Marché
   useEffect(() => {
@@ -550,7 +499,6 @@ export default function Market() {
             {activeTab === "treeAnimals" ? (
               <TreePreview
                 stage={stage}
-                processedTreeSrc={processedTreeSrc}
                 unlockedTreeAnimals={unlockedTreeAnimals}
                 activePreviewTreeAnimalId={activePreviewTreeAnimalId}
               />
@@ -652,7 +600,6 @@ export default function Market() {
                 {activeTab === "treeAnimals" ? (
                   <TreePreview
                     stage={stage}
-                    processedTreeSrc={processedTreeSrc}
                     unlockedTreeAnimals={unlockedTreeAnimals}
                     activePreviewTreeAnimalId={activePreviewTreeAnimalId}
                   />
@@ -749,7 +696,7 @@ export default function Market() {
                 }`}
               >
                 <ShoppingBag size={13} />
-                <span>Équipements (Or 🪙)</span>
+                <span>Équipements 🪙</span>
               </button>
 
               <button
@@ -765,7 +712,7 @@ export default function Market() {
                 }`}
               >
                 <Sparkles size={13} />
-                <span>Compagnons (Diamants 💎)</span>
+                <span>Compagnons 💎</span>
               </button>
 
               <button
@@ -781,7 +728,7 @@ export default function Market() {
                 }`}
               >
                 <Landmark size={13} />
-                <span>Animaux d'Arbre (Diamants 💎)</span>
+                <span>Animaux de l'arbre 💎</span>
               </button>
             </div>
 

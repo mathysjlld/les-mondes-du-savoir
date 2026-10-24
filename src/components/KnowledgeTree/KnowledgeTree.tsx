@@ -127,7 +127,6 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
   };
   const treeScale = getTreeScale();
 
-  const [processedSrc, setProcessedSrc] = React.useState<string | null>(null);
   const [isWatering, setIsWatering] = React.useState(false);
   const [glowing, setGlowing] = React.useState(false);
   const [showBarnabe, setShowBarnabe] = React.useState(false); // mascotte vidéo de Barnabé (clip ~4,8 s)
@@ -189,56 +188,10 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
     }
   };
 
-  React.useEffect(() => {
-    const imgSrc = asset(`/images/tree_${imgName}.png`);
-    const img = new Image();
-    img.src = imgSrc;
-    img.onload = () => {
-      const canvas = document.createElement("canvas");
-      canvas.width = img.naturalWidth;
-      canvas.height = img.naturalHeight;
-      const ctx = canvas.getContext("2d");
-      if (ctx) {
-        ctx.drawImage(img, 0, 0);
-        const imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-        const data = imgData.data;
-        for (let i = 0; i < data.length; i += 4) {
-          const r = data[i];
-          const g = data[i + 1];
-          const b = data[i + 2];
-          
-          const max = Math.max(r, g, b);
-          const min = Math.min(r, g, b);
-          const diff = max - min;
-          
-          if (r > 150 && g > 150 && b > 130 && diff < 80) {
-            const rScore = Math.min(1, Math.max(0, (r - 150) / 40));
-            const gScore = Math.min(1, Math.max(0, (g - 150) / 40));
-            const bScore = Math.min(1, Math.max(0, (b - 130) / 40));
-            const diffScore = Math.min(1, Math.max(0, (80 - diff) / 45));
-            
-            const bgConfidence = rScore * gScore * bScore * diffScore;
-            
-            if (bgConfidence > 0.8) {
-              data[i + 3] = 0;
-            } else {
-              data[i + 3] = Math.floor(data[i + 3] * (1 - bgConfidence));
-            }
-          }
-        }
-        ctx.putImageData(imgData, 0, 0);
-        setProcessedSrc(canvas.toDataURL("image/png"));
-      }
-    };
-    img.onerror = () => {
-      setProcessedSrc(null);
-    };
-  }, [imgName]);
-
-
 
   return (
-    <div className="relative w-full max-w-[340px] aspect-square mx-auto bg-gradient-to-b from-sky-100/50 to-emerald-50/20 rounded-3xl p-4 border-4 border-sky-200/50 shadow-inner flex items-center justify-center overflow-hidden">
+    <div className="w-full max-w-[340px] mx-auto flex flex-col items-center gap-3">
+    <div className="relative w-full aspect-square bg-gradient-to-b from-sky-100/50 to-emerald-50/20 rounded-3xl p-4 border-4 border-sky-200/50 shadow-inner flex items-center justify-center overflow-hidden">
       {/* Barre de croissance au-dessus de l'arbre */}
       <div className={`absolute top-2 left-4 right-4 z-10 transition-all duration-700 ${glowing ? 'drop-shadow-[0_0_12px_rgba(16,185,129,0.7)]' : ''}`}>
         <div className="flex items-center justify-between mb-0.5">
@@ -301,42 +254,21 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
               transition: 'filter 0.7s ease',
             }}
           >
+            {/* PNG déjà détouré (vraie transparence, ombre portée retirée) : plus de
+                détourage à la volée par seuil de couleur, qui laissait un contour sale. */}
             <image
-              href={processedSrc || asset(`/images/tree_${imgName}.png`)}
+              href={asset(`/images/tree_${imgName}.png`)}
               x="12"
               y="10"
               width="76"
               height="76"
               className="select-none pointer-events-none"
-              style={processedSrc ? {} : { mixBlendMode: "multiply" }}
             />
           </motion.g>
         </AnimatePresence>
 
-        {/* Éléments magiques supplémentaires animés pour le stade Magic */}
-        {stage === "magic" && (
-          <g>
-            {/* Papillon magique jaune */}
-            <motion.g
-              animate={{ y: [0, -3, 0], x: [0, 2, 0] }}
-              transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
-            >
-              <path d="M 76 22 Q 79 16 81 20 Q 79 24 76 22" fill="#F1C40F" />
-              <path d="M 76 22 Q 73 16 71 20 Q 73 24 76 22" fill="#F1C40F" />
-              <line x1="76" y1="20" x2="76" y2="24" stroke="#333" strokeWidth="0.8" />
-            </motion.g>
-            {/* Papillon magique rose */}
-            <motion.g
-              animate={{ y: [0, 2, 0], x: [0, -3, 0] }}
-              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-            >
-              <path d="M 24 32 Q 27 26 29 30 Q 27 34 24 32" fill="#FF7675" />
-              <path d="M 24 32 Q 21 26 19 30 Q 21 34 24 32" fill="#FF7675" />
-              <line x1="24" y1="30" x2="24" y2="34" stroke="#333" strokeWidth="0.8" />
-            </motion.g>
-          </g>
-        )}
-
+        {/* (Les papillons SVG plats du stade Magic ont été retirés : style « dessin »
+            incohérent avec les visuels 3D. L'arbre magique a déjà ses propres étincelles.) */}
       </svg>
 
       {/* Couche des animaux : PNG DÉTOURÉS (fond transparent) animés en CSS.
@@ -567,21 +499,8 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
         )}
       </AnimatePresence>
 
-      {/* Bouton arrosoir */}
-      {wateringCans > 0 && !isWatering && !showBarnabe && (
-        <motion.button
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-          onClick={handleWatering}
-          className="absolute bottom-24 right-3 z-30 bg-gradient-to-br from-teal-400 to-emerald-500 text-white rounded-2xl px-3 py-2 shadow-lg text-xs sm:text-sm font-black flex items-center gap-1.5 cursor-pointer border-2 border-teal-300 hover:shadow-xl transition-shadow"
-        >
-          <img src={asset("/images/watering_can.png")} alt="Arrosoir" className="w-5 h-5 object-contain filter drop-shadow-sm" />
-          <span>Arroser ({wateringCans})</span>
-        </motion.button>
-      )}
-
       {/* Texte indicateur en bas de l'arbre */}
-      <div className="absolute bottom-2 left-1/2 -translate-x-1/2 bg-white/95 px-3 py-1 rounded-full shadow-md text-xs font-bold text-emerald-700 select-none">
+      <div className="absolute bottom-2 left-1/2 -translate-x-1/2 whitespace-nowrap bg-white/95 px-3 py-1 rounded-full shadow-md text-xs font-bold text-emerald-700 select-none">
         {stage === "sprout_1" && "🌱 Graine en Germination"}
         {stage === "sprout_2" && "🌱 Pousse Naissante"}
         {stage === "sprout_3" && "🌿 Jeune Pousse"}
@@ -593,6 +512,21 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({
         {stage === "mature" && "🍏 Arbre Fruitier Mature"}
         {stage === "magic" && "✨ Arbre Magique Légendaire"}
       </div>
+    </div>
+
+      {/* Bouton arrosoir — SOUS la scène (et non par-dessus) pour ne jamais masquer
+          l'arbre ; il disparaît pendant l'arrosage, comme avant. */}
+      {wateringCans > 0 && !isWatering && !showBarnabe && (
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          onClick={handleWatering}
+          className="bg-gradient-to-br from-teal-400 to-emerald-500 text-white rounded-2xl px-4 py-2 shadow-md text-xs sm:text-sm font-black flex items-center gap-1.5 cursor-pointer border-2 border-teal-300 hover:shadow-lg transition-shadow"
+        >
+          <img src={asset("/images/watering_can.png")} alt="" className="w-5 h-5 object-contain filter drop-shadow-sm" />
+          <span>Arroser mon arbre ({wateringCans})</span>
+        </motion.button>
+      )}
     </div>
   );
 };

@@ -36,7 +36,7 @@ export default function MentionsLegalesPage() {
         <div>
           <h2 className="text-xl font-bold text-teal-700">1. Éditeur du site</h2>
           <p className="mt-2">
-            Le site et l&apos;application <strong>Les mondes du Savoir</strong> sont édités par&nbsp;:
+            Le site et l&apos;application <strong>Les mondes du Savoir</strong>{" "}sont édités par&nbsp;:
           </p>
           <ul className="mt-2 list-disc pl-6 space-y-1">
             <li>

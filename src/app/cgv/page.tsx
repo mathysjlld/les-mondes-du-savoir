@@ -60,10 +60,10 @@ export default function CgvPage() {
           </p>
           <ul className="mt-2 list-disc pl-6 space-y-1">
             <li>
-              une <strong>version gratuite</strong> de découverte, donnant accès à une sélection de contenus&nbsp;;
+              une <strong>version gratuite</strong>{" "}de découverte, donnant accès à une sélection de contenus&nbsp;;
             </li>
             <li>
-              un <strong>abonnement Famille</strong> payant, qui débloque l&apos;ensemble des univers, quiz,
+              un <strong>abonnement Famille</strong>{" "}payant, qui débloque l&apos;ensemble des univers, quiz,
               badges et fonctionnalités (Arbre du Savoir, Marché, Temple des Sages), ainsi que la sauvegarde de la
               progression.
             </li>
@@ -103,7 +103,7 @@ export default function CgvPage() {
         <div>
           <h2 className="text-xl font-bold text-teal-700">Article 7 — Durée, reconduction et résiliation</h2>
           <p className="mt-2">
-            L&apos;abonnement est conclu pour une durée d&apos;<strong>un mois, reconductible tacitement</strong>
+            L&apos;abonnement est conclu pour une durée d&apos;<strong>un mois, reconductible tacitement</strong>{" "}
             par périodes successives d&apos;un mois. Conformément aux articles L.215-1 et suivants et L.215-4 du
             Code de la consommation, le Client peut <strong>résilier à tout moment</strong>, sans frais ni
             justification, depuis la page «&nbsp;Abonnement&nbsp;» du site (bouton «&nbsp;Gérer mon
@@ -120,10 +120,10 @@ export default function CgvPage() {
           <h2 className="text-xl font-bold text-teal-700">Article 8 — Droit de rétractation</h2>
           <p className="mt-2">
             Conformément aux articles L.221-18 et suivants du Code de la consommation, le Client dispose d&apos;un
-            délai de <strong>14 jours</strong> à compter de la souscription pour exercer son droit de rétractation,
+            délai de <strong>14 jours</strong>{" "}à compter de la souscription pour exercer son droit de rétractation,
             sans avoir à se justifier. Toutefois, s&apos;agissant d&apos;un contenu numérique fourni immédiatement,
             <strong> en validant son paiement, le Client demande expressément l&apos;accès immédiat au Service et
-            reconnaît renoncer à son droit de rétractation</strong> pour la partie déjà exécutée (article
+            reconnaît renoncer à son droit de rétractation</strong>{" "}pour la partie déjà exécutée (article
             L.221-28, 13° du Code de la consommation) — cette information lui est rappelée sur la page de
             paiement avant validation. S&apos;il exerce sa rétractation dans le délai de 14 jours, le Client est
             remboursé au prorata de la période restant à courir. Il peut par ailleurs résilier à tout moment dans

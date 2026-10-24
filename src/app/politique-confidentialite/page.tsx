@@ -57,7 +57,7 @@ export default function PolitiqueConfidentialitePage() {
           <p className="mt-1">
             Si un parent choisit de créer un compte pour sauvegarder et synchroniser la progression entre
             plusieurs appareils, nous traitons&nbsp;: l&apos;<strong>adresse e-mail du parent</strong>, un{" "}
-            <strong>mot de passe</strong> (stocké de façon chiffrée/hachée par notre prestataire
+            <strong>mot de passe</strong>{" "}(stocké de façon chiffrée/hachée par notre prestataire
             d&apos;authentification, jamais en clair) et le <strong>profil de jeu synchronisé</strong>. Cette
             fonction est facultative&nbsp;: sans compte, aucune de ces données n&apos;est envoyée.
           </p>
@@ -94,7 +94,7 @@ export default function PolitiqueConfidentialitePage() {
           <h2 className="text-xl font-bold text-teal-700">4. Enfants et consentement parental</h2>
           <p className="mt-2">
             Le service s&apos;adresse à des enfants utilisant l&apos;application <strong>sous la responsabilité
-            d&apos;un parent</strong> ou d&apos;un adulte responsable. La création d&apos;un compte cloud et la
+            d&apos;un parent</strong>{" "}ou d&apos;un adulte responsable. La création d&apos;un compte cloud et la
             souscription à un abonnement sont réservées à un adulte. Conformément à l&apos;article 8 du RGPD et à
             la loi française, le consentement au traitement des données d&apos;un mineur de moins de 15 ans est
             donné ou autorisé par le titulaire de l&apos;autorité parentale. Nous ne demandons pas de données
